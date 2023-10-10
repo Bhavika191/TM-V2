@@ -225,8 +225,6 @@ button {
 }
 
 /************************************************ Fonts **************************************************/
-$fontdmsans: 'DM Sans', sans-serif;
-$fontdmserif: 'DM Serif Display', serif;
 $fontpoppins: 'Poppins', sans-serif;
 
 
@@ -237,13 +235,9 @@ body{
 }
 
 @mixin wrapper {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
 
-    @media screen and (max-width:1920px) {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
     @media screen and (max-width:1400px) {
         padding-left: 40px;
         padding-right: 40px;
@@ -254,22 +248,41 @@ body{
     }
 }
 
-@mixin font140 {
-    font-size: 140px;
+@mixin wrapperTwo {
+    padding-left: 210px;
+    padding-right: 210px;
 
+    @media screen and (max-width:1920px) {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
     @media screen and (max-width:1600px) {
-        font-size: 120px;
+        padding-left: 150px;
+        padding-right: 150px;
     }
     @media screen and (max-width:1400px) {
-        font-size: 100px;
+        padding-left: 120px;
+        padding-right: 120px;
     }
-    @media screen and (max-width:1280px) {
-        font-size: 80px;
+    @media screen and (max-width:1200px) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    @media screen and (max-width:1024px) {
+        padding-left: 80px;
+        padding-right: 80px;
     }
     @media screen and (max-width:720px) {
-        font-size: 60px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    @media screen and (max-width:680px) {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
+
+
 
 @mixin font96 {
     font-size: 96px;
@@ -283,81 +296,23 @@ body{
     @media screen and (max-width:1024px) {
         font-size: 64px;
     }
-}
-
-@mixin font80 {
-    font-size: 80px;
-    @media screen and (max-width:1600px) {
-        font-size: 72px;
-    }
-    @media screen and (max-width:1400px) {
-        font-size: 66px;
-    }
-    @media screen and (max-width:1280px) {
-        font-size: 60px;
-    }
     @media screen and (max-width:720px) {
-        font-size: 54px;
+        font-size: 44px;
     }
 }
 
-@mixin font72 {
-    font-size: 70px;
+
+@mixin font64 {
+    font-size: 64px;
 
     @media screen and (max-width:1600px) {
-        font-size: 58px;
-    }
-    @media screen and (max-width:1400px) {
         font-size: 50px;
     }
     @media screen and (max-width:1280px) {
-        font-size: 44px;
+        font-size: 42px;
     }
     @media screen and (max-width:720px) {
         font-size: 32px;
-    }
-}
-
-@mixin font60 {
-    font-size: 60px;
-
-    @media screen and (max-width:1600px) {
-        font-size: 48px;
-    }
-    @media screen and (max-width:1280px) {
-        font-size: 40px;
-    }
-    @media screen and (max-width:720px) {
-        font-size: 24px;
-    }
-}
-
-@mixin font54 {
-    font-size: 54px;
-
-    @media screen and (max-width:1600px) {
-        font-size: 44px;
-    }
-    @media screen and (max-width:1280px) {
-        font-size: 36px;
-    }
-    @media screen and (max-width:720px) {
-        font-size: 20px;
-    }
-}
-
-
-@mixin font50 {
-    font-size: 50px;
-
-    @media screen and (max-width:1600px) {
-        font-size: 38px;
-    }
-    @media screen and (max-width:1280px) {
-        font-size: 30px;
-    }
-    @media screen and (max-width:720px) {
-        font-size:20px;
     }
 }
 
@@ -375,28 +330,14 @@ body{
     }
 }
 
-@mixin font44 {
-    font-size: 44px;
-
-    @media screen and (max-width:1600px) {
-        font-size: 36px;
-    }
-    @media screen and (max-width:1280px) {
-        font-size: 24px;
-    }
-    @media screen and (max-width:720px) {
-        font-size: 16px;
-    }
-}
-
 @mixin font40 {
     font-size: 40px;
 
     @media screen and (max-width:1600px) {
-        font-size: 28px;
+        font-size: 30px;
     }
     @media screen and (max-width:1280px) {
-        font-size: 20px;
+        font-size: 22px;
     }
     @media screen and (max-width:720px) {
         font-size: 14px;
@@ -413,26 +354,11 @@ body{
         font-size: 20px;
     }
     @media screen and (max-width:720px) {
-        font-size: 16px;
-    }
-    @media screen and (max-width:640px) {
         font-size: 14px;
     }
 }
 
-@mixin font28 {
-    font-size: 28px;
 
-    @media screen and (max-width:1600px) {
-        font-size: 22px;
-    }
-    @media screen and (max-width:1200px) {
-        font-size: 20px;
-    }
-    @media screen and (max-width:720px) {
-        font-size: 14px;
-    }
-}
 
 
 @mixin font24 {
@@ -445,7 +371,7 @@ body{
         font-size: 18px;
     }
     @media screen and (max-width:720px) {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -518,7 +444,7 @@ img {max-width: 100%;}
 .slick-track {display: flex !important;}
 .slick-slide {height: inherit !important;}
 
-.ctaBlack {padding: 10px 18px;font-family: $fontdmsans;@include font18;line-height: 25px;font-weight: $fontW500;display: inline-block;cursor: pointer;border-radius: 41px;border: 1px solid #000;background: #FCD300;text-decoration: none;color: #000000; transition: 0.8s all ease-in-out;
+.ctaBlack {padding: 10px 18px;@include font18;line-height: 25px;font-weight: $fontW500;display: inline-block;cursor: pointer;border-radius: 41px;border: 1px solid #000;background: #FCD300;text-decoration: none;color: #000000; transition: 0.8s all ease-in-out;
 
     &:hover{background: #161719;color: #ffffff;}
 
@@ -543,7 +469,7 @@ img {max-width: 100%;}
     }
 }
 
-.ctaWhite {font-family: $fontdmsans; padding: 10px 18px;@include font18;line-height: 25px;font-weight: $fontW500;display: inline-block;cursor: pointer;border-radius: 41px;border: 1px solid #000;background: #ffffff;text-decoration: none;color: #161719;text-decoration: none; transition: 0.8s all ease-in-out;
+.ctaWhite { padding: 10px 18px;@include font18;line-height: 25px;font-weight: $fontW500;display: inline-block;cursor: pointer;border-radius: 41px;border: 1px solid #000;background: #ffffff;text-decoration: none;color: #161719;text-decoration: none; transition: 0.8s all ease-in-out;
 
     &:hover{background: #FCD300;color: #161719;}
 

@@ -1,5 +1,5 @@
 <!doctype html>
-<html >
+<html>
 
 <head>
     <meta charset="">
@@ -7,15 +7,39 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>The Minimalist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1>
-        Hello World
-    </h1>
+
+    <header>
+        <div>
+            <div>
+                <img src="images/header-logo.svg" alt="logo" title="logo" />
+            </div>
+            <div>
+                <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span
+                        class="bottom"></span></div>
+                <div class="overlay" id="overlay">
+                    <nav class="overlay-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 </body>
 
 </html>
