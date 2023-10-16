@@ -5,7 +5,6 @@ html {
 }
 
 body {
-  scroll-behavior: smooth;
   letter-spacing: 0.03em;
   line-height: 1.4;
   margin: 0;
@@ -188,7 +187,6 @@ template {
 html,
 body {
   background: #f1f1f1;
-  scroll-behavior: smooth;
 }
 
 /*body{opacity: 0;}*/
@@ -517,9 +515,14 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav {
   overflow-y: auto;
   height: 100vh;
 }
+header .headerWrapper .navDiv .hamburgerDiv .overlay nav::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
 header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul {
   list-style: none;
   text-align: right;
+  overflow-x: hidden;
 }
 header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li {
   position: relative;
@@ -559,6 +562,11 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
     font-size: 36px;
   }
 }
+@media screen and (max-width: 1400px) {
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
+    font-size: 32px;
+  }
+}
 @media screen and (max-width: 1280px) {
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
     font-size: 26px;
@@ -591,25 +599,129 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     left: 0;
   }
 }
+@media screen and (max-width: 1600px) {
+  header.nav-up {
+    top: -86px;
+  }
+  header .headerWrapper .navDiv {
+    margin: 22px 0px;
+  }
+  header .headerWrapper .navDiv .navList .headerCta {
+    padding: 12px 24px;
+    margin: 0px 30px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .button_container.active::before {
+    height: 60px;
+    width: 60px;
+    left: -18px;
+    top: -20px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .button_container.active span {
+    width: 22px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav {
+    margin: 100px 0px 0px 0px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li {
+    margin-bottom: 38px;
+    margin-right: 110px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a {
+    margin-right: -15px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
+    margin-right: 50px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
+    height: 20px;
+    width: 20px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  header.nav-up {
+    top: -82px;
+  }
+  header .headerWrapper .navDiv {
+    margin: 20px 0px;
+  }
+  header .headerWrapper .navDiv .navList a {
+    font-size: 12px;
+  }
+  header .headerWrapper .navDiv .navList .headerCta {
+    padding: 12px 20px;
+    margin: 0px 25px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .button_container.active::before {
+    height: 50px;
+    width: 50px;
+    left: -16px;
+    top: -16px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .button_container.active span {
+    width: 20px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav {
+    margin: 70px 0px 0px 0px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li {
+    margin-bottom: 30px;
+    margin-right: 100px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
+    margin-right: 45px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
+    height: 18px;
+    width: 18px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a:before {
+    right: -50px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  header.nav-up {
+    top: -74px;
+  }
+  header .headerWrapper .navDiv {
+    margin: 18px 0px;
+  }
+  header .headerWrapper .navDiv .navList .headerCta {
+    padding: 10px 18px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .button_container.active::before {
+    height: 40px;
+    width: 40px;
+    left: -12px;
+    top: -10px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .button_container.active span {
+    width: 16px;
+    height: 2px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav {
+    margin: 60px 0px 0px 0px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li {
+    margin-bottom: 25px;
+    margin-right: 90px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
+    margin-right: 30px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
+    height: 14px;
+    width: 14px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a {
+    margin-right: -5px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a:before {
+    right: -40px;
+  }
+}
 
 .videoSection {
   margin: 210px 0px 400px;
-}
-.videoSection .videosecWrapper {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-@media screen and (max-width: 1400px) {
-  .videoSection .videosecWrapper {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .videoSection .videosecWrapper {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 .videoSection .videosecWrapper .secHeading {
   padding-left: 210px;
@@ -667,7 +779,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1600px) {
   .videoSection .videosecWrapper .secHeading h1 {
-    font-size: 86px;
+    font-size: 80px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -685,13 +797,88 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     font-size: 44px;
   }
 }
+.videoSection .videosecWrapper .videoDiv {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+@media screen and (max-width: 1400px) {
+  .videoSection .videosecWrapper .videoDiv {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .videoSection .videosecWrapper .videoDiv {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .videoSection .videosecWrapper video {
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 1600px) {
+  .videoSection {
+    margin: 190px 0px 300px;
+  }
+  .videoSection .videosecWrapper .secHeading {
+    margin-bottom: 150px;
+  }
+  .videoSection .videosecWrapper .secHeading h1 {
+    width: 70%;
+    line-height: 90px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .videoSection {
+    margin: 170px 0px 250px;
+  }
+  .videoSection .videosecWrapper .secHeading {
+    margin-bottom: 120px;
+  }
+  .videoSection .videosecWrapper .secHeading h1 {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .videoSection {
+    margin: 170px 0px 250px;
+  }
+  .videoSection .videosecWrapper .secHeading {
+    margin-bottom: 120px;
+  }
+  .videoSection .videosecWrapper .secHeading h1 {
+    width: 75%;
+    line-height: 90px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .videoSection {
+    margin: 140px 0px 200px;
+  }
+  .videoSection .videosecWrapper .secHeading {
+    margin-bottom: 80px;
+  }
+  .videoSection .videosecWrapper .secHeading h1 {
+    width: 90%;
+    line-height: 78px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .videoSection {
+    margin: 100px 0px 150px;
+  }
+  .videoSection .videosecWrapper .secHeading {
+    margin-bottom: 50px;
+  }
+  .videoSection .videosecWrapper .secHeading h1 {
+    line-height: 50px;
+    font-size: 40px;
+  }
+}
 
 .caseStudyhpsection {
-  margin-bottom: 322px;
+  margin-bottom: 400px;
 }
 .caseStudyhpsection .casestudyWrapper {
   padding-left: 210px;
@@ -742,9 +929,6 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 .caseStudyhpsection .casestudyWrapper .secHeading {
   width: 41%;
 }
-.caseStudyhpsection .casestudyWrapper .secHeading.scrolled {
-  width: 100%;
-}
 .caseStudyhpsection .casestudyWrapper .secHeading h2 {
   font-size: 64px;
   font-weight: 500;
@@ -792,21 +976,301 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.caseStudyhpsection .casestudyWrapper .casestudyBoxes .innerBoxes {
+.caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
   width: 40%;
   margin-top: 150px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s all ease-out;
 }
-.caseStudyhpsection .casestudyWrapper .casestudyBoxes .innerBoxes:nth-child(even) {
-  transform: translateY(-300px);
-  margin-top: 0px;
+.caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
+  transform: translateY(-60%);
+}
+.caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .casestudyImg img {
+  transform: rotate(5deg) scale(1.2);
+  transition: 0.3s all ease-out;
+}
+.caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  margin: 50px;
+  transition: 0.5s all ease-out;
+  z-index: 2;
+}
+.caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc h3 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 42px;
+  color: #fff;
+  margin: 30px 0px;
+}
+@media screen and (max-width: 1600px) {
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc h3 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc h3 {
+    font-size: 14px;
+  }
+}
+.caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 14px;
+  color: #fff;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1600px) {
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc h4 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc h4 {
+    font-size: 12px;
+  }
+}
+.caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:hover .casestudyImg {
+  position: relative;
+}
+.caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:hover .casestudyImg img {
+  transform: rotate(0deg) scale(1);
+  transition: 0.3s all ease-out;
+}
+.caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:hover .casestudyImg::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.3;
+  transition: 0.5s all ease-out;
+  z-index: 1;
+}
+.caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:hover .caseStudydesc {
+  bottom: 0;
+  transition: 0.5s all ease-out;
 }
 .caseStudyhpsection .casestudyWrapper .ctaDiv {
   text-align: right;
-  transform: translateY(-320px);
+  margin-top: -150px;
 }
 .caseStudyhpsection .casestudyWrapper .ctaDiv .ctaWhite {
   width: 40%;
   text-align: center;
+}
+@media screen and (max-width: 1600px) {
+  .caseStudyhpsection {
+    margin-bottom: 300px;
+  }
+  .caseStudyhpsection .casestudyWrapper .secHeading {
+    width: 43%;
+  }
+  .caseStudyhpsection .casestudyWrapper .secHeading h2 {
+    line-height: 64px;
+  }
+  .caseStudyhpsection .casestudyWrapper .secHeading p {
+    line-height: 28px;
+    margin-top: 28px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
+    margin-top: 120px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
+    transform: translateY(-50%);
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc {
+    margin: 40px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc h3 {
+    line-height: 32px;
+    margin: 25px 0px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc h4 {
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .caseStudyhpsection {
+    margin-bottom: 250px;
+  }
+  .caseStudyhpsection .casestudyWrapper .secHeading {
+    width: 45%;
+  }
+  .caseStudyhpsection .casestudyWrapper .secHeading h2 {
+    line-height: 60px;
+  }
+  .caseStudyhpsection .casestudyWrapper .secHeading p {
+    line-height: 26px;
+    margin-top: 22px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
+    width: 43%;
+    margin-top: 100px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
+    transform: translateY(-45%);
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc {
+    margin: 35px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc h3 {
+    line-height: 28px;
+    margin: 20px 0px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc img {
+    width: 14px;
+  }
+  .caseStudyhpsection .casestudyWrapper .ctaDiv .ctaWhite {
+    width: 43%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .caseStudyhpsection {
+    margin-bottom: 200px;
+  }
+  .caseStudyhpsection .casestudyWrapper .secHeading h2 {
+    line-height: 54px;
+  }
+  .caseStudyhpsection .casestudyWrapper .secHeading p {
+    line-height: 24px;
+    margin-top: 18px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
+    width: 45%;
+    margin-top: 80px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
+    transform: translateY(-40%);
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc {
+    margin: 30px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc h3 {
+    line-height: 26px;
+    margin: 15px 0px;
+  }
+  .caseStudyhpsection .casestudyWrapper .ctaDiv .ctaWhite {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .caseStudyhpsection {
+    margin-bottom: 150px;
+  }
+  .caseStudyhpsection .casestudyWrapper .secHeading {
+    width: 100%;
+  }
+  .caseStudyhpsection .casestudyWrapper .secHeading h2 {
+    line-height: 48px;
+  }
+  .caseStudyhpsection .casestudyWrapper .secHeading p {
+    line-height: 20px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes {
+    display: block;
+    margin: 32px 0px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-list {
+    margin: 0px -30px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-prev, .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-next {
+    position: absolute;
+    bottom: -75px;
+    top: unset;
+    background: #fff;
+    border: 2px solid #C0C6C9;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-prev::before, .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-next::before {
+    content: url(../images/slider-prev.svg);
+    opacity: 1;
+    scale: 0.7;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-prev.slick-next, .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-next.slick-next {
+    right: 50%;
+    transform: translateX(50px);
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-prev.slick-next::before, .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-next.slick-next::before {
+    content: url(../images/slider-next.svg);
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-prev.slick-prev, .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-next.slick-prev {
+    left: 50%;
+    transform: translateX(-50px);
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
+    width: unset;
+    margin: 0px 20px 0px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
+    transform: unset;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .casestudyImg img {
+    transform: rotate(0deg) scale(1);
+    transition: 0.3s all ease-out;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .casestudyImg::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.3;
+    transition: 0.5s all ease-out;
+    z-index: 1;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc {
+    bottom: 0;
+    margin: 16px;
+  }
+  .caseStudyhpsection .casestudyWrapper .ctaDiv {
+    margin-top: 100px;
+    text-align: center;
+  }
+  .caseStudyhpsection .casestudyWrapper .ctaDiv .ctaWhite {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .caseStudyhpsection .casestudyWrapper .secHeading h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .caseStudyhpsection .casestudyWrapper .secHeading p {
+    font-size: 14px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
+    margin: 0px 10px 0px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc h3 {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 10px 0px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc img {
+    width: 12px;
+  }
+  .caseStudyhpsection .casestudyWrapper .ctaDiv {
+    margin-top: 0px;
+  }
+  .caseStudyhpsection .casestudyWrapper .ctaDiv .ctaWhite {
+    width: 100%;
+  }
 }
 
 .servicehpSection {
@@ -818,7 +1282,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 20px 0px 60px;
+  margin-bottom: 60px;
 }
 @media screen and (max-width: 1920px) {
   .servicehpSection .serviceSecwrapper .secHeading {
@@ -862,45 +1326,48 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     padding-right: 20px;
   }
 }
-.servicehpSection .serviceSecwrapper .secHeading h2 {
+.servicehpSection .serviceSecwrapper .secHeading .innerHeading {
+  width: 50%;
+}
+.servicehpSection .serviceSecwrapper .secHeading .innerHeading h2 {
   font-size: 64px;
   font-weight: 500;
   line-height: 74px;
   letter-spacing: -1.5px;
 }
 @media screen and (max-width: 1600px) {
-  .servicehpSection .serviceSecwrapper .secHeading h2 {
+  .servicehpSection .serviceSecwrapper .secHeading .innerHeading h2 {
     font-size: 50px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .servicehpSection .serviceSecwrapper .secHeading h2 {
+  .servicehpSection .serviceSecwrapper .secHeading .innerHeading h2 {
     font-size: 42px;
   }
 }
 @media screen and (max-width: 720px) {
-  .servicehpSection .serviceSecwrapper .secHeading h2 {
+  .servicehpSection .serviceSecwrapper .secHeading .innerHeading h2 {
     font-size: 32px;
   }
 }
-.servicehpSection .serviceSecwrapper .secHeading p {
+.servicehpSection .serviceSecwrapper .secHeading .innerHeading p {
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
   margin-top: 15px;
 }
 @media screen and (max-width: 1600px) {
-  .servicehpSection .serviceSecwrapper .secHeading p {
+  .servicehpSection .serviceSecwrapper .secHeading .innerHeading p {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .servicehpSection .serviceSecwrapper .secHeading p {
+  .servicehpSection .serviceSecwrapper .secHeading .innerHeading p {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 720px) {
-  .servicehpSection .serviceSecwrapper .secHeading p {
+  .servicehpSection .serviceSecwrapper .secHeading .innerHeading p {
     font-size: 16px;
   }
 }
@@ -920,7 +1387,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     padding-right: 20px;
   }
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .innerBox {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox {
   background: #000;
   padding: 62px 0px;
   display: flex;
@@ -930,30 +1397,30 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   margin-top: 60px;
   transition: 0.3s all ease-out;
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .innerBox:nth-child(1) {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:nth-child(1) {
   margin-top: 0px;
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .innerBox .imgBox {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .imgBox {
   width: 25%;
   transition: 0.3s all ease-out;
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .innerBox .serviceDesc {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc {
   width: 50%;
   transition: 0.3s all ease-out;
   position: relative;
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .innerBox .serviceDesc::before {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc::before {
   content: "";
   position: absolute;
   background: url(../images/service-arrow.svg) no-repeat;
   background-size: contain;
   top: 0;
-  right: -250px;
+  right: -100%;
   height: 20px;
   width: 20px;
   transition: 0.3s all ease-out;
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .innerBox .serviceDesc h3 {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
   font-size: 36px;
   font-weight: 500;
   line-height: 46px;
@@ -962,24 +1429,24 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   padding-bottom: 30px;
 }
 @media screen and (max-width: 1600px) {
-  .servicehpSection .serviceSecwrapper .serviceBoxes .innerBox .serviceDesc h3 {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
     font-size: 28px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .servicehpSection .serviceSecwrapper .serviceBoxes .innerBox .serviceDesc h3 {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 720px) {
-  .servicehpSection .serviceSecwrapper .serviceBoxes .innerBox .serviceDesc h3 {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
     font-size: 14px;
   }
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .innerBox .serviceDesc ul {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul {
   padding-left: 30px;
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .innerBox .serviceDesc ul li {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -988,34 +1455,246 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   padding-top: 5px;
 }
 @media screen and (max-width: 1600px) {
-  .servicehpSection .serviceSecwrapper .serviceBoxes .innerBox .serviceDesc ul li {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .servicehpSection .serviceSecwrapper .serviceBoxes .innerBox .serviceDesc ul li {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .servicehpSection .serviceSecwrapper .serviceBoxes .innerBox .serviceDesc ul li {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
     font-size: 14px;
   }
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .innerBox:hover {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover {
   transition: 0.3s all ease-out;
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .innerBox:hover .serviceDesc {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .serviceDesc {
   width: 40%;
   transition: 0.3s all ease-out;
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .innerBox:hover .serviceDesc::before {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .serviceDesc::before {
   right: -70px;
   transition: 0.3s all ease-out;
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .innerBox:hover .imgBox {
-  scale: 2.1;
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .imgBox {
+  scale: 1.5;
   transition: 0.3s all ease-out;
+  transform: translateY(-40px);
+}
+@media screen and (max-width: 1600px) {
+  .servicehpSection {
+    margin-bottom: 350px;
+  }
+  .servicehpSection .serviceSecwrapper .secHeading {
+    margin-bottom: 50px;
+  }
+  .servicehpSection .serviceSecwrapper .secHeading .innerHeading h2 {
+    line-height: 60px;
+    letter-spacing: 0.5px;
+  }
+  .servicehpSection .serviceSecwrapper .secHeading .innerHeading p {
+    line-height: 28px;
+    margin-top: 12px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox {
+    padding: 55px 0px;
+    margin-top: 50px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .imgBox {
+    width: 23%;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc {
+    width: 53%;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc::before {
+    height: 18px;
+    width: 18px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
+    line-height: 36px;
+    letter-spacing: 0.4px;
+    padding-bottom: 25px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul {
+    padding-left: 25px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
+    line-height: 24px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .serviceDesc {
+    width: 43%;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .serviceDesc::before {
+    right: -70px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .imgBox {
+    transform: translateY(-35px);
+  }
+}
+@media screen and (max-width: 1400px) {
+  .servicehpSection {
+    margin-bottom: 300px;
+  }
+  .servicehpSection .serviceSecwrapper .secHeading {
+    margin-bottom: 40px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox {
+    padding: 45px 0px;
+    margin-top: 40px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc::before {
+    height: 16px;
+    width: 16px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
+    padding-bottom: 20px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
+    line-height: 22px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .imgBox {
+    transform: translateY(-30px);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .servicehpSection {
+    margin-bottom: 250px;
+  }
+  .servicehpSection .serviceSecwrapper .secHeading {
+    margin-bottom: 30px;
+  }
+  .servicehpSection .serviceSecwrapper .secHeading .innerHeading h2 {
+    line-height: 52px;
+  }
+  .servicehpSection .serviceSecwrapper .secHeading .innerHeading p {
+    line-height: 26px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox {
+    padding: 30px 0px;
+    margin-top: 30px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc::before {
+    height: 14px;
+    width: 14px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
+    padding-bottom: 16px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
+    line-height: 23px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .servicehpSection {
+    margin-bottom: 200px;
+  }
+  .servicehpSection .serviceSecwrapper .secHeading {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .servicehpSection .serviceSecwrapper .secHeading .innerHeading {
+    width: 100%;
+  }
+  .servicehpSection .serviceSecwrapper .secHeading .ctaService {
+    display: none;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .slick-list {
+    margin: 0px -30px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .slick-prev, .servicehpSection .serviceSecwrapper .serviceBoxes .slick-next {
+    position: absolute;
+    bottom: -75px;
+    top: unset;
+    background: #fff;
+    border: 2px solid #C0C6C9;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .slick-prev::before, .servicehpSection .serviceSecwrapper .serviceBoxes .slick-next::before {
+    content: url(../images/slider-prev.svg);
+    opacity: 1;
+    scale: 0.7;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .slick-prev.slick-next, .servicehpSection .serviceSecwrapper .serviceBoxes .slick-next.slick-next {
+    right: 50%;
+    transform: translateX(50px);
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .slick-prev.slick-next::before, .servicehpSection .serviceSecwrapper .serviceBoxes .slick-next.slick-next::before {
+    content: url(../images/slider-next.svg);
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .slick-prev.slick-prev, .servicehpSection .serviceSecwrapper .serviceBoxes .slick-next.slick-prev {
+    left: 50%;
+    transform: translateX(-50px);
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox {
+    padding: 0px 16px 55px;
+    display: block;
+    margin: 0px 20px 0px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .imgBox {
+    width: 65%;
+    transform: translateY(0px);
+    margin-bottom: 40px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc {
+    width: 100%;
+    position: relative;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc::before {
+    right: 16px;
+    top: 10px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
+    line-height: 32px;
+    letter-spacing: 1px;
+    padding-bottom: 25px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .serviceDesc {
+    width: 100%;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .serviceDesc::before {
+    right: 16px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .imgBox {
+    scale: unset;
+    transform: translateY(0px);
+  }
+}
+@media screen and (max-width: 620px) {
+  .servicehpSection {
+    margin-bottom: 150px;
+  }
+  .servicehpSection .serviceSecwrapper .secHeading .innerHeading h3 {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -0.9px;
+  }
+  .servicehpSection .serviceSecwrapper .secHeading .innerHeading p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 5px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox {
+    margin: 0px 10px 0px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: -0.6px;
+    padding-bottom: 20px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
+    letter-spacing: -0.42px;
+  }
 }
 
 .storyhpSection {
@@ -1068,7 +1747,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
 }
 .storyhpSection .storysecWrapper .secHeading {
-  padding: 20px 0px 60px;
+  margin-bottom: 60px;
 }
 .storyhpSection .storysecWrapper .secHeading h2 {
   font-size: 64px;
@@ -1195,11 +1874,46 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
 }
 .bookhpSection .booksecWrapper {
-  background: url(../images/bgcol.png) no-repeat;
-  background-size: cover;
-  backdrop-filter: blur(250px);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(180deg, #F00 0%, #FAFF00 16.15%, #05FB00 32.29%, #00FFE0 51.56%, #0029FF 68.75%, #FF00D6 84.9%, #F00 100%);
   padding: 115px 0px 65px;
   position: relative;
+  background-size: 400% 400%;
+  -webkit-animation: ani 20s ease infinite;
+  -moz-animation: ani 20s ease infinite;
+  animation: ani 20s ease infinite;
+}
+@-webkit-keyframes ani {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@-moz-keyframes ani {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@keyframes ani {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
 }
 .bookhpSection .booksecWrapper .bookInfodiv {
   position: absolute;
@@ -1264,7 +1978,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 .ourPartnershpsec .ourpartnerWrapper .secHeading {
   padding-left: 210px;
   padding-right: 210px;
-  padding-bottom: 45px;
+  margin-bottom: 45px;
 }
 @media screen and (max-width: 1920px) {
   .ourPartnershpsec .ourpartnerWrapper .secHeading {
@@ -1362,7 +2076,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 
 .customerhpsection {
-  margin-bottom: 322px;
+  margin-bottom: 400px;
 }
 .customerhpsection .customerWrapper {
   padding-left: 210px;
@@ -1412,9 +2126,6 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 .customerhpsection .customerWrapper .secHeading {
   width: 41%;
-}
-.customerhpsection .customerWrapper .secHeading.scrolled {
-  width: 100%;
 }
 .customerhpsection .customerWrapper .secHeading h2 {
   font-size: 64px;
@@ -1470,6 +2181,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   background-color: #fff;
   position: relative;
   overflow: hidden;
+  transition: 0.5s all ease-out;
 }
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes::before {
   content: "";
@@ -1494,8 +2206,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   transition: 0.3s all ease-out;
 }
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
-  transform: translateY(-300px);
-  margin-top: 0px;
+  transform: translateY(-60%);
 }
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
   font-size: 24px;
@@ -1503,6 +2214,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   line-height: 34px;
   padding-bottom: 170px;
   transition: 0.3s all ease-out;
+  color: #5A5A5A;
 }
 @media screen and (max-width: 1600px) {
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
@@ -1553,6 +2265,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
+  color: #5A5A5A;
 }
 @media screen and (max-width: 1600px) {
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData h4 {
@@ -1578,9 +2291,258 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover::after {
   transform: rotate(-5deg) translateY(15px);
 }
+@media screen and (max-width: 1600px) {
+  .customerhpsection {
+    margin-bottom: 300px;
+  }
+  .customerhpsection .customerWrapper .secHeading {
+    width: 43%;
+  }
+  .customerhpsection .customerWrapper .secHeading h2 {
+    line-height: 64px;
+  }
+  .customerhpsection .customerWrapper .secHeading p {
+    line-height: 28px;
+    margin-top: 28px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes {
+    margin-top: 120px;
+    padding: 140px 50px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes::before {
+    height: 90px;
+    width: 136px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes::after {
+    height: 90px;
+    width: 136px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
+    transform: translateY(-45%);
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
+    line-height: 30px;
+    padding-bottom: 140px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData .customerImgdiv {
+    width: 75px;
+    height: 75px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData h3 {
+    margin: 12px 0px 10px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover p {
+    transform: translateY(-15px);
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover .customerData {
+    transform: translateY(15px);
+  }
+}
+@media screen and (max-width: 1400px) {
+  .customerhpsection {
+    margin-bottom: 250px;
+  }
+  .customerhpsection .customerWrapper .secHeading {
+    width: 45%;
+  }
+  .customerhpsection .customerWrapper .secHeading h2 {
+    line-height: 60px;
+  }
+  .customerhpsection .customerWrapper .secHeading p {
+    line-height: 26px;
+    margin-top: 22px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes {
+    margin-top: 100px;
+    padding: 120px 40px;
+    width: 43%;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes::before {
+    height: 70px;
+    width: 110px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes::after {
+    height: 70px;
+    width: 110px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
+    transform: translateY(-53%);
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
+    padding-bottom: 120px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData .customerImgdiv {
+    width: 65px;
+    height: 65px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover p {
+    transform: translateY(-12px);
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover .customerData {
+    transform: translateY(12px);
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover::before {
+    transform: rotate(5deg) translateY(-10px);
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover::after {
+    transform: rotate(-5deg) translateY(10px);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .customerhpsection {
+    margin-bottom: 200px;
+  }
+  .customerhpsection .customerWrapper .secHeading h2 {
+    line-height: 54px;
+  }
+  .customerhpsection .customerWrapper .secHeading p {
+    line-height: 24px;
+    margin-top: 18px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes {
+    margin-top: 80px;
+    padding: 100px 30px;
+    width: 45%;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes::before {
+    height: 50px;
+    width: 90px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes::after {
+    height: 50px;
+    width: 90px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
+    transform: translateY(-40%);
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
+    padding-bottom: 100px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData .customerImgdiv {
+    width: 60px;
+    height: 60px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover::before {
+    transform: rotate(5deg) translateY(-8px);
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover::after {
+    transform: rotate(-5deg) translateY(8px);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .customerhpsection {
+    margin-bottom: 150px;
+  }
+  .customerhpsection .customerWrapper .secHeading {
+    width: 100%;
+  }
+  .customerhpsection .customerWrapper .secHeading h2 {
+    line-height: 48px;
+  }
+  .customerhpsection .customerWrapper .secHeading p {
+    line-height: 20px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes {
+    display: block;
+    margin: 32px 0px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .slick-list {
+    margin: 0px -30px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .slick-prev, .customerhpsection .customerWrapper .customerBoxes .slick-next {
+    position: absolute;
+    bottom: -75px;
+    top: unset;
+    background: #fff;
+    border: 2px solid #C0C6C9;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .slick-prev::before, .customerhpsection .customerWrapper .customerBoxes .slick-next::before {
+    content: url(../images/slider-prev.svg);
+    opacity: 1;
+    scale: 0.7;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .slick-prev.slick-next, .customerhpsection .customerWrapper .customerBoxes .slick-next.slick-next {
+    right: 50%;
+    transform: translateX(50px);
+  }
+  .customerhpsection .customerWrapper .customerBoxes .slick-prev.slick-next::before, .customerhpsection .customerWrapper .customerBoxes .slick-next.slick-next::before {
+    content: url(../images/slider-next.svg);
+  }
+  .customerhpsection .customerWrapper .customerBoxes .slick-prev.slick-prev, .customerhpsection .customerWrapper .customerBoxes .slick-next.slick-prev {
+    left: 50%;
+    transform: translateX(-50px);
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes {
+    padding: 100px 24px;
+    width: unset;
+    margin: 0px 20px 0px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes::before {
+    height: 58px;
+    width: 90px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes::after {
+    height: 58px;
+    width: 80px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
+    transform: unset;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
+    padding-bottom: 60px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData .customerImgdiv {
+    width: 50px;
+    height: 50px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover::before {
+    transform: rotate(5deg) translateY(-6px);
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover::after {
+    transform: rotate(-5deg) translateY(6px);
+  }
+}
+@media screen and (max-width: 620px) {
+  .customerhpsection .customerWrapper .secHeading h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .customerhpsection .customerWrapper .secHeading p {
+    font-size: 14px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes {
+    margin: 0px 10px 0px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
+    padding-bottom: 40px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes::before {
+    left: 30px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes::after {
+    right: 30px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData h4 {
+    color: #000;
+  }
+}
 
 .blogshpsection {
-  margin-bottom: 322px;
+  margin-bottom: 400px;
 }
 .blogshpsection .blogsWrapper {
   padding-left: 210px;
@@ -1631,9 +2593,6 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 .blogshpsection .blogsWrapper .secHeading {
   width: 41%;
 }
-.blogshpsection .blogsWrapper .secHeading.scrolled {
-  width: 100%;
-}
 .blogshpsection .blogsWrapper .secHeading h2 {
   font-size: 64px;
   font-weight: 500;
@@ -1681,20 +2640,21 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.blogshpsection .blogsWrapper .blogsBoxes .innerBoxes {
+.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes {
   width: 40%;
   margin-top: 150px;
   position: relative;
   overflow: hidden;
+  transition: 0.5s all ease-out;
 }
-.blogshpsection .blogsWrapper .blogsBoxes .innerBoxes:nth-child(even) {
-  transform: translateY(-300px);
-  margin-top: 0px;
+.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:nth-child(even) {
+  transform: translateY(-60%);
 }
-.blogshpsection .blogsWrapper .blogsBoxes .innerBoxes:nth-child(even) .blogDetails {
-  bottom: 0;
+.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogImg img {
+  scale: 1.5;
+  transition: 0.3s all ease-out;
 }
-.blogshpsection .blogsWrapper .blogsBoxes .innerBoxes .blogsData .blogDetails {
+.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails {
   background-color: #fff;
   padding: 58px 50px;
   margin: 30px;
@@ -1702,46 +2662,252 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   bottom: 0;
   transition: 0.3s all ease-out;
 }
-.blogshpsection .blogsWrapper .blogsBoxes .innerBoxes .blogsData .blogDetails h3 {
+.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h3 {
   font-size: 32px;
   font-weight: 400;
   line-height: 43px;
   margin-top: 30px;
 }
 @media screen and (max-width: 1600px) {
-  .blogshpsection .blogsWrapper .blogsBoxes .innerBoxes .blogsData .blogDetails h3 {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h3 {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .blogshpsection .blogsWrapper .blogsBoxes .innerBoxes .blogsData .blogDetails h3 {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h3 {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 720px) {
-  .blogshpsection .blogsWrapper .blogsBoxes .innerBoxes .blogsData .blogDetails h3 {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h3 {
     font-size: 14px;
   }
 }
-.blogshpsection .blogsWrapper .blogsBoxes .innerBoxes .blogsData .blogDetails h4 {
+.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h4 {
   font-size: 16px;
   font-weight: 600;
   line-height: 1;
   letter-spacing: 0.8px;
 }
 @media screen and (max-width: 1600px) {
-  .blogshpsection .blogsWrapper .blogsBoxes .innerBoxes .blogsData .blogDetails h4 {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h4 {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 720px) {
-  .blogshpsection .blogsWrapper .blogsBoxes .innerBoxes .blogsData .blogDetails h4 {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h4 {
     font-size: 12px;
   }
 }
-.blogshpsection .blogsWrapper .blogsBoxes .innerBoxes:hover .blogsData .blogDetails {
+.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:hover .blogsData .blogImg img {
+  scale: unset;
+  transition: 0.3s all ease-out;
+}
+.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:hover .blogsData .blogDetails {
   margin: 0px;
   transition: 0.3s all ease-out;
+}
+.blogshpsection .blogsWrapper .ctaDiv {
+  text-align: right;
+  margin-top: -150px;
+}
+.blogshpsection .blogsWrapper .ctaDiv .ctaWhite {
+  width: 40%;
+  text-align: center;
+}
+@media screen and (max-width: 1600px) {
+  .blogshpsection {
+    margin-bottom: 300px;
+  }
+  .blogshpsection .blogsWrapper .secHeading {
+    width: 43%;
+  }
+  .blogshpsection .blogsWrapper .secHeading h2 {
+    line-height: 64px;
+  }
+  .blogshpsection .blogsWrapper .secHeading p {
+    line-height: 28px;
+    margin-top: 28px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes {
+    margin-top: 120px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:nth-child(even) {
+    transform: translateY(-35%);
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails {
+    padding: 50px 45px;
+    margin: 25px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h3 {
+    line-height: 30px;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .blogshpsection {
+    margin-bottom: 250px;
+  }
+  .blogshpsection .blogsWrapper .secHeading {
+    width: 45%;
+  }
+  .blogshpsection .blogsWrapper .secHeading h2 {
+    line-height: 60px;
+  }
+  .blogshpsection .blogsWrapper .secHeading p {
+    line-height: 26px;
+    margin-top: 22px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes {
+    width: 43%;
+    margin-top: 100px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:nth-child(even) {
+    transform: translateY(-30%);
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails {
+    padding: 40px 35px;
+    margin: 20px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h3 {
+    line-height: 28px;
+    margin-top: 22px;
+  }
+  .blogshpsection .blogsWrapper .ctaDiv .ctaWhite {
+    width: 43%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .blogshpsection {
+    margin-bottom: 200px;
+  }
+  .blogshpsection .blogsWrapper .secHeading h2 {
+    line-height: 54px;
+  }
+  .blogshpsection .blogsWrapper .secHeading p {
+    line-height: 24px;
+    margin-top: 18px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes {
+    width: 45%;
+    margin-top: 80px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:nth-child(even) {
+    transform: translateY(-40%);
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails {
+    padding: 30px 25px;
+    margin: 15px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h3 {
+    line-height: 26px;
+    margin-top: 20px;
+  }
+  .blogshpsection .blogsWrapper .ctaDiv .ctaWhite {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .blogshpsection {
+    margin-bottom: 150px;
+  }
+  .blogshpsection .blogsWrapper .secHeading {
+    width: 100%;
+  }
+  .blogshpsection .blogsWrapper .secHeading h2 {
+    line-height: 48px;
+  }
+  .blogshpsection .blogsWrapper .secHeading p {
+    line-height: 20px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes {
+    display: block;
+    margin: 32px 0px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .slick-list {
+    margin: 0px -30px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .slick-prev, .blogshpsection .blogsWrapper .blogsBoxes .slick-next {
+    position: absolute;
+    bottom: -75px;
+    top: unset;
+    background: #fff;
+    border: 2px solid #C0C6C9;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .slick-prev::before, .blogshpsection .blogsWrapper .blogsBoxes .slick-next::before {
+    content: url(../images/slider-prev.svg);
+    opacity: 1;
+    scale: 0.7;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .slick-prev.slick-next, .blogshpsection .blogsWrapper .blogsBoxes .slick-next.slick-next {
+    right: 50%;
+    transform: translateX(50px);
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .slick-prev.slick-next::before, .blogshpsection .blogsWrapper .blogsBoxes .slick-next.slick-next::before {
+    content: url(../images/slider-next.svg);
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .slick-prev.slick-prev, .blogshpsection .blogsWrapper .blogsBoxes .slick-next.slick-prev {
+    left: 50%;
+    transform: translateX(-50px);
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes {
+    width: unset;
+    margin: 0px 20px 0px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:nth-child(even) {
+    transform: unset;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogImg img {
+    scale: 1;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails {
+    padding: 25px 20px;
+    margin: 0px;
+  }
+  .blogshpsection .blogsWrapper .ctaDiv {
+    margin-top: 100px;
+    text-align: center;
+  }
+  .blogshpsection .blogsWrapper .ctaDiv .ctaWhite {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .blogshpsection .blogsWrapper .secHeading h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .blogshpsection .blogsWrapper .secHeading p {
+    font-size: 14px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes {
+    margin: 0px 10px 0px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogImg img {
+    scale: 1;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails {
+    padding: 25px 20px;
+    margin: 0px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h3 {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 10px 0px;
+  }
+  .blogshpsection .blogsWrapper .ctaDiv {
+    margin-top: 0px;
+  }
+  .blogshpsection .blogsWrapper .ctaDiv .ctaWhite {
+    width: 100%;
+  }
 }
 
 footer {
@@ -1858,6 +3024,7 @@ footer .footerWrapper .footerData .footerSubscribe .signup {
 }
 footer .footerWrapper .footerData .footerSubscribe .signup form {
   display: flex;
+  justify-content: space-between;
 }
 footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
   background-color: #000;
@@ -1882,7 +3049,7 @@ footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submi
   }
 }
 footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
-  width: 80%;
+  width: 46%;
   color: #000;
   font-size: 14px;
   font-weight: 400;
@@ -1975,4 +3142,248 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 1600px) {
+  footer {
+    margin-bottom: 60px;
+  }
+  footer .footerWrapper {
+    padding: 120px 130px;
+  }
+  footer .footerWrapper .footerData {
+    padding: 80px 0px 65px;
+  }
+  footer .footerWrapper .footerData .footerMenus {
+    width: 28%;
+  }
+  footer .footerWrapper .footerData .footerMenus ul li {
+    margin-top: 16px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe {
+    width: 32%;
+  }
+  footer .footerWrapper .footerData .footerSubscribe p {
+    margin: 10px 0px 20px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup {
+    padding: 3px 3px 3px 20px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
+    width: 52%;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv {
+    width: 32%;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv h3 {
+    margin-bottom: 12px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li {
+    margin-right: 12px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li a {
+    height: 32px;
+    width: 32px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  footer {
+    margin-bottom: 50px;
+  }
+  footer .footerWrapper {
+    padding: 100px;
+  }
+  footer .footerWrapper .footerData {
+    padding: 60px 0px 45px;
+  }
+  footer .footerWrapper .footerData .footerMenus {
+    width: 32%;
+  }
+  footer .footerWrapper .footerData .footerMenus ul li {
+    margin-top: 14px;
+  }
+  footer .footerWrapper .footerData .footerGame {
+    width: 32%;
+  }
+  footer .footerWrapper .footerData .footerSubscribe p {
+    margin: 8px 0px 18px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup {
+    padding: 3px 3px 3px 18px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
+    padding: 10px 16px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
+    width: 56%;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv h3 {
+    margin-bottom: 10px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li {
+    margin-right: 10px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li a {
+    height: 30px;
+    width: 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  footer .footerWrapper {
+    padding: 70px;
+  }
+  footer .footerWrapper .footerData {
+    padding: 50px 0px 35px;
+  }
+  footer .footerWrapper .footerData .footerMenus ul li {
+    margin-top: 12px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe p {
+    margin: 8px 0px 16px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup {
+    padding: 3px 3px 3px 18px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
+    padding: 10px 14px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
+    width: 49%;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li a {
+    height: 25px;
+    width: 25px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li a img {
+    width: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  footer {
+    margin-bottom: 150px;
+  }
+  footer .footerWrapper {
+    padding: 40px 16px;
+  }
+  footer .footerWrapper .footerData {
+    padding: 40px 0px 48px;
+    display: block;
+  }
+  footer .footerWrapper .footerData .footerMenus {
+    width: 100%;
+  }
+  footer .footerWrapper .footerData .footerMenus ul li {
+    width: 100%;
+    margin-top: 22px;
+  }
+  footer .footerWrapper .footerData .footerMenus ul li:nth-child(2) {
+    margin-top: 22px;
+  }
+  footer .footerWrapper .footerData .footerGame {
+    width: 100%;
+  }
+  footer .footerWrapper .footerData .footerSubscribe {
+    width: 100%;
+    margin-top: 20px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe h2 {
+    text-align: center;
+  }
+  footer .footerWrapper .footerData .footerSubscribe p {
+    text-align: center;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup {
+    display: block;
+    border: none;
+    padding: 0;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form {
+    display: block;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
+    display: block;
+    text-align: center;
+    margin: 10px auto 0px;
+    padding: 12px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
+    border-radius: 6px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding: 16px;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+  footer .footerWrapper .socialIcons {
+    flex-flow: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footerWrapper .socialIcons .copyright h4 {
+    width: 100%;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv h3 {
+    margin-bottom: 16px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul {
+    justify-content: center;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li a {
+    height: 30px;
+    width: 30px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li a img {
+    width: 15px;
+  }
+}
+@media screen and (max-width: 580px) {
+  footer .footerWrapper .footerLogo {
+    width: 60%;
+  }
+  footer .footerWrapper .footerData .footerMenus ul li a {
+    font-size: 14px;
+    line-height: 1;
+  }
+  footer .footerWrapper .footerData .footerSubscribe h2 {
+    font-size: 14px;
+    letter-spacing: -0.48px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe p {
+    font-size: 14px;
+    margin: 10px 0px 24px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
+    width: 100%;
+    line-height: 18px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
+    width: 100%;
+    font-size: 14px;
+  }
+  footer .footerWrapper .socialIcons .copyright h4 {
+    text-align: center;
+    line-height: 16px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv h3 {
+    font-size: 16px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li {
+    margin-right: 15px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li a {
+    height: 30px;
+    width: 30px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li a img {
+    width: 15px;
+  }
 }/*# sourceMappingURL=main.css.map */
