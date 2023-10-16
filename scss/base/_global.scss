@@ -372,7 +372,19 @@ body{
     }
 }
 
+@mixin font28 {
+    font-size: 28px;
 
+    @media screen and (max-width:1600px) {
+        font-size: 24px;
+    }
+    @media screen and (max-width:1200px) {
+        font-size: 20px;
+    }
+    @media screen and (max-width:720px) {
+        font-size: 18px;
+    }
+}
 
 
 @mixin font24 {
@@ -496,4 +508,36 @@ img {max-width: 100%;}
     @media screen and (max-width:720px) {
         padding: 14px 24px;
     }
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: $fontW300;
+    @include font20;
+    letter-spacing: -0.44px;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: $fontW300;
+    @include font20;
+    letter-spacing: -0.44px;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: $fontW300;
+    @include font20;
+    letter-spacing: -0.44px;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: $fontW300;
+    @include font20;
+    letter-spacing: -0.44px;
 }
