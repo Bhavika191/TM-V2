@@ -2308,6 +2308,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   padding-left: 210px;
   padding-right: 210px;
   margin-bottom: 45px;
+  width: 60%;
 }
 @media screen and (max-width: 1600px) {
   .ourPartnershpsec .ourpartnerWrapper .secHeading {
@@ -2344,7 +2345,6 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   font-weight: 500;
   line-height: 74px;
   letter-spacing: -1.5px;
-  width: 60%;
 }
 @media screen and (max-width: 1600px) {
   .ourPartnershpsec .ourpartnerWrapper .secHeading h2 {
@@ -2406,7 +2406,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     margin-top: 28px;
   }
   .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
-    padding: 80px 115px;
+    padding: 80px 100px;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -2415,6 +2415,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .ourPartnershpsec .ourpartnerWrapper .secHeading {
     margin-bottom: 30px;
+    width: 70%;
   }
   .ourPartnershpsec .ourpartnerWrapper .secHeading h2 {
     line-height: 60px;
@@ -2424,7 +2425,59 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     margin-top: 22px;
   }
   .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
-    padding: 70px 105px;
+    padding: 70px 80px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .ourPartnershpsec {
+    margin-bottom: 250px;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .secHeading {
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .secHeading h2 {
+    line-height: 54px;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .secHeading p {
+    line-height: 24px;
+    margin-top: 18px;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
+    padding: 50px 60px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .ourPartnershpsec {
+    margin-bottom: 200px;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .secHeading {
+    width: 100%;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .secHeading h2 {
+    line-height: 48px;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .secHeading p {
+    line-height: 20px;
+    margin: 20px 0px 40px;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
+    padding: 40px 80px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .ourPartnershpsec {
+    margin-bottom: 150px;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .secHeading h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .secHeading p {
+    font-size: 14px;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
+    padding: 32px 25px;
   }
 }
 
