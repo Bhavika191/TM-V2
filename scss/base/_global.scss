@@ -250,31 +250,23 @@ body{
     padding-left: 210px;
     padding-right: 210px;
 
-    @media screen and (max-width:1920px) {
+    @media screen and (max-width:1600px) {
         padding-left: 180px;
         padding-right: 180px;
     }
-    @media screen and (max-width:1600px) {
+    @media screen and (max-width:1400px) {
         padding-left: 150px;
         padding-right: 150px;
     }
-    @media screen and (max-width:1400px) {
+    @media screen and (max-width:1200px) {
         padding-left: 120px;
         padding-right: 120px;
     }
-    @media screen and (max-width:1200px) {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
     @media screen and (max-width:1024px) {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
-    @media screen and (max-width:720px) {
         padding-left: 50px;
         padding-right: 50px;
     }
-    @media screen and (max-width:680px) {
+    @media screen and (max-width:720px) {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -473,7 +465,7 @@ img {max-width: 100%;}
 
 
 
-.ctaWhite { padding: 14px 24px;@include font14;line-height: 18px;font-weight: $fontW700;display: inline-block;cursor: pointer;border-radius: 6px;border: 1px solid #000;background: #ffffff;text-decoration: none;color: #000;text-decoration: none; transition: 0.5s all ease-in-out;letter-spacing: 0.7px;text-transform: uppercase;text-align: center;
+.ctaWhite { padding: 14px 24px;@include font14;line-height: 18px;font-weight: $fontW700;display: inline-block;cursor: pointer;border-radius: 6px;border: 1px solid #000;background: transparent;text-decoration: none;color: #000;text-decoration: none; transition: 0.5s all ease-in-out;letter-spacing: 0.7px;text-transform: uppercase;text-align: center;
 
     &:hover{background: #000;color: #fff;}
 

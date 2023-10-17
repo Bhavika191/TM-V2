@@ -56,9 +56,14 @@ $('.logoSlider').slick({
     slidesToShow: 4,
     autoplay: true,
     infinite: true,
+    cssEase: 'linear',
+    rtl: false,
+    pauseOnHover:false,
+    speed:3000,
+    autoplaySpeed: 0,  
     responsive: [
       {
-        breakpoint: 920,
+        breakpoint: 1025,
         settings: {
           slidesToShow: 3,
         }
@@ -77,7 +82,7 @@ if ($(window).width() < 1025) {
         infinite: true,
         responsive: [
           {
-            breakpoint: 620,
+            breakpoint: 680,
             settings: {
               arrows: false,
               centerMode: true,
@@ -101,7 +106,7 @@ if ($(window).width() < 1025) {
         infinite: true,
         responsive: [
           {
-            breakpoint: 620,
+            breakpoint: 680,
             settings: {
               arrows: false,
               centerMode: true,
@@ -124,7 +129,7 @@ if ($(window).width() < 1025) {
         infinite: true,
         responsive: [
           {
-            breakpoint: 620,
+            breakpoint: 680,
             settings: {
               arrows: false,
               centerMode: true,
@@ -148,7 +153,7 @@ if ($(window).width() < 1025) {
         infinite: true,
         responsive: [
           {
-            breakpoint: 620,
+            breakpoint: 680,
             settings: {
               arrows: false,
               centerMode: true,
