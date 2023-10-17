@@ -715,6 +715,30 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
             .logoImg{padding: 92px 125px}
         }
     }
+    @media screen and (max-width:1600px) {margin-bottom: 350px;
+        .ourpartnerWrapper{
+            .secHeading{margin-bottom: 35px;
+                h2{line-height: 64px;}
+                p{line-height: 28px;margin-top: 28px;}
+            }
+            .logoSlider{
+                .logoImg{padding: 80px 115px}
+            }
+        }
+        
+    }
+    @media screen and (max-width:1400px) {margin-bottom: 300px;
+        .ourpartnerWrapper{
+            .secHeading{margin-bottom: 30px;
+                h2{line-height: 60px;}
+                p{line-height: 26px;margin-top: 22px;}
+            }
+            .logoSlider{
+                .logoImg{padding: 70px 105px}
+            }
+        }
+        
+    }
 }
 
 .customerhpsection{margin-bottom: 400px;

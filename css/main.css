@@ -2391,6 +2391,42 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
   padding: 92px 125px;
 }
+@media screen and (max-width: 1600px) {
+  .ourPartnershpsec {
+    margin-bottom: 350px;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .secHeading {
+    margin-bottom: 35px;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .secHeading h2 {
+    line-height: 64px;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .secHeading p {
+    line-height: 28px;
+    margin-top: 28px;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
+    padding: 80px 115px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .ourPartnershpsec {
+    margin-bottom: 300px;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .secHeading {
+    margin-bottom: 30px;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .secHeading h2 {
+    line-height: 60px;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .secHeading p {
+    line-height: 26px;
+    margin-top: 22px;
+  }
+  .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
+    padding: 70px 105px;
+  }
+}
 
 .customerhpsection {
   margin-bottom: 400px;
@@ -3699,43 +3735,31 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   justify-content: space-between;
   padding-right: 60px !important;
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1600px) {
   .collaborateFormSec .collaborateSec {
     padding-left: 180px;
     padding-right: 180px;
   }
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1400px) {
   .collaborateFormSec .collaborateSec {
     padding-left: 150px;
     padding-right: 150px;
   }
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   .collaborateFormSec .collaborateSec {
     padding-left: 120px;
     padding-right: 120px;
   }
 }
-@media screen and (max-width: 1200px) {
-  .collaborateFormSec .collaborateSec {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-}
 @media screen and (max-width: 1024px) {
-  .collaborateFormSec .collaborateSec {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-}
-@media screen and (max-width: 720px) {
   .collaborateFormSec .collaborateSec {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 720px) {
   .collaborateFormSec .collaborateSec {
     padding-left: 20px;
     padding-right: 20px;
@@ -3878,43 +3902,31 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   flex-flow: wrap;
   justify-content: space-between;
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1600px) {
   .meetupAdderssSec .meetupAdderssContainer {
     padding-left: 180px;
     padding-right: 180px;
   }
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1400px) {
   .meetupAdderssSec .meetupAdderssContainer {
     padding-left: 150px;
     padding-right: 150px;
   }
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   .meetupAdderssSec .meetupAdderssContainer {
     padding-left: 120px;
     padding-right: 120px;
   }
 }
-@media screen and (max-width: 1200px) {
-  .meetupAdderssSec .meetupAdderssContainer {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-}
 @media screen and (max-width: 1024px) {
-  .meetupAdderssSec .meetupAdderssContainer {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-}
-@media screen and (max-width: 720px) {
   .meetupAdderssSec .meetupAdderssContainer {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 720px) {
   .meetupAdderssSec .meetupAdderssContainer {
     padding-left: 20px;
     padding-right: 20px;
