@@ -2308,7 +2308,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   padding-left: 210px;
   padding-right: 210px;
   margin-bottom: 45px;
-  width: 60%;
+  width: 75%;
 }
 @media screen and (max-width: 1600px) {
   .ourPartnershpsec .ourpartnerWrapper .secHeading {
@@ -2389,7 +2389,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   border-bottom: 1px solid #000;
 }
 .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
-  padding: 92px 125px;
+  padding: 70px 125px;
 }
 @media screen and (max-width: 1600px) {
   .ourPartnershpsec {
@@ -2406,7 +2406,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     margin-top: 28px;
   }
   .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
-    padding: 80px 100px;
+    padding: 50px 100px;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -2425,7 +2425,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     margin-top: 22px;
   }
   .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
-    padding: 70px 80px;
+    padding: 40px 80px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -2434,7 +2434,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .ourPartnershpsec .ourpartnerWrapper .secHeading {
     margin-bottom: 20px;
-    width: 80%;
+    width: 60%;
   }
   .ourPartnershpsec .ourpartnerWrapper .secHeading h2 {
     line-height: 54px;
@@ -2444,7 +2444,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     margin-top: 18px;
   }
   .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
-    padding: 50px 60px;
+    padding: 32px 60px;
   }
 }
 @media screen and (max-width: 1025px) {
@@ -2462,7 +2462,12 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     margin: 20px 0px 40px;
   }
   .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
-    padding: 40px 80px;
+    padding: 32px 80px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
+    padding: 32px 50px;
   }
 }
 @media screen and (max-width: 680px) {
