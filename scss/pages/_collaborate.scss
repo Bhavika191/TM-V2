@@ -1,0 +1,35 @@
+.collaborateFormSec{margin: 210px 0px 400px;
+    .collaborateSec{@include wrapperTwo; display: flex; flex-flow: wrap; justify-content: space-between; padding-right: 60px !important;
+        .secHeading{width: 45%;
+            h1{@include font96;font-weight: $fontW500;line-height: 106px;letter-spacing: -2px;margin-bottom: 15px;}
+            p{@include font24;font-weight: $fontW400;line-height: 34px;}
+        }
+        .collaborateForm{width: 40%; padding: 60px;background: #ffffff;
+            form{
+                label{display: block;color: #6A6A6A;@include font18;font-weight: $fontW400;line-height: 14px;margin-bottom: 12px;}
+                input, textarea{@include font28;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.56px;color: #000000;padding-bottom: 12px;border-bottom: 1px solid #000000;width: 100%;margin-bottom: 60px;}
+                input[type=submit]{@include font14;font-weight: $fontW700;line-height: 18px;letter-spacing: 0.7px;text-transform: uppercase;color: #ffffff;border: 0px;width: auto;margin: 0;padding: 14px 28px;border-radius: 6px;border: 1px solid #FF0D47;background: #FF0D47;}
+            }
+        }
+    }
+}
+
+.meetupAdderssSec{
+    .meetupAdderssContainer{@include wrapperTwo;display: flex; flex-flow: wrap; justify-content: space-between;
+        .meetupAddBox{width: 35%;margin-bottom: 150px; background: #ffffff;
+            &.secHeading{background: transparent;
+                h2{color: #000; @include font64; font-weight: $fontW500;line-height: 74px;letter-spacing: -1.92px;margin-bottom: 15px;}
+                p{@include font24;font-weight: $fontW400;line-height: 34px;}
+            }
+            &:nth-child(odd){transform: translateY(-80%);}
+            &:first-child{transform: translateY(0px);}
+            .stateOff{transition: 0.5s all ease-in-out;height: auto;overflow: hidden;}
+            .stateAddMap{transition: 0.5s all ease-in-out;
+                .stateAdd{padding: 50px 50px;}
+            }
+            &:hover{
+                .stateOff{visibility: hidden;height: 0;}
+            }
+        }
+    }
+}
