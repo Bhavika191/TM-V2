@@ -77,7 +77,7 @@ if ($(window).width() < 1025) {
         infinite: true,
         responsive: [
           {
-            breakpoint: 620,
+            breakpoint: 680,
             settings: {
               arrows: false,
               centerMode: true,
@@ -101,7 +101,7 @@ if ($(window).width() < 1025) {
         infinite: true,
         responsive: [
           {
-            breakpoint: 620,
+            breakpoint: 680,
             settings: {
               arrows: false,
               centerMode: true,
@@ -124,7 +124,7 @@ if ($(window).width() < 1025) {
         infinite: true,
         responsive: [
           {
-            breakpoint: 620,
+            breakpoint: 680,
             settings: {
               arrows: false,
               centerMode: true,
@@ -148,7 +148,7 @@ if ($(window).width() < 1025) {
         infinite: true,
         responsive: [
           {
-            breakpoint: 620,
+            breakpoint: 680,
             settings: {
               arrows: false,
               centerMode: true,
