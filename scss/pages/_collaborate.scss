@@ -1,0 +1,79 @@
+.collaborateFormSec{margin: 210px 0px 400px;
+    .collaborateSec{@include wrapperTwo; display: flex; flex-flow: wrap; justify-content: space-between; padding-right: 60px !important;
+        .secHeading{width: 45%;
+            h1{@include font96;font-weight: $fontW500;line-height: 106px;letter-spacing: -2px;margin-bottom: 15px;}
+            p{@include font24;font-weight: $fontW400;line-height: 34px;}
+        }
+        .collaborateForm{width: 40%; padding: 60px;background: #ffffff;
+            form{
+                label{display: block;color: #6A6A6A;@include font18;font-weight: $fontW400;line-height: 14px;margin-bottom: 12px;}
+                input, textarea{@include font28;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.56px;color: #000000;padding-bottom: 12px;border-bottom: 1px solid #000000;width: 100%;margin-bottom: 60px;}
+                input[type=submit]{@include font14;font-weight: $fontW700;line-height: 18px;letter-spacing: 0.7px;text-transform: uppercase;color: #ffffff;border: 0px;width: auto;margin: 0;padding: 14px 28px;border-radius: 6px;border: 1px solid #FF0D47;background: #FF0D47;}
+            }
+        }
+    }
+}
+
+.meetupAdderssSec{
+    .meetupAdderssContainer{@include wrapperTwo;
+        .secHeading{width: 40%; margin-bottom:150px;
+            h2{color: #000; @include font64; font-weight: $fontW500;line-height: 74px;letter-spacing: -1.92px;margin-bottom: 15px;}
+            p{@include font24;font-weight: $fontW400;line-height: 34px;}
+        }
+        .meetupAdderssContent{display: flex;justify-content: space-between;flex-wrap: wrap;;
+            .meetupAddBox{width: 35%;margin-bottom: 150px; background: #ffffff;overflow: hidden; height: 750px;position: relative;
+                &:nth-child(even){transform: translateY(-55%);}
+                &:first-child{transform: translateY(0px);}
+                .stateOff{transition: 0.6s all ease-in-out;height: 200px;overflow: hidden;position: absolute;top: 30px;
+                    &.mumbaiOff{left: -800px; width: 800px;animation: mumbaiOff 6s linear infinite;}
+                    &.delhiOff{left: -500px; width: 500px;animation: delhiOff 6s linear infinite;}
+                    &.bangaloreOff{left: -1000px; width: 1000px;animation: bangaloreOff 8s linear infinite;}
+                }
+                @keyframes mumbaiOff {
+                    0% {
+                        transform: translateX(calc(#{800px} + #{800px}));
+                    }
+                }
+                @keyframes delhiOff {
+                    0% {
+                        transform: translateX(calc(#{500px} + #{500px}));
+                    }
+                }
+                @keyframes bangaloreOff {
+                    0% {
+                        transform: translateX(calc(#{1000px} + #{1000px}));
+                    }
+                }
+                .stateAddMap{transition: 0.6s all ease-in-out;height: 75%; margin-top: 200px;
+                    .stateAdd{padding: 50px 50px;
+                        p{color: #5A5A5A;@include font20;font-weight: $fontW400;line-height: 30px;}
+                    }
+                    .stateMap{position: relative;
+                        .mapLink{position: absolute;top: 0;left: 0;right: 0;width: 100%;height: 100%;background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%); display: flex; justify-content: center; align-items: center; opacity: 0; transition: 0.6s all ease-in-out;
+                            a{color: #FFF;text-align: center;@include font20;font-weight: $fontW700;line-height: 18px;letter-spacing: 1px;text-transform: uppercase;display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;
+                                img{margin-left: 10px;width: 20px;}
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    .stateOff{height: 0;transform: translateY(-250px);}
+                    .stateAddMap{height: 100%;margin-top: 0px;
+                        .stateMap{
+                            .mapLink{opacity: 1;}
+                        }
+                    }
+                }
+                &.mailContact{
+                    background: #000000;
+                    .MailIds{
+                        .idsBox{
+                            h3{color: #FFF;@include font40;font-weight: $fontW500;line-height: 40px;letter-spacing: -1.2px;}
+                            a{color: #FFF;@include font20;font-weight: $fontW400;line-height: 20px;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
