@@ -14,14 +14,14 @@
     }
 }
 
-.meetupAdderssSec{
+.meetupAdderssSec{margin-bottom: 250px;
     .meetupAdderssContainer{@include wrapperTwo;
         .secHeading{width: 40%; margin-bottom:150px;
             h2{color: #000; @include font64; font-weight: $fontW500;line-height: 74px;letter-spacing: -1.92px;margin-bottom: 15px;}
             p{@include font24;font-weight: $fontW400;line-height: 34px;}
         }
         .meetupAdderssContent{display: flex;justify-content: space-between;flex-wrap: wrap;;
-            .meetupAddBox{width: 35%;margin-bottom: 150px; background: #ffffff;overflow: hidden; height: 750px;position: relative;
+            .meetupAddBox{width: 40%;margin-bottom: 150px; background: #ffffff;overflow: hidden; height: 800px;position: relative;
                 &:nth-child(even){transform: translateY(-55%);}
                 &:first-child{transform: translateY(0px);}
                 .stateOff{transition: 0.6s all ease-in-out;height: 200px;overflow: hidden;position: absolute;top: 30px;
@@ -66,10 +66,26 @@
                 }
                 &.mailContact{
                     background: #000000;
+                    .mailIcon{height: 48%;
+                        img{transform: translate(-10%, -15%);width: 80%;transition: 0.5s all ease-out;}
+                    }
                     .MailIds{
-                        .idsBox{
-                            h3{color: #FFF;@include font40;font-weight: $fontW500;line-height: 40px;letter-spacing: -1.2px;}
+                        .idsBox{border-bottom: 1px solid rgba(255,255,255,0.3);margin: 0px 50px 30px;padding-bottom:30px;position: relative;
+                            &:first-child{margin-top: 0px;}
+                            &:last-child{border-bottom: 0px;}
+                            &::before{content: "";position: absolute;background: url(../images/service-arrow.svg)  no-repeat;background-size: contain;top: 50%;transform: translateY(-50%);right: -100px;height: 20px;width: 20px;transition: 0.5s all ease-out;}
+                            h3{color: #FFF;@include font40;font-weight: $fontW500;line-height: 40px;letter-spacing: -1.2px;margin-bottom: 14px;}
                             a{color: #FFF;@include font20;font-weight: $fontW400;line-height: 20px;}
+                        }
+                    }
+                    &:hover{
+                        .mailIcon{height: 48%;
+                            img{transform: translate(120%, -15%) rotate(-30deg);width: 50%;}
+                        }
+                        .MailIds{
+                            .idsBox{
+                                &::before{right: 24px;}
+                            }
                         }
                     }
                 }
