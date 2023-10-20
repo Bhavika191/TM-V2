@@ -706,13 +706,13 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
 
 .ourPartnershpsec{margin-bottom: 400px;
     .ourpartnerWrapper{
-        .secHeading{@include wrapperTwo;margin-bottom: 45px;width: 60%;
+        .secHeading{@include wrapperTwo;margin-bottom: 45px;width: 75%;
             h2{@include font64;font-weight: $fontW500;line-height: 74px;letter-spacing: -1.5px;}
             p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;}
         }
         .logoSlider{border-top: 1px solid #000;
             &:last-child{border-bottom: 1px solid #000;}
-            .logoImg{padding: 92px 125px}
+            .logoImg{padding: 70px 125px}
         }
     }
     @media screen and (max-width:1600px) {margin-bottom: 350px;
@@ -722,7 +722,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
                 p{line-height: 28px;margin-top: 28px;}
             }
             .logoSlider{
-                .logoImg{padding: 80px 100px}
+                .logoImg{padding: 50px 100px}
             }
         }
         
@@ -734,19 +734,19 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
                 p{line-height: 26px;margin-top: 22px;}
             }
             .logoSlider{
-                .logoImg{padding: 70px 80px}
+                .logoImg{padding: 40px 80px}
             }
         }
         
     }
     @media screen and (max-width:1280px) {margin-bottom: 250px;
         .ourpartnerWrapper{
-            .secHeading{margin-bottom: 20px;width: 80%;
+            .secHeading{margin-bottom: 20px;width: 60%;
                 h2{line-height: 54px;}
                 p{line-height: 24px;margin-top: 18px;}
             }
             .logoSlider{
-                .logoImg{padding: 50px 60px}
+                .logoImg{padding: 32px 60px}
             }
         }
         
@@ -758,7 +758,15 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
                 p{line-height: 20px;margin: 20px 0px 40px;}
             }
             .logoSlider{
-                .logoImg{padding: 40px 80px}
+                .logoImg{padding: 32px 80px}
+            }
+        }
+        
+    }
+    @media screen and (max-width:780px) {
+        .ourpartnerWrapper{
+            .logoSlider{
+                .logoImg{padding: 32px 50px}
             }
         }
         
