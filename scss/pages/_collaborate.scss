@@ -1,6 +1,6 @@
-.collaborateFormSec{margin: 210px 0px 400px;
+.collaborateFormSec{margin: 100px 0px 400px;
     .collaborateSec{@include wrapperTwo; display: flex; flex-flow: wrap; justify-content: space-between; padding-right: 60px !important;
-        .secHeading{width: 45%;
+        .secHeading{width: 45%; margin-top: 120px;
             h1{@include font96;font-weight: $fontW500;line-height: 106px;letter-spacing: -2px;margin-bottom: 15px;}
             p{@include font24;font-weight: $fontW400;line-height: 34px;}
         }

@@ -4742,7 +4742,7 @@ body {
 }
 
 .collaborateFormSec {
-  margin: 210px 0px 400px;
+  margin: 100px 0px 400px;
 }
 .collaborateFormSec .collaborateSec {
   padding-left: 210px;
@@ -4784,6 +4784,7 @@ body {
 }
 .collaborateFormSec .collaborateSec .secHeading {
   width: 45%;
+  margin-top: 120px;
 }
 .collaborateFormSec .collaborateSec .secHeading h1 {
   font-size: 96px;
