@@ -3938,7 +3938,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   top: 0px;
   width: 100%;
   z-index: 8;
-  background: #fff;
 }
 .service-container .filterSec {
   display: block;
@@ -4186,6 +4185,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   border-top: 1px solid #F1F1F1;
 }
 .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading {
+  position: relative;
   color: #FFF;
   font-family: "Poppins", sans-serif;
   font-size: 30px;
@@ -4205,6 +4205,33 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media screen and (max-width: 720px) {
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading {
+    font-size: 12px;
+  }
+}
+.serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading span {
+  position: absolute;
+  left: -60px;
+  width: 36px;
+  height: 36px;
+  background: #F1F1F1;
+  color: #000;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1600px) {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading span {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading span {
     font-size: 12px;
   }
 }
@@ -4266,6 +4293,13 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
     line-height: 36px;
     margin-bottom: 15px;
   }
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading span {
+    left: -60px;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 18px;
+  }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list {
     padding-left: 22px;
   }
@@ -4296,6 +4330,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading {
     line-height: 32px;
     margin-bottom: 14px;
+  }
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading span {
+    width: 32px;
+    height: 32px;
+    line-height: 16px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list {
     padding-left: 20px;
@@ -4735,10 +4774,6 @@ a.showMore::after, a.showLess::after {
 
 a.showLess::after {
   content: "SHOW LESS";
-}
-
-body {
-  background: #ffffff;
 }
 
 .collaborateFormSec {

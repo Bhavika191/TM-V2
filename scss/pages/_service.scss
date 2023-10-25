@@ -41,7 +41,7 @@
     }
 }
 }
-.service-container{position:sticky;top:0px;width: 100%;z-index: 8;background:#fff;
+.service-container{position:sticky;top:0px;width: 100%;z-index: 8;
     .filterSec{display: block;overflow-x: auto;
         &::-webkit-scrollbar {height: 8px;background-color: transparent;}
         &::-webkit-scrollbar-track{background: #FFF;box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);border-radius: 20px;}
@@ -88,7 +88,9 @@
             .services-info{ 
                 .subheading{padding-bottom: 54px;color: var(--primary-white, #FFF);font-family: $fontpoppins;@include font48;font-weight: $fontW500;line-height: 48px; letter-spacing: -1.44px;}
                 .list-wrapper{padding: 54px 0px;border-top:1px solid #F1F1F1;   
-                    .list-heading{color: #FFF;font-family: $fontpoppins; @include font30;font-weight: $fontW400;line-height: 40px;margin-bottom: 16px;}
+                    .list-heading{position:relative;color: #FFF;font-family: $fontpoppins; @include font30;font-weight: $fontW400;line-height: 40px;margin-bottom: 16px;
+                        span{position: absolute;left: -60px;width: 36px;height: 36px;background: #F1F1F1;color: #000;text-align: center;font-family: $fontpoppins;@include font16;font-weight: $fontW700;line-height: 20px;border-radius: 50%;display: flex;align-items: center;justify-content: center;}
+                    }
                     .services-list{padding-left:23px;
                         li{position: relative;font-family: $fontpoppins;@include font18;font-weight: $fontW400;line-height: 30px;color: #D4D4D4;&::before{content: '';position: absolute;width: 6px;height: 6px;color:  #D4D4D4;top: 10px;left: -23px;border-radius: 50%;text-align: center;background-color: #D4D4D4;}}
                     }
@@ -103,7 +105,9 @@
                 .services-info{ 
                     .subheading{padding-bottom: 50px;line-height: 44px; letter-spacing: -1.20px;}
                     .list-wrapper{padding: 50px 0px;  
-                        .list-heading{line-height: 36px;margin-bottom: 15px;}
+                        .list-heading{line-height: 36px;margin-bottom: 15px;
+                            span{left: -60px;width: 34px;height: 34px;text-align: center;line-height: 18px;}
+                        }
                         .services-list{padding-left:22px;
                             li{line-height: 28px;&::before{top: 10px;left: -22px;}}
                         }
@@ -113,7 +117,6 @@
         }
     }
     @media all and (max-width:1600px){
-        
     }
     @media all and (max-width:1400px){
         .servicesec-wrapper{padding: 0px 60px 0px 20px;margin-bottom:56px;
@@ -121,7 +124,9 @@
                 .services-info{ 
                     .subheading{padding-bottom: 45px;line-height: 40px; letter-spacing: -1.20px;}
                     .list-wrapper{padding: 45px 0px;  
-                        .list-heading{line-height: 32px;margin-bottom: 14px;}
+                        .list-heading{line-height: 32px;margin-bottom: 14px;
+                            span{width: 32px;height: 32px;line-height: 16px;}
+                        }
                         .services-list{padding-left:20px;
                             li{line-height: 26px;&::before{width:5px;height:5px;top: 10px;left: -20px;}}
                         }
@@ -271,6 +276,3 @@ a.showMore,a.showLess {padding: 15px 0px;text-align: center;display: block;line-
     @media all and (max-width:1200px){padding: 12px 0px;line-height: 12px;}
 }
 a.showLess{ &::after {content: 'SHOW LESS';}}
-body{
-    background: #ffffff;
-}
