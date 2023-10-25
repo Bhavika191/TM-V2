@@ -3938,6 +3938,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   top: 0px;
   width: 100%;
   z-index: 8;
+  background: #F1F1F1;
 }
 .service-container .filterSec {
   display: block;
