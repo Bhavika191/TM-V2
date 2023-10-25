@@ -141,7 +141,8 @@
                 .services-info{ 
                     .subheading{padding-bottom: 40px;line-height: 36px; letter-spacing: -1.20px;}
                     .list-wrapper{padding: 40px 0px;  
-                        .list-heading{line-height: 28px;margin-bottom: 12px;}
+                        .list-heading{line-height: 28px;margin-bottom: 12px;
+                        span{bottom:-4px;}}
                         .services-list{padding-left:20px;
                             li{line-height: 24px;&::before{top: 10px;left: -20px;}}
                         }
@@ -168,7 +169,7 @@
     @media all and (max-width:768px){
         .servicesec-wrapper{padding: 0px 30px 0px 30px;margin-bottom:48px;display:block;
             .servicesec-heading{width:70%;}
-            .servicesec-content{padding:40px 0px 80px 0px;width:100%;
+            .servicesec-content{padding:40px 0px 80px 52px;width:100%;
                 .services-info{ 
                     .subheading{padding-bottom: 34px;line-height: 34px;letter-spacing: -0.72px;}
                     .list-wrapper{padding: 30px 0px;  
@@ -183,7 +184,7 @@
     }
     @media all and (max-width:680px){
         .servicesec-wrapper{padding: 0px 24px 0px 24px;margin-bottom:24px;
-            .servicesec-content{padding:30px 0px 60px 0px;
+            .servicesec-content{padding:30px 0px 60px 52px;
                 .services-info{ 
                     .subheading{padding-bottom: 32px;font-size: 24px;font-weight: 500;line-height: 34px;letter-spacing: -0.72px;}
                     .list-wrapper{padding: 20px 0px;  

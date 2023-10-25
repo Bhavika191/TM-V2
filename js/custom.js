@@ -11,9 +11,9 @@ $('#toggle').click(function () {
 //Service page read more and Read less code starts
 
     jQuery(document).ready(function () {
-      for (let i = 1; i <= 8; i++) {
+      for (let i = 1; i <= 10; i++) {
         var $this = $('#servicesec-content' + i);
-        if ($this.find('div').length > 3) {
+        if ($this.find('div').length > 4) {
           $('#servicesec-content' + i).append('<div><a href="javascript:void(0)" class="showMore"></a></div>');
         }
         // If more than 2 Education items, hide the remaining
