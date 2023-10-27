@@ -246,7 +246,9 @@ img {
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   border-radius: 6px;
   border: 1px solid #000;
@@ -272,6 +274,16 @@ img {
 .ctaWhite:hover {
   background: #000;
   color: #fff;
+}
+.ctaWhite:hover svg {
+  fill: #fff;
+  transition: 0.5s all ease-out;
+}
+.ctaWhite svg {
+  fill: #000;
+  height: 20px;
+  width: 20px;
+  transition: 0.5s all ease-out;
 }
 @media screen and (max-width: 1600px) {
   .ctaWhite {
@@ -325,6 +337,16 @@ img {
 .ctaBlack:hover {
   background: #fff;
   color: #000;
+}
+.ctaBlack:hover svg {
+  fill: #000;
+  transition: 0.5s all ease-out;
+}
+.ctaBlack svg {
+  fill: #fff;
+  height: 12px;
+  width: 12px;
+  transition: 0.5s all ease-out;
 }
 @media screen and (max-width: 1600px) {
   .ctaBlack {
@@ -452,7 +474,7 @@ header {
   transition: top 0.2s ease-in-out;
   background: #f1f1f1;
   width: 100%;
-  z-index: 2;
+  z-index: 9;
 }
 header.nav-up {
   top: -100px;
@@ -897,9 +919,12 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   width: 100%;
   height: 100%;
 }
+.videoSection .videosecWrapper .ctaDiv {
+  display: none;
+}
 @media screen and (max-width: 1600px) {
   .videoSection {
-    margin: 190px 0px 300px;
+    margin: 190px 0px 250px;
   }
   .videoSection .videosecWrapper .secHeading {
     margin-bottom: 150px;
@@ -911,7 +936,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1400px) {
   .videoSection {
-    margin: 170px 0px 250px;
+    margin: 170px 0px 200px;
   }
   .videoSection .videosecWrapper .secHeading {
     margin-bottom: 120px;
@@ -922,7 +947,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1280px) {
   .videoSection {
-    margin: 170px 0px 250px;
+    margin: 170px 0px 150px;
   }
   .videoSection .videosecWrapper .secHeading {
     margin-bottom: 120px;
@@ -934,7 +959,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1024px) {
   .videoSection {
-    margin: 140px 0px 200px;
+    margin: 140px 0px 100px;
   }
   .videoSection .videosecWrapper .secHeading {
     margin-bottom: 80px;
@@ -954,6 +979,26 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   .videoSection .videosecWrapper .secHeading h1 {
     line-height: 50px;
     font-size: 40px;
+  }
+  .videoSection .videosecWrapper .videoDiv {
+    padding: 0px;
+  }
+  .videoSection .videosecWrapper .ctaDiv {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .videoSection .videosecWrapper .ctaDiv a {
+    border-radius: 6px;
+    background-color: #FF0D47;
+    padding: 14px 25px;
+    margin: 0px 40px;
+    color: #FFF;
+    border: none;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 18px;
+    width: 90%;
   }
 }
 
@@ -1023,6 +1068,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   font-weight: 400;
   line-height: 34px;
   margin-top: 34px;
+  color: #6A6A6A;
 }
 @media screen and (max-width: 1600px) {
   .caseStudyhpsection .casestudyWrapper .secHeading p {
@@ -1049,10 +1095,16 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   margin-top: 150px;
   position: relative;
   overflow: hidden;
-  transition: 0.5s all ease-out;
+  height: 1000px;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
-  transform: translateY(-60%);
+  margin-top: -10%;
+}
+.caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(3) {
+  animation-delay: 0.7s;
+}
+.caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(4) {
+  animation-delay: 0.9s;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .casestudyImg img {
   transform: rotate(6deg) scale(1.2);
@@ -1073,6 +1125,13 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   line-height: 42px;
   color: #fff;
   margin: 30px 0px;
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media screen and (max-width: 1600px) {
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc h3 {
@@ -1136,9 +1195,17 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   width: 40%;
   text-align: center;
 }
+@media screen and (max-width: 1920px) {
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
+    height: 750px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
+    margin-top: -20%;
+  }
+}
 @media screen and (max-width: 1600px) {
   .caseStudyhpsection {
-    margin-bottom: 300px;
+    margin-bottom: 250px;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading {
     width: 43%;
@@ -1152,9 +1219,10 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
     margin-top: 120px;
+    height: 600px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
-    transform: translateY(-50%);
+    margin-top: -22%;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc {
     margin: 40px;
@@ -1169,7 +1237,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1400px) {
   .caseStudyhpsection {
-    margin-bottom: 250px;
+    margin-bottom: 200px;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading {
     width: 45%;
@@ -1186,7 +1254,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     margin-top: 100px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
-    transform: translateY(-45%);
+    margin-top: -22%;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc {
     margin: 35px;
@@ -1204,21 +1272,21 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1200px) {
   .caseStudyhpsection {
-    margin-bottom: 200px;
+    margin-bottom: 150px;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading h2 {
     line-height: 54px;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading p {
     line-height: 24px;
-    margin-top: 18px;
+    margin-top: 20px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
     width: 45%;
     margin-top: 80px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
-    transform: translateY(-40%);
+    margin-top: -20%;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc {
     margin: 30px;
@@ -1233,7 +1301,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1024px) {
   .caseStudyhpsection {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading {
     width: 100%;
@@ -1252,7 +1320,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     position: absolute;
     bottom: -75px;
     top: unset;
-    background: #fff;
+    background: transparent;
     border: 2px solid #C0C6C9;
     border-radius: 40px;
     width: 40px;
@@ -1312,6 +1380,9 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
 }
 @media screen and (max-width: 680px) {
+  .caseStudyhpsection {
+    margin-bottom: 150px;
+  }
   .caseStudyhpsection .casestudyWrapper {
     padding: 0px;
   }
@@ -1415,6 +1486,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   font-weight: 400;
   line-height: 34px;
   margin-top: 15px;
+  color: #6A6A6A;
 }
 @media screen and (max-width: 1600px) {
   .servicehpSection .serviceSecwrapper .secHeading .innerHeading p {
@@ -1545,9 +1617,12 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   transition: 0.3s all ease-out;
   transform: translateY(-40px);
 }
+.servicehpSection .serviceSecwrapper .ctaDiv {
+  display: none;
+}
 @media screen and (max-width: 1600px) {
   .servicehpSection {
-    margin-bottom: 350px;
+    margin-bottom: 250px;
   }
   .servicehpSection .serviceSecwrapper .secHeading {
     margin-bottom: 50px;
@@ -1597,7 +1672,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1400px) {
   .servicehpSection {
-    margin-bottom: 300px;
+    margin-bottom: 200px;
   }
   .servicehpSection .serviceSecwrapper .secHeading {
     margin-bottom: 40px;
@@ -1622,7 +1697,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1280px) {
   .servicehpSection {
-    margin-bottom: 250px;
+    margin-bottom: 150px;
   }
   .servicehpSection .serviceSecwrapper .secHeading {
     margin-bottom: 30px;
@@ -1650,7 +1725,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1024px) {
   .servicehpSection {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
   .servicehpSection .serviceSecwrapper .secHeading {
     display: block;
@@ -1666,7 +1741,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     position: absolute;
     bottom: -75px;
     top: unset;
-    background: #fff;
+    background: transparent;
     border: 2px solid #C0C6C9;
     border-radius: 40px;
     width: 40px;
@@ -1738,7 +1813,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   .servicehpSection .serviceSecwrapper .secHeading .innerHeading p {
     font-size: 14px;
     line-height: 24px;
-    margin-top: 5px;
+    margin-top: 20px;
   }
   .servicehpSection .serviceSecwrapper .serviceBoxes {
     padding: 0px;
@@ -1754,6 +1829,14 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
     letter-spacing: -0.42px;
+  }
+  .servicehpSection .serviceSecwrapper .ctaDiv {
+    text-align: center;
+    margin-top: 58px;
+    display: block;
+  }
+  .servicehpSection .serviceSecwrapper .ctaDiv a {
+    width: 90%;
   }
 }
 
@@ -1820,6 +1903,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   font-weight: 400;
   line-height: 34px;
   margin-top: 15px;
+  color: #6A6A6A;
 }
 @media screen and (max-width: 1600px) {
   .storyhpSection .storysecWrapper .secHeading p {
@@ -1897,7 +1981,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1600px) {
   .storyhpSection {
-    margin-bottom: 350px;
+    margin-bottom: 250px;
   }
   .storyhpSection .storysecWrapper .secHeading h2 {
     line-height: 60px;
@@ -1927,7 +2011,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1400px) {
   .storyhpSection {
-    margin-bottom: 300px;
+    margin-bottom: 200px;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv {
     margin-top: 100px;
@@ -1949,7 +2033,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1280px) {
   .storyhpSection {
-    margin-bottom: 250px;
+    margin-bottom: 150px;
   }
   .storyhpSection .storysecWrapper .secHeading h2 {
     line-height: 52px;
@@ -1974,7 +2058,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1025px) {
   .storyhpSection {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv {
     margin-top: 50px;
@@ -1988,9 +2072,6 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
 }
 @media screen and (max-width: 820px) {
-  .storyhpSection {
-    margin-bottom: 150px;
-  }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv {
     margin-top: 40px;
   }
@@ -2021,7 +2102,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   .storyhpSection .storysecWrapper .secHeading p {
     font-size: 14px;
     line-height: 20px;
-    margin-top: 5px;
+    margin-top: 20px;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv {
     margin-top: 30px;
@@ -2157,11 +2238,23 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 .bookhpSection .booksecWrapper .bookImgdiv img {
   margin: 0 auto;
   transition: 0.3s all ease-out;
+  position: relative;
+  z-index: 2;
 }
 .bookhpSection .booksecWrapper .ctaDiv {
   position: absolute;
   bottom: 245px;
   right: 150px;
+}
+.bookhpSection .booksecWrapper .shadowDiv {
+  position: absolute;
+  width: 100%;
+  height: 170px;
+  bottom: 0;
+  z-index: 1;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .bookhpSection .booksecWrapper:hover .bookImgdiv img {
   transform: rotate(-5deg);
@@ -2169,7 +2262,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1600px) {
   .bookhpSection {
-    margin-bottom: 350px;
+    margin-bottom: 250px;
   }
   .bookhpSection .booksecWrapper {
     padding: 100px 0px 55px;
@@ -2197,7 +2290,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1400px) {
   .bookhpSection {
-    margin-bottom: 300px;
+    margin-bottom: 200px;
   }
   .bookhpSection .booksecWrapper {
     padding: 70px 0px 45px;
@@ -2224,7 +2317,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1280px) {
   .bookhpSection {
-    margin-bottom: 250px;
+    margin-bottom: 150px;
   }
   .bookhpSection .booksecWrapper {
     padding: 60px 0px 35px;
@@ -2247,7 +2340,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1024px) {
   .bookhpSection {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
   .bookhpSection .booksecWrapper {
     padding: 40px 0px 25px;
@@ -2271,7 +2364,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     right: 40px;
   }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 820px) {
   .bookhpSection {
     margin-bottom: 150px;
   }
@@ -2292,12 +2385,18 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     font-size: 14px;
   }
   .bookhpSection .booksecWrapper .bookImgdiv {
-    width: 75%;
-    margin: 16px 0 16px auto;
+    width: 50%;
+    margin: 16px auto 16px;
   }
   .bookhpSection .booksecWrapper .ctaDiv {
     position: unset;
     text-align: center;
+  }
+}
+@media screen and (max-width: 680px) {
+  .bookhpSection .booksecWrapper .bookImgdiv {
+    width: 75%;
+    margin: 16px 0 16px auto;
   }
 }
 
@@ -2366,6 +2465,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   font-weight: 400;
   line-height: 34px;
   margin-top: 34px;
+  color: #6A6A6A;
 }
 @media screen and (max-width: 1600px) {
   .ourPartnershpsec .ourpartnerWrapper .secHeading p {
@@ -2382,18 +2482,18 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     font-size: 16px;
   }
 }
-.ourPartnershpsec .ourpartnerWrapper .logoSlider {
+.ourPartnershpsec .ourpartnerWrapper .logoSlider, .ourPartnershpsec .ourpartnerWrapper .logoSlider2 {
   border-top: 1px solid #000;
 }
-.ourPartnershpsec .ourpartnerWrapper .logoSlider:last-child {
+.ourPartnershpsec .ourpartnerWrapper .logoSlider:last-child, .ourPartnershpsec .ourpartnerWrapper .logoSlider2:last-child {
   border-bottom: 1px solid #000;
 }
-.ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
+.ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg, .ourPartnershpsec .ourpartnerWrapper .logoSlider2 .logoImg {
   padding: 70px 125px;
 }
 @media screen and (max-width: 1600px) {
   .ourPartnershpsec {
-    margin-bottom: 350px;
+    margin-bottom: 250px;
   }
   .ourPartnershpsec .ourpartnerWrapper .secHeading {
     margin-bottom: 35px;
@@ -2411,7 +2511,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1400px) {
   .ourPartnershpsec {
-    margin-bottom: 300px;
+    margin-bottom: 200px;
   }
   .ourPartnershpsec .ourpartnerWrapper .secHeading {
     margin-bottom: 30px;
@@ -2430,7 +2530,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1280px) {
   .ourPartnershpsec {
-    margin-bottom: 250px;
+    margin-bottom: 150px;
   }
   .ourPartnershpsec .ourpartnerWrapper .secHeading {
     margin-bottom: 20px;
@@ -2449,7 +2549,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1025px) {
   .ourPartnershpsec {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
   .ourPartnershpsec .ourpartnerWrapper .secHeading {
     width: 100%;
@@ -2467,7 +2567,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 780px) {
   .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
-    padding: 32px 50px;
+    padding: 32px 30px;
   }
 }
 @media screen and (max-width: 680px) {
@@ -2482,7 +2582,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     font-size: 14px;
   }
   .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
-    padding: 32px 25px;
+    padding: 25px 10px;
   }
 }
 
@@ -2552,6 +2652,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   font-weight: 400;
   line-height: 34px;
   margin-top: 34px;
+  color: #6A6A6A;
 }
 @media screen and (max-width: 1600px) {
   .customerhpsection .customerWrapper .secHeading p {
@@ -2692,7 +2793,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1600px) {
   .customerhpsection {
-    margin-bottom: 300px;
+    margin-bottom: 250px;
   }
   .customerhpsection .customerWrapper .secHeading {
     width: 43%;
@@ -2739,7 +2840,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1400px) {
   .customerhpsection {
-    margin-bottom: 250px;
+    margin-bottom: 200px;
   }
   .customerhpsection .customerWrapper .secHeading {
     width: 45%;
@@ -2789,14 +2890,14 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1280px) {
   .customerhpsection {
-    margin-bottom: 200px;
+    margin-bottom: 150px;
   }
   .customerhpsection .customerWrapper .secHeading h2 {
     line-height: 54px;
   }
   .customerhpsection .customerWrapper .secHeading p {
     line-height: 24px;
-    margin-top: 18px;
+    margin-top: 20px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes {
     margin-top: 80px;
@@ -2830,7 +2931,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1024px) {
   .customerhpsection {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
   .customerhpsection .customerWrapper .secHeading {
     width: 100%;
@@ -2849,7 +2950,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     position: absolute;
     bottom: -75px;
     top: unset;
-    background: #fff;
+    background: transparent;
     border: 2px solid #C0C6C9;
     border-radius: 40px;
     width: 40px;
@@ -2906,6 +3007,9 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
 }
 @media screen and (max-width: 680px) {
+  .customerhpsection {
+    margin-bottom: 150px;
+  }
   .customerhpsection .customerWrapper {
     padding: 0px;
   }
@@ -3009,6 +3113,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   font-weight: 400;
   line-height: 34px;
   margin-top: 34px;
+  color: #6A6A6A;
 }
 @media screen and (max-width: 1600px) {
   .blogshpsection .blogsWrapper .secHeading p {
@@ -3057,6 +3162,13 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   font-weight: 400;
   line-height: 43px;
   margin-top: 30px;
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media screen and (max-width: 1600px) {
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h3 {
@@ -3089,12 +3201,26 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     font-size: 12px;
   }
 }
+.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails .blogArrowimg {
+  position: absolute;
+  right: 50px;
+  bottom: -100%;
+  transition: 0.3s all ease-out;
+}
+.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails .blogArrowimg img {
+  height: 20px;
+  width: 20px;
+}
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:hover .blogsData .blogImg img {
   scale: unset;
   transition: 0.3s all ease-out;
 }
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:hover .blogsData .blogDetails {
   margin: 0px;
+  transition: 0.3s all ease-out;
+}
+.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:hover .blogsData .blogDetails .blogArrowimg {
+  bottom: 25px;
   transition: 0.3s all ease-out;
 }
 .blogshpsection .blogsWrapper .ctaDiv {
@@ -3105,9 +3231,15 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   width: 40%;
   text-align: center;
 }
+@media screen and (max-width: 1800px) {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails .blogArrowimg img {
+    height: 15px;
+    width: 15px;
+  }
+}
 @media screen and (max-width: 1600px) {
   .blogshpsection {
-    margin-bottom: 300px;
+    margin-bottom: 250px;
   }
   .blogshpsection .blogsWrapper .secHeading {
     width: 43%;
@@ -3136,7 +3268,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1400px) {
   .blogshpsection {
-    margin-bottom: 250px;
+    margin-bottom: 200px;
   }
   .blogshpsection .blogsWrapper .secHeading {
     width: 45%;
@@ -3163,20 +3295,26 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     line-height: 28px;
     margin-top: 22px;
   }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails .blogArrowimg {
+    right: 30px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:hover .blogsData .blogDetails .blogArrowimg {
+    bottom: 18px;
+  }
   .blogshpsection .blogsWrapper .ctaDiv .ctaWhite {
     width: 43%;
   }
 }
 @media screen and (max-width: 1200px) {
   .blogshpsection {
-    margin-bottom: 200px;
+    margin-bottom: 150px;
   }
   .blogshpsection .blogsWrapper .secHeading h2 {
     line-height: 54px;
   }
   .blogshpsection .blogsWrapper .secHeading p {
     line-height: 24px;
-    margin-top: 18px;
+    margin-top: 20px;
   }
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes {
     width: 45%;
@@ -3199,7 +3337,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1024px) {
   .blogshpsection {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
   .blogshpsection .blogsWrapper .secHeading {
     width: 100%;
@@ -3218,7 +3356,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     position: absolute;
     bottom: -75px;
     top: unset;
-    background: #fff;
+    background: transparent;
     border: 2px solid #C0C6C9;
     border-radius: 40px;
     width: 40px;
@@ -3255,8 +3393,18 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     scale: 1;
   }
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails {
-    padding: 25px 20px;
+    padding: 25px 20px 36px;
     margin: 0px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails .blogArrowimg {
+    display: inline-block;
+    position: unset;
+    padding-top: 16px;
+    transition: none;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails .blogArrowimg img {
+    height: 12px;
+    width: 12px;
   }
   .blogshpsection .blogsWrapper .ctaDiv {
     margin-top: 100px;
@@ -3267,6 +3415,9 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
 }
 @media screen and (max-width: 680px) {
+  .blogshpsection {
+    margin-bottom: 150px;
+  }
   .blogshpsection .blogsWrapper {
     padding: 0px;
   }
@@ -3668,12 +3819,16 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   }
   footer .footerWrapper .footerData .footerMenus {
     width: 100%;
+    margin-bottom: 50px;
+  }
+  footer .footerWrapper .footerData .footerMenus ul {
+    justify-content: unset;
   }
   footer .footerWrapper .footerData .footerMenus ul li {
-    width: 100%;
+    width: 40%;
     margin-top: 22px;
   }
-  footer .footerWrapper .footerData .footerMenus ul li:nth-child(2) {
+  footer .footerWrapper .footerData .footerMenus ul li:nth-child(1), footer .footerWrapper .footerData .footerMenus ul li:nth-child(2) {
     margin-top: 22px;
   }
   footer .footerWrapper .footerData .footerGame {
@@ -3742,6 +3897,12 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 @media screen and (max-width: 680px) {
   footer .footerWrapper .footerLogo {
     width: 60%;
+  }
+  footer .footerWrapper .footerData .footerMenus ul li {
+    width: 100%;
+  }
+  footer .footerWrapper .footerData .footerMenus ul li:nth-child(1) {
+    margin-top: 0px;
   }
   footer .footerWrapper .footerData .footerMenus ul li a {
     font-size: 14px;

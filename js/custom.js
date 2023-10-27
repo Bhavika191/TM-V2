@@ -170,6 +170,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const smoothScroll = new SmoothScroll(0.02);
 });
 
+
+new WOW().init();
+
 // new AnimationScroll({
 //     selector: ".caseStudyinnerBoxes",
 //     trigger: 0.,
