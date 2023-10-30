@@ -1095,7 +1095,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   margin-top: 150px;
   position: relative;
   overflow: hidden;
-  height: 1000px;
+  height: 1120px;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
   margin-top: -10%;
@@ -1189,7 +1189,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 .caseStudyhpsection .casestudyWrapper .ctaDiv {
   text-align: right;
-  margin-top: -150px;
+  margin-top: -10%;
 }
 .caseStudyhpsection .casestudyWrapper .ctaDiv .ctaWhite {
   width: 40%;
@@ -1197,15 +1197,29 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1920px) {
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
-    height: 750px;
+    height: 780px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
     margin-top: -20%;
   }
+  .caseStudyhpsection .casestudyWrapper .ctaDiv {
+    margin-top: -20%;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
+    height: 690px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
+    margin-top: -22%;
+  }
+  .caseStudyhpsection .casestudyWrapper .ctaDiv {
+    margin-top: -22%;
+  }
 }
 @media screen and (max-width: 1600px) {
   .caseStudyhpsection {
-    margin-bottom: 250px;
+    margin-bottom: 320px;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading {
     width: 43%;
@@ -1219,10 +1233,10 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
     margin-top: 120px;
-    height: 600px;
+    height: 610px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
-    margin-top: -22%;
+    margin-top: -19%;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc {
     margin: 40px;
@@ -1234,10 +1248,13 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc h4 {
     line-height: 1;
   }
+  .caseStudyhpsection .casestudyWrapper .ctaDiv {
+    margin-top: -19%;
+  }
 }
 @media screen and (max-width: 1400px) {
   .caseStudyhpsection {
-    margin-bottom: 200px;
+    margin-bottom: 280px;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading {
     width: 45%;
@@ -1252,6 +1269,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
     width: 43%;
     margin-top: 100px;
+    height: 600px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
     margin-top: -22%;
@@ -1266,13 +1284,16 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc img {
     width: 14px;
   }
+  .caseStudyhpsection .casestudyWrapper .ctaDiv {
+    margin-top: -20%;
+  }
   .caseStudyhpsection .casestudyWrapper .ctaDiv .ctaWhite {
     width: 43%;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .caseStudyhpsection {
-    margin-bottom: 150px;
+    margin-bottom: 200px;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading h2 {
     line-height: 54px;
@@ -1282,11 +1303,12 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     margin-top: 20px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
-    width: 45%;
+    width: 42%;
     margin-top: 80px;
+    height: 540px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
-    margin-top: -20%;
+    margin-top: -15%;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc {
     margin: 30px;
@@ -1295,8 +1317,16 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     line-height: 26px;
     margin: 15px 0px;
   }
+  .caseStudyhpsection .casestudyWrapper .ctaDiv {
+    margin-top: -15%;
+  }
   .caseStudyhpsection .casestudyWrapper .ctaDiv .ctaWhite {
-    width: 45%;
+    width: 42%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
+    height: 516px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1351,7 +1381,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     margin: 0px 20px 0px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
-    transform: unset;
+    margin-top: unset;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .casestudyImg img {
     transform: rotate(0deg) scale(1);
@@ -1613,9 +1643,8 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   transition: 0.3s all ease-out;
 }
 .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .imgBox {
-  scale: 1.5;
+  scale: 1.9;
   transition: 0.3s all ease-out;
-  transform: translateY(-40px);
 }
 .servicehpSection .serviceSecwrapper .ctaDiv {
   display: none;
@@ -1666,9 +1695,6 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .serviceDesc::before {
     right: -70px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .imgBox {
-    transform: translateY(-35px);
-  }
 }
 @media screen and (max-width: 1400px) {
   .servicehpSection {
@@ -1690,9 +1716,6 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
     line-height: 22px;
-  }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .imgBox {
-    transform: translateY(-30px);
   }
 }
 @media screen and (max-width: 1280px) {
@@ -1798,7 +1821,6 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .imgBox {
     scale: unset;
-    transform: translateY(0px);
   }
 }
 @media screen and (max-width: 680px) {
@@ -2245,10 +2267,13 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   position: absolute;
   bottom: 245px;
   right: 150px;
+  z-index: 2;
 }
 .bookhpSection .booksecWrapper .shadowDiv {
   position: absolute;
   width: 100%;
+  left: 0;
+  right: 0;
   height: 170px;
   bottom: 0;
   z-index: 1;
@@ -2287,6 +2312,9 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     bottom: 200px;
     right: 100px;
   }
+  .bookhpSection .booksecWrapper .shadowDiv {
+    height: 140px;
+  }
 }
 @media screen and (max-width: 1400px) {
   .bookhpSection {
@@ -2313,6 +2341,9 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   .bookhpSection .booksecWrapper .ctaDiv {
     bottom: 170px;
     right: 80px;
+  }
+  .bookhpSection .booksecWrapper .shadowDiv {
+    height: 100px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -2369,7 +2400,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     margin-bottom: 150px;
   }
   .bookhpSection .booksecWrapper {
-    padding: 40px 24px 25px;
+    padding: 40px 24px 60px;
   }
   .bookhpSection .booksecWrapper .bookInfodiv {
     position: unset;
@@ -2385,12 +2416,18 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     font-size: 14px;
   }
   .bookhpSection .booksecWrapper .bookImgdiv {
-    width: 50%;
-    margin: 16px auto 16px;
+    width: 44%;
+    margin: 0 auto;
+    padding: 16px 0px;
   }
   .bookhpSection .booksecWrapper .ctaDiv {
-    position: unset;
+    right: 0;
+    left: 0;
+    bottom: 20px;
     text-align: center;
+  }
+  .bookhpSection .booksecWrapper .shadowDiv {
+    height: 150px;
   }
 }
 @media screen and (max-width: 680px) {
@@ -3519,6 +3556,19 @@ footer .footerWrapper .footerData .footerMenus ul li a {
 }
 footer .footerWrapper .footerData .footerGame {
   width: 35%;
+}
+footer .footerWrapper .footerData .footerGame #box img.rotate {
+  animation: 0.2s linear infinite rotate-con;
+  border-radius: 324px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.1249982119deg, #05FB00 116.2499964237deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474deg, #F00 360deg);
+}
+@keyframes rotate-con {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 footer .footerWrapper .footerData .footerSubscribe {
   width: 27%;
@@ -5431,4 +5481,771 @@ a.showLess::after {
 }
 .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact:hover .MailIds .idsBox::before {
   right: 24px;
+}
+
+body.opentwo {
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: top 0.2s ease-in-out;
+  background: #f1f1f1;
+  width: 100%;
+  z-index: 9;
+}
+header.nav-up {
+  top: -100px;
+}
+header .headerWrapper {
+  padding-left: 60px;
+  padding-right: 60px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1400px) {
+  header .headerWrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  header .headerWrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+header .headerWrapper .logoDiv {
+  width: 50%;
+}
+header .headerWrapper .navDiv {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 26px 0px;
+}
+header .headerWrapper .navDiv .navList a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+}
+@media screen and (max-width: 1600px) {
+  header .headerWrapper .navDiv .navList a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header .headerWrapper .navDiv .navList a {
+    font-size: 12px;
+  }
+}
+header .headerWrapper .navDiv .navList .headerCta {
+  border-radius: 6px;
+  background-color: #FF0D47;
+  padding: 14px 28px;
+  margin: 0px 40px;
+  color: #FFF;
+}
+header .headerWrapper .navDiv .hamburgerDiv .button_container {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  z-index: 1;
+  transition: opacity 0.25s ease;
+}
+header .headerWrapper .navDiv .hamburgerDiv .button_container.active::before {
+  content: "";
+  position: absolute;
+  top: -22px;
+  left: -20px;
+  right: 0;
+  border-radius: 50%;
+  background-color: #191919;
+  height: 68px;
+  width: 68px;
+}
+header .headerWrapper .navDiv .hamburgerDiv .button_container.active span {
+  width: 28px;
+}
+header .headerWrapper .navDiv .hamburgerDiv .button_container.active .top {
+  transform: translateY(8px) translateX(0) rotate(45deg);
+  background: #FFF;
+}
+header .headerWrapper .navDiv .hamburgerDiv .button_container.active .middle {
+  opacity: 0;
+  background: #FFF;
+}
+header .headerWrapper .navDiv .hamburgerDiv .button_container.active .bottom {
+  transform: translateY(-8px) translateX(0) rotate(-45deg);
+  background: #FFF;
+}
+header .headerWrapper .navDiv .hamburgerDiv .button_container span {
+  background: #000;
+  border: none;
+  height: 3px;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+header .headerWrapper .navDiv .hamburgerDiv .button_container span:nth-of-type(2) {
+  top: 8px;
+}
+header .headerWrapper .navDiv .hamburgerDiv .button_container span:nth-of-type(3) {
+  top: 16px;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay {
+  position: absolute;
+  background: #000;
+  top: 0;
+  right: 0;
+  width: 0%;
+  transition: 0.7s all ease-in-out;
+  overflow: hidden;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay.open {
+  width: 100%;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay.open li {
+  animation: fadeInRight 0.5s ease forwards;
+  animation-delay: 0.35s;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay.open li:nth-of-type(2) {
+  animation-delay: 0.5s;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay.open li:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay.open li:nth-of-type(4) {
+  animation-delay: 0.7s;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay.open li:nth-of-type(5) {
+  animation-delay: 0.8s;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay.open li:nth-of-type(6) {
+  animation-delay: 0.9s;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay.open li:nth-of-type(7) {
+  animation-delay: 1s;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay.open li:nth-of-type(8) {
+  animation-delay: 1.1s;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay nav {
+  position: relative;
+  margin: 116px 0px 0px 0px;
+  overflow-y: auto;
+  height: 100vh;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay nav::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul {
+  list-style: none;
+  text-align: right;
+  overflow-x: hidden;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li {
+  position: relative;
+  opacity: 0;
+  margin-bottom: 42px;
+  transition: 0.3s all ease-out;
+  cursor: pointer;
+  margin-right: 120px;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover {
+  transition: 0.3s all ease-out;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a {
+  margin-right: -20px;
+  opacity: 1;
+  transition: 0.3s all ease-out;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a::before {
+  right: -70px;
+  transition: 0.3s all ease-out;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
+  font-size: 48px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -1.5px;
+  opacity: 0.5;
+  text-align: right;
+  transition: 0.3s all ease-out;
+  margin-right: 60px;
+  position: relative;
+}
+@media screen and (max-width: 1600px) {
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 720px) {
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
+    font-size: 18px;
+  }
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
+  content: "";
+  position: absolute;
+  background: url(../images/header-arrow.svg) no-repeat;
+  background-size: contain;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -250px;
+  height: 25px;
+  width: 25px;
+  transition: 0.3s all ease-out;
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+@media screen and (max-width: 1600px) {
+  header.nav-up {
+    top: -86px;
+  }
+  header .headerWrapper .navDiv {
+    margin: 22px 0px;
+  }
+  header .headerWrapper .navDiv .navList .headerCta {
+    padding: 12px 24px;
+    margin: 0px 30px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .button_container.active::before {
+    height: 60px;
+    width: 60px;
+    left: -18px;
+    top: -20px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .button_container.active span {
+    width: 22px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav {
+    margin: 100px 0px 0px 0px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li {
+    margin-bottom: 38px;
+    margin-right: 110px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a {
+    margin-right: -15px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
+    margin-right: 50px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
+    height: 20px;
+    width: 20px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  header.nav-up {
+    top: -82px;
+  }
+  header .headerWrapper .navDiv {
+    margin: 20px 0px;
+  }
+  header .headerWrapper .navDiv .navList a {
+    font-size: 12px;
+  }
+  header .headerWrapper .navDiv .navList .headerCta {
+    padding: 12px 20px;
+    margin: 0px 25px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .button_container.active::before {
+    height: 50px;
+    width: 50px;
+    left: -16px;
+    top: -16px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .button_container.active span {
+    width: 20px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav {
+    margin: 70px 0px 0px 0px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li {
+    margin-bottom: 30px;
+    margin-right: 100px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
+    margin-right: 45px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
+    height: 18px;
+    width: 18px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a:before {
+    right: -50px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  header.nav-up {
+    top: -74px;
+  }
+  header .headerWrapper .navDiv {
+    margin: 18px 0px;
+  }
+  header .headerWrapper .navDiv .navList .headerCta {
+    padding: 10px 18px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .button_container.active::before {
+    height: 40px;
+    width: 40px;
+    left: -12px;
+    top: -10px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .button_container.active span {
+    width: 16px;
+    height: 2px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav {
+    margin: 60px 0px 0px 0px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li {
+    margin-bottom: 25px;
+    margin-right: 90px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
+    margin-right: 30px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
+    height: 14px;
+    width: 14px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a {
+    margin-right: -5px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a:before {
+    right: -40px;
+  }
+}
+
+.caseStudyListingsec {
+  margin: 224px 0px 240px;
+}
+.caseStudyListingsec .casestudyWrapper {
+  padding-left: 210px;
+  padding-right: 210px;
+}
+@media screen and (max-width: 1600px) {
+  .caseStudyListingsec .casestudyWrapper {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .caseStudyListingsec .casestudyWrapper {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .caseStudyListingsec .casestudyWrapper {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .caseStudyListingsec .casestudyWrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .caseStudyListingsec .casestudyWrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.caseStudyListingsec .casestudyWrapper .secHeading {
+  width: 41%;
+}
+.caseStudyListingsec .casestudyWrapper .secHeading h2 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 74px;
+  letter-spacing: -1.5px;
+}
+@media screen and (max-width: 1600px) {
+  .caseStudyListingsec .casestudyWrapper .secHeading h2 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .caseStudyListingsec .casestudyWrapper .secHeading h2 {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .caseStudyListingsec .casestudyWrapper .secHeading h2 {
+    font-size: 32px;
+  }
+}
+.caseStudyListingsec .casestudyWrapper .secHeading p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  margin-top: 34px;
+  color: #6A6A6A;
+}
+@media screen and (max-width: 1600px) {
+  .caseStudyListingsec .casestudyWrapper .secHeading p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .caseStudyListingsec .casestudyWrapper .secHeading p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .caseStudyListingsec .casestudyWrapper .secHeading p {
+    font-size: 16px;
+  }
+}
+.caseStudyListingsec .casestudyWrapper .casestudylistingBoxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
+  width: 40%;
+  margin-top: 150px;
+  position: relative;
+  overflow: hidden;
+  height: 1120px;
+}
+.caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(even) {
+  margin-top: -10%;
+}
+.caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(3) {
+  animation-delay: 0.7s;
+}
+.caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(4) {
+  animation-delay: 0.9s;
+}
+.caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .casestudyImg img {
+  transform: rotate(6deg) scale(1.2);
+  transition: 0.3s all ease-out;
+}
+.caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  margin: 50px;
+  transition: 0.5s all ease-out;
+  z-index: 2;
+}
+.caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h3 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 42px;
+  color: #fff;
+  margin: 30px 0px;
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media screen and (max-width: 1600px) {
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h3 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h3 {
+    font-size: 14px;
+  }
+}
+.caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 14px;
+  color: #fff;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1600px) {
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h4 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h4 {
+    font-size: 12px;
+  }
+}
+.caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:hover .casestudyImg {
+  position: relative;
+}
+.caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:hover .casestudyImg img {
+  transform: rotate(0deg) scale(1);
+  transition: 0.3s all ease-out;
+}
+.caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:hover .casestudyImg::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.3;
+  transition: 0.5s all ease-out;
+  z-index: 1;
+}
+.caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:hover .caseStudydesc {
+  bottom: 0;
+  transition: 0.5s all ease-out;
+}
+@media screen and (max-width: 1920px) {
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
+    height: 780px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(even) {
+    margin-top: -20%;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
+    height: 690px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(even) {
+    margin-top: -22%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .caseStudyListingsec {
+    margin: 180px 0px 200px;
+  }
+  .caseStudyListingsec .casestudyWrapper .secHeading {
+    width: 43%;
+  }
+  .caseStudyListingsec .casestudyWrapper .secHeading h2 {
+    line-height: 64px;
+  }
+  .caseStudyListingsec .casestudyWrapper .secHeading p {
+    line-height: 28px;
+    margin-top: 28px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
+    margin-top: 120px;
+    height: 610px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(even) {
+    margin-top: -19%;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc {
+    margin: 40px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h3 {
+    line-height: 32px;
+    margin: 25px 0px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h4 {
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .caseStudyListingsec {
+    margin: 150px 0px 180px;
+  }
+  .caseStudyListingsec .casestudyWrapper .secHeading {
+    width: 45%;
+  }
+  .caseStudyListingsec .casestudyWrapper .secHeading h2 {
+    line-height: 60px;
+  }
+  .caseStudyListingsec .casestudyWrapper .secHeading p {
+    line-height: 26px;
+    margin-top: 22px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
+    width: 43%;
+    margin-top: 100px;
+    height: 600px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(even) {
+    margin-top: -22%;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc {
+    margin: 35px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h3 {
+    line-height: 28px;
+    margin: 20px 0px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc img {
+    width: 14px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .caseStudyListingsec {
+    margin: 100px 0px 150px;
+  }
+  .caseStudyListingsec .casestudyWrapper .secHeading h2 {
+    line-height: 54px;
+  }
+  .caseStudyListingsec .casestudyWrapper .secHeading p {
+    line-height: 24px;
+    margin-top: 20px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
+    width: 42%;
+    margin-top: 80px;
+    height: 540px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(even) {
+    margin-top: -15%;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc {
+    margin: 30px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h3 {
+    line-height: 26px;
+    margin: 15px 0px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
+    height: 516px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .caseStudyListingsec .casestudyWrapper .secHeading {
+    width: 100%;
+  }
+  .caseStudyListingsec .casestudyWrapper .secHeading h2 {
+    line-height: 48px;
+  }
+  .caseStudyListingsec .casestudyWrapper .secHeading p {
+    line-height: 20px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes {
+    display: block;
+    margin: 32px 0px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-prev, .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-next {
+    position: absolute;
+    bottom: -75px;
+    top: unset;
+    background: transparent;
+    border: 2px solid #C0C6C9;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-prev::before, .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-next::before {
+    content: url(../images/slider-prev.svg);
+    opacity: 1;
+    scale: 0.7;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-prev.slick-next, .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-next.slick-next {
+    right: 50%;
+    transform: translateX(50px);
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-prev.slick-next::before, .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-next.slick-next::before {
+    content: url(../images/slider-next.svg);
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-prev.slick-prev, .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-next.slick-prev {
+    left: 50%;
+    transform: translateX(-50px);
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
+    width: unset;
+    margin: 0px 20px 0px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(even) {
+    margin-top: unset;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .casestudyImg img {
+    transform: rotate(0deg) scale(1);
+    transition: 0.3s all ease-out;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .casestudyImg::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.3;
+    transition: 0.5s all ease-out;
+    z-index: 1;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc {
+    bottom: 0;
+    margin: 16px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .caseStudyListingsec .casestudyWrapper {
+    padding: 0px;
+  }
+  .caseStudyListingsec .casestudyWrapper .secHeading {
+    padding: 0px 20px;
+  }
+  .caseStudyListingsec .casestudyWrapper .secHeading h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .caseStudyListingsec .casestudyWrapper .secHeading p {
+    font-size: 14px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
+    margin: 0px 10px 0px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h3 {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 10px 0px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc img {
+    width: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */
