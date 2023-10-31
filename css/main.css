@@ -278,16 +278,24 @@ img {
 .ctaWhite:hover svg {
   fill: #fff;
   transition: 0.5s all ease-out;
+  opacity: 1;
 }
 .ctaWhite svg {
   fill: #000;
   height: 20px;
   width: 20px;
   transition: 0.5s all ease-out;
+  margin-left: 18px;
+  opacity: 0;
 }
 @media screen and (max-width: 1600px) {
   .ctaWhite {
     padding: 12px 22px;
+  }
+  .ctaWhite svg {
+    height: 18px;
+    width: 18px;
+    margin-left: 15px;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -299,6 +307,16 @@ img {
 @media screen and (max-width: 1200px) {
   .ctaWhite {
     padding: 10px 18px;
+  }
+  .ctaWhite svg {
+    height: 16px;
+    width: 16px;
+    margin-left: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ctaWhite svg {
+    opacity: 1;
   }
 }
 @media screen and (max-width: 720px) {
@@ -341,12 +359,15 @@ img {
 .ctaBlack:hover svg {
   fill: #000;
   transition: 0.5s all ease-out;
+  opacity: 1;
 }
 .ctaBlack svg {
   fill: #fff;
   height: 12px;
   width: 12px;
   transition: 0.5s all ease-out;
+  margin-left: 18px;
+  opacity: 0;
 }
 @media screen and (max-width: 1600px) {
   .ctaBlack {
@@ -362,6 +383,16 @@ img {
 @media screen and (max-width: 1200px) {
   .ctaBlack {
     padding: 10px 18px;
+  }
+  .ctaBlack svg {
+    height: 10px;
+    width: 10px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ctaBlack svg {
+    opacity: 1;
   }
 }
 @media screen and (max-width: 720px) {
@@ -650,12 +681,12 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover {
   transition: 0.3s all ease-out;
 }
 header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a {
-  margin-right: -20px;
+  margin-right: -10px;
   opacity: 1;
   transition: 0.3s all ease-out;
 }
 header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a::before {
-  right: -70px;
+  right: -60px;
   transition: 0.3s all ease-out;
 }
 header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
@@ -741,7 +772,10 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     margin-right: 110px;
   }
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a {
-    margin-right: -15px;
+    margin-right: -5px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a::before {
+    right: -50px;
   }
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
     margin-right: 50px;
@@ -775,21 +809,21 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     width: 20px;
   }
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav {
-    margin: 70px 0px 0px 0px;
+    margin: 90px 0px 0px 0px;
   }
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li {
     margin-bottom: 30px;
-    margin-right: 100px;
+    margin-right: 80px;
   }
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
-    margin-right: 45px;
+    margin-right: 35px;
   }
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
-    height: 18px;
-    width: 18px;
+    height: 16px;
+    width: 16px;
   }
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a:before {
-    right: -50px;
+    right: -40px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -813,14 +847,14 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     height: 2px;
   }
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav {
-    margin: 60px 0px 0px 0px;
+    margin: 80px 0px 0px 0px;
   }
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li {
     margin-bottom: 25px;
-    margin-right: 90px;
+    margin-right: 80px;
   }
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
-    margin-right: 30px;
+    margin-right: 25px;
   }
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     height: 14px;
@@ -830,7 +864,49 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     margin-right: -5px;
   }
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a:before {
-    right: -40px;
+    right: -30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header .headerWrapper .logoDiv img {
+    width: 190px;
+  }
+}
+@media screen and (max-width: 680px) {
+  header.nav-up {
+    top: -50px;
+  }
+  header .headerWrapper .navDiv {
+    margin: 15px 0px;
+  }
+  header .headerWrapper .navDiv .navList .headerCta {
+    display: none;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .button_container.active::before {
+    height: 35px;
+    width: 35px;
+    left: -10px;
+    top: -8px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .button_container.active span {
+    width: 14px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav {
+    margin: 60px 0px 0px 0px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li {
+    margin-bottom: 20px;
+    margin-right: 50px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
+    margin-right: 20px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
+    height: 9px;
+    width: 9px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a:before {
+    right: -20px;
   }
 }
 
@@ -1003,7 +1079,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 
 .caseStudyhpsection {
-  margin-bottom: 400px;
+  margin-bottom: 550px;
 }
 .caseStudyhpsection .casestudyWrapper {
   padding-left: 210px;
@@ -1089,6 +1165,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
   width: 40%;
@@ -1196,6 +1273,9 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   text-align: center;
 }
 @media screen and (max-width: 1920px) {
+  .caseStudyhpsection {
+    margin-bottom: 600px;
+  }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
     height: 780px;
   }
@@ -1219,7 +1299,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1600px) {
   .caseStudyhpsection {
-    margin-bottom: 320px;
+    margin-bottom: 420px;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading {
     width: 43%;
@@ -1229,7 +1309,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .caseStudyhpsection .casestudyWrapper .secHeading p {
     line-height: 28px;
-    margin-top: 28px;
+    margin-top: 25px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
     margin-top: 120px;
@@ -1254,7 +1334,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1400px) {
   .caseStudyhpsection {
-    margin-bottom: 280px;
+    margin-bottom: 380px;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading {
     width: 45%;
@@ -1264,7 +1344,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .caseStudyhpsection .casestudyWrapper .secHeading p {
     line-height: 26px;
-    margin-top: 22px;
+    margin-top: 20px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
     width: 43%;
@@ -1293,14 +1373,14 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 1280px) {
   .caseStudyhpsection {
-    margin-bottom: 200px;
+    margin-bottom: 250px;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading h2 {
     line-height: 54px;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading p {
     line-height: 24px;
-    margin-top: 20px;
+    margin-top: 16px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
     width: 42%;
@@ -1341,6 +1421,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .caseStudyhpsection .casestudyWrapper .secHeading p {
     line-height: 20px;
+    margin-bottom: 20px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes {
     display: block;
@@ -1515,7 +1596,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
-  margin-top: 15px;
+  margin-top: 34px;
   color: #6A6A6A;
 }
 @media screen and (max-width: 1600px) {
@@ -1551,10 +1632,6 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox {
   background: #000;
-  padding: 62px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   overflow: hidden;
   margin-top: 60px;
   transition: 0.3s all ease-out;
@@ -1562,16 +1639,22 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:nth-child(1) {
   margin-top: 0px;
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .imgBox {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 62px 0px;
+}
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .imgBox {
   width: 25%;
   transition: 0.3s all ease-out;
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc {
   width: 50%;
   transition: 0.3s all ease-out;
   position: relative;
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc::before {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc::before {
   content: "";
   position: absolute;
   background: url(../images/service-arrow.svg) no-repeat;
@@ -1582,7 +1665,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   width: 20px;
   transition: 0.3s all ease-out;
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc h3 {
   font-size: 36px;
   font-weight: 500;
   line-height: 46px;
@@ -1591,58 +1674,58 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   padding-bottom: 30px;
 }
 @media screen and (max-width: 1600px) {
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc h3 {
     font-size: 28px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc h3 {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 720px) {
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc h3 {
     font-size: 14px;
   }
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul {
   padding-left: 30px;
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul li {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
-  color: #fff;
+  color: #C9C9C9;
   list-style: disc;
   padding-top: 5px;
 }
 @media screen and (max-width: 1600px) {
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul li {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul li {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul li {
     font-size: 14px;
   }
 }
 .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover {
   transition: 0.3s all ease-out;
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .serviceDesc {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover a .serviceDesc {
   width: 40%;
   transition: 0.3s all ease-out;
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .serviceDesc::before {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover a .serviceDesc::before {
   right: -70px;
   transition: 0.3s all ease-out;
 }
-.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .imgBox {
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover a .imgBox {
   scale: 1.9;
   transition: 0.3s all ease-out;
 }
@@ -1662,37 +1745,39 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .servicehpSection .serviceSecwrapper .secHeading .innerHeading p {
     line-height: 28px;
-    margin-top: 12px;
+    margin-top: 25px;
   }
   .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox {
-    padding: 55px 0px;
     margin-top: 50px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .imgBox {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a {
+    padding: 55px 0px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .imgBox {
     width: 23%;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc {
     width: 53%;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc::before {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc::before {
     height: 18px;
     width: 18px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc h3 {
     line-height: 36px;
     letter-spacing: 0.4px;
     padding-bottom: 25px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul {
     padding-left: 25px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul li {
     line-height: 24px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .serviceDesc {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover a .serviceDesc {
     width: 43%;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .serviceDesc::before {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover a .serviceDesc::before {
     right: -70px;
   }
 }
@@ -1703,18 +1788,23 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   .servicehpSection .serviceSecwrapper .secHeading {
     margin-bottom: 40px;
   }
+  .servicehpSection .serviceSecwrapper .secHeading .innerHeading p {
+    margin-top: 20px;
+  }
   .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox {
-    padding: 45px 0px;
     margin-top: 40px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc::before {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a {
+    padding: 45px 0px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc::before {
     height: 16px;
     width: 16px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc h3 {
     padding-bottom: 20px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul li {
     line-height: 22px;
   }
 }
@@ -1730,19 +1820,22 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .servicehpSection .serviceSecwrapper .secHeading .innerHeading p {
     line-height: 26px;
+    margin-top: 16px;
   }
   .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox {
-    padding: 30px 0px;
     margin-top: 30px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc::before {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a {
+    padding: 30px 0px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc::before {
     height: 14px;
     width: 14px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc h3 {
     padding-bottom: 16px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul li {
     line-height: 23px;
   }
 }
@@ -1756,6 +1849,9 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .servicehpSection .serviceSecwrapper .secHeading .innerHeading {
     width: 100%;
+  }
+  .servicehpSection .serviceSecwrapper .secHeading .innerHeading p {
+    margin-top: 20px;
   }
   .servicehpSection .serviceSecwrapper .secHeading .ctaService {
     display: none;
@@ -1791,35 +1887,37 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     transform: translateX(-50px);
   }
   .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox {
-    padding: 0px 16px 55px;
-    display: block;
     margin: 0px 20px 0px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .imgBox {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a {
+    display: block;
+    padding: 0px 16px 55px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .imgBox {
     width: 65%;
     transform: translateY(0px);
     margin-bottom: 40px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc {
     width: 100%;
     position: relative;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc::before {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc::before {
     right: 16px;
     top: 10px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc h3 {
     line-height: 32px;
     letter-spacing: 1px;
     padding-bottom: 25px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .serviceDesc {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover a .serviceDesc {
     width: 100%;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .serviceDesc::before {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover a .serviceDesc::before {
     right: 16px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover .imgBox {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover a .imgBox {
     scale: unset;
   }
 }
@@ -1835,7 +1933,6 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   .servicehpSection .serviceSecwrapper .secHeading .innerHeading p {
     font-size: 14px;
     line-height: 24px;
-    margin-top: 20px;
   }
   .servicehpSection .serviceSecwrapper .serviceBoxes {
     padding: 0px;
@@ -1843,13 +1940,13 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox {
     margin: 0px 10px 0px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc h3 {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc h3 {
     font-size: 20px;
     line-height: 34px;
     letter-spacing: -0.6px;
     padding-bottom: 20px;
   }
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox .serviceDesc ul li {
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul li {
     letter-spacing: -0.42px;
   }
   .servicehpSection .serviceSecwrapper .ctaDiv {
@@ -1924,7 +2021,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
-  margin-top: 15px;
+  margin-top: 34px;
   color: #6A6A6A;
 }
 @media screen and (max-width: 1600px) {
@@ -2011,7 +2108,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .storyhpSection .storysecWrapper .secHeading p {
     line-height: 28px;
-    margin-top: 12px;
+    margin-top: 25px;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv {
     margin-top: 120px;
@@ -2034,6 +2131,9 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 @media screen and (max-width: 1400px) {
   .storyhpSection {
     margin-bottom: 200px;
+  }
+  .storyhpSection .storysecWrapper .secHeading p {
+    margin-top: 20px;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv {
     margin-top: 100px;
@@ -2062,6 +2162,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .storyhpSection .storysecWrapper .secHeading p {
     line-height: 26px;
+    margin-top: 16px;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv {
     margin-top: 70px;
@@ -2081,6 +2182,9 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 @media screen and (max-width: 1025px) {
   .storyhpSection {
     margin-bottom: 100px;
+  }
+  .storyhpSection .storysecWrapper .secHeading p {
+    margin-top: 20px;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv {
     margin-top: 50px;
@@ -2124,7 +2228,6 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   .storyhpSection .storysecWrapper .secHeading p {
     font-size: 14px;
     line-height: 20px;
-    margin-top: 20px;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv {
     margin-top: 30px;
@@ -2168,13 +2271,13 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
 }
 .bookhpSection .booksecWrapper {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(180deg, #F00 0%, #FAFF00 16.15%, #05FB00 32.29%, #00FFE0 51.56%, #0029FF 68.75%, #FF00D6 84.9%, #F00 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(135deg, #F00 0%, #FAFF00 14.15%, #05FB00 28.29%, #00FFE0 45.56%, #0029FF 60.75%, #FF00D6 75.9%, #F00 100%);
   padding: 115px 0px 65px;
   position: relative;
   background-size: 400% 400%;
-  -webkit-animation: ani 20s ease infinite;
-  -moz-animation: ani 20s ease infinite;
-  animation: ani 20s ease infinite;
+  -webkit-animation: ani 15s ease infinite;
+  -moz-animation: ani 15s ease infinite;
+  animation: ani 15s ease infinite;
 }
 @-webkit-keyframes ani {
   0% {
@@ -2363,6 +2466,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .bookhpSection .booksecWrapper .bookInfodiv p {
     line-height: 20px;
+    margin-top: 16px;
   }
   .bookhpSection .booksecWrapper .ctaDiv {
     bottom: 150px;
@@ -2389,6 +2493,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   .bookhpSection .booksecWrapper .bookInfodiv p {
     line-height: 16px;
     font-size: 16px;
+    margin-top: 20px;
   }
   .bookhpSection .booksecWrapper .ctaDiv {
     bottom: 80px;
@@ -2519,13 +2624,13 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     font-size: 16px;
   }
 }
-.ourPartnershpsec .ourpartnerWrapper .logoSlider, .ourPartnershpsec .ourpartnerWrapper .logoSlider2 {
+.ourPartnershpsec .ourpartnerWrapper .logoSlider {
   border-top: 1px solid #000;
 }
-.ourPartnershpsec .ourpartnerWrapper .logoSlider:last-child, .ourPartnershpsec .ourpartnerWrapper .logoSlider2:last-child {
+.ourPartnershpsec .ourpartnerWrapper .logoSlider:last-child {
   border-bottom: 1px solid #000;
 }
-.ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg, .ourPartnershpsec .ourpartnerWrapper .logoSlider2 .logoImg {
+.ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
   padding: 70px 125px;
 }
 @media screen and (max-width: 1600px) {
@@ -2540,7 +2645,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .ourPartnershpsec .ourpartnerWrapper .secHeading p {
     line-height: 28px;
-    margin-top: 28px;
+    margin-top: 25px;
   }
   .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
     padding: 50px 100px;
@@ -2559,7 +2664,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .ourPartnershpsec .ourpartnerWrapper .secHeading p {
     line-height: 26px;
-    margin-top: 22px;
+    margin-top: 20px;
   }
   .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
     padding: 40px 80px;
@@ -2578,7 +2683,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .ourPartnershpsec .ourpartnerWrapper .secHeading p {
     line-height: 24px;
-    margin-top: 18px;
+    margin-top: 16px;
   }
   .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
     padding: 32px 60px;
@@ -2710,6 +2815,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes {
   width: 40%;
@@ -2743,7 +2849,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   transition: 0.3s all ease-out;
 }
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
-  transform: translateY(-60%);
+  margin-top: -10%;
 }
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
   font-size: 24px;
@@ -2751,7 +2857,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   line-height: 34px;
   padding-bottom: 170px;
   transition: 0.3s all ease-out;
-  color: #5A5A5A;
+  color: #6A6A6A;
 }
 @media screen and (max-width: 1600px) {
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
@@ -2802,7 +2908,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
-  color: #5A5A5A;
+  color: #6A6A6A;
 }
 @media screen and (max-width: 1600px) {
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData h4 {
@@ -2828,6 +2934,16 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover::after {
   transform: rotate(-5deg) translateY(15px);
 }
+@media screen and (max-width: 1920px) {
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
+    margin-top: -20%;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
+    margin-top: -22%;
+  }
+}
 @media screen and (max-width: 1600px) {
   .customerhpsection {
     margin-bottom: 250px;
@@ -2840,7 +2956,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .customerhpsection .customerWrapper .secHeading p {
     line-height: 28px;
-    margin-top: 28px;
+    margin-top: 25px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes {
     margin-top: 120px;
@@ -2855,7 +2971,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     width: 136px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
-    transform: translateY(-45%);
+    margin-top: -14%;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
     line-height: 30px;
@@ -2887,7 +3003,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .customerhpsection .customerWrapper .secHeading p {
     line-height: 26px;
-    margin-top: 22px;
+    margin-top: 20px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes {
     margin-top: 100px;
@@ -2903,7 +3019,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     width: 110px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
-    transform: translateY(-53%);
+    margin-top: -22%;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
     padding-bottom: 120px;
@@ -2934,7 +3050,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .customerhpsection .customerWrapper .secHeading p {
     line-height: 24px;
-    margin-top: 20px;
+    margin-top: 16px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes {
     margin-top: 80px;
@@ -2950,7 +3066,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     width: 90px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
-    transform: translateY(-40%);
+    margin-top: -15%;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
     padding-bottom: 100px;
@@ -2978,6 +3094,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .customerhpsection .customerWrapper .secHeading p {
     line-height: 20px;
+    margin-top: 20px;
   }
   .customerhpsection .customerWrapper .customerBoxes {
     display: block;
@@ -3027,7 +3144,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     width: 80px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
-    transform: unset;
+    margin-top: unset;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
     padding-bottom: 60px;
@@ -3171,6 +3288,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes {
   width: 40%;
@@ -3180,13 +3298,13 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   transition: 0.5s all ease-out;
 }
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:nth-child(even) {
-  transform: translateY(-60%);
+  margin-top: -7%;
 }
-.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogImg img {
+.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogImg img {
   scale: 1.5;
   transition: 0.3s all ease-out;
 }
-.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails {
+.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails {
   background-color: #fff;
   padding: 58px 50px;
   margin: 30px;
@@ -3194,7 +3312,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   bottom: 0;
   transition: 0.3s all ease-out;
 }
-.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h3 {
+.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails h3 {
   font-size: 32px;
   font-weight: 400;
   line-height: 43px;
@@ -3208,43 +3326,43 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   text-overflow: ellipsis;
 }
 @media screen and (max-width: 1600px) {
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h3 {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails h3 {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h3 {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails h3 {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 720px) {
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h3 {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails h3 {
     font-size: 14px;
   }
 }
-.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h4 {
+.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails h4 {
   font-size: 16px;
   font-weight: 600;
   line-height: 1;
   letter-spacing: 0.8px;
 }
 @media screen and (max-width: 1600px) {
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h4 {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails h4 {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 720px) {
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h4 {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails h4 {
     font-size: 12px;
   }
 }
-.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails .blogArrowimg {
+.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails .blogArrowimg {
   position: absolute;
   right: 50px;
   bottom: -100%;
   transition: 0.3s all ease-out;
 }
-.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails .blogArrowimg img {
+.blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails .blogArrowimg img {
   height: 20px;
   width: 20px;
 }
@@ -3262,16 +3380,30 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 .blogshpsection .blogsWrapper .ctaDiv {
   text-align: right;
-  margin-top: -150px;
+  margin-top: -7%;
 }
 .blogshpsection .blogsWrapper .ctaDiv .ctaWhite {
   width: 40%;
   text-align: center;
 }
+@media screen and (max-width: 1920px) {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:nth-child(even) {
+    margin-top: -10%;
+  }
+  .blogshpsection .blogsWrapper .ctaDiv {
+    margin-top: -10%;
+  }
+}
 @media screen and (max-width: 1800px) {
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails .blogArrowimg img {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:nth-child(even) {
+    margin-top: -12%;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails .blogArrowimg img {
     height: 15px;
     width: 15px;
+  }
+  .blogshpsection .blogsWrapper .ctaDiv {
+    margin-top: -12%;
   }
 }
 @media screen and (max-width: 1600px) {
@@ -3286,21 +3418,24 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .blogshpsection .blogsWrapper .secHeading p {
     line-height: 28px;
-    margin-top: 28px;
+    margin-top: 25px;
   }
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes {
     margin-top: 120px;
   }
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:nth-child(even) {
-    transform: translateY(-35%);
+    margin-top: -9%;
   }
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails {
     padding: 50px 45px;
     margin: 25px;
   }
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h3 {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails h3 {
     line-height: 30px;
     margin-top: 25px;
+  }
+  .blogshpsection .blogsWrapper .ctaDiv {
+    margin-top: -9%;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -3315,28 +3450,31 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .blogshpsection .blogsWrapper .secHeading p {
     line-height: 26px;
-    margin-top: 22px;
+    margin-top: 20px;
   }
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes {
     width: 43%;
     margin-top: 100px;
   }
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:nth-child(even) {
-    transform: translateY(-30%);
+    margin-top: -10%;
   }
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails {
     padding: 40px 35px;
     margin: 20px;
   }
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h3 {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails h3 {
     line-height: 28px;
     margin-top: 22px;
   }
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails .blogArrowimg {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails .blogArrowimg {
     right: 30px;
   }
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:hover .blogsData .blogDetails .blogArrowimg {
     bottom: 18px;
+  }
+  .blogshpsection .blogsWrapper .ctaDiv {
+    margin-top: -10%;
   }
   .blogshpsection .blogsWrapper .ctaDiv .ctaWhite {
     width: 43%;
@@ -3351,20 +3489,17 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .blogshpsection .blogsWrapper .secHeading p {
     line-height: 24px;
-    margin-top: 20px;
+    margin-top: 16px;
   }
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes {
     width: 45%;
     margin-top: 80px;
   }
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:nth-child(even) {
-    transform: translateY(-40%);
-  }
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails {
     padding: 30px 25px;
     margin: 15px;
   }
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h3 {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails h3 {
     line-height: 26px;
     margin-top: 20px;
   }
@@ -3384,6 +3519,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   .blogshpsection .blogsWrapper .secHeading p {
     line-height: 20px;
+    margin-top: 20px;
   }
   .blogshpsection .blogsWrapper .blogsBoxes {
     display: block;
@@ -3424,22 +3560,22 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     margin: 0px 20px 0px;
   }
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:nth-child(even) {
-    transform: unset;
+    margin-top: unset;
   }
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogImg img {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogImg img {
     scale: 1;
   }
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails {
     padding: 25px 20px 36px;
     margin: 0px;
   }
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails .blogArrowimg {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails .blogArrowimg {
     display: inline-block;
     position: unset;
     padding-top: 16px;
     transition: none;
   }
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails .blogArrowimg img {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails .blogArrowimg img {
     height: 12px;
     width: 12px;
   }
@@ -3471,14 +3607,14 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes {
     margin: 0px 10px 0px;
   }
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogImg img {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogImg img {
     scale: 1;
   }
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails {
     padding: 25px 20px;
     margin: 0px;
   }
-  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails h3 {
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails h3 {
     font-size: 18px;
     line-height: 28px;
     margin: 10px 0px;
@@ -3556,6 +3692,9 @@ footer .footerWrapper .footerData .footerMenus ul li a {
 }
 footer .footerWrapper .footerData .footerGame {
   width: 35%;
+}
+footer .footerWrapper .footerData .footerGame img {
+  margin: 0 auto;
 }
 footer .footerWrapper .footerData .footerGame #box img.rotate {
   animation: 0.2s linear infinite rotate-con;
@@ -5749,374 +5888,6 @@ a.showLess::after {
 }
 body.opentwo {
   overflow: hidden;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: top 0.2s ease-in-out;
-  background: #f1f1f1;
-  width: 100%;
-  z-index: 9;
-}
-header.nav-up {
-  top: -100px;
-}
-header .headerWrapper {
-  padding-left: 60px;
-  padding-right: 60px;
-  display: flex;
-  align-items: center;
-}
-@media screen and (max-width: 1400px) {
-  header .headerWrapper {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 720px) {
-  header .headerWrapper {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-header .headerWrapper .logoDiv {
-  width: 50%;
-}
-header .headerWrapper .navDiv {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin: 26px 0px;
-}
-header .headerWrapper .navDiv .navList a {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #000;
-}
-@media screen and (max-width: 1600px) {
-  header .headerWrapper .navDiv .navList a {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  header .headerWrapper .navDiv .navList a {
-    font-size: 12px;
-  }
-}
-header .headerWrapper .navDiv .navList .headerCta {
-  border-radius: 6px;
-  background-color: #FF0D47;
-  padding: 14px 28px;
-  margin: 0px 40px;
-  color: #FFF;
-}
-header .headerWrapper .navDiv .hamburgerDiv .button_container {
-  position: relative;
-  height: 20px;
-  width: 20px;
-  cursor: pointer;
-  z-index: 1;
-  transition: opacity 0.25s ease;
-}
-header .headerWrapper .navDiv .hamburgerDiv .button_container.active::before {
-  content: "";
-  position: absolute;
-  top: -22px;
-  left: -20px;
-  right: 0;
-  border-radius: 50%;
-  background-color: #191919;
-  height: 68px;
-  width: 68px;
-}
-header .headerWrapper .navDiv .hamburgerDiv .button_container.active span {
-  width: 28px;
-}
-header .headerWrapper .navDiv .hamburgerDiv .button_container.active .top {
-  transform: translateY(8px) translateX(0) rotate(45deg);
-  background: #FFF;
-}
-header .headerWrapper .navDiv .hamburgerDiv .button_container.active .middle {
-  opacity: 0;
-  background: #FFF;
-}
-header .headerWrapper .navDiv .hamburgerDiv .button_container.active .bottom {
-  transform: translateY(-8px) translateX(0) rotate(-45deg);
-  background: #FFF;
-}
-header .headerWrapper .navDiv .hamburgerDiv .button_container span {
-  background: #000;
-  border: none;
-  height: 3px;
-  width: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.35s ease;
-  cursor: pointer;
-}
-header .headerWrapper .navDiv .hamburgerDiv .button_container span:nth-of-type(2) {
-  top: 8px;
-}
-header .headerWrapper .navDiv .hamburgerDiv .button_container span:nth-of-type(3) {
-  top: 16px;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay {
-  position: absolute;
-  background: #000;
-  top: 0;
-  right: 0;
-  width: 0%;
-  transition: 0.7s all ease-in-out;
-  overflow: hidden;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay.open {
-  width: 100%;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay.open li {
-  animation: fadeInRight 0.5s ease forwards;
-  animation-delay: 0.35s;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay.open li:nth-of-type(2) {
-  animation-delay: 0.5s;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay.open li:nth-of-type(3) {
-  animation-delay: 0.6s;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay.open li:nth-of-type(4) {
-  animation-delay: 0.7s;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay.open li:nth-of-type(5) {
-  animation-delay: 0.8s;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay.open li:nth-of-type(6) {
-  animation-delay: 0.9s;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay.open li:nth-of-type(7) {
-  animation-delay: 1s;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay.open li:nth-of-type(8) {
-  animation-delay: 1.1s;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay nav {
-  position: relative;
-  margin: 116px 0px 0px 0px;
-  overflow-y: auto;
-  height: 100vh;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay nav::-webkit-scrollbar {
-  width: 0 !important;
-  display: none;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul {
-  list-style: none;
-  text-align: right;
-  overflow-x: hidden;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li {
-  position: relative;
-  opacity: 0;
-  margin-bottom: 42px;
-  transition: 0.3s all ease-out;
-  cursor: pointer;
-  margin-right: 120px;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover {
-  transition: 0.3s all ease-out;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a {
-  margin-right: -20px;
-  opacity: 1;
-  transition: 0.3s all ease-out;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a::before {
-  right: -70px;
-  transition: 0.3s all ease-out;
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
-  font-size: 48px;
-  color: #FFF;
-  text-decoration: none;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: -1.5px;
-  opacity: 0.5;
-  text-align: right;
-  transition: 0.3s all ease-out;
-  margin-right: 60px;
-  position: relative;
-}
-@media screen and (max-width: 1600px) {
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
-    font-size: 36px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
-    font-size: 32px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
-    font-size: 26px;
-  }
-}
-@media screen and (max-width: 720px) {
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
-    font-size: 18px;
-  }
-}
-header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
-  content: "";
-  position: absolute;
-  background: url(../images/header-arrow.svg) no-repeat;
-  background-size: contain;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -250px;
-  height: 25px;
-  width: 25px;
-  transition: 0.3s all ease-out;
-}
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    left: 20%;
-  }
-  100% {
-    opacity: 1;
-    left: 0;
-  }
-}
-@media screen and (max-width: 1600px) {
-  header.nav-up {
-    top: -86px;
-  }
-  header .headerWrapper .navDiv {
-    margin: 22px 0px;
-  }
-  header .headerWrapper .navDiv .navList .headerCta {
-    padding: 12px 24px;
-    margin: 0px 30px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .button_container.active::before {
-    height: 60px;
-    width: 60px;
-    left: -18px;
-    top: -20px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .button_container.active span {
-    width: 22px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav {
-    margin: 100px 0px 0px 0px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li {
-    margin-bottom: 38px;
-    margin-right: 110px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a {
-    margin-right: -15px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
-    margin-right: 50px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
-    height: 20px;
-    width: 20px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  header.nav-up {
-    top: -82px;
-  }
-  header .headerWrapper .navDiv {
-    margin: 20px 0px;
-  }
-  header .headerWrapper .navDiv .navList a {
-    font-size: 12px;
-  }
-  header .headerWrapper .navDiv .navList .headerCta {
-    padding: 12px 20px;
-    margin: 0px 25px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .button_container.active::before {
-    height: 50px;
-    width: 50px;
-    left: -16px;
-    top: -16px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .button_container.active span {
-    width: 20px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav {
-    margin: 70px 0px 0px 0px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li {
-    margin-bottom: 30px;
-    margin-right: 100px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
-    margin-right: 45px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
-    height: 18px;
-    width: 18px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a:before {
-    right: -50px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  header.nav-up {
-    top: -74px;
-  }
-  header .headerWrapper .navDiv {
-    margin: 18px 0px;
-  }
-  header .headerWrapper .navDiv .navList .headerCta {
-    padding: 10px 18px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .button_container.active::before {
-    height: 40px;
-    width: 40px;
-    left: -12px;
-    top: -10px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .button_container.active span {
-    width: 16px;
-    height: 2px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav {
-    margin: 60px 0px 0px 0px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li {
-    margin-bottom: 25px;
-    margin-right: 90px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
-    margin-right: 30px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
-    height: 14px;
-    width: 14px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a {
-    margin-right: -5px;
-  }
-  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a:before {
-    right: -40px;
-  }
 }
 
 .caseStudyListingsec {

@@ -48,8 +48,8 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
                             li{
                                 position: relative;opacity: 0;margin-bottom: 42px;transition: 0.3s all ease-out;cursor: pointer;margin-right: 120px;
                                 &:hover{transition: 0.3s all ease-out;
-                                    a{ margin-right: -20px;opacity: 1;transition: 0.3s all ease-out;
-                                        &::before{right: -70px;transition: 0.3s all ease-out;}
+                                    a{ margin-right: -10px;opacity: 1;transition: 0.3s all ease-out;
+                                        &::before{right: -60px;transition: 0.3s all ease-out;}
                                     }
                                 }
                                 a{
@@ -88,7 +88,9 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
                                 li{
                                     margin-bottom: 38px;margin-right: 110px;
                                     &:hover{
-                                        a{ margin-right: -15px;}
+                                        a{ margin-right: -5px;
+                                            &::before{right: -50px;}
+                                        }
                                     }
                                     a{
                                        margin-right: 50px;
@@ -119,15 +121,15 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
                     }
                     .overlay {
                         nav {
-                            margin: 70px 0px 0px 0px;
+                            margin: 90px 0px 0px 0px;
                             ul{
                                 li{
-                                    margin-bottom: 30px;margin-right: 100px;
+                                    margin-bottom: 30px;margin-right: 80px;
                                     a{
-                                       margin-right: 45px;
-                                        &::before{height: 18px;width: 18px;}
+                                       margin-right: 35px;
+                                        &::before{height: 16px;width: 16px;}
                                     }
-                                    &:hover{a:before{right: -50px;}}
+                                    &:hover{a:before{right: -40px;}}
                                 }
                             }
                         }
@@ -152,16 +154,55 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
                     }
                     .overlay {
                         nav {
-                            margin: 60px 0px 0px 0px;
+                            margin: 80px 0px 0px 0px;
                             ul{
                                 li{
-                                    margin-bottom: 25px;margin-right: 90px;
+                                    margin-bottom: 25px;margin-right: 80px;
                                     a{
-                                       margin-right: 30px;
+                                       margin-right: 25px;
                                         &::before{height: 14px;width: 14px;}
                                     }
                                     &:hover{a{margin-right: -5px;
-                                        &:before{right: -40px;}}}
+                                        &:before{right: -30px;}}}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:1024px) {
+        .headerWrapper .logoDiv img{width: 190px;}
+    }
+    
+    @media screen and (max-width:680px) {
+        &.nav-up{top: -50px;}
+        .headerWrapper{
+            .navDiv{margin: 15px 0px;
+                .navList{
+                    .headerCta{display: none;}
+                }
+                .hamburgerDiv{
+                    .button_container {
+                        &.active{
+                            &::before{height: 35px;width: 35px;left: -10px;top: -8px;}
+                            span{width: 14px;}
+                        }
+                    }
+                    .overlay {
+                        nav {
+                            margin: 60px 0px 0px 0px;
+                            ul{
+                                li{
+                                    margin-bottom: 20px;margin-right: 50px;
+                                    a{
+                                       margin-right: 20px;
+                                        &::before{height: 9px;width: 9px;}
+                                    }
+                                    &:hover{a{
+                                        &:before{right: -20px;}}}
                                 }
                             }
                         }
@@ -228,13 +269,13 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
     }
 }
 
-.caseStudyhpsection{margin-bottom: 400px;
+.caseStudyhpsection{margin-bottom: 550px;
     .casestudyWrapper{@include wrapperTwo;
         .secHeading{width: 41%;
             h2{@include font64;font-weight: $fontW500;line-height: 74px;letter-spacing: -1.5px;}
             p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;color: #6A6A6A;}
         }
-        .casestudyBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;
+        .casestudyBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;
             .caseStudyinnerBoxes{width: 40%;margin-top: 150px;position: relative;overflow: hidden;height: 1120px;
                 &:nth-child(even){margin-top: -10%;}
                 &:nth-child(3){animation-delay: 0.7s;}
@@ -258,6 +299,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
     }
 
     @media screen and (max-width:1920px) {
+        margin-bottom: 600px;
         .casestudyWrapper {
             .casestudyBoxes .caseStudyinnerBoxes{
                 height: 780px;
@@ -276,11 +318,11 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         }
     }
     @media screen and (max-width:1600px) {
-        margin-bottom: 320px;
+        margin-bottom: 420px;
         .casestudyWrapper{
             .secHeading{width: 43%;
                 h2{line-height: 64px;}
-                p{line-height: 28px;margin-top: 28px;}
+                p{line-height: 28px;margin-top: 25px;}
             }
             .casestudyBoxes{
                 .caseStudyinnerBoxes{margin-top: 120px;height: 610px;
@@ -295,11 +337,11 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         }
     }
     @media screen and (max-width:1400px) {
-        margin-bottom: 280px;
+        margin-bottom: 380px;
         .casestudyWrapper{
             .secHeading{width: 45%;
                 h2{line-height: 60px;}
-                p{line-height: 26px;margin-top: 22px;}
+                p{line-height: 26px;margin-top: 20px;}
             }
             .casestudyBoxes{
                 .caseStudyinnerBoxes{width: 43%;margin-top: 100px;height: 600px;
@@ -314,11 +356,11 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         }
     }
     @media screen and (max-width:1280px) {
-        margin-bottom: 200px;
+        margin-bottom: 250px;
         .casestudyWrapper{
             .secHeading{
                 h2{line-height: 54px;}
-                p{line-height: 24px;margin-top: 20px;}
+                p{line-height: 24px;margin-top: 16px;}
             }
             .casestudyBoxes{
                 .caseStudyinnerBoxes{width: 42%;margin-top: 80px;height: 540px;
@@ -341,7 +383,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         .casestudyWrapper{
             .secHeading{width: 100%;
                 h2{line-height: 48px;}
-                p{line-height: 20px;}
+                p{line-height: 20px;margin-bottom: 20px;}
             }
             .casestudyBoxes{display: block;margin: 32px 0px;
                 .slick-prev,.slick-next {position: absolute;bottom: -75px;top: unset;background: transparent;border: 2px solid #C0C6C9;border-radius: 40px;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;cursor: pointer;
@@ -385,26 +427,30 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         .secHeading{@include wrapperTwo;display: flex;align-items: flex-end;justify-content: space-between;margin-bottom:60px;
             .innerHeading{width: 50%;
                 h2{@include font64;font-weight: $fontW500;line-height: 74px;letter-spacing: -1.5px;}
-                p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 15px;color: #6A6A6A;}
+                p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;color: #6A6A6A;}
             }
         }
         .serviceBoxes{@include wrapper;
-            .servicesinnerBox{background: #000;padding: 62px 0px;display: flex;align-items: center;justify-content: space-around;overflow: hidden;margin-top: 60px;transition: 0.3s all ease-out;
+            .servicesinnerBox{background: #000;overflow: hidden;margin-top: 60px;transition: 0.3s all ease-out;
                 &:nth-child(1){margin-top: 0px;}
-                .imgBox{width: 25%;transition: 0.3s all ease-out;}
-                .serviceDesc{width: 50%;transition: 0.3s all ease-out;position: relative;
-                    &::before{content: "";position: absolute;background: url(../images/service-arrow.svg)  no-repeat;background-size: contain;top: 0;right: -100%;height: 20px;width: 20px;transition: 0.3s all ease-out;}
-                    h3{@include font36;font-weight: $fontW500;line-height: 46px;letter-spacing: -1px;color: #fff;padding-bottom: 30px;}
-                    ul{padding-left: 30px;
-                        li{@include font20;font-weight: $fontW400;line-height: 30px;color: #fff;list-style: disc;padding-top:5px;}
+                a{display: flex;align-items: center;justify-content: space-around;padding: 62px 0px;
+                    .imgBox{width: 25%;transition: 0.3s all ease-out;}
+                    .serviceDesc{width: 50%;transition: 0.3s all ease-out;position: relative;
+                        &::before{content: "";position: absolute;background: url(../images/service-arrow.svg)  no-repeat;background-size: contain;top: 0;right: -100%;height: 20px;width: 20px;transition: 0.3s all ease-out;}
+                        h3{@include font36;font-weight: $fontW500;line-height: 46px;letter-spacing: -1px;color: #fff;padding-bottom: 30px;}
+                        ul{padding-left: 30px;
+                            li{@include font20;font-weight: $fontW400;line-height: 30px;color: #C9C9C9;list-style: disc;padding-top:5px;}
+                        }
                     }
                 }
                 &:hover{
                     transition: 0.3s all ease-out;
-                    .serviceDesc{width: 40%;transition: 0.3s all ease-out;
-                        &::before{right: -70px;transition: 0.3s all ease-out;}
+                    a{
+                        .serviceDesc{width: 40%;transition: 0.3s all ease-out;
+                            &::before{right: -70px;transition: 0.3s all ease-out;}
+                        }
+                        .imgBox{scale: 1.9;transition: 0.3s all ease-out;}
                     }
-                    .imgBox{scale: 1.9;transition: 0.3s all ease-out;}
                 }
             }
         }
@@ -415,22 +461,26 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
             .secHeading{margin-bottom:50px;
                 .innerHeading{
                     h2{line-height: 60px;letter-spacing: 0.5px;}
-                    p{line-height: 28px;margin-top: 12px;}
+                    p{line-height: 28px;margin-top: 25px;}
                 }
             }
             .serviceBoxes{
-                .servicesinnerBox{padding: 55px 0px;margin-top: 50px;
-                    .imgBox{width: 23%;}
-                    .serviceDesc{width: 53%;
-                        &::before{height: 18px;width: 18px;}
-                        h3{line-height: 36px;letter-spacing: 0.4px;padding-bottom: 25px;}
-                        ul{padding-left: 25px;
-                            li{line-height: 24px;}
+                .servicesinnerBox{margin-top: 50px;
+                    a{padding: 55px 0px;
+                        .imgBox{width: 23%;}
+                        .serviceDesc{width: 53%;
+                            &::before{height: 18px;width: 18px;}
+                            h3{line-height: 36px;letter-spacing: 0.4px;padding-bottom: 25px;}
+                            ul{padding-left: 25px;
+                                li{line-height: 24px;}
+                            }
                         }
                     }
                     &:hover{
-                       .serviceDesc{width: 43%;
-                            &::before{right: -70px;}
+                        a{
+                            .serviceDesc{width: 43%;
+                                &::before{right: -70px;}
+                            }
                         }
                     }
                 }
@@ -440,14 +490,18 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
     }
     @media screen and (max-width:1400px) {margin-bottom: 200px;
         .serviceSecwrapper{
-            .secHeading{margin-bottom:40px;}
+            .secHeading{margin-bottom:40px;
+                .innerHeading p{margin-top: 20px;}
+            }
             .serviceBoxes{
-                .servicesinnerBox{padding: 45px 0px;margin-top: 40px;
-                    .serviceDesc{
-                        &::before{height: 16px;width: 16px;}
-                        h3{padding-bottom: 20px;}
-                        ul{
-                            li{line-height: 22px;}
+                .servicesinnerBox{margin-top: 40px;
+                    a{padding: 45px 0px;
+                        .serviceDesc{
+                            &::before{height: 16px;width: 16px;}
+                            h3{padding-bottom: 20px;}
+                            ul{
+                                li{line-height: 22px;}
+                            }
                         }
                     }
                 }
@@ -460,16 +514,18 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
             .secHeading{margin-bottom:30px;
                 .innerHeading{
                     h2{line-height: 52px;}
-                    p{line-height: 26px;}
+                    p{line-height: 26px;margin-top: 16px;}
                 }
             }
             .serviceBoxes{
-                .servicesinnerBox{padding: 30px 0px;margin-top: 30px;
-                    .serviceDesc{
-                        &::before{height: 14px;width: 14px;}
-                        h3{padding-bottom: 16px;}
-                        ul{
-                            li{line-height: 23px;}
+                .servicesinnerBox{margin-top: 30px;
+                    a{padding: 30px 0px;
+                        .serviceDesc{
+                            &::before{height: 14px;width: 14px;}
+                            h3{padding-bottom: 16px;}
+                            ul{
+                                li{line-height: 23px;}
+                            }
                         }
                     }
                 }
@@ -481,7 +537,9 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
     @media screen and (max-width:1024px) {margin-bottom: 100px;
         .serviceSecwrapper{
             .secHeading{display: block;margin-bottom:40px;
-                .innerHeading{width: 100%;}
+                .innerHeading{width: 100%;
+                    p{margin-top: 20px;}
+                }
                 .ctaService{display: none;}
             }
             .serviceBoxes{
@@ -492,17 +550,21 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
                     }
                     &.slick-prev {left: 50%;transform: translateX(-50px);}
                 }
-                .servicesinnerBox{padding: 0px 16px 55px;display: block;margin: 0px 20px 0px;
-                    .imgBox{width: 65%;transform: translateY(0px);margin-bottom: 40px;}
-                    .serviceDesc{width: 100%;position: relative;
-                        &::before{right: 16px;top: 10px;}
-                        h3{line-height: 32px;letter-spacing: 1px;padding-bottom: 25px;}
+                .servicesinnerBox{margin: 0px 20px 0px;
+                    a{display: block;padding: 0px 16px 55px;
+                        .imgBox{width: 65%;transform: translateY(0px);margin-bottom: 40px;}
+                        .serviceDesc{width: 100%;position: relative;
+                            &::before{right: 16px;top: 10px;}
+                            h3{line-height: 32px;letter-spacing: 1px;padding-bottom: 25px;}
+                        }
                     }
                     &:hover{
-                        .serviceDesc{width: 100%;
-                            &::before{right: 16px;}
+                        a{
+                            .serviceDesc{width: 100%;
+                                &::before{right: 16px;}
+                            }
+                            .imgBox{scale: unset;}
                         }
-                        .imgBox{scale: unset;}
                     }
                 }
             }
@@ -515,16 +577,18 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
             .secHeading{
                 .innerHeading{
                     h2{font-size: 30px;line-height: 40px;letter-spacing: -0.9px;}
-                    p{font-size: 14px;line-height: 24px;margin-top:20px;}
+                    p{font-size: 14px;line-height: 24px;}
                 }
             }
             .serviceBoxes{
                 padding: 0px;
                 .servicesinnerBox{margin: 0px 10px 0px;
-                    .serviceDesc{
-                        h3{font-size: 20px;line-height: 34px;letter-spacing: -0.6px;padding-bottom: 20px;}
-                        ul{
-                            li{letter-spacing: -0.42px;}
+                    a{
+                        .serviceDesc{
+                            h3{font-size: 20px;line-height: 34px;letter-spacing: -0.6px;padding-bottom: 20px;}
+                            ul{
+                                li{letter-spacing: -0.42px;}
+                            }
                         }
                     }
                 }
@@ -541,7 +605,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
     .storysecWrapper{@include wrapperTwo;
         .secHeading{
             h2{@include font64;font-weight: $fontW500;line-height: 74px;letter-spacing: -1.9px;}
-            p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 15px;color: #6A6A6A;}
+            p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;color: #6A6A6A;}
         }
         .storyMaindiv{
             .mainInfodiv{margin-top: 150px;background: #fff;display: flex;align-items: center;
@@ -559,7 +623,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         .storysecWrapper{
             .secHeading{
                 h2{line-height: 60px;letter-spacing: 0.5px;}
-                    p{line-height: 28px;margin-top: 12px;}
+                    p{line-height: 28px;margin-top: 25px;}
             }
             .storyMaindiv{
                 .mainInfodiv{margin-top: 120px;
@@ -575,6 +639,9 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
     }
     @media screen and (max-width:1400px) {margin-bottom: 200px;
         .storysecWrapper{
+            .secHeading{
+                p{margin-top: 20px;}
+            }
             .storyMaindiv{
                 .mainInfodiv{margin-top: 100px;
                     .imageDiv{width: 37%;}
@@ -591,7 +658,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         .storysecWrapper{
             .secHeading{
                 h2{line-height: 52px;}
-                p{line-height: 26px;}
+                p{line-height: 26px;margin-top: 16px;}
             }
             .storyMaindiv{
                 .mainInfodiv{margin-top: 70px;
@@ -606,6 +673,9 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
     }
     @media screen and (max-width:1025px) {margin-bottom: 100px;
         .storysecWrapper{
+            .secHeading{
+                p{margin-top: 20px;}
+            }
             .storyMaindiv{
                 .mainInfodiv{margin-top: 50px;
                     .storyDescdiv{padding: 0px 50px;
@@ -634,7 +704,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         .storysecWrapper{
             .secHeading{
                 h3{font-size: 30px;line-height: 30px;letter-spacing: -0.9px;}
-                p{font-size: 14px;line-height: 20px;margin-top: 20px;}
+                p{font-size: 14px;line-height: 20px;}
             }
             .storyMaindiv{
                 .mainInfodiv{margin-top: 30px;flex-direction: column;
@@ -652,10 +722,10 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
 }
 
 .bookhpSection{margin-bottom: 400px;@include wrapper;
-    .booksecWrapper{background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #F00 0%, #FAFF00 16.15%, #05FB00 32.29%, #00FFE0 51.56%, #0029FF 68.75%, #FF00D6 84.9%, #F00 100%);padding: 115px 0px 65px;position: relative;  background-size: 400% 400%;
-        -webkit-animation: ani 20s ease infinite;
-        -moz-animation: ani 20s ease infinite;
-        animation: ani 20s ease infinite;
+    .booksecWrapper{background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(135deg, #F00 0%, #FAFF00 14.15%, #05FB00 28.29%, #00FFE0 45.56%, #0029FF 60.75%, #FF00D6 75.9%, #F00 100%);padding: 115px 0px 65px;position: relative;  background-size: 400% 400%;
+        -webkit-animation: ani 15s ease infinite;
+        -moz-animation: ani 15s ease infinite;
+        animation: ani 15s ease infinite;
         @-webkit-keyframes ani {
           0%{background-position:0% 0%}
           50%{background-position:50% 100%}
@@ -714,7 +784,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         .booksecWrapper{padding: 60px 0px 35px;
             .bookInfodiv{top: 150px;left: 60px;width: 40%;
                 h2{line-height: 50px;}
-                p{line-height: 20px;}
+                p{line-height: 20px;margin-top: 16px;}
             }
             .ctaDiv{bottom: 150px;right: 60px;}
             
@@ -725,7 +795,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         .booksecWrapper{padding: 40px 0px 25px;
             .bookInfodiv{top: 80px;left: 40px;width: 35%;
                 h2{line-height: 40px;font-size: 32px;letter-spacing: -0.5px;}
-                p{line-height: 16px;font-size: 16px;}
+                p{line-height: 16px;font-size: 16px;margin-top: 20px;}
             }
             .ctaDiv{bottom: 80px;right: 40px;}
         }
@@ -757,7 +827,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
             h2{@include font64;font-weight: $fontW500;line-height: 74px;letter-spacing: -1.5px;}
             p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;color: #6A6A6A;}
         }
-        .logoSlider, .logoSlider2{border-top: 1px solid #000;
+        .logoSlider{border-top: 1px solid #000;
             &:last-child{border-bottom: 1px solid #000;}
             .logoImg{padding: 70px 125px}
         }
@@ -766,7 +836,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         .ourpartnerWrapper{
             .secHeading{margin-bottom: 35px;
                 h2{line-height: 64px;}
-                p{line-height: 28px;margin-top: 28px;}
+                p{line-height: 28px;margin-top: 25px;}
             }
             .logoSlider{
                 .logoImg{padding: 50px 100px}
@@ -778,7 +848,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         .ourpartnerWrapper{
             .secHeading{margin-bottom: 30px;width: 70%;
                 h2{line-height: 60px;}
-                p{line-height: 26px;margin-top: 22px;}
+                p{line-height: 26px;margin-top: 20px;}
             }
             .logoSlider{
                 .logoImg{padding: 40px 80px}
@@ -790,7 +860,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         .ourpartnerWrapper{
             .secHeading{margin-bottom: 20px;width: 60%;
                 h2{line-height: 54px;}
-                p{line-height: 24px;margin-top: 18px;}
+                p{line-height: 24px;margin-top: 16px;}
             }
             .logoSlider{
                 .logoImg{padding: 32px 60px}
@@ -835,16 +905,16 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
             h2{@include font64;font-weight: $fontW500;line-height: 74px;letter-spacing: -1.5px;}
             p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;color: #6A6A6A;}
         }
-        .customerBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;
+        .customerBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;
             .innerBoxes{width: 40%;margin-top: 150px;padding: 190px 70px;background-color: #fff;position: relative;overflow: hidden;transition: 0.5s all ease-out;
                 &::before{content: "";position: absolute;background: url(../images/top-quote-img.svg)  no-repeat;background-size: contain;top: 0;left: 20px;height: 110px;width: 156px;transition: 0.3s all ease-out;}
                 &::after{content: "";position: absolute;background: url(../images/btm-quote-img.svg)  no-repeat;background-size: contain;bottom: 0;right: 20px;height: 110px;width: 156px;transition: 0.3s all ease-out;}
-                &:nth-child(even){transform: translateY(-60%);}
-                p{@include font24; font-weight: $fontW400;line-height: 34px;padding-bottom: 170px;transition: 0.3s all ease-out;color: #5A5A5A;}
+                &:nth-child(even){margin-top: -10%;}
+                p{@include font24; font-weight: $fontW400;line-height: 34px;padding-bottom: 170px;transition: 0.3s all ease-out;color: #6A6A6A;}
                 .customerData{transition: 0.3s all ease-out;
                     .customerImgdiv{border-radius: 50%;width: 85px;height: 85px}
                     h3{@include font20; font-weight: $fontW600;line-height: 1;letter-spacing: -0.6px;margin: 15px 0px 10px;}
-                    h4{@include font14; font-weight: $fontW500;line-height: 1;color: #5A5A5A;}
+                    h4{@include font14; font-weight: $fontW500;line-height: 1;color: #6A6A6A;}
                 }
                 &:hover{
                     p{transform: translateY(-20px);transition: 0.3s all ease-out;}
@@ -855,18 +925,32 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
             }
         }
     }
+    @media screen and (max-width:1920px) {
+        .customerWrapper{
+            .customerBoxes  .innerBoxes{
+                &:nth-child(even){margin-top: -20%;}
+            }
+        }
+    }
+    @media screen and (max-width:1800px) {
+        .customerWrapper{
+            .customerBoxes  .innerBoxes{
+                &:nth-child(even){margin-top: -22%;}
+            }
+        }
+    }
     @media screen and (max-width:1600px) {
         margin-bottom: 250px;
         .customerWrapper{
             .secHeading{width: 43%;
                 h2{line-height: 64px;}
-                p{line-height: 28px;margin-top: 28px;}
+                p{line-height: 28px;margin-top: 25px;}
             }
             .customerBoxes{
                 .innerBoxes{margin-top: 120px;padding: 140px 50px;
                     &::before{height: 90px;width: 136px;}
                     &::after{height: 90px;width: 136px;}
-                    &:nth-child(even){transform: translateY(-45%);}
+                    &:nth-child(even){margin-top: -14%;}
                     p{line-height: 30px;padding-bottom: 140px;}
                     .customerData{
                         .customerImgdiv{width: 75px;height: 75px}
@@ -885,13 +969,13 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         .customerWrapper{
             .secHeading{width: 45%;
                 h2{line-height: 60px;}
-                p{line-height: 26px;margin-top: 22px;}
+                p{line-height: 26px;margin-top: 20px;}
             }
             .customerBoxes{
                 .innerBoxes{margin-top: 100px;padding: 120px 40px;width: 43%;
                     &::before{height: 70px;width: 110px;}
                     &::after{height: 70px;width: 110px;}
-                    &:nth-child(even){transform: translateY(-53%);}
+                    &:nth-child(even){margin-top: -22%;}
                     p{padding-bottom: 120px;}
                     .customerData{
                         .customerImgdiv{width: 65px;height: 65px}
@@ -911,13 +995,13 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         .customerWrapper{
             .secHeading{
                 h2{line-height: 54px;}
-                p{line-height: 24px;margin-top: 20px;}
+                p{line-height: 24px;margin-top: 16px;}
             }
             .customerBoxes{
                 .innerBoxes{margin-top: 80px;padding: 100px 30px;width: 45%;
                     &::before{height: 50px;width: 90px;}
                     &::after{height: 50px;width: 90px;}
-                    &:nth-child(even){transform: translateY(-40%);}
+                    &:nth-child(even){margin-top: -15%;}
                     p{padding-bottom: 100px;}
                     .customerData{
                         .customerImgdiv{width: 60px;height: 60px}
@@ -935,7 +1019,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         .customerWrapper{
             .secHeading{width: 100%;
                 h2{line-height: 48px;}
-                p{line-height: 20px;}
+                p{line-height: 20px;margin-top: 20px;}
             }
             .customerBoxes{display: block;margin: 32px 0px;
                 .slick-prev,.slick-next {position: absolute;bottom: -75px;top: unset;background: transparent;border: 2px solid #C0C6C9;border-radius: 40px;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;cursor: pointer;
@@ -948,7 +1032,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
                 .innerBoxes{padding: 100px 24px;width: unset;margin: 0px 20px 0px;
                     &::before{height: 58px;width: 90px;}
                     &::after{height: 58px;width: 80px;}
-                    &:nth-child(even){transform: unset;}
+                    &:nth-child(even){margin-top: unset;}
                     p{padding-bottom: 60px;}
                     .customerData{
                         .customerImgdiv{width: 50px;height: 50px}
@@ -987,16 +1071,14 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
             h2{@include font64;font-weight: $fontW500;line-height: 74px;letter-spacing: -1.5px;}
             p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;color: #6A6A6A;}
         }
-        .blogsBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;
+        .blogsBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;
             .blogsinnerBoxes{width: 40%;margin-top: 150px;position: relative;overflow: hidden;transition: 0.5s all ease-out;
-               &:nth-child(even){transform: translateY(-60%);}
-                .blogsData{
-                    .blogImg{img{scale: 1.5;transition: 0.3s all ease-out;}}
+               &:nth-child(even){margin-top: -7%;}
+                .blogImg{img{scale: 1.5;transition: 0.3s all ease-out;}}
                     .blogDetails{background-color: #fff;padding: 58px 50px;margin: 30px;position: absolute;bottom: 0;transition: 0.3s all ease-out;
                         h3{@include font32; font-weight: $fontW400;line-height: 43px;margin-top: 30px;display: block;display: -webkit-box;max-width: 100%;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;}
                         h4{@include font16; font-weight: $fontW600;line-height: 1;letter-spacing: 0.8px;}
                         .blogArrowimg{position: absolute;right: 50px;bottom: -100%;transition: 0.3s all ease-out;img{height: 20px;width: 20px;}}
-                    }
                 }
                 &:hover{
                    .blogsData{
@@ -1008,31 +1090,45 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
                 }
             }
         }
-        .ctaDiv{text-align: right;margin-top: -150px;
+        .ctaDiv{text-align: right;margin-top: -7%;
             .ctaWhite{width: 40%;text-align: center;}
         }
     }
 
+    @media screen and (max-width:1920px) {
+        .blogsWrapper {
+            .blogsBoxes .blogsinnerBoxes{
+                &:nth-child(even){margin-top: -10%;}
+            }
+            .ctaDiv{margin-top: -10%;}
+        }
+    }
+
     @media screen and (max-width:1800px) {
-        .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogsData .blogDetails .blogArrowimg img{height: 15px;width: 15px;}
+        .blogsWrapper{
+            .blogsBoxes .blogsinnerBoxes {
+                &:nth-child(even){margin-top: -12%;}
+                .blogDetails .blogArrowimg img{height: 15px;width: 15px;}
+            }
+            .ctaDiv{margin-top: -12%;}
+        }    
     }
     @media screen and (max-width:1600px) {
         margin-bottom: 250px;
         .blogsWrapper{
             .secHeading{width: 43%;
                 h2{line-height: 64px;}
-                p{line-height: 28px;margin-top: 28px;}
+                p{line-height: 28px;margin-top: 25px;}
             }
             .blogsBoxes{
                 .blogsinnerBoxes{margin-top: 120px;
-                &:nth-child(even){transform: translateY(-35%);}
-                    .blogsData{
-                        .blogDetails{padding: 50px 45px;margin: 25px;
-                            h3{line-height: 30px;margin-top: 25px;}
-                        }
-                    }
+                &:nth-child(even){margin-top: -9%;}
+                   .blogDetails{padding: 50px 45px;margin: 25px;
+                        h3{line-height: 30px;margin-top: 25px;}
+                    }                    
                 }
             }
+            .ctaDiv{margin-top: -9%;}
         }
     }
     @media screen and (max-width:1400px) {
@@ -1040,16 +1136,14 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         .blogsWrapper{
             .secHeading{width: 45%;
                 h2{line-height: 60px;}
-                p{line-height: 26px;margin-top: 22px;}
+                p{line-height: 26px;margin-top: 20px;}
             }
             .blogsBoxes{
                 .blogsinnerBoxes{width: 43%;margin-top: 100px;
-                    &:nth-child(even){transform: translateY(-30%);}
-                    .blogsData{
-                        .blogDetails{padding: 40px 35px;margin: 20px;
-                            h3{line-height: 28px;margin-top: 22px;}
-                            .blogArrowimg{right: 30px;}
-                        }
+                    &:nth-child(even){margin-top: -10%;}
+                    .blogDetails{padding: 40px 35px;margin: 20px;
+                        h3{line-height: 28px;margin-top: 22px;}
+                        .blogArrowimg{right: 30px;}
                     }
                     &:hover{
                         .blogsData{
@@ -1060,7 +1154,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
                      }
                 }
             }
-            .ctaDiv{.ctaWhite{width: 43%;}}
+            .ctaDiv{.ctaWhite{width: 43%;}margin-top: -10%;}
         }
     }
     @media screen and (max-width:1200px) {
@@ -1068,15 +1162,12 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         .blogsWrapper{
             .secHeading{
                 h2{line-height: 54px;}
-                p{line-height: 24px;margin-top: 20px;}
+                p{line-height: 24px;margin-top: 16px;}
             }
             .blogsBoxes{
                 .blogsinnerBoxes{width: 45%;margin-top: 80px;
-                    &:nth-child(even){transform: translateY(-40%);}
-                    .blogsData{
-                        .blogDetails{padding: 30px 25px;margin: 15px;
-                            h3{line-height: 26px;margin-top: 20px;}
-                        }
+                   .blogDetails{padding: 30px 25px;margin: 15px;
+                        h3{line-height: 26px;margin-top: 20px;}
                     }
                 }
             }
@@ -1088,7 +1179,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
         .blogsWrapper{
             .secHeading{width: 100%;
                 h2{line-height: 48px;}
-                p{line-height: 20px;}
+                p{line-height: 20px;margin-top: 20px;}
             }
             .blogsBoxes{display: block;margin: 32px 0px;
                 .slick-prev,.slick-next {position: absolute;bottom: -75px;top: unset;background: transparent;border: 2px solid #C0C6C9;border-radius: 40px;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;cursor: pointer;
@@ -1099,12 +1190,10 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
                     &.slick-prev {left: 50%;transform: translateX(-50px);}
                 }
                 .blogsinnerBoxes{width: unset;margin: 0px 20px 0px;
-                    &:nth-child(even){transform: unset;}
-                    .blogsData{
-                        .blogImg img{scale: 1;}
-                        .blogDetails{padding: 25px 20px 36px;margin: 0px;
-                            .blogArrowimg{display: inline-block;position: unset;padding-top: 16px;transition: none;img{height: 12px;width: 12px;}}
-                        }
+                    &:nth-child(even){margin-top: unset;}
+                   .blogImg img{scale: 1;}
+                    .blogDetails{padding: 25px 20px 36px;margin: 0px;
+                        .blogArrowimg{display: inline-block;position: unset;padding-top: 16px;transition: none;img{height: 12px;width: 12px;}}
                     }
                 }
             }
@@ -1117,11 +1206,9 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
             .secHeading{h2{font-size: 30px;line-height: 40px;}p{font-size: 14px;}padding: 0px 20px;}
             .blogsBoxes{
                 .blogsinnerBoxes{margin: 0px 10px 0px;
-                    .blogsData{
-                        .blogImg img{scale: 1;}
-                        .blogDetails{padding: 25px 20px;margin: 0px;
-                            h3{font-size: 18px;line-height: 28px;margin: 10px 0px;}
-                        }
+                    .blogImg img{scale: 1;}
+                    .blogDetails{padding: 25px 20px;margin: 0px;
+                        h3{font-size: 18px;line-height: 28px;margin: 10px 0px;}
                     }
                 }
             }
@@ -1142,7 +1229,7 @@ footer{@include wrapper;margin-bottom: 70px;
                 }
             }
             .footerGame{width:35%;
-                  
+                img{margin:  0 auto;}
                   #box img.rotate {
                     animation: 0.2s linear infinite rotate-con;
                     border-radius: 324px;
