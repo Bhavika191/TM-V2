@@ -874,7 +874,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 720px) {
   .videoSection .videosecWrapper .secHeading h1 {
-    font-size: 44px;
+    font-size: 40px;
   }
 }
 .videoSection .videosecWrapper .videoDiv {
@@ -4849,7 +4849,7 @@ a.showLess::after {
 }
 @media screen and (max-width: 720px) {
   .collaborateFormSec .collaborateSec .secHeading h1 {
-    font-size: 44px;
+    font-size: 40px;
   }
 }
 .collaborateFormSec .collaborateSec .secHeading p {
@@ -4951,6 +4951,139 @@ a.showLess::after {
     font-size: 12px;
   }
 }
+@media screen and (max-width: 1600px) {
+  .collaborateFormSec {
+    margin: 100px 0px 300px;
+  }
+  .collaborateFormSec .collaborateSec {
+    padding-right: 60px !important;
+  }
+  .collaborateFormSec .collaborateSec .secHeading {
+    margin-top: 100px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading h1 {
+    line-height: 86px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading p {
+    line-height: 30px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm {
+    padding: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    margin-bottom: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+    padding: 12px 24px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .collaborateFormSec {
+    margin: 100px 0px 250px;
+  }
+  .collaborateFormSec .collaborateSec {
+    padding-right: 40px !important;
+  }
+  .collaborateFormSec .collaborateSec .secHeading {
+    margin-top: 80px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm {
+    padding: 40px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    margin-bottom: 30px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+    padding: 12px 24px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .collaborateFormSec {
+    margin: 100px 0px 200px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .collaborateFormSec {
+    margin: 100px 0px 150px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading {
+    margin-top: 80px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading h1 {
+    line-height: 70px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading p {
+    line-height: 26px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm {
+    padding: 40px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    margin-bottom: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+    padding: 12px 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .collaborateFormSec {
+    margin: 80px 0px 150px;
+  }
+  .collaborateFormSec .collaborateSec {
+    padding-right: 50px !important;
+  }
+  .collaborateFormSec .collaborateSec .secHeading {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading h1 {
+    line-height: 70px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading p {
+    line-height: 26px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm {
+    padding: 50px;
+    width: 115%;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    margin-bottom: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+    padding: 12px 24px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .collaborateFormSec .collaborateSec {
+    padding-right: 20px !important;
+  }
+  .collaborateFormSec .collaborateSec .secHeading {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading h1 {
+    line-height: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm {
+    padding: 40px 25px;
+    width: 115%;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form label {
+    margin-bottom: 8px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    margin-bottom: 30px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+    padding: 12px 24px;
+  }
+}
 
 .meetupAdderssSec {
   margin-bottom: 250px;
@@ -5050,7 +5183,7 @@ a.showLess::after {
   position: relative;
 }
 .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
-  transform: translateY(-55%);
+  margin-top: -24%;
 }
 .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:first-child {
   transform: translateY(0px);
@@ -5261,13 +5394,118 @@ a.showLess::after {
     font-size: 14px;
   }
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact:hover .mailIcon {
-  height: 48%;
-}
 .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact:hover .mailIcon img {
   transform: translate(120%, -15%) rotate(-30deg);
   width: 50%;
 }
 .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact:hover .MailIds .idsBox::before {
   right: 24px;
+}
+@media screen and (max-width: 1600px) {
+  .meetupAdderssSec {
+    margin-bottom: 180px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading {
+    margin-bottom: 120px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+    line-height: 62px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
+    margin-bottom: 120px;
+    height: 700px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff {
+    height: 150px;
+    top: 15px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.delhiOff {
+    left: -400px;
+    width: 400px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.mumbaiOff {
+    left: -700px;
+    width: 700px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.bangaloreOff {
+    left: -780px;
+    width: 780px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap {
+    margin-top: 150px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 40px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
+    height: 45%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
+    width: 75%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 40px 25px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .meetupAdderssSec {
+    margin-bottom: 150px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading {
+    margin-bottom: 100px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+    line-height: 62px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
+    margin-bottom: 100px;
+    height: 600px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff {
+    height: 120px;
+    top: 15px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.delhiOff {
+    left: -300px;
+    width: 300px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.mumbaiOff {
+    left: -600px;
+    width: 600px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.bangaloreOff {
+    left: -620px;
+    width: 620px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap {
+    margin-top: 120px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 25px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
+    height: 38%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
+    width: 65%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 30px 25px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
+    margin-top: -28%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .meetupAdderssSec {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .meetupAdderssSec {
+    margin-bottom: 150px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+    line-height: 52px;
+  }
 }/*# sourceMappingURL=main.css.map */
