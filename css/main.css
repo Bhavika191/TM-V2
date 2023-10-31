@@ -278,7 +278,7 @@ img {
 .ctaWhite:hover svg {
   fill: #fff;
   transition: 0.5s all ease-out;
-  opacity: 1;
+  display: inline-block;
 }
 .ctaWhite svg {
   fill: #000;
@@ -286,7 +286,7 @@ img {
   width: 20px;
   transition: 0.5s all ease-out;
   margin-left: 18px;
-  opacity: 0;
+  display: none;
 }
 @media screen and (max-width: 1600px) {
   .ctaWhite {
@@ -316,7 +316,7 @@ img {
 }
 @media screen and (max-width: 1024px) {
   .ctaWhite svg {
-    opacity: 1;
+    display: inline-block;
   }
 }
 @media screen and (max-width: 720px) {
@@ -359,7 +359,7 @@ img {
 .ctaBlack:hover svg {
   fill: #000;
   transition: 0.5s all ease-out;
-  opacity: 1;
+  display: inline-block;
 }
 .ctaBlack svg {
   fill: #fff;
@@ -367,7 +367,7 @@ img {
   width: 12px;
   transition: 0.5s all ease-out;
   margin-left: 18px;
-  opacity: 0;
+  display: none;
 }
 @media screen and (max-width: 1600px) {
   .ctaBlack {
@@ -392,7 +392,7 @@ img {
 }
 @media screen and (max-width: 1024px) {
   .ctaBlack svg {
-    opacity: 1;
+    display: inline-block;
   }
 }
 @media screen and (max-width: 720px) {
@@ -5953,6 +5953,8 @@ body.opentwo {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row-reverse;
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
   width: 40%;
@@ -5961,7 +5963,7 @@ body.opentwo {
   overflow: hidden;
   height: 1120px;
 }
-.caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(even) {
+.caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(odd) {
   margin-top: -10%;
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(3) {
@@ -6051,19 +6053,39 @@ body.opentwo {
   bottom: 0;
   transition: 0.5s all ease-out;
 }
+.caseStudyListingsec .casestudyWrapper .ctaDiv {
+  text-align: right;
+  margin-top: -10%;
+}
+.caseStudyListingsec .casestudyWrapper .ctaDiv .ctaWhite {
+  width: 40%;
+  text-align: center;
+}
 @media screen and (max-width: 1920px) {
+  .caseStudyListingsec {
+    margin-bottom: 600px;
+  }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
     height: 780px;
   }
-  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(even) {
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(odd) {
+    margin-top: -20%;
+  }
+  .caseStudyListingsec .casestudyWrapper .ctaDiv {
     margin-top: -20%;
   }
 }
 @media screen and (max-width: 1800px) {
+  .caseStudyListingsec {
+    margin: 200px 0px 220px;
+  }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
     height: 690px;
   }
-  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(even) {
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(odd) {
+    margin-top: -22%;
+  }
+  .caseStudyListingsec .casestudyWrapper .ctaDiv {
     margin-top: -22%;
   }
 }
@@ -6079,13 +6101,13 @@ body.opentwo {
   }
   .caseStudyListingsec .casestudyWrapper .secHeading p {
     line-height: 28px;
-    margin-top: 28px;
+    margin-top: 25px;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
     margin-top: 120px;
     height: 610px;
   }
-  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(even) {
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(odd) {
     margin-top: -19%;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc {
@@ -6098,10 +6120,13 @@ body.opentwo {
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h4 {
     line-height: 1;
   }
+  .caseStudyListingsec .casestudyWrapper .ctaDiv {
+    margin-top: -19%;
+  }
 }
 @media screen and (max-width: 1400px) {
   .caseStudyListingsec {
-    margin: 150px 0px 180px;
+    margin: 150px 0px 170px;
   }
   .caseStudyListingsec .casestudyWrapper .secHeading {
     width: 45%;
@@ -6111,14 +6136,14 @@ body.opentwo {
   }
   .caseStudyListingsec .casestudyWrapper .secHeading p {
     line-height: 26px;
-    margin-top: 22px;
+    margin-top: 20px;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
     width: 43%;
     margin-top: 100px;
     height: 600px;
   }
-  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(even) {
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(odd) {
     margin-top: -22%;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc {
@@ -6131,24 +6156,30 @@ body.opentwo {
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc img {
     width: 14px;
   }
+  .caseStudyListingsec .casestudyWrapper .ctaDiv {
+    margin-top: -20%;
+  }
+  .caseStudyListingsec .casestudyWrapper .ctaDiv .ctaWhite {
+    width: 43%;
+  }
 }
 @media screen and (max-width: 1280px) {
   .caseStudyListingsec {
-    margin: 100px 0px 150px;
+    margin: 120px 0px 150px;
   }
   .caseStudyListingsec .casestudyWrapper .secHeading h2 {
     line-height: 54px;
   }
   .caseStudyListingsec .casestudyWrapper .secHeading p {
     line-height: 24px;
-    margin-top: 20px;
+    margin-top: 16px;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
     width: 42%;
     margin-top: 80px;
     height: 540px;
   }
-  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(even) {
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(odd) {
     margin-top: -15%;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc {
@@ -6158,6 +6189,12 @@ body.opentwo {
     line-height: 26px;
     margin: 15px 0px;
   }
+  .caseStudyListingsec .casestudyWrapper .ctaDiv {
+    margin-top: -15%;
+  }
+  .caseStudyListingsec .casestudyWrapper .ctaDiv .ctaWhite {
+    width: 42%;
+  }
 }
 @media screen and (max-width: 1200px) {
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
@@ -6166,54 +6203,23 @@ body.opentwo {
 }
 @media screen and (max-width: 1024px) {
   .caseStudyListingsec .casestudyWrapper .secHeading {
-    width: 100%;
+    width: 45%;
   }
   .caseStudyListingsec .casestudyWrapper .secHeading h2 {
     line-height: 48px;
+    letter-spacing: -0.9px;
   }
   .caseStudyListingsec .casestudyWrapper .secHeading p {
     line-height: 20px;
-  }
-  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes {
-    display: block;
-    margin: 32px 0px;
-  }
-  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-prev, .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-next {
-    position: absolute;
-    bottom: -75px;
-    top: unset;
-    background: transparent;
-    border: 2px solid #C0C6C9;
-    border-radius: 40px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-prev::before, .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-next::before {
-    content: url(../images/slider-prev.svg);
-    opacity: 1;
-    scale: 0.7;
-  }
-  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-prev.slick-next, .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-next.slick-next {
-    right: 50%;
-    transform: translateX(50px);
-  }
-  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-prev.slick-next::before, .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-next.slick-next::before {
-    content: url(../images/slider-next.svg);
-  }
-  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-prev.slick-prev, .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .slick-next.slick-prev {
-    left: 50%;
-    transform: translateX(-50px);
+    margin-bottom: 20px;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
-    width: unset;
-    margin: 0px 20px 0px;
+    width: 45%;
+    margin-top: 60px;
+    height: auto;
   }
-  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(even) {
-    margin-top: unset;
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .casestudyImg {
+    position: relative;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .casestudyImg img {
     transform: rotate(0deg) scale(1);
@@ -6231,32 +6237,59 @@ body.opentwo {
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc {
     bottom: 0;
-    margin: 16px;
+    transition: 0.5s all ease-out;
+    margin: 20px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h3 {
+    line-height: 23px;
+    margin: 15px 0px;
+    font-size: 18px;
+  }
+  .caseStudyListingsec .casestudyWrapper .ctaDiv {
+    margin-top: -15%;
+  }
+  .caseStudyListingsec .casestudyWrapper .ctaDiv .ctaWhite {
+    width: 42%;
   }
 }
 @media screen and (max-width: 680px) {
-  .caseStudyListingsec .casestudyWrapper {
-    padding: 0px;
+  .caseStudyListingsec {
+    margin: 100px 0px 150px;
   }
   .caseStudyListingsec .casestudyWrapper .secHeading {
-    padding: 0px 20px;
+    width: 100%;
   }
   .caseStudyListingsec .casestudyWrapper .secHeading h2 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -1.2px;
   }
   .caseStudyListingsec .casestudyWrapper .secHeading p {
-    font-size: 14px;
+    line-height: 26px;
+    margin: 20px 0px;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
-    margin: 0px 10px 0px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(odd) {
+    margin-top: 40px;
+  }
+  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc {
+    margin: 20px 24px;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h3 {
-    font-size: 18px;
     line-height: 28px;
     margin: 10px 0px;
+    font-size: 18px;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc img {
     width: 12px;
+  }
+  .caseStudyListingsec .casestudyWrapper .ctaDiv {
+    margin-top: -15%;
+  }
+  .caseStudyListingsec .casestudyWrapper .ctaDiv .ctaWhite {
+    width: 42%;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -212,6 +212,7 @@ $('.logoSlider').slick({
     autoplay: true,
     infinite: true,
     pauseOnHover:false,
+    pauseOnFocus:false,
     speed:3000, 
     responsive: [
       {
@@ -295,29 +296,7 @@ if ($(window).width() < 1025) {
     }
   }
 
-  //case study listing slider
-  if ($(window).width() < 1025) {
-    if ($(".casestudylistingBoxes").length) {
-      $(".casestudylistingBoxes").slick({
-        dots: false,
-        arrows: true,
-        slidesToShow: 2,
-        infinite: true,
-        responsive: [
-          {
-            breakpoint: 680,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: "40px",
-              slidesToShow: 1,
-            },
-          },
-        ],
-      });
-    }
-  }
-  // case study listing slider ends 
+  
 
    // service slider
    if ($(window).width() < 1025) {

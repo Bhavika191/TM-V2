@@ -1,16 +1,15 @@
 body.opentwo{overflow: hidden;}
 
 
-
-.caseStudyListingsec{margin: 224px 0px 240px;
+.caseStudyListingsec{margin:224px 0px 240px;
     .casestudyWrapper{@include wrapperTwo;
         .secHeading{width: 41%;
             h2{@include font64;font-weight: $fontW500;line-height: 74px;letter-spacing: -1.5px;}
             p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;color: #6A6A6A;}
         }
-        .casestudylistingBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;
+        .casestudylistingBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;flex-direction: row-reverse;
             .caseStudyBoxes{width: 40%;margin-top: 150px;position: relative;overflow: hidden;height: 1120px;
-                &:nth-child(even){margin-top: -10%;}
+                &:nth-child(odd){margin-top: -10%;}
                 &:nth-child(3){animation-delay: 0.7s;}
                 &:nth-child(4){animation-delay: 0.9s;}
                 .casestudyImg img{transform: rotate(6deg) scale(1.2);transition: 0.3s all ease-out; }
@@ -26,22 +25,29 @@ body.opentwo{overflow: hidden;}
                 }
             }
         }
+        .ctaDiv{text-align: right;margin-top: -10%;
+            .ctaWhite{width: 40%;text-align: center;}
+        }
     }
 
     @media screen and (max-width:1920px) {
+        margin-bottom: 600px;
         .casestudyWrapper {
             .casestudylistingBoxes .caseStudyBoxes{
                 height: 780px;
-                &:nth-child(even){margin-top: -20%;}
+                &:nth-child(odd){margin-top: -20%;}
             }
+            .ctaDiv{margin-top: -20%;}
         }
     }
     @media screen and (max-width:1800px) {
+        margin:200px 0px 220px;
         .casestudyWrapper {
             .casestudylistingBoxes .caseStudyBoxes{
                 height: 690px;
-                &:nth-child(even){margin-top: -22%;}
+                &:nth-child(odd){margin-top: -22%;}
             }
+            .ctaDiv{margin-top: -22%;}
         }
     }
     @media screen and (max-width:1600px) {
@@ -49,97 +55,100 @@ body.opentwo{overflow: hidden;}
         .casestudyWrapper{
             .secHeading{width: 43%;
                 h2{line-height: 64px;}
-                p{line-height: 28px;margin-top: 28px;}
+                p{line-height: 28px;margin-top: 25px;}
             }
             .casestudylistingBoxes{
                 .caseStudyBoxes{margin-top: 120px;height: 610px;
-                    &:nth-child(even){margin-top: -19%;}
+                    &:nth-child(odd){margin-top: -19%;}
                     .caseStudydesc{margin: 40px;
                         h3{line-height: 32px;;margin: 25px 0px;}
                         h4{line-height: 1;}
                     }
                 }
             }
+            .ctaDiv{margin-top: -19%;}
         }
     }
     @media screen and (max-width:1400px) {
-        margin: 150px 0px 180px;
+        margin:150px 0px 170px;
         .casestudyWrapper{
             .secHeading{width: 45%;
                 h2{line-height: 60px;}
-                p{line-height: 26px;margin-top: 22px;}
+                p{line-height: 26px;margin-top: 20px;}
             }
             .casestudylistingBoxes{
                 .caseStudyBoxes{width: 43%;margin-top: 100px;height: 600px;
-                    &:nth-child(even){margin-top: -22%;}
+                    &:nth-child(odd){margin-top: -22%;}
                     .caseStudydesc{margin: 35px;
                         h3{line-height: 28px;;margin: 20px 0px;}
                         img{width: 14px;}
                     }
                 }
             }
+            .ctaDiv{.ctaWhite{width: 43%;}margin-top: -20%;}
         }
     }
     @media screen and (max-width:1280px) {
-        margin: 100px 0px 150px;
+        margin:120px 0px 150px;
         .casestudyWrapper{
             .secHeading{
                 h2{line-height: 54px;}
-                p{line-height: 24px;margin-top: 20px;}
+                p{line-height: 24px;margin-top: 16px;}
             }
             .casestudylistingBoxes{
                 .caseStudyBoxes{width: 42%;margin-top: 80px;height: 540px;
-                    &:nth-child(even){margin-top: -15%;}
+                    &:nth-child(odd){margin-top: -15%;}
                     .caseStudydesc{margin: 30px;
                         h3{line-height: 26px;margin: 15px 0px;}
                     }
                 }
             }
+            .ctaDiv{.ctaWhite{width: 42%;}margin-top: -15%;}
         }
     }
     @media screen and (max-width:1200px) {
         .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes{
            height: 516px;
         }
-   }
+    }
     @media screen and (max-width:1024px) {
-        .casestudyWrapper{
-            .secHeading{width: 100%;
-                h2{line-height: 48px;}
-                p{line-height: 20px;}
+      .casestudyWrapper{
+            .secHeading{width: 45%;
+                h2{line-height: 48px;letter-spacing: -0.9px;}
+                p{line-height: 20px;margin-bottom: 20px;}
             }
-            .casestudylistingBoxes{display: block;margin: 32px 0px;
-                .slick-prev,.slick-next {position: absolute;bottom: -75px;top: unset;background: transparent;border: 2px solid #C0C6C9;border-radius: 40px;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;cursor: pointer;
-                    &::before {content: url(../images/slider-prev.svg);opacity: 1;scale: 0.7;}
-                    &.slick-next {right: 50%;transform: translateX(50px);
-                        &::before {content: url(../images/slider-next.svg);}
-                    }
-                    &.slick-prev {left: 50%;transform: translateX(-50px);}
-                }
-                .caseStudyBoxes{width: unset;margin: 0px 20px 0px;
-                    &:nth-child(even){margin-top: unset;}
-                    .casestudyImg{img{transform: rotate(0deg) scale(1);transition: 0.3s all ease-out;}
+            .casestudylistingBoxes{
+                .caseStudyBoxes{width: 45%;margin-top: 60px;height: auto;
+                    .casestudyImg { position: relative; img{transform: rotate(0deg) scale(1);transition: 0.3s all ease-out;}
                         &::before{content: "";position: absolute;height: 100%;width: 100%;background: #000;opacity: 0.3;transition: 0.5s all ease-out;z-index: 1;}
                     }
-                    .caseStudydesc{bottom: 0;margin: 16px;}
+                    .caseStudydesc{bottom: 0;transition: 0.5s all ease-out;margin: 20px;
+                        h3{line-height: 23px;margin: 15px 0px;font-size: 18px;}
+                    }
                 }
             }
+            .ctaDiv{.ctaWhite{width: 42%;}margin-top: -15%;}
         }
     }
     @media screen and (max-width:680px) {
+        margin: 100px 0px 150px;
         .casestudyWrapper{
-            padding: 0px;
-            .secHeading{h2{font-size: 30px;line-height: 40px;}p{font-size: 14px;}padding: 0px 20px}
+            .secHeading{width: 100%;
+                h2{font-size: 40px;line-height: 50px;letter-spacing: -1.2px;}
+                p{line-height: 26px;margin:20px 0px;}
+            }
             .casestudylistingBoxes{
-                .caseStudyBoxes{margin: 0px 10px 0px;
-                    .caseStudydesc{
-                        h3{font-size: 18px;line-height: 28px;margin: 10px 0px;}
+                .caseStudyBoxes{width: 100%;margin-top: 40px;
+                    &:nth-child(odd){margin-top: 40px;}
+                    .caseStudydesc{margin: 20px 24px;
+                        h3{line-height: 28px;margin: 10px 0px;font-size: 18px;}
                         img{width: 12px;}
                     }
                 }
             }
+            .ctaDiv{.ctaWhite{width: 42%;}margin-top: -15%;}
         }
-    }
+    }   
 }
 
 
