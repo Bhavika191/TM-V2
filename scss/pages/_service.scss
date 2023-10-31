@@ -1,23 +1,23 @@
 .banner-section{@include wrapper;
-    .content-div{padding: 124px 150px;display:flex;flex-direction:column;justify-content:center;
+    .content-div{padding: 224px 150px;display:flex;flex-direction:column;justify-content:center;
         .banner-heading{color: var(--primary-black, #000);font-family: $fontpoppins;@include font64;font-weight: $fontW500;line-height: 74px;letter-spacing: -1.92px;width: 50%;margin-bottom:34px;}
         .banner-subheading{color: var(--primary-black, #000);font-family: $fontpoppins;@include font24;font-weight: $fontW400;line-height: 34px;}
     }
 // ----------------------------------------media queries-----------------------------------------------//
 @media all and (max-width:1800px){ 
-    .content-div{padding: 120px 140px;
+    .content-div{padding: 210px 140px;
         .banner-heading{line-height: 70px;letter-spacing: -1.50px;width: 50%;margin-bottom:30px;}
         .banner-subheading{line-height: 30px;}
     }
 }
 @media all and (max-width:1600px){
-    .content-div{padding: 110px 130px;
+    .content-div{padding: 200px 130px;
         .banner-heading{line-height: 60px;letter-spacing: -1.20px;width: 50%;margin-bottom:26px;}
         .banner-subheading{line-height: 26px;}
     }
 }
 @media all and (max-width:1400px){
-    .content-div{padding: 100px 120px;
+    .content-div{padding: 180px 120px;
         .banner-heading{line-height: 56px;letter-spacing: -1px;width: 55%;margin-bottom:24px;}
         .banner-subheading{line-height: 24px;}
     }
@@ -29,19 +29,19 @@
     }
 }
 @media all and (max-width:1024px){
-    .content-div{padding: 80px 0px;display:block;
+    .content-div{padding: 180px 0px 80px 0px;display:block;
         .banner-heading{line-height: 48px;width: 100%;margin-bottom:20px;}
         .banner-subheading{line-height: 20px;}
     }
 }
 @media all and (max-width:680px){
-    .content-div{padding: 40px 0px 60px 0px;
+    .content-div{padding: 140px 0px 60px 0px;
         .banner-heading{font-size: 30px;font-weight: 500;line-height: 40px;letter-spacing: -0.9px;}
         .banner-subheading{font-size: 14px;font-weight: 400;line-height: 24px; }
     }
 }
 }
-.service-container{position:sticky;top:0px;width: 100%;z-index: 8;background: #F1F1F1;
+.service-container{position:sticky;top:0px;width: 100%;z-index: 1;background: #F1F1F1;
     .filterSec{display: block;overflow-x: auto;
         &::-webkit-scrollbar {height: 8px;background-color: transparent;}
         &::-webkit-scrollbar-track{background: #FFF;box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);border-radius: 20px;}
@@ -53,19 +53,19 @@
         }
 // ----------------------------------------media queries-----------------------------------------------//
         @media all and (max-width:1600px){
-            .filter-wrapper {padding:26px 0px;@include wrapper;
+            .filter-wrapper {padding:24px 0px;@include wrapper;
                 a {&:not(:last-child){margin-right: 40px;}
                     &.active{padding: 22px 44px;}                
                 }
             }
         }
         @media all and (max-width:1400px){
-            .filter-wrapper {padding:24px 0px;@include wrapper;
+            .filter-wrapper {padding:22px 0px;@include wrapper;
              a {&:not(:last-child){margin-right: 36px;} &.active{padding: 20px 40px;}}
             }
         }
         @media all and (max-width:1200px){
-            .filter-wrapper {padding:22px 0px;@include wrapper;
+            .filter-wrapper {padding:20px 0px;@include wrapper;
                 a {&:not(:last-child){margin-right: 30px;} &.active{padding: 18px 36px;}}
             }
         }
@@ -82,14 +82,14 @@
     }
 }
 .serviceSec{position: relative;@include wrapper;
-    .servicesec-wrapper{background: #000000;padding: 0px 74px 0px 25px;display: flex;justify-content: space-between;margin-bottom:60px;
+    .servicesec-wrapper{background: #000000;padding: 0px 74px 0px 50px;display: flex;justify-content: space-between;margin-bottom:60px;
         .servicesec-heading{width:45%;}
         .servicesec-content{width:45%;padding:100px 0px 160px 0px;
             .services-info{ 
                 .subheading{padding-bottom: 54px;color: var(--primary-white, #FFF);font-family: $fontpoppins;@include font48;font-weight: $fontW500;line-height: 48px; letter-spacing: -1.44px;}
                 .list-wrapper{padding: 54px 0px;border-top:1px solid #F1F1F1;   
                     .list-heading{position:relative;color: #FFF;font-family: $fontpoppins; @include font30;font-weight: $fontW400;line-height: 40px;margin-bottom: 16px;
-                        span{position: absolute;left: -60px;width: 36px;height: 36px;background: #F1F1F1;color: #000;text-align: center;font-family: $fontpoppins;@include font16;font-weight: $fontW700;line-height: 20px;border-radius: 50%;display: flex;align-items: center;justify-content: center;}
+                        span{position: absolute;top:0px;left: -60px;width: 36px;height: 36px;background: #F1F1F1;color: #000;text-align: center;font-family: $fontpoppins;@include font16;font-weight: $fontW700;line-height: 20px;border-radius: 50%;display: flex;align-items: center;justify-content: center;}
                     }
                     .services-list{padding-left:23px;
                         li{position: relative;font-family: $fontpoppins;@include font18;font-weight: $fontW400;line-height: 30px;color: #D4D4D4;&::before{content: '';position: absolute;width: 6px;height: 6px;color:  #D4D4D4;top: 10px;left: -23px;border-radius: 50%;text-align: center;background-color: #D4D4D4;}}
@@ -100,7 +100,7 @@
     }
 // ----------------------------------------media queries-----------------------------------------------//
     @media all and (max-width:1800px){
-        .servicesec-wrapper{padding: 0px 70px 0px 24px;margin-bottom:56px;
+        .servicesec-wrapper{padding: 0px 70px 0px 48px;margin-bottom:56px;
             .servicesec-content{padding:90px 0px 150px 0px;
                 .services-info{ 
                     .subheading{padding-bottom: 50px;line-height: 44px; letter-spacing: -1.20px;}
@@ -119,7 +119,7 @@
     @media all and (max-width:1600px){
     }
     @media all and (max-width:1400px){
-        .servicesec-wrapper{padding: 0px 60px 0px 20px;margin-bottom:56px;
+        .servicesec-wrapper{padding: 0px 60px 0px 40px;margin-bottom:56px;
             .servicesec-content{padding:80px 0px 140px 0px;
                 .services-info{ 
                     .subheading{padding-bottom: 45px;line-height: 40px; letter-spacing: -1.20px;}
@@ -136,13 +136,12 @@
         }
     }
     @media all and (max-width:1200px){
-        .servicesec-wrapper{padding: 0px 50px 0px 20px;margin-bottom:56px;
+        .servicesec-wrapper{padding: 0px 50px 0px 40px;margin-bottom:56px;
             .servicesec-content{padding:70px 0px 130px 0px;
                 .services-info{ 
                     .subheading{padding-bottom: 40px;line-height: 36px; letter-spacing: -1.20px;}
                     .list-wrapper{padding: 40px 0px;  
-                        .list-heading{line-height: 28px;margin-bottom: 12px;
-                        span{bottom:-4px;}}
+                        .list-heading{line-height: 28px;margin-bottom: 12px;}
                         .services-list{padding-left:20px;
                             li{line-height: 24px;&::before{top: 10px;left: -20px;}}
                         }
@@ -152,7 +151,7 @@
         }
     }
     @media all and (max-width:1024px){
-        .servicesec-wrapper{padding: 0px 40px 0px 10px;margin-bottom:56px;
+        .servicesec-wrapper{padding: 0px 40px 0px 20px;margin-bottom:56px;
             .servicesec-content{padding:60px 0px 120px 0px;
                 .services-info{ 
                     .subheading{padding-bottom: 36px;line-height: 36px; letter-spacing: -1.20px;}
@@ -169,11 +168,12 @@
     @media all and (max-width:768px){
         .servicesec-wrapper{padding: 0px 30px 0px 30px;margin-bottom:48px;display:block;
             .servicesec-heading{width:70%;}
-            .servicesec-content{padding:40px 0px 80px 52px;width:100%;
+            .servicesec-content{padding:40px 0px 80px 28px;width:100%;
                 .services-info{ 
                     .subheading{padding-bottom: 34px;line-height: 34px;letter-spacing: -0.72px;}
                     .list-wrapper{padding: 30px 0px;  
-                        .list-heading{line-height: 30px;margin-bottom: 14px;}
+                        .list-heading{line-height: 30px;margin-bottom: 14px;
+                            span{width: 24px;height: 24px;left: -40px;}}
                         .services-list{padding-left:16px;
                             li{line-height: 26px;letter-spacing: -0.42px;&::before{left: -16px;}}
                         }
@@ -184,7 +184,7 @@
     }
     @media all and (max-width:680px){
         .servicesec-wrapper{padding: 0px 24px 0px 24px;margin-bottom:24px;
-            .servicesec-content{padding:30px 0px 60px 52px;
+            .servicesec-content{padding:30px 0px 60px 28px;
                 .services-info{ 
                     .subheading{padding-bottom: 32px;font-size: 24px;font-weight: 500;line-height: 34px;letter-spacing: -0.72px;}
                     .list-wrapper{padding: 20px 0px;  

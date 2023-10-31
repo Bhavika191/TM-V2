@@ -3799,7 +3799,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   }
 }
 .banner-section .content-div {
-  padding: 124px 150px;
+  padding: 224px 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3853,7 +3853,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1800px) {
   .banner-section .content-div {
-    padding: 120px 140px;
+    padding: 210px 140px;
   }
   .banner-section .content-div .banner-heading {
     line-height: 70px;
@@ -3867,7 +3867,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1600px) {
   .banner-section .content-div {
-    padding: 110px 130px;
+    padding: 200px 130px;
   }
   .banner-section .content-div .banner-heading {
     line-height: 60px;
@@ -3881,7 +3881,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1400px) {
   .banner-section .content-div {
-    padding: 100px 120px;
+    padding: 180px 120px;
   }
   .banner-section .content-div .banner-heading {
     line-height: 56px;
@@ -3904,7 +3904,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1024px) {
   .banner-section .content-div {
-    padding: 80px 0px;
+    padding: 180px 0px 80px 0px;
     display: block;
   }
   .banner-section .content-div .banner-heading {
@@ -3918,7 +3918,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 680px) {
   .banner-section .content-div {
-    padding: 40px 0px 60px 0px;
+    padding: 140px 0px 60px 0px;
   }
   .banner-section .content-div .banner-heading {
     font-size: 30px;
@@ -3937,7 +3937,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   position: sticky;
   top: 0px;
   width: 100%;
-  z-index: 8;
+  z-index: 1;
   background: #F1F1F1;
 }
 .service-container .filterSec {
@@ -4007,7 +4007,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1600px) {
   .service-container .filterSec .filter-wrapper {
-    padding: 26px 0px;
+    padding: 24px 0px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -4034,7 +4034,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1400px) {
   .service-container .filterSec .filter-wrapper {
-    padding: 24px 0px;
+    padding: 22px 0px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -4061,7 +4061,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1200px) {
   .service-container .filterSec .filter-wrapper {
-    padding: 22px 0px;
+    padding: 20px 0px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -4140,7 +4140,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 .serviceSec .servicesec-wrapper {
   background: #000000;
-  padding: 0px 74px 0px 25px;
+  padding: 0px 74px 0px 50px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
@@ -4211,6 +4211,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading span {
   position: absolute;
+  top: 0px;
   left: -60px;
   width: 36px;
   height: 36px;
@@ -4276,7 +4277,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1800px) {
   .serviceSec .servicesec-wrapper {
-    padding: 0px 70px 0px 24px;
+    padding: 0px 70px 0px 48px;
     margin-bottom: 56px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
@@ -4314,7 +4315,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1400px) {
   .serviceSec .servicesec-wrapper {
-    padding: 0px 60px 0px 20px;
+    padding: 0px 60px 0px 40px;
     margin-bottom: 56px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
@@ -4352,7 +4353,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1200px) {
   .serviceSec .servicesec-wrapper {
-    padding: 0px 50px 0px 20px;
+    padding: 0px 50px 0px 40px;
     margin-bottom: 56px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
@@ -4370,9 +4371,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
     line-height: 28px;
     margin-bottom: 12px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading span {
-    bottom: -4px;
-  }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list {
     padding-left: 20px;
   }
@@ -4386,7 +4384,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1024px) {
   .serviceSec .servicesec-wrapper {
-    padding: 0px 40px 0px 10px;
+    padding: 0px 40px 0px 20px;
     margin-bottom: 56px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
@@ -4425,7 +4423,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
     width: 70%;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
-    padding: 40px 0px 80px 52px;
+    padding: 40px 0px 80px 28px;
     width: 100%;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
@@ -4439,6 +4437,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading {
     line-height: 30px;
     margin-bottom: 14px;
+  }
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading span {
+    width: 24px;
+    height: 24px;
+    left: -40px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list {
     padding-left: 16px;
@@ -4457,7 +4460,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
     margin-bottom: 24px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
-    padding: 30px 0px 60px 52px;
+    padding: 30px 0px 60px 28px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
     padding-bottom: 32px;
