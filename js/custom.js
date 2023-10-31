@@ -208,18 +208,17 @@ $('.logoSlider').slick({
     dots: false,
     arrows: false,
     slidesToShow: 4,
+    slidesToScroll: 4,
     autoplay: true,
     infinite: true,
-    cssEase: 'linear',
-    rtl: false,
     pauseOnHover:false,
-    speed:3000,
-    autoplaySpeed: 0,  
+    speed:3000, 
     responsive: [
       {
         breakpoint: 1025,
         settings: {
           slidesToShow: 3,
+          slidesToScroll: 3,
         }
       },
     ]
@@ -347,8 +346,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const smoothScroll = new SmoothScroll(0.02);
 });
 
+if ($(window).width() > 1025) {
+  new WOW().init();
+}
 
-new WOW().init();
+
 
 $(document).ready(function(){
   
