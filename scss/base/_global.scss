@@ -272,8 +272,6 @@ body{
     }
 }
 
-
-
 @mixin font96 {
     font-size: 96px;
 
@@ -287,7 +285,7 @@ body{
         font-size: 64px;
     }
     @media screen and (max-width:720px) {
-        font-size: 44px;
+        font-size: 40px;
     }
 }
 
@@ -478,10 +476,12 @@ img {max-width: 100%;}
 
 
 
-.ctaWhite { padding: 14px 24px;@include font14;line-height: 18px;font-weight: $fontW700;display: inline-block;cursor: pointer;border-radius: 6px;border: 1px solid #000;background: transparent;text-decoration: none;color: #000;text-decoration: none; transition: 0.5s all ease-in-out;letter-spacing: 0.7px;text-transform: uppercase;text-align: center;
+.ctaWhite { padding: 14px 24px;@include font14;line-height: 18px;font-weight: $fontW700;display: inline-flex;align-items: center;justify-content: center;cursor: pointer;border-radius: 6px;border: 1px solid #000;background: transparent;text-decoration: none;color: #000;text-decoration: none; transition: 0.5s all ease-in-out;letter-spacing: 0.7px;text-transform: uppercase;text-align: center;
 
-    &:hover{background: #000;color: #fff;}
-
+    &:hover{background: #000;color: #fff;
+        svg{fill: #fff;transition: 0.5s all ease-out;}
+    }
+    svg{fill: #000;height: 20px;width: 20px;transition: 0.5s all ease-out;}
     @media screen and (max-width:1600px) {
         padding: 12px 22px;
     }
@@ -499,8 +499,10 @@ img {max-width: 100%;}
 
 .ctaBlack { padding: 14px 24px;@include font14;line-height: 18px;font-weight: $fontW700;display: inline-block;cursor: pointer;border-radius: 6px;border: 1px solid #000;background: #000;text-decoration: none;color: #fff;text-decoration: none; transition: 0.5s all ease-in-out;letter-spacing: 0.7px;text-transform: uppercase;
 
-    &:hover{background: #fff;color: #000;}
-
+    &:hover{background: #fff;color: #000;
+        svg{fill: #000;transition: 0.5s all ease-out;}
+    }
+    svg{fill: #fff;height: 12px;width: 12px;transition: 0.5s all ease-out;}
     @media screen and (max-width:1600px) {
         padding: 12px 22px;
     }

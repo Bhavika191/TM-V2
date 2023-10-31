@@ -296,6 +296,29 @@ if ($(window).width() < 1025) {
     }
   }
 
+  //case study listing slider
+  if ($(window).width() < 1025) {
+    if ($(".casestudylistingBoxes").length) {
+      $(".casestudylistingBoxes").slick({
+        dots: false,
+        arrows: true,
+        slidesToShow: 2,
+        infinite: true,
+        responsive: [
+          {
+            breakpoint: 680,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: "40px",
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    }
+  }
+  // case study listing slider ends 
 
    // service slider
    if ($(window).width() < 1025) {
@@ -324,25 +347,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const smoothScroll = new SmoothScroll(0.02);
 });
 
-// new AnimationScroll({
-//     selector: ".caseStudyinnerBoxes",
-//     trigger: 0.,
-//     transform: "-10yvw",
-//     easing: "ease-in-out",
-//     duration: 2,
-//     onLoad: false,
-//     scrollSpeed: 0.7,
-//     pauseOnScroll: true
-// });
 
-// new AnimationScroll({
-//     selector: ".servicesinnerBox",
-//     trigger: 0.,
-//     transform: "-10yvw",
-//     easing: "ease-in-out",
-//     duration: 2,
-//     onLoad: false,
-//     scrollSpeed: 0.7,
-//     pauseOnScroll: true
-// });
+new WOW().init();
+
+$(document).ready(function(){
+  
+  $('#box').on('click', function(){
+    $('#box img').toggleClass('rotate');
+  });
+ });
 
