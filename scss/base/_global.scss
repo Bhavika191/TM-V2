@@ -272,8 +272,6 @@ body{
     }
 }
 
-
-
 @mixin font96 {
     font-size: 96px;
 
@@ -287,7 +285,7 @@ body{
         font-size: 64px;
     }
     @media screen and (max-width:720px) {
-        font-size: 44px;
+        font-size: 40px;
     }
 }
 

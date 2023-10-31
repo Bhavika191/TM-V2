@@ -972,7 +972,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
 }
 @media screen and (max-width: 720px) {
   .videoSection .videosecWrapper .secHeading h1 {
-    font-size: 44px;
+    font-size: 40px;
   }
 }
 .videoSection .videosecWrapper .videoDiv {
@@ -4149,7 +4149,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   }
 }
 .banner-section .content-div {
-  padding: 124px 150px;
+  padding: 224px 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4203,7 +4203,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1800px) {
   .banner-section .content-div {
-    padding: 120px 140px;
+    padding: 210px 140px;
   }
   .banner-section .content-div .banner-heading {
     line-height: 70px;
@@ -4217,7 +4217,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1600px) {
   .banner-section .content-div {
-    padding: 110px 130px;
+    padding: 200px 130px;
   }
   .banner-section .content-div .banner-heading {
     line-height: 60px;
@@ -4231,7 +4231,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1400px) {
   .banner-section .content-div {
-    padding: 100px 120px;
+    padding: 180px 120px;
   }
   .banner-section .content-div .banner-heading {
     line-height: 56px;
@@ -4254,7 +4254,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1024px) {
   .banner-section .content-div {
-    padding: 80px 0px;
+    padding: 180px 0px 80px 0px;
     display: block;
   }
   .banner-section .content-div .banner-heading {
@@ -4268,7 +4268,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 680px) {
   .banner-section .content-div {
-    padding: 40px 0px 60px 0px;
+    padding: 140px 0px 60px 0px;
   }
   .banner-section .content-div .banner-heading {
     font-size: 30px;
@@ -4287,7 +4287,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   position: sticky;
   top: 0px;
   width: 100%;
-  z-index: 8;
+  z-index: 1;
   background: #F1F1F1;
 }
 .service-container .filterSec {
@@ -4357,7 +4357,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1600px) {
   .service-container .filterSec .filter-wrapper {
-    padding: 26px 0px;
+    padding: 24px 0px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -4384,7 +4384,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1400px) {
   .service-container .filterSec .filter-wrapper {
-    padding: 24px 0px;
+    padding: 22px 0px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -4411,7 +4411,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1200px) {
   .service-container .filterSec .filter-wrapper {
-    padding: 22px 0px;
+    padding: 20px 0px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -4490,7 +4490,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 .serviceSec .servicesec-wrapper {
   background: #000000;
-  padding: 0px 74px 0px 25px;
+  padding: 0px 74px 0px 50px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
@@ -4561,6 +4561,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading span {
   position: absolute;
+  top: 0px;
   left: -60px;
   width: 36px;
   height: 36px;
@@ -4626,7 +4627,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1800px) {
   .serviceSec .servicesec-wrapper {
-    padding: 0px 70px 0px 24px;
+    padding: 0px 70px 0px 48px;
     margin-bottom: 56px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
@@ -4664,7 +4665,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1400px) {
   .serviceSec .servicesec-wrapper {
-    padding: 0px 60px 0px 20px;
+    padding: 0px 60px 0px 40px;
     margin-bottom: 56px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
@@ -4702,7 +4703,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1200px) {
   .serviceSec .servicesec-wrapper {
-    padding: 0px 50px 0px 20px;
+    padding: 0px 50px 0px 40px;
     margin-bottom: 56px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
@@ -4720,9 +4721,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
     line-height: 28px;
     margin-bottom: 12px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading span {
-    bottom: -4px;
-  }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list {
     padding-left: 20px;
   }
@@ -4736,7 +4734,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1024px) {
   .serviceSec .servicesec-wrapper {
-    padding: 0px 40px 0px 10px;
+    padding: 0px 40px 0px 20px;
     margin-bottom: 56px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
@@ -4775,7 +4773,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
     width: 70%;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
-    padding: 40px 0px 80px 52px;
+    padding: 40px 0px 80px 28px;
     width: 100%;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
@@ -4789,6 +4787,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading {
     line-height: 30px;
     margin-bottom: 14px;
+  }
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading span {
+    width: 24px;
+    height: 24px;
+    left: -40px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list {
     padding-left: 16px;
@@ -4807,7 +4810,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
     margin-bottom: 24px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
-    padding: 30px 0px 60px 52px;
+    padding: 30px 0px 60px 28px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
     padding-bottom: 32px;
@@ -5199,7 +5202,7 @@ a.showLess::after {
 }
 @media screen and (max-width: 720px) {
   .collaborateFormSec .collaborateSec .secHeading h1 {
-    font-size: 44px;
+    font-size: 40px;
   }
 }
 .collaborateFormSec .collaborateSec .secHeading p {
@@ -5301,6 +5304,139 @@ a.showLess::after {
     font-size: 12px;
   }
 }
+@media screen and (max-width: 1600px) {
+  .collaborateFormSec {
+    margin: 100px 0px 300px;
+  }
+  .collaborateFormSec .collaborateSec {
+    padding-right: 60px !important;
+  }
+  .collaborateFormSec .collaborateSec .secHeading {
+    margin-top: 100px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading h1 {
+    line-height: 86px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading p {
+    line-height: 30px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm {
+    padding: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    margin-bottom: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+    padding: 12px 24px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .collaborateFormSec {
+    margin: 100px 0px 250px;
+  }
+  .collaborateFormSec .collaborateSec {
+    padding-right: 40px !important;
+  }
+  .collaborateFormSec .collaborateSec .secHeading {
+    margin-top: 80px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm {
+    padding: 40px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    margin-bottom: 30px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+    padding: 12px 24px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .collaborateFormSec {
+    margin: 100px 0px 200px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .collaborateFormSec {
+    margin: 100px 0px 150px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading {
+    margin-top: 80px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading h1 {
+    line-height: 70px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading p {
+    line-height: 26px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm {
+    padding: 40px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    margin-bottom: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+    padding: 12px 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .collaborateFormSec {
+    margin: 80px 0px 150px;
+  }
+  .collaborateFormSec .collaborateSec {
+    padding-right: 50px !important;
+  }
+  .collaborateFormSec .collaborateSec .secHeading {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading h1 {
+    line-height: 70px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading p {
+    line-height: 26px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm {
+    padding: 50px;
+    width: 115%;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    margin-bottom: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+    padding: 12px 24px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .collaborateFormSec .collaborateSec {
+    padding-right: 20px !important;
+  }
+  .collaborateFormSec .collaborateSec .secHeading {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading h1 {
+    line-height: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm {
+    padding: 40px 25px;
+    width: 115%;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form label {
+    margin-bottom: 8px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    margin-bottom: 30px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+    padding: 12px 24px;
+  }
+}
 
 .meetupAdderssSec {
   margin-bottom: 250px;
@@ -5400,7 +5536,7 @@ a.showLess::after {
   position: relative;
 }
 .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
-  transform: translateY(-55%);
+  margin-top: -24%;
 }
 .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:first-child {
   transform: translateY(0px);
@@ -5611,9 +5747,6 @@ a.showLess::after {
     font-size: 14px;
   }
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact:hover .mailIcon {
-  height: 48%;
-}
 .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact:hover .mailIcon img {
   transform: translate(120%, -15%) rotate(-30deg);
   width: 50%;
@@ -5621,7 +5754,114 @@ a.showLess::after {
 .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact:hover .MailIds .idsBox::before {
   right: 24px;
 }
-
+@media screen and (max-width: 1600px) {
+  .meetupAdderssSec {
+    margin-bottom: 180px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading {
+    margin-bottom: 120px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+    line-height: 62px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
+    margin-bottom: 120px;
+    height: 700px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff {
+    height: 150px;
+    top: 15px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.delhiOff {
+    left: -400px;
+    width: 400px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.mumbaiOff {
+    left: -700px;
+    width: 700px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.bangaloreOff {
+    left: -780px;
+    width: 780px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap {
+    margin-top: 150px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 40px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
+    height: 45%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
+    width: 75%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 40px 25px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .meetupAdderssSec {
+    margin-bottom: 150px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading {
+    margin-bottom: 100px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+    line-height: 62px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
+    margin-bottom: 100px;
+    height: 600px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff {
+    height: 120px;
+    top: 15px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.delhiOff {
+    left: -300px;
+    width: 300px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.mumbaiOff {
+    left: -600px;
+    width: 600px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.bangaloreOff {
+    left: -620px;
+    width: 620px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap {
+    margin-top: 120px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 25px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
+    height: 38%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
+    width: 65%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 30px 25px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
+    margin-top: -28%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .meetupAdderssSec {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .meetupAdderssSec {
+    margin-bottom: 150px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+    line-height: 52px;
+  }
+}
 body.opentwo {
   overflow: hidden;
 }
