@@ -4357,7 +4357,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1600px) {
   .service-container .filterSec .filter-wrapper {
-    padding: 24px 0px;
+    padding: 22px 0px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -4384,7 +4384,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1400px) {
   .service-container .filterSec .filter-wrapper {
-    padding: 22px 0px;
+    padding: 20px 0px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -4411,7 +4411,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1200px) {
   .service-container .filterSec .filter-wrapper {
-    padding: 20px 0px;
+    padding: 18px 0px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -4805,6 +4805,10 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   }
 }
 @media all and (max-width: 680px) {
+  .serviceSec {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .serviceSec .servicesec-wrapper {
     padding: 0px 24px 0px 24px;
     margin-bottom: 24px;
@@ -5065,6 +5069,10 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   }
 }
 @media all and (max-width: 680px) {
+  .collaborate-section {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .collaborate-section .collaborate-wrapper {
     padding: 40px 24px 60px 24px;
   }
