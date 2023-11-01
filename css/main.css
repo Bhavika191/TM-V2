@@ -4149,7 +4149,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   }
 }
 .banner-section .content-div {
-  padding: 224px 150px;
+  padding: 224px 150px 124 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4203,7 +4203,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1800px) {
   .banner-section .content-div {
-    padding: 210px 140px;
+    padding: 210px 140px 120px 140px;
   }
   .banner-section .content-div .banner-heading {
     line-height: 70px;
@@ -4217,7 +4217,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1600px) {
   .banner-section .content-div {
-    padding: 200px 130px;
+    padding: 200px 130px 110px 130px;
   }
   .banner-section .content-div .banner-heading {
     line-height: 60px;
@@ -4231,7 +4231,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 1400px) {
   .banner-section .content-div {
-    padding: 180px 120px;
+    padding: 180px 120px 100px 120px;
   }
   .banner-section .content-div .banner-heading {
     line-height: 56px;
@@ -4268,7 +4268,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 @media all and (max-width: 680px) {
   .banner-section .content-div {
-    padding: 140px 0px 60px 0px;
+    padding: 100px 0px 60px 0px;
   }
   .banner-section .content-div .banner-heading {
     font-size: 30px;
@@ -4287,7 +4287,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   position: sticky;
   top: 0px;
   width: 100%;
-  z-index: 1;
+  z-index: 99;
   background: #F1F1F1;
 }
 .service-container .filterSec {
@@ -4295,17 +4295,13 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   overflow-x: auto;
 }
 .service-container .filterSec::-webkit-scrollbar {
-  height: 8px;
-  background-color: transparent;
+  display: none;
 }
 .service-container .filterSec::-webkit-scrollbar-track {
-  background: #FFF;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  display: none;
 }
 .service-container .filterSec::-webkit-scrollbar-thumb {
-  background: #000;
-  border-radius: 100px;
+  display: none;
 }
 .service-container .filterSec .filter-wrapper {
   width: max-content;
@@ -4499,8 +4495,18 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   width: 45%;
 }
 .serviceSec .servicesec-wrapper .servicesec-content {
-  width: 45%;
+  width: 47%;
   padding: 100px 0px 160px 0px;
+}
+.serviceSec .servicesec-wrapper .servicesec-content .services-info {
+  height: 500px;
+  overflow-y: auto;
+  padding-left: 60px;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.serviceSec .servicesec-wrapper .servicesec-content .services-info::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
   padding-bottom: 54px;
@@ -4775,6 +4781,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   .serviceSec .servicesec-wrapper .servicesec-content {
     padding: 40px 0px 80px 28px;
     width: 100%;
+  }
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info {
+    padding-left: 40px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
     padding-bottom: 34px;
@@ -5097,6 +5106,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 
 a.showMore, a.showLess {
+  margin-left: 60px;
   margin-top: 54px;
   padding: 15px 0px;
   text-align: center;
@@ -5158,6 +5168,7 @@ a.showMore::after, a.showLess::after {
 @media all and (max-width: 680px) {
   a.showMore, a.showLess {
     margin-top: 20px;
+    margin-left: 40px;
   }
 }
 
