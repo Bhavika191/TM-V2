@@ -229,6 +229,10 @@ body {
   position: relative;
 }
 
+body.opentwo {
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
 }
@@ -256,7 +260,7 @@ img {
   text-decoration: none;
   color: #000;
   text-decoration: none;
-  transition: 0.5s all ease-in-out;
+  transition: 0.7s all ease-in-out;
   letter-spacing: 0.7px;
   text-transform: uppercase;
   text-align: center;
@@ -277,16 +281,14 @@ img {
 }
 .ctaWhite:hover svg {
   fill: #fff;
-  transition: 0.5s all ease-out;
-  display: inline-block;
+  transition: 0.7s all ease-out;
 }
 .ctaWhite svg {
   fill: #000;
   height: 20px;
   width: 20px;
-  transition: 0.5s all ease-out;
+  transition: 0.7s all ease-out;
   margin-left: 18px;
-  display: none;
 }
 @media screen and (max-width: 1600px) {
   .ctaWhite {
@@ -314,11 +316,6 @@ img {
     margin-left: 12px;
   }
 }
-@media screen and (max-width: 1024px) {
-  .ctaWhite svg {
-    display: inline-block;
-  }
-}
 @media screen and (max-width: 720px) {
   .ctaWhite {
     padding: 14px 24px;
@@ -338,7 +335,7 @@ img {
   text-decoration: none;
   color: #fff;
   text-decoration: none;
-  transition: 0.5s all ease-in-out;
+  transition: 0.7s all ease-in-out;
   letter-spacing: 0.7px;
   text-transform: uppercase;
 }
@@ -358,16 +355,14 @@ img {
 }
 .ctaBlack:hover svg {
   fill: #000;
-  transition: 0.5s all ease-out;
-  display: inline-block;
+  transition: 0.7s all ease-out;
 }
 .ctaBlack svg {
   fill: #fff;
   height: 12px;
   width: 12px;
-  transition: 0.5s all ease-out;
+  transition: 0.7s all ease-out;
   margin-left: 18px;
-  display: none;
 }
 @media screen and (max-width: 1600px) {
   .ctaBlack {
@@ -388,11 +383,6 @@ img {
     height: 10px;
     width: 10px;
     margin-left: 10px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .ctaBlack svg {
-    display: inline-block;
   }
 }
 @media screen and (max-width: 720px) {
@@ -493,10 +483,6 @@ img {
   }
 }
 
-body.opentwo {
-  overflow: hidden;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -506,6 +492,9 @@ header {
   background: #f1f1f1;
   width: 100%;
   z-index: 9;
+}
+header.hiddenspace {
+  top: 0px !important;
 }
 header.nav-up {
   top: -100px;
@@ -907,6 +896,510 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a:before {
     right: -20px;
+  }
+}
+
+footer {
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 1400px) {
+  footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+footer .footerWrapper {
+  background-color: #fff;
+  padding: 140px 150px;
+}
+footer .footerWrapper .footerData {
+  padding: 100px 0px 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .footerWrapper .footerData .footerMenus {
+  width: 30%;
+}
+footer .footerWrapper .footerData .footerMenus ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .footerWrapper .footerData .footerMenus ul li {
+  width: 48%;
+  margin-top: 18px;
+}
+footer .footerWrapper .footerData .footerMenus ul li:nth-child(1), footer .footerWrapper .footerData .footerMenus ul li:nth-child(2) {
+  margin-top: 0px;
+}
+footer .footerWrapper .footerData .footerMenus ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  color: #000;
+  text-align: left;
+}
+@media screen and (max-width: 1600px) {
+  footer .footerWrapper .footerData .footerMenus ul li a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) {
+  footer .footerWrapper .footerData .footerMenus ul li a {
+    font-size: 12px;
+  }
+}
+footer .footerWrapper .footerData .footerGame {
+  width: 35%;
+}
+footer .footerWrapper .footerData .footerGame img {
+  margin: 0 auto;
+}
+footer .footerWrapper .footerData .footerGame #box img.rotate {
+  animation: 0.2s linear infinite rotate-con;
+  border-radius: 324px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.1249982119deg, #05FB00 116.2499964237deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474deg, #F00 360deg);
+}
+@keyframes rotate-con {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+footer .footerWrapper .footerData .footerSubscribe {
+  width: 27%;
+}
+footer .footerWrapper .footerData .footerSubscribe h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.6px;
+}
+@media screen and (max-width: 1600px) {
+  footer .footerWrapper .footerData .footerSubscribe h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  footer .footerWrapper .footerData .footerSubscribe h2 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  footer .footerWrapper .footerData .footerSubscribe h2 {
+    font-size: 14px;
+  }
+}
+footer .footerWrapper .footerData .footerSubscribe p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 10px 0px 22px;
+}
+@media screen and (max-width: 1600px) {
+  footer .footerWrapper .footerData .footerSubscribe p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) {
+  footer .footerWrapper .footerData .footerSubscribe p {
+    font-size: 12px;
+  }
+}
+footer .footerWrapper .footerData .footerSubscribe .signup {
+  border-radius: 6px;
+  border: 1px solid #000;
+  background: #FFF;
+  padding: 3px 3px 3px 25px;
+  display: inline-block;
+}
+footer .footerWrapper .footerData .footerSubscribe .signup form {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
+  background-color: #000;
+  color: #fff;
+  padding: 14px 24px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.7px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1600px) {
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
+    font-size: 12px;
+  }
+}
+footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
+  width: 46%;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+}
+@media screen and (max-width: 1600px) {
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
+    font-size: 12px;
+  }
+}
+footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email]::-webkit-input-placeholder {
+  color: #000;
+}
+footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email]::-moz-placeholder {
+  color: #000;
+}
+footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email]:-ms-input-placeholder {
+  color: #000;
+}
+footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email]:-moz-placeholder {
+  color: #000;
+}
+footer .footerWrapper .socialIcons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+footer .footerWrapper .socialIcons .copyright h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.8px;
+}
+@media screen and (max-width: 1600px) {
+  footer .footerWrapper .socialIcons .copyright h4 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) {
+  footer .footerWrapper .socialIcons .copyright h4 {
+    font-size: 12px;
+  }
+}
+footer .footerWrapper .socialIcons .iconsDiv {
+  text-align: left;
+  width: 27%;
+}
+footer .footerWrapper .socialIcons .iconsDiv h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.6px;
+  margin-bottom: 14px;
+}
+@media screen and (max-width: 1600px) {
+  footer .footerWrapper .socialIcons .iconsDiv h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  footer .footerWrapper .socialIcons .iconsDiv h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  footer .footerWrapper .socialIcons .iconsDiv h3 {
+    font-size: 14px;
+  }
+}
+footer .footerWrapper .socialIcons .iconsDiv ul {
+  display: flex;
+  align-items: center;
+}
+footer .footerWrapper .socialIcons .iconsDiv ul li {
+  margin-right: 15px;
+}
+footer .footerWrapper .socialIcons .iconsDiv ul li:last-child {
+  margin-right: 0px;
+}
+footer .footerWrapper .socialIcons .iconsDiv ul li a {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1600px) {
+  footer {
+    margin-bottom: 60px;
+  }
+  footer .footerWrapper {
+    padding: 120px 130px;
+  }
+  footer .footerWrapper .footerData {
+    padding: 80px 0px 65px;
+  }
+  footer .footerWrapper .footerData .footerMenus {
+    width: 28%;
+  }
+  footer .footerWrapper .footerData .footerMenus ul li {
+    margin-top: 16px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe {
+    width: 32%;
+  }
+  footer .footerWrapper .footerData .footerSubscribe p {
+    margin: 10px 0px 20px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup {
+    padding: 3px 3px 3px 20px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
+    width: 52%;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv {
+    width: 32%;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv h3 {
+    margin-bottom: 12px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li {
+    margin-right: 12px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li a {
+    height: 32px;
+    width: 32px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  footer {
+    margin-bottom: 50px;
+  }
+  footer .footerWrapper {
+    padding: 100px;
+  }
+  footer .footerWrapper .footerData {
+    padding: 60px 0px 45px;
+  }
+  footer .footerWrapper .footerData .footerMenus {
+    width: 32%;
+  }
+  footer .footerWrapper .footerData .footerMenus ul li {
+    margin-top: 14px;
+  }
+  footer .footerWrapper .footerData .footerGame {
+    width: 32%;
+  }
+  footer .footerWrapper .footerData .footerSubscribe p {
+    margin: 8px 0px 18px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup {
+    padding: 3px 3px 3px 18px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
+    padding: 10px 16px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
+    width: 56%;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv h3 {
+    margin-bottom: 10px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li {
+    margin-right: 10px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li a {
+    height: 30px;
+    width: 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  footer .footerWrapper {
+    padding: 70px;
+  }
+  footer .footerWrapper .footerData {
+    padding: 50px 0px 35px;
+  }
+  footer .footerWrapper .footerData .footerMenus ul li {
+    margin-top: 12px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe p {
+    margin: 8px 0px 16px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup {
+    padding: 3px 3px 3px 18px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
+    padding: 10px 14px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
+    width: 49%;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li a {
+    height: 25px;
+    width: 25px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li a img {
+    width: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  footer {
+    margin-bottom: 150px;
+  }
+  footer .footerWrapper {
+    padding: 40px 16px;
+  }
+  footer .footerWrapper .footerData {
+    padding: 40px 0px 48px;
+    display: block;
+  }
+  footer .footerWrapper .footerData .footerMenus {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  footer .footerWrapper .footerData .footerMenus ul {
+    justify-content: unset;
+  }
+  footer .footerWrapper .footerData .footerMenus ul li {
+    width: 40%;
+    margin-top: 22px;
+  }
+  footer .footerWrapper .footerData .footerMenus ul li:nth-child(1), footer .footerWrapper .footerData .footerMenus ul li:nth-child(2) {
+    margin-top: 22px;
+  }
+  footer .footerWrapper .footerData .footerGame {
+    width: 100%;
+  }
+  footer .footerWrapper .footerData .footerSubscribe {
+    width: 100%;
+    margin-top: 20px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe h2 {
+    text-align: center;
+  }
+  footer .footerWrapper .footerData .footerSubscribe p {
+    text-align: center;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup {
+    display: block;
+    border: none;
+    padding: 0;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form {
+    display: block;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
+    display: block;
+    text-align: center;
+    margin: 10px auto 0px;
+    padding: 12px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
+    border-radius: 6px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding: 16px;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+  footer .footerWrapper .socialIcons {
+    flex-flow: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footerWrapper .socialIcons .copyright h4 {
+    width: 100%;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv h3 {
+    margin-bottom: 16px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul {
+    justify-content: center;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li a {
+    height: 30px;
+    width: 30px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li a img {
+    width: 15px;
+  }
+}
+@media screen and (max-width: 680px) {
+  footer .footerWrapper .footerLogo {
+    width: 60%;
+  }
+  footer .footerWrapper .footerData .footerMenus ul li {
+    width: 100%;
+  }
+  footer .footerWrapper .footerData .footerMenus ul li:nth-child(1) {
+    margin-top: 0px;
+  }
+  footer .footerWrapper .footerData .footerMenus ul li a {
+    font-size: 14px;
+    line-height: 1;
+  }
+  footer .footerWrapper .footerData .footerSubscribe h2 {
+    font-size: 14px;
+    letter-spacing: -0.48px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe p {
+    font-size: 14px;
+    margin: 10px 0px 24px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
+    width: 100%;
+    line-height: 18px;
+  }
+  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
+    width: 100%;
+    font-size: 14px;
+  }
+  footer .footerWrapper .socialIcons .copyright h4 {
+    text-align: center;
+    line-height: 16px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv h3 {
+    font-size: 16px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li {
+    margin-right: 15px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li a {
+    height: 30px;
+    width: 30px;
+  }
+  footer .footerWrapper .socialIcons .iconsDiv ul li a img {
+    width: 15px;
   }
 }
 
@@ -3628,510 +4121,6 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   }
 }
 
-footer {
-  padding-left: 60px;
-  padding-right: 60px;
-  margin-bottom: 70px;
-}
-@media screen and (max-width: 1400px) {
-  footer {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 720px) {
-  footer {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-footer .footerWrapper {
-  background-color: #fff;
-  padding: 140px 150px;
-}
-footer .footerWrapper .footerData {
-  padding: 100px 0px 72px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-footer .footerWrapper .footerData .footerMenus {
-  width: 30%;
-}
-footer .footerWrapper .footerData .footerMenus ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-footer .footerWrapper .footerData .footerMenus ul li {
-  width: 48%;
-  margin-top: 18px;
-}
-footer .footerWrapper .footerData .footerMenus ul li:nth-child(1), footer .footerWrapper .footerData .footerMenus ul li:nth-child(2) {
-  margin-top: 0px;
-}
-footer .footerWrapper .footerData .footerMenus ul li a {
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.8px;
-  line-height: 1;
-  color: #000;
-  text-align: left;
-}
-@media screen and (max-width: 1600px) {
-  footer .footerWrapper .footerData .footerMenus ul li a {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 720px) {
-  footer .footerWrapper .footerData .footerMenus ul li a {
-    font-size: 12px;
-  }
-}
-footer .footerWrapper .footerData .footerGame {
-  width: 35%;
-}
-footer .footerWrapper .footerData .footerGame img {
-  margin: 0 auto;
-}
-footer .footerWrapper .footerData .footerGame #box img.rotate {
-  animation: 0.2s linear infinite rotate-con;
-  border-radius: 324px;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.1249982119deg, #05FB00 116.2499964237deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474deg, #F00 360deg);
-}
-@keyframes rotate-con {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-footer .footerWrapper .footerData .footerSubscribe {
-  width: 27%;
-}
-footer .footerWrapper .footerData .footerSubscribe h2 {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.6px;
-}
-@media screen and (max-width: 1600px) {
-  footer .footerWrapper .footerData .footerSubscribe h2 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  footer .footerWrapper .footerData .footerSubscribe h2 {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 720px) {
-  footer .footerWrapper .footerData .footerSubscribe h2 {
-    font-size: 14px;
-  }
-}
-footer .footerWrapper .footerData .footerSubscribe p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1;
-  margin: 10px 0px 22px;
-}
-@media screen and (max-width: 1600px) {
-  footer .footerWrapper .footerData .footerSubscribe p {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 720px) {
-  footer .footerWrapper .footerData .footerSubscribe p {
-    font-size: 12px;
-  }
-}
-footer .footerWrapper .footerData .footerSubscribe .signup {
-  border-radius: 6px;
-  border: 1px solid #000;
-  background: #FFF;
-  padding: 3px 3px 3px 25px;
-  display: inline-block;
-}
-footer .footerWrapper .footerData .footerSubscribe .signup form {
-  display: flex;
-  justify-content: space-between;
-}
-footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
-  background-color: #000;
-  color: #fff;
-  padding: 14px 24px;
-  border-radius: 6px;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.7px;
-  cursor: pointer;
-}
-@media screen and (max-width: 1600px) {
-  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
-    font-size: 12px;
-  }
-}
-footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
-  width: 46%;
-  color: #000;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-}
-@media screen and (max-width: 1600px) {
-  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
-    font-size: 12px;
-  }
-}
-footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email]::-webkit-input-placeholder {
-  color: #000;
-}
-footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email]::-moz-placeholder {
-  color: #000;
-}
-footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email]:-ms-input-placeholder {
-  color: #000;
-}
-footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email]:-moz-placeholder {
-  color: #000;
-}
-footer .footerWrapper .socialIcons {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-footer .footerWrapper .socialIcons .copyright h4 {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0.8px;
-}
-@media screen and (max-width: 1600px) {
-  footer .footerWrapper .socialIcons .copyright h4 {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 720px) {
-  footer .footerWrapper .socialIcons .copyright h4 {
-    font-size: 12px;
-  }
-}
-footer .footerWrapper .socialIcons .iconsDiv {
-  text-align: left;
-  width: 27%;
-}
-footer .footerWrapper .socialIcons .iconsDiv h3 {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.6px;
-  margin-bottom: 14px;
-}
-@media screen and (max-width: 1600px) {
-  footer .footerWrapper .socialIcons .iconsDiv h3 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  footer .footerWrapper .socialIcons .iconsDiv h3 {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 720px) {
-  footer .footerWrapper .socialIcons .iconsDiv h3 {
-    font-size: 14px;
-  }
-}
-footer .footerWrapper .socialIcons .iconsDiv ul {
-  display: flex;
-  align-items: center;
-}
-footer .footerWrapper .socialIcons .iconsDiv ul li {
-  margin-right: 15px;
-}
-footer .footerWrapper .socialIcons .iconsDiv ul li:last-child {
-  margin-right: 0px;
-}
-footer .footerWrapper .socialIcons .iconsDiv ul li a {
-  height: 36px;
-  width: 36px;
-  border-radius: 50%;
-  background-color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (max-width: 1600px) {
-  footer {
-    margin-bottom: 60px;
-  }
-  footer .footerWrapper {
-    padding: 120px 130px;
-  }
-  footer .footerWrapper .footerData {
-    padding: 80px 0px 65px;
-  }
-  footer .footerWrapper .footerData .footerMenus {
-    width: 28%;
-  }
-  footer .footerWrapper .footerData .footerMenus ul li {
-    margin-top: 16px;
-  }
-  footer .footerWrapper .footerData .footerSubscribe {
-    width: 32%;
-  }
-  footer .footerWrapper .footerData .footerSubscribe p {
-    margin: 10px 0px 20px;
-  }
-  footer .footerWrapper .footerData .footerSubscribe .signup {
-    padding: 3px 3px 3px 20px;
-  }
-  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
-    padding: 12px 20px;
-    font-size: 12px;
-  }
-  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
-    width: 52%;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv {
-    width: 32%;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv h3 {
-    margin-bottom: 12px;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv ul li {
-    margin-right: 12px;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv ul li a {
-    height: 32px;
-    width: 32px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  footer {
-    margin-bottom: 50px;
-  }
-  footer .footerWrapper {
-    padding: 100px;
-  }
-  footer .footerWrapper .footerData {
-    padding: 60px 0px 45px;
-  }
-  footer .footerWrapper .footerData .footerMenus {
-    width: 32%;
-  }
-  footer .footerWrapper .footerData .footerMenus ul li {
-    margin-top: 14px;
-  }
-  footer .footerWrapper .footerData .footerGame {
-    width: 32%;
-  }
-  footer .footerWrapper .footerData .footerSubscribe p {
-    margin: 8px 0px 18px;
-  }
-  footer .footerWrapper .footerData .footerSubscribe .signup {
-    padding: 3px 3px 3px 18px;
-  }
-  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
-    padding: 10px 16px;
-  }
-  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
-    width: 56%;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv h3 {
-    margin-bottom: 10px;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv ul li {
-    margin-right: 10px;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv ul li a {
-    height: 30px;
-    width: 30px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  footer .footerWrapper {
-    padding: 70px;
-  }
-  footer .footerWrapper .footerData {
-    padding: 50px 0px 35px;
-  }
-  footer .footerWrapper .footerData .footerMenus ul li {
-    margin-top: 12px;
-  }
-  footer .footerWrapper .footerData .footerSubscribe p {
-    margin: 8px 0px 16px;
-  }
-  footer .footerWrapper .footerData .footerSubscribe .signup {
-    padding: 3px 3px 3px 18px;
-  }
-  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
-    padding: 10px 14px;
-  }
-  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
-    width: 49%;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv ul li a {
-    height: 25px;
-    width: 25px;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv ul li a img {
-    width: 12px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  footer {
-    margin-bottom: 150px;
-  }
-  footer .footerWrapper {
-    padding: 40px 16px;
-  }
-  footer .footerWrapper .footerData {
-    padding: 40px 0px 48px;
-    display: block;
-  }
-  footer .footerWrapper .footerData .footerMenus {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  footer .footerWrapper .footerData .footerMenus ul {
-    justify-content: unset;
-  }
-  footer .footerWrapper .footerData .footerMenus ul li {
-    width: 40%;
-    margin-top: 22px;
-  }
-  footer .footerWrapper .footerData .footerMenus ul li:nth-child(1), footer .footerWrapper .footerData .footerMenus ul li:nth-child(2) {
-    margin-top: 22px;
-  }
-  footer .footerWrapper .footerData .footerGame {
-    width: 100%;
-  }
-  footer .footerWrapper .footerData .footerSubscribe {
-    width: 100%;
-    margin-top: 20px;
-  }
-  footer .footerWrapper .footerData .footerSubscribe h2 {
-    text-align: center;
-  }
-  footer .footerWrapper .footerData .footerSubscribe p {
-    text-align: center;
-  }
-  footer .footerWrapper .footerData .footerSubscribe .signup {
-    display: block;
-    border: none;
-    padding: 0;
-  }
-  footer .footerWrapper .footerData .footerSubscribe .signup form {
-    display: block;
-  }
-  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
-    display: block;
-    text-align: center;
-    margin: 10px auto 0px;
-    padding: 12px;
-  }
-  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
-    border-radius: 6px;
-    border: 1px solid #000;
-    background: #FFF;
-    padding: 16px;
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-  }
-  footer .footerWrapper .socialIcons {
-    flex-flow: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-  footer .footerWrapper .socialIcons .copyright h4 {
-    width: 100%;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 40px;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv h3 {
-    margin-bottom: 16px;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv ul {
-    justify-content: center;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv ul li a {
-    height: 30px;
-    width: 30px;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv ul li a img {
-    width: 15px;
-  }
-}
-@media screen and (max-width: 680px) {
-  footer .footerWrapper .footerLogo {
-    width: 60%;
-  }
-  footer .footerWrapper .footerData .footerMenus ul li {
-    width: 100%;
-  }
-  footer .footerWrapper .footerData .footerMenus ul li:nth-child(1) {
-    margin-top: 0px;
-  }
-  footer .footerWrapper .footerData .footerMenus ul li a {
-    font-size: 14px;
-    line-height: 1;
-  }
-  footer .footerWrapper .footerData .footerSubscribe h2 {
-    font-size: 14px;
-    letter-spacing: -0.48px;
-  }
-  footer .footerWrapper .footerData .footerSubscribe p {
-    font-size: 14px;
-    margin: 10px 0px 24px;
-  }
-  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=submit] {
-    width: 100%;
-    line-height: 18px;
-  }
-  footer .footerWrapper .footerData .footerSubscribe .signup form input[type=email] {
-    width: 100%;
-    font-size: 14px;
-  }
-  footer .footerWrapper .socialIcons .copyright h4 {
-    text-align: center;
-    line-height: 16px;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv h3 {
-    font-size: 16px;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv ul li {
-    margin-right: 15px;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv ul li a {
-    height: 30px;
-    width: 30px;
-  }
-  footer .footerWrapper .socialIcons .iconsDiv ul li a img {
-    width: 15px;
-  }
-}
-
 .banner-section {
   padding-left: 60px;
   padding-right: 60px;
@@ -5963,6 +5952,10 @@ a.showLess::after {
   .meetupAdderssSec .meetupAdderssContainer .secHeading p {
     line-height: 24px;
   }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent {
+    flex-wrap: unset;
+    flex-direction: column;
+  }
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
     width: 100%;
     height: auto;
@@ -5985,6 +5978,7 @@ a.showLess::after {
     line-height: 24px;
   }
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact {
+    margin-bottom: 0px;
     order: 1;
   }
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact:hover .mailIcon img {
@@ -5998,11 +5992,11 @@ a.showLess::after {
     transform: translate(170%, -15%) rotate(-30deg);
     width: 40%;
   }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds {
-    padding-bottom: 75px;
-  }
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
     margin: 0px 24px 30px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox:last-child {
+    padding-bottom: 55px;
   }
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox h3 {
     font-size: 24px;

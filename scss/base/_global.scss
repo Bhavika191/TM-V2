@@ -231,6 +231,7 @@ $fontpoppins: 'Poppins', sans-serif;
 body{
     font-family: $fontpoppins;position: relative;
 }
+body.opentwo{overflow: hidden;}
 
 @mixin wrapper {
     padding-left: 60px;
@@ -476,12 +477,12 @@ img {max-width: 100%;}
 
 
 
-.ctaWhite { padding: 14px 24px;@include font14;line-height: 18px;font-weight: $fontW700;display: inline-flex;align-items: center;justify-content: center;cursor: pointer;border-radius: 6px;border: 1px solid #000;background: transparent;text-decoration: none;color: #000;text-decoration: none; transition: 0.5s all ease-in-out;letter-spacing: 0.7px;text-transform: uppercase;text-align: center;
+.ctaWhite { padding: 14px 24px;@include font14;line-height: 18px;font-weight: $fontW700;display: inline-flex;align-items: center;justify-content: center;cursor: pointer;border-radius: 6px;border: 1px solid #000;background: transparent;text-decoration: none;color: #000;text-decoration: none; transition: 0.7s all ease-in-out;letter-spacing: 0.7px;text-transform: uppercase;text-align: center;
 
     &:hover{background: #000;color: #fff;
-        svg{fill: #fff;transition: 0.5s all ease-out;display: inline-block;}
+        svg{fill: #fff;transition: 0.7s all ease-out;}
     }
-    svg{fill: #000;height: 20px;width: 20px;transition: 0.5s all ease-out;margin-left: 18px;display: none;}
+    svg{fill: #000;height: 20px;width: 20px;transition: 0.7s all ease-out;margin-left: 18px;}
     @media screen and (max-width:1600px) {
         padding: 12px 22px;
         svg{height: 18px;width: 18px;margin-left: 15px;}
@@ -494,20 +495,17 @@ img {max-width: 100%;}
         padding: 10px 18px;
         svg{height: 16px;width: 16px;margin-left: 12px;}
     }
-    @media screen and (max-width:1024px) {
-        svg{display: inline-block;}
-    }
     @media screen and (max-width:720px) {
         padding: 14px 24px;
     }
 }
 
-.ctaBlack { padding: 14px 24px;@include font14;line-height: 18px;font-weight: $fontW700;display: inline-block;cursor: pointer;border-radius: 6px;border: 1px solid #000;background: #000;text-decoration: none;color: #fff;text-decoration: none; transition: 0.5s all ease-in-out;letter-spacing: 0.7px;text-transform: uppercase;
+.ctaBlack { padding: 14px 24px;@include font14;line-height: 18px;font-weight: $fontW700;display: inline-block;cursor: pointer;border-radius: 6px;border: 1px solid #000;background: #000;text-decoration: none;color: #fff;text-decoration: none; transition: 0.7s all ease-in-out;letter-spacing: 0.7px;text-transform: uppercase;
 
     &:hover{background: #fff;color: #000;
-        svg{fill: #000;transition: 0.5s all ease-out;display: inline-block;}
+        svg{fill: #000;transition: 0.7s all ease-out;}
     }
-    svg{fill: #fff;height: 12px;width: 12px;transition: 0.5s all ease-out;margin-left: 18px;display: none;}
+    svg{fill: #fff;height: 12px;width: 12px;transition: 0.7s all ease-out;margin-left: 18px;}
     @media screen and (max-width:1600px) {
         padding: 12px 22px;
     }
@@ -518,9 +516,6 @@ img {max-width: 100%;}
     @media screen and (max-width:1200px) {
         padding: 10px 18px;
         svg{height: 10px;width: 10px;margin-left: 10px;}
-    }
-    @media screen and (max-width:1024px) {
-        svg{display: inline-block;}
     }
     @media screen and (max-width:720px) {
         padding: 14px 24px;
