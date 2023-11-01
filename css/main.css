@@ -5885,15 +5885,129 @@ a.showLess::after {
   .meetupAdderssSec {
     margin-bottom: 100px;
   }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading {
+    margin-bottom: 80px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+    line-height: 54px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
+    margin-bottom: 80px;
+    height: 550px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 20px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
+    height: 35%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
+    width: 60%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 25px 20px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
+    margin-top: -24%;
+  }
 }
 @media screen and (max-width: 1024px) {
   .meetupAdderssSec {
     margin-bottom: 150px;
   }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading {
+    margin-bottom: 60px;
+  }
   .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
     line-height: 52px;
   }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
+    width: 45%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 15px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
+    height: 30%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
+    width: 55%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 22px 18px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
+    margin-top: -24%;
+  }
 }
+@media screen and (max-width: 768px) {
+  .meetupAdderssSec .meetupAdderssContainer .secHeading {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading p {
+    line-height: 24px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
+    margin-top: unset;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.mumbaiOff {
+    width: 500px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap {
+    margin-top: 100px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 30px 24px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact {
+    order: 1;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact:hover .mailIcon img {
+    transform: translate(170%, -15%) rotate(-30deg);
+    width: 40%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
+    height: 30%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
+    transform: translate(170%, -15%) rotate(-30deg);
+    width: 40%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds {
+    padding-bottom: 75px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 24px 30px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox a {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox::before {
+    right: 24px;
+    height: 15px;
+    width: 15px;
+  }
+}
+
 body.opentwo {
   overflow: hidden;
 }
