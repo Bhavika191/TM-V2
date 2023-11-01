@@ -7,20 +7,55 @@ $('#toggle').click(function () {
 // header menu code ends
 
 //----------------------------------------------------Shamal's Js Code Starts---------------------------------------------------------//
+$(document).ready(function(){
+        
+  var numToShow = 3;
+  $(".list li").hide();
+  $('.wrapper ul').each(function(){
+     var list = $(this).children("li");
+     var button = $(this).siblings(".next");
+     var less = $(this).siblings('.less');
+     var numInList = list.length;
+     if (numInList > numToShow) {
+        button.show();
+        less.hide();
+     }
+    //$(this).children("li:lt('+ numToShow +')").show();
+    list.slice(0, numToShow).show();
+  });
+  
+  $('button.next').click(function(){
+    var list = $(this).siblings(".list").children("li");
+    var numInList = list.length;
+    var showing = list.filter(':visible').length;
+    list.slice(showing - 1, showing + numToShow).fadeIn();
+    var nowShowing = list.filter(':visible').length;
+    if (nowShowing >= numInList) {
+      $(this).hide();
+      $(this).next('button.less').show();
+    }
+  });
 
+  $('button.less').click(function () {
+    $(this).siblings(".list").children("li").not(':lt(3)').hide();
+    $(this).siblings('button.next').show();
+    $(this).hide();
+  });
+  
+});
 //Service page read more and Read less code starts
 
     jQuery(document).ready(function () {
       for (let i = 1; i <= 10; i++) {
-        var $this = $('#servicesec-content' + i);
+        var $this = $('#service-info' + i);
         if ($this.find('div').length > 4) {
           $('#servicesec-content' + i).append('<div><a href="javascript:void(0)" class="showMore"></a></div>');
         }
         // If more than 2 Education items, hide the remaining
-        $('#servicesec-content' + i + ' .list-wrapper').slice(0, 3).addClass('shown');
-        $('#servicesec-content' + i + ' .list-wrapper').not('.shown').hide();
+        $('#service-info' + i + ' .list-wrapper').slice(0, 3).addClass('shown');
+        $('#service-info' + i + ' .list-wrapper').not('.shown').hide();
         $('#servicesec-content' + i + ' .showMore').on('click', function () {
-          $('#servicesec-content' + i + ' .list-wrapper').not('.shown').toggle(200);
+          $('#service-info' + i + ' .list-wrapper').not('.shown').toggle(200);
           $(this).toggleClass('showLess');
         });
       }//for loop closed
