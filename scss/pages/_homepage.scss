@@ -1081,11 +1081,9 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
                         .blogArrowimg{position: absolute;right: 50px;bottom: -100%;transition: 0.3s all ease-out;img{height: 20px;width: 20px;}}
                 }
                 &:hover{
-                   .blogsData{
-                        .blogImg{img{scale: unset;transition: 0.3s all ease-out;}}
-                        .blogDetails{margin: 0px;transition: 0.3s all ease-out;
-                            .blogArrowimg{bottom: 25px;transition: 0.3s all ease-out;}
-                        }
+                    .blogImg{img{scale: unset;transition: 0.3s all ease-out;}}
+                    .blogDetails{margin: 0px;transition: 0.3s all ease-out;
+                        .blogArrowimg{bottom: 25px;transition: 0.3s all ease-out;}
                     }
                 }
             }
@@ -1146,11 +1144,9 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.2s ease-in-out;
                         .blogArrowimg{right: 30px;}
                     }
                     &:hover{
-                        .blogsData{
-                            .blogDetails{
-                                 .blogArrowimg{bottom: 18px;}
-                             }
-                         }
+                        .blogDetails{
+                            .blogArrowimg{bottom: 18px;}
+                        }
                      }
                 }
             }
