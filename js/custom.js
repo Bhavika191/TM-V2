@@ -7,42 +7,7 @@ $('#toggle').click(function () {
 // header menu code ends
 
 //----------------------------------------------------Shamal's Js Code Starts---------------------------------------------------------//
-$(document).ready(function(){
-        
-  var numToShow = 3;
-  $(".list li").hide();
-  $('.wrapper ul').each(function(){
-     var list = $(this).children("li");
-     var button = $(this).siblings(".next");
-     var less = $(this).siblings('.less');
-     var numInList = list.length;
-     if (numInList > numToShow) {
-        button.show();
-        less.hide();
-     }
-    //$(this).children("li:lt('+ numToShow +')").show();
-    list.slice(0, numToShow).show();
-  });
-  
-  $('button.next').click(function(){
-    var list = $(this).siblings(".list").children("li");
-    var numInList = list.length;
-    var showing = list.filter(':visible').length;
-    list.slice(showing - 1, showing + numToShow).fadeIn();
-    var nowShowing = list.filter(':visible').length;
-    if (nowShowing >= numInList) {
-      $(this).hide();
-      $(this).next('button.less').show();
-    }
-  });
 
-  $('button.less').click(function () {
-    $(this).siblings(".list").children("li").not(':lt(3)').hide();
-    $(this).siblings('button.next').show();
-    $(this).hide();
-  });
-  
-});
 //Service page read more and Read less code starts
 
     jQuery(document).ready(function () {
@@ -63,76 +28,7 @@ $(document).ready(function(){
 
   //Service page read more and Read less code ends
   
-  //Services page mobile accordian starts
-  // var acc = document.getElementsByClassName("servicesec-heading");
-  // var panel = document.getElementsByClassName('servicesec-content');
-  // for (var i = 0; i < acc.length; i++) {
-  //   acc[i].onclick = function () {
-  //     var setClasses = !this.classList.contains('active');
-  //     setClass(acc, 'active', 'remove');
-  //     setClass(panel, 'show', 'remove');
-  //     if (setClasses) {
-  //       this.classList.toggle("active");
-  //       this.nextElementSibling.classList.toggle("show");
-  //     }
-  //   }
-  // }
-  // function setClass(els, className, fnName) {
-  //   for (var i = 0; i < els.length; i++) {
-  //     els[i].classList[fnName](className);
-  //   }
-  // }
-  //Services page mobile accordian ends
   
-  //Service page slider starts
-  // if ($(window).width() > 768) {
-  //   if ($("#myBtnContainer").length) {
-  //     var blogCount = document.querySelectorAll("#myBtnContainer .btn").length;
-  //     if (blogCount > 7) {
-  //       document.getElementById("myBtnContainer").classList.add("filter-wrapper");
-  //       document.getElementById("containerTwo").classList.add("containerSlide");
-  //     } else {
-  //       document.getElementById("myBtnContainer").classList.remove("filter-wrapper");
-  //       document.getElementById("containerTwo").classList.remove("containerSlide");
-  //     }
-  
-  //     $(".filter-wrapper").slick({
-  //       dots: false,
-  //       arrows: true,
-  //       slidesToShow: 6,
-  //       slidesToScroll: 1,
-  //       infinite: false,
-  //       variableWidth: true,
-  //       responsive: [
-  //         {
-  //           breakpoint: 1800,
-  //           settings: {
-  //             slidesToShow: 5,
-  //           },
-  //         },
-  //         {
-  //           breakpoint: 1600,
-  //           settings: {
-  //             slidesToShow: 5,
-  //           },
-  //         },
-  //         {
-  //           breakpoint: 1400,
-  //           settings: {
-  //             slidesToShow: 4,
-  //           },
-  //         },
-  //         {
-  //           breakpoint: 1200,
-  //           settings: {
-  //             slidesToShow: 3,
-  //           },
-  //         },
-  //       ],
-  //     });
-  //   }
-  // }
-  //Service page slider ends
   
   //Service page active menu navbar starts
   $(document).ready(function () {
@@ -247,7 +143,6 @@ $('.logoSlider').slick({
     autoplay: true,
     infinite: true,
     pauseOnHover:false,
-    pauseOnFocus:false,
     speed:3000, 
     responsive: [
       {
@@ -331,7 +226,29 @@ if ($(window).width() < 1025) {
     }
   }
 
-  
+  //case study listing slider
+  if ($(window).width() < 1025) {
+    if ($(".casestudylistingBoxes").length) {
+      $(".casestudylistingBoxes").slick({
+        dots: false,
+        arrows: true,
+        slidesToShow: 2,
+        infinite: true,
+        responsive: [
+          {
+            breakpoint: 680,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: "40px",
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    }
+  }
+  // case study listing slider ends 
 
    // service slider
    if ($(window).width() < 1025) {

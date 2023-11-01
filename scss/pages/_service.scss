@@ -1,23 +1,23 @@
 .banner-section{@include wrapper;
-    .content-div{padding: 224px 150px;display:flex;flex-direction:column;justify-content:center;
+    .content-div{padding: 224px 150px 124 150px;display:flex;flex-direction:column;justify-content:center;
         .banner-heading{color: var(--primary-black, #000);font-family: $fontpoppins;@include font64;font-weight: $fontW500;line-height: 74px;letter-spacing: -1.92px;width: 50%;margin-bottom:34px;}
         .banner-subheading{color: var(--primary-black, #000);font-family: $fontpoppins;@include font24;font-weight: $fontW400;line-height: 34px;}
     }
 // ----------------------------------------media queries-----------------------------------------------//
 @media all and (max-width:1800px){ 
-    .content-div{padding: 210px 140px;
+    .content-div{padding: 210px 140px 120px 140px;
         .banner-heading{line-height: 70px;letter-spacing: -1.50px;width: 50%;margin-bottom:30px;}
         .banner-subheading{line-height: 30px;}
     }
 }
 @media all and (max-width:1600px){
-    .content-div{padding: 200px 130px;
+    .content-div{padding: 200px 130px 110px 130px;
         .banner-heading{line-height: 60px;letter-spacing: -1.20px;width: 50%;margin-bottom:26px;}
         .banner-subheading{line-height: 26px;}
     }
 }
 @media all and (max-width:1400px){
-    .content-div{padding: 180px 120px;
+    .content-div{padding: 180px 120px 100px 120px;
         .banner-heading{line-height: 56px;letter-spacing: -1px;width: 55%;margin-bottom:24px;}
         .banner-subheading{line-height: 24px;}
     }
@@ -35,7 +35,7 @@
     }
 }
 @media all and (max-width:680px){
-    .content-div{padding: 140px 0px 60px 0px;
+    .content-div{padding: 100px 0px 60px 0px;
         .banner-heading{font-size: 30px;font-weight: 500;line-height: 40px;letter-spacing: -0.9px;}
         .banner-subheading{font-size: 14px;font-weight: 400;line-height: 24px; }
     }
@@ -43,9 +43,9 @@
 }
 .service-container{position:sticky;top:0px;width: 100%;z-index: 1;background: #F1F1F1;
     .filterSec{display: block;overflow-x: auto;
-        &::-webkit-scrollbar {height: 8px;background-color: transparent;}
-        &::-webkit-scrollbar-track{background: #FFF;box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);border-radius: 20px;}
-        &::-webkit-scrollbar-thumb{background: #000;border-radius: 100px}
+        &::-webkit-scrollbar {display: none;}
+        &::-webkit-scrollbar-track{display: none;}
+        &::-webkit-scrollbar-thumb{display: none;}
         .filter-wrapper{width: max-content;padding:30px 0px;@include wrapper;
             a{display: inline-block;color:#000;text-decoration:none;font-family: $fontpoppins;@include font14;font-weight: $fontW500;line-height: 14px;letter-spacing: 0.7px;text-transform: uppercase;&:not(:last-child){margin-right: 48px;}
                 &.active{font-weight: $fontW700;border: 1px solid #000;border-radius: 6px;padding:24px 48px;}
