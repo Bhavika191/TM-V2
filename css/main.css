@@ -4287,7 +4287,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   position: sticky;
   top: 0px;
   width: 100%;
-  z-index: 1;
+  z-index: 99;
   background: #F1F1F1;
 }
 .service-container .filterSec {
@@ -4495,8 +4495,18 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   width: 45%;
 }
 .serviceSec .servicesec-wrapper .servicesec-content {
-  width: 45%;
+  width: 47%;
   padding: 100px 0px 160px 0px;
+}
+.serviceSec .servicesec-wrapper .servicesec-content .services-info {
+  height: 500px;
+  overflow-y: auto;
+  padding-left: 60px;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.serviceSec .servicesec-wrapper .servicesec-content .services-info::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
   padding-bottom: 54px;
@@ -4771,6 +4781,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   .serviceSec .servicesec-wrapper .servicesec-content {
     padding: 40px 0px 80px 28px;
     width: 100%;
+  }
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info {
+    padding-left: 40px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
     padding-bottom: 34px;
@@ -5093,6 +5106,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
 }
 
 a.showMore, a.showLess {
+  margin-left: 60px;
   margin-top: 54px;
   padding: 15px 0px;
   text-align: center;
@@ -5154,6 +5168,7 @@ a.showMore::after, a.showLess::after {
 @media all and (max-width: 680px) {
   a.showMore, a.showLess {
     margin-top: 20px;
+    margin-left: 40px;
   }
 }
 

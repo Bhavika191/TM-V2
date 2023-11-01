@@ -41,7 +41,7 @@
     }
 }
 }
-.service-container{position:sticky;top:0px;width: 100%;z-index: 1;background: #F1F1F1;
+.service-container{position:sticky;top:0px;width: 100%;z-index: 99;background: #F1F1F1;
     .filterSec{display: block;overflow-x: auto;
         &::-webkit-scrollbar {display: none;}
         &::-webkit-scrollbar-track{display: none;}
@@ -84,8 +84,16 @@
 .serviceSec{position: relative;@include wrapper;
     .servicesec-wrapper{background: #000000;padding: 0px 74px 0px 50px;display: flex;justify-content: space-between;margin-bottom:60px;
         .servicesec-heading{width:45%;}
-        .servicesec-content{width:45%;padding:100px 0px 160px 0px;
-            .services-info{
+        .servicesec-content{width:47%;padding:100px 0px 160px 0px;
+            .services-info{height: 500px;overflow-y:auto;padding-left: 60px;
+                -ms-overflow-style: none;  /* Internet Explorer 10+ */
+                scrollbar-width: none;  /* Firefox */
+                &::-webkit-scrollbar { 
+                    display: none;  /* Safari and Chrome */
+                }
+                // &::-webkit-scrollbar {width: 3px;background-color: transparent;}
+                // &::-webkit-scrollbar-track{background: #FFF;box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);border-radius: 20px;}
+                // &::-webkit-scrollbar-thumb{}
                 .subheading{padding-bottom: 54px;color: var(--primary-white, #FFF);font-family: $fontpoppins;@include font48;font-weight: $fontW500;line-height: 48px; letter-spacing: -1.44px;}
                 .list-wrapper{padding: 54px 0px;border-top:1px solid #F1F1F1;   
                     .list-heading{position:relative;color: #FFF;font-family: $fontpoppins; @include font30;font-weight: $fontW400;line-height: 40px;margin-bottom: 16px;
@@ -169,7 +177,7 @@
         .servicesec-wrapper{padding: 0px 30px 0px 30px;margin-bottom:48px;display:block;
             .servicesec-heading{width:70%;}
             .servicesec-content{padding:40px 0px 80px 28px;width:100%;
-                .services-info{ 
+                .services-info{ padding-left: 40px; 
                     .subheading{padding-bottom: 34px;line-height: 34px;letter-spacing: -0.72px;}
                     .list-wrapper{padding: 30px 0px;  
                         .list-heading{line-height: 30px;margin-bottom: 14px;
@@ -186,7 +194,7 @@
         padding-left: 0px;padding-right:0px;
         .servicesec-wrapper{padding: 0px 24px 0px 24px;margin-bottom:24px;
             .servicesec-content{padding:30px 0px 60px 28px;
-                .services-info{ 
+                .services-info{
                     .subheading{padding-bottom: 32px;font-size: 24px;font-weight: 500;line-height: 34px;letter-spacing: -0.72px;}
                     .list-wrapper{padding: 20px 0px;  
                         .list-heading{font-size: 20px;font-weight: 400;line-height: 30px;margin-bottom: 12px;}
@@ -272,7 +280,7 @@
     }
 }
 }
-a.showMore,a.showLess {margin-top: 54px;padding: 15px 0px;text-align: center;display: block;line-height: 24px;font-family: $fontpoppins;@include font14;font-weight: $fontW700;line-height: 18px;letter-spacing: 0.7px;text-transform: uppercase;border:1px solid #fff;border-radius:6px;color:#fff;
+a.showMore,a.showLess {margin-left:60px;margin-top: 54px;padding: 15px 0px;text-align: center;display: block;line-height: 24px;font-family: $fontpoppins;@include font14;font-weight: $fontW700;line-height: 18px;letter-spacing: 0.7px;text-transform: uppercase;border:1px solid #fff;border-radius:6px;color:#fff;
     &::after {content: 'SHOW MORE';}
 // ----------------------------------------media queries-----------------------------------------------//
     @media all and (max-width:1800px){margin-top: 50px;}
@@ -280,6 +288,6 @@ a.showMore,a.showLess {margin-top: 54px;padding: 15px 0px;text-align: center;dis
     @media all and (max-width:1400px){margin-top: 45px;padding: 13px 0px;line-height: 14px;}
     @media all and (max-width:1200px){margin-top: 40px;padding: 12px 0px;line-height: 12px;}
     @media all and (max-width:1024px){margin-top: 30px;}
-    @media all and (max-width:680px){margin-top: 20px;}
+    @media all and (max-width:680px){margin-top: 20px;margin-left:40px;}
 }
 a.showLess{ &::after {content: 'SHOW LESS';}}
