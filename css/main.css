@@ -4518,6 +4518,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .serviceSec .servicesec-wrapper .servicesec-heading {
   width: 45%;
+  position: sticky;
+  top: 122px;
+  height: 90%;
 }
 .serviceSec .servicesec-wrapper .servicesec-content {
   width: 47%;
@@ -4530,10 +4533,18 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
 }
+.serviceSec .servicesec-wrapper .servicesec-content .services-info:first-child {
+  height: auto;
+}
+.serviceSec .servicesec-wrapper .servicesec-content .services-info:nth-child(2) {
+  height: auto;
+}
 .serviceSec .servicesec-wrapper .servicesec-content .services-info::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
 .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
+  position: sticky;
+  top: 0;
   padding-bottom: 54px;
   color: var(--primary-white, #FFF);
   font-family: "Poppins", sans-serif;
@@ -4541,6 +4552,10 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   font-weight: 500;
   line-height: 48px;
   letter-spacing: -1.44px;
+  padding-left: 60px;
+  margin-left: -60px;
+  z-index: 9;
+  background: #000000;
 }
 @media screen and (max-width: 1600px) {
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
@@ -4694,6 +4709,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     left: -22px;
   }
 }
+@media all and (max-width: 1600px) {
+  .serviceSec .servicesec-wrapper .servicesec-heading {
+    top: 100px;
+  }
+}
 @media all and (max-width: 1400px) {
   .serviceSec .servicesec-wrapper {
     padding: 0px 60px 0px 40px;
@@ -4802,6 +4822,8 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .serviceSec .servicesec-wrapper .servicesec-heading {
     width: 70%;
+    position: static;
+    height: auto;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
     padding: 40px 0px 80px 28px;
@@ -4814,6 +4836,8 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding-bottom: 34px;
     line-height: 34px;
     letter-spacing: -0.72px;
+    padding-left: 40px;
+    margin-left: -40px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper {
     padding: 30px 0px;
