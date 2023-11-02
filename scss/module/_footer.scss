@@ -10,16 +10,19 @@ footer{@include wrapper;margin-bottom: 70px;
                 }
             }
             .footerGame{width:35%;
-                img{margin:  0 auto;}
-                  #box img.rotate {
-                    animation: 0.2s linear infinite rotate-con;
+                  #box svg.rotate {
+                    animation: 0.5s linear infinite rotate-con;
                     border-radius: 324px;
                     background:linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.12499821186066deg, #05FB00 116.24999642372131deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474426deg, #F00 360deg);
+                    .linesNew{display: none;}
+                    .innerCircleactive{filter: none;}
+                    .innerCircleoneactive{fill: #fff;}
                   }
-                  
+                  #box{ cursor: pointer;}
                   @keyframes rotate-con {
-                      from {transform: rotate(0deg);}
-                      to {transform: rotate(360deg);}
+                      0% {transform: rotate(0deg);transition: 0.5s all ease-out;}
+                      50%{transform: rotate(180deg);transition: 0.5s all ease-out;}
+                      100% {transform: rotate(360deg);transition: 0.5s all ease-out;}
                   }
             }
             .footerSubscribe{width: 27%;
@@ -45,7 +48,23 @@ footer{@include wrapper;margin-bottom: 70px;
                 ul{display: flex;align-items: center;
                     li {margin-right: 15px;
                         &:last-child{margin-right: 0px;}
-                        a{height: 36px;width: 36px;border-radius: 50%;background-color: #000;display: flex;align-items: center;justify-content: center;}   
+                        a{height: 36px;width: 36px;border-radius: 50%;background-color: #000;display: flex;align-items: center;justify-content: center;transition: 0.5s all ease-out;
+                            svg{height: 18px;width: 18px;
+                                path{fill: #fff;}
+                                &.youtube{
+                                    .blackCol{fill: #000;}
+                                }
+                            }
+                            &:hover{transition: 0.5s all ease-out;
+                                background-color: #fff;
+                                svg{
+                                    path{fill: #000;}
+                                    &.youtube{
+                                        .blackCol{fill: #fff;}
+                                    }
+                                }
+                            }
+                        }   
                     }
                 }
             }
