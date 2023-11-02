@@ -1,6 +1,7 @@
 // header menu code starts
 $('#toggle').click(function () {
     $(this).toggleClass('active');
+    $('header').toggleClass('hiddenspace');
     $('#overlay').toggleClass('open');
     $('body').toggleClass('opentwo');
 });
@@ -132,6 +133,7 @@ function hasScrolled() {
 }
 
 // header menu code ends
+
 
 
 // our partner slider starts
