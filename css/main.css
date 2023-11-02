@@ -964,20 +964,35 @@ footer .footerWrapper .footerData .footerMenus ul li a {
 footer .footerWrapper .footerData .footerGame {
   width: 35%;
 }
-footer .footerWrapper .footerData .footerGame img {
-  margin: 0 auto;
-}
-footer .footerWrapper .footerData .footerGame #box img.rotate {
-  animation: 0.2s linear infinite rotate-con;
+footer .footerWrapper .footerData .footerGame #box svg.rotate {
+  animation: 0.5s linear infinite rotate-con;
   border-radius: 324px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.1249982119deg, #05FB00 116.2499964237deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474deg, #F00 360deg);
 }
+footer .footerWrapper .footerData .footerGame #box svg.rotate .linesNew {
+  display: none;
+}
+footer .footerWrapper .footerData .footerGame #box svg.rotate .innerCircleactive {
+  filter: none;
+}
+footer .footerWrapper .footerData .footerGame #box svg.rotate .innerCircleoneactive {
+  fill: #fff;
+}
+footer .footerWrapper .footerData .footerGame #box {
+  cursor: pointer;
+}
 @keyframes rotate-con {
-  from {
+  0% {
     transform: rotate(0deg);
+    transition: 0.5s all ease-out;
   }
-  to {
+  50% {
+    transform: rotate(180deg);
+    transition: 0.5s all ease-out;
+  }
+  100% {
     transform: rotate(360deg);
+    transition: 0.5s all ease-out;
   }
 }
 footer .footerWrapper .footerData .footerSubscribe {
@@ -1147,6 +1162,27 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.5s all ease-out;
+}
+footer .footerWrapper .socialIcons .iconsDiv ul li a svg {
+  height: 18px;
+  width: 18px;
+}
+footer .footerWrapper .socialIcons .iconsDiv ul li a svg path {
+  fill: #fff;
+}
+footer .footerWrapper .socialIcons .iconsDiv ul li a svg.youtube .blackCol {
+  fill: #000;
+}
+footer .footerWrapper .socialIcons .iconsDiv ul li a:hover {
+  transition: 0.5s all ease-out;
+  background-color: #fff;
+}
+footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
+  fill: #000;
+}
+footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol {
+  fill: #fff;
 }
 @media screen and (max-width: 1600px) {
   footer {

@@ -1,0 +1,35 @@
+<svg width="324" height="324" viewBox="0 0 324 324" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M175.855 170L262.458 220" stroke="black" stroke-width="2"/>
+<path d="M148.141 170L61.5381 220" stroke="black" stroke-width="2"/>
+<path d="M162 146L162 46" stroke="black" stroke-width="2"/>
+<circle cx="162" cy="162" r="45" fill="white" stroke="white" stroke-width="10"/>
+<g filter="url(#filter0_i_7494_1890)">
+<circle cx="162" cy="162" r="39" fill="url(#paint0_angular_7494_1890)"/>
+<circle cx="162" cy="162" r="39" fill="white" fill-opacity="0.5"/>
+</g>
+<path d="M170 162.001C170 157.583 166.418 154.001 162 154.001C157.582 154.001 154 157.583 154 162.001C154 166.42 157.582 170.001 162 170.001C166.418 170.001 170 166.42 170 162.001Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M162 154.001L162 144.001" stroke="black" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M168.926 166.001L177.586 171.001" stroke="black" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+<path d="M155.07 166.001L146.41 171.001" stroke="black" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_i_7494_1890" x="123" y="123" width="78" height="81" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="3"/>
+<feGaussianBlur stdDeviation="1.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_7494_1890"/>
+</filter>
+<radialGradient id="paint0_angular_7494_1890" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(162 162) rotate(90) scale(39)">
+<stop stop-color="#FF0000"/>
+<stop offset="0.161458" stop-color="#FAFF00"/>
+<stop offset="0.322917" stop-color="#05FB00"/>
+<stop offset="0.515625" stop-color="#00FFE0"/>
+<stop offset="0.6875" stop-color="#0029FF"/>
+<stop offset="0.848958" stop-color="#FF00D6"/>
+<stop offset="1" stop-color="#FF0000"/>
+</radialGradient>
+</defs>
+</svg>

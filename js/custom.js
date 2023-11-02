@@ -288,7 +288,16 @@ if ($(window).width() > 1025) {
 $(document).ready(function(){
   
   $('#box').on('click', function(){
-    $('#box img').toggleClass('rotate');
+    $('#box svg').addClass('rotate');
+    $('.lines').addClass('linesNew');
+    $('.innerCircle').addClass('innerCircleactive');
+    $('.innerCircleone').addClass('innerCircleoneactive');
+    setTimeout(function() {
+      $('#box svg').removeClass('rotate');
+      $('.lines').removeClass('linesNew');
+      $('.innerCircle').removeClass('innerCircleactive');
+      $('.innerCircleone').removeClass('innerCircleoneactive');
+		}, 3000);
   });
  });
 
