@@ -85,7 +85,7 @@
     .servicesec-wrapper{background: #000000;padding: 0px 74px 0px 50px;display: flex;justify-content: space-between;margin-bottom:60px;
         .servicesec-heading{width:45%;position: sticky;top: 122px;height: 90%;}
         .servicesec-content{width:47%;padding:100px 0px 160px 0px;
-            .services-info{height: 500px;overflow-y:auto;padding-left: 60px;
+            .services-info{height: 500px;overflow-y:auto;padding-left: 60px;&:first-child{height: auto;};&:nth-child(2){height: auto;}
                 -ms-overflow-style: none;  /* Internet Explorer 10+ */
                 scrollbar-width: none;  /* Firefox */
                 &::-webkit-scrollbar { 
@@ -177,7 +177,7 @@
     }
     @media all and (max-width:768px){
         .servicesec-wrapper{padding: 0px 30px 0px 30px;margin-bottom:48px;display:block;
-            .servicesec-heading{width:70%;}
+            .servicesec-heading{width:70%;position: static;height: auto;}
             .servicesec-content{padding:40px 0px 80px 28px;width:100%;
                 .services-info{ padding-left: 40px; 
                     .subheading{padding-bottom: 34px;line-height: 34px;letter-spacing: -0.72px;padding-left: 40px;margin-left: -40px;}
