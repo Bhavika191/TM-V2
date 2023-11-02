@@ -4497,12 +4497,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
 }
-.serviceSec .servicesec-wrapper .servicesec-content .services-info:first-child {
-  height: auto;
-}
-.serviceSec .servicesec-wrapper .servicesec-content .services-info:nth-child(2) {
-  height: auto;
-}
 .serviceSec .servicesec-wrapper .servicesec-content .services-info::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
@@ -4634,6 +4628,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   border-radius: 50%;
   text-align: center;
   background-color: #D4D4D4;
+}
+.serviceSec .servicesec-wrapper .servicesec-content #service-info1, .serviceSec .servicesec-wrapper .servicesec-content #service-info2 {
+  height: auto;
 }
 @media all and (max-width: 1800px) {
   .serviceSec .servicesec-wrapper {
@@ -4795,6 +4792,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info {
     padding-left: 40px;
+    height: 400px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
     padding-bottom: 34px;
