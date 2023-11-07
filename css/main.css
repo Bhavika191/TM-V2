@@ -4695,9 +4695,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .serviceSec .servicesec-wrapper .servicesec-heading {
   width: 45%;
-  position: sticky;
-  top: 122px;
-  height: 90%;
 }
 .serviceSec .servicesec-wrapper .servicesec-content {
   width: 47%;
@@ -4709,12 +4706,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   padding-left: 60px;
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
-}
-.serviceSec .servicesec-wrapper .servicesec-content .services-info:first-child {
-  height: auto;
-}
-.serviceSec .servicesec-wrapper .servicesec-content .services-info:nth-child(2) {
-  height: auto;
 }
 .serviceSec .servicesec-wrapper .servicesec-content .services-info::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
@@ -4756,7 +4747,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper {
   padding: 54px 0px;
-  border-top: 1px solid #F1F1F1;
+  border-top: 1px solid rgba(251, 251, 251, 0.4);
 }
 .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading {
   position: relative;
@@ -4847,6 +4838,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   border-radius: 50%;
   text-align: center;
   background-color: #D4D4D4;
+}
+.serviceSec .servicesec-wrapper .servicesec-content #service-info1, .serviceSec .servicesec-wrapper .servicesec-content #service-info2 {
+  height: auto;
 }
 @media all and (max-width: 1800px) {
   .serviceSec .servicesec-wrapper {
@@ -4999,15 +4993,14 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .serviceSec .servicesec-wrapper .servicesec-heading {
     width: 70%;
-    position: static;
-    height: auto;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
-    padding: 40px 0px 80px 28px;
+    padding: 40px 0px 80px 0px;
     width: 100%;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info {
     padding-left: 40px;
+    height: 400px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
     padding-bottom: 34px;
@@ -5049,7 +5042,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     margin-bottom: 24px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
-    padding: 30px 0px 60px 28px;
+    padding: 30px 0px 60px 0px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
     padding-bottom: 32px;

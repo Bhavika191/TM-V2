@@ -7,7 +7,29 @@ $('#toggle').click(function () {
 });
 // header menu code ends
 
-//----------------------------------------------------Shamal's Js Code Starts---------------------------------------------------------//
+//---------------------------------------------------------------------- Shamal's Js Code Starts ---------------------------------------------------------------//
+
+//Service page sticky property starts
+
+jQuery(document).ready(function () {   
+  for (let i = 1; i <= 9; i++) {
+      var $this = $('#service-info' + i);
+        console.log($this.find('div').length)
+      if ($this.find('div').length >= 3) {
+        $('#servicesec-heading' + i).css({'position':'sticky','top':'122px','height':'50%'});
+        const mediaQuery = window.matchMedia('(max-width: 768px)'); 
+        const mediaQuerys = window.matchMedia('(max-width: 1600px)');
+        if (mediaQuerys.matches) {
+          $('#servicesec-heading' + i).css('top','100px');
+        }
+        if (mediaQuery.matches) {
+          $('#servicesec-heading' + i).css({'position':'static','height':'auto'});
+        }
+      }
+  }
+});
+
+//Service page sticky property ends
 
 //Service page read more and Read less code starts
 
@@ -89,7 +111,7 @@ $('#toggle').click(function () {
   });
   //Offset code ends
   
-  //------------------------------------------------------- Shamal's Code ends --------------------------------------------------//
+  //------------------------------------------------------------------- Shamal's Js Code ends ---------------------------------------------------------------------//
 
 
 // Hide Header on on scroll down
