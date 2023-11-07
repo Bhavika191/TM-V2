@@ -167,7 +167,9 @@ $('.logoSlider').slick({
     autoplay: true,
     infinite: true,
     pauseOnHover:false,
+    pauseOnFocus: false,
     speed:3000, 
+    autoplaySpeed: 1000,
     responsive: [
       {
         breakpoint: 1025,
@@ -314,6 +316,7 @@ $(document).ready(function(){
     $('.lines').addClass('linesNew');
     $('.middleCircle').addClass('middleCirclenew');
     $('.counterText').addClass('newcounterText');
+    $('.counterText span a').html(function(i, val) { return val*1+1 });
     setTimeout(function() {
       $('#box').removeClass('boxTwo');
       $('#box svg').removeClass('rotate');
@@ -322,4 +325,9 @@ $(document).ready(function(){
 		}, 6000);
   });
  });
+
+
+//  $('.middleCircle').click(function() {
+//   $('.counterText span a').html(function(i, val) { return val*1+1 });
+// });
 

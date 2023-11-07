@@ -693,8 +693,8 @@
         }
         .customerBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;
             .innerBoxes{width: 40%;margin-top: 150px;padding: 190px 70px;background-color: #fff;position: relative;overflow: hidden;transition: 0.7s all ease-out;
-                &::before{content: "";position: absolute;background: url(../images/top-quote-img.svg)  no-repeat;background-size: contain;top: 0;left: 20px;height: 110px;width: 156px;transition: 0.3s all ease-out;}
-                &::after{content: "";position: absolute;background: url(../images/btm-quote-img.svg)  no-repeat;background-size: contain;bottom: 0;right: 20px;height: 110px;width: 156px;transition: 0.3s all ease-out;}
+                &::before{content: "";position: absolute;background: url(../images/top-quote-img.svg)  no-repeat;background-size: contain;top: 0;left: 20px;height: 110px;width: 156px;transition: 0.7s all ease-out;}
+                &::after{content: "";position: absolute;background: url(../images/btm-quote-img.svg)  no-repeat;background-size: contain;bottom: 0;right: 20px;height: 110px;width: 156px;transition: 0.7s all ease-out;}
                 &:nth-child(even){margin-top: -10%;}
                 p{@include font24; font-weight: $fontW400;line-height: 34px;padding-bottom: 170px;transition: 0.7s all ease-out;color: #6A6A6A;}
                 .customerData{transition: 0.7s all ease-out;
@@ -705,8 +705,8 @@
                 &:hover{
                     p{transform: translateY(-20px);transition: 0.7s all ease-out;}
                     .customerData{transform: translateY(20px);transition: 0.7s all ease-out;}
-                    &::before{transform: rotate(5deg) translateY(-15px);}
-                    &::after{transform: rotate(-5deg) translateY(15px);}
+                    &::before{transform: rotate(5deg) translateY(-15px);transition: 0.7s all ease-out;}
+                    &::after{transform: rotate(-5deg) translateY(15px);transition: 0.7s all ease-out;}
                 }
             }
         }
@@ -824,8 +824,10 @@
                         .customerImgdiv{width: 50px;height: 50px}
                     }
                     &:hover{
-                        &::before{transform: rotate(5deg) translateY(-6px);}
-                        &::after{transform: rotate(-5deg) translateY(6px);}
+                        p{transform: none;}
+                        .customerData{transform:none;}
+                        &::before{transform: none;}
+                        &::after{transform: none;}
                     }
                 }
             }
