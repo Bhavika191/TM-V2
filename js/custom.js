@@ -286,18 +286,18 @@ if ($(window).width() > 1025) {
 
 
 $(document).ready(function(){
-  
-  $('#box').on('click', function(){
+  $('.middleCircle').on('click', function(){
+    $('#box').addClass('boxTwo');
     $('#box svg').addClass('rotate');
     $('.lines').addClass('linesNew');
-    $('.innerCircle').addClass('innerCircleactive');
-    $('.innerCircleone').addClass('innerCircleoneactive');
+    $('.middleCircle').addClass('middleCirclenew');
+    $('.counterText').addClass('newcounterText');
     setTimeout(function() {
+      $('#box').removeClass('boxTwo');
       $('#box svg').removeClass('rotate');
       $('.lines').removeClass('linesNew');
-      $('.innerCircle').removeClass('innerCircleactive');
-      $('.innerCircleone').removeClass('innerCircleoneactive');
-		}, 3000);
+      $('.middleCircle').removeClass('middleCirclenew');
+		}, 6000);
   });
  });
 

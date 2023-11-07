@@ -12,16 +12,16 @@ body.opentwo{overflow: hidden;}
                 &:nth-child(odd){margin-top: -10%;}
                 &:nth-child(3){animation-delay: 0.7s;}
                 &:nth-child(4){animation-delay: 0.9s;}
-                .casestudyImg img{transform: rotate(6deg) scale(1.2);transition: 0.3s all ease-out; }
-                .caseStudydesc{position: absolute;bottom: -100%;left: 0;right: 0;margin: 50px;transition: 0.5s all ease-out;z-index: 2;
+                .casestudyImg img{transform: rotate(6deg) scale(1.2);transition: 0.7s all ease-out; }
+                .caseStudydesc{position: absolute;bottom: -100%;left: 0;right: 0;margin: 50px;transition: 0.7s all ease-out;z-index: 2;
                     h3{@include font32;font-weight: $fontW400;line-height: 42px;color: #fff;margin: 30px 0px;display: block;display: -webkit-box;max-width: 100%;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;}
                     h4{@include font16;font-weight: $fontW600;line-height: 14px;color: #fff;letter-spacing: 0.8px;text-transform: uppercase;}
                 }
                 &:hover{
-                    .casestudyImg { position: relative; img{transform: rotate(0deg) scale(1);transition: 0.3s all ease-out;}
-                        &::before{content: "";position: absolute;height: 100%;width: 100%;background: #000;opacity: 0.3;transition: 0.5s all ease-out;z-index: 1;}
+                    .casestudyImg { position: relative; img{transform: rotate(0deg) scale(1);transition: 0.7s all ease-out;}
+                        &::before{content: "";position: absolute;height: 100%;width: 100%;background: #000;opacity: 0.3;transition: 0.7s all ease-out;z-index: 1;}
                     }
-                    .caseStudydesc{bottom: 0;transition: 0.5s all ease-out;}
+                    .caseStudydesc{bottom: 0;transition: 0.7s all ease-out;}
                 }
             }
         }
@@ -110,10 +110,10 @@ body.opentwo{overflow: hidden;}
             }
             .casestudylistingBoxes{
                 .caseStudyBoxes{width: 45%;margin-top: 60px;height: auto;
-                    .casestudyImg { position: relative; img{transform: rotate(0deg) scale(1);transition: 0.3s all ease-out;}
-                        &::before{content: "";position: absolute;height: 100%;width: 100%;background: #000;opacity: 0.3;transition: 0.5s all ease-out;z-index: 1;}
+                    .casestudyImg { position: relative; img{transform: rotate(0deg) scale(1);transition: 0.7s all ease-out;}
+                        &::before{content: "";position: absolute;height: 100%;width: 100%;background: #000;opacity: 0.3;transition: 0.7s all ease-out;z-index: 1;}
                     }
-                    .caseStudydesc{bottom: 0;transition: 0.5s all ease-out;margin: 20px;
+                    .caseStudydesc{bottom: 0;transition: 0.7s all ease-out;margin: 20px;
                         h3{line-height: 23px;margin: 15px 0px;font-size: 18px;}
                     }
                 }
