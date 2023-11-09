@@ -246,11 +246,11 @@ img {
 }
 
 .ctaWhite {
-  padding: 14px 24px;
+  padding: 14px 50px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -264,6 +264,8 @@ img {
   letter-spacing: 0.7px;
   text-transform: uppercase;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 @media screen and (max-width: 1600px) {
   .ctaWhite {
@@ -275,59 +277,81 @@ img {
     font-size: 12px;
   }
 }
-.ctaWhite:hover {
-  background: #000;
-  color: #fff;
-}
 .ctaWhite:hover svg {
-  fill: #fff;
-  transition: 0.7s all ease-out;
+  opacity: 1;
+  right: -2rem;
+}
+.ctaWhite:hover span {
+  transform: translate3d(-1rem, 0, 0);
 }
 .ctaWhite svg {
   fill: #000;
   height: 20px;
   width: 20px;
-  transition: 0.7s all ease-out;
-  margin-left: 18px;
+  position: absolute;
+  right: 0px;
+  right: 0rem;
+  opacity: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s ease-out;
+  will-change: right, opacity;
+}
+.ctaWhite span {
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s ease-out;
+  will-change: transform;
+  color: #000;
 }
 @media screen and (max-width: 1600px) {
   .ctaWhite {
-    padding: 12px 22px;
+    padding: 12px 44px;
   }
   .ctaWhite svg {
     height: 18px;
     width: 18px;
-    margin-left: 15px;
   }
 }
 @media screen and (max-width: 1400px) {
   .ctaWhite {
-    padding: 10px 20px;
+    padding: 10px 40px;
     line-height: 16px;
+  }
+  .ctaWhite:hover svg {
+    right: -1.7rem;
   }
 }
 @media screen and (max-width: 1200px) {
   .ctaWhite {
-    padding: 10px 18px;
+    padding: 10px 36px;
   }
   .ctaWhite svg {
     height: 16px;
     width: 16px;
-    margin-left: 12px;
   }
 }
 @media screen and (max-width: 720px) {
   .ctaWhite {
-    padding: 14px 24px;
+    padding: 14px 50px;
+  }
+  .ctaWhite svg {
+    right: -1.3rem;
+    opacity: 1;
+  }
+  .ctaWhite:hover svg {
+    right: -1rem;
   }
 }
 
 .ctaBlack {
-  padding: 14px 24px;
+  padding: 14px 50px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
   display: inline-block;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   border-radius: 6px;
   border: 1px solid #000;
@@ -338,6 +362,9 @@ img {
   transition: 0.7s all ease-in-out;
   letter-spacing: 0.7px;
   text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 @media screen and (max-width: 1600px) {
   .ctaBlack {
@@ -349,45 +376,66 @@ img {
     font-size: 12px;
   }
 }
-.ctaBlack:hover {
-  background: #fff;
-  color: #000;
-}
 .ctaBlack:hover svg {
-  fill: #000;
-  transition: 0.7s all ease-out;
+  opacity: 1;
+  right: -2rem;
+}
+.ctaBlack:hover span {
+  transform: translate3d(-1rem, 0, 0);
 }
 .ctaBlack svg {
   fill: #fff;
   height: 12px;
   width: 12px;
-  transition: 0.7s all ease-out;
-  margin-left: 18px;
+  position: absolute;
+  right: 0px;
+  right: 0rem;
+  opacity: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s ease-out;
+  will-change: right, opacity;
+}
+.ctaBlack span {
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s ease-out;
+  will-change: transform;
+  color: #fff;
 }
 @media screen and (max-width: 1600px) {
   .ctaBlack {
-    padding: 12px 22px;
+    padding: 12px 44px;
   }
 }
 @media screen and (max-width: 1400px) {
   .ctaBlack {
-    padding: 10px 20px;
+    padding: 10px 40px;
     line-height: 16px;
+  }
+  .ctaBlack:hover svg {
+    right: -1.7rem;
   }
 }
 @media screen and (max-width: 1200px) {
   .ctaBlack {
-    padding: 10px 18px;
+    padding: 10px 36px;
   }
   .ctaBlack svg {
     height: 10px;
     width: 10px;
-    margin-left: 10px;
   }
 }
 @media screen and (max-width: 720px) {
   .ctaBlack {
-    padding: 14px 24px;
+    padding: 14px 50px;
+  }
+  .ctaBlack svg {
+    right: -1.3rem;
+    opacity: 1;
+  }
+  .ctaBlack:hover svg {
+    right: -1rem;
   }
 }
 
@@ -488,7 +536,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  transition: top 0.2s ease-in-out;
+  transition: top 0.5s ease-in-out;
   background: #f1f1f1;
   width: 100%;
   z-index: 9;
@@ -612,7 +660,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay {
   top: 0;
   right: 0;
   width: 0%;
-  transition: 0.7s all ease-in-out;
+  transition: 0.8s all ease-in-out;
   overflow: hidden;
 }
 header .headerWrapper .navDiv .hamburgerDiv .overlay.open {
@@ -662,21 +710,21 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li {
   position: relative;
   opacity: 0;
   margin-bottom: 42px;
-  transition: 0.3s all ease-out;
+  transition: 0.5s all ease-out;
   cursor: pointer;
   margin-right: 120px;
 }
 header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover {
-  transition: 0.3s all ease-out;
+  transition: 0.5s all ease-out;
 }
 header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a {
   margin-right: -10px;
   opacity: 1;
-  transition: 0.3s all ease-out;
+  transition: 0.5s all ease-out;
 }
 header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a::before {
   right: -60px;
-  transition: 0.3s all ease-out;
+  transition: 0.5s all ease-out;
 }
 header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
   font-size: 48px;
@@ -687,7 +735,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
   letter-spacing: -1.5px;
   opacity: 0.5;
   text-align: right;
-  transition: 0.3s all ease-out;
+  transition: 0.5s all ease-out;
   margin-right: 60px;
   position: relative;
 }
@@ -721,7 +769,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   right: -250px;
   height: 25px;
   width: 25px;
-  transition: 0.3s all ease-out;
+  transition: 0.5s all ease-out;
 }
 @keyframes fadeInRight {
   0% {
@@ -737,12 +785,16 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   header.nav-up {
     top: -86px;
   }
+  header .headerWrapper .logoDiv a img {
+    width: 200px;
+  }
   header .headerWrapper .navDiv {
     margin: 22px 0px;
   }
   header .headerWrapper .navDiv .navList .headerCta {
-    padding: 12px 24px;
+    padding: 10px 20px;
     margin: 0px 30px;
+    font-size: 12px;
   }
   header .headerWrapper .navDiv .hamburgerDiv .button_container.active::before {
     height: 60px;
@@ -778,6 +830,9 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   header.nav-up {
     top: -82px;
   }
+  header .headerWrapper .logoDiv a img {
+    width: 180px;
+  }
   header .headerWrapper .navDiv {
     margin: 20px 0px;
   }
@@ -785,8 +840,9 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     font-size: 12px;
   }
   header .headerWrapper .navDiv .navList .headerCta {
-    padding: 12px 20px;
+    padding: 8px 16px;
     margin: 0px 25px;
+    font-size: 10px;
   }
   header .headerWrapper .navDiv .hamburgerDiv .button_container.active::before {
     height: 50px;
@@ -819,11 +875,14 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   header.nav-up {
     top: -74px;
   }
+  header .headerWrapper .logoDiv a img {
+    width: 150px;
+  }
   header .headerWrapper .navDiv {
     margin: 18px 0px;
   }
   header .headerWrapper .navDiv .navList .headerCta {
-    padding: 10px 18px;
+    padding: 6px 14px;
   }
   header .headerWrapper .navDiv .hamburgerDiv .button_container.active::before {
     height: 40px;
@@ -921,10 +980,9 @@ footer .footerWrapper {
   padding: 140px 150px;
 }
 footer .footerWrapper .footerData {
-  padding: 100px 0px 72px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 footer .footerWrapper .footerData .footerMenus {
   width: 30%;
@@ -962,11 +1020,39 @@ footer .footerWrapper .footerData .footerMenus ul li a {
   }
 }
 footer .footerWrapper .footerData .footerGame {
-  width: 35%;
+  width: 27%;
+}
+footer .footerWrapper .footerData .footerGame .counterText {
+  display: none;
+  margin-bottom: 20px;
+}
+footer .footerWrapper .footerData .footerGame .newcounterText {
+  display: block;
+}
+footer .footerWrapper .footerData .footerGame .newcounterText h3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1600px) {
+  footer .footerWrapper .footerData .footerGame .newcounterText h3 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) {
+  footer .footerWrapper .footerData .footerGame .newcounterText h3 {
+    font-size: 12px;
+  }
+}
+footer .footerWrapper .footerData .footerGame .newcounterText h3 span {
+  font-weight: 600;
 }
 footer .footerWrapper .footerData .footerGame #box svg.rotate {
   animation: 0.5s linear infinite rotate-con;
-  border-radius: 324px;
+  border-radius: 350px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.1249982119deg, #05FB00 116.2499964237deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474deg, #F00 360deg);
 }
 footer .footerWrapper .footerData .footerGame #box svg.rotate .linesNew {
@@ -979,24 +1065,63 @@ footer .footerWrapper .footerData .footerGame #box svg.rotate .innerCircleoneact
   fill: #fff;
 }
 footer .footerWrapper .footerData .footerGame #box {
+  position: relative;
+  margin: auto;
+  width: 350px;
+  animation: 7s linear infinite rotate-con;
+}
+footer .footerWrapper .footerData .footerGame #box svg {
+  width: 350px;
+  margin: auto;
+  padding: 40px;
+}
+footer .footerWrapper .footerData .footerGame #box .rotate {
+  padding: 0px;
+}
+footer .footerWrapper .footerData .footerGame #box.boxTwo {
+  animation: none;
+}
+footer .footerWrapper .footerData .footerGame #box .middleCircle {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+}
+footer .footerWrapper .footerData .footerGame #box .middleCircle.middleCirclenew .innerCircle {
+  background: #fff;
+}
+footer .footerWrapper .footerData .footerGame #box .innerCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.1249982119deg, #05FB00 116.2499964237deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474deg, #F00 360deg);
 }
 @keyframes rotate-con {
   0% {
     transform: rotate(0deg);
-    transition: 0.5s all ease-out;
   }
   50% {
     transform: rotate(180deg);
-    transition: 0.5s all ease-out;
   }
   100% {
     transform: rotate(360deg);
-    transition: 0.5s all ease-out;
   }
 }
 footer .footerWrapper .footerData .footerSubscribe {
-  width: 27%;
+  width: 30%;
 }
 footer .footerWrapper .footerData .footerSubscribe h2 {
   font-size: 20px;
@@ -1041,6 +1166,7 @@ footer .footerWrapper .footerData .footerSubscribe .signup {
   background: #FFF;
   padding: 3px 3px 3px 25px;
   display: inline-block;
+  width: 100%;
 }
 footer .footerWrapper .footerData .footerSubscribe .signup form {
   display: flex;
@@ -1120,7 +1246,7 @@ footer .footerWrapper .socialIcons .copyright h4 {
 }
 footer .footerWrapper .socialIcons .iconsDiv {
   text-align: left;
-  width: 27%;
+  width: 30%;
 }
 footer .footerWrapper .socialIcons .iconsDiv h3 {
   font-size: 20px;
@@ -1162,7 +1288,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.5s all ease-out;
+  transition: 0.7s all ease-out;
 }
 footer .footerWrapper .socialIcons .iconsDiv ul li a svg {
   height: 18px;
@@ -1170,19 +1296,23 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a svg {
 }
 footer .footerWrapper .socialIcons .iconsDiv ul li a svg path {
   fill: #fff;
+  transition: 0.7s all ease-out;
 }
 footer .footerWrapper .socialIcons .iconsDiv ul li a svg.youtube .blackCol {
   fill: #000;
 }
 footer .footerWrapper .socialIcons .iconsDiv ul li a:hover {
-  transition: 0.5s all ease-out;
+  transition: 0.7s all ease-out;
   background-color: #fff;
+  border: 1px solid #000;
 }
 footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
   fill: #000;
+  transition: 0.7s all ease-out;
 }
 footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol {
   fill: #fff;
+  transition: 0.7s all ease-out;
 }
 @media screen and (max-width: 1600px) {
   footer {
@@ -1191,14 +1321,41 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   footer .footerWrapper {
     padding: 120px 130px;
   }
-  footer .footerWrapper .footerData {
-    padding: 80px 0px 65px;
-  }
   footer .footerWrapper .footerData .footerMenus {
     width: 28%;
   }
   footer .footerWrapper .footerData .footerMenus ul li {
     margin-top: 16px;
+  }
+  footer .footerWrapper .footerData .footerGame {
+    width: 30%;
+  }
+  footer .footerWrapper .footerData .footerGame .counterText {
+    margin-bottom: 18px;
+  }
+  footer .footerWrapper .footerData .footerGame .newcounterText h3 {
+    line-height: 21px;
+  }
+  footer .footerWrapper .footerData .footerGame #box svg.rotate {
+    border-radius: 300px;
+  }
+  footer .footerWrapper .footerData .footerGame #box {
+    width: 300px;
+  }
+  footer .footerWrapper .footerData .footerGame #box svg {
+    width: 300px;
+    padding: 30px;
+  }
+  footer .footerWrapper .footerData .footerGame #box .middleCircle {
+    height: 80px;
+    width: 80px;
+  }
+  footer .footerWrapper .footerData .footerGame #box .innerCircle {
+    height: 60px;
+    width: 60px;
+  }
+  footer .footerWrapper .footerData .footerGame #box .innerCircle img {
+    width: 30px;
   }
   footer .footerWrapper .footerData .footerSubscribe {
     width: 32%;
@@ -1237,9 +1394,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   footer .footerWrapper {
     padding: 100px;
   }
-  footer .footerWrapper .footerData {
-    padding: 60px 0px 45px;
-  }
   footer .footerWrapper .footerData .footerMenus {
     width: 32%;
   }
@@ -1248,6 +1402,30 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   footer .footerWrapper .footerData .footerGame {
     width: 32%;
+  }
+  footer .footerWrapper .footerData .footerGame .counterText {
+    margin-bottom: 16px;
+  }
+  footer .footerWrapper .footerData .footerGame #box svg.rotate {
+    border-radius: 250px;
+  }
+  footer .footerWrapper .footerData .footerGame #box {
+    width: 250px;
+  }
+  footer .footerWrapper .footerData .footerGame #box svg {
+    width: 250px;
+    padding: 25px;
+  }
+  footer .footerWrapper .footerData .footerGame #box .middleCircle {
+    height: 70px;
+    width: 70px;
+  }
+  footer .footerWrapper .footerData .footerGame #box .innerCircle {
+    height: 50px;
+    width: 50px;
+  }
+  footer .footerWrapper .footerData .footerGame #box .innerCircle img {
+    width: 25px;
   }
   footer .footerWrapper .footerData .footerSubscribe p {
     margin: 8px 0px 18px;
@@ -1276,11 +1454,25 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   footer .footerWrapper {
     padding: 70px;
   }
-  footer .footerWrapper .footerData {
-    padding: 50px 0px 35px;
-  }
   footer .footerWrapper .footerData .footerMenus ul li {
     margin-top: 12px;
+  }
+  footer .footerWrapper .footerData .footerGame {
+    width: 30%;
+  }
+  footer .footerWrapper .footerData .footerGame .counterText {
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  footer .footerWrapper .footerData .footerGame #box svg.rotate {
+    border-radius: 200px;
+  }
+  footer .footerWrapper .footerData .footerGame #box {
+    width: 200px;
+  }
+  footer .footerWrapper .footerData .footerGame #box svg {
+    width: 200px;
+    padding: 20px;
   }
   footer .footerWrapper .footerData .footerSubscribe p {
     margin: 8px 0px 16px;
@@ -1329,6 +1521,32 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   footer .footerWrapper .footerData .footerGame {
     width: 100%;
+    margin: 60px 0px;
+  }
+  footer .footerWrapper .footerData .footerGame .counterText {
+    margin-bottom: 14px;
+    width: 100%;
+  }
+  footer .footerWrapper .footerData .footerGame #box svg.rotate {
+    border-radius: 230px;
+  }
+  footer .footerWrapper .footerData .footerGame #box {
+    width: 230px;
+  }
+  footer .footerWrapper .footerData .footerGame #box svg {
+    width: 230px;
+    padding: 10px;
+  }
+  footer .footerWrapper .footerData .footerGame #box .middleCircle {
+    height: 75px;
+    width: 75px;
+  }
+  footer .footerWrapper .footerData .footerGame #box .innerCircle {
+    height: 65px;
+    width: 65px;
+  }
+  footer .footerWrapper .footerData .footerGame #box .innerCircle img {
+    width: 30px;
   }
   footer .footerWrapper .footerData .footerSubscribe {
     width: 100%;
@@ -1714,7 +1932,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .casestudyImg img {
   transform: rotate(6deg) scale(1.2);
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc {
   position: absolute;
@@ -1722,7 +1940,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   left: 0;
   right: 0;
   margin: 50px;
-  transition: 0.5s all ease-out;
+  transition: 0.7s all ease-out;
   z-index: 2;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc h3 {
@@ -1777,7 +1995,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:hover .casestudyImg img {
   transform: rotate(0deg) scale(1);
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:hover .casestudyImg::before {
   content: "";
@@ -1786,12 +2004,12 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   width: 100%;
   background: #000;
   opacity: 0.3;
-  transition: 0.5s all ease-out;
+  transition: 0.7s all ease-out;
   z-index: 1;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:hover .caseStudydesc {
   bottom: 0;
-  transition: 0.5s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .caseStudyhpsection .casestudyWrapper .ctaDiv {
   text-align: right;
@@ -1995,7 +2213,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .casestudyImg img {
     transform: rotate(0deg) scale(1);
-    transition: 0.3s all ease-out;
+    transition: 0.7s all ease-out;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .casestudyImg::before {
     content: "";
@@ -2004,7 +2222,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     width: 100%;
     background: #000;
     opacity: 0.3;
-    transition: 0.5s all ease-out;
+    transition: 0.7s all ease-out;
     z-index: 1;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc {
@@ -2163,7 +2381,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   background: #000;
   overflow: hidden;
   margin-top: 60px;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:nth-child(1) {
   margin-top: 0px;
@@ -2176,11 +2394,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .imgBox {
   width: 25%;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc {
   width: 50%;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
   position: relative;
 }
 .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc::before {
@@ -2192,7 +2410,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   right: -100%;
   height: 20px;
   width: 20px;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc h3 {
   font-size: 36px;
@@ -2244,19 +2462,19 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
 }
 .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover {
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover a .serviceDesc {
   width: 40%;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover a .serviceDesc::before {
   right: -70px;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover a .imgBox {
   scale: 1.9;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .servicehpSection .serviceSecwrapper .ctaDiv {
   display: none;
@@ -2891,7 +3109,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .bookhpSection .booksecWrapper .bookImgdiv img {
   margin: 0 auto;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
   position: relative;
   z-index: 2;
 }
@@ -2915,7 +3133,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .bookhpSection .booksecWrapper:hover .bookImgdiv img {
   transform: rotate(-5deg);
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 @media screen and (max-width: 1600px) {
   .bookhpSection {
@@ -3353,7 +3571,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   background-color: #fff;
   position: relative;
   overflow: hidden;
-  transition: 0.5s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes::before {
   content: "";
@@ -3364,7 +3582,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   left: 20px;
   height: 110px;
   width: 156px;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes::after {
   content: "";
@@ -3375,7 +3593,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   right: 20px;
   height: 110px;
   width: 156px;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
   margin-top: -10%;
@@ -3385,7 +3603,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   font-weight: 400;
   line-height: 34px;
   padding-bottom: 170px;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
   color: #6A6A6A;
 }
 @media screen and (max-width: 1600px) {
@@ -3404,7 +3622,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
 }
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData {
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData .customerImgdiv {
   border-radius: 50%;
@@ -3451,17 +3669,19 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover p {
   transform: translateY(-20px);
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover .customerData {
   transform: translateY(20px);
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover::before {
   transform: rotate(5deg) translateY(-15px);
+  transition: 0.7s all ease-out;
 }
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover::after {
   transform: rotate(-5deg) translateY(15px);
+  transition: 0.7s all ease-out;
 }
 @media screen and (max-width: 1920px) {
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
@@ -3682,11 +3902,17 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     width: 50px;
     height: 50px;
   }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover p {
+    transform: none;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover .customerData {
+    transform: none;
+  }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover::before {
-    transform: rotate(5deg) translateY(-6px);
+    transform: none;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover::after {
-    transform: rotate(-5deg) translateY(6px);
+    transform: none;
   }
 }
 @media screen and (max-width: 680px) {
@@ -3824,14 +4050,14 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   margin-top: 150px;
   position: relative;
   overflow: hidden;
-  transition: 0.5s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:nth-child(even) {
   margin-top: -7%;
 }
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogImg img {
   scale: 1.5;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails {
   background-color: #fff;
@@ -3839,7 +4065,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   margin: 30px;
   position: absolute;
   bottom: 0;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails h3 {
   font-size: 32px;
@@ -3889,7 +4115,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   position: absolute;
   right: 50px;
   bottom: -100%;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails .blogArrowimg img {
   height: 20px;
@@ -3897,15 +4123,15 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:hover .blogImg img {
   scale: unset;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:hover .blogDetails {
   margin: 0px;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:hover .blogDetails .blogArrowimg {
   bottom: 25px;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .blogshpsection .blogsWrapper .ctaDiv {
   text-align: right;
@@ -6169,7 +6395,7 @@ body.opentwo {
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .casestudyImg img {
   transform: rotate(6deg) scale(1.2);
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc {
   position: absolute;
@@ -6177,7 +6403,7 @@ body.opentwo {
   left: 0;
   right: 0;
   margin: 50px;
-  transition: 0.5s all ease-out;
+  transition: 0.7s all ease-out;
   z-index: 2;
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h3 {
@@ -6232,7 +6458,7 @@ body.opentwo {
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:hover .casestudyImg img {
   transform: rotate(0deg) scale(1);
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:hover .casestudyImg::before {
   content: "";
@@ -6241,12 +6467,12 @@ body.opentwo {
   width: 100%;
   background: #000;
   opacity: 0.3;
-  transition: 0.5s all ease-out;
+  transition: 0.7s all ease-out;
   z-index: 1;
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:hover .caseStudydesc {
   bottom: 0;
-  transition: 0.5s all ease-out;
+  transition: 0.7s all ease-out;
 }
 @media screen and (max-width: 1920px) {
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
@@ -6386,7 +6612,7 @@ body.opentwo {
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .casestudyImg img {
     transform: rotate(0deg) scale(1);
-    transition: 0.3s all ease-out;
+    transition: 0.7s all ease-out;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .casestudyImg::before {
     content: "";
@@ -6395,12 +6621,12 @@ body.opentwo {
     width: 100%;
     background: #000;
     opacity: 0.3;
-    transition: 0.5s all ease-out;
+    transition: 0.7s all ease-out;
     z-index: 1;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc {
     bottom: 0;
-    transition: 0.5s all ease-out;
+    transition: 0.7s all ease-out;
     margin: 20px;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h3 {
@@ -6540,14 +6766,14 @@ body.opentwo {
   margin-top: 150px;
   position: relative;
   overflow: hidden;
-  transition: 0.5s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes:nth-child(odd) {
   margin-top: -7%;
 }
 .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes .blogImg img {
   scale: 1.5;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes .blogDetails {
   background-color: #fff;
@@ -6555,7 +6781,7 @@ body.opentwo {
   margin: 30px;
   position: absolute;
   bottom: 0;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes .blogDetails h3 {
   font-size: 32px;
@@ -6605,7 +6831,7 @@ body.opentwo {
   position: absolute;
   right: 50px;
   bottom: -100%;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes .blogDetails .blogArrowimg img {
   height: 20px;
@@ -6613,15 +6839,15 @@ body.opentwo {
 }
 .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes:hover .blogImg img {
   scale: unset;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes:hover .blogDetails {
   margin: 0px;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes:hover .blogDetails .blogArrowimg {
   bottom: 25px;
-  transition: 0.3s all ease-out;
+  transition: 0.7s all ease-out;
 }
 @media screen and (max-width: 1920px) {
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes:nth-child(odd) {
@@ -6747,12 +6973,12 @@ body.opentwo {
   }
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes .blogImg img {
     scale: unset;
-    transition: 0.3s all ease-out;
+    transition: 0.7s all ease-out;
   }
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes .blogDetails {
     padding: 25px 20px 36px;
     margin: 0px;
-    transition: 0.3s all ease-out;
+    transition: 0.7s all ease-out;
   }
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes .blogDetails h3 {
     font-size: 18px;
@@ -6760,7 +6986,7 @@ body.opentwo {
   }
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes .blogDetails .blogArrowimg {
     bottom: 25px;
-    transition: 0.3s all ease-out;
+    transition: 0.7s all ease-out;
     display: inline-block;
     position: unset;
     padding-top: 16px;

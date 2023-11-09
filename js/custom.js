@@ -168,24 +168,26 @@ function hasScrolled() {
 
 // our partner slider starts
 $('.logoSlider').slick({
-  dots: false,
-  arrows: false,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  autoplay: true,
-  infinite: true,
-  pauseOnHover: false,
-  speed: 3000,
-  responsive: [
-    {
-      breakpoint: 1025,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      }
-    },
-  ]
-});
+    dots: false,
+    arrows: false,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    infinite: true,
+    pauseOnHover:false,
+    pauseOnFocus: false,
+    speed:3000, 
+    autoplaySpeed: 1000,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+    ]
+  });
 // our partner slider ends
 
 // case study slider js
@@ -315,19 +317,25 @@ if ($(window).width() > 1025) {
 
 
 
-$(document).ready(function () {
-
-  $('#box').on('click', function () {
+$(document).ready(function(){
+  $('.middleCircle').on('click', function(){
+    $('#box').addClass('boxTwo');
     $('#box svg').addClass('rotate');
     $('.lines').addClass('linesNew');
-    $('.innerCircle').addClass('innerCircleactive');
-    $('.innerCircleone').addClass('innerCircleoneactive');
-    setTimeout(function () {
+    $('.middleCircle').addClass('middleCirclenew');
+    $('.counterText').addClass('newcounterText');
+    $('.counterText span a').html(function(i, val) { return val*1+1 });
+    setTimeout(function() {
+      $('#box').removeClass('boxTwo');
       $('#box svg').removeClass('rotate');
       $('.lines').removeClass('linesNew');
-      $('.innerCircle').removeClass('innerCircleactive');
-      $('.innerCircleone').removeClass('innerCircleoneactive');
-    }, 3000);
+      $('.middleCircle').removeClass('middleCirclenew');
+		}, 6000);
   });
 });
+
+
+//  $('.middleCircle').click(function() {
+//   $('.counterText span a').html(function(i, val) { return val*1+1 });
+// });
 

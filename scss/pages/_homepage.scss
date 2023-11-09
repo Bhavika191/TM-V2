@@ -66,16 +66,16 @@
                 &:nth-child(even){margin-top: -10%;}
                 &:nth-child(3){animation-delay: 0.7s;}
                 &:nth-child(4){animation-delay: 0.9s;}
-                .casestudyImg img{transform: rotate(6deg) scale(1.2);transition: 0.3s all ease-out; }
-                .caseStudydesc{position: absolute;bottom: -100%;left: 0;right: 0;margin: 50px;transition: 0.5s all ease-out;z-index: 2;
+                .casestudyImg img{transform: rotate(6deg) scale(1.2);transition: 0.7s all ease-out; }
+                .caseStudydesc{position: absolute;bottom: -100%;left: 0;right: 0;margin: 50px;transition: 0.7s all ease-out;z-index: 2;
                     h3{@include font32;font-weight: $fontW400;line-height: 42px;color: #fff;margin: 30px 0px;display: block;display: -webkit-box;max-width: 100%;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;}
                     h4{@include font16;font-weight: $fontW600;line-height: 14px;color: #fff;letter-spacing: 0.8px;text-transform: uppercase;}
                 }
                 &:hover{
-                    .casestudyImg { position: relative; img{transform: rotate(0deg) scale(1);transition: 0.3s all ease-out;}
-                        &::before{content: "";position: absolute;height: 100%;width: 100%;background: #000;opacity: 0.3;transition: 0.5s all ease-out;z-index: 1;}
+                    .casestudyImg { position: relative; img{transform: rotate(0deg) scale(1);transition: 0.7s all ease-out;}
+                        &::before{content: "";position: absolute;height: 100%;width: 100%;background: #000;opacity: 0.3;transition: 0.7s all ease-out;z-index: 1;}
                     }
-                    .caseStudydesc{bottom: 0;transition: 0.5s all ease-out;}
+                    .caseStudydesc{bottom: 0;transition: 0.7s all ease-out;}
                 }
             }
         }
@@ -181,8 +181,8 @@
                 }
                 .caseStudyinnerBoxes{width: unset;margin: 0px 20px 0px;
                     &:nth-child(even){margin-top: unset;}
-                    .casestudyImg{img{transform: rotate(0deg) scale(1);transition: 0.3s all ease-out;}
-                        &::before{content: "";position: absolute;height: 100%;width: 100%;background: #000;opacity: 0.3;transition: 0.5s all ease-out;z-index: 1;}
+                    .casestudyImg{img{transform: rotate(0deg) scale(1);transition: 0.7s all ease-out;}
+                        &::before{content: "";position: absolute;height: 100%;width: 100%;background: #000;opacity: 0.3;transition: 0.7s all ease-out;z-index: 1;}
                     }
                     .caseStudydesc{bottom: 0;margin: 16px;}
                 }
@@ -217,12 +217,12 @@
             }
         }
         .serviceBoxes{@include wrapper;
-            .servicesinnerBox{background: #000;overflow: hidden;margin-top: 60px;transition: 0.3s all ease-out;
+            .servicesinnerBox{background: #000;overflow: hidden;margin-top: 60px;transition: 0.7s all ease-out;
                 &:nth-child(1){margin-top: 0px;}
                 a{display: flex;align-items: center;justify-content: space-around;padding: 62px 0px;
-                    .imgBox{width: 25%;transition: 0.3s all ease-out;}
-                    .serviceDesc{width: 50%;transition: 0.3s all ease-out;position: relative;
-                        &::before{content: "";position: absolute;background: url(../images/service-arrow.svg)  no-repeat;background-size: contain;top: 0;right: -100%;height: 20px;width: 20px;transition: 0.3s all ease-out;}
+                    .imgBox{width: 25%;transition: 0.7s all ease-out;}
+                    .serviceDesc{width: 50%;transition: 0.7s all ease-out;position: relative;
+                        &::before{content: "";position: absolute;background: url(../images/service-arrow.svg)  no-repeat;background-size: contain;top: 0;right: -100%;height: 20px;width: 20px;transition: 0.7s all ease-out;}
                         h3{@include font36;font-weight: $fontW500;line-height: 46px;letter-spacing: -1px;color: #fff;padding-bottom: 30px;}
                         ul{padding-left: 30px;
                             li{@include font20;font-weight: $fontW400;line-height: 30px;color: #C9C9C9;list-style: disc;padding-top:5px;}
@@ -230,12 +230,12 @@
                     }
                 }
                 &:hover{
-                    transition: 0.3s all ease-out;
+                    transition: 0.7s all ease-out;
                     a{
-                        .serviceDesc{width: 40%;transition: 0.3s all ease-out;
-                            &::before{right: -70px;transition: 0.3s all ease-out;}
+                        .serviceDesc{width: 40%;transition: 0.7s all ease-out;
+                            &::before{right: -70px;transition: 0.7s all ease-out;}
                         }
-                        .imgBox{scale: 1.9;transition: 0.3s all ease-out;}
+                        .imgBox{scale: 1.9;transition: 0.7s all ease-out;}
                     }
                 }
             }
@@ -531,14 +531,14 @@
             h2{@include font64;font-weight: $fontW500;line-height: 74px;letter-spacing: -1.5px;}
             p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;}
         }
-        .bookImgdiv{img{margin: 0 auto;transition: 0.3s all ease-out;position: relative;z-index: 2;}}
+        .bookImgdiv{img{margin: 0 auto;transition: 0.7s all ease-out;position: relative;z-index: 2;}}
         .ctaDiv{position: absolute;bottom: 245px;right: 150px;z-index: 2;}
         .shadowDiv{position: absolute;width: 100%;left: 0;right: 0;height: 170px;bottom: 0;z-index: 1;; backdrop-filter: blur(16px) saturate(180%);
             -webkit-backdrop-filter: blur(16px) saturate(180%);
             background-color: rgba(255, 255, 255, 0.5);}
         &:hover{
             .bookImgdiv{
-                img{transform: rotate(-5deg);transition: 0.3s all ease-out;}
+                img{transform: rotate(-5deg);transition: 0.7s all ease-out;}
             }
         }
     }
@@ -692,21 +692,21 @@
             p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;color: #6A6A6A;}
         }
         .customerBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;
-            .innerBoxes{width: 40%;margin-top: 150px;padding: 190px 70px;background-color: #fff;position: relative;overflow: hidden;transition: 0.5s all ease-out;
-                &::before{content: "";position: absolute;background: url(../images/top-quote-img.svg)  no-repeat;background-size: contain;top: 0;left: 20px;height: 110px;width: 156px;transition: 0.3s all ease-out;}
-                &::after{content: "";position: absolute;background: url(../images/btm-quote-img.svg)  no-repeat;background-size: contain;bottom: 0;right: 20px;height: 110px;width: 156px;transition: 0.3s all ease-out;}
+            .innerBoxes{width: 40%;margin-top: 150px;padding: 190px 70px;background-color: #fff;position: relative;overflow: hidden;transition: 0.7s all ease-out;
+                &::before{content: "";position: absolute;background: url(../images/top-quote-img.svg)  no-repeat;background-size: contain;top: 0;left: 20px;height: 110px;width: 156px;transition: 0.7s all ease-out;}
+                &::after{content: "";position: absolute;background: url(../images/btm-quote-img.svg)  no-repeat;background-size: contain;bottom: 0;right: 20px;height: 110px;width: 156px;transition: 0.7s all ease-out;}
                 &:nth-child(even){margin-top: -10%;}
-                p{@include font24; font-weight: $fontW400;line-height: 34px;padding-bottom: 170px;transition: 0.3s all ease-out;color: #6A6A6A;}
-                .customerData{transition: 0.3s all ease-out;
+                p{@include font24; font-weight: $fontW400;line-height: 34px;padding-bottom: 170px;transition: 0.7s all ease-out;color: #6A6A6A;}
+                .customerData{transition: 0.7s all ease-out;
                     .customerImgdiv{border-radius: 50%;width: 85px;height: 85px}
                     h3{@include font20; font-weight: $fontW600;line-height: 1;letter-spacing: -0.6px;margin: 15px 0px 10px;}
                     h4{@include font14; font-weight: $fontW500;line-height: 1;color: #6A6A6A;}
                 }
                 &:hover{
-                    p{transform: translateY(-20px);transition: 0.3s all ease-out;}
-                    .customerData{transform: translateY(20px);transition: 0.3s all ease-out;}
-                    &::before{transform: rotate(5deg) translateY(-15px);}
-                    &::after{transform: rotate(-5deg) translateY(15px);}
+                    p{transform: translateY(-20px);transition: 0.7s all ease-out;}
+                    .customerData{transform: translateY(20px);transition: 0.7s all ease-out;}
+                    &::before{transform: rotate(5deg) translateY(-15px);transition: 0.7s all ease-out;}
+                    &::after{transform: rotate(-5deg) translateY(15px);transition: 0.7s all ease-out;}
                 }
             }
         }
@@ -824,8 +824,10 @@
                         .customerImgdiv{width: 50px;height: 50px}
                     }
                     &:hover{
-                        &::before{transform: rotate(5deg) translateY(-6px);}
-                        &::after{transform: rotate(-5deg) translateY(6px);}
+                        p{transform: none;}
+                        .customerData{transform:none;}
+                        &::before{transform: none;}
+                        &::after{transform: none;}
                     }
                 }
             }
@@ -858,18 +860,18 @@
             p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;color: #6A6A6A;}
         }
         .blogsBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;
-            .blogsinnerBoxes{width: 40%;margin-top: 150px;position: relative;overflow: hidden;transition: 0.5s all ease-out;
+            .blogsinnerBoxes{width: 40%;margin-top: 150px;position: relative;overflow: hidden;transition: 0.7s all ease-out;
                &:nth-child(even){margin-top: -7%;}
-                .blogImg{img{scale: 1.5;transition: 0.3s all ease-out;}}
-                    .blogDetails{background-color: #fff;padding: 58px 50px;margin: 30px;position: absolute;bottom: 0;transition: 0.3s all ease-out;
+                .blogImg{img{scale: 1.5;transition: 0.7s all ease-out;}}
+                    .blogDetails{background-color: #fff;padding: 58px 50px;margin: 30px;position: absolute;bottom: 0;transition: 0.7s all ease-out;
                         h3{@include font32; font-weight: $fontW400;line-height: 43px;margin-top: 30px;display: block;display: -webkit-box;max-width: 100%;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;}
                         h4{@include font16; font-weight: $fontW600;line-height: 1;letter-spacing: 0.8px;}
-                        .blogArrowimg{position: absolute;right: 50px;bottom: -100%;transition: 0.3s all ease-out;img{height: 20px;width: 20px;}}
+                        .blogArrowimg{position: absolute;right: 50px;bottom: -100%;transition: 0.7s all ease-out;img{height: 20px;width: 20px;}}
                 }
                 &:hover{
-                    .blogImg{img{scale: unset;transition: 0.3s all ease-out;}}
-                    .blogDetails{margin: 0px;transition: 0.3s all ease-out;
-                        .blogArrowimg{bottom: 25px;transition: 0.3s all ease-out;}
+                    .blogImg{img{scale: unset;transition: 0.7s all ease-out;}}
+                    .blogDetails{margin: 0px;transition: 0.7s all ease-out;
+                        .blogArrowimg{bottom: 25px;transition: 0.7s all ease-out;}
                     }
                 }
             }
