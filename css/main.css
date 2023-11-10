@@ -4783,51 +4783,44 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   width: 45%;
 }
 .serviceSec .servicesec-wrapper .servicesec-content {
-  width: 47%;
-  padding: 100px 0px 160px 0px;
+  width: 45%;
+  padding: 0px 0px 160px 0px;
 }
-.serviceSec .servicesec-wrapper .servicesec-content .services-info {
-  height: 500px;
-  overflow-y: auto;
-  padding-left: 60px;
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
-}
-.serviceSec .servicesec-wrapper .servicesec-content .services-info::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
-}
-.serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
-  position: sticky;
-  top: 0;
+.serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading {
+  padding-top: 100px;
   padding-bottom: 54px;
+  padding-left: 60px;
+  margin-left: -60px;
+  z-index: 9;
+  background: #000000;
+  position: sticky;
+  top: 125px;
+}
+.serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
   color: var(--primary-white, #FFF);
   font-family: "Poppins", sans-serif;
   font-size: 48px;
   font-weight: 500;
   line-height: 48px;
   letter-spacing: -1.44px;
-  padding-left: 60px;
-  margin-left: -60px;
-  z-index: 9;
-  background: #000000;
 }
 @media screen and (max-width: 1600px) {
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
     font-size: 36px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
     font-size: 32px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
     font-size: 26px;
   }
 }
 @media screen and (max-width: 720px) {
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
     font-size: 18px;
   }
 }
@@ -4928,16 +4921,22 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 .serviceSec .servicesec-wrapper .servicesec-content #service-info1, .serviceSec .servicesec-wrapper .servicesec-content #service-info2 {
   height: auto;
 }
+.serviceSec .servicesec-wrapper .servicesec-content #service-info1 .sticky-heading, .serviceSec .servicesec-wrapper .servicesec-content #service-info2 .sticky-heading {
+  position: static;
+}
 @media all and (max-width: 1800px) {
   .serviceSec .servicesec-wrapper {
     padding: 0px 70px 0px 48px;
     margin-bottom: 56px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
-    padding: 90px 0px 150px 0px;
+    padding: 0px 0px 150px 0px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading {
     padding-bottom: 50px;
+    padding-top: 90px;
+  }
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
     line-height: 44px;
     letter-spacing: -1.2px;
   }
@@ -4966,21 +4965,22 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     left: -22px;
   }
 }
-@media all and (max-width: 1600px) {
-  .serviceSec .servicesec-wrapper .servicesec-heading {
-    top: 100px;
-  }
-}
 @media all and (max-width: 1400px) {
   .serviceSec .servicesec-wrapper {
     padding: 0px 60px 0px 40px;
     margin-bottom: 56px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
-    padding: 80px 0px 140px 0px;
+    padding: 0px 0px 140px 0px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading {
     padding-bottom: 45px;
+    padding-top: 80px;
+    padding-left: 65px;
+    margin-left: -65px;
+    top: 104px;
+  }
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
     line-height: 40px;
     letter-spacing: -1.2px;
   }
@@ -5015,10 +5015,14 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     margin-bottom: 56px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
-    padding: 70px 0px 130px 0px;
+    padding: 0px 0px 130px 0px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading {
     padding-bottom: 40px;
+    padding-top: 70px;
+    top: 100px;
+  }
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
     line-height: 36px;
     letter-spacing: -1.2px;
   }
@@ -5046,10 +5050,14 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     margin-bottom: 56px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
-    padding: 60px 0px 120px 0px;
+    padding: 0px 0px 120px 0px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading {
     padding-bottom: 36px;
+    padding-top: 60px;
+    top: 80px;
+  }
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
     line-height: 36px;
     letter-spacing: -1.2px;
   }
@@ -5086,14 +5094,18 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info {
     padding-left: 40px;
-    height: 400px;
+    height: auto;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading {
     padding-bottom: 34px;
-    line-height: 34px;
-    letter-spacing: -0.72px;
     padding-left: 40px;
     margin-left: -40px;
+    position: static;
+    padding-top: 40px;
+  }
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
+    line-height: 34px;
+    letter-spacing: -0.72px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper {
     padding: 30px 0px;
@@ -5130,8 +5142,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .serviceSec .servicesec-wrapper .servicesec-content {
     padding: 30px 0px 60px 0px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .subheading {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading {
     padding-bottom: 32px;
+    padding-top: 30px;
+  }
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
     font-size: 24px;
     font-weight: 500;
     line-height: 34px;
@@ -5431,8 +5446,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 
 a.showMore, a.showLess {
-  margin-left: 60px;
-  margin-top: 54px;
   padding: 15px 0px;
   text-align: center;
   display: block;
@@ -5460,11 +5473,6 @@ a.showMore, a.showLess {
 a.showMore::after, a.showLess::after {
   content: "SHOW MORE";
 }
-@media all and (max-width: 1800px) {
-  a.showMore, a.showLess {
-    margin-top: 50px;
-  }
-}
 @media all and (max-width: 1600px) {
   a.showMore, a.showLess {
     padding: 14px 0px;
@@ -5473,30 +5481,25 @@ a.showMore::after, a.showLess::after {
 }
 @media all and (max-width: 1400px) {
   a.showMore, a.showLess {
-    margin-top: 45px;
     padding: 13px 0px;
     line-height: 14px;
   }
 }
 @media all and (max-width: 1200px) {
   a.showMore, a.showLess {
-    margin-top: 40px;
     padding: 12px 0px;
     line-height: 12px;
   }
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 768px) {
   a.showMore, a.showLess {
-    margin-top: 30px;
-  }
-}
-@media all and (max-width: 680px) {
-  a.showMore, a.showLess {
-    margin-top: 20px;
     margin-left: 40px;
   }
 }
 
+a.showLess {
+  display: none;
+}
 a.showLess::after {
   content: "SHOW LESS";
 }
