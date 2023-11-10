@@ -184,6 +184,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.5s ease-in-out;
         .headerWrapper{
             .navDiv{margin: 15px 0px;
                 .navList{
+                    &:nth-child(1){display: none;}
                     .headerCta{display: none;}
                 }
                 .hamburgerDiv{
