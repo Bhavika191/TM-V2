@@ -927,6 +927,9 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   header .headerWrapper .navDiv {
     margin: 15px 0px;
   }
+  header .headerWrapper .navDiv .navList:nth-child(1) {
+    display: none;
+  }
   header .headerWrapper .navDiv .navList .headerCta {
     display: none;
   }
@@ -1068,12 +1071,12 @@ footer .footerWrapper .footerData .footerGame #box {
   position: relative;
   margin: auto;
   width: 350px;
-  animation: 7s linear infinite rotate-con;
 }
 footer .footerWrapper .footerData .footerGame #box svg {
   width: 350px;
   margin: auto;
   padding: 40px;
+  animation: rotateEarth 6s infinite;
 }
 footer .footerWrapper .footerData .footerGame #box .rotate {
   padding: 0px;
@@ -1097,6 +1100,10 @@ footer .footerWrapper .footerData .footerGame #box .middleCircle {
   justify-content: center;
   cursor: pointer;
 }
+footer .footerWrapper .footerData .footerGame #box .middleCircle.middleCirclenew {
+  height: 80px;
+  width: 80px;
+}
 footer .footerWrapper .footerData .footerGame #box .middleCircle.middleCirclenew .innerCircle {
   background: #fff;
 }
@@ -1117,6 +1124,23 @@ footer .footerWrapper .footerData .footerGame #box .innerCircle {
     transform: rotate(180deg);
   }
   100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateEarth {
+  0% {
+    transform: rotate(0deg);
+  }
+  8.33%, 25% {
+    transform: rotate(90deg);
+  }
+  33.33%, 50% {
+    transform: rotate(180deg);
+  }
+  58.33%, 75% {
+    transform: rotate(270deg);
+  }
+  83.33%, 100% {
     transform: rotate(360deg);
   }
 }
@@ -1350,6 +1374,10 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     height: 80px;
     width: 80px;
   }
+  footer .footerWrapper .footerData .footerGame #box .middleCircle.middleCirclenew {
+    height: 60px;
+    width: 60px;
+  }
   footer .footerWrapper .footerData .footerGame #box .innerCircle {
     height: 60px;
     width: 60px;
@@ -1419,6 +1447,10 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   footer .footerWrapper .footerData .footerGame #box .middleCircle {
     height: 70px;
     width: 70px;
+  }
+  footer .footerWrapper .footerData .footerGame #box .middleCircle.middleCirclenew {
+    height: 50px;
+    width: 50px;
   }
   footer .footerWrapper .footerData .footerGame #box .innerCircle {
     height: 50px;
@@ -1540,6 +1572,10 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   footer .footerWrapper .footerData .footerGame #box .middleCircle {
     height: 75px;
     width: 75px;
+  }
+  footer .footerWrapper .footerData .footerGame #box .middleCircle.middleCirclenew {
+    height: 65px;
+    width: 65px;
   }
   footer .footerWrapper .footerData .footerGame #box .innerCircle {
     height: 65px;
@@ -1920,6 +1956,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   position: relative;
   overflow: hidden;
   height: 1120px;
+  height: auto !important;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
   margin-top: -10%;
@@ -5634,6 +5671,63 @@ a.showLess::after {
   .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
     font-size: 12px;
   }
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .form-group label {
+  width: 94%;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 1600px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form .form-group label {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form .form-group label {
+    font-size: 12px;
+  }
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .form-group label a {
+  font-weight: 600;
+  color: #6A6A6A;
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .form-group input[type=checkbox] {
+  position: relative;
+  border: 2px solid #000;
+  border-radius: 6px;
+  background: transparent;
+  margin: 5px 15px 0px 0px;
+  cursor: pointer;
+  height: 28px;
+  width: 28px;
+  -webkit-appearance: none;
+  opacity: 0.5;
+  padding-bottom: 0px;
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .form-group input[type=checkbox]:checked {
+  background-color: #000;
+  opacity: 1;
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .form-group input[type=checkbox]:before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  width: 4px;
+  height: 10px;
+  border: solid #FFF;
+  border-width: 0 2px 2px 0;
+  margin: -1px -1px 0 -1px;
+  transform: rotate(45deg) translate(-50%, -50%);
+  z-index: 2;
 }
 @media screen and (max-width: 1600px) {
   .collaborateFormSec {

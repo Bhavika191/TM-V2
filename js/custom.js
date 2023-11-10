@@ -316,18 +316,19 @@ $(document).ready(function(){
     $('.lines').addClass('linesNew');
     $('.middleCircle').addClass('middleCirclenew');
     $('.counterText').addClass('newcounterText');
-    $('.counterText span a').html(function(i, val) { return val*1+1 });
     setTimeout(function() {
       $('#box').removeClass('boxTwo');
       $('#box svg').removeClass('rotate');
       $('.lines').removeClass('linesNew');
       $('.middleCircle').removeClass('middleCirclenew');
 		}, 6000);
+    setTimeout(function() {
+      $('.counterText span a').html(function(i, val) { return val*1+1 });
+		},6000);
   });
  });
 
 
-//  $('.middleCircle').click(function() {
-//   $('.counterText span a').html(function(i, val) { return val*1+1 });
-// });
+ 
+
 
