@@ -2182,8 +2182,12 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .caseStudyhpsection {
     margin-bottom: 100px;
   }
+  .caseStudyhpsection .casestudyWrapper {
+    padding: 0px;
+  }
   .caseStudyhpsection .casestudyWrapper .secHeading {
     width: 100%;
+    padding: 0px 50px;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading h2 {
     line-height: 48px;
@@ -2196,39 +2200,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     display: block;
     margin: 32px 0px;
   }
-  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-prev, .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-next {
-    position: absolute;
-    bottom: -75px;
-    top: unset;
-    background: transparent;
-    border: 2px solid #C0C6C9;
-    border-radius: 40px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-prev::before, .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-next::before {
-    content: url(../images/slider-prev.svg);
-    opacity: 1;
-    scale: 0.7;
-  }
-  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-prev.slick-next, .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-next.slick-next {
-    right: 50%;
-    transform: translateX(50px);
-  }
-  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-prev.slick-next::before, .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-next.slick-next::before {
-    content: url(../images/slider-next.svg);
-  }
-  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-prev.slick-prev, .caseStudyhpsection .casestudyWrapper .casestudyBoxes .slick-next.slick-prev {
-    left: 50%;
-    transform: translateX(-50px);
-  }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
     width: unset;
-    margin: 0px 20px 0px;
+    margin: 0px 0px 0px 40px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
     margin-top: unset;
@@ -2252,7 +2226,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     margin: 16px;
   }
   .caseStudyhpsection .casestudyWrapper .ctaDiv {
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
   }
   .caseStudyhpsection .casestudyWrapper .ctaDiv .ctaWhite {
@@ -3274,6 +3248,31 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     margin-bottom: 150px;
   }
   .bookhpSection .booksecWrapper {
+    padding: 30px 20px 50px;
+  }
+  .bookhpSection .booksecWrapper .bookInfodiv {
+    width: 35%;
+  }
+  .bookhpSection .booksecWrapper .bookInfodiv h2 {
+    font-size: 26px;
+    letter-spacing: -0.9px;
+    line-height: 30px;
+  }
+  .bookhpSection .booksecWrapper .bookInfodiv p {
+    line-height: 1;
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  .bookhpSection .booksecWrapper .ctaDiv {
+    right: 24px;
+    bottom: 50px;
+  }
+  .bookhpSection .booksecWrapper .bookImgdiv {
+    padding: 16px 0px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .bookhpSection .booksecWrapper {
     padding: 40px 24px 60px;
   }
   .bookhpSection .booksecWrapper .bookInfodiv {
@@ -3288,11 +3287,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .bookhpSection .booksecWrapper .bookInfodiv p {
     line-height: 1;
     font-size: 14px;
+    margin-top: 20px;
   }
   .bookhpSection .booksecWrapper .bookImgdiv {
-    width: 44%;
-    margin: 0 auto;
-    padding: 16px 0px;
+    width: 75%;
+    margin: 16px 0 16px auto;
   }
   .bookhpSection .booksecWrapper .ctaDiv {
     right: 0;
@@ -3302,12 +3301,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .bookhpSection .booksecWrapper .shadowDiv {
     height: 150px;
-  }
-}
-@media screen and (max-width: 680px) {
-  .bookhpSection .booksecWrapper .bookImgdiv {
-    width: 75%;
-    margin: 16px 0 16px auto;
   }
 }
 
