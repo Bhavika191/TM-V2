@@ -195,8 +195,8 @@ if ($(window).width() < 1025) {
   if ($(".casestudyBoxes").length) {
     $(".casestudyBoxes").slick({
       dots: false,
-      arrows: true,
-      slidesToShow: 2,
+      arrows: false,
+      slidesToShow: 2.1,
       infinite: true,
       responsive: [
         {

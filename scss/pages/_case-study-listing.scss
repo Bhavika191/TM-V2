@@ -8,7 +8,7 @@ body.opentwo{overflow: hidden;}
             p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;color: #6A6A6A;}
         }
         .casestudylistingBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;flex-direction: row-reverse;
-            .caseStudyBoxes{width: 40%;margin-top: 150px;position: relative;overflow: hidden;height: 1120px;
+            .caseStudyBoxes{width: 40%;margin-top: 150px;position: relative;overflow: hidden;height: auto;
                 &:nth-child(odd){margin-top: -10%;}
                 &:nth-child(3){animation-delay: 0.7s;}
                 &:nth-child(4){animation-delay: 0.9s;}
@@ -30,7 +30,6 @@ body.opentwo{overflow: hidden;}
     @media screen and (max-width:1920px) {
         .casestudyWrapper {
             .casestudylistingBoxes .caseStudyBoxes{
-                height: 780px;
                 &:nth-child(odd){margin-top: -20%;}
             }
         }
@@ -39,7 +38,6 @@ body.opentwo{overflow: hidden;}
         margin:200px 0px 220px;
         .casestudyWrapper {
             .casestudylistingBoxes .caseStudyBoxes{
-                height: 690px;
                 &:nth-child(odd){margin-top: -22%;}
             }
         }
@@ -52,7 +50,7 @@ body.opentwo{overflow: hidden;}
                 p{line-height: 28px;margin-top: 25px;}
             }
             .casestudylistingBoxes{
-                .caseStudyBoxes{margin-top: 120px;height: 610px;
+                .caseStudyBoxes{margin-top: 120px;
                     &:nth-child(odd){margin-top: -19%;}
                     .caseStudydesc{margin: 40px;
                         h3{line-height: 32px;;margin: 25px 0px;}
@@ -70,7 +68,7 @@ body.opentwo{overflow: hidden;}
                 p{line-height: 26px;margin-top: 20px;}
             }
             .casestudylistingBoxes{
-                .caseStudyBoxes{width: 43%;margin-top: 100px;height: 600px;
+                .caseStudyBoxes{width: 43%;margin-top: 100px;
                     &:nth-child(odd){margin-top: -22%;}
                     .caseStudydesc{margin: 35px;
                         h3{line-height: 28px;;margin: 20px 0px;}
@@ -88,7 +86,7 @@ body.opentwo{overflow: hidden;}
                 p{line-height: 24px;margin-top: 16px;}
             }
             .casestudylistingBoxes{
-                .caseStudyBoxes{width: 42%;margin-top: 80px;height: 540px;
+                .caseStudyBoxes{width: 42%;margin-top: 80px;
                     &:nth-child(odd){margin-top: -15%;}
                     .caseStudydesc{margin: 30px;
                         h3{line-height: 26px;margin: 15px 0px;}
@@ -97,11 +95,7 @@ body.opentwo{overflow: hidden;}
             }
         }
     }
-    @media screen and (max-width:1200px) {
-        .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes{
-           height: 516px;
-        }
-    }
+    
     @media screen and (max-width:1024px) {
       .casestudyWrapper{
             .secHeading{width: 45%;
