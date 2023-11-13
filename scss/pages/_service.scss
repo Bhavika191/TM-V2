@@ -41,7 +41,7 @@
     }
 }
 }
-.service-container{position:sticky;top:0px;width: 100%;z-index: 99;background: #F1F1F1;
+.service-container{position:sticky;top:-1px;width: 100%;z-index: 8;background: #F1F1F1;
     .filterSec{display: block;overflow-x: auto;
         &::-webkit-scrollbar {display: none;}
         &::-webkit-scrollbar-track{display: none;}
