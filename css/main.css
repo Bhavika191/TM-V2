@@ -1955,7 +1955,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   margin-top: 150px;
   position: relative;
   overflow: hidden;
-  height: 1120px;
   height: auto !important;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
@@ -2060,9 +2059,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .caseStudyhpsection {
     margin-bottom: 600px;
   }
-  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
-    height: 780px;
-  }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
     margin-top: -20%;
   }
@@ -2071,9 +2067,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
 }
 @media screen and (max-width: 1800px) {
-  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
-    height: 690px;
-  }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
     margin-top: -22%;
   }
@@ -2097,7 +2090,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
     margin-top: 120px;
-    height: 610px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
     margin-top: -19%;
@@ -2133,7 +2125,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
     width: 43%;
     margin-top: 100px;
-    height: 600px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
     margin-top: -22%;
@@ -2169,7 +2160,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
     width: 42%;
     margin-top: 80px;
-    height: 540px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
     margin-top: -15%;
@@ -2186,11 +2176,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .caseStudyhpsection .casestudyWrapper .ctaDiv .ctaWhite {
     width: 42%;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
-    height: 516px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -3609,6 +3594,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   position: relative;
   overflow: hidden;
   transition: 0.7s all ease-out;
+  height: auto;
 }
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes::before {
   content: "";
@@ -4088,6 +4074,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   position: relative;
   overflow: hidden;
   transition: 0.7s all ease-out;
+  height: auto;
 }
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:nth-child(even) {
   margin-top: -7%;
@@ -6513,7 +6500,7 @@ body.opentwo {
   margin-top: 150px;
   position: relative;
   overflow: hidden;
-  height: 1120px;
+  height: auto;
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(odd) {
   margin-top: -10%;
@@ -6606,9 +6593,6 @@ body.opentwo {
   transition: 0.7s all ease-out;
 }
 @media screen and (max-width: 1920px) {
-  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
-    height: 780px;
-  }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(odd) {
     margin-top: -20%;
   }
@@ -6616,9 +6600,6 @@ body.opentwo {
 @media screen and (max-width: 1800px) {
   .caseStudyListingsec {
     margin: 200px 0px 220px;
-  }
-  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
-    height: 690px;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(odd) {
     margin-top: -22%;
@@ -6640,7 +6621,6 @@ body.opentwo {
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
     margin-top: 120px;
-    height: 610px;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(odd) {
     margin-top: -19%;
@@ -6673,7 +6653,6 @@ body.opentwo {
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
     width: 43%;
     margin-top: 100px;
-    height: 600px;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(odd) {
     margin-top: -22%;
@@ -6703,7 +6682,6 @@ body.opentwo {
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
     width: 42%;
     margin-top: 80px;
-    height: 540px;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(odd) {
     margin-top: -15%;
@@ -6714,11 +6692,6 @@ body.opentwo {
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h3 {
     line-height: 26px;
     margin: 15px 0px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes {
-    height: 516px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -6898,6 +6871,7 @@ body.opentwo {
   position: relative;
   overflow: hidden;
   transition: 0.7s all ease-out;
+  height: auto;
 }
 .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes:nth-child(odd) {
   margin-top: -7%;
@@ -7165,4 +7139,4 @@ body.opentwo {
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes .blogDetails .blogArrowimg img {
     width: 12px;
   }
-}/*# sourceMappingURL=main.css.map */
+}

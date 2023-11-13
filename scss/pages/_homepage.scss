@@ -62,7 +62,7 @@
             p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;color: #6A6A6A;}
         }
         .casestudyBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;
-            .caseStudyinnerBoxes{width: 40%;margin-top: 150px;position: relative;overflow: hidden;height: 1120px;height: auto !important;
+            .caseStudyinnerBoxes{width: 40%;margin-top: 150px;position: relative;overflow: hidden;height: auto !important;
                 &:nth-child(even){margin-top: -10%;}
                 &:nth-child(3){animation-delay: 0.7s;}
                 &:nth-child(4){animation-delay: 0.9s;}
@@ -88,7 +88,6 @@
         margin-bottom: 600px;
         .casestudyWrapper {
             .casestudyBoxes .caseStudyinnerBoxes{
-                height: 780px;
                 &:nth-child(even){margin-top: -20%;}
             }
             .ctaDiv{margin-top: -20%;}
@@ -97,7 +96,6 @@
     @media screen and (max-width:1800px) {
         .casestudyWrapper {
             .casestudyBoxes .caseStudyinnerBoxes{
-                height: 690px;
                 &:nth-child(even){margin-top: -22%;}
             }
             .ctaDiv{margin-top: -22%;}
@@ -111,7 +109,7 @@
                 p{line-height: 28px;margin-top: 25px;}
             }
             .casestudyBoxes{
-                .caseStudyinnerBoxes{margin-top: 120px;height: 610px;
+                .caseStudyinnerBoxes{margin-top: 120px;
                     &:nth-child(even){margin-top: -19%;}
                     .caseStudydesc{margin: 40px;
                         h3{line-height: 32px;;margin: 25px 0px;}
@@ -130,7 +128,7 @@
                 p{line-height: 26px;margin-top: 20px;}
             }
             .casestudyBoxes{
-                .caseStudyinnerBoxes{width: 43%;margin-top: 100px;height: 600px;
+                .caseStudyinnerBoxes{width: 43%;margin-top: 100px;
                     &:nth-child(even){margin-top: -22%;}
                     .caseStudydesc{margin: 35px;
                         h3{line-height: 28px;;margin: 20px 0px;}
@@ -149,7 +147,7 @@
                 p{line-height: 24px;margin-top: 16px;}
             }
             .casestudyBoxes{
-                .caseStudyinnerBoxes{width: 42%;margin-top: 80px;height: 540px;
+                .caseStudyinnerBoxes{width: 42%;margin-top: 80px;
                     &:nth-child(even){margin-top: -15%;}
                     .caseStudydesc{margin: 30px;
                         h3{line-height: 26px;margin: 15px 0px;}
@@ -159,11 +157,7 @@
             .ctaDiv{.ctaWhite{width: 42%;}margin-top: -15%;}
         }
     }
-    @media screen and (max-width:1200px) {
-        .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes{
-           height: 516px;
-        }
-   }
+    
     @media screen and (max-width:1024px) {
         margin-bottom: 100px;
         .casestudyWrapper{
@@ -692,7 +686,7 @@
             p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;color: #6A6A6A;}
         }
         .customerBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;
-            .innerBoxes{width: 40%;margin-top: 150px;padding: 190px 70px;background-color: #fff;position: relative;overflow: hidden;transition: 0.7s all ease-out;
+            .innerBoxes{width: 40%;margin-top: 150px;padding: 190px 70px;background-color: #fff;position: relative;overflow: hidden;transition: 0.7s all ease-out;height: auto;
                 &::before{content: "";position: absolute;background: url(../images/top-quote-img.svg)  no-repeat;background-size: contain;top: 0;left: 20px;height: 110px;width: 156px;transition: 0.7s all ease-out;}
                 &::after{content: "";position: absolute;background: url(../images/btm-quote-img.svg)  no-repeat;background-size: contain;bottom: 0;right: 20px;height: 110px;width: 156px;transition: 0.7s all ease-out;}
                 &:nth-child(even){margin-top: -10%;}
@@ -860,7 +854,7 @@
             p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;color: #6A6A6A;}
         }
         .blogsBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;
-            .blogsinnerBoxes{width: 40%;margin-top: 150px;position: relative;overflow: hidden;transition: 0.7s all ease-out;
+            .blogsinnerBoxes{width: 40%;margin-top: 150px;position: relative;overflow: hidden;transition: 0.7s all ease-out;height: auto;
                &:nth-child(even){margin-top: -7%;}
                 .blogImg{img{scale: 1.5;transition: 0.7s all ease-out;}}
                     .blogDetails{background-color: #fff;padding: 58px 50px;margin: 30px;position: absolute;bottom: 0;transition: 0.7s all ease-out;
