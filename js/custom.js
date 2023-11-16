@@ -216,8 +216,8 @@ if ($(window).width() < 1025) {
   if ($(".customerBoxes").length) {
     $(".customerBoxes").slick({
       dots: false,
-      arrows: true,
-      slidesToShow: 2,
+      arrows: false,
+      slidesToShow: 2.1,
       infinite: true,
       responsive: [
         {
@@ -239,8 +239,8 @@ if ($(window).width() < 1025) {
   if ($(".blogsBoxes").length) {
     $(".blogsBoxes").slick({
       dots: false,
-      arrows: true,
-      slidesToShow: 2,
+      arrows: false,
+      slidesToShow: 2.1,
       infinite: true,
       responsive: [
         {
@@ -257,37 +257,15 @@ if ($(window).width() < 1025) {
   }
 }
 
-//case study listing slider
-if ($(window).width() < 1025) {
-  if ($(".casestudylistingBoxes").length) {
-    $(".casestudylistingBoxes").slick({
-      dots: false,
-      arrows: true,
-      slidesToShow: 2,
-      infinite: true,
-      responsive: [
-        {
-          breakpoint: 680,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: "40px",
-            slidesToShow: 1,
-          },
-        },
-      ],
-    });
-  }
-}
-// case study listing slider ends 
+
 
 // service slider
 if ($(window).width() < 1025) {
   if ($(".serviceBoxes").length) {
     $(".serviceBoxes").slick({
       dots: false,
-      arrows: true,
-      slidesToShow: 2,
+      arrows: false,
+      slidesToShow: 2.1,
       infinite: true,
       responsive: [
         {
