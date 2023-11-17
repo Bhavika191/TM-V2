@@ -78,119 +78,111 @@ jQuery(document).ready(function () {
     var $this = $('#service-info' + i);
     if ($this.find('div').length > 4) {
       $('#servicesec-content' + i).append('<div><a href="javascript:void(0)" class="showMore"></a></div>');
-      $('#servicesec-content' + i).append('<div><a href="javascript:void(0)" class="showLess"></a></div>');
     }
     // If more than 2 Education items, hide the remaining
     $('#service-info' + i + ' .list-wrapper').slice(0, 3).addClass('shown');
     $('#service-info' + i + ' .list-wrapper').not('.shown').hide();
-
-    $('#servicesec-content' + i + ' .showMore').on('click', function () {
-      $('#service-info' + i + ' .list-wrapper').not('.shown').show();
-      $('.showMore').hide();
-      $('.showLess').css('display','block');
-    });
-
-    $('#servicesec-content' + i + ' .showLess').on('click', function () {
-      $('#service-info' + i + ' .list-wrapper').not('.shown').hide();
-      $('.showLess').hide();
-      $('.showMore').show();
-      $('html, body').scrollTop($(".servicesecs-wrapper" + i).offset().top-60);
-    });
-  }
+    $('#servicesec-content' + i + ' .showMore').on('click', (function(index) {
+      return function () {
+          $('#service-info' + index + ' .list-wrapper').not('.shown').toggle(200);
+          $(this).toggleClass('showLess');
+      };
+  })(i));
+  }//for loop closed
 });
 //Service page read more and Read less code ends
-
 //Service page active menu navbar starts
 $(document).ready(function () {
-  let menuScrollTimer = null;
-  $(".filter-wrapper a").click(function (e) {
-      // Prevent default behaviour ( scroll to element )
-      e.preventDefault();
-      $('.service-container .filterSec').animate({
-        scrollLeft: "+=200px"
-      }, "slow");
-      if (menuScrollTimer === null) {
-          // Highlight the clicked item
-          $('.filter-wrapper a.active').removeClass('active');
-          $(this).addClass('active');
-          // Smooth scroll to the target section
-          let target = $(this).attr('href');
-          $('html, body').animate({ scrollTop: $(target).offset().top - 250}, 1050);
-          // Set `menuScrollTimer` timer
-          // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
-          // This will also prevent the scroll logic from running
-          menuScrollTimer = setTimeout(function () {
-              clearTimeout(menuScrollTimer);
-              menuScrollTimer = null;
-          }, 1050);
-      }
-  });
-
-  $(window).scroll(function (e) {
-      // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
-      if (menuScrollTimer === null) {
-          let windowTop = $(this).scrollTop();
-
-          $('.filter-wrapper a').each(function (event) {
-              if (windowTop >= $($(this).attr('href')).offset().top - 250) {
-                  $('.filter-wrapper .active').removeClass('active');
-                  $(this).addClass('active');
-              }
-          });
-      }
-  });
+let menuScrollTimer = null;
+$(".filter-wrapper a").click(function (e) {
+    // Prevent default behaviour ( scroll to element )
+    e.preventDefault();
+    $('.service-container .filterSec').animate({
+      scrollLeft: "+=200px"
+    }, "slow");
+    if (menuScrollTimer === null) {
+        // Highlight the clicked item
+        $('.filter-wrapper a.active').removeClass('active');
+        $(this).addClass('active');
+        // Smooth scroll to the target section
+        let target = $(this).attr('href');
+        $('html, body').animate({ scrollTop: $(target).offset().top - 250}, 1050);
+        // Set `menuScrollTimer` timer
+        // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
+        // This will also prevent the scroll logic from running
+        menuScrollTimer = setTimeout(function () {
+            clearTimeout(menuScrollTimer);
+            menuScrollTimer = null;
+        }, 1050);
+    }
+});
+$(window).scroll(function (e) {
+    // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
+    if (menuScrollTimer === null) {
+        let windowTop = $(this).scrollTop();
+        $('.filter-wrapper a').each(function (event) {
+            if (windowTop >= $($(this).attr('href')).offset().top - 250) {
+                $('.filter-wrapper .active').removeClass('active');
+                $(this).addClass('active');
+            }
+        });
+    }
+});
 });
 //Service page active menu navbar ends
-
-// header sticky on scroll up js
-function hasScrolled() {
-  var st = $(this).scrollTop();
-  // Make sure they scroll more than delta
-  if (Math.abs(lastScrollTop - st) <= delta)
-    return;
-
-  // If they scrolled down and are past the navbar, add class .nav-up.
-  // This is necessary so you never see what is "behind" the navbar.
-  if (st > lastScrollTop && st > navbarHeight) {
-    // Scroll Down
-    $('header').removeClass('nav-down').addClass('nav-up');
-    $('.service-container .filterSec').animate({
-      scrollLeft: $('.filter-wrapper a.active').offset().left - $('.filter-wrapper').offset().left
-    }, "slow");
-  } else {
-    // Scroll Up
-    // $('.service-container .filterSec').animate({
-    //   scrollLeft: "-=200px"
-    // }, "slow");
-    $('header').removeClass('nav-up').addClass('nav-down');
-  }
-  lastScrollTop = st;
-}
-//code ends here
-
 //Off set code starts
 jQuery(function ($) {
-  $('a[href*="#"]:not([href="#"])').click(function () {
-    var target = $(this.hash);
-    $('html,body').stop().animate({
-      scrollTop: target.offset().top - 150
-    }, 'linear');
-  });
+$('a[href*="#"]:not([href="#"])').click(function () {
+  var target = $(this.hash);
+  $('html,body').stop().animate({
+    scrollTop: target.offset().top - 150
+  }, 'linear');
+});
+if (location.hash) {
+  var id = $(location.hash);
+}
+$(window).on('load', function () {
   if (location.hash) {
-    var id = $(location.hash);
-  }
-  $(window).on('load', function () {
-    if (location.hash) {
-      $('html,body').animate({ scrollTop: id.offset().top - 150 }, 'linear')
-    };
-  });
+    $('html,body').animate({ scrollTop: id.offset().top - 150 }, 'linear')
+  };
+});
 });
 //Offset code ends
-
-//------------------------------------------------------------------- Shamal's Js Code ends ---------------------------------------------------------------------//
-
-
-
+//------------------------------------------------------- Shamal's Code ends --------------------------------------------------//
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+$(window).scroll(function (event) {
+didScroll = true;
+});
+setInterval(function () {
+if (didScroll) {
+    hasScrolled();
+    didScroll = false;
+}
+}, 250);
+// header sticky on scroll up js
+function hasScrolled() {
+var st = $(this).scrollTop();
+// Make sure they scroll more than delta
+if (Math.abs(lastScrollTop - st) <= delta)
+  return;
+// If they scrolled down and are past the navbar, add class .nav-up.
+// This is necessary so you never see what is "behind" the navbar.
+if (st > lastScrollTop && st > navbarHeight) {
+  // Scroll Down
+  $('header').removeClass('nav-down').addClass('nav-up');
+  $('.service-container .filterSec').animate({
+    scrollLeft: $('.filter-wrapper a.active').offset().left - $('.filter-wrapper').offset().left
+  }, "slow");
+} else {
+  // Scroll Up
+  $('header').removeClass('nav-up').addClass('nav-down');
+}
+lastScrollTop = st;
+}
 // our partner slider starts
 $('.logoSlider').slick({
     dots: false,
