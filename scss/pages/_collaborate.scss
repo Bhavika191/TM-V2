@@ -2,17 +2,17 @@
     .collaborateSec{@include wrapperTwo; display: flex; flex-flow: wrap; justify-content: space-between; padding-right: 60px !important;
         .secHeading{width: 45%; margin-top: 120px;
             h1{@include font96;font-weight: $fontW500;line-height: 106px;letter-spacing: -2px;margin-bottom: 15px;}
-            p{@include font24;font-weight: $fontW400;line-height: 34px;}
+            p{@include font24;font-weight: $fontW400;line-height: 34px;color: #6A6A6A;}
         }
         .collaborateForm{width: 40%; padding: 60px;background: #ffffff;
             form{
                 label{display: block;color: #6A6A6A;@include font18;font-weight: $fontW400;line-height: 14px;margin-bottom: 12px;}
-                input, textarea{@include font28;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.56px;color: #000000;padding-bottom: 12px;border-bottom: 1px solid #000000;width: 100%;margin-bottom: 60px;}
+                input, textarea{@include font28;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.56px;color: #000000;padding-bottom: 12px;border-bottom: 1px solid #000000;width: 100%;margin-bottom: 60px;caret-color: red;}
                 input[type=submit]{@include font14;font-weight: $fontW700;line-height: 18px;letter-spacing: 0.7px;text-transform: uppercase;color: #ffffff;border: 0px;width: auto;margin: 0;padding: 14px 28px;border-radius: 6px;border: 1px solid #FF0D47;background: #FF0D47;}
                 .form-group{display: flex;justify-content: space-between;align-items: flex-start;margin-bottom: 60px;
                     label{width: 94%;@include font16;line-height: 28px;font-weight: 400;margin-bottom: 0px;
                         a{font-weight: $fontW600;color: #6A6A6A;}}
-                    input[type=checkbox] {position: relative;border: 2px solid #000;border-radius: 6px;background: transparent;margin: 5px 15px 0px 0px;cursor: pointer;height: 28px; width: 28px;-webkit-appearance: none;opacity: .5;padding-bottom: 0px;
+                        input[type=checkbox] {position: relative;border: 2px solid #000;border-radius: 6px;background: transparent;margin: 5px 15px 0px 0px;cursor: pointer;height: 28px; width: 28px;-webkit-appearance: none;opacity: .5;padding-bottom: 0px;
                         &:checked {background-color: #000;opacity: 1;}
                         &:before { content: '';position: absolute;right: 50%;top: 50%;width: 4px;height: 10px;border: solid #FFF;border-width: 0 2px 2px 0;margin: -1px -1px 0 -1px;transform: rotate(45deg) translate(-50%, -50%);z-index: 2;}
                     }  
@@ -32,6 +32,12 @@
                 form{
                     input, textarea{margin-bottom: 50px;}
                     input[type=submit]{padding: 12px 24px;}
+                    .form-group{margin-bottom: 50px;
+                        label{line-height: 25px;}
+                        input[type=checkbox] {margin: 5px 12px 0px 0px;height: 24px; width: 24px;
+                            &:before {width: 4px;height: 8px;}
+                        }  
+                    }
                 }
             }
         }
@@ -40,11 +46,17 @@
         margin: 100px 0px 250px;
 
         .collaborateSec{padding-right: 40px !important;
-            .secHeading{margin-top: 80px;}
-            .collaborateForm{padding: 40px;
+            .secHeading{margin-top: 80px;width: 40%;}
+            .collaborateForm{padding: 40px;width: 50%;
                 form{
                     input, textarea{margin-bottom: 30px;}
                     input[type=submit]{padding: 12px 24px;}
+                    .form-group{margin-bottom: 30px;
+                        label{line-height: 22px;}
+                        input[type=checkbox] {margin: 5px 10px 0px 0px;height: 20px; width: 20px;
+                            &:before {width: 4px;height: 8px;}
+                        }  
+                    }
                 }
             }
         }
@@ -63,11 +75,17 @@
                 form{
                     input, textarea{margin-bottom: 50px;}
                     input[type=submit]{padding: 12px 24px;}
+                    .form-group{margin-bottom: 50px;
+                        label{line-height: 20px;}
+                        input[type=checkbox] {margin: 5px 8px 0px 0px;
+                            &:before {width: 4px;height: 8px;}
+                        }  
+                    }
                 }
             }
         }
     }
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:820px) {
         margin: 80px 0px 150px;
         .collaborateSec{padding-right: 50px !important;
             .secHeading{width: 100%; margin-top: 50px; margin-bottom:40px;
@@ -78,6 +96,14 @@
                 form{
                     input, textarea{margin-bottom: 50px;}
                     input[type=submit]{padding: 12px 24px;}
+                    .form-group{margin-bottom: 30px;
+                        label{line-height: 24px;width: 100%;font-size: 14px;color: #000;
+                            a{color: #000;}
+                        }
+                        input[type=checkbox] {margin: 5px 12px 0px 0px;height: 18px; width: 18px;border-radius: 4px;
+                            &:before {width: 3px;height: 7px;}
+                        }  
+                    }
                 }
             }
         }
@@ -86,12 +112,13 @@
         .collaborateSec{padding-right: 20px !important;
             .secHeading{width: 100%; margin-top: 50px; margin-bottom:40px;
                 h1{line-height: 50px;}
+                p{color: #000;}
             }
             .collaborateForm{padding: 40px 25px;width: 115%;margin-left: -20px;margin-right: -20px;
                 form{
                     label{margin-bottom: 8px;}
                     input, textarea{margin-bottom: 30px;}
-                    input[type=submit]{padding: 12px 24px;}
+                    input[type=submit]{padding: 12px 24px;width: 100%;}
                 }
             }
         }
@@ -102,7 +129,7 @@
     .meetupAdderssContainer{@include wrapperTwo;
         .secHeading{width: 40%; margin-bottom:150px;
             h2{color: #000; @include font64; font-weight: $fontW500;line-height: 74px;letter-spacing: -1.92px;margin-bottom: 15px;}
-            p{@include font24;font-weight: $fontW400;line-height: 34px;}
+            p{@include font24;font-weight: $fontW400;line-height: 34px;color: #6A6A6A;}
         }
         .meetupAdderssContent{display: flex;justify-content: space-between;flex-wrap: wrap;;
             .meetupAddBox{width: 40%;margin-bottom: 150px; background: #ffffff;overflow: hidden; height: 800px;position: relative;
@@ -151,7 +178,7 @@
                 &.mailContact{
                     background: #000000;
                     .mailIcon{height: 48%;
-                        img{transform: translate(-10%, -15%);width: 80%;transition: 0.5s all ease-out;}
+                        img{transform: translate(-10%, -15%);width: 55%;transition: 0.5s all ease-out;}
                     }
                     .MailIds{
                         .idsBox{border-bottom: 1px solid rgba(255,255,255,0.3);margin: 0px 50px 30px;padding-bottom:30px;position: relative;
@@ -176,6 +203,9 @@
             }
         }
     }
+    @media screen and (max-width:1920px) {
+        .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img{width: 80%;}
+    }
 
     @media screen and (max-width:1600px) {
         margin-bottom: 180px;
@@ -192,13 +222,16 @@
                     }
                     .stateAddMap{margin-top: 150px;
                         .stateAdd{padding: 40px;}
+                        .stateMap .mapLink a img{width: 14px;}
                     }
                     &.mailContact{
                         .mailIcon{height: 45%;
                             img{width: 75%;}
                         }
                         .MailIds{
-                            .idsBox{margin: 0px 40px 25px;}
+                            .idsBox{margin: 0px 40px 25px;
+                                &::before{width: 14px;height: 14px;}
+                            }
                         }
                     }
                 }
@@ -220,13 +253,16 @@
                     }
                     .stateAddMap{margin-top: 120px;
                         .stateAdd{padding: 25px;}
+                        .stateMap .mapLink a img{width: 12px;}
                     }
                     &.mailContact{
                         .mailIcon{height: 38%;
                             img{width: 65%;}
                         }
                         .MailIds{
-                            .idsBox{margin: 0px 30px 25px;}
+                            .idsBox{margin: 0px 30px 25px;
+                                &::before{width: 12px;height: 12px;}
+                            }
                         }
                     }
                 }
@@ -247,6 +283,7 @@
                 .meetupAddBox {margin-bottom: 80px;height: 550px;
                     .stateAddMap{
                         .stateAdd{padding: 20px;}
+                        .stateMap .mapLink a img{width: 10px;}
                     }
                     &.mailContact{
                         .mailIcon{height: 35%;
@@ -273,6 +310,7 @@
                 .meetupAddBox {width: 45%;
                     .stateAddMap{
                         .stateAdd{padding: 15px;}
+                        .stateMap .mapLink a img{width: 12px;}
                     }
                     &.mailContact{
                         .mailIcon{height: 30%;
@@ -289,7 +327,7 @@
             }
         }
     }
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:820px) {
        .meetupAdderssContainer{
             .secHeading{margin-bottom: 40px;width: 100%;
                 h2{line-height: 40px;margin-bottom: 20px;}
@@ -322,7 +360,7 @@
                                 &:last-child{padding-bottom: 55px;}
                                 h3{font-size: 24px;line-height: 34px;}
                                 a{font-size: 16px;line-height: 26px;}
-                                &::before{right: 24px;height: 15px;width: 15px;}
+                                &::before{right: 24px;}
                             }
                         }
                     }
@@ -330,4 +368,20 @@
             }
         }
     }
+    @media screen and (max-width:720px) {
+        .meetupAdderssContainer{
+             .secHeading{
+                 p{color: #000;}
+             }
+             .meetupAdderssContent{
+                 .meetupAddBox {
+                     .stateAddMap{
+                         .stateAdd{
+                             p{color: #000;}
+                         }
+                     }
+                 }
+             }
+         }
+     }
 }

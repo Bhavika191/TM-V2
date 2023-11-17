@@ -5,6 +5,46 @@ $('#toggle').click(function () {
   $('#overlay').toggleClass('open');
   $('body').toggleClass('opentwo');
 });
+
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function (event) {
+  didScroll = true;
+});
+
+setInterval(function () {
+  if (didScroll) {
+    hasScrolled();
+    didScroll = false;
+  }
+}, 250);
+
+
+// header sticky on scroll up js
+function hasScrolled() {
+  var st = $(this).scrollTop();
+
+  // Make sure they scroll more than delta
+  if (Math.abs(lastScrollTop - st) <= delta)
+    return;
+  // If they scrolled down and are past the navbar, add class .nav-up.
+  // This is necessary so you never see what is "behind" the navbar.
+  if (st > lastScrollTop && st > navbarHeight) {
+    // Scroll Down
+    $('header').removeClass('nav-down').addClass('nav-up');
+  } else {
+    // Scroll Up
+    if (st + $(window).height() < $(document).height()) {
+      $('header').removeClass('nav-up').addClass('nav-down');
+    }
+  }
+
+  lastScrollTop = st;
+}
 // header menu code ends
 
 //---------------------------------------------------------------------- Shamal's Js Code Starts ---------------------------------------------------------------//
@@ -124,49 +164,6 @@ jQuery(function ($) {
 //------------------------------------------------------------------- Shamal's Js Code ends ---------------------------------------------------------------------//
 
 
-// Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
-
-$(window).scroll(function (event) {
-  didScroll = true;
-});
-
-setInterval(function () {
-  if (didScroll) {
-    hasScrolled();
-    didScroll = false;
-  }
-}, 250);
-
-
-// header sticky on scroll up js
-function hasScrolled() {
-  var st = $(this).scrollTop();
-
-  // Make sure they scroll more than delta
-  if (Math.abs(lastScrollTop - st) <= delta)
-    return;
-  // If they scrolled down and are past the navbar, add class .nav-up.
-  // This is necessary so you never see what is "behind" the navbar.
-  if (st > lastScrollTop && st > navbarHeight) {
-    // Scroll Down
-    $('header').removeClass('nav-down').addClass('nav-up');
-  } else {
-    // Scroll Up
-    if (st + $(window).height() < $(document).height()) {
-      $('header').removeClass('nav-up').addClass('nav-down');
-    }
-  }
-
-  lastScrollTop = st;
-}
-
-// header menu code ends
-
-
 
 // our partner slider starts
 $('.logoSlider').slick({
@@ -221,8 +218,8 @@ if ($(window).width() < 1025) {
   if ($(".customerBoxes").length) {
     $(".customerBoxes").slick({
       dots: false,
-      arrows: true,
-      slidesToShow: 2,
+      arrows: false,
+      slidesToShow: 2.1,
       infinite: true,
       responsive: [
         {
@@ -244,8 +241,8 @@ if ($(window).width() < 1025) {
   if ($(".blogsBoxes").length) {
     $(".blogsBoxes").slick({
       dots: false,
-      arrows: true,
-      slidesToShow: 2,
+      arrows: false,
+      slidesToShow: 2.1,
       infinite: true,
       responsive: [
         {
@@ -262,37 +259,15 @@ if ($(window).width() < 1025) {
   }
 }
 
-//case study listing slider
-if ($(window).width() < 1025) {
-  if ($(".casestudylistingBoxes").length) {
-    $(".casestudylistingBoxes").slick({
-      dots: false,
-      arrows: true,
-      slidesToShow: 2,
-      infinite: true,
-      responsive: [
-        {
-          breakpoint: 680,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: "40px",
-            slidesToShow: 1,
-          },
-        },
-      ],
-    });
-  }
-}
-// case study listing slider ends 
+
 
 // service slider
 if ($(window).width() < 1025) {
   if ($(".serviceBoxes").length) {
     $(".serviceBoxes").slick({
       dots: false,
-      arrows: true,
-      slidesToShow: 2,
+      arrows: false,
+      slidesToShow: 2.1,
       infinite: true,
       responsive: [
         {
