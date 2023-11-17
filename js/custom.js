@@ -180,9 +180,13 @@ if (st > lastScrollTop && st > navbarHeight) {
 } else {
   // Scroll Up
   $('header').removeClass('nav-up').addClass('nav-down');
+  if (st + $(window).height() < $(document).height()) {
+    $('header').removeClass('nav-up').addClass('nav-down');
+}
 }
 lastScrollTop = st;
 }
+
 // our partner slider starts
 $('.logoSlider').slick({
     dots: false,
