@@ -7138,3 +7138,1152 @@ body.opentwo {
     width: 12px;
   }
 }
+
+.collaborateFormSec {
+  margin: 100px 0px 400px;
+}
+.collaborateFormSec .collaborateSec {
+  padding-left: 210px;
+  padding-right: 210px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  padding-right: 60px !important;
+}
+@media screen and (max-width: 1600px) {
+  .collaborateFormSec .collaborateSec {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .collaborateFormSec .collaborateSec {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .collaborateFormSec .collaborateSec {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .collaborateFormSec .collaborateSec {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .collaborateFormSec .collaborateSec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.collaborateFormSec .collaborateSec .secHeading {
+  width: 45%;
+  margin-top: 120px;
+}
+.collaborateFormSec .collaborateSec .secHeading h1 {
+  font-size: 96px;
+  font-weight: 500;
+  line-height: 106px;
+  letter-spacing: -2px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 1600px) {
+  .collaborateFormSec .collaborateSec .secHeading h1 {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .collaborateFormSec .collaborateSec .secHeading h1 {
+    font-size: 74px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .collaborateFormSec .collaborateSec .secHeading h1 {
+    font-size: 64px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .collaborateFormSec .collaborateSec .secHeading h1 {
+    font-size: 40px;
+  }
+}
+.collaborateFormSec .collaborateSec .secHeading p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+}
+@media screen and (max-width: 1600px) {
+  .collaborateFormSec .collaborateSec .secHeading p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .collaborateFormSec .collaborateSec .secHeading p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .collaborateFormSec .collaborateSec .secHeading p {
+    font-size: 16px;
+  }
+}
+.collaborateFormSec .collaborateSec .collaborateForm {
+  width: 40%;
+  padding: 60px;
+  background: #ffffff;
+}
+.collaborateFormSec .collaborateSec .collaborateForm form label {
+  display: block;
+  color: #6A6A6A;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 1600px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form label {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form label {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form label {
+    font-size: 12px;
+  }
+}
+.collaborateFormSec .collaborateSec .collaborateForm form select {
+  width: 100%;
+  padding: 12px 0px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 60px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.56px;
+}
+@media screen and (max-width: 1600px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form select {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form select {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form select {
+    font-size: 18px;
+  }
+}
+.collaborateFormSec .collaborateSec .collaborateForm form select option {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.56px;
+}
+@media screen and (max-width: 1600px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form select option {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form select option {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form select option {
+    font-size: 18px;
+  }
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .empType {
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .empType a {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px 60px;
+  display: inline-block;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.28px;
+}
+@media screen and (max-width: 1600px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form .empType a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form .empType a {
+    font-size: 12px;
+  }
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 60px;
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload input {
+  margin-bottom: 0px;
+  border-bottom: none;
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload a {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.48px;
+  border-radius: 5px;
+  border: 1px dashed #000;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 1600px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload a {
+    font-size: 12px;
+  }
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .resume-upload {
+  display: flex;
+  justify-content: space-between;
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .resume-upload p {
+  margin-bottom: 12px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.56px;
+  color: #000000;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #000000;
+  width: 100%;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 1600px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    font-size: 18px;
+  }
+}
+.collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 0px;
+  width: auto;
+  margin: 0;
+  padding: 14px 28px;
+  border-radius: 6px;
+  border: 1px solid #FF0D47;
+  background: #FF0D47;
+}
+@media screen and (max-width: 1600px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+    font-size: 12px;
+  }
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .form-group label {
+  width: 94%;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 1600px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form .form-group label {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form .form-group label {
+    font-size: 12px;
+  }
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .form-group label a {
+  font-weight: 600;
+  color: #6A6A6A;
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .form-group input[type=checkbox] {
+  position: relative;
+  border: 2px solid #000;
+  border-radius: 6px;
+  background: transparent;
+  margin: 5px 15px 0px 0px;
+  cursor: pointer;
+  height: 28px;
+  width: 28px;
+  -webkit-appearance: none;
+  opacity: 0.5;
+  padding-bottom: 0px;
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .form-group input[type=checkbox]:checked {
+  background-color: #000;
+  opacity: 1;
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .form-group input[type=checkbox]:before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  width: 4px;
+  height: 10px;
+  border: solid #FFF;
+  border-width: 0 2px 2px 0;
+  margin: -1px -1px 0 -1px;
+  transform: rotate(45deg) translate(-50%, -50%);
+  z-index: 2;
+}
+@media screen and (max-width: 1600px) {
+  .collaborateFormSec {
+    margin: 100px 0px 300px;
+  }
+  .collaborateFormSec .collaborateSec {
+    padding-right: 60px !important;
+  }
+  .collaborateFormSec .collaborateSec .secHeading {
+    margin-top: 100px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading h1 {
+    line-height: 86px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading p {
+    line-height: 30px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm {
+    padding: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form select {
+    padding: 10px 0px;
+    margin-bottom: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .empType {
+    padding-bottom: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .empType a {
+    padding: 10px 50px;
+    line-height: 20px;
+    letter-spacing: -0.28px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload {
+    margin-bottom: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload a {
+    padding: 8px 14px;
+    line-height: 12px;
+    letter-spacing: -0.48px;
+    margin-bottom: 12px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .resume-upload p {
+    margin-bottom: 12px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    margin-bottom: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+    padding: 12px 24px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .collaborateFormSec {
+    margin: 100px 0px 250px;
+  }
+  .collaborateFormSec .collaborateSec {
+    padding-right: 40px !important;
+  }
+  .collaborateFormSec .collaborateSec .secHeading {
+    margin-top: 80px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm {
+    padding: 40px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form select {
+    padding: 10px 0px;
+    margin-bottom: 30px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .empType {
+    padding-bottom: 30px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .empType a {
+    padding: 10px 32px;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload {
+    margin-bottom: 30px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload a {
+    padding: 8px 14px;
+    line-height: 10px;
+    letter-spacing: -0.48px;
+    margin-bottom: 12px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .resume-upload p {
+    margin-bottom: 12px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    margin-bottom: 30px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+    padding: 12px 24px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .collaborateFormSec {
+    margin: 100px 0px 200px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .empType a {
+    padding: 10px 25px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .collaborateFormSec {
+    margin: 100px 0px 150px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading {
+    margin-top: 80px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading h1 {
+    line-height: 70px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading p {
+    line-height: 26px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm {
+    padding: 40px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form select {
+    margin-bottom: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .empType {
+    padding-bottom: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .empType a {
+    padding: 10px 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload {
+    margin-bottom: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    margin-bottom: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+    padding: 12px 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .collaborateFormSec {
+    margin: 80px 0px 150px;
+  }
+  .collaborateFormSec .collaborateSec {
+    padding-right: 50px !important;
+  }
+  .collaborateFormSec .collaborateSec .secHeading {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading h1 {
+    line-height: 70px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading p {
+    line-height: 26px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm {
+    padding: 50px;
+    width: 115%;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    margin-bottom: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+    padding: 12px 24px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .collaborateFormSec .collaborateSec {
+    padding-right: 20px !important;
+  }
+  .collaborateFormSec .collaborateSec .secHeading {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .collaborateFormSec .collaborateSec .secHeading h1 {
+    line-height: 50px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm {
+    padding: 40px 25px;
+    width: 115%;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form select {
+    padding: 8px 0px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form select option {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .empType {
+    padding-bottom: 30px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: normal;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .empType a {
+    padding: 10px 40px;
+    margin-right: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.24px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .empType a:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload input {
+    margin-bottom: 0px;
+    border-bottom: none;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload a {
+    padding: 12px 24px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: -0.48px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .resume-upload {
+    display: flex;
+    justify-content: space-between;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form .resume-upload p {
+    display: none;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form label {
+    margin-bottom: 8px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+    margin-bottom: 30px;
+  }
+  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+    padding: 12px 24px;
+    width: 100%;
+  }
+}
+
+.meetupAdderssSec {
+  margin-bottom: 250px;
+}
+.meetupAdderssSec .meetupAdderssContainer {
+  padding-left: 210px;
+  padding-right: 210px;
+}
+@media screen and (max-width: 1600px) {
+  .meetupAdderssSec .meetupAdderssContainer {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .meetupAdderssSec .meetupAdderssContainer {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .meetupAdderssSec .meetupAdderssContainer {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .meetupAdderssSec .meetupAdderssContainer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .meetupAdderssSec .meetupAdderssContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.meetupAdderssSec .meetupAdderssContainer .secHeading {
+  width: 40%;
+  margin-bottom: 150px;
+}
+.meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+  color: #000;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 74px;
+  letter-spacing: -1.92px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 1600px) {
+  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+    font-size: 32px;
+  }
+}
+.meetupAdderssSec .meetupAdderssContainer .secHeading p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+}
+@media screen and (max-width: 1600px) {
+  .meetupAdderssSec .meetupAdderssContainer .secHeading p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .meetupAdderssSec .meetupAdderssContainer .secHeading p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .meetupAdderssSec .meetupAdderssContainer .secHeading p {
+    font-size: 16px;
+  }
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
+  width: 40%;
+  margin-bottom: 150px;
+  background: #ffffff;
+  overflow: hidden;
+  height: 800px;
+  position: relative;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
+  margin-top: -24%;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:first-child {
+  transform: translateY(0px);
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff {
+  transition: 0.6s all ease-in-out;
+  height: 200px;
+  overflow: hidden;
+  position: absolute;
+  top: 30px;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.mumbaiOff {
+  left: -800px;
+  width: 800px;
+  animation: mumbaiOff 6s linear infinite;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.delhiOff {
+  left: -500px;
+  width: 500px;
+  animation: delhiOff 6s linear infinite;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.bangaloreOff {
+  left: -1000px;
+  width: 1000px;
+  animation: bangaloreOff 8s linear infinite;
+}
+@keyframes mumbaiOff {
+  0% {
+    transform: translateX(calc(800px + 800px));
+  }
+}
+@keyframes delhiOff {
+  0% {
+    transform: translateX(calc(500px + 500px));
+  }
+}
+@keyframes bangaloreOff {
+  0% {
+    transform: translateX(calc(1000px + 1000px));
+  }
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap {
+  transition: 0.6s all ease-in-out;
+  height: 75%;
+  margin-top: 200px;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
+  padding: 50px 50px;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd p {
+  color: #5A5A5A;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+@media screen and (max-width: 1600px) {
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd p {
+    font-size: 14px;
+  }
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateMap {
+  position: relative;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateMap .mapLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.6s all ease-in-out;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateMap .mapLink a {
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1600px) {
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateMap .mapLink a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateMap .mapLink a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateMap .mapLink a {
+    font-size: 14px;
+  }
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
+  margin-left: 10px;
+  width: 20px;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:hover .stateOff {
+  height: 0;
+  transform: translateY(-250px);
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:hover .stateAddMap {
+  height: 100%;
+  margin-top: 0px;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:hover .stateAddMap .stateMap .mapLink {
+  opacity: 1;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact {
+  background: #000000;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
+  height: 48%;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
+  transform: translate(-10%, -15%);
+  width: 80%;
+  transition: 0.5s all ease-out;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0px 50px 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox:first-child {
+  margin-top: 0px;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox:last-child {
+  border-bottom: 0px;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox::before {
+  content: "";
+  position: absolute;
+  background: url(../images/service-arrow.svg) no-repeat;
+  background-size: contain;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -100px;
+  height: 20px;
+  width: 20px;
+  transition: 0.5s all ease-out;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox h3 {
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -1.2px;
+  margin-bottom: 14px;
+}
+@media screen and (max-width: 1600px) {
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox h3 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox h3 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox h3 {
+    font-size: 14px;
+  }
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox a {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+}
+@media screen and (max-width: 1600px) {
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox a {
+    font-size: 14px;
+  }
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact:hover .mailIcon img {
+  transform: translate(120%, -15%) rotate(-30deg);
+  width: 50%;
+}
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact:hover .MailIds .idsBox::before {
+  right: 24px;
+}
+@media screen and (max-width: 1600px) {
+  .meetupAdderssSec {
+    margin-bottom: 180px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading {
+    margin-bottom: 120px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+    line-height: 62px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
+    margin-bottom: 120px;
+    height: 700px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff {
+    height: 150px;
+    top: 15px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.delhiOff {
+    left: -400px;
+    width: 400px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.mumbaiOff {
+    left: -700px;
+    width: 700px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.bangaloreOff {
+    left: -780px;
+    width: 780px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap {
+    margin-top: 150px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 40px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
+    height: 45%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
+    width: 75%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 40px 25px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .meetupAdderssSec {
+    margin-bottom: 150px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading {
+    margin-bottom: 100px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+    line-height: 62px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
+    margin-bottom: 100px;
+    height: 600px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff {
+    height: 120px;
+    top: 15px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.delhiOff {
+    left: -300px;
+    width: 300px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.mumbaiOff {
+    left: -600px;
+    width: 600px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.bangaloreOff {
+    left: -620px;
+    width: 620px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap {
+    margin-top: 120px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 25px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
+    height: 38%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
+    width: 65%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 30px 25px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
+    margin-top: -28%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .meetupAdderssSec {
+    margin-bottom: 100px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading {
+    margin-bottom: 80px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+    line-height: 54px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
+    margin-bottom: 80px;
+    height: 550px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 20px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
+    height: 35%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
+    width: 60%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 25px 20px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
+    margin-top: -24%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .meetupAdderssSec {
+    margin-bottom: 150px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading {
+    margin-bottom: 60px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+    line-height: 52px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
+    width: 45%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 15px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
+    height: 30%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
+    width: 55%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 22px 18px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
+    margin-top: -24%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .meetupAdderssSec .meetupAdderssContainer .secHeading {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .secHeading p {
+    line-height: 24px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent {
+    flex-wrap: unset;
+    flex-direction: column;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
+    margin-top: unset;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.mumbaiOff {
+    width: 500px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap {
+    margin-top: 100px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 30px 24px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact {
+    margin-bottom: 0px;
+    order: 1;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact:hover .mailIcon img {
+    transform: translate(170%, -15%) rotate(-30deg);
+    width: 40%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
+    height: 30%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
+    transform: translate(170%, -15%) rotate(-30deg);
+    width: 40%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 24px 30px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox:last-child {
+    padding-bottom: 55px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox a {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox::before {
+    right: 24px;
+    height: 15px;
+    width: 15px;
+  }
+}
