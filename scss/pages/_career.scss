@@ -392,3 +392,41 @@
         }
     }
 }
+
+.the-minimalist-sec{@include wrapperTwo;display:flex;margin-bottom: 300px;
+    .the-minimalist-content{width: 60%;padding: 150px;background: var(--primary-white, #FFF);
+        .subheading{color: #000;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 30px;letter-spacing: -0.6px;text-transform: uppercase;margin-bottom: 30px;}
+        .heading{color: #000;font-family: $fontpoppins;@include font40;font-weight: $fontW400;line-height: 50px;margin-bottom: 48px;}
+        .content{color: #6A6A6A;font-family: $fontpoppins;@include font24; font-weight: $fontW400;line-height: 34px;margin-bottom: 48px;}
+        a{display: inline-block; padding: 14px 24px;border-radius: 6px;border: 1px solid var(--primary-black, #000);background: var(--primary-white, #FFF); color: #000;text-align: center;font-family: $fontpoppins;@include font14;font-weight: $fontW700;line-height: 18px;letter-spacing: 0.7px;text-transform: uppercase;img{display: inline;vertical-align: middle;}}
+    }
+    .img-div{width: 40%;img{width: 100%;}}
+    @media all and (max-width:1600px){margin-bottom: 250px;
+        .the-minimalist-content{padding: 140px;
+            .subheading{line-height: 26px;letter-spacing: -0.6px;margin-bottom: 28px;}
+            .heading{line-height: 50px;margin-bottom: 38px;}
+            .content{line-height: 34px;margin-bottom: 38px;}
+            a{padding: 12px 22px;line-height: 16px;letter-spacing: 0.7px;}
+        }
+    }
+    @media all and (max-width:1400px){
+        margin-bottom: 200px;
+        .the-minimalist-content{padding: 130px;
+            .subheading{line-height: 24px;margin-bottom: 24px;}
+            .heading{line-height: 44px;margin-bottom: 36px;}
+            .content{line-height: 34px;margin-bottom: 36px;}
+            a{ padding: 10px 20px;line-height: 14px;}
+        }
+    }
+    @media all and (max-width:1200px){
+        margin-bottom: 200px;
+        .the-minimalist-content{padding: 120px;
+            .subheading{line-height: 24px;margin-bottom: 20px;}
+            .heading{line-height: 36px;margin-bottom: 30px;}
+            .content{line-height: 34px;margin-bottom: 30px;}
+            a{line-height: 12px;}
+        }
+    }
+    @media all and (max-width:1024px){display: none;}
+    @media all and (max-width:720px){}
+}

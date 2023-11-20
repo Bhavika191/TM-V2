@@ -8385,3 +8385,229 @@ body.opentwo {
     width: 15px;
   }
 }
+
+.the-minimalist-sec {
+  padding-left: 210px;
+  padding-right: 210px;
+  display: flex;
+  margin-bottom: 300px;
+}
+@media screen and (max-width: 1600px) {
+  .the-minimalist-sec {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .the-minimalist-sec {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .the-minimalist-sec {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .the-minimalist-sec {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .the-minimalist-sec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.the-minimalist-sec .the-minimalist-content {
+  width: 60%;
+  padding: 150px;
+  background: var(--primary-white, #FFF);
+}
+.the-minimalist-sec .the-minimalist-content .subheading {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1600px) {
+  .the-minimalist-sec .the-minimalist-content .subheading {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .the-minimalist-sec .the-minimalist-content .subheading {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .the-minimalist-sec .the-minimalist-content .subheading {
+    font-size: 14px;
+  }
+}
+.the-minimalist-sec .the-minimalist-content .heading {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  margin-bottom: 48px;
+}
+@media screen and (max-width: 1600px) {
+  .the-minimalist-sec .the-minimalist-content .heading {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .the-minimalist-sec .the-minimalist-content .heading {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .the-minimalist-sec .the-minimalist-content .heading {
+    font-size: 14px;
+  }
+}
+.the-minimalist-sec .the-minimalist-content .content {
+  color: #6A6A6A;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  margin-bottom: 48px;
+}
+@media screen and (max-width: 1600px) {
+  .the-minimalist-sec .the-minimalist-content .content {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .the-minimalist-sec .the-minimalist-content .content {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .the-minimalist-sec .the-minimalist-content .content {
+    font-size: 16px;
+  }
+}
+.the-minimalist-sec .the-minimalist-content a {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 6px;
+  border: 1px solid var(--primary-black, #000);
+  background: var(--primary-white, #FFF);
+  color: #000;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1600px) {
+  .the-minimalist-sec .the-minimalist-content a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .the-minimalist-sec .the-minimalist-content a {
+    font-size: 12px;
+  }
+}
+.the-minimalist-sec .the-minimalist-content a img {
+  display: inline;
+  vertical-align: middle;
+}
+.the-minimalist-sec .img-div {
+  width: 40%;
+}
+.the-minimalist-sec .img-div img {
+  width: 100%;
+}
+@media all and (max-width: 1600px) {
+  .the-minimalist-sec {
+    margin-bottom: 250px;
+  }
+  .the-minimalist-sec .the-minimalist-content {
+    padding: 140px;
+  }
+  .the-minimalist-sec .the-minimalist-content .subheading {
+    line-height: 26px;
+    letter-spacing: -0.6px;
+    margin-bottom: 28px;
+  }
+  .the-minimalist-sec .the-minimalist-content .heading {
+    line-height: 50px;
+    margin-bottom: 38px;
+  }
+  .the-minimalist-sec .the-minimalist-content .content {
+    line-height: 34px;
+    margin-bottom: 38px;
+  }
+  .the-minimalist-sec .the-minimalist-content a {
+    padding: 12px 22px;
+    line-height: 16px;
+    letter-spacing: 0.7px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .the-minimalist-sec {
+    margin-bottom: 200px;
+  }
+  .the-minimalist-sec .the-minimalist-content {
+    padding: 130px;
+  }
+  .the-minimalist-sec .the-minimalist-content .subheading {
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .the-minimalist-sec .the-minimalist-content .heading {
+    line-height: 44px;
+    margin-bottom: 36px;
+  }
+  .the-minimalist-sec .the-minimalist-content .content {
+    line-height: 34px;
+    margin-bottom: 36px;
+  }
+  .the-minimalist-sec .the-minimalist-content a {
+    padding: 10px 20px;
+    line-height: 14px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .the-minimalist-sec {
+    margin-bottom: 200px;
+  }
+  .the-minimalist-sec .the-minimalist-content {
+    padding: 120px;
+  }
+  .the-minimalist-sec .the-minimalist-content .subheading {
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .the-minimalist-sec .the-minimalist-content .heading {
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+  .the-minimalist-sec .the-minimalist-content .content {
+    line-height: 34px;
+    margin-bottom: 30px;
+  }
+  .the-minimalist-sec .the-minimalist-content a {
+    line-height: 12px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .the-minimalist-sec {
+    display: none;
+  }
+}
