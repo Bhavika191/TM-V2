@@ -1,5 +1,5 @@
-.collaborateFormSec{margin: 100px 0px 400px;
-    .collaborateSec{@include wrapperTwo; display: flex; flex-flow: wrap; justify-content: space-between; padding-right: 60px !important;
+.careerFormSec{margin: 100px 0px 400px;
+    .careerSec{@include wrapperTwo; display: flex; flex-flow: wrap; justify-content: space-between; padding-right: 60px !important;
         .secHeading{width: 45%; margin-top: 120px;
             h1{@include font96;font-weight: $fontW500;line-height: 106px;letter-spacing: -2px;margin-bottom: 15px;}
             p{@include font24;font-weight: $fontW400;line-height: 34px;}
@@ -36,7 +36,7 @@
     @media screen and (max-width:1600px) {
         margin: 100px 0px 300px;
 
-        .collaborateSec{padding-right: 60px !important;
+        .careerSec{padding-right: 60px !important;
             .secHeading{margin-top: 100px;
                 h1{line-height: 86px;}
                 p{line-height: 30px;}
@@ -63,7 +63,7 @@
     @media screen and (max-width:1400px) {
         margin: 100px 0px 250px;
 
-        .collaborateSec{padding-right: 40px !important;
+        .careerSec{padding-right: 40px !important;
             .secHeading{margin-top: 80px;}
             .collaborateForm{padding: 40px;
                 form{
@@ -85,7 +85,7 @@
     }
     @media screen and (max-width:1200px) {
         margin: 100px 0px 200px;
-        .collaborateSec{
+        .careerSec{
             .collaborateForm{
                 form{
                     .empType{
@@ -97,7 +97,7 @@
     }
     @media screen and (max-width:1024px) {
         margin: 100px 0px 150px;
-        .collaborateSec{
+        .careerSec{
             .secHeading{margin-top: 80px;
                 h1{line-height: 70px;}
                 p{line-height: 26px;}
@@ -117,7 +117,7 @@
     }
     @media screen and (max-width:768px) {
         margin: 80px 0px 150px;
-        .collaborateSec{padding-right: 50px !important;
+        .careerSec{padding-right: 50px !important;
             .secHeading{width: 100%; margin-top: 50px; margin-bottom:40px;
                 h1{line-height: 70px;}
                 p{line-height: 26px;}
@@ -131,7 +131,7 @@
         }
     }
     @media screen and (max-width:720px) {
-        .collaborateSec{padding-right: 20px !important;
+        .careerSec{padding-right: 20px !important;
             .secHeading{width: 100%; margin-top: 50px; margin-bottom:40px;
                 h1{line-height: 50px;}
             }

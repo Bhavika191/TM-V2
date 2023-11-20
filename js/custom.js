@@ -35,6 +35,9 @@ function hasScrolled() {
   // This is necessary so you never see what is "behind" the navbar.
   if (st > lastScrollTop && st > navbarHeight) {
     // Scroll Down
+    // $('.service-container .filterSec').animate({
+    //   scrollLeft: $('.filter-wrapper a.active').offset().left - $('.filter-wrapper').offset().left
+    // }, "slow");
     $('header').removeClass('nav-down').addClass('nav-up');
   } else {
     // Scroll Up

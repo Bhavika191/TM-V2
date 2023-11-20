@@ -7233,10 +7233,10 @@ body.opentwo {
   }
 }
 
-.collaborateFormSec {
+.careerFormSec {
   margin: 100px 0px 400px;
 }
-.collaborateFormSec .collaborateSec {
+.careerFormSec .careerSec {
   padding-left: 210px;
   padding-right: 210px;
   display: flex;
@@ -7245,40 +7245,40 @@ body.opentwo {
   padding-right: 60px !important;
 }
 @media screen and (max-width: 1600px) {
-  .collaborateFormSec .collaborateSec {
+  .careerFormSec .careerSec {
     padding-left: 180px;
     padding-right: 180px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .collaborateFormSec .collaborateSec {
+  .careerFormSec .careerSec {
     padding-left: 150px;
     padding-right: 150px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .collaborateFormSec .collaborateSec {
+  .careerFormSec .careerSec {
     padding-left: 120px;
     padding-right: 120px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .collaborateFormSec .collaborateSec {
+  .careerFormSec .careerSec {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 @media screen and (max-width: 720px) {
-  .collaborateFormSec .collaborateSec {
+  .careerFormSec .careerSec {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-.collaborateFormSec .collaborateSec .secHeading {
+.careerFormSec .careerSec .secHeading {
   width: 45%;
   margin-top: 120px;
 }
-.collaborateFormSec .collaborateSec .secHeading h1 {
+.careerFormSec .careerSec .secHeading h1 {
   font-size: 96px;
   font-weight: 500;
   line-height: 106px;
@@ -7286,51 +7286,51 @@ body.opentwo {
   margin-bottom: 15px;
 }
 @media screen and (max-width: 1600px) {
-  .collaborateFormSec .collaborateSec .secHeading h1 {
+  .careerFormSec .careerSec .secHeading h1 {
     font-size: 80px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .collaborateFormSec .collaborateSec .secHeading h1 {
+  .careerFormSec .careerSec .secHeading h1 {
     font-size: 74px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .collaborateFormSec .collaborateSec .secHeading h1 {
+  .careerFormSec .careerSec .secHeading h1 {
     font-size: 64px;
   }
 }
 @media screen and (max-width: 720px) {
-  .collaborateFormSec .collaborateSec .secHeading h1 {
+  .careerFormSec .careerSec .secHeading h1 {
     font-size: 40px;
   }
 }
-.collaborateFormSec .collaborateSec .secHeading p {
+.careerFormSec .careerSec .secHeading p {
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
 }
 @media screen and (max-width: 1600px) {
-  .collaborateFormSec .collaborateSec .secHeading p {
+  .careerFormSec .careerSec .secHeading p {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .collaborateFormSec .collaborateSec .secHeading p {
+  .careerFormSec .careerSec .secHeading p {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 720px) {
-  .collaborateFormSec .collaborateSec .secHeading p {
+  .careerFormSec .careerSec .secHeading p {
     font-size: 16px;
   }
 }
-.collaborateFormSec .collaborateSec .collaborateForm {
+.careerFormSec .careerSec .collaborateForm {
   width: 40%;
   padding: 60px;
   background: #ffffff;
 }
-.collaborateFormSec .collaborateSec .collaborateForm form label {
+.careerFormSec .careerSec .collaborateForm form label {
   display: block;
   color: #6A6A6A;
   font-size: 18px;
@@ -7339,21 +7339,21 @@ body.opentwo {
   margin-bottom: 12px;
 }
 @media screen and (max-width: 1600px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form label {
+  .careerFormSec .careerSec .collaborateForm form label {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form label {
+  .careerFormSec .careerSec .collaborateForm form label {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form label {
+  .careerFormSec .careerSec .collaborateForm form label {
     font-size: 12px;
   }
 }
-.collaborateFormSec .collaborateSec .collaborateForm form select {
+.careerFormSec .careerSec .collaborateForm form select {
   width: 100%;
   padding: 12px 0px;
   border-bottom: 1px solid #000;
@@ -7366,21 +7366,21 @@ body.opentwo {
   letter-spacing: -0.56px;
 }
 @media screen and (max-width: 1600px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form select {
+  .careerFormSec .careerSec .collaborateForm form select {
     font-size: 24px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form select {
+  .careerFormSec .careerSec .collaborateForm form select {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 720px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form select {
+  .careerFormSec .careerSec .collaborateForm form select {
     font-size: 18px;
   }
 }
-.collaborateFormSec .collaborateSec .collaborateForm form select option {
+.careerFormSec .careerSec .collaborateForm form select option {
   color: #000;
   font-family: "Poppins", sans-serif;
   font-size: 28px;
@@ -7389,26 +7389,26 @@ body.opentwo {
   letter-spacing: -0.56px;
 }
 @media screen and (max-width: 1600px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form select option {
+  .careerFormSec .careerSec .collaborateForm form select option {
     font-size: 24px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form select option {
+  .careerFormSec .careerSec .collaborateForm form select option {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 720px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form select option {
+  .careerFormSec .careerSec .collaborateForm form select option {
     font-size: 18px;
   }
 }
-.collaborateFormSec .collaborateSec .collaborateForm form .empType {
+.careerFormSec .careerSec .collaborateForm form .empType {
   padding-bottom: 60px;
   display: flex;
   justify-content: space-between;
 }
-.collaborateFormSec .collaborateSec .collaborateForm form .empType a {
+.careerFormSec .careerSec .collaborateForm form .empType a {
   border: 1px solid #000;
   border-radius: 5px;
   padding: 10px 60px;
@@ -7421,26 +7421,26 @@ body.opentwo {
   letter-spacing: -0.28px;
 }
 @media screen and (max-width: 1600px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType a {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType a {
     font-size: 12px;
   }
 }
-.collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload {
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #000000;
   margin-bottom: 60px;
 }
-.collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload input {
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload input {
   margin-bottom: 0px;
   border-bottom: none;
 }
-.collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload a {
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
   padding: 10px 15px;
   display: flex;
   align-items: center;
@@ -7456,20 +7456,20 @@ body.opentwo {
   margin-bottom: 12px;
 }
 @media screen and (max-width: 1600px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload a {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 720px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload a {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
     font-size: 12px;
   }
 }
-.collaborateFormSec .collaborateSec .collaborateForm form .resume-upload {
+.careerFormSec .careerSec .collaborateForm form .resume-upload {
   display: flex;
   justify-content: space-between;
 }
-.collaborateFormSec .collaborateSec .collaborateForm form .resume-upload p {
+.careerFormSec .careerSec .collaborateForm form .resume-upload p {
   margin-bottom: 12px;
   color: #000;
   font-family: "Poppins", sans-serif;
@@ -7477,7 +7477,7 @@ body.opentwo {
   font-weight: 400;
   line-height: 14px;
 }
-.collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+.careerFormSec .careerSec .collaborateForm form input, .careerFormSec .careerSec .collaborateForm form textarea {
   font-size: 28px;
   font-weight: 500;
   line-height: 24px;
@@ -7489,21 +7489,21 @@ body.opentwo {
   margin-bottom: 60px;
 }
 @media screen and (max-width: 1600px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+  .careerFormSec .careerSec .collaborateForm form input, .careerFormSec .careerSec .collaborateForm form textarea {
     font-size: 24px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+  .careerFormSec .careerSec .collaborateForm form input, .careerFormSec .careerSec .collaborateForm form textarea {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 720px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+  .careerFormSec .careerSec .collaborateForm form input, .careerFormSec .careerSec .collaborateForm form textarea {
     font-size: 18px;
   }
 }
-.collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+.careerFormSec .careerSec .collaborateForm form input[type=submit] {
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
@@ -7519,22 +7519,22 @@ body.opentwo {
   background: #FF0D47;
 }
 @media screen and (max-width: 1600px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+  .careerFormSec .careerSec .collaborateForm form input[type=submit] {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+  .careerFormSec .careerSec .collaborateForm form input[type=submit] {
     font-size: 12px;
   }
 }
-.collaborateFormSec .collaborateSec .collaborateForm form .form-group {
+.careerFormSec .careerSec .collaborateForm form .form-group {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 60px;
 }
-.collaborateFormSec .collaborateSec .collaborateForm form .form-group label {
+.careerFormSec .careerSec .collaborateForm form .form-group label {
   width: 94%;
   font-size: 16px;
   line-height: 28px;
@@ -7542,20 +7542,20 @@ body.opentwo {
   margin-bottom: 0px;
 }
 @media screen and (max-width: 1600px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form .form-group label {
+  .careerFormSec .careerSec .collaborateForm form .form-group label {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 720px) {
-  .collaborateFormSec .collaborateSec .collaborateForm form .form-group label {
+  .careerFormSec .careerSec .collaborateForm form .form-group label {
     font-size: 12px;
   }
 }
-.collaborateFormSec .collaborateSec .collaborateForm form .form-group label a {
+.careerFormSec .careerSec .collaborateForm form .form-group label a {
   font-weight: 600;
   color: #6A6A6A;
 }
-.collaborateFormSec .collaborateSec .collaborateForm form .form-group input[type=checkbox] {
+.careerFormSec .careerSec .collaborateForm form .form-group input[type=checkbox] {
   position: relative;
   border: 2px solid #000;
   border-radius: 6px;
@@ -7568,11 +7568,11 @@ body.opentwo {
   opacity: 0.5;
   padding-bottom: 0px;
 }
-.collaborateFormSec .collaborateSec .collaborateForm form .form-group input[type=checkbox]:checked {
+.careerFormSec .careerSec .collaborateForm form .form-group input[type=checkbox]:checked {
   background-color: #000;
   opacity: 1;
 }
-.collaborateFormSec .collaborateSec .collaborateForm form .form-group input[type=checkbox]:before {
+.careerFormSec .careerSec .collaborateForm form .form-group input[type=checkbox]:before {
   content: "";
   position: absolute;
   right: 50%;
@@ -7586,193 +7586,193 @@ body.opentwo {
   z-index: 2;
 }
 @media screen and (max-width: 1600px) {
-  .collaborateFormSec {
+  .careerFormSec {
     margin: 100px 0px 300px;
   }
-  .collaborateFormSec .collaborateSec {
+  .careerFormSec .careerSec {
     padding-right: 60px !important;
   }
-  .collaborateFormSec .collaborateSec .secHeading {
+  .careerFormSec .careerSec .secHeading {
     margin-top: 100px;
   }
-  .collaborateFormSec .collaborateSec .secHeading h1 {
+  .careerFormSec .careerSec .secHeading h1 {
     line-height: 86px;
   }
-  .collaborateFormSec .collaborateSec .secHeading p {
+  .careerFormSec .careerSec .secHeading p {
     line-height: 30px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm {
+  .careerFormSec .careerSec .collaborateForm {
     padding: 50px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form select {
+  .careerFormSec .careerSec .collaborateForm form select {
     padding: 10px 0px;
     margin-bottom: 50px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .empType {
+  .careerFormSec .careerSec .collaborateForm form .empType {
     padding-bottom: 50px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType a {
     padding: 10px 50px;
     line-height: 20px;
     letter-spacing: -0.28px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
     margin-bottom: 50px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload a {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
     padding: 8px 14px;
     line-height: 12px;
     letter-spacing: -0.48px;
     margin-bottom: 12px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .resume-upload p {
+  .careerFormSec .careerSec .collaborateForm form .resume-upload p {
     margin-bottom: 12px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+  .careerFormSec .careerSec .collaborateForm form input, .careerFormSec .careerSec .collaborateForm form textarea {
     margin-bottom: 50px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+  .careerFormSec .careerSec .collaborateForm form input[type=submit] {
     padding: 12px 24px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .collaborateFormSec {
+  .careerFormSec {
     margin: 100px 0px 250px;
   }
-  .collaborateFormSec .collaborateSec {
+  .careerFormSec .careerSec {
     padding-right: 40px !important;
   }
-  .collaborateFormSec .collaborateSec .secHeading {
+  .careerFormSec .careerSec .secHeading {
     margin-top: 80px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm {
+  .careerFormSec .careerSec .collaborateForm {
     padding: 40px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form select {
+  .careerFormSec .careerSec .collaborateForm form select {
     padding: 10px 0px;
     margin-bottom: 30px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .empType {
+  .careerFormSec .careerSec .collaborateForm form .empType {
     padding-bottom: 30px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType a {
     padding: 10px 32px;
     line-height: 18px;
     letter-spacing: -0.28px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
     margin-bottom: 30px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload a {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
     padding: 8px 14px;
     line-height: 10px;
     letter-spacing: -0.48px;
     margin-bottom: 12px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .resume-upload p {
+  .careerFormSec .careerSec .collaborateForm form .resume-upload p {
     margin-bottom: 12px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+  .careerFormSec .careerSec .collaborateForm form input, .careerFormSec .careerSec .collaborateForm form textarea {
     margin-bottom: 30px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+  .careerFormSec .careerSec .collaborateForm form input[type=submit] {
     padding: 12px 24px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .collaborateFormSec {
+  .careerFormSec {
     margin: 100px 0px 200px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType a {
     padding: 10px 25px;
     line-height: 16px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .collaborateFormSec {
+  .careerFormSec {
     margin: 100px 0px 150px;
   }
-  .collaborateFormSec .collaborateSec .secHeading {
+  .careerFormSec .careerSec .secHeading {
     margin-top: 80px;
   }
-  .collaborateFormSec .collaborateSec .secHeading h1 {
+  .careerFormSec .careerSec .secHeading h1 {
     line-height: 70px;
   }
-  .collaborateFormSec .collaborateSec .secHeading p {
+  .careerFormSec .careerSec .secHeading p {
     line-height: 26px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm {
+  .careerFormSec .careerSec .collaborateForm {
     padding: 40px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form select {
+  .careerFormSec .careerSec .collaborateForm form select {
     margin-bottom: 50px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .empType {
+  .careerFormSec .careerSec .collaborateForm form .empType {
     padding-bottom: 50px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType a {
     padding: 10px 50px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
     margin-bottom: 50px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+  .careerFormSec .careerSec .collaborateForm form input, .careerFormSec .careerSec .collaborateForm form textarea {
     margin-bottom: 50px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+  .careerFormSec .careerSec .collaborateForm form input[type=submit] {
     padding: 12px 24px;
   }
 }
 @media screen and (max-width: 768px) {
-  .collaborateFormSec {
+  .careerFormSec {
     margin: 80px 0px 150px;
   }
-  .collaborateFormSec .collaborateSec {
+  .careerFormSec .careerSec {
     padding-right: 50px !important;
   }
-  .collaborateFormSec .collaborateSec .secHeading {
+  .careerFormSec .careerSec .secHeading {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 40px;
   }
-  .collaborateFormSec .collaborateSec .secHeading h1 {
+  .careerFormSec .careerSec .secHeading h1 {
     line-height: 70px;
   }
-  .collaborateFormSec .collaborateSec .secHeading p {
+  .careerFormSec .careerSec .secHeading p {
     line-height: 26px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm {
+  .careerFormSec .careerSec .collaborateForm {
     padding: 50px;
     width: 115%;
     margin-left: -50px;
     margin-right: -50px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+  .careerFormSec .careerSec .collaborateForm form input, .careerFormSec .careerSec .collaborateForm form textarea {
     margin-bottom: 50px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+  .careerFormSec .careerSec .collaborateForm form input[type=submit] {
     padding: 12px 24px;
   }
 }
 @media screen and (max-width: 720px) {
-  .collaborateFormSec .collaborateSec {
+  .careerFormSec .careerSec {
     padding-right: 20px !important;
   }
-  .collaborateFormSec .collaborateSec .secHeading {
+  .careerFormSec .careerSec .secHeading {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 40px;
   }
-  .collaborateFormSec .collaborateSec .secHeading h1 {
+  .careerFormSec .careerSec .secHeading h1 {
     line-height: 50px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm {
+  .careerFormSec .careerSec .collaborateForm {
     padding: 40px 25px;
     width: 115%;
     margin-left: -20px;
     margin-right: -20px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form select {
+  .careerFormSec .careerSec .collaborateForm form select {
     padding: 8px 0px;
     margin-bottom: 30px;
     font-size: 20px;
@@ -7780,19 +7780,19 @@ body.opentwo {
     line-height: 24px;
     letter-spacing: -0.4px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form select option {
+  .careerFormSec .careerSec .collaborateForm form select option {
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.4px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .empType {
+  .careerFormSec .careerSec .collaborateForm form .empType {
     padding-bottom: 30px;
     display: flex;
     flex-flow: wrap;
     justify-content: normal;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType a {
     padding: 10px 40px;
     margin-right: 12px;
     font-size: 12px;
@@ -7800,18 +7800,18 @@ body.opentwo {
     line-height: 24px;
     letter-spacing: -0.24px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .empType a:not(:last-child) {
+  .careerFormSec .careerSec .collaborateForm form .empType a:not(:last-child) {
     margin-bottom: 12px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
     display: block;
     margin-bottom: 30px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload input {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload input {
     margin-bottom: 0px;
     border-bottom: none;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .portfolio-upload a {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
     padding: 12px 24px;
     display: inline-block;
     margin-bottom: 20px;
@@ -7820,20 +7820,20 @@ body.opentwo {
     line-height: 12px;
     letter-spacing: -0.48px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .resume-upload {
+  .careerFormSec .careerSec .collaborateForm form .resume-upload {
     display: flex;
     justify-content: space-between;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form .resume-upload p {
+  .careerFormSec .careerSec .collaborateForm form .resume-upload p {
     display: none;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form label {
+  .careerFormSec .careerSec .collaborateForm form label {
     margin-bottom: 8px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
+  .careerFormSec .careerSec .collaborateForm form input, .careerFormSec .careerSec .collaborateForm form textarea {
     margin-bottom: 30px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
+  .careerFormSec .careerSec .collaborateForm form input[type=submit] {
     padding: 12px 24px;
     width: 100%;
   }
