@@ -9,6 +9,7 @@ $('#toggle').click(function () {
 // Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
+var lastScrserTop = 0;
 var delta = 5;
 var navbarHeight = $('header').outerHeight();
 
@@ -19,6 +20,7 @@ $(window).scroll(function (event) {
 setInterval(function () {
   if (didScroll) {
     hasScrolled();
+    hasservicesScrolled();
     didScroll = false;
   }
 }, 250);
@@ -26,6 +28,7 @@ setInterval(function () {
 
 // header sticky on scroll up js
 function hasScrolled() {
+ 
   var st = $(this).scrollTop();
 
   // Make sure they scroll more than delta
@@ -34,10 +37,6 @@ function hasScrolled() {
   // If they scrolled down and are past the navbar, add class .nav-up.
   // This is necessary so you never see what is "behind" the navbar.
   if (st > lastScrollTop && st > navbarHeight) {
-    // Scroll Down
-    // $('.service-container .filterSec').animate({
-    //   scrollLeft: $('.filter-wrapper a.active').offset().left - $('.filter-wrapper').offset().left
-    // }, "slow");
     $('header').removeClass('nav-down').addClass('nav-up');
   } else {
     // Scroll Up
@@ -47,6 +46,32 @@ function hasScrolled() {
   }
 
   lastScrollTop = st;
+}
+
+function hasservicesScrolled()
+{
+
+  var setr = $(this).scrollTop();
+
+  // Make sure they scroll more than delta
+  if (Math.abs(lastScrserTop - setr) <= delta)
+    return;
+  // If they scrolled down and are past the navbar, add class .nav-up.
+  // This is necessary so you never see what is "behind" the navbar.
+  if (setr > lastScrserTop && setr > navbarHeight) {
+    // Scroll Down
+    $('.service-container .filterSec').animate({
+      scrollLeft: $('.filter-wrapper a.active').offset().left - $('.filter-wrapper').offset().left
+    }, "slow");
+    $('header').removeClass('nav-down').addClass('nav-up');
+  } else {
+    $('.service-container .filterSec').animate({
+      scrollLeft: "-= 140px"
+    }, "slow");
+  
+  }
+
+  lastScrserTop = setr;
 }
 // header menu code ends
 
@@ -99,11 +124,14 @@ jQuery(document).ready(function () {
 $(document).ready(function () {
 let menuScrollTimer = null;
 $(".filter-wrapper a").click(function (e) {
+
     // Prevent default behaviour ( scroll to element )
     e.preventDefault();
-    $('.service-container .filterSec').animate({
-      scrollLeft: "+=200px"
+   
+    $('.service-container .services_data').animate({
+      scrollLeft: "+ = 150px"
     }, "slow");
+   
     if (menuScrollTimer === null) {
         // Highlight the clicked item
         $('.filter-wrapper a.active').removeClass('active');
