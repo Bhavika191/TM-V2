@@ -7796,6 +7796,7 @@ body.opentwo {
     justify-content: normal;
   }
   .careerFormSec .careerSec .collaborateForm form .empType a {
+    width: auto;
     padding: 10px 40px;
     margin-right: 12px;
     font-size: 12px;

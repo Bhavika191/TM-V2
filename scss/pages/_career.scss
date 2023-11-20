@@ -141,7 +141,7 @@
                         option{font-size: 20px;font-weight: 500;line-height: 24px;letter-spacing: -0.4px;}
                     }
                     .empType{padding-bottom: 30px;display:flex;flex-flow:wrap;justify-content:normal;
-                      a{padding: 10px 40px;margin-right: 12px;&:not(:last-child){margin-bottom: 12px;}font-size: 12px;font-weight: 500;line-height: 24px;letter-spacing: -0.24px;}
+                      a{width: auto;padding: 10px 40px;margin-right: 12px;&:not(:last-child){margin-bottom: 12px;}font-size: 12px;font-weight: 500;line-height: 24px;letter-spacing: -0.24px;}
                     }
                    .portfolio-upload{display: block;margin-bottom: 30px;
                       input{margin-bottom: 0px;border-bottom: none;}
