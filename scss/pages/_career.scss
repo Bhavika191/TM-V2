@@ -11,7 +11,7 @@
                     option{color: #000;font-family: $fontpoppins;@include font28;font-weight: $fontW500;line-height: 24px; letter-spacing: -0.56px;}
                 }
                 .empType{padding-bottom: 60px;display:flex;justify-content:space-between;
-                    a{border:1px solid #000;border-radius:5px;padding: 10px 60px;display: inline-block;color: #000;font-family: $fontpoppins;@include font14;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.28px;}
+                    a{width:30%; display: flex;justify-content: center;align-items: center; border:1px solid #000;border-radius:5px;padding: 10px 60px;color: #000;font-family: $fontpoppins;@include font14;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.28px;}
                 }
                 .portfolio-upload{display: flex;justify-content:space-between; border-bottom: 1px solid #000000;margin-bottom: 60px;
                     input{margin-bottom: 0px;border-bottom: none;}

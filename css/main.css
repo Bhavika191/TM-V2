@@ -7409,10 +7409,13 @@ body.opentwo {
   justify-content: space-between;
 }
 .careerFormSec .careerSec .collaborateForm form .empType a {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #000;
   border-radius: 5px;
   padding: 10px 60px;
-  display: inline-block;
   color: #000;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
