@@ -168,7 +168,7 @@ jQuery(function ($) {
 $('a[href*="#"]:not([href="#"])').click(function () {
   var target = $(this.hash);
   $('html,body').stop().animate({
-    scrollTop: target.offset().top - 150
+    scrollTop: target.offset().top - 110
   }, 'linear');
 });
 if (location.hash) {
@@ -176,7 +176,7 @@ if (location.hash) {
 }
 $(window).on('load', function () {
   if (location.hash) {
-    $('html,body').animate({ scrollTop: id.offset().top - 150 }, 'linear')
+    $('html,body').animate({ scrollTop: id.offset().top - 110 }, 'linear')
   };
 });
 });
