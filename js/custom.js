@@ -177,6 +177,7 @@ if (location.hash) {
 $(window).on('load', function () {
   if (location.hash) {
     $('html,body').animate({ scrollTop: id.offset().top - 110 }, 'linear')
+    
   };
 });
 });
