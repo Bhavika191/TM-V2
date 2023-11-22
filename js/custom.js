@@ -48,14 +48,11 @@ function hasScrolled() {
   lastScrollTop = st;
 }
 
-function hasservicesScrolled()
-{
-
-  var setr = $(this).scrollTop();
-
+function hasservicesScrolled() {    var setr = $(this).scrollTop();
   // Make sure they scroll more than delta
-  if (Math.abs(lastScrserTop - setr) <= delta)
+  if (Math.abs(lastScrserTop - setr) <= delta) {
     return;
+  }
   // If they scrolled down and are past the navbar, add class .nav-up.
   // This is necessary so you never see what is "behind" the navbar.
   if (setr > lastScrserTop && setr > navbarHeight) {
@@ -66,11 +63,9 @@ function hasservicesScrolled()
     $('header').removeClass('nav-down').addClass('nav-up');
   } else {
     $('.service-container .filterSec').animate({
-      scrollLeft: "-= 140px"
+      scrollLeft: "-=140px"
     }, "slow");
-  
   }
-
   lastScrserTop = setr;
 }
 // header menu code ends
@@ -124,13 +119,14 @@ jQuery(document).ready(function () {
 $(document).ready(function () {
 let menuScrollTimer = null;
 $(".filter-wrapper a").click(function (e) {
-
-    // Prevent default behaviour ( scroll to element )
-    e.preventDefault();
-   
-    $('.service-container .services_data').animate({
-      scrollLeft: "+ = 150px"
-    }, "slow");
+  // Prevent default behavior (scroll to element)
+  e.preventDefault();
+  // Determine the direction of the scroll based on the clicked item's position
+  let direction = $(this).offset().left > $('.filter-wrapper').width() / 2 ? "-=200px" : "+=200px";
+  // Animate scrollLeft for the container
+  $('#myBtnContainer').animate({
+    scrollLeft: direction
+  }, "slow");
    
     if (menuScrollTimer === null) {
         // Highlight the clicked item
@@ -177,7 +173,7 @@ if (location.hash) {
 $(window).on('load', function () {
   if (location.hash) {
     $('html,body').animate({ scrollTop: id.offset().top - 110 }, 'linear')
-    
+
   };
 });
 });
