@@ -48,26 +48,26 @@ function hasScrolled() {
   lastScrollTop = st;
 }
 
-function hasservicesScrolled() {    var setr = $(this).scrollTop();
-  // Make sure they scroll more than delta
-  if (Math.abs(lastScrserTop - setr) <= delta) {
-    return;
-  }
-  // If they scrolled down and are past the navbar, add class .nav-up.
-  // This is necessary so you never see what is "behind" the navbar.
-  if (setr > lastScrserTop && setr > navbarHeight) {
-    // Scroll Down
-    $('.service-container .filterSec').animate({
-      scrollLeft: $('.filter-wrapper a.active').offset().left - $('.filter-wrapper').offset().left
-    }, "slow");
-    $('header').removeClass('nav-down').addClass('nav-up');
-  } else {
-    $('.service-container .filterSec').animate({
-      scrollLeft: "-=140px"
-    }, "slow");
-  }
-  lastScrserTop = setr;
-}
+// function hasservicesScrolled() {    var setr = $(this).scrollTop();
+//   // Make sure they scroll more than delta
+//   if (Math.abs(lastScrserTop - setr) <= delta) {
+//     return;
+//   }
+//   // If they scrolled down and are past the navbar, add class .nav-up.
+//   // This is necessary so you never see what is "behind" the navbar.
+//   if (setr > lastScrserTop && setr > navbarHeight) {
+//     // Scroll Down
+//     $('.service-container .filterSec').animate({
+//       scrollLeft: $('.filter-wrapper a.active').offset().left - $('.filter-wrapper').offset().left
+//     }, "slow");
+//     $('header').removeClass('nav-down').addClass('nav-up');
+//   } else {
+//     $('.service-container .filterSec').animate({
+//       scrollLeft: "-=140px"
+//     }, "slow");
+//   }
+//   lastScrserTop = setr;
+// }
 // header menu code ends
 
 //---------------------------------------------------------------------- Shamal's Js Code Starts ---------------------------------------------------------------//
@@ -120,13 +120,13 @@ $(document).ready(function () {
 let menuScrollTimer = null;
 $(".filter-wrapper a").click(function (e) {
   // Prevent default behavior (scroll to element)
-  e.preventDefault();
+  // e.preventDefault();
   // Determine the direction of the scroll based on the clicked item's position
-  let direction = $(this).offset().left > $('.filter-wrapper').width() / 2 ? "-=200px" : "+=200px";
+  // let direction = $(this).offset().left > $('.filter-wrapper').width() / 2 ? "-=200px" : "+=200px";
   // Animate scrollLeft for the container
-  $('#myBtnContainer').animate({
-    scrollLeft: direction
-  }, "slow");
+  // $('#myBtnContainer').animate({
+  //   scrollLeft: direction
+  // }, "slow");
    
     if (menuScrollTimer === null) {
         // Highlight the clicked item
@@ -178,6 +178,40 @@ $(window).on('load', function () {
 });
 });
 //Offset code ends
+
+//Casestudy Details page active navbar
+$(document).ready(function () {
+  let menuScrollTimer = null;
+  $(".casestudyfilter-wrapper a").click(function (e) {     
+      if (menuScrollTimer === null) {
+          // Highlight the clicked item
+          $('.casestudyfilter-wrapper a.current').removeClass('current');
+          $(this).addClass('current');
+          // Smooth scroll to the target section
+          let target = $(this).attr('href');
+          $('html, body').animate({ scrollTop: $(target).offset().top - 250}, 1050);
+          // Set `menuScrollTimer` timer
+          // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
+          // This will also prevent the scroll logic from running
+          menuScrollTimer = setTimeout(function () {
+              clearTimeout(menuScrollTimer);
+              menuScrollTimer = null;
+          }, 1050);
+      }
+  });
+  $(window).scroll(function (e) {
+      // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
+      if (menuScrollTimer === null) {
+          let windowTop = $(this).scrollTop();
+          $('.casestudyfilter-wrapper a').each(function (event) {
+              if (windowTop >= $($(this).attr('href')).offset().top - 250) {
+                  $('.casestudyfilter-wrapper .current').removeClass('current');
+                  $(this).addClass('current');
+              }
+          });
+      }
+  });
+  });
 //------------------------------------------------------- Shamal's Code ends --------------------------------------------------//
 
 
