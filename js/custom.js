@@ -95,13 +95,10 @@ jQuery(document).ready(function () {
 $(document).ready(function () {
   let menuScrollTimer = null;
   $(".filter-wrapper a").click(function (e) {
-    // Prevent default behaviour ( scroll to element )
     e.preventDefault();
     if (menuScrollTimer === null) {
-      // Highlight the clicked item
       $('.filter-wrapper a.active').removeClass('active');
       $(this).addClass('active');
-      // Smooth scroll to the target section
       let target = $(this).attr('href');
       $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
       menuScrollTimer = setTimeout(function () {
@@ -119,36 +116,24 @@ $(document).ready(function () {
       $(this).show();
     })
    }
-  // var count =0;
-  // var val = true;
   $(window).scroll(function (e) {
-    // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
     if (menuScrollTimer === null) {
       let windowTop = $(this).scrollTop();
       $('.filter-wrapper a').each(function (index,event) {
         var topvalue =  $($(this).attr('href')).offset().top - 250;
-       console.log((windowTop >= topvalue)+'####'+($($(this).attr('href')).offset().top));
-     //  console.log(event,index);
         if (windowTop >= $($(this).attr('href')).offset().top - 250) {
-          //  console.log('hi');
           managemenu(index);
           $('.filter-wrapper .active').removeClass('active');
           $(".service-container").css("z-index", "25");
           $(this).addClass('active');
-           // count += 1;
         }
-        // else{
-        //   count = 0;
-        // }
-     //   console.log(count);
-      //  if(windowTop > 6485)
-      //  {
-      //   $('.filter-wrapper').hide();
-      //  }
-      //  else{
-      //   $('.filter-wrapper').show();
-      //  }
-      });
+        });
+        var collaborateSectionTop = $('.collaborate-section').offset().top - 250;
+        if (windowTop >= collaborateSectionTop) {
+          $('.filterSec').hide();
+        } else {
+          $('.filterSec').show();
+        }
     }
   });
 });
