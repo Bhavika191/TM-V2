@@ -8988,22 +8988,6 @@ body.opentwo {
   border-radius: 6px;
   padding: 24px 48px;
 }
-@media all and (max-width: 1024px) {
-  .aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a.current {
-    padding: 16px 32px;
-  }
-}
-@media all and (max-width: 680px) {
-  .aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 14px;
-    letter-spacing: 0.6px;
-  }
-  .aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a.current {
-    padding: 20px 25px;
-  }
-}
 @media all and (max-width: 1800px) {
   .aboutProjectSec .about-sec {
     margin: 180px 0px 150 0px;
@@ -9248,6 +9232,166 @@ body.opentwo {
     padding: 18px 36px;
   }
 }
+@media all and (max-width: 1024px) {
+  .aboutProjectSec .about-sec {
+    margin: 120px 0px 100 0px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1400px) {
+  .aboutProjectSec .about-sec {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 720px) {
+  .aboutProjectSec .about-sec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .aboutProjectSec .about-sec .subheading {
+    margin-bottom: 25px;
+    line-height: 20px;
+  }
+  .aboutProjectSec .about-sec .mainheading {
+    margin-bottom: 25px;
+    line-height: 60px;
+  }
+  .aboutProjectSec .about-sec .about-content {
+    line-height: 22px;
+  }
+  .aboutProjectSec .image-sec {
+    margin-bottom: 80px;
+  }
+  .aboutProjectSec .objectivegoal-sec {
+    margin: 120px 0px 100px 0px;
+    padding: 0px 80px;
+  }
+  .aboutProjectSec .objectivegoal-sec .left-sec {
+    width: 45%;
+  }
+  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-subheading {
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-mainheading {
+    margin-bottom: 25px;
+    line-height: 32px;
+  }
+  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-about-content {
+    line-height: 20px;
+  }
+  .aboutProjectSec .objectivegoal-sec .right-sec {
+    width: 45%;
+  }
+  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-subheading {
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-mainheading {
+    margin-bottom: 25px;
+    line-height: 32px;
+  }
+  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content {
+    padding-left: 20px;
+  }
+  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content li {
+    line-height: 20px;
+  }
+  .aboutProjectSec .casestudy-container .casestudyfilter-wrapper a.current {
+    padding: 16px 32px;
+  }
+}
+@media all and (max-width: 780px) {
+  .aboutProjectSec .about-sec {
+    padding: 0px;
+    margin: 102px 0px 60 0px;
+    width: 100%;
+  }
+  .aboutProjectSec .about-sec .subheading {
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0.6px;
+  }
+  .aboutProjectSec .about-sec .mainheading {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: -1.2px;
+  }
+  .aboutProjectSec .about-sec .about-content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .aboutProjectSec .image-sec {
+    margin-bottom: 130px;
+  }
+  .aboutProjectSec .objectivegoal-sec {
+    margin: 40px 0px 78px 0px;
+    display: block;
+    padding: 0px;
+  }
+  .aboutProjectSec .objectivegoal-sec .left-sec {
+    width: 100%;
+    margin-bottom: 78px;
+  }
+  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-subheading {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+  }
+  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-mainheading {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-about-content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .aboutProjectSec .objectivegoal-sec .right-sec {
+    width: 100%;
+  }
+  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-subheading {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+  }
+  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-mainheading {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content {
+    padding-left: 18px;
+  }
+  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .aboutProjectSec .casestudy-container .casestudyfilter-wrapper a {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.6px;
+  }
+  .aboutProjectSec .casestudy-container .casestudyfilter-wrapper a.current {
+    padding: 20px 25px;
+  }
+}
 
 .researchSec {
   padding-left: 60px;
@@ -9464,6 +9608,97 @@ body.opentwo {
     left: 120px;
   }
 }
+@media all and (max-width: 1024px) {
+  .researchSec {
+    margin-bottom: 180px;
+  }
+  .researchSec .researchsec-wrapper {
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
+    position: static;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    padding-top: 50px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1400px) {
+  .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 720px) {
+  .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+  .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+    margin-bottom: 20px;
+    line-height: 34px;
+  }
+  .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+    line-height: 20px;
+  }
+}
+@media all and (max-width: 780px) {
+  .researchSec {
+    margin-bottom: 150px;
+    padding: 0px;
+  }
+  .researchSec .researchsec-wrapper {
+    position: relative;
+    margin-bottom: 80px;
+  }
+  .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
+    position: static;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 56px;
+    padding-top: 40px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 780px) and (max-width: 1400px) {
+  .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 780px) and (max-width: 720px) {
+  .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 780px) {
+  .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+  }
+  .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
 
 .solutionsSec {
   padding-left: 60px;
@@ -9575,6 +9810,9 @@ body.opentwo {
   justify-content: space-between;
   padding-bottom: 142px;
 }
+.solutionsSec .leftcontent-rightimageSec:nth-child(even) {
+  flex-direction: row-reverse;
+}
 .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
   width: 50%;
   padding: 0px 150px;
@@ -9639,79 +9877,6 @@ body.opentwo {
   width: 50%;
 }
 .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image img {
-  width: 100%;
-}
-.solutionsSec .rightcontent-leftimageSec {
-  background: var(--primary-white, #FFF);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 142px;
-}
-.solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text {
-  width: 50%;
-  padding: 0px 150px;
-}
-.solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-subheading {
-  margin-bottom: 30px;
-  color: var(--primary-black, #000);
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-@media screen and (max-width: 1600px) {
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-subheading {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-subheading {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-subheading {
-    font-size: 14px;
-  }
-}
-.solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-mainheading {
-  margin-bottom: 48px;
-  color: var(--primary-black, #000);
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 40px;
-  letter-spacing: -0.9px;
-}
-.solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-text {
-  color: var(--body-copy, #6A6A6A);
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 30px;
-  letter-spacing: 0.6px;
-}
-@media screen and (max-width: 1600px) {
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-text {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-text {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-text {
-    font-size: 14px;
-  }
-}
-.solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-image {
-  width: 50%;
-}
-.solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-image img {
   width: 100%;
 }
 @media all and (max-width: 1800px) {
@@ -9814,23 +9979,6 @@ body.opentwo {
   .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
     line-height: 28px;
   }
-  .solutionsSec .rightcontent-leftimageSec {
-    padding-bottom: 140px;
-  }
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text {
-    padding: 0px 140px;
-  }
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-subheading {
-    margin-bottom: 28px;
-    line-height: 28px;
-  }
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-mainheading {
-    margin-bottom: 40px;
-    line-height: 36px;
-  }
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-text {
-    line-height: 28px;
-  }
 }
 @media all and (max-width: 1400px) {
   .solutionsSec {
@@ -9871,23 +10019,6 @@ body.opentwo {
     line-height: 32px;
   }
   .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
-    line-height: 24px;
-  }
-  .solutionsSec .rightcontent-leftimageSec {
-    padding-bottom: 120px;
-  }
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text {
-    padding: 0px 120px;
-  }
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-subheading {
-    margin-bottom: 24px;
-    line-height: 24px;
-  }
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-mainheading {
-    margin-bottom: 36px;
-    line-height: 32px;
-  }
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-text {
     line-height: 24px;
   }
 }
@@ -9932,22 +10063,164 @@ body.opentwo {
   .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
     line-height: 22px;
   }
-  .solutionsSec .rightcontent-leftimageSec {
+}
+@media all and (max-width: 1024px) {
+  .solutionsSec {
+    margin-bottom: 200px;
+  }
+  .solutionsSec .ux-wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .solutionsSec .ux-wrapper .heading-sec {
+    padding: 0px 80px;
+  }
+  .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+  .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
+    line-height: 32px;
+  }
+  .solutionsSec .ux-wrapper .ux-content {
+    padding: 0px 80px;
+  }
+  .solutionsSec .ux-wrapper .ux-content .ux-context {
+    line-height: 20px;
+  }
+  .solutionsSec .leftcontent-rightimageSec {
+    display: block;
     padding-bottom: 100px;
   }
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text {
-    padding: 0px 100px;
+  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
   }
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-subheading {
-    margin-bottom: 22px;
-    line-height: 22px;
+}
+@media screen and (max-width: 1024px) and (max-width: 1400px) {
+  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
+    padding-left: 40px;
+    padding-right: 40px;
   }
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-mainheading {
-    margin-bottom: 32px;
-    line-height: 30px;
+}
+@media screen and (max-width: 1024px) and (max-width: 720px) {
+  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-text {
-    line-height: 22px;
+}
+@media all and (max-width: 1024px) {
+  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
+    margin-bottom: 20px;
+  }
+  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
+    margin-bottom: 20px;
+    line-height: 34px;
+  }
+  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+@media all and (max-width: 780px) {
+  .solutionsSec {
+    margin-bottom: 150px;
+    padding: 0px;
+  }
+  .solutionsSec .ux-wrapper {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media screen and (max-width: 780px) and (max-width: 1400px) {
+  .solutionsSec .ux-wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 780px) and (max-width: 720px) {
+  .solutionsSec .ux-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 780px) {
+  .solutionsSec .ux-wrapper .heading-sec {
+    width: 100%;
+    padding: 0px;
+  }
+  .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0.6px;
+  }
+  .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.54px;
+  }
+  .solutionsSec .ux-wrapper .ux-content {
+    width: 100%;
+    padding: 0px;
+  }
+  .solutionsSec .ux-wrapper .ux-content .ux-context {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .solutionsSec .leftcontent-rightimageSec {
+    display: block;
+    padding-bottom: 84px;
+  }
+  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media screen and (max-width: 780px) and (max-width: 1400px) {
+  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 780px) and (max-width: 720px) {
+  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 780px) {
+  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0.6px;
+  }
+  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.48px;
+  }
+  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image {
+    width: 100%;
+    margin-bottom: 40px;
   }
 }
 
