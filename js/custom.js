@@ -128,12 +128,12 @@ $(document).ready(function () {
           $(this).addClass('active');
         }
         });
-        var collaborateSectionTop = $('.collaborate-section').offset().top - 250;
-        if (windowTop >= collaborateSectionTop) {
-          $('.filterSec').hide();
-        } else {
-          $('.filterSec').show();
-        }
+        // var collaborateSectionTop = $('.collaborate-section').offset().top - 250;
+        // if (windowTop >= collaborateSectionTop) {
+        //   $('.filterSec').hide();
+        // } else {
+        //   $('.filterSec').show();
+        // }
     }
   });
 });
@@ -163,6 +163,7 @@ $(window).on('load', function () {
 $(document).ready(function () {
   let menuScrollTimer = null;
   $(".casestudyfilter-wrapper a").click(function (e) {     
+    e.preventDefault();
       if (menuScrollTimer === null) {
           // Highlight the clicked item
           $('.casestudyfilter-wrapper a.current').removeClass('current');
@@ -343,6 +344,13 @@ $(document).ready(function(){
   });
 });
 
+var panAnime = bodymovin.loadAnimation({
+  container: document.getElementById('panAnime'),
+  path: '/js/json/panAnime.json', // Required
+  renderer: 'svg', // or 'canvas', 'html'
+  loop: true,
+  autoplay: true,
+});
 
  
 
