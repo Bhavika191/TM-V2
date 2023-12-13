@@ -28,7 +28,7 @@ setInterval(function () {
 
 // header sticky on scroll up js
 function hasScrolled() {
- 
+
   var st = $(this).scrollTop();
 
   // Make sure they scroll more than delta
@@ -105,138 +105,138 @@ jQuery(document).ready(function () {
     // If more than 2 Education items, hide the remaining
     $('#service-info' + i + ' .list-wrapper').slice(0, 3).addClass('shown');
     $('#service-info' + i + ' .list-wrapper').not('.shown').hide();
-    $('#servicesec-content' + i + ' .showMore').on('click', (function(index) {
+    $('#servicesec-content' + i + ' .showMore').on('click', (function (index) {
       return function () {
-          $('#service-info' + index + ' .list-wrapper').not('.shown').toggle(200);
-          $(this).toggleClass('showLess');
+        $('#service-info' + index + ' .list-wrapper').not('.shown').toggle(200);
+        $(this).toggleClass('showLess');
       };
-  })(i));
+    })(i));
   }//for loop closed
 });
 //Service page read more and Read less code ends
 
 //Service page active menu navbar starts
 $(document).ready(function () {
-let menuScrollTimer = null;
-$(".filter-wrapper a").click(function (e) {
-  // Prevent default behavior (scroll to element)
-  // e.preventDefault();
-  // Determine the direction of the scroll based on the clicked item's position
-  // let direction = $(this).offset().left > $('.filter-wrapper').width() / 2 ? "-=200px" : "+=200px";
-  // Animate scrollLeft for the container
-  // $('#myBtnContainer').animate({
-  //   scrollLeft: direction
-  // }, "slow");
-   
+  let menuScrollTimer = null;
+  $(".filter-wrapper a").click(function (e) {
+    // Prevent default behavior (scroll to element)
+    // e.preventDefault();
+    // Determine the direction of the scroll based on the clicked item's position
+    // let direction = $(this).offset().left > $('.filter-wrapper').width() / 2 ? "-=200px" : "+=200px";
+    // Animate scrollLeft for the container
+    // $('#myBtnContainer').animate({
+    //   scrollLeft: direction
+    // }, "slow");
+
     if (menuScrollTimer === null) {
-        // Highlight the clicked item
-        $('.filter-wrapper a.active').removeClass('active');
-        $(this).addClass('active');
-        // Smooth scroll to the target section
-        let target = $(this).attr('href');
-        $('html, body').animate({ scrollTop: $(target).offset().top - 250}, 1050);
-        // Set `menuScrollTimer` timer
-        // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
-        // This will also prevent the scroll logic from running
-        menuScrollTimer = setTimeout(function () {
-            clearTimeout(menuScrollTimer);
-            menuScrollTimer = null;
-        }, 1050);
+      // Highlight the clicked item
+      $('.filter-wrapper a.active').removeClass('active');
+      $(this).addClass('active');
+      // Smooth scroll to the target section
+      let target = $(this).attr('href');
+      $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
+      // Set `menuScrollTimer` timer
+      // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
+      // This will also prevent the scroll logic from running
+      menuScrollTimer = setTimeout(function () {
+        clearTimeout(menuScrollTimer);
+        menuScrollTimer = null;
+      }, 1050);
     }
-});
-$(window).scroll(function (e) {
+  });
+  $(window).scroll(function (e) {
     // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
     if (menuScrollTimer === null) {
-        let windowTop = $(this).scrollTop();
-        $('.filter-wrapper a').each(function (event) {
-            if (windowTop >= $($(this).attr('href')).offset().top - 250) {
-                $('.filter-wrapper .active').removeClass('active');
-                $(this).addClass('active');
-            }
-        });
+      let windowTop = $(this).scrollTop();
+      $('.filter-wrapper a').each(function (event) {
+        if (windowTop >= $($(this).attr('href')).offset().top - 250) {
+          $('.filter-wrapper .active').removeClass('active');
+          $(this).addClass('active');
+        }
+      });
     }
-});
+  });
 });
 //Service page active menu navbar ends
 
 //Off set code starts
 jQuery(function ($) {
-$('a[href*="#"]:not([href="#"])').click(function () {
-  var target = $(this.hash);
-  $('html,body').stop().animate({
-    scrollTop: target.offset().top - 110
-  }, 'linear');
-});
-if (location.hash) {
-  var id = $(location.hash);
-}
-$(window).on('load', function () {
+  $('a[href*="#"]:not([href="#"])').click(function () {
+    var target = $(this.hash);
+    $('html,body').stop().animate({
+      scrollTop: target.offset().top - 110
+    }, 'linear');
+  });
   if (location.hash) {
-    $('html,body').animate({ scrollTop: id.offset().top - 110 }, 'linear')
+    var id = $(location.hash);
+  }
+  $(window).on('load', function () {
+    if (location.hash) {
+      $('html,body').animate({ scrollTop: id.offset().top - 110 }, 'linear')
 
-  };
-});
+    };
+  });
 });
 //Offset code ends
 
 //Casestudy Details page active navbar
 $(document).ready(function () {
   let menuScrollTimer = null;
-  $(".casestudyfilter-wrapper a").click(function (e) {     
-      if (menuScrollTimer === null) {
-          // Highlight the clicked item
-          $('.casestudyfilter-wrapper a.current').removeClass('current');
-          $(this).addClass('current');
-          // Smooth scroll to the target section
-          let target = $(this).attr('href');
-          $('html, body').animate({ scrollTop: $(target).offset().top - 250}, 1050);
-          // Set `menuScrollTimer` timer
-          // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
-          // This will also prevent the scroll logic from running
-          menuScrollTimer = setTimeout(function () {
-              clearTimeout(menuScrollTimer);
-              menuScrollTimer = null;
-          }, 1050);
-      }
+  $(".casestudyfilter-wrapper a").click(function (e) {
+    if (menuScrollTimer === null) {
+      // Highlight the clicked item
+      $('.casestudyfilter-wrapper a.current').removeClass('current');
+      $(this).addClass('current');
+      // Smooth scroll to the target section
+      let target = $(this).attr('href');
+      $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
+      // Set `menuScrollTimer` timer
+      // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
+      // This will also prevent the scroll logic from running
+      menuScrollTimer = setTimeout(function () {
+        clearTimeout(menuScrollTimer);
+        menuScrollTimer = null;
+      }, 1050);
+    }
   });
   $(window).scroll(function (e) {
-      // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
-      if (menuScrollTimer === null) {
-          let windowTop = $(this).scrollTop();
-          $('.casestudyfilter-wrapper a').each(function (event) {
-              if (windowTop >= $($(this).attr('href')).offset().top - 250) {
-                  $('.casestudyfilter-wrapper .current').removeClass('current');
-                  $(this).addClass('current');
-              }
-          });
-      }
+    // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
+    if (menuScrollTimer === null) {
+      let windowTop = $(this).scrollTop();
+      $('.casestudyfilter-wrapper a').each(function (event) {
+        if (windowTop >= $($(this).attr('href')).offset().top - 250) {
+          $('.casestudyfilter-wrapper .current').removeClass('current');
+          $(this).addClass('current');
+        }
+      });
+    }
   });
-  });
+});
 //------------------------------------------------------- Shamal's Code ends --------------------------------------------------//
 
 
 // our partner slider starts
 $('.logoSlider').slick({
-    dots: false,
-    arrows: false,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    autoplay: true,
-    infinite: true,
-    pauseOnHover:false,
-    pauseOnFocus: false,
-    speed:3000, 
-    autoplaySpeed: 1000,
-    responsive: [
-      {
-        breakpoint: 1025,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        }
-      },
-    ]
-  });
+  dots: false,
+  arrows: false,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  autoplay: true,
+  infinite: true,
+  pauseOnHover: false,
+  pauseOnFocus: false,
+  speed: 3000,
+  autoplaySpeed: 1000,
+  responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+  ]
+});
 // our partner slider ends
 
 // case study slider js
@@ -344,26 +344,67 @@ if ($(window).width() > 1025) {
 
 
 
-$(document).ready(function(){
-  $('.middleCircle').on('click', function(){
+$(document).ready(function () {
+  $('.middleCircle').on('click', function () {
     $('#box').addClass('boxTwo');
     $('#box svg').addClass('rotate');
     $('.lines').addClass('linesNew');
     $('.middleCircle').addClass('middleCirclenew');
     $('.counterText').addClass('newcounterText');
-    setTimeout(function() {
+    $('.middleCircle').addClass('box_Two');
+    setTimeout(function () {
       $('#box').removeClass('boxTwo');
       $('#box svg').removeClass('rotate');
       $('.lines').removeClass('linesNew');
       $('.middleCircle').removeClass('middleCirclenew');
-		}, 6000);
-    setTimeout(function() {
-      $('.counterText span a').html(function(i, val) { return val*1+1 });
-		},6000);
+      $('.middleCircle').removeClass('box_Two');
+    }, 6000);
+    setTimeout(function () {
+      $('.counterText span a').html(function (i, val) {
+        var incrementedValue = val * 1 + 1;
+        var formattedValue = formatNumber(incrementedValue);
+        localStorage.setItem('formattedValue', formattedValue);
+        /* data save code */
+        $.ajax({
+          type: 'POST',
+          url: 'http://localhost/projects/TM-V2-new/wp-admin/admin-ajax.php',
+          dataType: 'json',
+          data: {
+            action: 'formated_Value',
+            formattedValue: formattedValue,
+          },
+          success: function (res) {
+            return $('#formattedValue').html(res / 10);
+          },
+          error: function (err) {
+            console.error(err);
+          }
+        });
+        /* ends data save code */
+        // return formattedValue;
+      });
+    }, 500);
   });
+  function formatNumber(number) {
+    if (number >= 1000000) {
+      return (number / 1000000).toFixed(1) + 'M';
+    } else if (number >= 1000) {
+      return (number / 1000).toFixed(1) + 'K';
+    } else {
+      return number;
+    }
+  }
 });
 
 
- 
+
+
+
+
+
+
+
+
+
 
 
