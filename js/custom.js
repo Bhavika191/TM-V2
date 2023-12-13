@@ -346,7 +346,7 @@ $(document).ready(function(){
 
 var panAnime = bodymovin.loadAnimation({
   container: document.getElementById('panAnime'),
-  path: '/js/json/panAnime.json', // Required
+  path: site_url+'/js/json/panAnime.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: true,
