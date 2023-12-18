@@ -23,7 +23,7 @@ footer{@include wrapper;margin-bottom: 70px;
                     .innerCircleoneactive{fill: #fff;}
                 }
                 #box{ position: relative;margin: auto;width: 350px;
-                    svg{width: 350px;margin: auto;padding: 40px;animation: rotateEarth 6s infinite;}
+                    svg{width: 350px;margin: auto;padding: 40px;animation: 3s linear infinite rotate-con;}
                     .rotate{padding: 0px;}
                     &.boxTwo{animation: none;}
                     .middleCircle{position: absolute;height: 100px;width: 100px;left: 0;right: 0;top: 0;bottom: 0;margin: auto;border-radius: 50%;background: #fff;display: flex;align-items: center;justify-content: center;cursor: pointer;
