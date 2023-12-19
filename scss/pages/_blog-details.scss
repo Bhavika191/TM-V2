@@ -1,0 +1,113 @@
+.blogdetails-bannerSec{@include wrapper;
+    .blogdetails-wrapper{@include wrapperTwo;margin:190px 0px 160px 0px;width:75%;
+        .subheading{margin-bottom:48px;color:#000;font-family: $fontpoppins;@include font20;font-weight: $fontW700;line-height: 30px; letter-spacing: 1px;text-transform: uppercase;}
+        .mainheading{margin-bottom:48px;color:#000;font-family: $fontpoppins;@include font96;font-weight: $fontW500;line-height: 106px; letter-spacing: -2.88px;}
+    }
+    .blogdetails-imagesec{width: 100%;img{width: 100%;}margin-bottom: 30px;}
+
+// ----------------------------------------media queries-----------------------------------------------//
+    @media all and (max-width:1800px){
+    .blogdetails-wrapper{margin:180px 0px 150px 0px;
+        .subheading{margin-bottom:45px;line-height: 30px; letter-spacing: 1px;}
+        .mainheading{margin-bottom:45px;line-height: 106px; letter-spacing: -2.88px;}
+
+    }
+
+
+    }
+    @media all and (max-width:1600px){
+    .blogdetails-wrapper{margin:170px 0px 140px 0px;
+        .subheading{margin-bottom:40px;line-height: 28px;}
+        .mainheading{margin-bottom:40px;line-height: 96px; }
+   
+    }
+    }
+    @media all and (max-width:1400px){
+    .blogdetails-wrapper{margin:160px 0px 130px 0px;
+        .subheading{margin-bottom:36px;line-height: 24px;}
+        .mainheading{margin-bottom:36px;line-height: 80px; }
+       
+    }
+
+
+
+    }   
+    @media all and (max-width:1200px){
+    .blogdetails-wrapper{margin:150px 0px 120px 0px;
+        .subheading{margin-bottom:30px;line-height: 22px;}
+        .mainheading{margin-bottom:30px;line-height: 70px; }
+        
+
+    }
+
+
+
+    }
+    @media all and (max-width:1024px){
+        .blogdetails-wrapper{margin:120px 0px 100px 0px;@include wrapper;
+            .subheading{margin-bottom:25px;line-height: 20px;}
+            .mainheading{margin-bottom:25px;line-height: 60px; }
+          
+        }
+
+
+
+    }
+    @media all and (max-width:780px){
+        .blogdetails-wrapper{padding: 0px;margin:102px 0px 60px 0px;width:100%;
+            .subheading{margin-bottom:20px;font-size: 12px;font-weight: 700;line-height: 12px;letter-spacing: 0.6px;}
+            .mainheading{margin-bottom:20px;font-size: 40px;font-weight: 500;line-height: 50px;letter-spacing: -1.2px;}
+        }
+
+
+    }
+}
+
+.blogdetails-container{position:sticky;top:-1px;width: 100%;z-index: 8;background: #F1F1F1;@include wrapper;
+    .blogdetails-filter{display: block;overflow-x: auto;
+        &::-webkit-scrollbar {display: none;}
+        &::-webkit-scrollbar-track{display: none;}
+        &::-webkit-scrollbar-thumb{display: none;}
+        .blogdetailsfilter-wrapper{width: max-content;padding:30px 0px;
+            a{display: inline-block;color:#000;text-decoration:none;font-family: $fontpoppins;@include font14;font-weight: $fontW500;line-height: 14px;letter-spacing: 0.7px;text-transform: uppercase;&:not(:last-child){margin-right: 48px;}
+                &.current{font-weight: $fontW700;border: 1px solid #000;border-radius: 6px;padding:24px 48px;}
+            }
+        }
+    }
+    @media all and (max-width:1600px){
+            .blogdetails-filter{  .blogdetailsfilter-wrapper {padding:22px 0px;
+                a {&:not(:last-child){margin-right: 40px;}
+                    &.current{padding: 22px 44px;}                
+                }
+            }}
+        
+    }
+    @media all and (max-width:1400px){
+            .blogdetails-filter{.blogdetailsfilter-wrapper {padding:20px 0px;
+                a {&:not(:last-child){margin-right: 36px;} &.current{padding: 20px 40px;}}
+               }}
+            
+        
+    }
+    @media all and (max-width:1200px){
+            .blogdetails-filter{  
+                .blogdetailsfilter-wrapper {padding:18px 0px;
+                    a {&:not(:last-child){margin-right: 30px;} &.current{padding: 18px 36px;}}
+                }
+            }
+          
+        
+    }
+    @media all and (max-width:1024px){
+            .blogdetailsfilter-wrapper {
+                a {&.current{padding: 16px 32px;}}
+            }
+            
+    }
+    @media all and (max-width:780px){
+            .blogdetailsfilter-wrapper {
+                a{font-size: 12px;font-weight: 500;line-height: 14px;letter-spacing: 0.6px;&.current{padding:20px 25px;}}
+            }
+    }
+    
+}

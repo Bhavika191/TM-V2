@@ -7277,6 +7277,9 @@ body.opentwo {
 .careerFormSec .careerSec .secHeading {
   width: 45%;
   margin-top: 120px;
+  position: sticky;
+  height: 100%;
+  top: 220px;
 }
 .careerFormSec .careerSec .secHeading h1 {
   font-size: 96px;
@@ -7326,13 +7329,13 @@ body.opentwo {
   }
 }
 .careerFormSec .careerSec .collaborateForm {
-  width: 40%;
+  width: 45%;
   padding: 60px;
   background: #ffffff;
 }
 .careerFormSec .careerSec .collaborateForm form label {
   display: block;
-  color: #6A6A6A;
+  color: #000;
   font-size: 18px;
   font-weight: 400;
   line-height: 14px;
@@ -7556,7 +7559,7 @@ body.opentwo {
 }
 .careerFormSec .careerSec .collaborateForm form .form-group label a {
   font-weight: 600;
-  color: #6A6A6A;
+  color: #000;
 }
 .careerFormSec .careerSec .collaborateForm form .form-group input[type=checkbox] {
   position: relative;
@@ -7597,6 +7600,7 @@ body.opentwo {
   }
   .careerFormSec .careerSec .secHeading {
     margin-top: 100px;
+    top: 200px;
   }
   .careerFormSec .careerSec .secHeading h1 {
     line-height: 86px;
@@ -7615,7 +7619,7 @@ body.opentwo {
     padding-bottom: 50px;
   }
   .careerFormSec .careerSec .collaborateForm form .empType a {
-    padding: 10px 50px;
+    padding: 10px 40px;
     line-height: 20px;
     letter-spacing: -0.28px;
   }
@@ -7647,6 +7651,7 @@ body.opentwo {
   }
   .careerFormSec .careerSec .secHeading {
     margin-top: 80px;
+    top: 180px;
   }
   .careerFormSec .careerSec .collaborateForm {
     padding: 40px;
@@ -7659,7 +7664,7 @@ body.opentwo {
     padding-bottom: 30px;
   }
   .careerFormSec .careerSec .collaborateForm form .empType a {
-    padding: 10px 32px;
+    padding: 10px 30px;
     line-height: 18px;
     letter-spacing: -0.28px;
   }
@@ -7687,7 +7692,7 @@ body.opentwo {
     margin: 100px 0px 200px;
   }
   .careerFormSec .careerSec .collaborateForm form .empType a {
-    padding: 10px 25px;
+    padding: 10px 22px;
     line-height: 16px;
   }
 }
@@ -7706,6 +7711,7 @@ body.opentwo {
   }
   .careerFormSec .careerSec .collaborateForm {
     padding: 40px;
+    width: 50%;
   }
   .careerFormSec .careerSec .collaborateForm form select {
     margin-bottom: 50px;
@@ -7737,6 +7743,8 @@ body.opentwo {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 40px;
+    position: static;
+    height: auto;
   }
   .careerFormSec .careerSec .secHeading h1 {
     line-height: 70px;
@@ -7843,48 +7851,53 @@ body.opentwo {
   }
 }
 
-.meetupAdderssSec {
+.career-meetupAdderssSec {
   margin-bottom: 250px;
 }
-.meetupAdderssSec .meetupAdderssContainer {
+.career-meetupAdderssSec .career-meetupAdderssContainer {
   padding-left: 210px;
   padding-right: 210px;
+  display: flex;
+  justify-content: space-between;
 }
 @media screen and (max-width: 1600px) {
-  .meetupAdderssSec .meetupAdderssContainer {
+  .career-meetupAdderssSec .career-meetupAdderssContainer {
     padding-left: 180px;
     padding-right: 180px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .meetupAdderssSec .meetupAdderssContainer {
+  .career-meetupAdderssSec .career-meetupAdderssContainer {
     padding-left: 150px;
     padding-right: 150px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .meetupAdderssSec .meetupAdderssContainer {
+  .career-meetupAdderssSec .career-meetupAdderssContainer {
     padding-left: 120px;
     padding-right: 120px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .meetupAdderssSec .meetupAdderssContainer {
+  .career-meetupAdderssSec .career-meetupAdderssContainer {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 @media screen and (max-width: 720px) {
-  .meetupAdderssSec .meetupAdderssContainer {
+  .career-meetupAdderssSec .career-meetupAdderssContainer {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-.meetupAdderssSec .meetupAdderssContainer .secHeading {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent {
   width: 40%;
-  margin-bottom: 150px;
 }
-.meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading {
+  margin-bottom: 150px;
+  width: 100%;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
   color: #000;
   font-size: 64px;
   font-weight: 500;
@@ -7893,77 +7906,70 @@ body.opentwo {
   margin-bottom: 15px;
 }
 @media screen and (max-width: 1600px) {
-  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
     font-size: 50px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
     font-size: 42px;
   }
 }
 @media screen and (max-width: 720px) {
-  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
     font-size: 32px;
   }
 }
-.meetupAdderssSec .meetupAdderssContainer .secHeading p {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading p {
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
+  color: #6A6A6A;
 }
 @media screen and (max-width: 1600px) {
-  .meetupAdderssSec .meetupAdderssContainer .secHeading p {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading p {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .meetupAdderssSec .meetupAdderssContainer .secHeading p {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading p {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 720px) {
-  .meetupAdderssSec .meetupAdderssContainer .secHeading p {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading p {
     font-size: 16px;
   }
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
-  width: 40%;
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox {
+  width: 100%;
   margin-bottom: 150px;
   background: #ffffff;
   overflow: hidden;
   height: 800px;
   position: relative;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
-  margin-top: -24%;
-}
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:first-child {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox:first-child {
   transform: translateY(0px);
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff {
   transition: 0.6s all ease-in-out;
   height: 200px;
   overflow: hidden;
   position: absolute;
   top: 30px;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.mumbaiOff {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.mumbaiOff {
   left: -800px;
   width: 800px;
   animation: mumbaiOff 6s linear infinite;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.delhiOff {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.delhiOff {
   left: -500px;
   width: 500px;
   animation: delhiOff 6s linear infinite;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.bangaloreOff {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.bangaloreOff {
   left: -1000px;
   width: 1000px;
   animation: bangaloreOff 8s linear infinite;
@@ -7983,39 +7989,39 @@ body.opentwo {
     transform: translateX(calc(1000px + 1000px));
   }
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap {
   transition: 0.6s all ease-in-out;
   height: 75%;
   margin-top: 200px;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd {
   padding: 50px 50px;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd p {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd p {
   color: #5A5A5A;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
 }
 @media screen and (max-width: 1600px) {
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd p {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd p {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd p {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd p {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd p {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd p {
     font-size: 14px;
   }
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateMap {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap {
   position: relative;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateMap .mapLink {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink {
   position: absolute;
   top: 0;
   left: 0;
@@ -8029,7 +8035,7 @@ body.opentwo {
   opacity: 0;
   transition: 0.6s all ease-in-out;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateMap .mapLink a {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink a {
   color: #FFF;
   text-align: center;
   font-size: 20px;
@@ -8044,59 +8050,59 @@ body.opentwo {
   height: 100%;
 }
 @media screen and (max-width: 1600px) {
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateMap .mapLink a {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink a {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateMap .mapLink a {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink a {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateMap .mapLink a {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink a {
     font-size: 14px;
   }
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
   margin-left: 10px;
   width: 20px;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:hover .stateOff {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox:hover .stateOff {
   height: 0;
   transform: translateY(-250px);
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:hover .stateAddMap {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox:hover .stateAddMap {
   height: 100%;
   margin-top: 0px;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:hover .stateAddMap .stateMap .mapLink {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox:hover .stateAddMap .stateMap .mapLink {
   opacity: 1;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact {
   background: #000000;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon {
   height: 48%;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon img {
   transform: translate(-10%, -15%);
-  width: 80%;
+  width: 55%;
   transition: 0.5s all ease-out;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   margin: 0px 50px 30px;
   padding-bottom: 30px;
   position: relative;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox:first-child {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox:first-child {
   margin-top: 0px;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox:last-child {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox:last-child {
   border-bottom: 0px;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox::before {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox::before {
   content: "";
   position: absolute;
   background: url(../images/service-arrow.svg) no-repeat;
@@ -8108,7 +8114,7 @@ body.opentwo {
   width: 20px;
   transition: 0.5s all ease-out;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox h3 {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
   color: #FFF;
   font-size: 40px;
   font-weight: 500;
@@ -8117,500 +8123,684 @@ body.opentwo {
   margin-bottom: 14px;
 }
 @media screen and (max-width: 1600px) {
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox h3 {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox h3 {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 720px) {
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox h3 {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
     font-size: 14px;
   }
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox a {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox a {
   color: #FFF;
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;
 }
 @media screen and (max-width: 1600px) {
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox a {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox a {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox a {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox a {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox a {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox a {
     font-size: 14px;
   }
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact:hover .mailIcon img {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact:hover .mailIcon img {
   transform: translate(120%, -15%) rotate(-30deg);
   width: 50%;
 }
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact:hover .MailIds .idsBox::before {
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact:hover .MailIds .idsBox::before {
   right: 24px;
 }
-@media screen and (max-width: 1600px) {
-  .meetupAdderssSec {
-    margin-bottom: 180px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .secHeading {
-    margin-bottom: 120px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
-    line-height: 62px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
-    margin-bottom: 120px;
-    height: 700px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff {
-    height: 150px;
-    top: 15px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.delhiOff {
-    left: -400px;
-    width: 400px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.mumbaiOff {
-    left: -700px;
-    width: 700px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.bangaloreOff {
-    left: -780px;
-    width: 780px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap {
-    margin-top: 150px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
-    padding: 40px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
-    height: 45%;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
-    width: 75%;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
-    margin: 0px 40px 25px;
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent {
+  width: 40%;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox {
+  width: 100%;
+  margin-bottom: 150px;
+  background: #ffffff;
+  overflow: hidden;
+  height: 800px;
+  position: relative;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox:first-child {
+  transform: translateY(0px);
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff {
+  transition: 0.6s all ease-in-out;
+  height: 200px;
+  overflow: hidden;
+  position: absolute;
+  top: 30px;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.mumbaiOff {
+  left: -800px;
+  width: 800px;
+  animation: mumbaiOff 6s linear infinite;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.delhiOff {
+  left: -500px;
+  width: 500px;
+  animation: delhiOff 6s linear infinite;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.bangaloreOff {
+  left: -1000px;
+  width: 1000px;
+  animation: bangaloreOff 8s linear infinite;
+}
+@keyframes mumbaiOff {
+  0% {
+    transform: translateX(calc(800px + 800px));
   }
 }
-@media screen and (max-width: 1440px) {
-  .meetupAdderssSec {
-    margin-bottom: 150px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .secHeading {
-    margin-bottom: 100px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
-    line-height: 62px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
-    margin-bottom: 100px;
-    height: 600px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff {
-    height: 120px;
-    top: 15px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.delhiOff {
-    left: -300px;
-    width: 300px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.mumbaiOff {
-    left: -600px;
-    width: 600px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.bangaloreOff {
-    left: -620px;
-    width: 620px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap {
-    margin-top: 120px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
-    padding: 25px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
-    height: 38%;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
-    width: 65%;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
-    margin: 0px 30px 25px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
-    margin-top: -28%;
+@keyframes delhiOff {
+  0% {
+    transform: translateX(calc(500px + 500px));
   }
 }
-@media screen and (max-width: 1200px) {
-  .meetupAdderssSec {
-    margin-bottom: 100px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .secHeading {
-    margin-bottom: 80px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
-    line-height: 54px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
-    margin-bottom: 80px;
-    height: 550px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
-    padding: 20px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
-    height: 35%;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
-    width: 60%;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
-    margin: 0px 25px 20px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
-    margin-top: -24%;
+@keyframes bangaloreOff {
+  0% {
+    transform: translateX(calc(1000px + 1000px));
   }
 }
-@media screen and (max-width: 1024px) {
-  .meetupAdderssSec {
-    margin-bottom: 150px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .secHeading {
-    margin-bottom: 60px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
-    line-height: 52px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
-    width: 45%;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
-    padding: 15px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
-    height: 30%;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
-    width: 55%;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
-    margin: 0px 22px 18px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
-    margin-top: -24%;
-  }
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap {
+  transition: 0.6s all ease-in-out;
+  height: 75%;
+  margin-top: 200px;
 }
-@media screen and (max-width: 768px) {
-  .meetupAdderssSec .meetupAdderssContainer .secHeading {
-    margin-bottom: 40px;
-    width: 100%;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
-    line-height: 40px;
-    margin-bottom: 20px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .secHeading p {
-    line-height: 24px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent {
-    flex-wrap: unset;
-    flex-direction: column;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox {
-    width: 100%;
-    height: auto;
-    margin-bottom: 40px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
-    margin-top: unset;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.mumbaiOff {
-    width: 500px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap {
-    margin-top: 100px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd {
-    padding: 30px 24px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd p {
-    font-size: 14px;
-    line-height: 24px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact {
-    margin-bottom: 0px;
-    order: 1;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact:hover .mailIcon img {
-    transform: translate(170%, -15%) rotate(-30deg);
-    width: 40%;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
-    height: 30%;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
-    transform: translate(170%, -15%) rotate(-30deg);
-    width: 40%;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox {
-    margin: 0px 24px 30px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox:last-child {
-    padding-bottom: 55px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox h3 {
-    font-size: 24px;
-    line-height: 34px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox a {
-    font-size: 16px;
-    line-height: 26px;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox::before {
-    right: 24px;
-    height: 15px;
-    width: 15px;
-  }
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd {
+  padding: 50px 50px;
 }
-
-.the-minimalist-sec {
-  padding-left: 210px;
-  padding-right: 210px;
-  display: flex;
-  margin-bottom: 300px;
-}
-@media screen and (max-width: 1600px) {
-  .the-minimalist-sec {
-    padding-left: 180px;
-    padding-right: 180px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .the-minimalist-sec {
-    padding-left: 150px;
-    padding-right: 150px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .the-minimalist-sec {
-    padding-left: 120px;
-    padding-right: 120px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .the-minimalist-sec {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .the-minimalist-sec {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-.the-minimalist-sec .the-minimalist-content {
-  width: 60%;
-  padding: 150px;
-  background: var(--primary-white, #FFF);
-}
-.the-minimalist-sec .the-minimalist-content .subheading {
-  color: #000;
-  font-family: "Poppins", sans-serif;
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd p {
+  color: #5A5A5A;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
-  letter-spacing: -0.6px;
-  text-transform: uppercase;
-  margin-bottom: 30px;
 }
 @media screen and (max-width: 1600px) {
-  .the-minimalist-sec .the-minimalist-content .subheading {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd p {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .the-minimalist-sec .the-minimalist-content .subheading {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd p {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .the-minimalist-sec .the-minimalist-content .subheading {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd p {
     font-size: 14px;
   }
 }
-.the-minimalist-sec .the-minimalist-content .heading {
-  color: #000;
-  font-family: "Poppins", sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 50px;
-  margin-bottom: 48px;
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap {
+  position: relative;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.6s all ease-in-out;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink a {
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 @media screen and (max-width: 1600px) {
-  .the-minimalist-sec .the-minimalist-content .heading {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink a {
+    font-size: 14px;
+  }
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
+  margin-left: 10px;
+  width: 20px;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox:hover .stateOff {
+  height: 0;
+  transform: translateY(-250px);
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox:hover .stateAddMap {
+  height: 100%;
+  margin-top: 0px;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox:hover .stateAddMap .stateMap .mapLink {
+  opacity: 1;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact {
+  background: #000000;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon {
+  height: 48%;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon img {
+  transform: translate(-10%, -15%);
+  width: 55%;
+  transition: 0.5s all ease-out;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0px 50px 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox:first-child {
+  margin-top: 0px;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox:last-child {
+  border-bottom: 0px;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox::before {
+  content: "";
+  position: absolute;
+  background: url(../images/service-arrow.svg) no-repeat;
+  background-size: contain;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -100px;
+  height: 20px;
+  width: 20px;
+  transition: 0.5s all ease-out;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -1.2px;
+  margin-bottom: 14px;
+}
+@media screen and (max-width: 1600px) {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .the-minimalist-sec .the-minimalist-content .heading {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 720px) {
-  .the-minimalist-sec .the-minimalist-content .heading {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
     font-size: 14px;
   }
 }
-.the-minimalist-sec .the-minimalist-content .content {
-  color: #6A6A6A;
-  font-family: "Poppins", sans-serif;
-  font-size: 24px;
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox a {
+  color: #FFF;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 34px;
-  margin-bottom: 48px;
+  line-height: 20px;
 }
 @media screen and (max-width: 1600px) {
-  .the-minimalist-sec .the-minimalist-content .content {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .the-minimalist-sec .the-minimalist-content .content {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox a {
     font-size: 18px;
   }
 }
-@media screen and (max-width: 720px) {
-  .the-minimalist-sec .the-minimalist-content .content {
+@media screen and (max-width: 1400px) {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox a {
     font-size: 16px;
   }
 }
-.the-minimalist-sec .the-minimalist-content a {
-  display: inline-block;
-  padding: 14px 24px;
-  border-radius: 6px;
-  border: 1px solid var(--primary-black, #000);
-  background: var(--primary-white, #FFF);
-  color: #000;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-}
-@media screen and (max-width: 1600px) {
-  .the-minimalist-sec .the-minimalist-content a {
+@media screen and (max-width: 720px) {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox a {
     font-size: 14px;
   }
 }
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact:hover .mailIcon img {
+  transform: translate(120%, -15%) rotate(-30deg);
+  width: 50%;
+}
+.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact:hover .MailIds .idsBox::before {
+  right: 24px;
+}
+@media screen and (max-width: 1600px) {
+  .career-meetupAdderssSec {
+    margin-bottom: 180px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading {
+    margin-bottom: 120px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
+    line-height: 62px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox {
+    margin-bottom: 120px;
+    height: 700px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff {
+    height: 150px;
+    top: 15px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.delhiOff {
+    left: -400px;
+    width: 400px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.mumbaiOff {
+    left: -700px;
+    width: 700px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.bangaloreOff {
+    left: -780px;
+    width: 780px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap {
+    margin-top: 150px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 40px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon {
+    height: 45%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon img {
+    width: 75%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 40px 25px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox {
+    margin-bottom: 120px;
+    height: 700px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff {
+    height: 150px;
+    top: 15px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.delhiOff {
+    left: -400px;
+    width: 400px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.mumbaiOff {
+    left: -700px;
+    width: 700px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.bangaloreOff {
+    left: -780px;
+    width: 780px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap {
+    margin-top: 150px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 40px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon {
+    height: 45%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon img {
+    width: 75%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 40px 25px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .career-meetupAdderssSec {
+    margin-bottom: 150px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading {
+    margin-bottom: 100px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
+    line-height: 62px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox {
+    margin-bottom: 100px;
+    height: 600px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff {
+    height: 120px;
+    top: 15px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.delhiOff {
+    left: -300px;
+    width: 300px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.mumbaiOff {
+    left: -600px;
+    width: 600px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.bangaloreOff {
+    left: -620px;
+    width: 620px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap {
+    margin-top: 120px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 25px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
+    width: 12px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon {
+    height: 38%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon img {
+    width: 65%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 30px 25px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox::before {
+    width: 12px;
+    height: 12px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox {
+    margin-bottom: 100px;
+    height: 600px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff {
+    height: 120px;
+    top: 15px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.delhiOff {
+    left: -300px;
+    width: 300px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.mumbaiOff {
+    left: -600px;
+    width: 600px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.bangaloreOff {
+    left: -620px;
+    width: 620px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap {
+    margin-top: 120px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 25px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
+    width: 12px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon {
+    height: 38%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon img {
+    width: 65%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 30px 25px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox::before {
+    width: 12px;
+    height: 12px;
+  }
+}
 @media screen and (max-width: 1200px) {
-  .the-minimalist-sec .the-minimalist-content a {
-    font-size: 12px;
+  .career-meetupAdderssSec {
+    margin-bottom: 100px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading {
+    margin-bottom: 120px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
+    line-height: 62px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox {
+    margin-bottom: 80px;
+    height: 550px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 20px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
+    width: 10px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon {
+    height: 35%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon img {
+    width: 60%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 25px 20px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox {
+    margin-bottom: 80px;
+    height: 550px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 20px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
+    width: 10px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon {
+    height: 35%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon img {
+    width: 60%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 25px 20px;
   }
 }
-.the-minimalist-sec .the-minimalist-content a img {
-  display: inline;
-  vertical-align: middle;
-}
-.the-minimalist-sec .img-div {
-  width: 40%;
-}
-.the-minimalist-sec .img-div img {
-  width: 100%;
-}
-@media all and (max-width: 1600px) {
-  .the-minimalist-sec {
-    margin-bottom: 250px;
+@media screen and (max-width: 1024px) {
+  .career-meetupAdderssSec {
+    margin-bottom: 150px;
   }
-  .the-minimalist-sec .the-minimalist-content {
-    padding: 140px;
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent {
+    width: 45%;
   }
-  .the-minimalist-sec .the-minimalist-content .subheading {
-    line-height: 26px;
-    letter-spacing: -0.6px;
-    margin-bottom: 28px;
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading {
+    margin-bottom: 60px;
   }
-  .the-minimalist-sec .the-minimalist-content .heading {
-    line-height: 50px;
-    margin-bottom: 38px;
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
+    line-height: 52px;
   }
-  .the-minimalist-sec .the-minimalist-content .content {
-    line-height: 34px;
-    margin-bottom: 38px;
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 15px;
   }
-  .the-minimalist-sec .the-minimalist-content a {
-    padding: 12px 22px;
-    line-height: 16px;
-    letter-spacing: 0.7px;
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
+    width: 12px;
   }
-}
-@media all and (max-width: 1400px) {
-  .the-minimalist-sec {
-    margin-bottom: 200px;
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon {
+    height: 30%;
   }
-  .the-minimalist-sec .the-minimalist-content {
-    padding: 130px;
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon img {
+    width: 55%;
   }
-  .the-minimalist-sec .the-minimalist-content .subheading {
-    line-height: 24px;
-    margin-bottom: 24px;
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 22px 18px;
   }
-  .the-minimalist-sec .the-minimalist-content .heading {
-    line-height: 44px;
-    margin-bottom: 36px;
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent {
+    width: 45%;
   }
-  .the-minimalist-sec .the-minimalist-content .content {
-    line-height: 34px;
-    margin-bottom: 36px;
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 15px;
   }
-  .the-minimalist-sec .the-minimalist-content a {
-    padding: 10px 20px;
-    line-height: 14px;
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
+    width: 12px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon {
+    height: 30%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon img {
+    width: 55%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 22px 18px;
   }
 }
-@media all and (max-width: 1200px) {
-  .the-minimalist-sec {
-    margin-bottom: 200px;
+@media screen and (max-width: 820px) {
+  .career-meetupAdderssSec .career-meetupAdderssContainer {
+    display: block;
   }
-  .the-minimalist-sec .the-minimalist-content {
-    padding: 120px;
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent {
+    width: 100%;
   }
-  .the-minimalist-sec .the-minimalist-content .subheading {
-    line-height: 24px;
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading {
+    margin-bottom: 60px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
+    line-height: 40px;
     margin-bottom: 20px;
   }
-  .the-minimalist-sec .the-minimalist-content .heading {
-    line-height: 36px;
-    margin-bottom: 30px;
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading p {
+    line-height: 24px;
   }
-  .the-minimalist-sec .the-minimalist-content .content {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox {
+    height: auto;
+    margin-bottom: 60px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox:nth-child(even) {
+    margin-top: unset;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.mumbaiOff {
+    width: 500px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap {
+    margin-top: 100px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 30px 24px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact {
+    margin-bottom: 0px;
+    order: 1;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact:hover .mailIcon img {
+    transform: translate(170%, -15%) rotate(-30deg);
+    width: 40%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon {
+    height: 30%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon img {
+    transform: translate(170%, -15%) rotate(-30deg);
+    width: 40%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 24px 30px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox:last-child {
+    padding-bottom: 55px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
+    font-size: 24px;
     line-height: 34px;
-    margin-bottom: 30px;
   }
-  .the-minimalist-sec .the-minimalist-content a {
-    line-height: 12px;
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox a {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox::before {
+    right: 24px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent {
+    width: 100%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox {
+    height: auto;
+    margin-bottom: 60px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox:nth-child(even) {
+    margin-top: unset;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.mumbaiOff {
+    width: 500px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap {
+    margin-top: 100px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd {
+    padding: 30px 24px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact {
+    margin-bottom: 0px;
+    order: 1;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact:hover .mailIcon img {
+    transform: translate(170%, -15%) rotate(-30deg);
+    width: 40%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon {
+    height: 30%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon img {
+    transform: translate(170%, -15%) rotate(-30deg);
+    width: 40%;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox {
+    margin: 0px 24px 30px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox:last-child {
+    padding-bottom: 55px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox a {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox::before {
+    right: 24px;
   }
 }
-@media all and (max-width: 1024px) {
-  .the-minimalist-sec {
-    display: none;
+@media screen and (max-width: 720px) {
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading p {
+    color: #000;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd p {
+    color: #000;
+  }
+  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd p {
+    color: #000;
   }
 }
+
 .aboutProjectSec {
   padding-left: 60px;
   padding-right: 60px;
@@ -8630,7 +8820,7 @@ body.opentwo {
 .aboutProjectSec .about-sec {
   padding-left: 210px;
   padding-right: 210px;
-  margin: 190px 0px 160 0px;
+  margin: 190px 0px 160px 0px;
   width: 75%;
 }
 @media screen and (max-width: 1600px) {
@@ -8741,13 +8931,20 @@ body.opentwo {
 }
 .aboutProjectSec .image-sec {
   width: 100%;
+  overflow: hidden;
+  transition: 0.7s all ease-out;
   margin-bottom: 140px;
 }
 .aboutProjectSec .image-sec img {
-  width: 100%;
+  scale: 1.5;
+  transition: 0.7s all ease-out;
+}
+.aboutProjectSec .image-sec:hover img {
+  scale: unset;
+  transition: 0.7s all ease-out;
 }
 .aboutProjectSec .objectivegoal-sec {
-  margin: 200px 0px 180px 0px;
+  margin: 248px 0px 180px 0px;
   padding-left: 210px;
   padding-right: 210px;
   display: flex;
@@ -8785,7 +8982,7 @@ body.opentwo {
   }
 }
 .aboutProjectSec .objectivegoal-sec .left-sec {
-  width: 46%;
+  width: 40%;
 }
 .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-subheading {
   margin-bottom: 30px;
@@ -8858,7 +9055,7 @@ body.opentwo {
   }
 }
 .aboutProjectSec .objectivegoal-sec .right-sec {
-  width: 46%;
+  width: 40%;
 }
 .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-subheading {
   margin-bottom: 30px;
@@ -8888,24 +9085,24 @@ body.opentwo {
   margin-bottom: 48px;
   color: #000;
   font-family: "Poppins", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
-  line-height: 50px;
+  line-height: 40px;
   letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
   .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-mainheading {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 1280px) {
   .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-mainheading {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 720px) {
   .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-mainheading {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content {
@@ -8990,7 +9187,7 @@ body.opentwo {
 }
 @media all and (max-width: 1800px) {
   .aboutProjectSec .about-sec {
-    margin: 180px 0px 150 0px;
+    margin: 180px 0px 150px 0px;
   }
   .aboutProjectSec .about-sec .subheading {
     margin-bottom: 45px;
@@ -9048,7 +9245,7 @@ body.opentwo {
 }
 @media all and (max-width: 1600px) {
   .aboutProjectSec .about-sec {
-    margin: 170px 0px 140 0px;
+    margin: 170px 0px 140px 0px;
   }
   .aboutProjectSec .about-sec .subheading {
     margin-bottom: 40px;
@@ -9110,7 +9307,7 @@ body.opentwo {
 }
 @media all and (max-width: 1400px) {
   .aboutProjectSec .about-sec {
-    margin: 160px 0px 130 0px;
+    margin: 160px 0px 130px 0px;
   }
   .aboutProjectSec .about-sec .subheading {
     margin-bottom: 36px;
@@ -9172,7 +9369,7 @@ body.opentwo {
 }
 @media all and (max-width: 1200px) {
   .aboutProjectSec .about-sec {
-    margin: 150px 0px 120 0px;
+    margin: 150px 0px 120px 0px;
   }
   .aboutProjectSec .about-sec .subheading {
     margin-bottom: 30px;
@@ -9234,7 +9431,7 @@ body.opentwo {
 }
 @media all and (max-width: 1024px) {
   .aboutProjectSec .about-sec {
-    margin: 120px 0px 100 0px;
+    margin: 120px 0px 100px 0px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -9308,7 +9505,7 @@ body.opentwo {
 @media all and (max-width: 780px) {
   .aboutProjectSec .about-sec {
     padding: 0px;
-    margin: 102px 0px 60 0px;
+    margin: 102px 0px 60px 0px;
     width: 100%;
   }
   .aboutProjectSec .about-sec .subheading {
@@ -9416,9 +9613,17 @@ body.opentwo {
 }
 .researchSec .researchsec-wrapper .img-div {
   width: 100%;
+  overflow: hidden;
+  transition: 0.7s all ease-out;
 }
 .researchSec .researchsec-wrapper .img-div img {
+  scale: 1.5;
+  transition: 0.7s all ease-out;
   width: 100%;
+}
+.researchSec .researchsec-wrapper .img-div:hover img {
+  scale: unset;
+  transition: 0.7s all ease-out;
 }
 .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
   position: absolute;
@@ -10228,6 +10433,7 @@ body.opentwo {
   position: relative;
   padding-left: 60px;
   padding-right: 60px;
+  overflow: hidden;
 }
 @media screen and (max-width: 1400px) {
   .casestudySec {
@@ -10242,9 +10448,7 @@ body.opentwo {
   }
 }
 .casestudySec .moreCasestudy {
-  position: absolute;
   width: 100%;
-  bottom: -100%;
 }
 .casestudySec .moreCasestudy .brandLogos {
   display: flex;
@@ -10277,10 +10481,22 @@ body.opentwo {
 .casestudySec .moreCasestudy .brandLogos .relatedBox.activeTwo {
   width: 100%;
 }
-.casestudySec .circleAnimShow {
-  position: absolute;
-  bottom: 0%;
-  transition: all 1s ease-in-out;
+@media all and (max-width: 1024px) {
+  .casestudySec .moreCasestudy {
+    position: static;
+  }
+  .casestudySec .moreCasestudy .brandLogos .relatedBox {
+    padding: 12px;
+  }
+  .casestudySec .moreCasestudy .brandLogos .relatedBox:nth-child(1) {
+    text-align: center;
+  }
+  .casestudySec .moreCasestudy .brandLogos .relatedBox:nth-child(2) {
+    text-align: center;
+  }
+  .casestudySec .moreCasestudy .brandLogos .relatedBox a img {
+    height: 50px;
+  }
 }
 
 .thankyouSec {
@@ -10373,7 +10589,7 @@ body.opentwo {
   }
 }
 .thankyouSec .thankyou-cta {
-  display: flex;
+  display: inline-flex;
 }
 .thankyouSec .thankyou-cta .cta-black, .thankyouSec .thankyou-cta .cta-white {
   text-align: center;
@@ -10408,4 +10624,445 @@ body.opentwo {
 .thankyouSec .thankyou-cta .cta-black {
   color: #fff;
   background-color: #000;
+}
+@media all and (max-width: 1600px) {
+  .thankyouSec {
+    margin: 180px 0px;
+  }
+  .thankyouSec .thankyou-heading {
+    line-height: 96px;
+    letter-spacing: -1.88px;
+    margin-bottom: 30px;
+  }
+  .thankyouSec .thankyou-content {
+    line-height: 30px;
+    margin-bottom: 70px;
+  }
+  .thankyouSec .thankyou-cta .cta-black, .thankyouSec .thankyou-cta .cta-white {
+    line-height: 16px;
+    padding: 12px 24px;
+    margin-right: 28px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .thankyouSec {
+    margin: 160px 0px;
+  }
+  .thankyouSec .thankyou-heading {
+    line-height: 90px;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+  }
+  .thankyouSec .thankyou-content {
+    line-height: 26px;
+    margin-bottom: 60px;
+  }
+  .thankyouSec .thankyou-cta .cta-black, .thankyouSec .thankyou-cta .cta-white {
+    line-height: 14px;
+    padding: 10px 22px;
+    margin-right: 26px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .thankyouSec .thankyou-heading {
+    line-height: 86px;
+    margin-bottom: 22px;
+  }
+  .thankyouSec .thankyou-content {
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+  .thankyouSec .thankyou-cta .cta-black, .thankyouSec .thankyou-cta .cta-white {
+    line-height: 12px;
+    margin-right: 24px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .thankyouSec {
+    margin: 100px 0px;
+  }
+  .thankyouSec .thankyou-heading {
+    line-height: 80px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .thankyouSec .thankyou-content {
+    line-height: 24px;
+    margin-bottom: 45px;
+    width: 100%;
+  }
+  .thankyouSec .thankyou-cta .cta-black, .thankyouSec .thankyou-cta .cta-white {
+    line-height: 12px;
+    padding: 10px 20px;
+    margin-right: 0px;
+  }
+  .thankyouSec .thankyou-cta .cta-black img, .thankyouSec .thankyou-cta .cta-white img {
+    margin-left: 6px;
+  }
+  .thankyouSec .thankyou-cta .cta-white {
+    margin-right: 20px;
+  }
+}
+@media all and (max-width: 640px) {
+  .thankyouSec {
+    margin: 80px 0px;
+  }
+  .thankyouSec .thankyou-heading {
+    line-height: 60px;
+    margin-bottom: 12px;
+  }
+  .thankyouSec .thankyou-content {
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  .thankyouSec .thankyou-cta {
+    display: block;
+  }
+  .thankyouSec .thankyou-cta .cta-black, .thankyouSec .thankyou-cta .cta-white {
+    line-height: 10px;
+    padding: 8px 16px;
+  }
+  .thankyouSec .thankyou-cta .cta-black img, .thankyouSec .thankyou-cta .cta-white img {
+    margin-left: 5px;
+  }
+  .thankyouSec .thankyou-cta .cta-white {
+    margin-right: 15px;
+    margin-bottom: 16px;
+  }
+}
+
+.blogdetails-bannerSec {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+@media screen and (max-width: 1400px) {
+  .blogdetails-bannerSec {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .blogdetails-bannerSec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.blogdetails-bannerSec .blogdetails-wrapper {
+  padding-left: 210px;
+  padding-right: 210px;
+  margin: 190px 0px 160px 0px;
+  width: 75%;
+}
+@media screen and (max-width: 1600px) {
+  .blogdetails-bannerSec .blogdetails-wrapper {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .blogdetails-bannerSec .blogdetails-wrapper {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .blogdetails-bannerSec .blogdetails-wrapper {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .blogdetails-bannerSec .blogdetails-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .blogdetails-bannerSec .blogdetails-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.blogdetails-bannerSec .blogdetails-wrapper .subheading {
+  margin-bottom: 48px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1600px) {
+  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+    font-size: 14px;
+  }
+}
+.blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+  margin-bottom: 48px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 96px;
+  font-weight: 500;
+  line-height: 106px;
+  letter-spacing: -2.88px;
+}
+@media screen and (max-width: 1600px) {
+  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+    font-size: 74px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+    font-size: 64px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+    font-size: 40px;
+  }
+}
+.blogdetails-bannerSec .blogdetails-imagesec {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.blogdetails-bannerSec .blogdetails-imagesec img {
+  width: 100%;
+}
+@media all and (max-width: 1800px) {
+  .blogdetails-bannerSec .blogdetails-wrapper {
+    margin: 180px 0px 150px 0px;
+  }
+  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+    margin-bottom: 45px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+    margin-bottom: 45px;
+    line-height: 106px;
+    letter-spacing: -2.88px;
+  }
+}
+@media all and (max-width: 1600px) {
+  .blogdetails-bannerSec .blogdetails-wrapper {
+    margin: 170px 0px 140px 0px;
+  }
+  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+    margin-bottom: 40px;
+    line-height: 28px;
+  }
+  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+    margin-bottom: 40px;
+    line-height: 96px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .blogdetails-bannerSec .blogdetails-wrapper {
+    margin: 160px 0px 130px 0px;
+  }
+  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+    margin-bottom: 36px;
+    line-height: 24px;
+  }
+  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+    margin-bottom: 36px;
+    line-height: 80px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .blogdetails-bannerSec .blogdetails-wrapper {
+    margin: 150px 0px 120px 0px;
+  }
+  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+    margin-bottom: 30px;
+    line-height: 22px;
+  }
+  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+    margin-bottom: 30px;
+    line-height: 70px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .blogdetails-bannerSec .blogdetails-wrapper {
+    margin: 120px 0px 100px 0px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1400px) {
+  .blogdetails-bannerSec .blogdetails-wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 720px) {
+  .blogdetails-bannerSec .blogdetails-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+    margin-bottom: 25px;
+    line-height: 20px;
+  }
+  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+    margin-bottom: 25px;
+    line-height: 60px;
+  }
+}
+@media all and (max-width: 780px) {
+  .blogdetails-bannerSec .blogdetails-wrapper {
+    padding: 0px;
+    margin: 102px 0px 60px 0px;
+    width: 100%;
+  }
+  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0.6px;
+  }
+  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: -1.2px;
+  }
+}
+
+.blogdetails-container {
+  position: sticky;
+  top: -1px;
+  width: 100%;
+  z-index: 8;
+  background: #F1F1F1;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+@media screen and (max-width: 1400px) {
+  .blogdetails-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .blogdetails-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.blogdetails-container .blogdetails-filter {
+  display: block;
+  overflow-x: auto;
+}
+.blogdetails-container .blogdetails-filter::-webkit-scrollbar {
+  display: none;
+}
+.blogdetails-container .blogdetails-filter::-webkit-scrollbar-track {
+  display: none;
+}
+.blogdetails-container .blogdetails-filter::-webkit-scrollbar-thumb {
+  display: none;
+}
+.blogdetails-container .blogdetails-filter .blogdetailsfilter-wrapper {
+  width: max-content;
+  padding: 30px 0px;
+}
+.blogdetails-container .blogdetails-filter .blogdetailsfilter-wrapper a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1600px) {
+  .blogdetails-container .blogdetails-filter .blogdetailsfilter-wrapper a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .blogdetails-container .blogdetails-filter .blogdetailsfilter-wrapper a {
+    font-size: 12px;
+  }
+}
+.blogdetails-container .blogdetails-filter .blogdetailsfilter-wrapper a:not(:last-child) {
+  margin-right: 48px;
+}
+.blogdetails-container .blogdetails-filter .blogdetailsfilter-wrapper a.current {
+  font-weight: 700;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 24px 48px;
+}
+@media all and (max-width: 1600px) {
+  .blogdetails-container .blogdetails-filter .blogdetailsfilter-wrapper {
+    padding: 22px 0px;
+  }
+  .blogdetails-container .blogdetails-filter .blogdetailsfilter-wrapper a:not(:last-child) {
+    margin-right: 40px;
+  }
+  .blogdetails-container .blogdetails-filter .blogdetailsfilter-wrapper a.current {
+    padding: 22px 44px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .blogdetails-container .blogdetails-filter .blogdetailsfilter-wrapper {
+    padding: 20px 0px;
+  }
+  .blogdetails-container .blogdetails-filter .blogdetailsfilter-wrapper a:not(:last-child) {
+    margin-right: 36px;
+  }
+  .blogdetails-container .blogdetails-filter .blogdetailsfilter-wrapper a.current {
+    padding: 20px 40px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .blogdetails-container .blogdetails-filter .blogdetailsfilter-wrapper {
+    padding: 18px 0px;
+  }
+  .blogdetails-container .blogdetails-filter .blogdetailsfilter-wrapper a:not(:last-child) {
+    margin-right: 30px;
+  }
+  .blogdetails-container .blogdetails-filter .blogdetailsfilter-wrapper a.current {
+    padding: 18px 36px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .blogdetails-container .blogdetailsfilter-wrapper a.current {
+    padding: 16px 32px;
+  }
+}
+@media all and (max-width: 780px) {
+  .blogdetails-container .blogdetailsfilter-wrapper a {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.6px;
+  }
+  .blogdetails-container .blogdetailsfilter-wrapper a.current {
+    padding: 20px 25px;
+  }
 }

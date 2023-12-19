@@ -7,7 +7,7 @@
         .cta-black{color: #fff;background-color: #000;}
     }
 //------------------------------------------- Media Query --------------------------------------------//
-    @media all and(max-width:1600px){
+    @media all and (max-width:1600px){
     margin: 180px 0px;
     .thankyou-heading{line-height: 96px;letter-spacing: -1.88px;margin-bottom: 30px;}
     .thankyou-content{line-height: 30px;margin-bottom: 70px;}
@@ -15,7 +15,7 @@
         .cta-black,.cta-white{line-height: 16px;padding: 12px 24px;margin-right: 28px;}
     }
     }   
-    @media all and(max-width:1400px){
+    @media all and (max-width:1400px){
     margin: 160px 0px;
     .thankyou-heading{line-height: 90px;letter-spacing: -1px;margin-bottom: 24px;}
     .thankyou-content{line-height: 26px;margin-bottom: 60px;}
@@ -23,7 +23,7 @@
         .cta-black,.cta-white{line-height: 14px;padding: 10px 22px;margin-right: 26px;}
     }
     }  
-    @media all and(max-width:1200px){
+    @media all and (max-width:1200px){
     .thankyou-heading{line-height: 86px;margin-bottom: 22px;}
     .thankyou-content{line-height: 24px;margin-bottom: 50px;}
     .thankyou-cta{

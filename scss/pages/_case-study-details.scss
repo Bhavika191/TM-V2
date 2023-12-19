@@ -1,19 +1,21 @@
 .aboutProjectSec{@include wrapper;
-    .about-sec{@include wrapperTwo;margin:190px 0px 160 0px;width:75%;
+    .about-sec{@include wrapperTwo;margin:190px 0px 160px 0px;width:75%;
         .subheading{margin-bottom:48px;color:#000;font-family: $fontpoppins;@include font20;font-weight: $fontW700;line-height: 30px; letter-spacing: 1px;text-transform: uppercase;}
         .mainheading{margin-bottom:48px;color:#000;font-family: $fontpoppins;@include font96;font-weight: $fontW500;line-height: 106px; letter-spacing: -2.88px;}
         .about-content{color:#6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 30px;}
     }
-    .image-sec{width: 100%;img{width: 100%;}margin-bottom: 140px;}
-    .objectivegoal-sec{margin: 200px 0px 180px 0px;@include wrapperTwo;display: flex;align-items: start;justify-content: space-between;
-        .left-sec{width: 46%;
+    .image-sec{width: 100%;overflow: hidden;transition: 0.7s all ease-out;img{scale: 1.5;transition: 0.7s all ease-out;}margin-bottom: 140px;
+        &:hover{img{scale: unset;transition: 0.7s all ease-out;}}
+    }
+    .objectivegoal-sec{margin: 248px 0px 180px 0px;@include wrapperTwo;display: flex;align-items: start;justify-content: space-between;
+        .left-sec{width: 40%;
             .left-sec-subheading{margin-bottom:30px;color:#000;font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;}
             .left-sec-mainheading{margin-bottom:48px;color:#000;font-family: $fontpoppins;@include font40;font-weight: $fontW500;line-height: 50px; letter-spacing: -1.2px;}
             .left-sec-about-content{color:#6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 30px;}
         }
-        .right-sec{width: 46%;
+        .right-sec{width: 40%;
             .right-sec-subheading{margin-bottom:30px;color:#000;font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;}
-            .right-sec-mainheading{margin-bottom:48px;color:#000;font-family: $fontpoppins;@include font40;font-weight: $fontW500;line-height: 50px; letter-spacing: -1.2px;}
+            .right-sec-mainheading{margin-bottom:48px;color:#000;font-family: $fontpoppins;@include font30;font-weight: $fontW500;line-height: 40px; letter-spacing: -1.2px;}
             .right-sec-about-content{padding-left: 24px;
                 li{list-style: disc;color:#6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 30px;}
             }
@@ -33,7 +35,7 @@
     }
 // ----------------------------------------media queries-----------------------------------------------//
     @media all and (max-width:1800px){
-    .about-sec{margin:180px 0px 150 0px;
+    .about-sec{margin:180px 0px 150px 0px;
         .subheading{margin-bottom:45px;line-height: 30px; letter-spacing: 1px;}
         .mainheading{margin-bottom:45px;line-height: 106px; letter-spacing: -2.88px;}
         .about-content{line-height: 30px;}
@@ -55,7 +57,7 @@
     } 
     }
     @media all and (max-width:1600px){
-    .about-sec{margin:170px 0px 140 0px;
+    .about-sec{margin:170px 0px 140px 0px;
         .subheading{margin-bottom:40px;line-height: 28px;}
         .mainheading{margin-bottom:40px;line-height: 96px; }
         .about-content{line-height: 28px;}
@@ -84,7 +86,7 @@
     }
     }
     @media all and (max-width:1400px){
-    .about-sec{margin:160px 0px 130 0px;
+    .about-sec{margin:160px 0px 130px 0px;
         .subheading{margin-bottom:36px;line-height: 24px;}
         .mainheading{margin-bottom:36px;line-height: 80px; }
         .about-content{line-height: 28px;}
@@ -112,7 +114,7 @@
     }
     }   
     @media all and (max-width:1200px){
-    .about-sec{margin:150px 0px 120 0px;
+    .about-sec{margin:150px 0px 120px 0px;
         .subheading{margin-bottom:30px;line-height: 22px;}
         .mainheading{margin-bottom:30px;line-height: 70px; }
         .about-content{line-height: 24px;}
@@ -142,7 +144,7 @@
     }
     }
     @media all and (max-width:1024px){
-        .about-sec{margin:120px 0px 100 0px;@include wrapper;
+        .about-sec{margin:120px 0px 100px 0px;@include wrapper;
             .subheading{margin-bottom:25px;line-height: 20px;}
             .mainheading{margin-bottom:25px;line-height: 60px; }
             .about-content{line-height: 22px;}
@@ -169,7 +171,7 @@
         }
     }
     @media all and (max-width:780px){
-        .about-sec{padding: 0px;margin:102px 0px 60 0px;width:100%;
+        .about-sec{padding: 0px;margin:102px 0px 60px 0px;width:100%;
             .subheading{margin-bottom:20px;font-size: 12px;font-weight: 700;line-height: 12px;letter-spacing: 0.6px;}
             .mainheading{margin-bottom:20px;font-size: 40px;font-weight: 500;line-height: 50px;letter-spacing: -1.2px;}
             .about-content{font-size: 14px;font-weight: 400;line-height: 24px;}
@@ -199,10 +201,9 @@
 
 .researchSec{@include wrapper;margin-bottom:350px;
     .researchsec-wrapper{position: relative;margin-bottom:250px;
-        .img-div{
-            width: 100%;
-            img{width: 100%;}
-            // &:hover{img{transform: scale(1);}}
+        .img-div{width: 100%;overflow: hidden;transition: 0.7s all ease-out;
+            img{scale: 1.5;transition: 0.7s all ease-out;width: 100%;}
+            &:hover{img{scale: unset;transition: 0.7s all ease-out;}}
         }
         .research-card-type1,.research-card-type2{position: absolute;background: var(--primary-white, #FFF);padding: 80px;width:580px;
             .research-card-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;}
@@ -429,8 +430,8 @@
 }
 }
 
-.casestudySec{position: relative;@include wrapper;
-    .moreCasestudy {position: absolute;width: 100%;bottom: -100%;
+.casestudySec{position: relative;@include wrapper;overflow:hidden;
+    .moreCasestudy {width: 100%;
         .brandLogos {display: flex;align-items: center;
             .relatedBox {padding: 30px;width: 50%;background: #00C859;transition: 0.6s all;
                 a {display: block;width: 100%;cursor: url(../images/mouse-cursor-pages.png) 30 30, auto;
@@ -443,7 +444,25 @@
             }
         }
     }
-    .circleAnimShow{position:absolute; bottom:0%;transition: all 1s ease-in-out;}
+    // .circleAnimShow{position:absolute; bottom:0%;transition: all 1s ease-in-out;}
+
+    @media all and (max-width:1024px){
+        .moreCasestudy{
+            position: static;
+            .brandLogos .relatedBox{
+                padding: 12px;
+                &:nth-child(1){
+                    text-align: center;
+                }
+                &:nth-child(2){
+                    text-align: center;
+                }
+                a img{
+                    height: 50px;
+                }
+            }
+        }
+    }
 }
 
 // .impactSec{
