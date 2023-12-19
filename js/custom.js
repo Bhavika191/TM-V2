@@ -128,12 +128,12 @@ $(document).ready(function () {
           $(this).addClass('active');
         }
         });
-        // var collaborateSectionTop = $('.collaborate-section').offset().top - 250;
-        // if (windowTop >= collaborateSectionTop) {
-        //   $('.filterSec').hide();
-        // } else {
-        //   $('.filterSec').show();
-        // }
+        var collaborateSectionTop = $('.collaborate-section').offset().top - 250;
+        if (windowTop >= collaborateSectionTop) {
+          $('.filterSec').hide();
+        } else {
+          $('.filterSec').show();
+        }
     }
   });
 });

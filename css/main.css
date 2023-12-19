@@ -7436,6 +7436,10 @@ body.opentwo {
     font-size: 12px;
   }
 }
+.careerFormSec .careerSec .collaborateForm form .empType a:hover {
+  color: #FFF;
+  background: #000;
+}
 .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
   display: flex;
   justify-content: space-between;
@@ -8936,8 +8940,9 @@ body.opentwo {
   margin-bottom: 140px;
 }
 .aboutProjectSec .image-sec img {
-  scale: 1.5;
+  scale: 1.2;
   transition: 0.7s all ease-out;
+  width: 100%;
 }
 .aboutProjectSec .image-sec:hover img {
   scale: unset;
@@ -8982,7 +8987,7 @@ body.opentwo {
   }
 }
 .aboutProjectSec .objectivegoal-sec .left-sec {
-  width: 40%;
+  width: 38%;
 }
 .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-subheading {
   margin-bottom: 30px;
@@ -9055,7 +9060,7 @@ body.opentwo {
   }
 }
 .aboutProjectSec .objectivegoal-sec .right-sec {
-  width: 40%;
+  width: 38%;
 }
 .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-subheading {
   margin-bottom: 30px;
@@ -9617,7 +9622,7 @@ body.opentwo {
   transition: 0.7s all ease-out;
 }
 .researchSec .researchsec-wrapper .img-div img {
-  scale: 1.5;
+  scale: 1.2;
   transition: 0.7s all ease-out;
   width: 100%;
 }
