@@ -46,7 +46,7 @@ function hasScrolled() {
   lastScrollTop = st;
 }
 
-//---------------------------------------------------------------------- Shamal's Js Code Starts ---------------------------------------------------------------//
+//---------------------------------------------------------Shamal's Js Code Starts ---------------------------------------------------------------//
 
 //Service page sticky property starts
 jQuery(document).ready(function () {
@@ -91,7 +91,7 @@ jQuery(document).ready(function () {
 });
 //Service page read more and Read less code ends
 
-//Service page active menu navbar starts
+//Service page active menu navbar code starts
 $(document).ready(function () {
   let menuScrollTimer = null;
   $(".filter-wrapper a").click(function (e) {
@@ -128,16 +128,16 @@ $(document).ready(function () {
           $(this).addClass('active');
         }
         });
-        // var collaborateSectionTop = $('.collaborate-section').offset().top - 250;
-        // if (windowTop >= collaborateSectionTop) {
-        //   $('.filterSec').hide();
-        // } else {
-        //   $('.filterSec').show();
-        // }
+        var collaborateSectionTop = $('.collaborate-section').offset().top - 250;
+        if (windowTop >= collaborateSectionTop) {
+          $('.filterSec').hide();
+        } else {
+          $('.filterSec').show();
+        }
     }
   });
 });
-//Service page active menu navbar ends
+//Service page active menu navbar code ends
 
 //Off set code starts
 jQuery(function ($) {
@@ -159,7 +159,7 @@ jQuery(function ($) {
 });
 //Offset code ends
 
-//Casestudy Details page active navbar
+//Casestudy Details page active code navbar
 $(document).ready(function () {
   let menuScrollTimer = null;
   $(".casestudyfilter-wrapper a").click(function (e) {     
@@ -193,7 +193,80 @@ $(document).ready(function () {
     }
   });
 });
-//------------------------------------------------------- Shamal's Code ends --------------------------------------------------//
+// Casestudy Details page active navbar code ends
+
+//Casestudy page casestudies footer animation code starts
+if ($(window).width() > 1024) {
+  $(document).ready(function () {
+    $(".relatedBox").on('mouseover', function () {
+      $(".relatedBox").removeClass("active");
+      if ($(this).hasClass("active")) {
+        $(this).removeClass("active");
+        $(this).siblings().removeClass("deactive");
+      } else {
+        $(this).addClass("active");
+        $(this).siblings().addClass("deactive");
+      }
+      return false;
+    });
+  });
+  $('.relatedBox').on('mouseleave', function () {
+    $('.relatedBox').removeClass('active');
+    $('.relatedBox').removeClass("deactive");
+  });
+}
+// $(window).on('resize scroll', function () {
+//   if ($('.casestudySec').length) {
+//     if ($('.casestudySec').isInViewport()) {
+//       setTimeout(() => {
+//         $('.moreCasestudy').addClass('circleAnimShow');
+//       }, 1500);
+//     } else {
+//       $('.moreCasestudy').removeClass('circleAnimShow');
+//     }
+//   }
+// });
+
+//Casestudy page casestudies footer animation code ends
+
+//Blog details page active navbar code starts
+$(document).ready(function () {
+  let menuScrollTimer = null;
+  $(".blogdetailsfilter-wrapper a").click(function (e) {     
+    e.preventDefault();
+      if (menuScrollTimer === null) {
+          // Highlight the clicked item
+          $('.blogdetailsfilter-wrapper a.current').removeClass('current');
+          $(this).addClass('current');
+          // Smooth scroll to the target section
+          let target = $(this).attr('href');
+          $('html, body').animate({ scrollTop: $(target).offset().top - 250}, 1050);
+          // Set `menuScrollTimer` timer
+          // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
+          // This will also prevent the scroll logic from running
+          menuScrollTimer = setTimeout(function () {
+              clearTimeout(menuScrollTimer);
+              menuScrollTimer = null;
+          }, 1050);
+      }
+  });
+  $(window).scroll(function (e) {
+    // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
+    if (menuScrollTimer === null) {
+      let windowTop = $(this).scrollTop();
+      $('.blogdetailsfilter-wrapper a').each(function (event) {
+        if (windowTop >= $($(this).attr('href')).offset().top - 250) {
+          $('.blogdetailsfilter-wrapper .current').removeClass('current');
+          $(this).addClass('current');
+        }
+      });
+    }
+  });
+});
+//Blog details page active navbar code ends
+
+
+//------------------------------------------------------- Shamal's JS Code ends --------------------------------------------------//
 
 
 // our partner slider starts
