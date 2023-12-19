@@ -1080,7 +1080,7 @@ footer .footerWrapper .footerData .footerGame #box svg {
   width: 350px;
   margin: auto;
   padding: 40px;
-  animation: rotateEarth 6s infinite;
+  animation: 3s linear infinite rotate-con;
 }
 footer .footerWrapper .footerData .footerGame #box .rotate {
   padding: 0px;
