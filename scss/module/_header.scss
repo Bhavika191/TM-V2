@@ -6,7 +6,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.5s ease-in-out;
         .navDiv{width: 50%;display: flex;align-items: center;justify-content: flex-end;margin: 26px 0px;
             .navList{
                 a{ display: inline-block;text-decoration: none;@include font14;font-weight: $fontW700;line-height: 18px;letter-spacing: 0.7px;text-transform: uppercase;text-align: center;color: #000;}
-                .headerCta{border-radius: 6px;background-color: #FF0D47;padding: 14px 28px;margin: 0px 40px;color: #FFF;}
+                .headerCta{border-radius: 6px;background-color: #FF0D47;padding: 16px 48px;margin: 0px 40px;color: #FFF;border: none;}
             }
             .hamburgerDiv{
                 .button_container {
@@ -72,7 +72,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.5s ease-in-out;
             .logoDiv{a img{width: 200px;}}
             .navDiv{margin: 22px 0px;
                 .navList{
-                    .headerCta{padding: 10px 20px;margin: 0px 30px;font-size: 12px;}
+                    .headerCta{padding: 14px 40px;margin: 0px 30px;font-size: 12px;}
                 }
                 .hamburgerDiv{
                     .button_container {
@@ -111,7 +111,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.5s ease-in-out;
             .navDiv{margin: 20px 0px;
                 .navList{
                     a{font-size: 12px;}
-                    .headerCta{padding: 8px 16px;margin: 0px 25px;font-size: 10px;}
+                    .headerCta{padding: 10px 35px;margin: 0px 25px;font-size: 10px;svg{height: 9px;width: 9px;right: -1.4rem;}}
                 }
                 .hamburgerDiv{
                     .button_container {
@@ -145,7 +145,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.5s ease-in-out;
             .logoDiv{a img{width: 150px;}}
             .navDiv{margin: 18px 0px;
                 .navList{
-                    .headerCta{padding: 6px 14px;}
+                    .headerCta{padding: 10px 35px;}
                 }
                 .hamburgerDiv{
                     .button_container {

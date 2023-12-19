@@ -603,9 +603,10 @@ header .headerWrapper .navDiv .navList a {
 header .headerWrapper .navDiv .navList .headerCta {
   border-radius: 6px;
   background-color: #FF0D47;
-  padding: 14px 28px;
+  padding: 16px 48px;
   margin: 0px 40px;
   color: #FFF;
+  border: none;
 }
 header .headerWrapper .navDiv .hamburgerDiv .button_container {
   position: relative;
@@ -796,7 +797,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     margin: 22px 0px;
   }
   header .headerWrapper .navDiv .navList .headerCta {
-    padding: 10px 20px;
+    padding: 14px 40px;
     margin: 0px 30px;
     font-size: 12px;
   }
@@ -844,9 +845,14 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     font-size: 12px;
   }
   header .headerWrapper .navDiv .navList .headerCta {
-    padding: 8px 16px;
+    padding: 10px 35px;
     margin: 0px 25px;
     font-size: 10px;
+  }
+  header .headerWrapper .navDiv .navList .headerCta svg {
+    height: 9px;
+    width: 9px;
+    right: -1.4rem;
   }
   header .headerWrapper .navDiv .hamburgerDiv .button_container.active::before {
     height: 50px;
@@ -886,7 +892,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     margin: 18px 0px;
   }
   header .headerWrapper .navDiv .navList .headerCta {
-    padding: 6px 14px;
+    padding: 10px 35px;
   }
   header .headerWrapper .navDiv .hamburgerDiv .button_container.active::before {
     height: 40px;
@@ -1971,7 +1977,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   animation-delay: 0.9s;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .casestudyImg img {
-  transform: rotate(6deg) scale(1.2);
+  transform: scale(1.1);
   transition: 0.7s all ease-out;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc {
@@ -1980,7 +1986,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   left: 0;
   right: 0;
   margin: 50px;
-  transition: 0.7s all ease-out;
+  transition: 0.7s all ease-in-out;
   z-index: 2;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc h3 {
@@ -2034,7 +2040,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   position: relative;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:hover .casestudyImg img {
-  transform: rotate(0deg) scale(1);
+  transform: scale(1);
   transition: 0.7s all ease-out;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:hover .casestudyImg::before {
@@ -2049,7 +2055,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:hover .caseStudydesc {
   bottom: 0;
-  transition: 0.7s all ease-out;
+  transition: 0.7s all ease-in-out;
 }
 .caseStudyhpsection .casestudyWrapper .ctaDiv {
   text-align: right;
@@ -2212,7 +2218,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     margin-top: unset;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .casestudyImg img {
-    transform: rotate(0deg) scale(1);
+    transform: scale(1);
     transition: 0.7s all ease-out;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .casestudyImg::before {
@@ -6604,7 +6610,7 @@ body.opentwo {
   animation-delay: 0.9s;
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .casestudyImg img {
-  transform: rotate(6deg) scale(1.2);
+  transform: scale(1.1);
   transition: 0.7s all ease-out;
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc {
@@ -6667,8 +6673,8 @@ body.opentwo {
   position: relative;
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:hover .casestudyImg img {
-  transform: rotate(0deg) scale(1);
-  transition: 0.7s all ease-out;
+  transform: scale(1);
+  transition: 0.7s all ease-in-out;
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:hover .casestudyImg::before {
   content: "";
@@ -6682,7 +6688,7 @@ body.opentwo {
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:hover .caseStudydesc {
   bottom: 0;
-  transition: 0.7s all ease-out;
+  transition: 0.7s all ease-in-out;
 }
 @media screen and (max-width: 1920px) {
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(odd) {
@@ -6807,7 +6813,7 @@ body.opentwo {
     position: relative;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .casestudyImg img {
-    transform: rotate(0deg) scale(1);
+    transform: scale(1);
     transition: 0.7s all ease-out;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .casestudyImg::before {
@@ -6822,7 +6828,6 @@ body.opentwo {
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc {
     bottom: 0;
-    transition: 0.7s all ease-out;
     margin: 20px;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h3 {
