@@ -975,6 +975,8 @@ footer {
   padding-left: 60px;
   padding-right: 60px;
   margin-bottom: 70px;
+  position: relative;
+  z-index: 3;
 }
 @media screen and (max-width: 1400px) {
   footer {
@@ -1034,15 +1036,15 @@ footer .footerWrapper .footerData .footerMenus ul li a {
 }
 footer .footerWrapper .footerData .footerGame {
   width: 27%;
+  position: relative;
 }
 footer .footerWrapper .footerData .footerGame .counterText {
-  display: none;
-  margin-bottom: 20px;
+  transition: 1.5s all ease-in-out;
+  position: absolute;
+  bottom: 60%;
+  opacity: 0;
 }
-footer .footerWrapper .footerData .footerGame .newcounterText {
-  display: block;
-}
-footer .footerWrapper .footerData .footerGame .newcounterText h3 {
+footer .footerWrapper .footerData .footerGame .counterText h3 {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1051,25 +1053,34 @@ footer .footerWrapper .footerData .footerGame .newcounterText h3 {
   margin: 0 auto;
 }
 @media screen and (max-width: 1600px) {
-  footer .footerWrapper .footerData .footerGame .newcounterText h3 {
+  footer .footerWrapper .footerData .footerGame .counterText h3 {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 720px) {
-  footer .footerWrapper .footerData .footerGame .newcounterText h3 {
+  footer .footerWrapper .footerData .footerGame .counterText h3 {
     font-size: 12px;
   }
 }
-footer .footerWrapper .footerData .footerGame .newcounterText h3 span {
+footer .footerWrapper .footerData .footerGame .counterText h3 span {
   font-weight: 600;
 }
+footer .footerWrapper .footerData .footerGame .newcounterText {
+  bottom: 106%;
+  transition: 1.5s all ease-in-out;
+  opacity: 1;
+}
 footer .footerWrapper .footerData .footerGame #box svg.rotate {
-  animation: 0.5s linear infinite rotate-con;
-  border-radius: 350px;
+  transition: transform 5s cubic-bezier(0.9, 0.2, 0.6, 1);
+  transform: rotate(2160deg);
+  border-radius: 380px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.1249982119deg, #05FB00 116.2499964237deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474deg, #F00 360deg);
 }
 footer .footerWrapper .footerData .footerGame #box svg.rotate .linesNew {
   display: none;
+}
+footer .footerWrapper .footerData .footerGame #box svg.rotate .svgCurveLine {
+  display: block;
 }
 footer .footerWrapper .footerData .footerGame #box svg.rotate .innerCircleactive {
   filter: none;
@@ -1080,16 +1091,24 @@ footer .footerWrapper .footerData .footerGame #box svg.rotate .innerCircleoneact
 footer .footerWrapper .footerData .footerGame #box {
   position: relative;
   margin: auto;
-  width: 350px;
+  width: 380px;
+  height: 380px;
+  background: #fff;
+}
+footer .footerWrapper .footerData .footerGame #box .fanRotatediv {
+  animation: 2s linear infinite rotate-con;
 }
 footer .footerWrapper .footerData .footerGame #box svg {
-  width: 350px;
+  width: 380px;
+  height: 380px;
   margin: auto;
-  padding: 40px;
-  animation: 3s linear infinite rotate-con;
+  transition: none;
 }
-footer .footerWrapper .footerData .footerGame #box .rotate {
-  padding: 0px;
+footer .footerWrapper .footerData .footerGame #box svg .linesNew {
+  display: block;
+}
+footer .footerWrapper .footerData .footerGame #box svg .svgCurveLine {
+  display: none;
 }
 footer .footerWrapper .footerData .footerGame #box.boxTwo {
   animation: none;
@@ -1130,27 +1149,7 @@ footer .footerWrapper .footerData .footerGame #box .innerCircle {
   0% {
     transform: rotate(0deg);
   }
-  50% {
-    transform: rotate(180deg);
-  }
   100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotateEarth {
-  0% {
-    transform: rotate(0deg);
-  }
-  8.33%, 25% {
-    transform: rotate(90deg);
-  }
-  33.33%, 50% {
-    transform: rotate(180deg);
-  }
-  58.33%, 75% {
-    transform: rotate(270deg);
-  }
-  83.33%, 100% {
     transform: rotate(360deg);
   }
 }
@@ -1364,21 +1363,19 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   footer .footerWrapper .footerData .footerGame {
     width: 30%;
   }
-  footer .footerWrapper .footerData .footerGame .counterText {
-    margin-bottom: 18px;
-  }
   footer .footerWrapper .footerData .footerGame .newcounterText h3 {
     line-height: 21px;
   }
   footer .footerWrapper .footerData .footerGame #box svg.rotate {
-    border-radius: 300px;
+    border-radius: 310px;
   }
   footer .footerWrapper .footerData .footerGame #box {
-    width: 300px;
+    width: 310px;
+    height: 310px;
   }
   footer .footerWrapper .footerData .footerGame #box svg {
-    width: 300px;
-    padding: 30px;
+    width: 310px;
+    height: 310px;
   }
   footer .footerWrapper .footerData .footerGame #box .middleCircle {
     height: 80px;
@@ -1441,17 +1438,19 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   footer .footerWrapper .footerData .footerGame {
     width: 32%;
   }
-  footer .footerWrapper .footerData .footerGame .counterText {
-    margin-bottom: 16px;
+  footer .footerWrapper .footerData .footerGame .newcounterText {
+    bottom: 104%;
   }
   footer .footerWrapper .footerData .footerGame #box svg.rotate {
-    border-radius: 250px;
+    border-radius: 290px;
   }
   footer .footerWrapper .footerData .footerGame #box {
-    width: 250px;
+    width: 290px;
+    height: 290px;
   }
   footer .footerWrapper .footerData .footerGame #box svg {
-    width: 250px;
+    width: 290px;
+    height: 290px;
     padding: 25px;
   }
   footer .footerWrapper .footerData .footerGame #box .middleCircle {
@@ -1492,7 +1491,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     width: 30px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   footer .footerWrapper {
     padding: 70px;
   }
@@ -1507,13 +1506,15 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     width: 100%;
   }
   footer .footerWrapper .footerData .footerGame #box svg.rotate {
-    border-radius: 200px;
+    border-radius: 270px;
   }
   footer .footerWrapper .footerData .footerGame #box {
-    width: 200px;
+    width: 270px;
+    height: 270px;
   }
   footer .footerWrapper .footerData .footerGame #box svg {
-    width: 200px;
+    width: 270px;
+    height: 270px;
     padding: 20px;
   }
   footer .footerWrapper .footerData .footerSubscribe p {
@@ -1563,20 +1564,22 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   footer .footerWrapper .footerData .footerGame {
     width: 100%;
-    margin: 60px 0px;
+    margin: 120px 0px 60px;
   }
   footer .footerWrapper .footerData .footerGame .counterText {
     margin-bottom: 14px;
     width: 100%;
   }
   footer .footerWrapper .footerData .footerGame #box svg.rotate {
-    border-radius: 230px;
+    border-radius: 300px;
   }
   footer .footerWrapper .footerData .footerGame #box {
-    width: 230px;
+    width: 300px;
+    height: 300px;
   }
   footer .footerWrapper .footerData .footerGame #box svg {
-    width: 230px;
+    width: 300px;
+    height: 300px;
     padding: 10px;
   }
   footer .footerWrapper .footerData .footerGame #box .middleCircle {
@@ -1735,7 +1738,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .videoSection .videosecWrapper .secHeading {
     padding-left: 20px;
     padding-right: 20px;
@@ -1902,7 +1905,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .caseStudyhpsection .casestudyWrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -1977,7 +1980,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   animation-delay: 0.9s;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .casestudyImg img {
-  transform: scale(1.1);
+  transform: scale(1.08);
   transition: 0.7s all ease-out;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc {
@@ -2319,7 +2322,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .servicehpSection .serviceSecwrapper .secHeading {
     padding-left: 20px;
     padding-right: 20px;
@@ -2735,7 +2738,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .storyhpSection .storysecWrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -3343,7 +3346,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .ourPartnershpsec .ourpartnerWrapper .secHeading {
     padding-left: 20px;
     padding-right: 20px;
@@ -3527,7 +3530,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .customerhpsection .customerWrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -3988,7 +3991,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .blogshpsection .blogsWrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -4058,7 +4061,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   margin-top: -7%;
 }
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogImg img {
-  scale: 1.5;
+  scale: 1.1;
   transition: 0.7s all ease-out;
 }
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails {
@@ -5524,7 +5527,7 @@ a.showLess::after {
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .collaborateFormSec .collaborateSec {
     padding-left: 20px;
     padding-right: 20px;
@@ -5955,7 +5958,7 @@ a.showLess::after {
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .meetupAdderssSec .meetupAdderssContainer {
     padding-left: 20px;
     padding-right: 20px;
@@ -6509,6 +6512,7 @@ body.opentwo {
 .caseStudyListingsec .casestudyWrapper {
   padding-left: 210px;
   padding-right: 210px;
+  position: relative;
 }
 @media screen and (max-width: 1600px) {
   .caseStudyListingsec .casestudyWrapper {
@@ -6534,7 +6538,7 @@ body.opentwo {
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .caseStudyListingsec .casestudyWrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -6610,7 +6614,7 @@ body.opentwo {
   animation-delay: 0.9s;
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .casestudyImg img {
-  transform: scale(1.1);
+  transform: scale(1.08);
   transition: 0.7s all ease-out;
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc {
@@ -6690,9 +6694,22 @@ body.opentwo {
   bottom: 0;
   transition: 0.7s all ease-in-out;
 }
+.caseStudyListingsec .casestudyWrapper #myButton {
+  width: 33%;
+  position: absolute;
+  bottom: 130px;
+  text-align: center;
+}
+.caseStudyListingsec .casestudyWrapper #myButton.even-based {
+  right: 210px;
+}
 @media screen and (max-width: 1920px) {
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:nth-child(odd) {
     margin-top: -20%;
+  }
+  .caseStudyListingsec .casestudyWrapper #myButton {
+    width: 31%;
+    bottom: 170px;
   }
 }
 @media screen and (max-width: 1800px) {
@@ -6733,6 +6750,13 @@ body.opentwo {
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h4 {
     line-height: 1;
   }
+  .caseStudyListingsec .casestudyWrapper #myButton {
+    width: 30%;
+    bottom: 130px;
+  }
+  .caseStudyListingsec .casestudyWrapper #myButton.even-based {
+    right: 180px;
+  }
 }
 @media screen and (max-width: 1400px) {
   .caseStudyListingsec {
@@ -6765,6 +6789,13 @@ body.opentwo {
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc img {
     width: 14px;
   }
+  .caseStudyListingsec .casestudyWrapper #myButton {
+    width: 33%;
+    bottom: 150px;
+  }
+  .caseStudyListingsec .casestudyWrapper #myButton.even-based {
+    right: 150px;
+  }
 }
 @media screen and (max-width: 1280px) {
   .caseStudyListingsec {
@@ -6790,6 +6821,22 @@ body.opentwo {
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h3 {
     line-height: 26px;
     margin: 15px 0px;
+  }
+  .caseStudyListingsec .casestudyWrapper #myButton {
+    width: 32%;
+    bottom: 90px;
+  }
+  .caseStudyListingsec .casestudyWrapper #myButton.even-based {
+    right: 150px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .caseStudyListingsec .casestudyWrapper #myButton {
+    width: 33.5%;
+    bottom: 90px;
+  }
+  .caseStudyListingsec .casestudyWrapper #myButton.even-based {
+    right: 120px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -6835,6 +6882,22 @@ body.opentwo {
     margin: 15px 0px;
     font-size: 18px;
   }
+  .caseStudyListingsec .casestudyWrapper #myButton {
+    width: 40.5%;
+    bottom: 70px;
+  }
+  .caseStudyListingsec .casestudyWrapper #myButton.even-based {
+    right: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .caseStudyListingsec .casestudyWrapper #myButton {
+    bottom: 60px;
+    width: 42.5%;
+  }
+  .caseStudyListingsec .casestudyWrapper #myButton.even-based {
+    right: 20px;
+  }
 }
 @media screen and (max-width: 680px) {
   .caseStudyListingsec {
@@ -6870,6 +6933,14 @@ body.opentwo {
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc img {
     width: 12px;
   }
+  .caseStudyListingsec .casestudyWrapper #myButton {
+    position: unset;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .caseStudyListingsec .casestudyWrapper #myButton.even-based {
+    right: unset;
+  }
 }
 
 .bloglistingsection {
@@ -6903,7 +6974,7 @@ body.opentwo {
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .bloglistingsection .blogsWrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -6974,7 +7045,7 @@ body.opentwo {
   margin-top: -7%;
 }
 .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes .blogImg img {
-  scale: 1.5;
+  scale: 1.1;
   transition: 0.7s all ease-out;
 }
 .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes .blogDetails {
@@ -7273,7 +7344,7 @@ body.opentwo {
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .careerFormSec .careerSec {
     padding-left: 20px;
     padding-right: 20px;
@@ -7893,7 +7964,7 @@ body.opentwo {
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .career-meetupAdderssSec .career-meetupAdderssContainer {
     padding-left: 20px;
     padding-right: 20px;
@@ -8856,7 +8927,7 @@ body.opentwo {
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .aboutProjectSec .about-sec {
     padding-left: 20px;
     padding-right: 20px;
@@ -8985,7 +9056,7 @@ body.opentwo {
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .aboutProjectSec .objectivegoal-sec {
     padding-left: 20px;
     padding-right: 20px;
@@ -10509,42 +10580,57 @@ body.opentwo {
   }
 }
 
+.thankyoupg-blur {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  backdrop-filter: blur(250px);
+  background: rgba(255, 255, 255, 0.5);
+}
+
 .thankyouSec {
-  margin: 200px 0px;
+  padding: 200px 0px 400px;
+  position: relative;
+  z-index: 3;
+}
+.thankyouSec .thanksWrapper {
   padding-left: 210px;
   padding-right: 210px;
 }
 @media screen and (max-width: 1600px) {
-  .thankyouSec {
+  .thankyouSec .thanksWrapper {
     padding-left: 180px;
     padding-right: 180px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .thankyouSec {
+  .thankyouSec .thanksWrapper {
     padding-left: 150px;
     padding-right: 150px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .thankyouSec {
+  .thankyouSec .thanksWrapper {
     padding-left: 120px;
     padding-right: 120px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .thankyouSec {
+  .thankyouSec .thanksWrapper {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
-  .thankyouSec {
+@media screen and (max-width: 768px) {
+  .thankyouSec .thanksWrapper {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-.thankyouSec .thankyou-heading {
+.thankyouSec .thanksWrapper .thankyou-heading {
   color: #000;
   font-family: "Poppins", sans-serif;
   font-size: 96px;
@@ -10555,26 +10641,26 @@ body.opentwo {
   width: 50%;
 }
 @media screen and (max-width: 1600px) {
-  .thankyouSec .thankyou-heading {
+  .thankyouSec .thanksWrapper .thankyou-heading {
     font-size: 80px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .thankyouSec .thankyou-heading {
+  .thankyouSec .thanksWrapper .thankyou-heading {
     font-size: 74px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .thankyouSec .thankyou-heading {
+  .thankyouSec .thanksWrapper .thankyou-heading {
     font-size: 64px;
   }
 }
 @media screen and (max-width: 720px) {
-  .thankyouSec .thankyou-heading {
+  .thankyouSec .thanksWrapper .thankyou-heading {
     font-size: 40px;
   }
 }
-.thankyouSec .thankyou-content {
+.thankyouSec .thanksWrapper .thankyou-content {
   color: #000;
   font-family: "Poppins", sans-serif;
   font-size: 24px;
@@ -10584,24 +10670,24 @@ body.opentwo {
   width: 50%;
 }
 @media screen and (max-width: 1600px) {
-  .thankyouSec .thankyou-content {
+  .thankyouSec .thanksWrapper .thankyou-content {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .thankyouSec .thankyou-content {
+  .thankyouSec .thanksWrapper .thankyou-content {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 720px) {
-  .thankyouSec .thankyou-content {
+  .thankyouSec .thanksWrapper .thankyou-content {
     font-size: 16px;
   }
 }
-.thankyouSec .thankyou-cta {
+.thankyouSec .thanksWrapper .thankyou-cta {
   display: inline-flex;
 }
-.thankyouSec .thankyou-cta .cta-black, .thankyouSec .thankyou-cta .cta-white {
+.thankyouSec .thanksWrapper .thankyou-cta .cta-black, .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -10616,129 +10702,214 @@ body.opentwo {
   border: 1px solid #000;
 }
 @media screen and (max-width: 1600px) {
-  .thankyouSec .thankyou-cta .cta-black, .thankyouSec .thankyou-cta .cta-white {
+  .thankyouSec .thanksWrapper .thankyou-cta .cta-black, .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .thankyouSec .thankyou-cta .cta-black, .thankyouSec .thankyou-cta .cta-white {
+  .thankyouSec .thanksWrapper .thankyou-cta .cta-black, .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
     font-size: 12px;
   }
 }
-.thankyouSec .thankyou-cta .cta-black img, .thankyouSec .thankyou-cta .cta-white img {
+.thankyouSec .thanksWrapper .thankyou-cta .cta-black img, .thankyouSec .thanksWrapper .thankyou-cta .cta-white img {
   margin-left: 10px;
 }
-.thankyouSec .thankyou-cta .cta-white {
+.thankyouSec .thanksWrapper .thankyou-cta .cta-white {
   color: #000;
 }
-.thankyouSec .thankyou-cta .cta-black {
+.thankyouSec .thanksWrapper .thankyou-cta .cta-black {
   color: #fff;
   background-color: #000;
 }
+.thankyouSec .thanksWrapper .gameIcon {
+  position: absolute;
+  right: 20%;
+  bottom: 142px;
+  width: 15%;
+}
+.thankyouSec .thanksWrapper .gameIcon button {
+  background: transparent;
+  cursor: pointer;
+}
 @media all and (max-width: 1600px) {
   .thankyouSec {
-    margin: 180px 0px;
+    padding: 150px 0px 300px;
   }
-  .thankyouSec .thankyou-heading {
+  .thankyouSec .thanksWrapper .thankyou-heading {
     line-height: 96px;
     letter-spacing: -1.88px;
     margin-bottom: 30px;
   }
-  .thankyouSec .thankyou-content {
+  .thankyouSec .thanksWrapper .thankyou-content {
     line-height: 30px;
     margin-bottom: 70px;
   }
-  .thankyouSec .thankyou-cta .cta-black, .thankyouSec .thankyou-cta .cta-white {
+  .thankyouSec .thanksWrapper .thankyou-cta .cta-black, .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
     line-height: 16px;
     padding: 12px 24px;
     margin-right: 28px;
   }
+  .thankyouSec .thanksWrapper .gameIcon {
+    right: 22%;
+    bottom: 122px;
+    width: 13%;
+  }
 }
 @media all and (max-width: 1400px) {
   .thankyouSec {
-    margin: 160px 0px;
+    padding: 160px 0px;
   }
-  .thankyouSec .thankyou-heading {
+  .thankyouSec .thanksWrapper .thankyou-heading {
     line-height: 90px;
     letter-spacing: -1px;
     margin-bottom: 24px;
   }
-  .thankyouSec .thankyou-content {
+  .thankyouSec .thanksWrapper .thankyou-content {
     line-height: 26px;
     margin-bottom: 60px;
   }
-  .thankyouSec .thankyou-cta .cta-black, .thankyouSec .thankyou-cta .cta-white {
+  .thankyouSec .thanksWrapper .thankyou-cta .cta-black, .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
     line-height: 14px;
     padding: 10px 22px;
     margin-right: 26px;
   }
 }
 @media all and (max-width: 1200px) {
-  .thankyouSec .thankyou-heading {
+  .thankyouSec .thanksWrapper .thankyou-heading {
     line-height: 86px;
     margin-bottom: 22px;
   }
-  .thankyouSec .thankyou-content {
+  .thankyouSec .thanksWrapper .thankyou-content {
     line-height: 24px;
     margin-bottom: 50px;
   }
-  .thankyouSec .thankyou-cta .cta-black, .thankyouSec .thankyou-cta .cta-white {
+  .thankyouSec .thanksWrapper .thankyou-cta .cta-black, .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
     line-height: 12px;
     margin-right: 24px;
   }
 }
 @media all and (max-width: 1024px) {
   .thankyouSec {
-    margin: 100px 0px;
+    padding: 100px 0px;
   }
-  .thankyouSec .thankyou-heading {
+  .thankyouSec .thanksWrapper .thankyou-heading {
     line-height: 80px;
     margin-bottom: 20px;
     width: 100%;
   }
-  .thankyouSec .thankyou-content {
+  .thankyouSec .thanksWrapper .thankyou-content {
     line-height: 24px;
     margin-bottom: 45px;
     width: 100%;
   }
-  .thankyouSec .thankyou-cta .cta-black, .thankyouSec .thankyou-cta .cta-white {
+  .thankyouSec .thanksWrapper .thankyou-cta .cta-black, .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
     line-height: 12px;
     padding: 10px 20px;
     margin-right: 0px;
   }
-  .thankyouSec .thankyou-cta .cta-black img, .thankyouSec .thankyou-cta .cta-white img {
+  .thankyouSec .thanksWrapper .thankyou-cta .cta-black img, .thankyouSec .thanksWrapper .thankyou-cta .cta-white img {
     margin-left: 6px;
   }
-  .thankyouSec .thankyou-cta .cta-white {
+  .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
     margin-right: 20px;
   }
 }
 @media all and (max-width: 640px) {
   .thankyouSec {
-    margin: 80px 0px;
+    padding: 80px 0px;
   }
-  .thankyouSec .thankyou-heading {
+  .thankyouSec .thanksWrapper .thankyou-heading {
     line-height: 60px;
     margin-bottom: 12px;
   }
-  .thankyouSec .thankyou-content {
+  .thankyouSec .thanksWrapper .thankyou-content {
     line-height: 20px;
     margin-bottom: 30px;
   }
-  .thankyouSec .thankyou-cta {
+  .thankyouSec .thanksWrapper .thankyou-cta {
     display: block;
   }
-  .thankyouSec .thankyou-cta .cta-black, .thankyouSec .thankyou-cta .cta-white {
+  .thankyouSec .thanksWrapper .thankyou-cta .cta-black, .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
     line-height: 10px;
     padding: 8px 16px;
   }
-  .thankyouSec .thankyou-cta .cta-black img, .thankyouSec .thankyou-cta .cta-white img {
+  .thankyouSec .thanksWrapper .thankyou-cta .cta-black img, .thankyouSec .thanksWrapper .thankyou-cta .cta-white img {
     margin-left: 5px;
   }
-  .thankyouSec .thankyou-cta .cta-white {
+  .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
     margin-right: 15px;
     margin-bottom: 16px;
   }
+}
+
+.thankyouGame {
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+.thankyouGame #myCanvas {
+  display: none;
+}
+.thankyouGame .modalContainer {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.604);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+@media screen and (max-width: 1600px) {
+  .thankyouGame .modalContainer {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .thankyouGame .modalContainer {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .thankyouGame .modalContainer {
+    font-size: 14px;
+  }
+}
+.thankyouGame .modalContainer .modal {
+  background-color: white;
+  width: 32vw;
+  height: 38vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+}
+.thankyouGame .modalContainer .modal .innermodel {
+  flex-direction: column;
+  padding: 0px 50px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.thankyouGame .modalContainer .modal .innermodel .innerDiv {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.thankyouGame .modalContainer .modal .innermodel .innerDiv button {
+  border: none;
+  padding: 18px 0 18px 0;
+  width: 140px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  margin-top: 18px;
+  color: white;
+  cursor: pointer;
 }
 
 .blogdetails-bannerSec {
@@ -10787,7 +10958,7 @@ body.opentwo {
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .blogdetails-bannerSec .blogdetails-wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -10994,7 +11165,7 @@ body.opentwo {
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .blogdetails-contentSec {
     padding-left: 20px;
     padding-right: 20px;

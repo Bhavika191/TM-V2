@@ -7,7 +7,7 @@
         .bloglistingBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;flex-direction: row-reverse;
             .blogslistinnerBoxes{width: 40%;margin-top: 150px;position: relative;overflow: hidden;transition: 0.7s all ease-out;height: auto;
                &:nth-child(odd){margin-top: -7%;}
-                .blogImg{img{scale: 1.5;transition: 0.7s all ease-out;}}
+                .blogImg{img{scale: 1.1;transition: 0.7s all ease-out;}}
                     .blogDetails{background-color: #fff;padding: 58px 50px;margin: 30px;position: absolute;bottom: 0;transition: 0.7s all ease-out;
                         h3{@include font32; font-weight: $fontW400;line-height: 43px;margin-top: 30px;display: block;display: -webkit-box;max-width: 100%;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;}
                         h4{@include font16; font-weight: $fontW600;line-height: 1;letter-spacing: 0.8px;}

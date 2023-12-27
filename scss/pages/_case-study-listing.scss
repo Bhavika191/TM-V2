@@ -2,7 +2,7 @@ body.opentwo{overflow: hidden;}
 
 
 .caseStudyListingsec{margin:224px 0px 240px;
-    .casestudyWrapper{@include wrapperTwo;
+    .casestudyWrapper{@include wrapperTwo;position: relative;
         .secHeading{width: 41%;
             h2{@include font64;font-weight: $fontW500;line-height: 74px;letter-spacing: -1.5px;}
             p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;color: #6A6A6A;}
@@ -12,7 +12,7 @@ body.opentwo{overflow: hidden;}
                 &:nth-child(odd){margin-top: -10%;}
                 &:nth-child(3){animation-delay: 0.7s;}
                 &:nth-child(4){animation-delay: 0.9s;}
-                .casestudyImg img{transform: scale(1.1);transition: 0.7s all ease-out; }
+                .casestudyImg img{transform: scale(1.08);transition: 0.7s all ease-out; }
                 .caseStudydesc{position: absolute;bottom: -100%;left: 0;right: 0;margin: 50px;transition: 0.7s all ease-out;z-index: 2;
                     h3{@include font32;font-weight: $fontW400;line-height: 42px;color: #fff;margin: 30px 0px;display: block;display: -webkit-box;max-width: 100%;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;}
                     h4{@include font16;font-weight: $fontW600;line-height: 14px;color: #fff;letter-spacing: 0.8px;text-transform: uppercase;}
@@ -25,12 +25,17 @@ body.opentwo{overflow: hidden;}
                 }
             }
         }
+        #myButton{width: 33%;position: absolute;bottom: 130px;text-align: center;
+            &.even-based{right: 210px;}
+        }
     }
 
     @media screen and (max-width:1920px) {
         .casestudyWrapper {
             .casestudylistingBoxes .caseStudyBoxes{
                 &:nth-child(odd){margin-top: -20%;}
+            }
+            #myButton{width: 31%;bottom: 170px;
             }
         }
     }
@@ -58,6 +63,9 @@ body.opentwo{overflow: hidden;}
                     }
                 }
             }
+            #myButton{width: 30%;bottom: 130px;
+                &.even-based{right: 180px;}
+            }
         }
     }
     @media screen and (max-width:1400px) {
@@ -76,6 +84,9 @@ body.opentwo{overflow: hidden;}
                     }
                 }
             }
+            #myButton{width: 33%;bottom: 150px;
+                &.even-based{right: 150px;}
+            }
         }
     }
     @media screen and (max-width:1280px) {
@@ -93,6 +104,17 @@ body.opentwo{overflow: hidden;}
                     }
                 }
             }
+            #myButton{width: 32%;bottom: 90px;
+                &.even-based{right: 150px;}
+            }   
+        }
+    }
+
+    @media screen and (max-width:1200px) {
+        .casestudyWrapper{
+            #myButton{width: 33.5%;bottom: 90px;
+                &.even-based{right: 120px;}
+            }   
         }
     }
     
@@ -112,8 +134,19 @@ body.opentwo{overflow: hidden;}
                     }
                 }
             }
+            #myButton{width: 40.5%;bottom: 70px;
+                &.even-based{right: 50px;}
+            }  
         }
     }
+
+    @media screen and (max-width:768px) {
+        .casestudyWrapper{
+              #myButton{bottom: 60px;width: 42.5%;
+                  &.even-based{right: 20px;}
+              }  
+          }
+      }
     @media screen and (max-width:680px) {
         margin: 100px 0px 150px;
         .casestudyWrapper{
@@ -130,6 +163,9 @@ body.opentwo{overflow: hidden;}
                     }
                 }
             }
+            #myButton{position:unset;width: 100%;margin-top: 40px;
+                &.even-based{right: unset;}
+            } 
         }
     }   
 }

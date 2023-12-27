@@ -46,6 +46,31 @@ function hasScrolled() {
   lastScrollTop = st;
 }
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  updateButtonClass(); // Initial update
+
+  // Assuming you are adding or removing boxes dynamically
+  // You may want to call updateButtonClass() whenever the number of boxes changes.
+
+  function updateButtonClass() {
+    var button = document.getElementById("myButton");
+    var boxes = document.querySelectorAll(".caseStudyBoxes");
+
+    if (boxes.length % 2 === 0) {
+      // Even number of boxes
+      button.classList.add("even-based");
+      button.classList.remove("odd-based");
+    } else {
+      // Odd number of boxes
+      button.classList.remove("even-based");
+      button.classList.add("odd-based");
+    }
+  }
+});
+
+
+
 //---------------------------------------------------------Shamal's Js Code Starts ---------------------------------------------------------------//
 
 //Service page sticky property starts
@@ -107,33 +132,32 @@ $(document).ready(function () {
       }, 1050);
     }
   });
-   function managemenu(indexnumber)
-   {
-    $('.filter-wrapper a').each(function (index,event) {
-      if(index < indexnumber)
-       $(this).hide();
+  function managemenu(indexnumber) {
+    $('.filter-wrapper a').each(function (index, event) {
+      if (index < indexnumber)
+        $(this).hide();
       else
-      $(this).show();
+        $(this).show();
     })
-   }
+  }
   $(window).scroll(function (e) {
     if (menuScrollTimer === null) {
       let windowTop = $(this).scrollTop();
-      $('.filter-wrapper a').each(function (index,event) {
-        var topvalue =  $($(this).attr('href')).offset().top - 250;
+      $('.filter-wrapper a').each(function (index, event) {
+        var topvalue = $($(this).attr('href')).offset().top - 250;
         if (windowTop >= $($(this).attr('href')).offset().top - 250) {
           managemenu(index);
           $('.filter-wrapper .active').removeClass('active');
           $(".service-container").css("z-index", "25");
           $(this).addClass('active');
         }
-        });
-        // var collaborateSectionTop = $('.collaborate-section').offset().top - 250;
-        // if (windowTop >= collaborateSectionTop) {
-        //   $('.filterSec').hide();
-        // } else {
-        //   $('.filterSec').show();
-        // }
+      });
+      // var collaborateSectionTop = $('.collaborate-section').offset().top - 250;
+      // if (windowTop >= collaborateSectionTop) {
+      //   $('.filterSec').hide();
+      // } else {
+      //   $('.filterSec').show();
+      // }
     }
   });
 });
@@ -162,23 +186,23 @@ jQuery(function ($) {
 //Casestudy Details page active code navbar
 $(document).ready(function () {
   let menuScrollTimer = null;
-  $(".casestudyfilter-wrapper a").click(function (e) {     
+  $(".casestudyfilter-wrapper a").click(function (e) {
     e.preventDefault();
-      if (menuScrollTimer === null) {
-          // Highlight the clicked item
-          $('.casestudyfilter-wrapper a.current').removeClass('current');
-          $(this).addClass('current');
-          // Smooth scroll to the target section
-          let target = $(this).attr('href');
-          $('html, body').animate({ scrollTop: $(target).offset().top - 250}, 1050);
-          // Set `menuScrollTimer` timer
-          // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
-          // This will also prevent the scroll logic from running
-          menuScrollTimer = setTimeout(function () {
-              clearTimeout(menuScrollTimer);
-              menuScrollTimer = null;
-          }, 1050);
-      }
+    if (menuScrollTimer === null) {
+      // Highlight the clicked item
+      $('.casestudyfilter-wrapper a.current').removeClass('current');
+      $(this).addClass('current');
+      // Smooth scroll to the target section
+      let target = $(this).attr('href');
+      $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
+      // Set `menuScrollTimer` timer
+      // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
+      // This will also prevent the scroll logic from running
+      menuScrollTimer = setTimeout(function () {
+        clearTimeout(menuScrollTimer);
+        menuScrollTimer = null;
+      }, 1050);
+    }
   });
   $(window).scroll(function (e) {
     // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
@@ -232,23 +256,23 @@ if ($(window).width() > 1024) {
 //Blog details page active navbar code starts
 $(document).ready(function () {
   let menuScrollTimer = null;
-  $(".blogdetailsfilter-wrapper a").click(function (e) {     
+  $(".blogdetailsfilter-wrapper a").click(function (e) {
     e.preventDefault();
-      if (menuScrollTimer === null) {
-          // Highlight the clicked item
-          $('.blogdetailsfilter-wrapper a.current').removeClass('current');
-          $(this).addClass('current');
-          // Smooth scroll to the target section
-          let target = $(this).attr('href');
-          $('html, body').animate({ scrollTop: $(target).offset().top - 250}, 1050);
-          // Set `menuScrollTimer` timer
-          // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
-          // This will also prevent the scroll logic from running
-          menuScrollTimer = setTimeout(function () {
-              clearTimeout(menuScrollTimer);
-              menuScrollTimer = null;
-          }, 1050);
-      }
+    if (menuScrollTimer === null) {
+      // Highlight the clicked item
+      $('.blogdetailsfilter-wrapper a.current').removeClass('current');
+      $(this).addClass('current');
+      // Smooth scroll to the target section
+      let target = $(this).attr('href');
+      $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
+      // Set `menuScrollTimer` timer
+      // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
+      // This will also prevent the scroll logic from running
+      menuScrollTimer = setTimeout(function () {
+        clearTimeout(menuScrollTimer);
+        menuScrollTimer = null;
+      }, 1050);
+    }
   });
   $(window).scroll(function (e) {
     // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
@@ -392,9 +416,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const smoothScroll = new SmoothScroll(0.02);
 });
 
-if ($(window).width() > 1025) {
-  new WOW().init();
-}
+
 
 
 
@@ -413,6 +435,10 @@ $(document).ready(function () {
       $('.middleCircle').removeClass('middleCirclenew');
       $('.middleCircle').removeClass('box_Two');
     }, 6000);
+    setTimeout(function () {
+      $('.counterText').removeClass('newcounterText');
+    }, 6000);
+    
     setTimeout(function () {
       $('.counterText span a').html(function (i, val) {
         var incrementedValue = val * 1 + 1;
@@ -450,6 +476,12 @@ $(document).ready(function () {
   }
 });
 
+
+if ($(window).width() > 1025) {
+  new WOW().init();
+}
+
+
 var panAnime = bodymovin.loadAnimation({
   container: document.getElementById('panAnime'),
   path: '/projects/tm-v2/js/json/panAnime.json', // Required
@@ -460,9 +492,10 @@ var panAnime = bodymovin.loadAnimation({
 
 
 
-
-
-
+function resizeCanvas() {
+  var canvs = document.getElementById("myCanvas");
+  canvs.width = window.innerWidth;
+}
 
 
 
