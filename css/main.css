@@ -9818,7 +9818,7 @@ body.opentwo {
     margin-bottom: 220px;
   }
   .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
-    padding: 80px;
+    padding: 75px;
     width: 550px;
   }
   .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
@@ -9832,14 +9832,6 @@ body.opentwo {
   .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
     line-height: 30px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 {
-    right: 170px;
-    bottom: -10%;
-  }
-  .researchSec .researchsec-wrapper .research-card-type2 {
-    left: 170px;
-    bottom: -10%;
-  }
 }
 @media all and (max-width: 1600px) {
   .researchSec {
@@ -9849,7 +9841,7 @@ body.opentwo {
     margin-bottom: 200px;
   }
   .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
-    padding: 75px;
+    padding: 65px;
     width: 500px;
   }
   .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
@@ -9884,7 +9876,7 @@ body.opentwo {
     margin-bottom: 180px;
   }
   .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
-    padding: 70px;
+    padding: 60px;
     width: 450px;
   }
   .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
@@ -9919,7 +9911,7 @@ body.opentwo {
     margin-bottom: 160px;
   }
   .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
-    padding: 60px;
+    padding: 50px;
     width: 400px;
   }
   .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
@@ -10611,7 +10603,7 @@ body.opentwo {
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .statsSec .statsSec-wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -10978,7 +10970,7 @@ body.opentwo {
     padding-right: 50px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .impactSec .results-impact-temp {
     padding-left: 20px;
     padding-right: 20px;

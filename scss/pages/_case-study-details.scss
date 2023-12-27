@@ -217,18 +217,17 @@
 // ----------------------------------------media queries-----------------------------------------------//    
 @media all and (max-width:1800px){margin-bottom:320px;
     .researchsec-wrapper{margin-bottom:220px;
-        .research-card-type1,.research-card-type2{padding: 80px;width:550px;
+        .research-card-type1,.research-card-type2{padding: 75px;width:550px;
             .research-card-subheading{margin-bottom: 30px;line-height: 30px;}
             .research-card-mainheading{margin-bottom: 48px;line-height: 40px;}
             .research-card-content{line-height: 30px;}
         }
-        .research-card-type1{right:170px;bottom:-10%;}
-        .research-card-type2{left:170px;bottom:-10%;}
+
     }
 }
 @media all and (max-width:1600px){margin-bottom:300px;
     .researchsec-wrapper{margin-bottom:200px;
-        .research-card-type1,.research-card-type2{padding: 75px;width:500px;
+        .research-card-type1,.research-card-type2{padding: 65px;width:500px;
             .research-card-subheading{margin-bottom: 28px;line-height: 28px;}
             .research-card-mainheading{margin-bottom: 40px;line-height: 36px;}
             .research-card-content{line-height: 28px;}
@@ -241,7 +240,7 @@
 @media all and (max-width:1400px){
     margin-bottom:280px;
     .researchsec-wrapper{margin-bottom:180px;
-        .research-card-type1,.research-card-type2{padding: 70px;width:450px;
+        .research-card-type1,.research-card-type2{padding: 60px;width:450px;
             .research-card-subheading{margin-bottom: 24px;line-height: 24px;}
             .research-card-mainheading{margin-bottom: 36px;line-height: 30px;}
             .research-card-content{line-height: 24px;}
@@ -254,7 +253,7 @@
 @media all and (max-width:1200px){
     margin-bottom:250px;
     .researchsec-wrapper{margin-bottom:160px;
-        .research-card-type1,.research-card-type2{padding: 60px;width:400px;
+        .research-card-type1,.research-card-type2{padding: 50px;width:400px;
             .research-card-subheading{margin-bottom: 22px;line-height: 22px;}
             .research-card-mainheading{margin-bottom: 32px;line-height: 28px;}
             .research-card-content{line-height: 22px;}
