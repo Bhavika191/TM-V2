@@ -131,9 +131,10 @@
             h2{color: #000; @include font64; font-weight: $fontW500;line-height: 74px;letter-spacing: -1.92px;margin-bottom: 15px;}
             p{@include font24;font-weight: $fontW400;line-height: 34px;color: #6A6A6A;}
         }
-        .meetupAdderssContent{display: flex;justify-content: space-between;flex-wrap: wrap;;
+        .meetupAdderssContent{display: flex;justify-content: space-between;flex-wrap: wrap;
             .meetupAddBox{width: 40%;margin-bottom: 150px; background: #ffffff;overflow: hidden; height: 800px;position: relative;
                 &:nth-child(even){margin-top: -24%;}
+                &:last-child{margin-left: auto;margin-top: -24%;}
                 &:first-child{transform: translateY(0px);}
                 .stateOff{transition: 0.6s all ease-in-out;height: 200px;overflow: hidden;position: absolute;top: 30px;
                     &.mumbaiOff{left: -800px; width: 800px;animation: mumbaiOff 6s linear infinite;}
@@ -269,6 +270,7 @@
                 .meetupAddBox:nth-child(even){
                     margin-top: -28%;
                 }
+                &:last-child{margin-top: -28%;}
             }
         }
         
@@ -297,6 +299,7 @@
                 .meetupAddBox:nth-child(even){
                     margin-top: -24%;
                 }
+                &:last-child{margin-top: -24%;}
             }
         }
     }
@@ -336,6 +339,7 @@
             .meetupAdderssContent{flex-wrap: unset;flex-direction: column;
                 .meetupAddBox {width: 100%;height: auto;margin-bottom: 40px;
                     &:nth-child(even){margin-top: unset;}
+                    &:last-child{margin-top: unset;}
                     .stateOff{
                         &.mumbaiOff{width: 500px;}
                     }
