@@ -10065,6 +10065,21 @@ body.opentwo {
   line-height: 40px;
   letter-spacing: -0.9px;
 }
+@media screen and (max-width: 1600px) {
+  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
+    font-size: 12px;
+  }
+}
 .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
   color: var(--body-copy, #6A6A6A);
   font-family: "Poppins", sans-serif;
@@ -10133,23 +10148,6 @@ body.opentwo {
     line-height: 40px;
   }
   .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
-    line-height: 30px;
-  }
-  .solutionsSec .rightcontent-leftimageSec {
-    padding-bottom: 140px;
-  }
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text {
-    padding: 0px 145px;
-  }
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-subheading {
-    margin-bottom: 30px;
-    line-height: 30px;
-  }
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-mainheading {
-    margin-bottom: 45px;
-    line-height: 40px;
-  }
-  .solutionsSec .rightcontent-leftimageSec .rightcontent-leftimage-text .rightcontent-text {
     line-height: 30px;
   }
 }
@@ -10436,6 +10434,792 @@ body.opentwo {
   .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image {
     width: 100%;
     margin-bottom: 40px;
+  }
+}
+
+.statsSec {
+  margin-bottom: 400px;
+}
+.statsSec .statsSec-wrapper {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  padding-left: 210px;
+  padding-right: 210px;
+  margin-bottom: 140px;
+}
+@media screen and (max-width: 1600px) {
+  .statsSec .statsSec-wrapper {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .statsSec .statsSec-wrapper {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .statsSec .statsSec-wrapper {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .statsSec .statsSec-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .statsSec .statsSec-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.statsSec .statsSec-wrapper .stats-content {
+  width: 35%;
+}
+.statsSec .statsSec-wrapper .stats-content .stats-subheading {
+  margin-bottom: 30px;
+  color: var(--primary-black, #000);
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1600px) {
+  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+    font-size: 14px;
+  }
+}
+.statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+  color: var(--primary-black, #000);
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.9px;
+}
+@media screen and (max-width: 1600px) {
+  .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+    font-size: 12px;
+  }
+}
+.statsSec .statsSec-wrapper .stats-numbers {
+  width: 40%;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+.statsSec .statsSec-wrapper .stats-numbers .rates {
+  width: calc(33.33% - 114px);
+}
+.statsSec .statsSec-wrapper .stats-numbers .rates img {
+  margin-bottom: 10px;
+}
+.statsSec .statsSec-wrapper .stats-numbers .rates p {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1600px) {
+  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+    font-size: 14px;
+  }
+}
+.statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+  color: var(--Primary-Black, #000);
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: -1.2px;
+}
+@media screen and (max-width: 1600px) {
+  .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+    font-size: 14px;
+  }
+}
+.statsSec .optionalSec {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+@media screen and (max-width: 1400px) {
+  .statsSec .optionalSec {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .statsSec .optionalSec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.statsSec .optionalSec img {
+  width: 100%;
+}
+@media all and (max-width: 1800px) {
+  .statsSec {
+    margin-bottom: 380px;
+  }
+  .statsSec .statsSec-wrapper {
+    margin-bottom: 130px;
+  }
+  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+    margin-bottom: 28px;
+    line-height: 28px;
+  }
+  .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+    line-height: 36px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates {
+    width: calc(33.33% - 110px);
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates img {
+    margin-bottom: 10px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+    line-height: 22px;
+    margin-bottom: 28px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+    line-height: 45px;
+  }
+}
+@media all and (max-width: 1600px) {
+  .statsSec {
+    margin-bottom: 350px;
+  }
+  .statsSec .statsSec-wrapper {
+    margin-bottom: 120px;
+  }
+  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+    margin-bottom: 26px;
+    line-height: 26px;
+  }
+  .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+    line-height: 34px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates {
+    width: calc(33.33% - 100px);
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates img {
+    margin-bottom: 10px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+    line-height: 22px;
+    margin-bottom: 28px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+    line-height: 42px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .statsSec {
+    margin-bottom: 300px;
+  }
+  .statsSec .statsSec-wrapper {
+    margin-bottom: 100px;
+  }
+  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+    margin-bottom: 24px;
+    line-height: 24px;
+  }
+  .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+    line-height: 32px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates {
+    width: calc(33.33% - 80px);
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates img {
+    margin-bottom: 10px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+    line-height: 20px;
+    margin-bottom: 26px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+    line-height: 36px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .statsSec {
+    margin-bottom: 250px;
+  }
+  .statsSec .statsSec-wrapper {
+    margin-bottom: 80px;
+  }
+  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+    margin-bottom: 22px;
+    line-height: 22px;
+  }
+  .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+    line-height: 30px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates {
+    width: calc(33.33% - 60px);
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates img {
+    margin-bottom: 8px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+    line-height: 20px;
+    margin-bottom: 24px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+    line-height: 32px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .statsSec {
+    margin-bottom: 150px;
+  }
+  .statsSec .statsSec-wrapper {
+    display: block;
+    margin-bottom: 75px;
+  }
+  .statsSec .statsSec-wrapper .stats-content {
+    width: 100%;
+    margin-bottom: 65px;
+  }
+  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+    margin-bottom: 20px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates {
+    width: 33%;
+    margin-bottom: 60px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates img {
+    margin-bottom: 12px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+    margin-bottom: 22px;
+  }
+}
+@media all and (max-width: 680px) {
+  .statsSec {
+    margin-bottom: 40px;
+  }
+  .statsSec .statsSec-wrapper {
+    display: block;
+    margin-bottom: 68px;
+  }
+  .statsSec .statsSec-wrapper .stats-content {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+  }
+  .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.54px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates img {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.333px;
+    letter-spacing: 0.48px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.333px;
+    letter-spacing: 0.48px;
+  }
+  .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 44.444px;
+    letter-spacing: -0.9px;
+  }
+  .statsSec .optionalSec {
+    padding: 0px;
+  }
+}
+
+.impactSec {
+  margin-bottom: 370px;
+}
+.impactSec .results-impact-temp {
+  padding-left: 210px;
+  padding-right: 210px;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 1600px) {
+  .impactSec .results-impact-temp {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .impactSec .results-impact-temp {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .impactSec .results-impact-temp {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .impactSec .results-impact-temp {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .impactSec .results-impact-temp {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.impactSec .results-impact-temp .impact-subheading {
+  margin-bottom: 30px;
+  color: var(--primary-black, #000);
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1600px) {
+  .impactSec .results-impact-temp .impact-subheading {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .impactSec .results-impact-temp .impact-subheading {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .impactSec .results-impact-temp .impact-subheading {
+    font-size: 14px;
+  }
+}
+.impactSec .results-impact-temp .impact-subheading span {
+  color: #FF0D47;
+}
+.impactSec .results-impact-temp .impact-mainheading {
+  color: var(--primary-black, #000);
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: -1.2px;
+}
+@media screen and (max-width: 1600px) {
+  .impactSec .results-impact-temp .impact-mainheading {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .impactSec .results-impact-temp .impact-mainheading {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .impactSec .results-impact-temp .impact-mainheading {
+    font-size: 14px;
+  }
+}
+.impactSec .impact-img {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+@media screen and (max-width: 1400px) {
+  .impactSec .impact-img {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .impactSec .impact-img {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.impactSec .impact-img img {
+  width: 100%;
+}
+@media all and (max-width: 1800px) {
+  .impactSec {
+    margin-bottom: 350px;
+  }
+  .impactSec .results-impact-temp {
+    margin-bottom: 100px;
+  }
+  .impactSec .results-impact-temp .impact-subheading {
+    margin-bottom: 30px;
+    line-height: 30px;
+  }
+  .impactSec .results-impact-temp .impact-mainheading {
+    line-height: 45px;
+  }
+}
+@media all and (max-width: 1600px) {
+  .impactSec {
+    margin-bottom: 320px;
+  }
+  .impactSec .results-impact-temp {
+    margin-bottom: 80px;
+  }
+  .impactSec .results-impact-temp .impact-subheading {
+    margin-bottom: 28px;
+    line-height: 28px;
+  }
+  .impactSec .results-impact-temp .impact-mainheading {
+    line-height: 40px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .impactSec {
+    margin-bottom: 250px;
+  }
+  .impactSec .results-impact-temp {
+    margin-bottom: 60px;
+  }
+  .impactSec .results-impact-temp .impact-subheading {
+    margin-bottom: 24px;
+    line-height: 24px;
+  }
+  .impactSec .results-impact-temp .impact-mainheading {
+    line-height: 36px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .impactSec {
+    margin-bottom: 200px;
+  }
+  .impactSec .results-impact-temp {
+    margin-bottom: 50px;
+  }
+  .impactSec .results-impact-temp .impact-subheading {
+    margin-bottom: 22px;
+    line-height: 22px;
+  }
+  .impactSec .results-impact-temp .impact-mainheading {
+    line-height: 32px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .impactSec {
+    margin-bottom: 150px;
+  }
+  .impactSec .results-impact-temp {
+    margin-bottom: 50px;
+  }
+  .impactSec .results-impact-temp .impact-subheading {
+    margin-bottom: 22px;
+    line-height: 22px;
+  }
+  .impactSec .results-impact-temp .impact-mainheading {
+    line-height: 32px;
+  }
+}
+@media all and (max-width: 680px) {
+  .impactSec {
+    margin-bottom: 83px;
+  }
+  .impactSec .results-impact-temp {
+    margin-bottom: 50px;
+  }
+  .impactSec .results-impact-temp .impact-subheading {
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0.6px;
+  }
+  .impactSec .results-impact-temp .impact-mainheading {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.48px;
+    line-height: 26px;
+  }
+  .impactSec .impact-img {
+    padding: 0px;
+  }
+}
+
+.lesson-learnedSec {
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 400px;
+  position: relative;
+}
+@media screen and (max-width: 1400px) {
+  .lesson-learnedSec {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .lesson-learnedSec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.lesson-learnedSec .lesson-learned-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lesson-learnedSec .lesson-learned-wrapper:not(:last-child) {
+  padding-bottom: 142px;
+}
+.lesson-learnedSec .lesson-learned-wrapper:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.lesson-learnedSec .lesson-learned-wrapper .left-text {
+  width: 50%;
+  padding: 0px 150px;
+}
+.lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+  margin-bottom: 30px;
+  color: var(--primary-black, #000);
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1600px) {
+  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+    font-size: 14px;
+  }
+}
+.lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading span {
+  color: var(--Primary-Red, #FF0D47);
+}
+.lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
+  margin-bottom: 48px;
+  color: var(--primary-black, #000);
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.9px;
+}
+.lesson-learnedSec .lesson-learned-wrapper .right-img {
+  width: 50%;
+}
+.lesson-learnedSec .lesson-learned-wrapper .right-img img {
+  width: 100%;
+}
+@media all and (max-width: 1800px) {
+  .lesson-learnedSec {
+    margin-bottom: 380px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper:not(:last-child) {
+    padding-bottom: 140px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text {
+    padding: 0px 145px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+    margin-bottom: 30px;
+    line-height: 30px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
+    margin-bottom: 45px;
+    line-height: 40px;
+  }
+}
+@media all and (max-width: 1600px) {
+  .lesson-learnedSec {
+    margin-bottom: 350px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text {
+    padding: 0px 140px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+    margin-bottom: 28px;
+    line-height: 28px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
+    margin-bottom: 40px;
+    line-height: 36px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .lesson-learnedSec {
+    margin-bottom: 300px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper:not(:last-child) {
+    padding-bottom: 120px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text {
+    padding: 0px 120px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+    margin-bottom: 24px;
+    line-height: 24px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
+    margin-bottom: 36px;
+    line-height: 32px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .lesson-learnedSec {
+    margin-bottom: 250px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper:not(:last-child) {
+    padding-bottom: 100px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text {
+    padding: 0px 100px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+    margin-bottom: 22px;
+    line-height: 22px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
+    margin-bottom: 32px;
+    line-height: 30px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .lesson-learnedSec {
+    margin-bottom: 200px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper {
+    display: block;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text {
+    width: 100%;
+    padding: 0px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+    margin-bottom: 20px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
+    margin-bottom: 20px;
+    line-height: 34px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .right-img {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+@media all and (max-width: 780px) {
+  .lesson-learnedSec {
+    margin-bottom: 150px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper {
+    display: block;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper:not(:last-child) {
+    padding-bottom: 40px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text {
+    width: 100%;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0.6px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.48px;
+  }
+  .lesson-learnedSec .lesson-learned-wrapper .right-img {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+}
+@media all and (max-width: 680px) {
+  .lesson-learnedSec {
+    padding: 0px;
   }
 }
 

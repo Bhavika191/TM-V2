@@ -296,7 +296,7 @@
         &:nth-child(even){flex-direction: row-reverse;}
         .leftcontent-rightimage-text{width: 50%;padding: 0px 150px;
             .leftcontent-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;}
-            .leftcontent-mainheading{margin-bottom: 48px;color: var(--primary-black, #000);font-family: $fontpoppins;font-size: 30px;font-weight: $fontW500;line-height: 40px;letter-spacing: -0.9px;}
+            .leftcontent-mainheading{margin-bottom: 48px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font30;font-weight: $fontW500;line-height: 40px;letter-spacing: -0.9px;}
             .leftcontent-text{color: var(--body-copy, #6A6A6A);font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 30px;letter-spacing: 0.6px;}
         }
         .leftcontent-rightimage-image{width: 50%;img{width: 100%;}}
@@ -319,13 +319,6 @@
             .leftcontent-subheading{margin-bottom: 30px;line-height: 30px;}
             .leftcontent-mainheading{margin-bottom: 45px;line-height: 40px;}
             .leftcontent-text{line-height: 30px;}
-        }
-    }
-    .rightcontent-leftimageSec{padding-bottom:140px;
-        .rightcontent-leftimage-text{padding: 0px 145px;
-            .rightcontent-subheading{margin-bottom: 30px;line-height: 30px;}
-            .rightcontent-mainheading{margin-bottom: 45px;line-height: 40px;}
-            .rightcontent-text{line-height: 30px;}
         }
     }
 }
@@ -430,6 +423,238 @@
 }
 }
 
+.statsSec{margin-bottom:400px;
+    .statsSec-wrapper{display: flex;align-self:center;justify-content:space-between;@include wrapperTwo;margin-bottom:140px;
+        .stats-content{width: 35%;
+            .stats-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;}
+            .stats-mainheading{color: var(--primary-black, #000);font-family: $fontpoppins;@include font30;font-weight: $fontW500;line-height: 40px;letter-spacing: -0.9px;}
+        }
+        .stats-numbers{width: 40%;display: flex;align-self:center;justify-content:space-between;
+            .rates{width: calc(33.33% - 114px);
+                img{margin-bottom: 10px;}
+                p{color: #000;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 24px;letter-spacing: 0.6px;margin-bottom: 30px;}
+                h2{color: var(--Primary-Black, #000);font-family: $fontpoppins;@include font40;font-weight: $fontW500;line-height: 50px;letter-spacing: -1.2px;}
+            }
+        }
+    }
+    .optionalSec{@include wrapper;img{width: 100%;}}
+    @media all and (max-width:1800px){margin-bottom: 380px;
+        .statsSec-wrapper{margin-bottom:130px;
+            .stats-content{
+                .stats-subheading{margin-bottom: 28px;line-height: 28px;}
+                .stats-mainheading{line-height: 36px;}
+            }
+            .stats-numbers{
+                .rates{width: calc(33.33% - 110px);
+                    img{margin-bottom: 10px;}
+                    p{line-height: 22px;margin-bottom: 28px;}
+                    h2{line-height: 45px;}
+                }
+            }
+        }
+    }
+    @media all and (max-width:1600px){
+        margin-bottom: 350px;
+        .statsSec-wrapper{margin-bottom:120px;
+            .stats-content{
+                .stats-subheading{margin-bottom: 26px;line-height: 26px;}
+                .stats-mainheading{line-height: 34px;}
+            }
+            .stats-numbers{
+                .rates{width: calc(33.33% - 100px);
+                    img{margin-bottom: 10px;}
+                    p{line-height: 22px;margin-bottom: 28px;}
+                    h2{line-height: 42px;}
+                }
+            }
+        }
+    }
+    @media all and (max-width:1400px){
+        margin-bottom: 300px;
+        .statsSec-wrapper{margin-bottom:100px;
+            .stats-content{
+                .stats-subheading{margin-bottom: 24px;line-height: 24px;}
+                .stats-mainheading{line-height: 32px;}
+            }
+            .stats-numbers{
+                .rates{width: calc(33.33% - 80px);
+                    img{margin-bottom: 10px;}
+                    p{line-height: 20px;margin-bottom: 26px;}
+                    h2{line-height: 36px;}
+                }
+            }
+        }
+    }
+    @media all and (max-width:1200px){
+        margin-bottom: 250px;
+        .statsSec-wrapper{margin-bottom:80px;
+            .stats-content{
+                .stats-subheading{margin-bottom: 22px;line-height: 22px;}
+                .stats-mainheading{line-height: 30px;}
+            }
+            .stats-numbers{
+                .rates{width: calc(33.33% - 60px);
+                    img{margin-bottom: 8px;}
+                    p{line-height: 20px;margin-bottom: 24px;}
+                    h2{line-height: 32px;}
+                }
+            }
+        }
+    }
+    @media all and (max-width:1024px){
+        margin-bottom:150px;
+        .statsSec-wrapper{display: block;margin-bottom:75px;
+            .stats-content{width: 100%;margin-bottom:65px;
+                .stats-subheading{margin-bottom: 20px;}
+            }
+            .stats-numbers{width: 100%;display: flex;flex-flow:wrap;
+                .rates{width: 33%;margin-bottom: 60px;
+                    img{margin-bottom: 12px;}
+                    p{margin-bottom: 22px;}
+                    h2{}
+                }
+            }
+        }
+    }
+    @media all and (max-width:680px){
+        margin-bottom:40px;
+    .statsSec-wrapper{display: block;margin-bottom:68px;
+        .stats-content{width: 100%;margin-bottom:60px;
+            .stats-subheading{margin-bottom: 20px;font-size: 12px;font-weight: 600;line-height: 12px;}
+            .stats-mainheading{font-size: 18px;font-weight: 500;line-height: 30px;letter-spacing: -0.54px;}
+        }
+        .stats-numbers{width: 100%;display: flex;flex-flow:wrap;
+            .rates{width: 50%;margin-bottom: 50px;
+                img{margin-bottom: 10px;font-size: 16px;font-weight: 500;line-height: 21.333px;letter-spacing: 0.48px;}
+                p{margin-bottom: 20px;font-size: 16px;font-weight: 500;line-height: 21.333px;letter-spacing: 0.48px;}
+                h2{font-size: 30px;font-weight: 500;line-height: 44.444px;letter-spacing: -0.9px;}
+            }
+        }
+    }
+    .optionalSec{padding: 0px;}
+    }
+}
+
+.impactSec{margin-bottom: 370px;
+    .results-impact-temp{@include wrapperTwo;margin-bottom:100px;
+        .impact-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;
+            span{color: #FF0D47;}
+        }
+        .impact-mainheading{color: var(--primary-black, #000);font-family: $fontpoppins; @include font40;font-weight: $fontW500;line-height: 50px;letter-spacing: -1.2px;}
+    }
+    .impact-img{@include wrapper;img{width:100%}}
+    @media all and (max-width:1800px){
+        margin-bottom: 350px;
+    .results-impact-temp{margin-bottom:100px;
+        .impact-subheading{margin-bottom: 30px;line-height: 30px;}
+        .impact-mainheading{line-height: 45px;}
+    }
+    }
+    @media all and (max-width:1600px){
+        margin-bottom: 320px;
+        .results-impact-temp{margin-bottom:80px;
+            .impact-subheading{margin-bottom: 28px;line-height: 28px;}
+            .impact-mainheading{line-height: 40px;}
+        }
+    }
+    @media all and (max-width:1400px){
+        margin-bottom: 250px;
+        .results-impact-temp{margin-bottom:60px;
+            .impact-subheading{margin-bottom: 24px;line-height: 24px;}
+            .impact-mainheading{line-height: 36px;}
+        }
+    }
+    @media all and (max-width:1200px){
+        margin-bottom: 200px;
+        .results-impact-temp{margin-bottom:50px;
+            .impact-subheading{margin-bottom: 22px;line-height: 22px;}
+            .impact-mainheading{line-height: 32px;}
+        }
+    }
+    @media all and (max-width:1024px){
+        margin-bottom: 150px;
+        .results-impact-temp{margin-bottom:50px;
+            .impact-subheading{margin-bottom: 22px;line-height: 22px;}
+            .impact-mainheading{line-height: 32px;}
+        }
+    }
+    @media all and (max-width:680px){
+        margin-bottom: 83px;
+        .results-impact-temp{margin-bottom:50px;
+            .impact-subheading{margin-bottom: 20px;font-size: 12px;font-weight: 700;line-height: 12px;letter-spacing: 0.6px;}
+            .impact-mainheading{font-size: 16px;font-weight: 500;letter-spacing: -0.48px;line-height: 26px;}
+        }
+        .impact-img{padding: 0px;}
+    }
+}
+
+.lesson-learnedSec{@include wrapper;margin-bottom:400px;position:relative;
+    .lesson-learned-wrapper{display:flex;align-items:center;justify-content:space-between;&:not(:last-child){padding-bottom:142px;}
+        &:nth-child(even){flex-direction: row-reverse;}
+        .left-text{width: 50%;padding: 0px 150px;
+            .left-text-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;
+            span{color: var(--Primary-Red, #FF0D47);}}
+            .left-text-mainheading{margin-bottom: 48px;color: var(--primary-black, #000);font-family: $fontpoppins;font-size: 30px;font-weight: $fontW500;line-height: 40px;letter-spacing: -0.9px;}
+        }
+        .right-img{width: 50%;img{width: 100%;}}
+    }
+    @media all and (max-width:1800px){margin-bottom:380px;
+        .lesson-learned-wrapper{&:not(:last-child){padding-bottom:140px;}
+            .left-text{padding: 0px 145px;
+                .left-text-subheading{margin-bottom: 30px;line-height: 30px;}
+                .left-text-mainheading{margin-bottom: 45px;line-height: 40px;}
+            }
+        }
+    }
+    @media all and (max-width:1600px){margin-bottom:350px;
+        .lesson-learned-wrapper{
+            .left-text{padding: 0px 140px;
+                .left-text-subheading{margin-bottom: 28px;line-height: 28px;}
+                .left-text-mainheading{margin-bottom: 40px;line-height: 36px;}
+            }
+        }
+    }
+    @media all and (max-width:1400px){margin-bottom:300px;
+        .lesson-learned-wrapper{&:not(:last-child){padding-bottom:120px;}
+            .left-text{padding: 0px 120px;
+                .left-text-subheading{margin-bottom: 24px;line-height: 24px;}
+                .left-text-mainheading{margin-bottom: 36px;line-height: 32px;}
+            }
+        }
+    }
+    @media all and (max-width:1200px){margin-bottom:250px;
+        .lesson-learned-wrapper{&:not(:last-child){padding-bottom:100px;}
+            .left-text{padding: 0px 100px;
+                .left-text-subheading{margin-bottom: 22px;line-height: 22px;}
+                .left-text-mainheading{margin-bottom: 32px;line-height: 30px;}
+            }
+        }
+    }
+    @media all and (max-width:1024px){margin-bottom:200px;
+        .lesson-learned-wrapper{display: block;
+            .left-text{width: 100%;padding:0px;
+                .left-text-subheading{margin-bottom: 20px;}
+                .left-text-mainheading{margin-bottom: 20px;line-height: 34px;}
+            }
+            .right-img{width: 100%;margin-bottom: 60px;}
+        }
+    }
+    @media all and (max-width:780px){margin-bottom:150px;
+        .lesson-learned-wrapper{display: block;&:not(:last-child){padding-bottom:40px;}
+            .left-text{width: 100%;
+                .left-text-subheading{margin-bottom: 20px;font-size: 12px;font-weight: 600;line-height: 12px;letter-spacing: 0.6px;}
+                .left-text-mainheading{margin-bottom: 30px;font-size: 16px;font-weight: 500;line-height: 26px;letter-spacing: -0.48px;}
+            }
+            .right-img{width: 100%;margin-bottom: 0px;}
+        }
+    }
+    @media all and (max-width:680px){
+        padding:0px;
+    }
+    
+
+}
+
 .casestudySec{position: relative;@include wrapper;overflow:hidden;
     .moreCasestudy {width: 100%;
         .brandLogos {display: flex;align-items: center;
@@ -445,51 +670,14 @@
         }
     }
     // .circleAnimShow{position:absolute; bottom:0%;transition: all 1s ease-in-out;}
-
     @media all and (max-width:1024px){
-        .moreCasestudy{
-            position: static;
-            .brandLogos .relatedBox{
-                padding: 12px;
-                &:nth-child(1){
-                    text-align: center;
-                }
-                &:nth-child(2){
-                    text-align: center;
-                }
-                a img{
-                    height: 50px;
-                }
+        .moreCasestudy{position: static;
+            .brandLogos .relatedBox{padding: 12px;
+                &:nth-child(1){text-align: center;}
+                &:nth-child(2){text-align: center;}
+                a img{height: 50px;}
             }
         }
     }
 }
-
-// .impactSec{
-//     .results-impact-temp{@include wrapperTwo;margin-bottom:100px;
-//         .impact-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;}
-//         .impact-mainheading{color: var(--primary-black, #000);font-family: $fontpoppins; @include font40;font-weight: $fontW500;line-height: 50px;letter-spacing: -1.2px;}
-//     }
-//     .impact-img{@include wrapper;img{width:100%}}
-// }
-
-// .lesson-learnedSec{
-//     .lesson-learned-wrapper{
-//         .left-text{
-//             .left-text-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;}
-//             .left-text-mainheading{margin-bottom: 48px;color: var(--primary-black, #000);font-family: $fontpoppins;font-size: 30px;font-weight: $fontW500;line-height: 40px;letter-spacing: -0.9px;}
-//         }
-//         .right-img{}
-//     }
-// }
-
-// .conclusionSec{
-//     .conclusion-wrapper{
-//         .left-text{
-//             .left-text-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;}
-//             .left-text-mainheading{margin-bottom: 48px;color: var(--primary-black, #000);font-family: $fontpoppins;font-size: 30px;font-weight: $fontW500;line-height: 40px;letter-spacing: -0.9px;}
-//         }
-//         .right-img{}
-//     }
-// }
 
