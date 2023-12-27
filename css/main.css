@@ -4380,7 +4380,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
 }
 .banner-section .content-div {
-  padding: 224px 150px 124 150px;
+  padding: 224px 150px 124px 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4388,26 +4388,31 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 .banner-section .content-div .banner-heading {
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
-  font-size: 64px;
+  font-size: 96px;
   font-weight: 500;
-  line-height: 74px;
-  letter-spacing: -1.92px;
-  width: 50%;
+  line-height: 106px;
+  letter-spacing: -2.88px;
+  width: 75%;
   margin-bottom: 34px;
 }
 @media screen and (max-width: 1600px) {
   .banner-section .content-div .banner-heading {
-    font-size: 50px;
+    font-size: 80px;
   }
 }
 @media screen and (max-width: 1280px) {
   .banner-section .content-div .banner-heading {
-    font-size: 42px;
+    font-size: 74px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .banner-section .content-div .banner-heading {
+    font-size: 64px;
   }
 }
 @media screen and (max-width: 720px) {
   .banner-section .content-div .banner-heading {
-    font-size: 32px;
+    font-size: 40px;
   }
 }
 .banner-section .content-div .banner-subheading {
@@ -4416,6 +4421,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
+  width: 60%;
 }
 @media screen and (max-width: 1600px) {
   .banner-section .content-div .banner-subheading {
@@ -4437,9 +4443,8 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding: 210px 140px 120px 140px;
   }
   .banner-section .content-div .banner-heading {
-    line-height: 70px;
-    letter-spacing: -1.5px;
-    width: 50%;
+    line-height: 96px;
+    letter-spacing: -2.5px;
     margin-bottom: 30px;
   }
   .banner-section .content-div .banner-subheading {
@@ -4451,10 +4456,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding: 200px 130px 110px 130px;
   }
   .banner-section .content-div .banner-heading {
-    line-height: 60px;
-    letter-spacing: -1.2px;
-    width: 50%;
+    line-height: 90px;
     margin-bottom: 26px;
+    width: 80%;
   }
   .banner-section .content-div .banner-subheading {
     line-height: 26px;
@@ -4465,9 +4469,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding: 180px 120px 100px 120px;
   }
   .banner-section .content-div .banner-heading {
-    line-height: 56px;
-    letter-spacing: -1px;
-    width: 55%;
+    line-height: 82px;
     margin-bottom: 24px;
   }
   .banner-section .content-div .banner-subheading {
@@ -4476,7 +4478,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 @media all and (max-width: 1200px) {
   .banner-section .content-div .banner-heading {
-    line-height: 52px;
+    line-height: 75px;
     margin-bottom: 22px;
   }
   .banner-section .content-div .banner-subheading {
@@ -4489,12 +4491,13 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     display: block;
   }
   .banner-section .content-div .banner-heading {
-    line-height: 48px;
+    line-height: 60px;
     width: 100%;
     margin-bottom: 20px;
   }
   .banner-section .content-div .banner-subheading {
     line-height: 20px;
+    width: 90%;
   }
 }
 @media all and (max-width: 680px) {
@@ -4511,6 +4514,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+    width: 100%;
   }
 }
 
@@ -9697,13 +9701,43 @@ body.opentwo {
     font-size: 14px;
   }
 }
+.researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  margin-top: 48px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  margin-right: 30px;
+  border-radius: 6px;
+  border: 1px solid #000;
+}
+@media screen and (max-width: 1600px) {
+  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+    font-size: 12px;
+  }
+}
+.researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
+  margin-left: 10px;
+}
 .researchSec .researchsec-wrapper .research-card-type1 {
   right: 170px;
-  bottom: -10%;
+  bottom: -12%;
 }
 .researchSec .researchsec-wrapper .research-card-type2 {
   left: 170px;
-  bottom: -10%;
+  bottom: -12%;
 }
 @media all and (max-width: 1800px) {
   .researchSec {
@@ -9758,6 +9792,12 @@ body.opentwo {
   .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
     line-height: 28px;
   }
+  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+    line-height: 16px;
+    padding: 12px 24px;
+    margin-right: 28px;
+    margin-top: 40px;
+  }
   .researchSec .researchsec-wrapper .research-card-type1 {
     right: 160px;
   }
@@ -9787,6 +9827,12 @@ body.opentwo {
   .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
     line-height: 24px;
   }
+  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+    line-height: 14px;
+    padding: 10px 22px;
+    margin-right: 26px;
+    margin-top: 36px;
+  }
   .researchSec .researchsec-wrapper .research-card-type1 {
     right: 150px;
   }
@@ -9815,6 +9861,11 @@ body.opentwo {
   }
   .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
     line-height: 22px;
+  }
+  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+    line-height: 12px;
+    margin-right: 24px;
+    margin-top: 32px;
   }
   .researchSec .researchsec-wrapper .research-card-type1 {
     right: 120px;
@@ -9864,6 +9915,15 @@ body.opentwo {
   .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
     line-height: 20px;
   }
+  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+    line-height: 12px;
+    padding: 10px 20px;
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
+    margin-left: 6px;
+  }
 }
 @media all and (max-width: 780px) {
   .researchSec {
@@ -9912,6 +9972,14 @@ body.opentwo {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+  }
+  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+    line-height: 10px;
+    padding: 8px 16px;
+    margin-top: 10px;
+  }
+  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
+    margin-left: 5px;
   }
 }
 
@@ -12206,5 +12274,350 @@ body.opentwo {
   }
   .blogdetails-container .blogdetailsfilter-wrapper a.current {
     padding: 20px 25px;
+  }
+}
+
+@media all and (max-width: 680px) {
+  .aboutus-bannerSec .content-div {
+    padding: 100px 0px 160px 0px;
+  }
+}
+
+.animation-sec {
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 400px;
+}
+@media screen and (max-width: 1400px) {
+  .animation-sec {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .animation-sec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.animation-sec .heading-content {
+  margin-bottom: 140px;
+  padding: 0px 150px;
+}
+.animation-sec .heading-content .main-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  color: var(--Primary-Black, #000);
+  line-height: 74px;
+  letter-spacing: -1.92px;
+  margin-bottom: 34px;
+}
+@media screen and (max-width: 1600px) {
+  .animation-sec .heading-content .main-heading {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .animation-sec .heading-content .main-heading {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .animation-sec .heading-content .main-heading {
+    font-size: 32px;
+  }
+}
+.animation-sec .heading-content .subheading {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--Body-Copy, #6A6A6A);
+  line-height: 34px;
+}
+@media screen and (max-width: 1600px) {
+  .animation-sec .heading-content .subheading {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .animation-sec .heading-content .subheading {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .animation-sec .heading-content .subheading {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 1800px) {
+  .animation-sec {
+    margin-bottom: 350px;
+  }
+  .animation-sec .heading-content {
+    margin-bottom: 130px;
+    padding: 0px 140px;
+  }
+  .animation-sec .heading-content .main-heading {
+    line-height: 72px;
+    margin-bottom: 34px;
+  }
+  .animation-sec .heading-content .subheading {
+    line-height: 34px;
+  }
+}
+@media all and (max-width: 1600px) {
+  .animation-sec {
+    margin-bottom: 300px;
+  }
+  .animation-sec .heading-content {
+    margin-bottom: 120px;
+    padding: 0px 130px;
+  }
+  .animation-sec .heading-content .main-heading {
+    line-height: 70px;
+    margin-bottom: 32px;
+  }
+  .animation-sec .heading-content .subheading {
+    line-height: 32px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .animation-sec {
+    margin-bottom: 250px;
+  }
+  .animation-sec .heading-content {
+    margin-bottom: 120px;
+    padding: 0px 120px;
+  }
+  .animation-sec .heading-content .main-heading {
+    line-height: 65px;
+    margin-bottom: 30px;
+  }
+  .animation-sec .heading-content .subheading {
+    line-height: 30px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .animation-sec {
+    margin-bottom: 200px;
+  }
+  .animation-sec .heading-content {
+    margin-bottom: 110px;
+  }
+  .animation-sec .heading-content .main-heading {
+    line-height: 56px;
+    margin-bottom: 28px;
+  }
+  .animation-sec .heading-content .subheading {
+    line-height: 28px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .animation-sec {
+    margin-bottom: 150px;
+  }
+  .animation-sec .heading-content {
+    margin-bottom: 100px;
+    padding: 0px;
+  }
+  .animation-sec .heading-content .main-heading {
+    line-height: 48px;
+    margin-bottom: 24px;
+    width: 90%;
+  }
+  .animation-sec .heading-content .subheading {
+    line-height: 24px;
+    width: 90%;
+  }
+}
+@media all and (max-width: 680px) {
+  .animation-sec {
+    margin-bottom: 100px;
+  }
+  .animation-sec .heading-content {
+    margin-bottom: 80px;
+  }
+  .animation-sec .heading-content .main-heading {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.9px;
+  }
+  .animation-sec .heading-content .subheading {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+  }
+}
+
+.aboutus-researchSec .heading-content {
+  margin-bottom: 140px;
+  padding: 0px 150px;
+}
+.aboutus-researchSec .heading-content .main-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  color: var(--Primary-Black, #000);
+  line-height: 74px;
+  letter-spacing: -1.92px;
+  margin-bottom: 34px;
+}
+@media screen and (max-width: 1600px) {
+  .aboutus-researchSec .heading-content .main-heading {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .aboutus-researchSec .heading-content .main-heading {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .aboutus-researchSec .heading-content .main-heading {
+    font-size: 32px;
+  }
+}
+.aboutus-researchSec .heading-content .subheading {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--Body-Copy, #6A6A6A);
+  line-height: 34px;
+}
+@media screen and (max-width: 1600px) {
+  .aboutus-researchSec .heading-content .subheading {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .aboutus-researchSec .heading-content .subheading {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .aboutus-researchSec .heading-content .subheading {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 1800px) {
+  .aboutus-researchSec .heading-content {
+    margin-bottom: 130px;
+    padding: 0px 140px;
+  }
+  .aboutus-researchSec .heading-content .main-heading {
+    line-height: 72px;
+    margin-bottom: 34px;
+  }
+  .aboutus-researchSec .heading-content .subheading {
+    line-height: 34px;
+  }
+}
+@media all and (max-width: 1600px) {
+  .aboutus-researchSec .heading-content {
+    margin-bottom: 120px;
+    padding: 0px 130px;
+  }
+  .aboutus-researchSec .heading-content .main-heading {
+    line-height: 70px;
+    margin-bottom: 32px;
+  }
+  .aboutus-researchSec .heading-content .subheading {
+    line-height: 32px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .aboutus-researchSec .heading-content {
+    margin-bottom: 120px;
+    padding: 0px 120px;
+  }
+  .aboutus-researchSec .heading-content .main-heading {
+    line-height: 65px;
+    margin-bottom: 30px;
+  }
+  .aboutus-researchSec .heading-content .subheading {
+    line-height: 30px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .aboutus-researchSec .heading-content {
+    margin-bottom: 110px;
+  }
+  .aboutus-researchSec .heading-content .main-heading {
+    line-height: 56px;
+    margin-bottom: 28px;
+  }
+  .aboutus-researchSec .heading-content .subheading {
+    line-height: 28px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .aboutus-researchSec .heading-content {
+    margin-bottom: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1400px) {
+  .aboutus-researchSec .heading-content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 720px) {
+  .aboutus-researchSec .heading-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .aboutus-researchSec .heading-content .main-heading {
+    line-height: 48px;
+    margin-bottom: 24px;
+    width: 90%;
+  }
+  .aboutus-researchSec .heading-content .subheading {
+    line-height: 24px;
+    width: 90%;
+  }
+}
+@media all and (max-width: 680px) {
+  .aboutus-researchSec {
+    margin-bottom: 40px !important;
+  }
+  .aboutus-researchSec .heading-content {
+    margin-bottom: 80px;
+  }
+  .aboutus-researchSec .heading-content .main-heading {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.9px;
+  }
+  .aboutus-researchSec .heading-content .subheading {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+  }
+  .aboutus-researchSec .researchsec-wrapper:not(:last-child) {
+    margin-bottom: 75px;
+  }
+  .aboutus-researchSec .researchsec-wrapper:last-child {
+    margin-bottom: 40px;
+  }
+}
+
+@media all and (max-width: 680px) {
+  .aboutUs-collaborate {
+    margin-bottom: 30px !important;
   }
 }
