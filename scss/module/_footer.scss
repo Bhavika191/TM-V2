@@ -1,4 +1,4 @@
-footer{@include wrapper;margin-bottom: 70px;
+footer{@include wrapper;margin-bottom: 70px;position: relative;z-index: 3;
     .footerWrapper{background-color: #fff;padding: 140px 150px;
         .footerData{display: flex;justify-content: space-between;align-items:center;
             .footerMenus{width: 30%;
@@ -9,39 +9,54 @@ footer{@include wrapper;margin-bottom: 70px;
                     }
                 }
             }
-            .footerGame{width:27%;
-                .counterText{display: none;margin-bottom: 20px;}
-                .newcounterText{display: block;
+            .footerGame{width:27%;position: relative;
+                .counterText{transition: 1.5s all ease-in-out;position: absolute;bottom: 60%;opacity: 0;
                     h3{@include font16; font-weight: $fontW400;line-height: 24px; text-align: center;width: 85%;margin: 0 auto;span{font-weight: $fontW600;}}
                 }
+                .newcounterText{bottom: 106%;transition: 1.5s all ease-in-out;opacity: 1;}
+                // #box svg.rotate {
+                //     animation: 0.7s linear infinite rotate-con;
+                //     border-radius: 380px;
+                //     background:linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.12499821186066deg, #05FB00 116.24999642372131deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474426deg, #F00 360deg);
+                //     .linesNew{display: none;}
+                //     .innerCircleactive{filter: none;}
+                //     .innerCircleoneactive{fill: #fff;}
+                // }
+                // #box{ position: relative;margin: auto;width: 380px;height: 380px;
+                //     svg{width: 380px;height: 380px;margin: auto;animation: 5s linear infinite rotate-con;}
+                //     &.boxTwo{animation: none;}
+                //     .middleCircle{position: absolute;height: 100px;width: 100px;left: 0;right: 0;top: 0;bottom: 0;margin: auto;border-radius: 50%;background: #fff;display: flex;align-items: center;justify-content: center;cursor: pointer;
+                //         &.middleCirclenew{.innerCircle{background: #fff;}height: 80px;width: 80px;}
+                //     }
+                //     .innerCircle{display: flex;align-items: center;justify-content: center;border-radius: 50%;height: 80px;width: 80px;background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.12499821186066deg, #05FB00 116.24999642372131deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474426deg, #F00 360deg);;}
+                // }
+
                 #box svg.rotate {
-                    animation: 0.5s linear infinite rotate-con;
-                    border-radius: 350px;
+                    transition: transform 5s cubic-bezier(0.9, 0.2, 0.6, 1);
+                    transform: rotate(2160deg);
+                    border-radius: 380px;
                     background:linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.12499821186066deg, #05FB00 116.24999642372131deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474426deg, #F00 360deg);
                     .linesNew{display: none;}
+                    .svgCurveLine{display: block;}
                     .innerCircleactive{filter: none;}
                     .innerCircleoneactive{fill: #fff;}
                 }
-                #box{ position: relative;margin: auto;width: 350px;
-                    svg{width: 350px;margin: auto;padding: 40px;animation: 3s linear infinite rotate-con;}
-                    .rotate{padding: 0px;}
+                #box{ position: relative;margin: auto;width: 380px;height: 380px;background: #fff;
+                    .fanRotatediv{animation: 2s linear infinite rotate-con;}
+                    svg{width: 380px;height: 380px;margin: auto;transition: none;
+                        .linesNew{display: block;}
+                        .svgCurveLine{display: none;}
+                    }
                     &.boxTwo{animation: none;}
                     .middleCircle{position: absolute;height: 100px;width: 100px;left: 0;right: 0;top: 0;bottom: 0;margin: auto;border-radius: 50%;background: #fff;display: flex;align-items: center;justify-content: center;cursor: pointer;
                         &.middleCirclenew{.innerCircle{background: #fff;}height: 80px;width: 80px;}
                     }
                     .innerCircle{display: flex;align-items: center;justify-content: center;border-radius: 50%;height: 80px;width: 80px;background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.12499821186066deg, #05FB00 116.24999642372131deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474426deg, #F00 360deg);;}
                 }
+
                 @keyframes rotate-con {
                     0% {transform: rotate(0deg);}
-                    50%{transform: rotate(180deg);}
                     100% {transform: rotate(360deg);}
-                }
-                @keyframes rotateEarth {
-                    0% {transform: rotate(0deg)}
-                    8.33%, 25% {transform: rotate(90deg)}
-                    33.33%, 50% {transform: rotate(180deg)}
-                    58.33%, 75% {transform: rotate(270deg)}
-                    83.33%, 100% {transform: rotate(360deg)}
                 }
             }
             .footerSubscribe{width: 30%;
@@ -102,15 +117,14 @@ footer{@include wrapper;margin-bottom: 70px;
                     }
                 }
                 .footerGame{width:30%;
-                    .counterText{margin-bottom: 18px;}
                     .newcounterText{
                         h3{line-height: 21px;}
                     }
                     #box svg.rotate {
-                        border-radius: 300px;
+                        border-radius: 310px;
                     }
-                    #box{width: 300px;
-                        svg{width: 300px;padding: 30px;}
+                    #box{width: 310px;height: 310px;
+                        svg{width: 310px;height: 310px;}
                        .middleCircle{height: 80px;width: 80px;
                             &.middleCirclenew{height: 60px;width: 60px;}
                         }
@@ -151,13 +165,13 @@ footer{@include wrapper;margin-bottom: 70px;
                     }
                 }
                 .footerGame{width:32%;
-                    .counterText{margin-bottom: 16px;}
+                    .newcounterText{bottom: 104%;}
 
                     #box svg.rotate {
-                        border-radius: 250px;
+                        border-radius: 290px;
                     }
-                    #box{width: 250px;
-                        svg{width: 250px;padding: 25px;}
+                    #box{width: 290px;height: 290px;
+                        svg{width: 290px;height: 290px;padding: 25px;}
                        .middleCircle{height: 70px;width: 70px;
                             &.middleCirclenew{height: 50px;width: 50px;}
                         }
@@ -187,7 +201,7 @@ footer{@include wrapper;margin-bottom: 70px;
         }
     
     }
-    @media screen and (max-width:1200px) {
+    @media screen and (max-width:1280px) {
         .footerWrapper{padding: 70px;
             .footerData{
                 .footerMenus{
@@ -199,10 +213,10 @@ footer{@include wrapper;margin-bottom: 70px;
                     .counterText{margin-bottom: 16px;width: 100%;}
 
                     #box svg.rotate {
-                        border-radius: 200px;
+                        border-radius: 270px;
                     }
-                    #box{width: 200px;
-                        svg{width: 200px;padding: 20px;}
+                    #box{width: 270px;height: 270px;
+                        svg{width: 270px;height: 270px;padding: 20px;}
                     }
                 }
                 .footerSubscribe{
@@ -238,14 +252,14 @@ footer{@include wrapper;margin-bottom: 70px;
                         }
                     }
                 }
-                .footerGame{width:100%;margin: 60px 0px;
+                .footerGame{width:100%;margin: 120px 0px 60px;
                     .counterText{margin-bottom: 14px;width: 100%;}
 
                     #box svg.rotate {
-                        border-radius: 230px;
+                        border-radius: 300px;
                     }
-                    #box{width: 230px;
-                        svg{width: 230px;padding: 10px;}
+                    #box{width: 300px;height: 300px;
+                        svg{width: 300px;height: 300px;padding: 10px;}
                         .middleCircle{height: 75px;width: 75px; 
                             &.middleCirclenew{height: 65px;width: 65px;}
                         }
