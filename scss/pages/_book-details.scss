@@ -18,11 +18,23 @@
           50%{background-position:50% 100%}
           100%{background-position:50% 0%}
        }
-       .bookStickydiv{width: 48%;position: sticky;top: 0;position: -webkit-sticky;padding-left: 275px;height: 100%;}
-       .bookInfodiv{width: 48%;padding-right: 152px;
+       .bookStickydiv{width: 52%;position: sticky;top: 0;position: -webkit-sticky;padding-left: 275px;height: 100%;}
+       .bookInfodiv{width: 42%;padding-right: 152px;
             .headingDiv{padding-bottom: 100px;
                 h1{@include font64;font-weight: $fontW500;line-height: 74px;letter-spacing: -1.9px;color: #000;margin-bottom: 48px;}
                 p{@include font20;font-weight: $fontW400;line-height: 30px;}
+            }
+            .prizeDiv{background-color: #fff;padding: 42px 75px;display: flex;align-items: flex-end;justify-content: space-between;position: sticky;top: 0;position: -webkit-sticky;
+                .prizeInfo{width: 40%;
+                    h4{@include font16;font-weight: $fontW600;line-height: 162.5%;letter-spacing: 0.8px;text-transform: uppercase;color: #000;margin-bottom: 16px}
+                    h3{@include font48;font-weight: $fontW500;line-height: 100%;letter-spacing: -1.44px;color: #000;}
+                }
+                .orderCta{a{border-radius: 6px;background: #FF0D47;color: #fff;border: none;padding: 14px 28px;}}
+            }
+            .book-author-desc{margin-top: 60px;background-color: #000;padding: 80px;
+                h4{@include font20;font-weight: $fontW600;line-height: 150%;letter-spacing: 1px;text-transform: uppercase;color: #fff;}
+                h3{@include font30;font-weight: $fontW500;line-height: 133%;letter-spacing: -0.9px;color: #fff;margin: 30px 0px 48px;}
+                p{@include font20;font-weight: $fontW400;line-height: 150%;color: #C9C9C9;}
             }
         }
     }
