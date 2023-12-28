@@ -1093,7 +1093,6 @@ footer .footerWrapper .footerData .footerGame #box {
   margin: auto;
   width: 380px;
   height: 380px;
-  background: #fff;
 }
 footer .footerWrapper .footerData .footerGame #box .fanRotatediv {
   animation: 2s linear infinite rotate-con;
@@ -10515,6 +10514,15 @@ body.opentwo {
   }
 }
 
+body {
+  background: conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.1249982119deg, #05FB00 116.2499964237deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474deg, #F00 360deg);
+  position: relative;
+}
+
+header {
+  background: none;
+}
+
 .thankyoupg-blur {
   position: absolute;
   height: 100%;
@@ -10845,6 +10853,7 @@ body.opentwo {
   margin-top: 18px;
   color: white;
   cursor: pointer;
+  background-color: #000;
 }
 
 .blogdetails-bannerSec {

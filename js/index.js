@@ -23,6 +23,7 @@ const KEYCODE_LEFT = 37;
 const textMsg = document.querySelector(".modeltext");
 const modal = document.querySelector(".modalContainer");
 
+
 function init()
 {
     modal.style.display = "none";
@@ -354,9 +355,9 @@ function newBallXSpeedAfterCollision(ballElement,hitElement)
 function createBrickGrid(c)
 {
     for(var i = 0;i<30;i++)
-        for(var j = 0;j<9;j++)
+        for(var j = 0;j<7;j++)
         {
-            createBrick(i*(100)+40,j*(40)+20,c);
+            createBrick(i*(100)+40,j*(60)+30,c);
         }
 }
 
@@ -364,7 +365,7 @@ function createBrick(x, y, c) {
     var brick = new createjs.Shape();
     
     // Adjusted the beginFill method to include border radius
-    brick.graphics.beginFill("#fff").beginStroke("transparent").setStrokeStyle(1).drawRoundRect(0, 0, 100, 60, 0);
+    brick.graphics.beginFill("#000").beginStroke("transparent").setStrokeStyle(1).drawRoundRect(0, 0, 95, 55, 8);
     
     brick.regX = BRICKS_WIDTH / 1;
     brick.regY = BRICKS_HEIGHT / 3;
