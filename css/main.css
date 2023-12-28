@@ -11142,10 +11142,7 @@ body.opentwo {
 }
 .blogdetails-bannerSec .blogdetails-imagesec {
   width: 100%;
-  margin-bottom: 30px;
-}
-.blogdetails-bannerSec .blogdetails-imagesec img {
-  width: 100%;
+  margin-bottom: 120px;
 }
 @media all and (max-width: 1800px) {
   .blogdetails-bannerSec .blogdetails-wrapper {
@@ -11174,6 +11171,9 @@ body.opentwo {
     margin-bottom: 40px;
     line-height: 96px;
   }
+  .blogdetails-bannerSec .blogdetails-imagesec {
+    margin-bottom: 100px;
+  }
 }
 @media all and (max-width: 1400px) {
   .blogdetails-bannerSec .blogdetails-wrapper {
@@ -11186,6 +11186,9 @@ body.opentwo {
   .blogdetails-bannerSec .blogdetails-wrapper h1 {
     margin-bottom: 36px;
     line-height: 80px;
+  }
+  .blogdetails-bannerSec .blogdetails-imagesec {
+    margin-bottom: 80px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -11421,7 +11424,7 @@ body.opentwo {
   list-style: disc;
 }
 .blogdetails-contentSec .blogdetails-contentContainer img {
-  margin: 30px 0px 150px;
+  margin: 30px 0px 48px;
 }
 .blogdetails-contentSec .blogdetails-contentContainer .spacer {
   height: 150px;
@@ -11443,6 +11446,7 @@ body.opentwo {
   line-height: 14px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
+  margin-bottom: 0px;
 }
 @media screen and (max-width: 1600px) {
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec h4 {
@@ -11473,6 +11477,7 @@ body.opentwo {
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv a img {
   margin-bottom: 10px;
+  margin-top: 0px;
 }
 @media screen and (max-width: 1600px) {
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv a {
@@ -11492,7 +11497,7 @@ body.opentwo {
     margin-bottom: 35px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer img {
-    margin: 30px 0px 120px;
+    margin: 30px 0px 40px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .spacer {
     height: 120px;
@@ -12833,7 +12838,7 @@ body.opentwo {
   }
 }
 .bookDescriptionsec .bookDescwrapper .bookStickydiv {
-  width: 48%;
+  width: 52%;
   position: sticky;
   top: 0;
   position: -webkit-sticky;
@@ -12841,7 +12846,7 @@ body.opentwo {
   height: 100%;
 }
 .bookDescriptionsec .bookDescwrapper .bookInfodiv {
-  width: 48%;
+  width: 42%;
   padding-right: 152px;
 }
 .bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv {
@@ -12887,6 +12892,144 @@ body.opentwo {
 }
 @media screen and (max-width: 720px) {
   .bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv p {
+    font-size: 14px;
+  }
+}
+.bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv {
+  background-color: #fff;
+  padding: 42px 75px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  position: -webkit-sticky;
+}
+.bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo {
+  width: 40%;
+}
+.bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 162.5%;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 1600px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo h4 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo h4 {
+    font-size: 12px;
+  }
+}
+.bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo h3 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -1.44px;
+  color: #000;
+}
+@media screen and (max-width: 1600px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo h3 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo h3 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo h3 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo h3 {
+    font-size: 18px;
+  }
+}
+.bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .orderCta a {
+  border-radius: 6px;
+  background: #FF0D47;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+}
+.bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc {
+  margin-top: 60px;
+  background-color: #000;
+  padding: 80px;
+}
+.bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media screen and (max-width: 1600px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc h4 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc h4 {
+    font-size: 14px;
+  }
+}
+.bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc h3 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 133%;
+  letter-spacing: -0.9px;
+  color: #fff;
+  margin: 30px 0px 48px;
+}
+@media screen and (max-width: 1600px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc h3 {
+    font-size: 12px;
+  }
+}
+.bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #C9C9C9;
+}
+@media screen and (max-width: 1600px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc p {
     font-size: 14px;
   }
 }
