@@ -11411,7 +11411,7 @@ body.opentwo {
     font-size: 14px;
   }
 }
-.blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
+.blogdetails-contentSec .blogdetails-contentContainer ul, .blogdetails-contentSec .blogdetails-contentContainer ol {
   padding-left: 20px;
 }
 .blogdetails-contentSec .blogdetails-contentContainer ol li {
