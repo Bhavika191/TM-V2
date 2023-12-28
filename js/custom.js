@@ -289,6 +289,19 @@ $(document).ready(function () {
 });
 //Blog details page active navbar code ends
 
+//About us slider starts
+if ($(window).width() < 1025) {
+  if ($(".researchsec-wrapper .img-div").length > 1) {
+    $('.researchsec-wrapper .img-div').slick({
+      dots:true,
+      autoplay: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });
+  }
+}
+//About us slider ends
 
 //------------------------------------------------------- Shamal's JS Code ends --------------------------------------------------//
 

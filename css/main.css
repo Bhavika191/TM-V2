@@ -6031,6 +6031,10 @@ a.showLess::after {
 .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
   margin-top: -24%;
 }
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:last-child {
+  margin-left: auto;
+  margin-top: -24%;
+}
 .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:first-child {
   transform: translateY(0px);
 }
@@ -6360,6 +6364,9 @@ a.showLess::after {
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
     margin-top: -28%;
   }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent:last-child {
+    margin-top: -28%;
+  }
 }
 @media screen and (max-width: 1200px) {
   .meetupAdderssSec {
@@ -6391,6 +6398,9 @@ a.showLess::after {
     margin: 0px 25px 20px;
   }
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
+    margin-top: -24%;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent:last-child {
     margin-top: -24%;
   }
 }
@@ -6448,6 +6458,9 @@ a.showLess::after {
     margin-bottom: 40px;
   }
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
+    margin-top: unset;
+  }
+  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:last-child {
     margin-top: unset;
   }
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.mumbaiOff {
@@ -7490,8 +7503,15 @@ body.opentwo {
   display: flex;
   justify-content: space-between;
 }
-.careerFormSec .careerSec .collaborateForm form .empType a {
+.careerFormSec .careerSec .collaborateForm form .empType .location-btn {
   width: 30%;
+}
+.careerFormSec .careerSec .collaborateForm form .empType .location-btn label input {
+  visibility: hidden;
+  height: 0;
+  margin-bottom: 0;
+}
+.careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7506,18 +7526,19 @@ body.opentwo {
   letter-spacing: -0.28px;
 }
 @media screen and (max-width: 1600px) {
-  .careerFormSec .careerSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .careerFormSec .careerSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
     font-size: 12px;
   }
 }
-.careerFormSec .careerSec .collaborateForm form .empType a:hover {
+.careerFormSec .careerSec .collaborateForm form .empType .location-btn label span:hover {
   color: #FFF;
   background: #000;
+  cursor: pointer;
 }
 .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
   display: flex;
@@ -7529,7 +7550,7 @@ body.opentwo {
   margin-bottom: 0px;
   border-bottom: none;
 }
-.careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
   padding: 10px 15px;
   display: flex;
   align-items: center;
@@ -7545,14 +7566,25 @@ body.opentwo {
   margin-bottom: 12px;
 }
 @media screen and (max-width: 1600px) {
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 720px) {
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
     font-size: 12px;
   }
+}
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload label:hover {
+  cursor: pointer;
+}
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload .file-upload {
+  position: unset;
+}
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload .file-upload input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
 }
 .careerFormSec .careerSec .collaborateForm form .resume-upload {
   display: flex;
@@ -7701,7 +7733,7 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .empType {
     padding-bottom: 50px;
   }
-  .careerFormSec .careerSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
     padding: 10px 40px;
     line-height: 20px;
     letter-spacing: -0.28px;
@@ -7709,7 +7741,7 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
     margin-bottom: 50px;
   }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
     padding: 8px 14px;
     line-height: 12px;
     letter-spacing: -0.48px;
@@ -7746,7 +7778,7 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .empType {
     padding-bottom: 30px;
   }
-  .careerFormSec .careerSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
     padding: 10px 30px;
     line-height: 18px;
     letter-spacing: -0.28px;
@@ -7754,7 +7786,7 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
     margin-bottom: 30px;
   }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
     padding: 8px 14px;
     line-height: 10px;
     letter-spacing: -0.48px;
@@ -7774,7 +7806,7 @@ body.opentwo {
   .careerFormSec {
     margin: 100px 0px 200px;
   }
-  .careerFormSec .careerSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
     padding: 10px 22px;
     line-height: 16px;
   }
@@ -7801,9 +7833,6 @@ body.opentwo {
   }
   .careerFormSec .careerSec .collaborateForm form .empType {
     padding-bottom: 50px;
-  }
-  .careerFormSec .careerSec .collaborateForm form .empType a {
-    padding: 10px 50px;
   }
   .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
     margin-bottom: 50px;
@@ -7886,7 +7915,10 @@ body.opentwo {
     flex-flow: wrap;
     justify-content: normal;
   }
-  .careerFormSec .careerSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType .location-btn {
+    width: 50%;
+  }
+  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
     width: auto;
     padding: 10px 40px;
     margin-right: 12px;
@@ -7895,7 +7927,7 @@ body.opentwo {
     line-height: 24px;
     letter-spacing: -0.24px;
   }
-  .careerFormSec .careerSec .collaborateForm form .empType a:not(:last-child) {
+  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span:not(:last-child) {
     margin-bottom: 12px;
   }
   .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
@@ -7906,7 +7938,7 @@ body.opentwo {
     margin-bottom: 0px;
     border-bottom: none;
   }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
     padding: 12px 24px;
     display: inline-block;
     margin-bottom: 20px;
@@ -7934,1009 +7966,59 @@ body.opentwo {
   }
 }
 
-.career-meetupAdderssSec {
-  margin-bottom: 250px;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer {
-  padding-left: 210px;
-  padding-right: 210px;
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 1600px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer {
-    padding-left: 180px;
-    padding-right: 180px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer {
-    padding-left: 150px;
-    padding-right: 150px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer {
-    padding-left: 120px;
-    padding-right: 120px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent {
-  width: 40%;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading {
-  margin-bottom: 150px;
-  width: 100%;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
-  color: #000;
-  font-size: 64px;
-  font-weight: 500;
-  line-height: 74px;
-  letter-spacing: -1.92px;
-  margin-bottom: 15px;
-}
-@media screen and (max-width: 1600px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
-    font-size: 50px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
-    font-size: 42px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
-    font-size: 32px;
-  }
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading p {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 34px;
-  color: #6A6A6A;
-}
-@media screen and (max-width: 1600px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading p {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading p {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading p {
-    font-size: 16px;
-  }
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox {
-  width: 100%;
-  margin-bottom: 150px;
-  background: #ffffff;
-  overflow: hidden;
-  height: 800px;
-  position: relative;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox:first-child {
-  transform: translateY(0px);
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff {
-  transition: 0.6s all ease-in-out;
-  height: 200px;
-  overflow: hidden;
-  position: absolute;
-  top: 30px;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.mumbaiOff {
-  left: -800px;
-  width: 800px;
-  animation: mumbaiOff 6s linear infinite;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.delhiOff {
-  left: -500px;
-  width: 500px;
-  animation: delhiOff 6s linear infinite;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.bangaloreOff {
-  left: -1000px;
-  width: 1000px;
-  animation: bangaloreOff 8s linear infinite;
-}
-@keyframes mumbaiOff {
-  0% {
-    transform: translateX(calc(800px + 800px));
-  }
-}
-@keyframes delhiOff {
-  0% {
-    transform: translateX(calc(500px + 500px));
-  }
-}
-@keyframes bangaloreOff {
-  0% {
-    transform: translateX(calc(1000px + 1000px));
-  }
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap {
-  transition: 0.6s all ease-in-out;
-  height: 75%;
-  margin-top: 200px;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd {
-  padding: 50px 50px;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd p {
-  color: #5A5A5A;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-}
-@media screen and (max-width: 1600px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd p {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd p {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd p {
-    font-size: 14px;
-  }
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap {
-  position: relative;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: 0.6s all ease-in-out;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink a {
-  color: #FFF;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-@media screen and (max-width: 1600px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink a {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink a {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink a {
-    font-size: 14px;
-  }
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
-  margin-left: 10px;
-  width: 20px;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox:hover .stateOff {
-  height: 0;
-  transform: translateY(-250px);
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox:hover .stateAddMap {
-  height: 100%;
-  margin-top: 0px;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox:hover .stateAddMap .stateMap .mapLink {
-  opacity: 1;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact {
-  background: #000000;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon {
-  height: 48%;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon img {
-  transform: translate(-10%, -15%);
-  width: 55%;
-  transition: 0.5s all ease-out;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  margin: 0px 50px 30px;
-  padding-bottom: 30px;
-  position: relative;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox:first-child {
-  margin-top: 0px;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox:last-child {
-  border-bottom: 0px;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox::before {
-  content: "";
-  position: absolute;
-  background: url(../images/service-arrow.svg) no-repeat;
-  background-size: contain;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -100px;
-  height: 20px;
-  width: 20px;
-  transition: 0.5s all ease-out;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
-  color: #FFF;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 40px;
-  letter-spacing: -1.2px;
-  margin-bottom: 14px;
-}
-@media screen and (max-width: 1600px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
-    font-size: 22px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
-    font-size: 14px;
-  }
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox a {
-  color: #FFF;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 20px;
-}
-@media screen and (max-width: 1600px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox a {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox a {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox a {
-    font-size: 14px;
-  }
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact:hover .mailIcon img {
-  transform: translate(120%, -15%) rotate(-30deg);
-  width: 50%;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact:hover .MailIds .idsBox::before {
-  right: 24px;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent {
-  width: 40%;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox {
-  width: 100%;
-  margin-bottom: 150px;
-  background: #ffffff;
-  overflow: hidden;
-  height: 800px;
-  position: relative;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox:first-child {
-  transform: translateY(0px);
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff {
-  transition: 0.6s all ease-in-out;
-  height: 200px;
-  overflow: hidden;
-  position: absolute;
-  top: 30px;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.mumbaiOff {
-  left: -800px;
-  width: 800px;
-  animation: mumbaiOff 6s linear infinite;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.delhiOff {
-  left: -500px;
-  width: 500px;
-  animation: delhiOff 6s linear infinite;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.bangaloreOff {
-  left: -1000px;
-  width: 1000px;
-  animation: bangaloreOff 8s linear infinite;
-}
-@keyframes mumbaiOff {
-  0% {
-    transform: translateX(calc(800px + 800px));
-  }
-}
-@keyframes delhiOff {
-  0% {
-    transform: translateX(calc(500px + 500px));
-  }
-}
-@keyframes bangaloreOff {
-  0% {
-    transform: translateX(calc(1000px + 1000px));
-  }
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap {
-  transition: 0.6s all ease-in-out;
-  height: 75%;
-  margin-top: 200px;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd {
-  padding: 50px 50px;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd p {
-  color: #5A5A5A;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-}
-@media screen and (max-width: 1600px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd p {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd p {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd p {
-    font-size: 14px;
-  }
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap {
-  position: relative;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: 0.6s all ease-in-out;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink a {
-  color: #FFF;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-@media screen and (max-width: 1600px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink a {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink a {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink a {
-    font-size: 14px;
-  }
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
-  margin-left: 10px;
-  width: 20px;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox:hover .stateOff {
-  height: 0;
-  transform: translateY(-250px);
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox:hover .stateAddMap {
-  height: 100%;
-  margin-top: 0px;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox:hover .stateAddMap .stateMap .mapLink {
-  opacity: 1;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact {
-  background: #000000;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon {
-  height: 48%;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon img {
-  transform: translate(-10%, -15%);
-  width: 55%;
-  transition: 0.5s all ease-out;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  margin: 0px 50px 30px;
-  padding-bottom: 30px;
-  position: relative;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox:first-child {
-  margin-top: 0px;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox:last-child {
-  border-bottom: 0px;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox::before {
-  content: "";
-  position: absolute;
-  background: url(../images/service-arrow.svg) no-repeat;
-  background-size: contain;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -100px;
-  height: 20px;
-  width: 20px;
-  transition: 0.5s all ease-out;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
-  color: #FFF;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 40px;
-  letter-spacing: -1.2px;
-  margin-bottom: 14px;
-}
-@media screen and (max-width: 1600px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
-    font-size: 22px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
-    font-size: 14px;
-  }
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox a {
-  color: #FFF;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 20px;
-}
-@media screen and (max-width: 1600px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox a {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox a {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox a {
-    font-size: 14px;
-  }
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact:hover .mailIcon img {
-  transform: translate(120%, -15%) rotate(-30deg);
-  width: 50%;
-}
-.career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact:hover .MailIds .idsBox::before {
-  right: 24px;
-}
-@media screen and (max-width: 1600px) {
-  .career-meetupAdderssSec {
-    margin-bottom: 180px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading {
-    margin-bottom: 120px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
-    line-height: 62px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox {
-    margin-bottom: 120px;
-    height: 700px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff {
-    height: 150px;
-    top: 15px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.delhiOff {
-    left: -400px;
-    width: 400px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.mumbaiOff {
-    left: -700px;
-    width: 700px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.bangaloreOff {
-    left: -780px;
-    width: 780px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap {
-    margin-top: 150px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd {
-    padding: 40px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon {
-    height: 45%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon img {
-    width: 75%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox {
-    margin: 0px 40px 25px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox {
-    margin-bottom: 120px;
-    height: 700px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff {
-    height: 150px;
-    top: 15px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.delhiOff {
-    left: -400px;
-    width: 400px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.mumbaiOff {
-    left: -700px;
-    width: 700px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.bangaloreOff {
-    left: -780px;
-    width: 780px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap {
-    margin-top: 150px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd {
-    padding: 40px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon {
-    height: 45%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon img {
-    width: 75%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox {
-    margin: 0px 40px 25px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  .career-meetupAdderssSec {
-    margin-bottom: 150px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading {
-    margin-bottom: 100px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
-    line-height: 62px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox {
-    margin-bottom: 100px;
-    height: 600px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff {
-    height: 120px;
-    top: 15px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.delhiOff {
-    left: -300px;
-    width: 300px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.mumbaiOff {
-    left: -600px;
-    width: 600px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.bangaloreOff {
-    left: -620px;
-    width: 620px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap {
-    margin-top: 120px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd {
-    padding: 25px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
-    width: 12px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon {
-    height: 38%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon img {
-    width: 65%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox {
-    margin: 0px 30px 25px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox::before {
-    width: 12px;
-    height: 12px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox {
-    margin-bottom: 100px;
-    height: 600px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff {
-    height: 120px;
-    top: 15px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.delhiOff {
-    left: -300px;
-    width: 300px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.mumbaiOff {
-    left: -600px;
-    width: 600px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.bangaloreOff {
-    left: -620px;
-    width: 620px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap {
-    margin-top: 120px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd {
-    padding: 25px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
-    width: 12px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon {
-    height: 38%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon img {
-    width: 65%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox {
-    margin: 0px 30px 25px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox::before {
-    width: 12px;
-    height: 12px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .career-meetupAdderssSec {
-    margin-bottom: 100px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading {
-    margin-bottom: 120px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
-    line-height: 62px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox {
-    margin-bottom: 80px;
-    height: 550px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd {
-    padding: 20px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
-    width: 10px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon {
-    height: 35%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon img {
-    width: 60%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox {
-    margin: 0px 25px 20px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox {
-    margin-bottom: 80px;
-    height: 550px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd {
-    padding: 20px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
-    width: 10px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon {
-    height: 35%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon img {
-    width: 60%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox {
-    margin: 0px 25px 20px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .career-meetupAdderssSec {
-    margin-bottom: 150px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent {
-    width: 45%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading {
-    margin-bottom: 60px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
-    line-height: 52px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd {
-    padding: 15px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
-    width: 12px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon {
-    height: 30%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon img {
-    width: 55%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox {
-    margin: 0px 22px 18px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent {
-    width: 45%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd {
-    padding: 15px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateMap .mapLink a img {
-    width: 12px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon {
-    height: 30%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon img {
-    width: 55%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox {
-    margin: 0px 22px 18px;
-  }
-}
-@media screen and (max-width: 820px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer {
-    display: block;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent {
-    width: 100%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading {
-    margin-bottom: 60px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading h2 {
-    line-height: 40px;
-    margin-bottom: 20px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading p {
-    line-height: 24px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox {
-    height: auto;
-    margin-bottom: 60px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox:nth-child(even) {
-    margin-top: unset;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateOff.mumbaiOff {
-    width: 500px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap {
-    margin-top: 100px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd {
-    padding: 30px 24px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd p {
-    font-size: 14px;
-    line-height: 24px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact {
-    margin-bottom: 0px;
-    order: 1;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact:hover .mailIcon img {
-    transform: translate(170%, -15%) rotate(-30deg);
-    width: 40%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon {
-    height: 30%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .mailIcon img {
-    transform: translate(170%, -15%) rotate(-30deg);
-    width: 40%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox {
-    margin: 0px 24px 30px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox:last-child {
-    padding-bottom: 55px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
-    font-size: 24px;
-    line-height: 34px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox a {
-    font-size: 16px;
-    line-height: 26px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox.mailContact .MailIds .idsBox::before {
-    right: 24px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent {
-    width: 100%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox {
-    height: auto;
-    margin-bottom: 60px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox:nth-child(even) {
-    margin-top: unset;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateOff.mumbaiOff {
-    width: 500px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap {
-    margin-top: 100px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd {
-    padding: 30px 24px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd p {
-    font-size: 14px;
-    line-height: 24px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact {
-    margin-bottom: 0px;
-    order: 1;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact:hover .mailIcon img {
-    transform: translate(170%, -15%) rotate(-30deg);
-    width: 40%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon {
-    height: 30%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .mailIcon img {
-    transform: translate(170%, -15%) rotate(-30deg);
-    width: 40%;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox {
-    margin: 0px 24px 30px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox:last-child {
-    padding-bottom: 55px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox h3 {
-    font-size: 24px;
-    line-height: 34px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox a {
-    font-size: 16px;
-    line-height: 26px;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox.mailContact .MailIds .idsBox::before {
-    right: 24px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .secHeading p {
-    color: #000;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-leftcontent .meetupAddBox .stateAddMap .stateAdd p {
-    color: #000;
-  }
-  .career-meetupAdderssSec .career-meetupAdderssContainer .meetupAddress-rightcontent .meetupAddBox .stateAddMap .stateAdd p {
-    color: #000;
-  }
-}
-
-.aboutProjectSec {
+.casedetailsmainSec {
   padding-left: 60px;
   padding-right: 60px;
 }
 @media screen and (max-width: 1400px) {
-  .aboutProjectSec {
+  .casedetailsmainSec {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media screen and (max-width: 720px) {
-  .aboutProjectSec {
+  .casedetailsmainSec {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-.aboutProjectSec .about-sec {
+.casedetailsmainSec .about-sec .aboutcontent {
   padding-left: 210px;
   padding-right: 210px;
   margin: 190px 0px 160px 0px;
   width: 75%;
 }
 @media screen and (max-width: 1600px) {
-  .aboutProjectSec .about-sec {
+  .casedetailsmainSec .about-sec .aboutcontent {
     padding-left: 180px;
     padding-right: 180px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .aboutProjectSec .about-sec {
+  .casedetailsmainSec .about-sec .aboutcontent {
     padding-left: 150px;
     padding-right: 150px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .aboutProjectSec .about-sec {
+  .casedetailsmainSec .about-sec .aboutcontent {
     padding-left: 120px;
     padding-right: 120px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .aboutProjectSec .about-sec {
+  .casedetailsmainSec .about-sec .aboutcontent {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 @media screen and (max-width: 768px) {
-  .aboutProjectSec .about-sec {
+  .casedetailsmainSec .about-sec .aboutcontent {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-.aboutProjectSec .about-sec .subheading {
+.casedetailsmainSec .about-sec .aboutcontent .subheading {
   margin-bottom: 48px;
   color: #000;
   font-family: "Poppins", sans-serif;
@@ -8947,21 +8029,21 @@ body.opentwo {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
-  .aboutProjectSec .about-sec .subheading {
+  .casedetailsmainSec .about-sec .aboutcontent .subheading {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .aboutProjectSec .about-sec .subheading {
+  .casedetailsmainSec .about-sec .aboutcontent .subheading {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .aboutProjectSec .about-sec .subheading {
+  .casedetailsmainSec .about-sec .aboutcontent .subheading {
     font-size: 14px;
   }
 }
-.aboutProjectSec .about-sec .mainheading {
+.casedetailsmainSec .about-sec .aboutcontent .mainheading {
   margin-bottom: 48px;
   color: #000;
   font-family: "Poppins", sans-serif;
@@ -8971,26 +8053,26 @@ body.opentwo {
   letter-spacing: -2.88px;
 }
 @media screen and (max-width: 1600px) {
-  .aboutProjectSec .about-sec .mainheading {
+  .casedetailsmainSec .about-sec .aboutcontent .mainheading {
     font-size: 80px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .aboutProjectSec .about-sec .mainheading {
+  .casedetailsmainSec .about-sec .aboutcontent .mainheading {
     font-size: 74px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .aboutProjectSec .about-sec .mainheading {
+  .casedetailsmainSec .about-sec .aboutcontent .mainheading {
     font-size: 64px;
   }
 }
 @media screen and (max-width: 720px) {
-  .aboutProjectSec .about-sec .mainheading {
+  .casedetailsmainSec .about-sec .aboutcontent .mainheading {
     font-size: 40px;
   }
 }
-.aboutProjectSec .about-sec .about-content {
+.casedetailsmainSec .about-sec .aboutcontent .about-content {
   color: #6A6A6A;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -8998,36 +8080,177 @@ body.opentwo {
   line-height: 30px;
 }
 @media screen and (max-width: 1600px) {
-  .aboutProjectSec .about-sec .about-content {
+  .casedetailsmainSec .about-sec .aboutcontent .about-content {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .aboutProjectSec .about-sec .about-content {
+  .casedetailsmainSec .about-sec .aboutcontent .about-content {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .aboutProjectSec .about-sec .about-content {
+  .casedetailsmainSec .about-sec .aboutcontent .about-content {
     font-size: 14px;
   }
 }
-.aboutProjectSec .image-sec {
+.casedetailsmainSec .about-sec .image-sec {
   width: 100%;
   overflow: hidden;
   transition: 0.7s all ease-out;
   margin-bottom: 140px;
 }
-.aboutProjectSec .image-sec img {
+.casedetailsmainSec .about-sec .image-sec img {
   scale: 1.2;
   transition: 0.7s all ease-out;
   width: 100%;
 }
-.aboutProjectSec .image-sec:hover img {
+.casedetailsmainSec .about-sec .image-sec:hover img {
   scale: unset;
   transition: 0.7s all ease-out;
 }
-.aboutProjectSec .objectivegoal-sec {
+@media all and (max-width: 1800px) {
+  .casedetailsmainSec .about-sec .aboutcontent {
+    margin: 180px 0px 150px 0px;
+  }
+  .casedetailsmainSec .about-sec .aboutcontent .subheading {
+    margin-bottom: 45px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+  .casedetailsmainSec .about-sec .aboutcontent .mainheading {
+    margin-bottom: 45px;
+    line-height: 106px;
+    letter-spacing: -2.88px;
+  }
+  .casedetailsmainSec .about-sec .aboutcontent .about-content {
+    line-height: 30px;
+  }
+  .casedetailsmainSec .about-sec .image-sec {
+    margin-bottom: 130px;
+  }
+}
+@media all and (max-width: 1600px) {
+  .casedetailsmainSec .about-sec .aboutcontent {
+    margin: 170px 0px 140px 0px;
+  }
+  .casedetailsmainSec .about-sec .aboutcontent .subheading {
+    margin-bottom: 40px;
+    line-height: 28px;
+  }
+  .casedetailsmainSec .about-sec .aboutcontent .mainheading {
+    margin-bottom: 40px;
+    line-height: 96px;
+  }
+  .casedetailsmainSec .about-sec .aboutcontent .about-content {
+    line-height: 28px;
+  }
+  .casedetailsmainSec .about-sec .image-sec {
+    margin-bottom: 120px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .casedetailsmainSec .about-sec .aboutcontent {
+    margin: 160px 0px 130px 0px;
+  }
+  .casedetailsmainSec .about-sec .aboutcontent .subheading {
+    margin-bottom: 36px;
+    line-height: 24px;
+  }
+  .casedetailsmainSec .about-sec .aboutcontent .mainheading {
+    margin-bottom: 36px;
+    line-height: 80px;
+  }
+  .casedetailsmainSec .about-sec .aboutcontent .about-content {
+    line-height: 28px;
+  }
+  .casedetailsmainSec .about-sec .image-sec {
+    margin-bottom: 110px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .casedetailsmainSec .about-sec .aboutcontent {
+    margin: 150px 0px 120px 0px;
+  }
+  .casedetailsmainSec .about-sec .aboutcontent .subheading {
+    margin-bottom: 30px;
+    line-height: 22px;
+  }
+  .casedetailsmainSec .about-sec .aboutcontent .mainheading {
+    margin-bottom: 30px;
+    line-height: 70px;
+  }
+  .casedetailsmainSec .about-sec .aboutcontent .about-content {
+    line-height: 24px;
+  }
+  .casedetailsmainSec .about-sec .image-sec {
+    margin-bottom: 100px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .casedetailsmainSec .about-sec .aboutcontent {
+    margin: 120px 0px 100px 0px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1400px) {
+  .casedetailsmainSec .about-sec .aboutcontent {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 720px) {
+  .casedetailsmainSec .about-sec .aboutcontent {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .casedetailsmainSec .about-sec .aboutcontent .subheading {
+    margin-bottom: 25px;
+    line-height: 20px;
+  }
+  .casedetailsmainSec .about-sec .aboutcontent .mainheading {
+    margin-bottom: 25px;
+    line-height: 60px;
+  }
+  .casedetailsmainSec .about-sec .aboutcontent .about-content {
+    line-height: 22px;
+  }
+  .casedetailsmainSec .about-sec .image-sec {
+    margin-bottom: 80px;
+  }
+}
+@media all and (max-width: 821px) {
+  .casedetailsmainSec .about-sec .aboutcontent {
+    margin: 102px 0px 60px 0px;
+    width: 100%;
+  }
+  .casedetailsmainSec .about-sec .aboutcontent .subheading {
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0.6px;
+  }
+  .casedetailsmainSec .about-sec .aboutcontent .mainheading {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: -1.2px;
+  }
+  .casedetailsmainSec .about-sec .aboutcontent .about-content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .casedetailsmainSec .about-sec .image-sec {
+    margin-bottom: 130px;
+  }
+}
+.casedetailsmainSec .objectivegoal-sec {
   margin: 248px 0px 180px 0px;
   padding-left: 210px;
   padding-right: 210px;
@@ -9036,39 +8259,39 @@ body.opentwo {
   justify-content: space-between;
 }
 @media screen and (max-width: 1600px) {
-  .aboutProjectSec .objectivegoal-sec {
+  .casedetailsmainSec .objectivegoal-sec {
     padding-left: 180px;
     padding-right: 180px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .aboutProjectSec .objectivegoal-sec {
+  .casedetailsmainSec .objectivegoal-sec {
     padding-left: 150px;
     padding-right: 150px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .aboutProjectSec .objectivegoal-sec {
+  .casedetailsmainSec .objectivegoal-sec {
     padding-left: 120px;
     padding-right: 120px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .aboutProjectSec .objectivegoal-sec {
+  .casedetailsmainSec .objectivegoal-sec {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 @media screen and (max-width: 768px) {
-  .aboutProjectSec .objectivegoal-sec {
+  .casedetailsmainSec .objectivegoal-sec {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-.aboutProjectSec .objectivegoal-sec .left-sec {
+.casedetailsmainSec .objectivegoal-sec .left-sec {
   width: 38%;
 }
-.aboutProjectSec .objectivegoal-sec .left-sec .left-sec-subheading {
+.casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
   margin-bottom: 30px;
   color: #000;
   font-family: "Poppins", sans-serif;
@@ -9078,21 +8301,21 @@ body.opentwo {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-subheading {
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-subheading {
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-subheading {
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
     font-size: 14px;
   }
 }
-.aboutProjectSec .objectivegoal-sec .left-sec .left-sec-mainheading {
+.casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
   margin-bottom: 48px;
   color: #000;
   font-family: "Poppins", sans-serif;
@@ -9102,21 +8325,21 @@ body.opentwo {
   letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-mainheading {
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-mainheading {
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 720px) {
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-mainheading {
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
     font-size: 14px;
   }
 }
-.aboutProjectSec .objectivegoal-sec .left-sec .left-sec-about-content {
+.casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
   color: #6A6A6A;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -9124,24 +8347,24 @@ body.opentwo {
   line-height: 30px;
 }
 @media screen and (max-width: 1600px) {
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-about-content {
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-about-content {
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-about-content {
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
     font-size: 14px;
   }
 }
-.aboutProjectSec .objectivegoal-sec .right-sec {
+.casedetailsmainSec .objectivegoal-sec .right-sec {
   width: 38%;
 }
-.aboutProjectSec .objectivegoal-sec .right-sec .right-sec-subheading {
+.casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
   margin-bottom: 30px;
   color: #000;
   font-family: "Poppins", sans-serif;
@@ -9151,21 +8374,21 @@ body.opentwo {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-subheading {
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-subheading {
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-subheading {
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
     font-size: 14px;
   }
 }
-.aboutProjectSec .objectivegoal-sec .right-sec .right-sec-mainheading {
+.casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
   margin-bottom: 48px;
   color: #000;
   font-family: "Poppins", sans-serif;
@@ -9175,24 +8398,24 @@ body.opentwo {
   letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-mainheading {
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-mainheading {
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 720px) {
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-mainheading {
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     font-size: 12px;
   }
 }
-.aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content {
+.casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
   padding-left: 24px;
 }
-.aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content li {
+.casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content li {
   list-style: disc;
   color: #6A6A6A;
   font-family: "Poppins", sans-serif;
@@ -9201,45 +8424,295 @@ body.opentwo {
   line-height: 30px;
 }
 @media screen and (max-width: 1600px) {
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content li {
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content li {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content li {
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content li {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content li {
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content li {
     font-size: 14px;
   }
 }
-.aboutProjectSec .casestudy-container {
+@media all and (max-width: 1800px) {
+  .casedetailsmainSec .objectivegoal-sec {
+    margin: 180px 0px 160px 0px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec {
+    width: 46%;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
+    margin-bottom: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
+    margin-bottom: 45px;
+    line-height: 50px;
+    letter-spacing: -1.2px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
+    line-height: 30px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec {
+    width: 46%;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
+    margin-bottom: 30px;
+    line-height: 30px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
+    margin-bottom: 45px;
+    line-height: 50px;
+    letter-spacing: -1.2px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
+    padding-left: 24px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content li {
+    line-height: 30px;
+  }
+}
+@media all and (max-width: 1600px) {
+  .casedetailsmainSec .objectivegoal-sec {
+    margin: 160px 0px 140px 0px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec {
+    width: 46%;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
+    margin-bottom: 28px;
+    line-height: 28px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
+    margin-bottom: 40px;
+    line-height: 46px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
+    line-height: 28px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec {
+    width: 46%;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
+    margin-bottom: 28px;
+    line-height: 28px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
+    margin-bottom: 40px;
+    line-height: 46px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
+    padding-left: 24px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content li {
+    line-height: 28px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .casedetailsmainSec .objectivegoal-sec {
+    margin: 150px 0px 130px 0px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec {
+    width: 46%;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
+    margin-bottom: 24px;
+    line-height: 24px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
+    margin-bottom: 36px;
+    line-height: 40px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
+    line-height: 24px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec {
+    width: 46%;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
+    margin-bottom: 24px;
+    line-height: 24px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
+    margin-bottom: 36px;
+    line-height: 40px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
+    padding-left: 24px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content li {
+    line-height: 24px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .casedetailsmainSec .objectivegoal-sec {
+    margin: 140px 0px 120px 0px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec {
+    width: 46%;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
+    margin-bottom: 22px;
+    line-height: 22px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
+    margin-bottom: 30px;
+    line-height: 36px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
+    line-height: 22px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec {
+    width: 46%;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
+    margin-bottom: 22px;
+    line-height: 22px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
+    margin-bottom: 30px;
+    line-height: 36px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
+    padding-left: 22px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content li {
+    line-height: 22px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .casedetailsmainSec .objectivegoal-sec {
+    margin: 120px 0px 100px 0px;
+    padding: 0px 80px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec {
+    width: 45%;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
+    margin-bottom: 25px;
+    line-height: 32px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
+    line-height: 20px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec {
+    width: 45%;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
+    margin-bottom: 25px;
+    line-height: 32px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
+    padding-left: 20px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content li {
+    line-height: 20px;
+  }
+}
+@media all and (max-width: 821px) {
+  .casedetailsmainSec .objectivegoal-sec {
+    margin: 40px 0px 78px 0px;
+    display: block;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media screen and (max-width: 821px) and (max-width: 1400px) {
+  .casedetailsmainSec .objectivegoal-sec {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 821px) and (max-width: 720px) {
+  .casedetailsmainSec .objectivegoal-sec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 821px) {
+  .casedetailsmainSec .objectivegoal-sec .left-sec {
+    width: 100%;
+    margin-bottom: 78px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec {
+    width: 100%;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
+    padding-left: 18px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+.casedetailsmainSec .casestudy-container {
   position: sticky;
   top: -1px;
   width: 100%;
   z-index: 8;
   background: #F1F1F1;
 }
-.aboutProjectSec .casestudy-container .casestudy-filter {
+.casedetailsmainSec .casestudy-container .casestudy-filter {
   display: block;
   overflow-x: auto;
 }
-.aboutProjectSec .casestudy-container .casestudy-filter::-webkit-scrollbar {
+.casedetailsmainSec .casestudy-container .casestudy-filter::-webkit-scrollbar {
   display: none;
 }
-.aboutProjectSec .casestudy-container .casestudy-filter::-webkit-scrollbar-track {
+.casedetailsmainSec .casestudy-container .casestudy-filter::-webkit-scrollbar-track {
   display: none;
 }
-.aboutProjectSec .casestudy-container .casestudy-filter::-webkit-scrollbar-thumb {
+.casedetailsmainSec .casestudy-container .casestudy-filter::-webkit-scrollbar-thumb {
   display: none;
 }
-.aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper {
+.casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper {
   width: max-content;
   padding: 30px 0px;
 }
-.aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a {
+.casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a {
   display: inline-block;
   color: #000;
   text-decoration: none;
@@ -9251,471 +8724,119 @@ body.opentwo {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
-  .aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a {
+  .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a {
+  .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a {
     font-size: 12px;
   }
 }
-.aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a:not(:last-child) {
+.casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a:not(:last-child) {
   margin-right: 48px;
 }
-.aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a.current {
+.casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a.current {
   font-weight: 700;
   border: 1px solid #000;
   border-radius: 6px;
   padding: 24px 48px;
 }
-@media all and (max-width: 1800px) {
-  .aboutProjectSec .about-sec {
-    margin: 180px 0px 150px 0px;
-  }
-  .aboutProjectSec .about-sec .subheading {
-    margin-bottom: 45px;
-    line-height: 30px;
-    letter-spacing: 1px;
-  }
-  .aboutProjectSec .about-sec .mainheading {
-    margin-bottom: 45px;
-    line-height: 106px;
-    letter-spacing: -2.88px;
-  }
-  .aboutProjectSec .about-sec .about-content {
-    line-height: 30px;
-  }
-  .aboutProjectSec .image-sec {
-    margin-bottom: 130px;
-  }
-  .aboutProjectSec .objectivegoal-sec {
-    margin: 180px 0px 160px 0px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec {
-    width: 46%;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-subheading {
-    margin-bottom: 30px;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-mainheading {
-    margin-bottom: 45px;
-    line-height: 50px;
-    letter-spacing: -1.2px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-about-content {
-    line-height: 30px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec {
-    width: 46%;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-subheading {
-    margin-bottom: 30px;
-    line-height: 30px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-mainheading {
-    margin-bottom: 45px;
-    line-height: 50px;
-    letter-spacing: -1.2px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content {
-    padding-left: 24px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content li {
-    line-height: 30px;
-  }
-}
 @media all and (max-width: 1600px) {
-  .aboutProjectSec .about-sec {
-    margin: 170px 0px 140px 0px;
-  }
-  .aboutProjectSec .about-sec .subheading {
-    margin-bottom: 40px;
-    line-height: 28px;
-  }
-  .aboutProjectSec .about-sec .mainheading {
-    margin-bottom: 40px;
-    line-height: 96px;
-  }
-  .aboutProjectSec .about-sec .about-content {
-    line-height: 28px;
-  }
-  .aboutProjectSec .image-sec {
-    margin-bottom: 120px;
-  }
-  .aboutProjectSec .objectivegoal-sec {
-    margin: 160px 0px 140px 0px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec {
-    width: 46%;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-subheading {
-    margin-bottom: 28px;
-    line-height: 28px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-mainheading {
-    margin-bottom: 40px;
-    line-height: 46px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-about-content {
-    line-height: 28px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec {
-    width: 46%;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-subheading {
-    margin-bottom: 28px;
-    line-height: 28px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-mainheading {
-    margin-bottom: 40px;
-    line-height: 46px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content {
-    padding-left: 24px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content li {
-    line-height: 28px;
-  }
-  .aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper {
+  .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper {
     padding: 22px 0px;
   }
-  .aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a:not(:last-child) {
+  .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a:not(:last-child) {
     margin-right: 40px;
   }
-  .aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a.current {
+  .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a.current {
     padding: 22px 44px;
   }
 }
 @media all and (max-width: 1400px) {
-  .aboutProjectSec .about-sec {
-    margin: 160px 0px 130px 0px;
-  }
-  .aboutProjectSec .about-sec .subheading {
-    margin-bottom: 36px;
-    line-height: 24px;
-  }
-  .aboutProjectSec .about-sec .mainheading {
-    margin-bottom: 36px;
-    line-height: 80px;
-  }
-  .aboutProjectSec .about-sec .about-content {
-    line-height: 28px;
-  }
-  .aboutProjectSec .image-sec {
-    margin-bottom: 110px;
-  }
-  .aboutProjectSec .objectivegoal-sec {
-    margin: 150px 0px 130px 0px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec {
-    width: 46%;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-subheading {
-    margin-bottom: 24px;
-    line-height: 24px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-mainheading {
-    margin-bottom: 36px;
-    line-height: 40px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-about-content {
-    line-height: 24px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec {
-    width: 46%;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-subheading {
-    margin-bottom: 24px;
-    line-height: 24px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-mainheading {
-    margin-bottom: 36px;
-    line-height: 40px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content {
-    padding-left: 24px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content li {
-    line-height: 24px;
-  }
-  .aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper {
+  .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper {
     padding: 20px 0px;
   }
-  .aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a:not(:last-child) {
+  .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a:not(:last-child) {
     margin-right: 36px;
   }
-  .aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a.current {
+  .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a.current {
     padding: 20px 40px;
   }
 }
 @media all and (max-width: 1200px) {
-  .aboutProjectSec .about-sec {
-    margin: 150px 0px 120px 0px;
-  }
-  .aboutProjectSec .about-sec .subheading {
-    margin-bottom: 30px;
-    line-height: 22px;
-  }
-  .aboutProjectSec .about-sec .mainheading {
-    margin-bottom: 30px;
-    line-height: 70px;
-  }
-  .aboutProjectSec .about-sec .about-content {
-    line-height: 24px;
-  }
-  .aboutProjectSec .image-sec {
-    margin-bottom: 100px;
-  }
-  .aboutProjectSec .objectivegoal-sec {
-    margin: 140px 0px 120px 0px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec {
-    width: 46%;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-subheading {
-    margin-bottom: 22px;
-    line-height: 22px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-mainheading {
-    margin-bottom: 30px;
-    line-height: 36px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-about-content {
-    line-height: 22px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec {
-    width: 46%;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-subheading {
-    margin-bottom: 22px;
-    line-height: 22px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-mainheading {
-    margin-bottom: 30px;
-    line-height: 36px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content {
-    padding-left: 22px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content li {
-    line-height: 22px;
-  }
-  .aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper {
+  .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper {
     padding: 18px 0px;
   }
-  .aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a:not(:last-child) {
+  .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a:not(:last-child) {
     margin-right: 30px;
   }
-  .aboutProjectSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a.current {
+  .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a.current {
     padding: 18px 36px;
   }
 }
 @media all and (max-width: 1024px) {
-  .aboutProjectSec .about-sec {
-    margin: 120px 0px 100px 0px;
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-@media screen and (max-width: 1024px) and (max-width: 1400px) {
-  .aboutProjectSec .about-sec {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 1024px) and (max-width: 720px) {
-  .aboutProjectSec .about-sec {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media all and (max-width: 1024px) {
-  .aboutProjectSec .about-sec .subheading {
-    margin-bottom: 25px;
-    line-height: 20px;
-  }
-  .aboutProjectSec .about-sec .mainheading {
-    margin-bottom: 25px;
-    line-height: 60px;
-  }
-  .aboutProjectSec .about-sec .about-content {
-    line-height: 22px;
-  }
-  .aboutProjectSec .image-sec {
-    margin-bottom: 80px;
-  }
-  .aboutProjectSec .objectivegoal-sec {
-    margin: 120px 0px 100px 0px;
-    padding: 0px 80px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec {
-    width: 45%;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-subheading {
-    margin-bottom: 20px;
-    line-height: 20px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-mainheading {
-    margin-bottom: 25px;
-    line-height: 32px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-about-content {
-    line-height: 20px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec {
-    width: 45%;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-subheading {
-    margin-bottom: 20px;
-    line-height: 20px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-mainheading {
-    margin-bottom: 25px;
-    line-height: 32px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content {
-    padding-left: 20px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content li {
-    line-height: 20px;
-  }
-  .aboutProjectSec .casestudy-container .casestudyfilter-wrapper a.current {
+  .casedetailsmainSec .casestudy-container .casestudyfilter-wrapper a.current {
     padding: 16px 32px;
   }
 }
 @media all and (max-width: 780px) {
-  .aboutProjectSec .about-sec {
-    padding: 0px;
-    margin: 102px 0px 60px 0px;
-    width: 100%;
+  .casedetailsmainSec .casestudy-container {
+    padding-left: 60px;
+    padding-right: 60px;
   }
-  .aboutProjectSec .about-sec .subheading {
-    margin-bottom: 20px;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 12px;
-    letter-spacing: 0.6px;
+}
+@media screen and (max-width: 780px) and (max-width: 1400px) {
+  .casedetailsmainSec .casestudy-container {
+    padding-left: 40px;
+    padding-right: 40px;
   }
-  .aboutProjectSec .about-sec .mainheading {
-    margin-bottom: 20px;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 50px;
-    letter-spacing: -1.2px;
+}
+@media screen and (max-width: 780px) and (max-width: 720px) {
+  .casedetailsmainSec .casestudy-container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .aboutProjectSec .about-sec .about-content {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-  }
-  .aboutProjectSec .image-sec {
-    margin-bottom: 130px;
-  }
-  .aboutProjectSec .objectivegoal-sec {
-    margin: 40px 0px 78px 0px;
-    display: block;
-    padding: 0px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec {
-    width: 100%;
-    margin-bottom: 78px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-subheading {
-    margin-bottom: 10px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 12px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-mainheading {
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-  }
-  .aboutProjectSec .objectivegoal-sec .left-sec .left-sec-about-content {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec {
-    width: 100%;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-subheading {
-    margin-bottom: 10px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 12px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-mainheading {
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content {
-    padding-left: 18px;
-  }
-  .aboutProjectSec .objectivegoal-sec .right-sec .right-sec-about-content li {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-  }
-  .aboutProjectSec .casestudy-container .casestudyfilter-wrapper a {
+}
+@media all and (max-width: 780px) {
+  .casedetailsmainSec .casestudy-container .casestudyfilter-wrapper a {
     font-size: 12px;
     font-weight: 500;
     line-height: 14px;
     letter-spacing: 0.6px;
   }
-  .aboutProjectSec .casestudy-container .casestudyfilter-wrapper a.current {
+  .casedetailsmainSec .casestudy-container .casestudyfilter-wrapper a.current {
     padding: 20px 25px;
   }
 }
-
-.researchSec {
-  padding-left: 60px;
-  padding-right: 60px;
+.casedetailsmainSec .researchSec {
   margin-bottom: 350px;
 }
-@media screen and (max-width: 1400px) {
-  .researchSec {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .researchSec {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-.researchSec .researchsec-wrapper {
+.casedetailsmainSec .researchSec .researchsec-wrapper {
   position: relative;
   margin-bottom: 250px;
 }
-.researchSec .researchsec-wrapper .img-div {
+.casedetailsmainSec .researchSec .researchsec-wrapper .img-div {
   width: 100%;
   overflow: hidden;
   transition: 0.7s all ease-out;
 }
-.researchSec .researchsec-wrapper .img-div img {
+.casedetailsmainSec .researchSec .researchsec-wrapper .img-div img {
   scale: 1.2;
   transition: 0.7s all ease-out;
   width: 100%;
 }
-.researchSec .researchsec-wrapper .img-div:hover img {
+.casedetailsmainSec .researchSec .researchsec-wrapper .img-div:hover img {
   scale: unset;
   transition: 0.7s all ease-out;
 }
-.researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
+.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
   position: absolute;
   background: var(--primary-white, #FFF);
   padding: 80px;
   width: 580px;
 }
-.researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
   margin-bottom: 30px;
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
@@ -9725,21 +8846,21 @@ body.opentwo {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
     font-size: 14px;
   }
 }
-.researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
   margin-bottom: 48px;
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
@@ -9748,7 +8869,7 @@ body.opentwo {
   line-height: 40px;
   letter-spacing: -0.9px;
 }
-.researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
   color: var(--body-copy, #6A6A6A);
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -9757,21 +8878,21 @@ body.opentwo {
   letter-spacing: 0.6px;
 }
 @media screen and (max-width: 1600px) {
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
     font-size: 14px;
   }
 }
-.researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
   margin-top: 48px;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -9789,170 +8910,162 @@ body.opentwo {
   border: 1px solid #000;
 }
 @media screen and (max-width: 1600px) {
-  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
     font-size: 12px;
   }
 }
-.researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
+.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
   margin-left: 10px;
 }
-.researchSec .researchsec-wrapper .research-card-type1 {
+.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 {
   right: 170px;
   bottom: -12%;
 }
-.researchSec .researchsec-wrapper .research-card-type2 {
+.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
   left: 170px;
   bottom: -12%;
 }
 @media all and (max-width: 1800px) {
-  .researchSec {
+  .casedetailsmainSec .researchSec {
     margin-bottom: 320px;
   }
-  .researchSec .researchsec-wrapper {
+  .casedetailsmainSec .researchSec .researchsec-wrapper {
     margin-bottom: 220px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
-    padding: 80px;
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
+    padding: 75px;
     width: 550px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
     margin-bottom: 30px;
     line-height: 30px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
     margin-bottom: 48px;
     line-height: 40px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
     line-height: 30px;
-  }
-  .researchSec .researchsec-wrapper .research-card-type1 {
-    right: 170px;
-    bottom: -10%;
-  }
-  .researchSec .researchsec-wrapper .research-card-type2 {
-    left: 170px;
-    bottom: -10%;
   }
 }
 @media all and (max-width: 1600px) {
-  .researchSec {
+  .casedetailsmainSec .researchSec {
     margin-bottom: 300px;
   }
-  .researchSec .researchsec-wrapper {
+  .casedetailsmainSec .researchSec .researchsec-wrapper {
     margin-bottom: 200px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
-    padding: 75px;
-    width: 500px;
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
+    padding: 65px;
+    width: 530px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
     margin-bottom: 28px;
     line-height: 28px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
     margin-bottom: 40px;
     line-height: 36px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
     line-height: 28px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
     line-height: 16px;
     padding: 12px 24px;
     margin-right: 28px;
     margin-top: 40px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 {
     right: 160px;
   }
-  .researchSec .researchsec-wrapper .research-card-type2 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
     left: 160px;
   }
 }
 @media all and (max-width: 1400px) {
-  .researchSec {
+  .casedetailsmainSec .researchSec {
     margin-bottom: 280px;
   }
-  .researchSec .researchsec-wrapper {
+  .casedetailsmainSec .researchSec .researchsec-wrapper {
     margin-bottom: 180px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
-    padding: 70px;
-    width: 450px;
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
+    padding: 60px;
+    width: 500px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
     margin-bottom: 24px;
     line-height: 24px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
     margin-bottom: 36px;
     line-height: 30px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
     line-height: 24px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
     line-height: 14px;
     padding: 10px 22px;
     margin-right: 26px;
     margin-top: 36px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 {
     right: 150px;
   }
-  .researchSec .researchsec-wrapper .research-card-type2 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
     left: 150px;
   }
 }
 @media all and (max-width: 1200px) {
-  .researchSec {
+  .casedetailsmainSec .researchSec {
     margin-bottom: 250px;
   }
-  .researchSec .researchsec-wrapper {
+  .casedetailsmainSec .researchSec .researchsec-wrapper {
     margin-bottom: 160px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
-    padding: 60px;
-    width: 400px;
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
+    padding: 50px;
+    width: 450px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
     margin-bottom: 22px;
     line-height: 22px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
     margin-bottom: 32px;
     line-height: 28px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
     line-height: 22px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
     line-height: 12px;
     margin-right: 24px;
     margin-top: 32px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 {
     right: 120px;
   }
-  .researchSec .researchsec-wrapper .research-card-type2 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
     left: 120px;
   }
 }
 @media all and (max-width: 1024px) {
-  .researchSec {
+  .casedetailsmainSec .researchSec {
     margin-bottom: 180px;
   }
-  .researchSec .researchsec-wrapper {
+  .casedetailsmainSec .researchSec .researchsec-wrapper {
     position: relative;
     margin-bottom: 100px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
     position: static;
     padding-left: 60px;
     padding-right: 60px;
@@ -9962,49 +9075,49 @@ body.opentwo {
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 1400px) {
-  .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 720px) {
-  .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media all and (max-width: 1024px) {
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
     margin-bottom: 20px;
     line-height: 20px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
     margin-bottom: 20px;
     line-height: 34px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
     line-height: 20px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
     line-height: 12px;
     padding: 10px 20px;
     margin-right: 0px;
     margin-top: 20px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
     margin-left: 6px;
   }
 }
-@media all and (max-width: 780px) {
-  .researchSec {
+@media all and (max-width: 821px) {
+  .casedetailsmainSec .researchSec {
     margin-bottom: 150px;
     padding: 0px;
   }
-  .researchSec .researchsec-wrapper {
+  .casedetailsmainSec .researchSec .researchsec-wrapper {
     position: relative;
     margin-bottom: 80px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
     position: static;
     padding-left: 60px;
     padding-right: 60px;
@@ -10013,65 +9126,50 @@ body.opentwo {
     width: auto;
   }
 }
-@media screen and (max-width: 780px) and (max-width: 1400px) {
-  .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
+@media screen and (max-width: 821px) and (max-width: 1400px) {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 780px) and (max-width: 720px) {
-  .researchSec .researchsec-wrapper .research-card-type1, .researchSec .researchsec-wrapper .research-card-type2 {
+@media screen and (max-width: 821px) and (max-width: 720px) {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-@media all and (max-width: 780px) {
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+@media all and (max-width: 821px) {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
     margin-bottom: 10px;
     font-size: 12px;
     font-weight: 600;
     line-height: 12px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
     line-height: 10px;
     padding: 8px 16px;
     margin-top: 10px;
   }
-  .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
     margin-left: 5px;
   }
 }
-
-.solutionsSec {
-  padding-left: 60px;
-  padding-right: 60px;
+.casedetailsmainSec .solutionsSec {
   margin-bottom: 400px;
   position: relative;
 }
-@media screen and (max-width: 1400px) {
-  .solutionsSec {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .solutionsSec {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-.solutionsSec .ux-wrapper {
+.casedetailsmainSec .solutionsSec .ux-wrapper {
   background: var(--primary-white, #FFF);
   display: flex;
   align-items: center;
@@ -10079,11 +9177,11 @@ body.opentwo {
   padding-top: 142px;
   padding-bottom: 142px;
 }
-.solutionsSec .ux-wrapper .heading-sec {
+.casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec {
   width: 50%;
   padding: 0px 150px;
 }
-.solutionsSec .ux-wrapper .heading-sec .ux-subheading {
+.casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
   margin-bottom: 30px;
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
@@ -10093,21 +9191,21 @@ body.opentwo {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
-  .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
     font-size: 14px;
   }
 }
-.solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
+.casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
   font-size: 40px;
@@ -10116,25 +9214,25 @@ body.opentwo {
   letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
-  .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 720px) {
-  .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
     font-size: 14px;
   }
 }
-.solutionsSec .ux-wrapper .ux-content {
+.casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
   width: 50%;
   padding: 0px 150px;
 }
-.solutionsSec .ux-wrapper .ux-content .ux-context {
+.casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
   color: var(--body-copy, #6A6A6A);
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -10142,35 +9240,35 @@ body.opentwo {
   line-height: 30px;
 }
 @media screen and (max-width: 1600px) {
-  .solutionsSec .ux-wrapper .ux-content .ux-context {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .solutionsSec .ux-wrapper .ux-content .ux-context {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .solutionsSec .ux-wrapper .ux-content .ux-context {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
     font-size: 14px;
   }
 }
-.solutionsSec .leftcontent-rightimageSec {
+.casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
   background: var(--primary-white, #FFF);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 142px;
 }
-.solutionsSec .leftcontent-rightimageSec:nth-child(even) {
+.casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:nth-child(even) {
   flex-direction: row-reverse;
 }
-.solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
+.casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
   width: 50%;
   padding: 0px 150px;
 }
-.solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
+.casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
   margin-bottom: 30px;
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
@@ -10180,21 +9278,21 @@ body.opentwo {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
     font-size: 14px;
   }
 }
-.solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
+.casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
   margin-bottom: 48px;
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
@@ -10204,21 +9302,21 @@ body.opentwo {
   letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 720px) {
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
     font-size: 12px;
   }
 }
-.solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
+.casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
   color: var(--body-copy, #6A6A6A);
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -10227,259 +9325,259 @@ body.opentwo {
   letter-spacing: 0.6px;
 }
 @media screen and (max-width: 1600px) {
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
     font-size: 14px;
   }
 }
-.solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image {
+.casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image {
   width: 50%;
 }
-.solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image img {
+.casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image img {
   width: 100%;
 }
 @media all and (max-width: 1800px) {
-  .solutionsSec {
+  .casedetailsmainSec .solutionsSec {
     margin-bottom: 380px;
   }
-  .solutionsSec .ux-wrapper {
+  .casedetailsmainSec .solutionsSec .ux-wrapper {
     padding-top: 140px;
     padding-bottom: 140px;
   }
-  .solutionsSec .ux-wrapper .heading-sec {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec {
     padding: 0px 145px;
   }
-  .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
     margin-bottom: 30px;
     line-height: 30px;
   }
-  .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
     line-height: 48px;
   }
-  .solutionsSec .ux-wrapper .ux-content {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 145px;
   }
-  .solutionsSec .ux-wrapper .ux-content .ux-context {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
     line-height: 30px;
   }
-  .solutionsSec .leftcontent-rightimageSec {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
     padding-bottom: 140px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
     padding: 0px 145px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
     margin-bottom: 30px;
     line-height: 30px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
     margin-bottom: 45px;
     line-height: 40px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
     line-height: 30px;
   }
 }
 @media all and (max-width: 1600px) {
-  .solutionsSec {
+  .casedetailsmainSec .solutionsSec {
     margin-bottom: 350px;
   }
-  .solutionsSec .ux-wrapper {
+  .casedetailsmainSec .solutionsSec .ux-wrapper {
     padding-top: 130px;
     padding-bottom: 130px;
   }
-  .solutionsSec .ux-wrapper .heading-sec {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec {
     padding: 0px 140px;
   }
-  .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
     margin-bottom: 28px;
     line-height: 28px;
   }
-  .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
     line-height: 45px;
   }
-  .solutionsSec .ux-wrapper .ux-content {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 140px;
   }
-  .solutionsSec .ux-wrapper .ux-content .ux-context {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
     line-height: 28px;
   }
-  .solutionsSec .leftcontent-rightimageSec {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
     padding-bottom: 140px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
     padding: 0px 140px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
     margin-bottom: 28px;
     line-height: 28px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
     margin-bottom: 40px;
     line-height: 36px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
     line-height: 28px;
   }
 }
 @media all and (max-width: 1400px) {
-  .solutionsSec {
+  .casedetailsmainSec .solutionsSec {
     margin-bottom: 300px;
   }
-  .solutionsSec .ux-wrapper {
+  .casedetailsmainSec .solutionsSec .ux-wrapper {
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  .solutionsSec .ux-wrapper .heading-sec {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec {
     padding: 0px 120px;
   }
-  .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
     margin-bottom: 24px;
     line-height: 24px;
   }
-  .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
     line-height: 40px;
   }
-  .solutionsSec .ux-wrapper .ux-content {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 120px;
   }
-  .solutionsSec .ux-wrapper .ux-content .ux-context {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
     line-height: 24px;
   }
-  .solutionsSec .leftcontent-rightimageSec {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
     padding-bottom: 120px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
     padding: 0px 120px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
     margin-bottom: 24px;
     line-height: 24px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
     margin-bottom: 36px;
     line-height: 32px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
     line-height: 24px;
   }
 }
 @media all and (max-width: 1200px) {
-  .solutionsSec {
+  .casedetailsmainSec .solutionsSec {
     margin-bottom: 250px;
   }
-  .solutionsSec .ux-wrapper {
+  .casedetailsmainSec .solutionsSec .ux-wrapper {
     padding-top: 100px;
     padding-bottom: 100px;
   }
-  .solutionsSec .ux-wrapper .heading-sec {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec {
     padding: 0px 100px;
   }
-  .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
     margin-bottom: 22px;
     line-height: 22px;
   }
-  .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
     line-height: 36px;
   }
-  .solutionsSec .ux-wrapper .ux-content {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 100px;
   }
-  .solutionsSec .ux-wrapper .ux-content .ux-context {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
     line-height: 22px;
   }
-  .solutionsSec .leftcontent-rightimageSec {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
     padding-bottom: 100px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
     padding: 0px 100px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
     margin-bottom: 22px;
     line-height: 22px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
     margin-bottom: 32px;
     line-height: 30px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
     line-height: 22px;
   }
 }
 @media all and (max-width: 1024px) {
-  .solutionsSec {
+  .casedetailsmainSec .solutionsSec {
     margin-bottom: 200px;
   }
-  .solutionsSec .ux-wrapper {
+  .casedetailsmainSec .solutionsSec .ux-wrapper {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-  .solutionsSec .ux-wrapper .heading-sec {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec {
     padding: 0px 80px;
   }
-  .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
     margin-bottom: 20px;
     line-height: 20px;
   }
-  .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
     line-height: 32px;
   }
-  .solutionsSec .ux-wrapper .ux-content {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 80px;
   }
-  .solutionsSec .ux-wrapper .ux-content .ux-context {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
     line-height: 20px;
   }
-  .solutionsSec .leftcontent-rightimageSec {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
     display: block;
     padding-bottom: 100px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
     width: 100%;
     padding-left: 60px;
     padding-right: 60px;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 1400px) {
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 720px) {
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media all and (max-width: 1024px) {
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
     margin-bottom: 20px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
     margin-bottom: 20px;
     line-height: 34px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image {
     width: 100%;
     margin-bottom: 60px;
   }
 }
-@media all and (max-width: 780px) {
-  .solutionsSec {
+@media all and (max-width: 821px) {
+  .casedetailsmainSec .solutionsSec {
     margin-bottom: 150px;
     padding: 0px;
   }
-  .solutionsSec .ux-wrapper {
+  .casedetailsmainSec .solutionsSec .ux-wrapper {
     display: block;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -10487,139 +9585,138 @@ body.opentwo {
     padding-right: 60px;
   }
 }
-@media screen and (max-width: 780px) and (max-width: 1400px) {
-  .solutionsSec .ux-wrapper {
+@media screen and (max-width: 821px) and (max-width: 1400px) {
+  .casedetailsmainSec .solutionsSec .ux-wrapper {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 780px) and (max-width: 720px) {
-  .solutionsSec .ux-wrapper {
+@media screen and (max-width: 821px) and (max-width: 720px) {
+  .casedetailsmainSec .solutionsSec .ux-wrapper {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-@media all and (max-width: 780px) {
-  .solutionsSec .ux-wrapper .heading-sec {
+@media all and (max-width: 821px) {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec {
     width: 100%;
     padding: 0px;
   }
-  .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
     margin-bottom: 20px;
     font-size: 12px;
     font-weight: 600;
     line-height: 12px;
     letter-spacing: 0.6px;
   }
-  .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
     letter-spacing: -0.54px;
   }
-  .solutionsSec .ux-wrapper .ux-content {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     width: 100%;
     padding: 0px;
   }
-  .solutionsSec .ux-wrapper .ux-content .ux-context {
+  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
   }
-  .solutionsSec .leftcontent-rightimageSec {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
     display: block;
     padding-bottom: 84px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
     width: 100%;
     padding-left: 60px;
     padding-right: 60px;
   }
 }
-@media screen and (max-width: 780px) and (max-width: 1400px) {
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
+@media screen and (max-width: 821px) and (max-width: 1400px) {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 780px) and (max-width: 720px) {
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
+@media screen and (max-width: 821px) and (max-width: 720px) {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-@media all and (max-width: 780px) {
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
+@media all and (max-width: 821px) {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
     margin-bottom: 10px;
     font-size: 12px;
     font-weight: 600;
     line-height: 12px;
     letter-spacing: 0.6px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: -0.48px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
   }
-  .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image {
     width: 100%;
     margin-bottom: 40px;
   }
 }
-
-.statsSec {
+.casedetailsmainSec .statsSec {
   margin-bottom: 400px;
 }
-.statsSec .statsSec-wrapper {
+.casedetailsmainSec .statsSec .statsSec-wrapper {
   display: flex;
-  align-self: center;
+  align-items: center;
   justify-content: space-between;
   padding-left: 210px;
   padding-right: 210px;
   margin-bottom: 140px;
 }
 @media screen and (max-width: 1600px) {
-  .statsSec .statsSec-wrapper {
+  .casedetailsmainSec .statsSec .statsSec-wrapper {
     padding-left: 180px;
     padding-right: 180px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .statsSec .statsSec-wrapper {
+  .casedetailsmainSec .statsSec .statsSec-wrapper {
     padding-left: 150px;
     padding-right: 150px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .statsSec .statsSec-wrapper {
+  .casedetailsmainSec .statsSec .statsSec-wrapper {
     padding-left: 120px;
     padding-right: 120px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .statsSec .statsSec-wrapper {
+  .casedetailsmainSec .statsSec .statsSec-wrapper {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 @media screen and (max-width: 768px) {
-  .statsSec .statsSec-wrapper {
+  .casedetailsmainSec .statsSec .statsSec-wrapper {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-.statsSec .statsSec-wrapper .stats-content {
-  width: 35%;
+.casedetailsmainSec .statsSec .statsSec-wrapper .stats-content {
+  width: 34%;
 }
-.statsSec .statsSec-wrapper .stats-content .stats-subheading {
+.casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
   margin-bottom: 30px;
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
@@ -10629,21 +9726,21 @@ body.opentwo {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
-  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
     font-size: 14px;
   }
 }
-.statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+.casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
   font-size: 30px;
@@ -10652,33 +9749,33 @@ body.opentwo {
   letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
-  .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 720px) {
-  .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
     font-size: 12px;
   }
 }
-.statsSec .statsSec-wrapper .stats-numbers {
-  width: 40%;
+.casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers {
+  width: 46%;
   display: flex;
-  align-self: center;
+  align-items: center;
   justify-content: space-between;
 }
-.statsSec .statsSec-wrapper .stats-numbers .rates {
-  width: calc(33.33% - 114px);
+.casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates {
+  width: calc(33.33% - 100px);
 }
-.statsSec .statsSec-wrapper .stats-numbers .rates img {
+.casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates img {
   margin-bottom: 10px;
 }
-.statsSec .statsSec-wrapper .stats-numbers .rates p {
+.casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
   color: #000;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -10688,21 +9785,21 @@ body.opentwo {
   margin-bottom: 30px;
 }
 @media screen and (max-width: 1600px) {
-  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
     font-size: 14px;
   }
 }
-.statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+.casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
   color: var(--Primary-Black, #000);
   font-family: "Poppins", sans-serif;
   font-size: 40px;
@@ -10711,279 +9808,262 @@ body.opentwo {
   letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
-  .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 720px) {
-  .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
     font-size: 14px;
   }
 }
-.statsSec .optionalSec {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-@media screen and (max-width: 1400px) {
-  .statsSec .optionalSec {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .statsSec .optionalSec {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-.statsSec .optionalSec img {
+.casedetailsmainSec .statsSec .optionalSec img {
   width: 100%;
 }
 @media all and (max-width: 1800px) {
-  .statsSec {
+  .casedetailsmainSec .statsSec {
     margin-bottom: 380px;
   }
-  .statsSec .statsSec-wrapper {
+  .casedetailsmainSec .statsSec .statsSec-wrapper {
     margin-bottom: 130px;
   }
-  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
     margin-bottom: 28px;
     line-height: 28px;
   }
-  .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
     line-height: 36px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates {
-    width: calc(33.33% - 110px);
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates {
+    width: calc(33.33% - 90px);
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates img {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates img {
     margin-bottom: 10px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
     line-height: 22px;
     margin-bottom: 28px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
     line-height: 45px;
   }
 }
 @media all and (max-width: 1600px) {
-  .statsSec {
+  .casedetailsmainSec .statsSec {
     margin-bottom: 350px;
   }
-  .statsSec .statsSec-wrapper {
+  .casedetailsmainSec .statsSec .statsSec-wrapper {
     margin-bottom: 120px;
   }
-  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
     margin-bottom: 26px;
     line-height: 26px;
   }
-  .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
     line-height: 34px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates {
-    width: calc(33.33% - 100px);
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates {
+    width: calc(33.33% - 80px);
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates img {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates img {
     margin-bottom: 10px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
     line-height: 22px;
     margin-bottom: 28px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
     line-height: 42px;
   }
 }
 @media all and (max-width: 1400px) {
-  .statsSec {
+  .casedetailsmainSec .statsSec {
     margin-bottom: 300px;
   }
-  .statsSec .statsSec-wrapper {
+  .casedetailsmainSec .statsSec .statsSec-wrapper {
     margin-bottom: 100px;
   }
-  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
     margin-bottom: 24px;
     line-height: 24px;
   }
-  .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
     line-height: 32px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates {
-    width: calc(33.33% - 80px);
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates {
+    width: calc(33.33% - 60px);
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates img {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates img {
     margin-bottom: 10px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
     line-height: 20px;
     margin-bottom: 26px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
     line-height: 36px;
   }
 }
 @media all and (max-width: 1200px) {
-  .statsSec {
+  .casedetailsmainSec .statsSec {
     margin-bottom: 250px;
   }
-  .statsSec .statsSec-wrapper {
+  .casedetailsmainSec .statsSec .statsSec-wrapper {
     margin-bottom: 80px;
   }
-  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
     margin-bottom: 22px;
     line-height: 22px;
   }
-  .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
     line-height: 30px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates {
     width: calc(33.33% - 60px);
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates img {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates img {
     margin-bottom: 8px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
     line-height: 20px;
     margin-bottom: 24px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
     line-height: 32px;
   }
 }
 @media all and (max-width: 1024px) {
-  .statsSec {
+  .casedetailsmainSec .statsSec {
     margin-bottom: 150px;
   }
-  .statsSec .statsSec-wrapper {
+  .casedetailsmainSec .statsSec .statsSec-wrapper {
     display: block;
     margin-bottom: 75px;
   }
-  .statsSec .statsSec-wrapper .stats-content {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content {
     width: 100%;
     margin-bottom: 65px;
   }
-  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
     margin-bottom: 20px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers {
     width: 100%;
     display: flex;
     flex-flow: wrap;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates {
     width: 33%;
     margin-bottom: 60px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates img {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates img {
     margin-bottom: 12px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
     margin-bottom: 22px;
   }
 }
 @media all and (max-width: 680px) {
-  .statsSec {
+  .casedetailsmainSec .statsSec {
     margin-bottom: 40px;
   }
-  .statsSec .statsSec-wrapper {
+  .casedetailsmainSec .statsSec .statsSec-wrapper {
     display: block;
     margin-bottom: 68px;
   }
-  .statsSec .statsSec-wrapper .stats-content {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content {
     width: 100%;
     margin-bottom: 60px;
   }
-  .statsSec .statsSec-wrapper .stats-content .stats-subheading {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
     margin-bottom: 20px;
     font-size: 12px;
     font-weight: 600;
     line-height: 12px;
   }
-  .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
     letter-spacing: -0.54px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers {
     width: 100%;
     display: flex;
     flex-flow: wrap;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates {
     width: 50%;
     margin-bottom: 50px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates img {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates img {
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: 500;
     line-height: 21.333px;
     letter-spacing: 0.48px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates p {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 500;
     line-height: 21.333px;
     letter-spacing: 0.48px;
   }
-  .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
     font-size: 30px;
     font-weight: 500;
     line-height: 44.444px;
     letter-spacing: -0.9px;
   }
-  .statsSec .optionalSec {
+  .casedetailsmainSec .statsSec .optionalSec {
     padding: 0px;
   }
 }
-
-.impactSec {
+.casedetailsmainSec .impactSec {
   margin-bottom: 370px;
 }
-.impactSec .results-impact-temp {
+.casedetailsmainSec .impactSec .results-impact-temp {
   padding-left: 210px;
   padding-right: 210px;
   margin-bottom: 100px;
 }
 @media screen and (max-width: 1600px) {
-  .impactSec .results-impact-temp {
+  .casedetailsmainSec .impactSec .results-impact-temp {
     padding-left: 180px;
     padding-right: 180px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .impactSec .results-impact-temp {
+  .casedetailsmainSec .impactSec .results-impact-temp {
     padding-left: 150px;
     padding-right: 150px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .impactSec .results-impact-temp {
+  .casedetailsmainSec .impactSec .results-impact-temp {
     padding-left: 120px;
     padding-right: 120px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .impactSec .results-impact-temp {
+  .casedetailsmainSec .impactSec .results-impact-temp {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 @media screen and (max-width: 768px) {
-  .impactSec .results-impact-temp {
+  .casedetailsmainSec .impactSec .results-impact-temp {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-.impactSec .results-impact-temp .impact-subheading {
+.casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
   margin-bottom: 30px;
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
@@ -10993,24 +10073,24 @@ body.opentwo {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
-  .impactSec .results-impact-temp .impact-subheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .impactSec .results-impact-temp .impact-subheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .impactSec .results-impact-temp .impact-subheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
     font-size: 14px;
   }
 }
-.impactSec .results-impact-temp .impact-subheading span {
+.casedetailsmainSec .impactSec .results-impact-temp .impact-subheading span {
   color: #FF0D47;
 }
-.impactSec .results-impact-temp .impact-mainheading {
+.casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
   font-size: 40px;
@@ -11019,173 +10099,142 @@ body.opentwo {
   letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
-  .impactSec .results-impact-temp .impact-mainheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .impactSec .results-impact-temp .impact-mainheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 720px) {
-  .impactSec .results-impact-temp .impact-mainheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
     font-size: 14px;
   }
 }
-.impactSec .impact-img {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-@media screen and (max-width: 1400px) {
-  .impactSec .impact-img {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .impactSec .impact-img {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-.impactSec .impact-img img {
+.casedetailsmainSec .impactSec .impact-img img {
   width: 100%;
 }
 @media all and (max-width: 1800px) {
-  .impactSec {
+  .casedetailsmainSec .impactSec {
     margin-bottom: 350px;
   }
-  .impactSec .results-impact-temp {
+  .casedetailsmainSec .impactSec .results-impact-temp {
     margin-bottom: 100px;
   }
-  .impactSec .results-impact-temp .impact-subheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
     margin-bottom: 30px;
     line-height: 30px;
   }
-  .impactSec .results-impact-temp .impact-mainheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
     line-height: 45px;
   }
 }
 @media all and (max-width: 1600px) {
-  .impactSec {
+  .casedetailsmainSec .impactSec {
     margin-bottom: 320px;
   }
-  .impactSec .results-impact-temp {
+  .casedetailsmainSec .impactSec .results-impact-temp {
     margin-bottom: 80px;
   }
-  .impactSec .results-impact-temp .impact-subheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
     margin-bottom: 28px;
     line-height: 28px;
   }
-  .impactSec .results-impact-temp .impact-mainheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
     line-height: 40px;
   }
 }
 @media all and (max-width: 1400px) {
-  .impactSec {
+  .casedetailsmainSec .impactSec {
     margin-bottom: 250px;
   }
-  .impactSec .results-impact-temp {
+  .casedetailsmainSec .impactSec .results-impact-temp {
     margin-bottom: 60px;
   }
-  .impactSec .results-impact-temp .impact-subheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
     margin-bottom: 24px;
     line-height: 24px;
   }
-  .impactSec .results-impact-temp .impact-mainheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
     line-height: 36px;
   }
 }
 @media all and (max-width: 1200px) {
-  .impactSec {
+  .casedetailsmainSec .impactSec {
     margin-bottom: 200px;
   }
-  .impactSec .results-impact-temp {
+  .casedetailsmainSec .impactSec .results-impact-temp {
     margin-bottom: 50px;
   }
-  .impactSec .results-impact-temp .impact-subheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
     margin-bottom: 22px;
     line-height: 22px;
   }
-  .impactSec .results-impact-temp .impact-mainheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
     line-height: 32px;
   }
 }
 @media all and (max-width: 1024px) {
-  .impactSec {
+  .casedetailsmainSec .impactSec {
     margin-bottom: 150px;
   }
-  .impactSec .results-impact-temp {
+  .casedetailsmainSec .impactSec .results-impact-temp {
     margin-bottom: 50px;
   }
-  .impactSec .results-impact-temp .impact-subheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
     margin-bottom: 22px;
     line-height: 22px;
   }
-  .impactSec .results-impact-temp .impact-mainheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
     line-height: 32px;
   }
 }
 @media all and (max-width: 680px) {
-  .impactSec {
+  .casedetailsmainSec .impactSec {
     margin-bottom: 83px;
   }
-  .impactSec .results-impact-temp {
+  .casedetailsmainSec .impactSec .results-impact-temp {
     margin-bottom: 50px;
   }
-  .impactSec .results-impact-temp .impact-subheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
     margin-bottom: 20px;
     font-size: 12px;
     font-weight: 700;
     line-height: 12px;
     letter-spacing: 0.6px;
   }
-  .impactSec .results-impact-temp .impact-mainheading {
+  .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: -0.48px;
     line-height: 26px;
   }
-  .impactSec .impact-img {
+  .casedetailsmainSec .impactSec .impact-img {
     padding: 0px;
   }
 }
-
-.lesson-learnedSec {
-  padding-left: 60px;
-  padding-right: 60px;
+.casedetailsmainSec .lesson-learnedSec {
   margin-bottom: 400px;
   position: relative;
 }
-@media screen and (max-width: 1400px) {
-  .lesson-learnedSec {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .lesson-learnedSec {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-.lesson-learnedSec .lesson-learned-wrapper {
+.casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.lesson-learnedSec .lesson-learned-wrapper:not(:last-child) {
+.casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper:not(:last-child) {
   padding-bottom: 142px;
 }
-.lesson-learnedSec .lesson-learned-wrapper:nth-child(even) {
+.casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper:nth-child(even) {
   flex-direction: row-reverse;
 }
-.lesson-learnedSec .lesson-learned-wrapper .left-text {
+.casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text {
   width: 50%;
   padding: 0px 150px;
 }
-.lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+.casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
   margin-bottom: 30px;
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
@@ -11195,24 +10244,24 @@ body.opentwo {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
-  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
     font-size: 14px;
   }
 }
-.lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading span {
+.casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading span {
   color: var(--Primary-Red, #FF0D47);
 }
-.lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
+.casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
   margin-bottom: 48px;
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
@@ -11221,213 +10270,247 @@ body.opentwo {
   line-height: 40px;
   letter-spacing: -0.9px;
 }
-.lesson-learnedSec .lesson-learned-wrapper .right-img {
+@media screen and (max-width: 1600px) {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
+    font-size: 12px;
+  }
+}
+.casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .right-img {
   width: 50%;
 }
-.lesson-learnedSec .lesson-learned-wrapper .right-img img {
+.casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .right-img img {
   width: 100%;
 }
 @media all and (max-width: 1800px) {
-  .lesson-learnedSec {
+  .casedetailsmainSec .lesson-learnedSec {
     margin-bottom: 380px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper:not(:last-child) {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper:not(:last-child) {
     padding-bottom: 140px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text {
     padding: 0px 145px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
     margin-bottom: 30px;
     line-height: 30px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
     margin-bottom: 45px;
     line-height: 40px;
   }
 }
 @media all and (max-width: 1600px) {
-  .lesson-learnedSec {
+  .casedetailsmainSec .lesson-learnedSec {
     margin-bottom: 350px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text {
     padding: 0px 140px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
     margin-bottom: 28px;
     line-height: 28px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
     margin-bottom: 40px;
     line-height: 36px;
   }
 }
 @media all and (max-width: 1400px) {
-  .lesson-learnedSec {
+  .casedetailsmainSec .lesson-learnedSec {
     margin-bottom: 300px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper:not(:last-child) {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper:not(:last-child) {
     padding-bottom: 120px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text {
     padding: 0px 120px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
     margin-bottom: 24px;
     line-height: 24px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
     margin-bottom: 36px;
     line-height: 32px;
   }
 }
 @media all and (max-width: 1200px) {
-  .lesson-learnedSec {
+  .casedetailsmainSec .lesson-learnedSec {
     margin-bottom: 250px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper:not(:last-child) {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper:not(:last-child) {
     padding-bottom: 100px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text {
     padding: 0px 100px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
     margin-bottom: 22px;
     line-height: 22px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
     margin-bottom: 32px;
     line-height: 30px;
   }
 }
 @media all and (max-width: 1024px) {
-  .lesson-learnedSec {
+  .casedetailsmainSec .lesson-learnedSec {
     margin-bottom: 200px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper {
     display: block;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text {
     width: 100%;
     padding: 0px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
     margin-bottom: 20px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
     margin-bottom: 20px;
     line-height: 34px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .right-img {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .right-img {
     width: 100%;
     margin-bottom: 60px;
   }
 }
 @media all and (max-width: 780px) {
-  .lesson-learnedSec {
+  .casedetailsmainSec .lesson-learnedSec {
     margin-bottom: 150px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper {
     display: block;
   }
-  .lesson-learnedSec .lesson-learned-wrapper:not(:last-child) {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper:not(:last-child) {
     padding-bottom: 40px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text {
     width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
+}
+@media screen and (max-width: 780px) and (max-width: 1400px) {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 780px) and (max-width: 720px) {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 780px) {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
     margin-bottom: 20px;
     font-size: 12px;
     font-weight: 600;
     line-height: 12px;
     letter-spacing: 0.6px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
     margin-bottom: 30px;
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: -0.48px;
   }
-  .lesson-learnedSec .lesson-learned-wrapper .right-img {
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .right-img {
     width: 100%;
     margin-bottom: 0px;
   }
 }
-@media all and (max-width: 680px) {
-  .lesson-learnedSec {
-    padding: 0px;
-  }
-}
-
-.casestudySec {
+.casedetailsmainSec .casestudySec {
   position: relative;
-  padding-left: 60px;
-  padding-right: 60px;
   overflow: hidden;
 }
-@media screen and (max-width: 1400px) {
-  .casestudySec {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .casestudySec {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-.casestudySec .moreCasestudy {
+.casedetailsmainSec .casestudySec .moreCasestudy {
   width: 100%;
 }
-.casestudySec .moreCasestudy .brandLogos {
+.casedetailsmainSec .casestudySec .moreCasestudy .brandLogos {
   display: flex;
   align-items: center;
 }
-.casestudySec .moreCasestudy .brandLogos .relatedBox {
+.casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox {
   padding: 30px;
   width: 50%;
   background: #00C859;
   transition: 0.6s all;
 }
-.casestudySec .moreCasestudy .brandLogos .relatedBox a {
+.casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox a {
   display: block;
   width: 100%;
   cursor: url(../images/mouse-cursor-pages.png) 30 30, auto;
 }
-.casestudySec .moreCasestudy .brandLogos .relatedBox a img {
+.casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox a img {
   margin: 0 auto;
   height: 100px;
 }
-.casestudySec .moreCasestudy .brandLogos .relatedBox:nth-child(1) {
+.casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox:nth-child(1) {
   text-align: left;
 }
-.casestudySec .moreCasestudy .brandLogos .relatedBox:nth-child(2) {
+.casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox:nth-child(2) {
   text-align: right;
 }
-.casestudySec .moreCasestudy .brandLogos .relatedBox.active {
+.casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox.active {
   width: 100%;
 }
-.casestudySec .moreCasestudy .brandLogos .relatedBox.activeTwo {
+.casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox.activeTwo {
   width: 100%;
 }
 @media all and (max-width: 1024px) {
-  .casestudySec .moreCasestudy {
+  .casedetailsmainSec .casestudySec .moreCasestudy {
     position: static;
   }
-  .casestudySec .moreCasestudy .brandLogos .relatedBox {
+  .casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox {
     padding: 12px;
   }
-  .casestudySec .moreCasestudy .brandLogos .relatedBox:nth-child(1) {
+  .casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox:nth-child(1) {
     text-align: center;
   }
-  .casestudySec .moreCasestudy .brandLogos .relatedBox:nth-child(2) {
+  .casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox:nth-child(2) {
     text-align: center;
   }
-  .casestudySec .moreCasestudy .brandLogos .relatedBox a img {
+  .casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox a img {
     height: 50px;
+  }
+}
+@media all and (max-width: 780px) {
+  .casedetailsmainSec .casestudySec {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media screen and (max-width: 780px) and (max-width: 1400px) {
+  .casedetailsmainSec .casestudySec {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 780px) and (max-width: 720px) {
+  .casedetailsmainSec .casestudySec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 780px) {
+  .casedetailsmainSec {
+    padding: 0px;
   }
 }
 
@@ -12795,7 +11878,73 @@ header {
     margin-bottom: 40px;
   }
 }
+.aboutus-researchSec .researchsec-wrapper .img-div .slick-dots {
+  bottom: 80px;
+  text-align: center;
+  width: 20px;
+  transform: rotate(270deg);
+  margin: 0 auto;
+}
+.aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li {
+  width: 12px;
+  height: 12px;
+  margin: 0px 3px;
+  display: block;
+  margin-bottom: 6px;
+}
+.aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li button::before {
+  content: "";
+  border-radius: 10px;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  opacity: 1;
+}
+.aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li.slick-active {
+  margin-bottom: 62px;
+}
+.aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li.slick-active button::before {
+  opacity: 1;
+  background: #fff;
+  height: 70px;
+  border-radius: 10px;
+  transition: 0.9s all ease-in-out;
+}
+.aboutus-researchSec .researchsec-wrapper-odd .img-div .slick-dots {
+  left: 150px;
+}
+.aboutus-researchSec .researchsec-wrapper-even .img-div .slick-dots {
+  right: 150px;
+}
 
+.aboutUs-collaborate {
+  margin-bottom: 400px !important;
+}
+@media all and (max-width: 1800px) {
+  .aboutUs-collaborate {
+    margin-bottom: 350px !important;
+  }
+}
+@media all and (max-width: 1600px) {
+  .aboutUs-collaborate {
+    margin-bottom: 300px !important;
+  }
+}
+@media all and (max-width: 1400px) {
+  .aboutUs-collaborate {
+    margin-bottom: 250px !important;
+  }
+}
+@media all and (max-width: 1200px) {
+  .aboutUs-collaborate {
+    margin-bottom: 200px !important;
+  }
+}
+@media all and (max-width: 1024px) {
+  .aboutUs-collaborate {
+    margin-bottom: 150px !important;
+  }
+}
 @media all and (max-width: 680px) {
   .aboutUs-collaborate {
     margin-bottom: 30px !important;
