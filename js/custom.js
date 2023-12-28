@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function updateButtonClass() {
     var button = document.getElementById("myButton");
-    var boxes = document.querySelectorAll(".caseStudyBoxes");
+    var boxes = document.querySelectorAll(".caseStudyBoxes, .blogslistinnerBoxes");
 
     if (boxes.length % 2 === 0) {
       // Even number of boxes

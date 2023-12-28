@@ -4070,6 +4070,8 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   position: absolute;
   bottom: 0;
   transition: 0.7s all ease-out;
+  left: 0;
+  right: 0;
 }
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails h3 {
   font-size: 32px;
@@ -6965,6 +6967,7 @@ body.opentwo {
 .bloglistingsection .blogsWrapper {
   padding-left: 210px;
   padding-right: 210px;
+  position: relative;
 }
 @media screen and (max-width: 1600px) {
   .bloglistingsection .blogsWrapper {
@@ -7071,6 +7074,8 @@ body.opentwo {
   position: absolute;
   bottom: 0;
   transition: 0.7s all ease-out;
+  left: 0;
+  right: 0;
 }
 .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes .blogDetails h3 {
   font-size: 32px;
@@ -7138,9 +7143,22 @@ body.opentwo {
   bottom: 25px;
   transition: 0.7s all ease-out;
 }
+.bloglistingsection .blogsWrapper #myButton {
+  width: 33.5%;
+  position: absolute;
+  bottom: 100px;
+  text-align: center;
+}
+.bloglistingsection .blogsWrapper #myButton.even-based {
+  right: 210px;
+}
 @media screen and (max-width: 1920px) {
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes:nth-child(odd) {
     margin-top: -10%;
+  }
+  .bloglistingsection .blogsWrapper #myButton {
+    width: 31%;
+    bottom: 110px;
   }
 }
 @media screen and (max-width: 1800px) {
@@ -7183,6 +7201,13 @@ body.opentwo {
     line-height: 30px;
     margin-top: 25px;
   }
+  .bloglistingsection .blogsWrapper #myButton {
+    width: 31%;
+    bottom: 80px;
+  }
+  .bloglistingsection .blogsWrapper #myButton.even-based {
+    right: 180px;
+  }
 }
 @media screen and (max-width: 1400px) {
   .bloglistingsection {
@@ -7219,8 +7244,15 @@ body.opentwo {
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes:hover .blogDetails .blogArrowimg {
     bottom: 18px;
   }
+  .bloglistingsection .blogsWrapper #myButton {
+    width: 34%;
+    bottom: 70px;
+  }
+  .bloglistingsection .blogsWrapper #myButton.even-based {
+    right: 150px;
+  }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .bloglistingsection {
     margin: 120px 0px 150px;
   }
@@ -7242,6 +7274,22 @@ body.opentwo {
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes .blogDetails h3 {
     line-height: 26px;
     margin-top: 20px;
+  }
+  .bloglistingsection .blogsWrapper #myButton {
+    width: 34.5%;
+    bottom: 70px;
+  }
+  .bloglistingsection .blogsWrapper #myButton.even-based {
+    right: 150px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .bloglistingsection .blogsWrapper #myButton {
+    width: 36%;
+    bottom: 50px;
+  }
+  .bloglistingsection .blogsWrapper #myButton.even-based {
+    right: 120px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -7285,6 +7333,22 @@ body.opentwo {
     height: 12px;
     width: 12px;
   }
+  .bloglistingsection .blogsWrapper #myButton {
+    width: 40.5%;
+    bottom: 50px;
+  }
+  .bloglistingsection .blogsWrapper #myButton.even-based {
+    right: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bloglistingsection .blogsWrapper #myButton {
+    bottom: 40px;
+    width: 42.5%;
+  }
+  .bloglistingsection .blogsWrapper #myButton.even-based {
+    right: 20px;
+  }
 }
 @media screen and (max-width: 680px) {
   .bloglistingsection {
@@ -7322,6 +7386,14 @@ body.opentwo {
   }
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes .blogDetails .blogArrowimg img {
     width: 12px;
+  }
+  .bloglistingsection .blogsWrapper #myButton {
+    position: unset;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .bloglistingsection .blogsWrapper #myButton.even-based {
+    right: unset;
   }
 }
 
@@ -12578,5 +12650,5 @@ body.opentwo {
 }
 
 .bookDescriptionsec {
-  margin: 107px 0px 360px;
+  margin: 107px 60px 360px;
 }
