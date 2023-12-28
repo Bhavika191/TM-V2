@@ -8038,22 +8038,6 @@ body.opentwo {
   }
 }
 
-.casedetailsmainSec {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .casedetailsmainSec {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
 .casedetailsmainSec .about-sec .aboutcontent {
   padding-left: 210px;
   padding-right: 210px;
@@ -8150,6 +8134,7 @@ body.opentwo {
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
+  width: 55%;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .about-sec .aboutcontent .about-content {
@@ -8167,18 +8152,33 @@ body.opentwo {
   }
 }
 .casedetailsmainSec .about-sec .image-sec {
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 140px;
+}
+@media screen and (max-width: 1400px) {
+  .casedetailsmainSec .about-sec .image-sec {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .casedetailsmainSec .about-sec .image-sec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.casedetailsmainSec .about-sec .image-sec div {
   width: 100%;
   overflow: hidden;
   transition: 0.7s all ease-out;
-  margin-bottom: 140px;
 }
-.casedetailsmainSec .about-sec .image-sec img {
-  scale: 1.2;
+.casedetailsmainSec .about-sec .image-sec div img {
   transition: 0.7s all ease-out;
   width: 100%;
 }
-.casedetailsmainSec .about-sec .image-sec:hover img {
-  scale: unset;
+.casedetailsmainSec .about-sec .image-sec div:hover img {
+  scale: 1.2;
   transition: 0.7s all ease-out;
 }
 @media all and (max-width: 1800px) {
@@ -8319,11 +8319,15 @@ body.opentwo {
     line-height: 24px;
   }
   .casedetailsmainSec .about-sec .image-sec {
-    margin-bottom: 130px;
+    margin-bottom: 40px;
+    padding: 0px;
+  }
+  .casedetailsmainSec .about-sec .image-sec img {
+    object-fit: cover;
   }
 }
 .casedetailsmainSec .objectivegoal-sec {
-  margin: 248px 0px 180px 0px;
+  margin: 120px 0px 280px 0px;
   padding-left: 210px;
   padding-right: 210px;
   display: flex;
@@ -8512,7 +8516,7 @@ body.opentwo {
 }
 @media all and (max-width: 1800px) {
   .casedetailsmainSec .objectivegoal-sec {
-    margin: 180px 0px 160px 0px;
+    margin: 110px 0px 260px 0px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec {
     width: 46%;
@@ -8524,7 +8528,7 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
     margin-bottom: 45px;
-    line-height: 50px;
+    line-height: 48px;
     letter-spacing: -1.2px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
@@ -8551,7 +8555,7 @@ body.opentwo {
 }
 @media all and (max-width: 1600px) {
   .casedetailsmainSec .objectivegoal-sec {
-    margin: 160px 0px 140px 0px;
+    margin: 100px 0px 240px 0px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec {
     width: 46%;
@@ -8562,7 +8566,7 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
     margin-bottom: 40px;
-    line-height: 46px;
+    line-height: 42px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
     line-height: 28px;
@@ -8587,7 +8591,7 @@ body.opentwo {
 }
 @media all and (max-width: 1400px) {
   .casedetailsmainSec .objectivegoal-sec {
-    margin: 150px 0px 130px 0px;
+    margin: 90px 0px 200px 0px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec {
     width: 46%;
@@ -8598,7 +8602,7 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
     margin-bottom: 36px;
-    line-height: 40px;
+    line-height: 36px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
     line-height: 24px;
@@ -8623,7 +8627,7 @@ body.opentwo {
 }
 @media all and (max-width: 1200px) {
   .casedetailsmainSec .objectivegoal-sec {
-    margin: 140px 0px 120px 0px;
+    margin: 80px 0px 180px 0px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec {
     width: 46%;
@@ -8634,7 +8638,7 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
     margin-bottom: 30px;
-    line-height: 36px;
+    line-height: 32px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
     line-height: 22px;
@@ -8659,7 +8663,7 @@ body.opentwo {
 }
 @media all and (max-width: 1024px) {
   .casedetailsmainSec .objectivegoal-sec {
-    margin: 120px 0px 100px 0px;
+    margin: 80px 0px 150px 0px;
     padding: 0px 80px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec {
@@ -8671,7 +8675,7 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
     margin-bottom: 25px;
-    line-height: 32px;
+    line-height: 28px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
     line-height: 20px;
@@ -8729,7 +8733,7 @@ body.opentwo {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 24px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
     font-size: 14px;
@@ -8766,6 +8770,20 @@ body.opentwo {
   width: 100%;
   z-index: 8;
   background: #F1F1F1;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+@media screen and (max-width: 1400px) {
+  .casedetailsmainSec .casestudy-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .casedetailsmainSec .casestudy-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .casedetailsmainSec .casestudy-container .casestudy-filter {
   display: block;
@@ -8887,6 +8905,20 @@ body.opentwo {
 .casedetailsmainSec .researchSec .researchsec-wrapper {
   position: relative;
   margin-bottom: 250px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+@media screen and (max-width: 1400px) {
+  .casedetailsmainSec .researchSec .researchsec-wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .casedetailsmainSec .researchSec .researchsec-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .casedetailsmainSec .researchSec .researchsec-wrapper .img-div {
   width: 100%;
@@ -8894,12 +8926,11 @@ body.opentwo {
   transition: 0.7s all ease-out;
 }
 .casedetailsmainSec .researchSec .researchsec-wrapper .img-div img {
-  scale: 1.2;
   transition: 0.7s all ease-out;
   width: 100%;
 }
 .casedetailsmainSec .researchSec .researchsec-wrapper .img-div:hover img {
-  scale: unset;
+  scale: 1.2;
   transition: 0.7s all ease-out;
 }
 .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
@@ -8907,6 +8938,7 @@ body.opentwo {
   background: var(--primary-white, #FFF);
   padding: 80px;
   width: 580px;
+  min-height: 722px;
 }
 .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
   margin-bottom: 30px;
@@ -8996,11 +9028,11 @@ body.opentwo {
 }
 .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 {
   right: 170px;
-  bottom: -12%;
+  bottom: -10%;
 }
 .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
   left: 170px;
-  bottom: -12%;
+  bottom: -10%;
 }
 @media all and (max-width: 1800px) {
   .casedetailsmainSec .researchSec {
@@ -9011,7 +9043,6 @@ body.opentwo {
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
     padding: 75px;
-    width: 550px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
     margin-bottom: 30px;
@@ -9034,7 +9065,8 @@ body.opentwo {
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
     padding: 65px;
-    width: 530px;
+    width: 550px;
+    min-height: 700px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
     margin-bottom: 28px;
@@ -9068,8 +9100,8 @@ body.opentwo {
     margin-bottom: 180px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
-    padding: 60px;
-    width: 500px;
+    padding: 55px;
+    min-height: 600px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
     margin-bottom: 24px;
@@ -9077,7 +9109,7 @@ body.opentwo {
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
     margin-bottom: 36px;
-    line-height: 30px;
+    line-height: 36px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
     line-height: 24px;
@@ -9104,7 +9136,8 @@ body.opentwo {
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
     padding: 50px;
-    width: 450px;
+    width: 500px;
+    min-height: 500px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
     margin-bottom: 22px;
@@ -9144,6 +9177,7 @@ body.opentwo {
     padding-bottom: 60px;
     padding-top: 50px;
     width: auto;
+    min-height: unset;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 1400px) {
@@ -9183,11 +9217,11 @@ body.opentwo {
 @media all and (max-width: 821px) {
   .casedetailsmainSec .researchSec {
     margin-bottom: 150px;
-    padding: 0px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper {
     position: relative;
     margin-bottom: 80px;
+    padding: 0px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
     position: static;
@@ -9240,6 +9274,20 @@ body.opentwo {
 .casedetailsmainSec .solutionsSec {
   margin-bottom: 400px;
   position: relative;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+@media screen and (max-width: 1400px) {
+  .casedetailsmainSec .solutionsSec {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .casedetailsmainSec .solutionsSec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .casedetailsmainSec .solutionsSec .ux-wrapper {
   background: var(--primary-white, #FFF);
@@ -9247,7 +9295,7 @@ body.opentwo {
   align-items: center;
   justify-content: space-between;
   padding-top: 142px;
-  padding-bottom: 142px;
+  padding-bottom: 150px;
 }
 .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec {
   width: 50%;
@@ -9894,8 +9942,24 @@ body.opentwo {
     font-size: 14px;
   }
 }
+.casedetailsmainSec .statsSec .optionalSec {
+  padding-left: 60px;
+  padding-right: 60px;
+}
 .casedetailsmainSec .statsSec .optionalSec img {
   width: 100%;
+}
+@media screen and (max-width: 1400px) {
+  .casedetailsmainSec .statsSec .optionalSec {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .casedetailsmainSec .statsSec .optionalSec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 @media all and (max-width: 1800px) {
   .casedetailsmainSec .statsSec {
@@ -10185,8 +10249,35 @@ body.opentwo {
     font-size: 14px;
   }
 }
-.casedetailsmainSec .impactSec .impact-img img {
+.casedetailsmainSec .impactSec .impact-img {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+@media screen and (max-width: 1400px) {
+  .casedetailsmainSec .impactSec .impact-img {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .casedetailsmainSec .impactSec .impact-img {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.casedetailsmainSec .impactSec .impact-img div {
   width: 100%;
+  overflow: hidden;
+  transition: 0.7s all ease-out;
+  margin-bottom: 140px;
+}
+.casedetailsmainSec .impactSec .impact-img div img {
+  transition: 0.7s all ease-out;
+  width: 100%;
+}
+.casedetailsmainSec .impactSec .impact-img div:hover img {
+  scale: 1.2;
+  transition: 0.7s all ease-out;
 }
 @media all and (max-width: 1800px) {
   .casedetailsmainSec .impactSec {
@@ -10290,6 +10381,20 @@ body.opentwo {
 .casedetailsmainSec .lesson-learnedSec {
   margin-bottom: 400px;
   position: relative;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+@media screen and (max-width: 1400px) {
+  .casedetailsmainSec .lesson-learnedSec {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .casedetailsmainSec .lesson-learnedSec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper {
   display: flex;
@@ -10414,7 +10519,7 @@ body.opentwo {
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
     margin-bottom: 36px;
-    line-height: 32px;
+    line-height: 36px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -10462,6 +10567,7 @@ body.opentwo {
 @media all and (max-width: 780px) {
   .casedetailsmainSec .lesson-learnedSec {
     margin-bottom: 150px;
+    padding: 0px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper {
     display: block;
@@ -10510,6 +10616,20 @@ body.opentwo {
 .casedetailsmainSec .casestudySec {
   position: relative;
   overflow: hidden;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+@media screen and (max-width: 1400px) {
+  .casedetailsmainSec .casestudySec {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .casedetailsmainSec .casestudySec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .casedetailsmainSec .casestudySec .moreCasestudy {
   width: 100%;
@@ -10578,11 +10698,6 @@ body.opentwo {
   .casedetailsmainSec .casestudySec {
     padding-left: 20px;
     padding-right: 20px;
-  }
-}
-@media all and (max-width: 780px) {
-  .casedetailsmainSec {
-    padding: 0px;
   }
 }
 
