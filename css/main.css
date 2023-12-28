@@ -7504,8 +7504,15 @@ body.opentwo {
   display: flex;
   justify-content: space-between;
 }
-.careerFormSec .careerSec .collaborateForm form .empType a {
+.careerFormSec .careerSec .collaborateForm form .empType .location-btn {
   width: 30%;
+}
+.careerFormSec .careerSec .collaborateForm form .empType .location-btn label input {
+  visibility: hidden;
+  height: 0;
+  margin-bottom: 0;
+}
+.careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7520,18 +7527,19 @@ body.opentwo {
   letter-spacing: -0.28px;
 }
 @media screen and (max-width: 1600px) {
-  .careerFormSec .careerSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .careerFormSec .careerSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
     font-size: 12px;
   }
 }
-.careerFormSec .careerSec .collaborateForm form .empType a:hover {
+.careerFormSec .careerSec .collaborateForm form .empType .location-btn label span:hover {
   color: #FFF;
   background: #000;
+  cursor: pointer;
 }
 .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
   display: flex;
@@ -7543,7 +7551,7 @@ body.opentwo {
   margin-bottom: 0px;
   border-bottom: none;
 }
-.careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
   padding: 10px 15px;
   display: flex;
   align-items: center;
@@ -7559,14 +7567,25 @@ body.opentwo {
   margin-bottom: 12px;
 }
 @media screen and (max-width: 1600px) {
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 720px) {
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
     font-size: 12px;
   }
+}
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload label:hover {
+  cursor: pointer;
+}
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload .file-upload {
+  position: unset;
+}
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload .file-upload input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
 }
 .careerFormSec .careerSec .collaborateForm form .resume-upload {
   display: flex;
@@ -7715,7 +7734,7 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .empType {
     padding-bottom: 50px;
   }
-  .careerFormSec .careerSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
     padding: 10px 40px;
     line-height: 20px;
     letter-spacing: -0.28px;
@@ -7723,7 +7742,7 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
     margin-bottom: 50px;
   }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
     padding: 8px 14px;
     line-height: 12px;
     letter-spacing: -0.48px;
@@ -7760,7 +7779,7 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .empType {
     padding-bottom: 30px;
   }
-  .careerFormSec .careerSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
     padding: 10px 30px;
     line-height: 18px;
     letter-spacing: -0.28px;
@@ -7768,7 +7787,7 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
     margin-bottom: 30px;
   }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
     padding: 8px 14px;
     line-height: 10px;
     letter-spacing: -0.48px;
@@ -7788,7 +7807,7 @@ body.opentwo {
   .careerFormSec {
     margin: 100px 0px 200px;
   }
-  .careerFormSec .careerSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
     padding: 10px 22px;
     line-height: 16px;
   }
@@ -7815,9 +7834,6 @@ body.opentwo {
   }
   .careerFormSec .careerSec .collaborateForm form .empType {
     padding-bottom: 50px;
-  }
-  .careerFormSec .careerSec .collaborateForm form .empType a {
-    padding: 10px 50px;
   }
   .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
     margin-bottom: 50px;
@@ -7900,7 +7916,10 @@ body.opentwo {
     flex-flow: wrap;
     justify-content: normal;
   }
-  .careerFormSec .careerSec .collaborateForm form .empType a {
+  .careerFormSec .careerSec .collaborateForm form .empType .location-btn {
+    width: 50%;
+  }
+  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
     width: auto;
     padding: 10px 40px;
     margin-right: 12px;
@@ -7909,7 +7928,7 @@ body.opentwo {
     line-height: 24px;
     letter-spacing: -0.24px;
   }
-  .careerFormSec .careerSec .collaborateForm form .empType a:not(:last-child) {
+  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span:not(:last-child) {
     margin-bottom: 12px;
   }
   .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
@@ -7920,7 +7939,7 @@ body.opentwo {
     margin-bottom: 0px;
     border-bottom: none;
   }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload a {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
     padding: 12px 24px;
     display: inline-block;
     margin-bottom: 20px;
