@@ -1,5 +1,5 @@
 .bloglistingsection{margin:224px 0px 240px;
-    .blogsWrapper{@include wrapperTwo;
+    .blogsWrapper{@include wrapperTwo;position: relative;
         .secHeading{width: 41%; 
             h2{@include font64;font-weight: $fontW500;line-height: 74px;letter-spacing: -1.5px;}
             p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;color: #6A6A6A;}
@@ -8,7 +8,7 @@
             .blogslistinnerBoxes{width: 40%;margin-top: 150px;position: relative;overflow: hidden;transition: 0.7s all ease-out;height: auto;
                &:nth-child(odd){margin-top: -7%;}
                 .blogImg{img{scale: 1.1;transition: 0.7s all ease-out;}}
-                    .blogDetails{background-color: #fff;padding: 58px 50px;margin: 30px;position: absolute;bottom: 0;transition: 0.7s all ease-out;
+                    .blogDetails{background-color: #fff;padding: 58px 50px;margin: 30px;position: absolute;bottom: 0;transition: 0.7s all ease-out;left: 0;right: 0;
                         h3{@include font32; font-weight: $fontW400;line-height: 43px;margin-top: 30px;display: block;display: -webkit-box;max-width: 100%;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;}
                         h4{@include font16; font-weight: $fontW600;line-height: 1;letter-spacing: 0.8px;}
                         .blogArrowimg{position: absolute;right: 50px;bottom: -100%;transition: 0.7s all ease-out;img{height: 20px;width: 20px;}}
@@ -21,12 +21,17 @@
                 }
             }
         }
+        #myButton{width: 33.5%;position: absolute;bottom: 100px;text-align: center;
+            &.even-based{right: 210px;}
+        }
     }
 
     @media screen and (max-width:1920px) {
         .blogsWrapper {
             .bloglistingBoxes .blogslistinnerBoxes{
                 &:nth-child(odd){margin-top: -10%;}
+            }
+            #myButton{width: 31%;bottom: 110px;
             }
         }
     }
@@ -55,6 +60,9 @@
                     }                    
                 }
             }
+            #myButton{width: 31%;bottom: 80px;
+                &.even-based{right: 180px;}
+            }
         }
     }
     @media screen and (max-width:1400px) {
@@ -78,9 +86,12 @@
                     }
                 }
             }
+            #myButton{width: 34%;bottom: 70px;
+                &.even-based{right: 150px;}
+            }
         }
     }
-    @media screen and (max-width:1200px) {
+    @media screen and (max-width:1280px) {
         margin:120px 0px 150px;
         .blogsWrapper{
             .secHeading{
@@ -94,8 +105,20 @@
                     }
                 }
             }
+            #myButton{width: 34.5%;bottom: 70px;
+                &.even-based{right: 150px;}
+            }  
         }
     }
+
+    @media screen and (max-width:1200px) {
+        .blogsWrapper{
+            #myButton{width: 36%;bottom: 50px;
+                &.even-based{right: 120px;}
+            }   
+        }
+    }
+
     @media screen and (max-width:1024px) {
         .blogsWrapper{
             .secHeading{width: 45%;
@@ -112,8 +135,18 @@
                     }
                 }
             }
+            #myButton{width: 40.5%;bottom: 50px;
+                &.even-based{right: 50px;}
+            } 
         }
     }
+    @media screen and (max-width:768px) {
+        .blogsWrapper{
+              #myButton{bottom: 40px;width: 42.5%;
+                  &.even-based{right: 20px;}
+              }  
+          }
+      }
     @media screen and (max-width:680px) {
         margin: 100px 0px 150px;
         .blogsWrapper{
@@ -130,6 +163,9 @@
                     }
                 }
             }
+            #myButton{position:unset;width: 100%;margin-top: 40px;
+                &.even-based{right: unset;}
+            } 
         }
     }
 }
