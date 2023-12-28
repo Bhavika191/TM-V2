@@ -290,9 +290,9 @@ $(document).ready(function () {
 //Blog details page active navbar code ends
 
 //About us slider starts
-if ($(window).width() < 1025) {
-  if ($(".researchsec-wrapper .img-div").length > 1) {
-    $('.researchsec-wrapper .img-div').slick({
+
+  if ($(".aboutus-researchSec .researchsec-wrapper .img-div").length > 1) {
+    $('.aboutus-researchSec .researchsec-wrapper .img-div').slick({
       dots:true,
       autoplay: true,
       infinite: true,
@@ -300,7 +300,7 @@ if ($(window).width() < 1025) {
       slidesToScroll: 1,
     });
   }
-}
+
 //About us slider ends
 
 //------------------------------------------------------- Shamal's JS Code ends --------------------------------------------------//
@@ -494,16 +494,42 @@ if ($(window).width() > 1025) {
   new WOW().init();
 }
 
-
+//==========================================Json Animations=======================================//
 var panAnime = bodymovin.loadAnimation({
   container: document.getElementById('panAnime'),
-  path: '/projects/tm-v2/js/json/panAnime.json', // Required
+  path: 'js/json/panAnime.json', // Required
+  renderer: 'svg', // or 'canvas', 'html'
+  loop: true,
+  autoplay: true,
+});
+
+var secondfoldfAnime = bodymovin.loadAnimation({
+  container: document.getElementById('second-fold-anime'),
+  path: 'js/json/second-fold.json', // Required
+  renderer: 'svg', // or 'canvas', 'html'
+  loop: true,
+  autoplay: true,
+});
+
+var thirdfoldfAnime = bodymovin.loadAnimation({
+  container: document.getElementById('third-fold-anime'),
+  path: 'js/json/third-fold.json', // Required
+  renderer: 'svg', // or 'canvas', 'html'
+  loop: true,
+  autoplay: true,
+});
+
+var lastfoldfAnime = bodymovin.loadAnimation({
+  container: document.getElementById('fifth-fold-anime'),
+  path: 'js/json/fifth-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: true,
 });
 
 
+
+//=============================================Json Animations========================================//
 
 function resizeCanvas() {
   var canvs = document.getElementById("myCanvas");

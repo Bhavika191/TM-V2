@@ -4395,7 +4395,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   font-weight: 500;
   line-height: 106px;
   letter-spacing: -2.88px;
-  width: 75%;
+  width: 80%;
   margin-bottom: 34px;
 }
 @media screen and (max-width: 1600px) {
@@ -10899,7 +10899,7 @@ body.opentwo {
     padding-right: 20px;
   }
 }
-.blogdetails-bannerSec .blogdetails-wrapper .subheading {
+.blogdetails-bannerSec .blogdetails-wrapper h3 {
   margin-bottom: 48px;
   color: #000;
   font-family: "Poppins", sans-serif;
@@ -10910,21 +10910,21 @@ body.opentwo {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
-  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h3 {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h3 {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h3 {
     font-size: 14px;
   }
 }
-.blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+.blogdetails-bannerSec .blogdetails-wrapper h1 {
   margin-bottom: 48px;
   color: #000;
   font-family: "Poppins", sans-serif;
@@ -10934,22 +10934,22 @@ body.opentwo {
   letter-spacing: -2.88px;
 }
 @media screen and (max-width: 1600px) {
-  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h1 {
     font-size: 80px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h1 {
     font-size: 74px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h1 {
     font-size: 64px;
   }
 }
 @media screen and (max-width: 720px) {
-  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h1 {
     font-size: 40px;
   }
 }
@@ -10964,12 +10964,12 @@ body.opentwo {
   .blogdetails-bannerSec .blogdetails-wrapper {
     margin: 180px 0px 150px 0px;
   }
-  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h3 {
     margin-bottom: 45px;
     line-height: 30px;
     letter-spacing: 1px;
   }
-  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h1 {
     margin-bottom: 45px;
     line-height: 106px;
     letter-spacing: -2.88px;
@@ -10979,11 +10979,11 @@ body.opentwo {
   .blogdetails-bannerSec .blogdetails-wrapper {
     margin: 170px 0px 140px 0px;
   }
-  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h3 {
     margin-bottom: 40px;
     line-height: 28px;
   }
-  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h1 {
     margin-bottom: 40px;
     line-height: 96px;
   }
@@ -10992,11 +10992,11 @@ body.opentwo {
   .blogdetails-bannerSec .blogdetails-wrapper {
     margin: 160px 0px 130px 0px;
   }
-  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h3 {
     margin-bottom: 36px;
     line-height: 24px;
   }
-  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h1 {
     margin-bottom: 36px;
     line-height: 80px;
   }
@@ -11005,11 +11005,11 @@ body.opentwo {
   .blogdetails-bannerSec .blogdetails-wrapper {
     margin: 150px 0px 120px 0px;
   }
-  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h3 {
     margin-bottom: 30px;
     line-height: 22px;
   }
-  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h1 {
     margin-bottom: 30px;
     line-height: 70px;
   }
@@ -11034,11 +11034,11 @@ body.opentwo {
   }
 }
 @media all and (max-width: 1024px) {
-  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h3 {
     margin-bottom: 25px;
     line-height: 20px;
   }
-  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h1 {
     margin-bottom: 25px;
     line-height: 60px;
   }
@@ -11051,14 +11051,14 @@ body.opentwo {
     margin: 102px 0px 60px 0px;
     width: 100%;
   }
-  .blogdetails-bannerSec .blogdetails-wrapper .subheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h3 {
     margin-bottom: 20px;
     font-size: 12px;
     font-weight: 700;
     line-height: 12px;
     letter-spacing: 0.6px;
   }
-  .blogdetails-bannerSec .blogdetails-wrapper .mainheading {
+  .blogdetails-bannerSec .blogdetails-wrapper h1 {
     margin-bottom: 20px;
     font-size: 40px;
     font-weight: 500;
@@ -11112,7 +11112,7 @@ body.opentwo {
 .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy {
   margin-bottom: 150px;
 }
-.blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-heading {
+.blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
   margin-bottom: 30px;
   color: var(--Primary-Black, #000);
   font-family: "Poppins", sans-serif;
@@ -11122,21 +11122,21 @@ body.opentwo {
   letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-heading {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-heading {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 720px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-heading {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
     font-size: 12px;
   }
 }
-.blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-content {
+.blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
   color: var(--Body-Copy, #6A6A6A);
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -11144,17 +11144,17 @@ body.opentwo {
   line-height: 30px;
 }
 @media screen and (max-width: 1600px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-content {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-content {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-content {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
     font-size: 14px;
   }
 }
@@ -11173,7 +11173,7 @@ body.opentwo {
   justify-content: space-between;
   align-items: center;
 }
-.blogdetails-contentSec .blogdetails-contentContainer .shareSec .spred-text {
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec h4 {
   color: var(--Primary-Black, #000);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -11183,12 +11183,12 @@ body.opentwo {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .spred-text {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec h4 {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 720px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .spred-text {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec h4 {
     font-size: 12px;
   }
 }
@@ -11226,11 +11226,11 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy {
     margin-bottom: 120px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-heading {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
     margin-bottom: 26px;
     line-height: 36px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-content {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
     line-height: 28px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .blogdetailsImg {
@@ -11240,7 +11240,7 @@ body.opentwo {
     margin-bottom: 250px;
     padding: 28px 0px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .spred-text {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec h4 {
     line-height: 12px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv a {
@@ -11254,11 +11254,11 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy {
     margin-bottom: 100px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-heading {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
     margin-bottom: 24px;
     line-height: 32px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-content {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
     line-height: 26px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .blogdetailsImg {
@@ -11268,7 +11268,7 @@ body.opentwo {
     margin-bottom: 220px;
     padding: 25px 0px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .spred-text {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec h4 {
     line-height: 10px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv a {
@@ -11282,11 +11282,11 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy {
     margin-bottom: 80px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-heading {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
     margin-bottom: 22px;
     line-height: 30px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-content {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
     line-height: 24px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .blogdetailsImg {
@@ -11296,7 +11296,7 @@ body.opentwo {
     margin-bottom: 200px;
     padding: 22px 0px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .spred-text {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec h4 {
     line-height: 8px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv a {
@@ -11313,11 +11313,11 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy {
     margin-bottom: 80px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-heading {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
     margin-bottom: 20px;
     line-height: 28px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-content {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
     line-height: 22px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .blogdetailsImg {
@@ -11327,7 +11327,7 @@ body.opentwo {
     margin-bottom: 180px;
     padding: 20px 0px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .spred-text {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec h4 {
     line-height: 8px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv a {
@@ -11344,11 +11344,11 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy {
     margin-bottom: 80px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-heading {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
     margin-bottom: 18px;
     line-height: 25px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-content {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
     line-height: 20px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .blogdetailsImg {
@@ -11358,7 +11358,7 @@ body.opentwo {
     margin-bottom: 150px;
     padding: 20px 0px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .spred-text {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec h4 {
     line-height: 8px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv a {
@@ -11372,7 +11372,7 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy {
     margin-bottom: 80px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-heading {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
     margin-bottom: 24px;
     color: var(--Primary-Black, #000);
     font-size: 20px;
@@ -11380,7 +11380,7 @@ body.opentwo {
     line-height: 12.343px;
     letter-spacing: -0.6px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .bodycopy-content {
+  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
     color: var(--Body-Copy, #6A6A6A);
     font-size: 14px;
     font-weight: 500;
@@ -11393,7 +11393,7 @@ body.opentwo {
     margin-bottom: 150px;
     padding: 20px 0px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .spred-text {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec h4 {
     font-size: 12px;
     line-height: 24px;
     font-weight: 600;
@@ -11604,6 +11604,287 @@ body.opentwo {
     font-size: 16px;
   }
 }
+.animation-sec .animation-Div {
+  position: relative;
+  padding-top: 170px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background: conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.1249982119deg, #05FB00 116.2499964237deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474deg, #F00 360deg);
+  background-size: 400% 400%;
+}
+@media screen and (max-width: 1400px) {
+  .animation-sec .animation-Div {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .animation-sec .animation-Div {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.animation-sec .animation-Div .backdrop {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(250px);
+  -webkit-backdrop-filter: blur(250px);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.animation-sec .animation-Div .first-fold {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 110px;
+}
+.animation-sec .animation-Div .first-fold .firstfoldanimation {
+  width: 55%;
+}
+.animation-sec .animation-Div .first-fold .firstfold-content {
+  width: 35%;
+}
+.animation-sec .animation-Div .first-fold .firstfold-content h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  color: var(--Primary-Black, #000);
+  line-height: 74px;
+  letter-spacing: -1.92px;
+  margin-bottom: 48px;
+}
+@media screen and (max-width: 1600px) {
+  .animation-sec .animation-Div .first-fold .firstfold-content h2 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .animation-sec .animation-Div .first-fold .firstfold-content h2 {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .animation-sec .animation-Div .first-fold .firstfold-content h2 {
+    font-size: 32px;
+  }
+}
+.animation-sec .animation-Div .first-fold .firstfold-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--Body-Copy, #000);
+  line-height: 34px;
+}
+@media screen and (max-width: 1600px) {
+  .animation-sec .animation-Div .first-fold .firstfold-content p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .animation-sec .animation-Div .first-fold .firstfold-content p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .animation-sec .animation-Div .first-fold .firstfold-content p {
+    font-size: 16px;
+  }
+}
+.animation-sec .animation-Div .second-fold {
+  z-index: 1;
+  position: relative;
+  margin-bottom: 200px;
+}
+.animation-sec .animation-Div .third-fold {
+  z-index: 1;
+  position: relative;
+  margin-bottom: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+.animation-sec .animation-Div .third-fold .third-fold-content {
+  position: absolute;
+  left: 60px;
+  width: 30%;
+}
+.animation-sec .animation-Div .third-fold .third-fold-content h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  color: var(--Primary-Black, #000);
+  line-height: 74px;
+  letter-spacing: -1.92px;
+  margin-bottom: 48px;
+}
+@media screen and (max-width: 1600px) {
+  .animation-sec .animation-Div .third-fold .third-fold-content h2 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .animation-sec .animation-Div .third-fold .third-fold-content h2 {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .animation-sec .animation-Div .third-fold .third-fold-content h2 {
+    font-size: 32px;
+  }
+}
+.animation-sec .animation-Div .third-fold .third-fold-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--Body-Copy, #000);
+  line-height: 34px;
+}
+@media screen and (max-width: 1600px) {
+  .animation-sec .animation-Div .third-fold .third-fold-content p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .animation-sec .animation-Div .third-fold .third-fold-content p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .animation-sec .animation-Div .third-fold .third-fold-content p {
+    font-size: 16px;
+  }
+}
+.animation-sec .animation-Div .third-fold .third-fold-anime {
+  width: 75%;
+  margin-left: auto;
+}
+.animation-sec .animation-Div .fourth-fold {
+  z-index: 1;
+  position: relative;
+  margin-bottom: 260px;
+}
+.animation-sec .animation-Div .fourth-fold .fourth-fold-content {
+  position: absolute;
+  right: 10%;
+  top: 80%;
+}
+.animation-sec .animation-Div .fourth-fold .fourth-fold-content h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  color: var(--Primary-Black, #000);
+  line-height: 74px;
+  letter-spacing: -1.92px;
+  margin-bottom: 48px;
+}
+@media screen and (max-width: 1600px) {
+  .animation-sec .animation-Div .fourth-fold .fourth-fold-content h2 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .animation-sec .animation-Div .fourth-fold .fourth-fold-content h2 {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .animation-sec .animation-Div .fourth-fold .fourth-fold-content h2 {
+    font-size: 32px;
+  }
+}
+.animation-sec .animation-Div .fourth-fold .fourth-fold-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--Body-Copy, #000);
+  line-height: 34px;
+}
+@media screen and (max-width: 1600px) {
+  .animation-sec .animation-Div .fourth-fold .fourth-fold-content p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .animation-sec .animation-Div .fourth-fold .fourth-fold-content p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .animation-sec .animation-Div .fourth-fold .fourth-fold-content p {
+    font-size: 16px;
+  }
+}
+.animation-sec .animation-Div .fifth-fold {
+  z-index: 1;
+  position: relative;
+  display: block;
+}
+.animation-sec .animation-Div .fifth-fold .fifth-fold-content {
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.animation-sec .animation-Div .fifth-fold .fifth-fold-content h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 96px;
+  font-weight: 500;
+  color: var(--Primary-Black, #000);
+  line-height: 106px;
+  letter-spacing: -2.88px;
+  margin-bottom: 48px;
+  width: 75%;
+  text-align: center;
+}
+@media screen and (max-width: 1600px) {
+  .animation-sec .animation-Div .fifth-fold .fifth-fold-content h2 {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .animation-sec .animation-Div .fifth-fold .fifth-fold-content h2 {
+    font-size: 74px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .animation-sec .animation-Div .fifth-fold .fifth-fold-content h2 {
+    font-size: 64px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .animation-sec .animation-Div .fifth-fold .fifth-fold-content h2 {
+    font-size: 40px;
+  }
+}
+.animation-sec .animation-Div .fifth-fold .fifth-fold-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--Body-Copy, #000);
+  line-height: 34px;
+  width: 65%;
+  text-align: center;
+}
+@media screen and (max-width: 1600px) {
+  .animation-sec .animation-Div .fifth-fold .fifth-fold-content p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .animation-sec .animation-Div .fifth-fold .fifth-fold-content p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .animation-sec .animation-Div .fifth-fold .fifth-fold-content p {
+    font-size: 16px;
+  }
+}
 @media all and (max-width: 1800px) {
   .animation-sec {
     margin-bottom: 350px;
@@ -11709,6 +11990,23 @@ body.opentwo {
   }
 }
 
+.aboutus-researchSec {
+  margin-bottom: 350px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+@media screen and (max-width: 1400px) {
+  .aboutus-researchSec {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .aboutus-researchSec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .aboutus-researchSec .heading-content {
   margin-bottom: 140px;
   padding: 0px 150px;
@@ -11759,115 +12057,17 @@ body.opentwo {
     font-size: 16px;
   }
 }
-@media all and (max-width: 1800px) {
-  .aboutus-researchSec .heading-content {
-    margin-bottom: 130px;
-    padding: 0px 140px;
-  }
-  .aboutus-researchSec .heading-content .main-heading {
-    line-height: 72px;
-    margin-bottom: 34px;
-  }
-  .aboutus-researchSec .heading-content .subheading {
-    line-height: 34px;
-  }
+.aboutus-researchSec .researchsec-wrapper {
+  position: relative;
+  margin-bottom: 250px;
 }
-@media all and (max-width: 1600px) {
-  .aboutus-researchSec .heading-content {
-    margin-bottom: 120px;
-    padding: 0px 130px;
-  }
-  .aboutus-researchSec .heading-content .main-heading {
-    line-height: 70px;
-    margin-bottom: 32px;
-  }
-  .aboutus-researchSec .heading-content .subheading {
-    line-height: 32px;
-  }
+.aboutus-researchSec .researchsec-wrapper .img-div {
+  width: 100%;
+  overflow: hidden;
+  transition: 0.7s all ease-out;
 }
-@media all and (max-width: 1400px) {
-  .aboutus-researchSec .heading-content {
-    margin-bottom: 120px;
-    padding: 0px 120px;
-  }
-  .aboutus-researchSec .heading-content .main-heading {
-    line-height: 65px;
-    margin-bottom: 30px;
-  }
-  .aboutus-researchSec .heading-content .subheading {
-    line-height: 30px;
-  }
-}
-@media all and (max-width: 1200px) {
-  .aboutus-researchSec .heading-content {
-    margin-bottom: 110px;
-  }
-  .aboutus-researchSec .heading-content .main-heading {
-    line-height: 56px;
-    margin-bottom: 28px;
-  }
-  .aboutus-researchSec .heading-content .subheading {
-    line-height: 28px;
-  }
-}
-@media all and (max-width: 1024px) {
-  .aboutus-researchSec .heading-content {
-    margin-bottom: 100px;
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-@media screen and (max-width: 1024px) and (max-width: 1400px) {
-  .aboutus-researchSec .heading-content {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 1024px) and (max-width: 720px) {
-  .aboutus-researchSec .heading-content {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media all and (max-width: 1024px) {
-  .aboutus-researchSec .heading-content .main-heading {
-    line-height: 48px;
-    margin-bottom: 24px;
-    width: 90%;
-  }
-  .aboutus-researchSec .heading-content .subheading {
-    line-height: 24px;
-    width: 90%;
-  }
-}
-@media all and (max-width: 680px) {
-  .aboutus-researchSec {
-    margin-bottom: 40px !important;
-  }
-  .aboutus-researchSec .heading-content {
-    margin-bottom: 80px;
-  }
-  .aboutus-researchSec .heading-content .main-heading {
-    margin-bottom: 10px;
-    width: 100%;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 30px;
-    letter-spacing: -0.9px;
-  }
-  .aboutus-researchSec .heading-content .subheading {
-    width: 100%;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: capitalize;
-  }
-  .aboutus-researchSec .researchsec-wrapper:not(:last-child) {
-    margin-bottom: 75px;
-  }
-  .aboutus-researchSec .researchsec-wrapper:last-child {
-    margin-bottom: 40px;
-  }
+.aboutus-researchSec .researchsec-wrapper .img-div img {
+  width: 100%;
 }
 .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots {
   bottom: 80px;
@@ -11901,11 +12101,446 @@ body.opentwo {
   border-radius: 10px;
   transition: 0.9s all ease-in-out;
 }
+.aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+  position: absolute;
+  background: var(--primary-white, #FFF);
+  padding: 80px;
+  width: 580px;
+}
+.aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  margin-bottom: 30px;
+  color: var(--primary-black, #000);
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1600px) {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+    font-size: 14px;
+  }
+}
+.aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  margin-bottom: 48px;
+  color: var(--primary-black, #000);
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.9px;
+}
+.aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  color: var(--body-copy, #6A6A6A);
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+}
+@media screen and (max-width: 1600px) {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+    font-size: 14px;
+  }
+}
+.aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  margin-top: 48px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  margin-right: 30px;
+  border-radius: 6px;
+  border: 1px solid #000;
+}
+@media screen and (max-width: 1600px) {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+    font-size: 12px;
+  }
+}
+.aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
+  margin-left: 10px;
+}
+.aboutus-researchSec .researchsec-wrapper .research-card-type1 {
+  right: 170px;
+  bottom: -12%;
+}
+.aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+  left: 170px;
+  bottom: -12%;
+}
 .aboutus-researchSec .researchsec-wrapper-odd .img-div .slick-dots {
   left: 150px;
 }
 .aboutus-researchSec .researchsec-wrapper-even .img-div .slick-dots {
   right: 150px;
+}
+@media all and (max-width: 1800px) {
+  .aboutus-researchSec {
+    margin-bottom: 320px;
+  }
+  .aboutus-researchSec .heading-content {
+    margin-bottom: 130px;
+    padding: 0px 140px;
+  }
+  .aboutus-researchSec .heading-content .main-heading {
+    line-height: 72px;
+    margin-bottom: 34px;
+  }
+  .aboutus-researchSec .heading-content .subheading {
+    line-height: 34px;
+  }
+  .aboutus-researchSec .researchsec-wrapper {
+    margin-bottom: 220px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+    padding: 75px;
+    width: 550px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+    margin-bottom: 30px;
+    line-height: 30px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+    margin-bottom: 48px;
+    line-height: 40px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+    line-height: 30px;
+  }
+}
+@media all and (max-width: 1600px) {
+  .aboutus-researchSec {
+    margin-bottom: 300px;
+  }
+  .aboutus-researchSec .heading-content {
+    margin-bottom: 120px;
+    padding: 0px 130px;
+  }
+  .aboutus-researchSec .heading-content .main-heading {
+    line-height: 70px;
+    margin-bottom: 32px;
+  }
+  .aboutus-researchSec .heading-content .subheading {
+    line-height: 32px;
+  }
+  .aboutus-researchSec .researchsec-wrapper {
+    margin-bottom: 200px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+    padding: 65px;
+    width: 530px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+    margin-bottom: 28px;
+    line-height: 28px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+    margin-bottom: 40px;
+    line-height: 36px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+    line-height: 28px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+    line-height: 16px;
+    padding: 12px 24px;
+    margin-right: 28px;
+    margin-top: 40px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 {
+    right: 160px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+    left: 160px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .aboutus-researchSec {
+    margin-bottom: 280px;
+  }
+  .aboutus-researchSec .heading-content {
+    margin-bottom: 120px;
+    padding: 0px 120px;
+  }
+  .aboutus-researchSec .heading-content .main-heading {
+    line-height: 65px;
+    margin-bottom: 30px;
+  }
+  .aboutus-researchSec .heading-content .subheading {
+    line-height: 30px;
+  }
+  .aboutus-researchSec .researchsec-wrapper {
+    margin-bottom: 180px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+    padding: 60px;
+    width: 500px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+    margin-bottom: 24px;
+    line-height: 24px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+    margin-bottom: 36px;
+    line-height: 30px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+    line-height: 24px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+    line-height: 14px;
+    padding: 10px 22px;
+    margin-right: 26px;
+    margin-top: 36px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 {
+    right: 150px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+    left: 150px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .aboutus-researchSec {
+    margin-bottom: 250px;
+  }
+  .aboutus-researchSec .heading-content {
+    margin-bottom: 110px;
+  }
+  .aboutus-researchSec .heading-content .main-heading {
+    line-height: 56px;
+    margin-bottom: 28px;
+  }
+  .aboutus-researchSec .heading-content .subheading {
+    line-height: 28px;
+  }
+  .aboutus-researchSec .researchsec-wrapper {
+    margin-bottom: 160px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+    padding: 50px;
+    width: 450px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+    margin-bottom: 22px;
+    line-height: 22px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+    margin-bottom: 32px;
+    line-height: 28px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+    line-height: 22px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+    line-height: 12px;
+    margin-right: 24px;
+    margin-top: 32px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 {
+    right: 120px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+    left: 120px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .aboutus-researchSec {
+    margin-bottom: 180px;
+  }
+  .aboutus-researchSec .heading-content {
+    margin-bottom: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1400px) {
+  .aboutus-researchSec .heading-content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 720px) {
+  .aboutus-researchSec .heading-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .aboutus-researchSec .heading-content .main-heading {
+    line-height: 48px;
+    margin-bottom: 24px;
+    width: 90%;
+  }
+  .aboutus-researchSec .heading-content .subheading {
+    line-height: 24px;
+    width: 90%;
+  }
+  .aboutus-researchSec .researchsec-wrapper {
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+    position: static;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    padding-top: 50px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1400px) {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 720px) {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+    margin-bottom: 20px;
+    line-height: 34px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+    line-height: 20px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+    line-height: 12px;
+    padding: 10px 20px;
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
+    margin-left: 6px;
+  }
+}
+@media all and (max-width: 821px) {
+  .aboutus-researchSec {
+    margin-bottom: 150px;
+    padding: 0px;
+  }
+  .aboutus-researchSec .researchsec-wrapper {
+    position: relative;
+    margin-bottom: 80px;
+  }
+  .aboutus-researchSec .researchsec-wrapper:not(:last-child) {
+    margin-bottom: 75px;
+  }
+  .aboutus-researchSec .researchsec-wrapper:last-child {
+    margin-bottom: 40px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+    position: static;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 56px;
+    padding-top: 40px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 821px) and (max-width: 1400px) {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 821px) and (max-width: 720px) {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 821px) {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+    line-height: 10px;
+    padding: 8px 16px;
+    margin-top: 10px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
+    margin-left: 5px;
+  }
+}
+@media all and (max-width: 680px) {
+  .aboutus-researchSec {
+    margin-bottom: 40px !important;
+  }
+  .aboutus-researchSec .heading-content {
+    margin-bottom: 80px;
+  }
+  .aboutus-researchSec .heading-content .main-heading {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.9px;
+  }
+  .aboutus-researchSec .heading-content .subheading {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+  }
 }
 
 .aboutUs-collaborate {
