@@ -62,12 +62,14 @@
 
 .blogdetails-contentSec {@include wrapperTwo;
         .blogdetails-contentContainer {width: 70%;
-            .content-bodycopy {margin-bottom: 150px;
-                h2 {margin-bottom: 30px;color: var(--Primary-Black, #000);font-family: $fontpoppins;@include font30;font-weight: $fontW500;line-height: 40px;letter-spacing: -0.9px;}
-                p {color: var(--Body-Copy, #6A6A6A);font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 30px;}
-                .blogdetailsImg {margin-top: 48px;img{width: 100%;}}
-            }
-            .shareSec {margin-bottom:300px;padding: 30px 0px;border-top: 1px solid rgba(0,0,0,0.2); border-bottom: 1px solid rgba(0,0,0,0.2);display: flex;justify-content: space-between;align-items:center;
+            h2{@include font30;font-weight: $fontW500;line-height: 133%;letter-spacing: -0.9px;margin-bottom: 30px;color: #000;}
+            h3{@include font28;font-weight: $fontW500;line-height: 133%;letter-spacing: -0.9px;margin-bottom: 30px;color: #000;}
+            h4{@include font24;font-weight: $fontW500;line-height: 133%;letter-spacing: -0.9px;margin-bottom: 30px;color: #000;}
+            h5{@include font20;font-weight: $fontW500;line-height: 133%;letter-spacing: -0.9px;margin-bottom: 30px;color: #000;}
+            p , ul li, ol li{color: #6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;}
+            img{margin:30px 0px 150px;}
+            .spacer{height: 150px;}
+            .shareSec {margin: 150px 0px 300px;padding: 30px 0px;border-top: 1px solid rgba(0,0,0,0.2); border-bottom: 1px solid rgba(0,0,0,0.2);display: flex;justify-content: space-between;align-items:center;
                 h4{color: var(--Primary-Black, #000);font-family: $fontpoppins;@include font16;font-weight: $fontW600;line-height: 14px;letter-spacing: 0.8px;text-transform: uppercase;}
                 .shareDiv{display: flex;
                     a{&:not(:last-child){margin-right: 48px;}display: flex;flex-direction: column;align-items: center;img{margin-bottom: 10px;}color: var(--Primary-Black, #000);font-family: $fontpoppins;@include font16;font-weight: $fontW500;line-height: 18px;letter-spacing: 0.8px;}
@@ -77,11 +79,9 @@
     @media all and (max-width:1600px){
 
             .blogdetails-contentContainer {
-                .content-bodycopy {margin-bottom: 120px;
-                    h2 {margin-bottom: 26px;line-height: 36px;}
-                    p {line-height: 28px;}
-                    .blogdetailsImg {margin-top: 40px;}
-                }
+                h2, h3, h4, h5{margin-bottom: 25px;}
+                img{margin:30px 0px 120px;}
+                .spacer{height: 120px;}
                 .shareSec {margin-bottom:250px;padding: 28px 0px;
                     h4{line-height: 12px;}
                     .shareDiv{
@@ -93,11 +93,8 @@
     @media all and (max-width:1400px){
 
             .blogdetails-contentContainer {
-                .content-bodycopy {margin-bottom: 100px;
-                    h2 {margin-bottom: 24px;line-height: 32px;}
-                    p {line-height: 26px;}
-                    .blogdetailsImg {margin-top: 36px;}
-                }
+                img{margin:30px 0px 80px;}
+                .spacer{height: 80px;}
                 .shareSec {margin-bottom:220px;padding: 25px 0px;
                     h4{line-height: 10px;}
                     .shareDiv{
@@ -110,11 +107,6 @@
     @media all and (max-width:1200px){
 
             .blogdetails-contentContainer {
-                .content-bodycopy {margin-bottom: 80px;
-                    h2 {margin-bottom: 22px;line-height: 30px;}
-                    p {line-height: 24px;}
-                    .blogdetailsImg {margin-top: 34px;}
-                }
                 .shareSec {margin-bottom:200px;padding: 22px 0px;
                     h4{line-height: 8px;}
                     .shareDiv{
@@ -127,11 +119,7 @@
     @media all and (max-width:1024px){
 
             .blogdetails-contentContainer {width: 80%;
-                .content-bodycopy {margin-bottom: 80px;
-                    h2 {margin-bottom: 20px;line-height: 28px;}
-                    p {line-height: 22px;}
-                    .blogdetailsImg {margin-top: 32px;}
-                }
+                
                 .shareSec {margin-bottom:180px;padding: 20px 0px;
                     h4{line-height: 8px;}
                     .shareDiv{
@@ -144,11 +132,7 @@
     @media all and (max-width:820px){
 
             .blogdetails-contentContainer {width: 100%;
-                .content-bodycopy {margin-bottom: 80px;
-                    h2 {margin-bottom: 18px;line-height: 25px;}
-                    p {line-height: 20px;}
-                    .blogdetailsImg {margin-top: 30px;}
-                }
+                h2, h3, h4, h5{font-size: 20px;}
                 .shareSec {margin-bottom:150px;padding: 20px 0px;
                     h4{line-height: 8px;}
                     .shareDiv{
@@ -161,11 +145,6 @@
     @media all and (max-width:720px){
 
             .blogdetails-contentContainer {
-                .content-bodycopy {margin-bottom: 80px;
-                    h2 {margin-bottom: 24px;color: var(--Primary-Black, #000);font-size: 20px;font-weight: 500;line-height: 12.343px;letter-spacing: -0.6px;}
-                    p {color: var(--Body-Copy, #6A6A6A);font-size: 14px;font-weight: 500;line-height: 164.286%;}
-                    .blogdetailsImg {margin-top: 32px;}
-                }
                 .shareSec {margin-bottom:150px;padding: 20px 0px;
                     h4{font-size: 12px;line-height: 24px;font-weight: 600;}
                     .shareDiv{

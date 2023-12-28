@@ -11296,63 +11296,128 @@ body.opentwo {
 .blogdetails-contentSec .blogdetails-contentContainer {
   width: 70%;
 }
-.blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy {
-  margin-bottom: 150px;
-}
-.blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
-  margin-bottom: 30px;
-  color: var(--Primary-Black, #000);
-  font-family: "Poppins", sans-serif;
+.blogdetails-contentSec .blogdetails-contentContainer h2 {
   font-size: 30px;
   font-weight: 500;
-  line-height: 40px;
+  line-height: 133%;
   letter-spacing: -0.9px;
+  margin-bottom: 30px;
+  color: #000;
 }
 @media screen and (max-width: 1600px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
+  .blogdetails-contentSec .blogdetails-contentContainer h2 {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 1280px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
+  .blogdetails-contentSec .blogdetails-contentContainer h2 {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 720px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
+  .blogdetails-contentSec .blogdetails-contentContainer h2 {
     font-size: 12px;
   }
 }
-.blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
-  color: var(--Body-Copy, #6A6A6A);
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
+.blogdetails-contentSec .blogdetails-contentContainer h3 {
+  font-size: 28px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 133%;
+  letter-spacing: -0.9px;
+  margin-bottom: 30px;
+  color: #000;
 }
 @media screen and (max-width: 1600px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
+  .blogdetails-contentSec .blogdetails-contentContainer h3 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .blogdetails-contentSec .blogdetails-contentContainer h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .blogdetails-contentSec .blogdetails-contentContainer h3 {
+    font-size: 18px;
+  }
+}
+.blogdetails-contentSec .blogdetails-contentContainer h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 133%;
+  letter-spacing: -0.9px;
+  margin-bottom: 30px;
+  color: #000;
+}
+@media screen and (max-width: 1600px) {
+  .blogdetails-contentSec .blogdetails-contentContainer h4 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .blogdetails-contentSec .blogdetails-contentContainer h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .blogdetails-contentSec .blogdetails-contentContainer h4 {
+    font-size: 16px;
+  }
+}
+.blogdetails-contentSec .blogdetails-contentContainer h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 133%;
+  letter-spacing: -0.9px;
+  margin-bottom: 30px;
+  color: #000;
+}
+@media screen and (max-width: 1600px) {
+  .blogdetails-contentSec .blogdetails-contentContainer h5 {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
+  .blogdetails-contentSec .blogdetails-contentContainer h5 {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
+  .blogdetails-contentSec .blogdetails-contentContainer h5 {
     font-size: 14px;
   }
 }
-.blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .blogdetailsImg {
-  margin-top: 48px;
+.blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
+  color: #6A6A6A;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
 }
-.blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .blogdetailsImg img {
-  width: 100%;
+@media screen and (max-width: 1600px) {
+  .blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
+    font-size: 14px;
+  }
+}
+.blogdetails-contentSec .blogdetails-contentContainer img {
+  margin: 30px 0px 150px;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .spacer {
+  height: 150px;
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
-  margin-bottom: 300px;
+  margin: 150px 0px 300px;
   padding: 30px 0px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -11410,18 +11475,14 @@ body.opentwo {
   }
 }
 @media all and (max-width: 1600px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy {
-    margin-bottom: 120px;
+  .blogdetails-contentSec .blogdetails-contentContainer h2, .blogdetails-contentSec .blogdetails-contentContainer h3, .blogdetails-contentSec .blogdetails-contentContainer h4, .blogdetails-contentSec .blogdetails-contentContainer h5 {
+    margin-bottom: 25px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
-    margin-bottom: 26px;
-    line-height: 36px;
+  .blogdetails-contentSec .blogdetails-contentContainer img {
+    margin: 30px 0px 120px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
-    line-height: 28px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .blogdetailsImg {
-    margin-top: 40px;
+  .blogdetails-contentSec .blogdetails-contentContainer .spacer {
+    height: 120px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
     margin-bottom: 250px;
@@ -11438,18 +11499,11 @@ body.opentwo {
   }
 }
 @media all and (max-width: 1400px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy {
-    margin-bottom: 100px;
+  .blogdetails-contentSec .blogdetails-contentContainer img {
+    margin: 30px 0px 80px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
-    margin-bottom: 24px;
-    line-height: 32px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
-    line-height: 26px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .blogdetailsImg {
-    margin-top: 36px;
+  .blogdetails-contentSec .blogdetails-contentContainer .spacer {
+    height: 80px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
     margin-bottom: 220px;
@@ -11466,19 +11520,6 @@ body.opentwo {
   }
 }
 @media all and (max-width: 1200px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy {
-    margin-bottom: 80px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
-    margin-bottom: 22px;
-    line-height: 30px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
-    line-height: 24px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .blogdetailsImg {
-    margin-top: 34px;
-  }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
     margin-bottom: 200px;
     padding: 22px 0px;
@@ -11496,19 +11537,6 @@ body.opentwo {
 @media all and (max-width: 1024px) {
   .blogdetails-contentSec .blogdetails-contentContainer {
     width: 80%;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy {
-    margin-bottom: 80px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
-    margin-bottom: 20px;
-    line-height: 28px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
-    line-height: 22px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .blogdetailsImg {
-    margin-top: 32px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
     margin-bottom: 180px;
@@ -11528,18 +11556,8 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer {
     width: 100%;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy {
-    margin-bottom: 80px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
-    margin-bottom: 18px;
-    line-height: 25px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
-    line-height: 20px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .blogdetailsImg {
-    margin-top: 30px;
+  .blogdetails-contentSec .blogdetails-contentContainer h2, .blogdetails-contentSec .blogdetails-contentContainer h3, .blogdetails-contentSec .blogdetails-contentContainer h4, .blogdetails-contentSec .blogdetails-contentContainer h5 {
+    font-size: 20px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
     margin-bottom: 150px;
@@ -11556,26 +11574,6 @@ body.opentwo {
   }
 }
 @media all and (max-width: 720px) {
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy {
-    margin-bottom: 80px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy h2 {
-    margin-bottom: 24px;
-    color: var(--Primary-Black, #000);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 12.343px;
-    letter-spacing: -0.6px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy p {
-    color: var(--Body-Copy, #6A6A6A);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 164.286%;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer .content-bodycopy .blogdetailsImg {
-    margin-top: 32px;
-  }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
     margin-bottom: 150px;
     padding: 20px 0px;
@@ -12766,4 +12764,107 @@ body.opentwo {
 
 .bookDescriptionsec {
   margin: 107px 60px 360px;
+}
+.bookDescriptionsec .bookDescwrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(135deg, #F00 0%, #FAFF00 14.15%, #05FB00 28.29%, #00FFE0 45.56%, #0029FF 60.75%, #FF00D6 75.9%, #F00 100%);
+  padding: 115px 0px 65px;
+  position: relative;
+  background-size: 400% 400%;
+  -webkit-animation: ani 15s ease infinite;
+  -moz-animation: ani 15s ease infinite;
+  animation: ani 15s ease infinite;
+}
+@-webkit-keyframes ani {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@-moz-keyframes ani {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@keyframes ani {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+.bookDescriptionsec .bookDescwrapper .bookStickydiv {
+  width: 48%;
+  position: sticky;
+  top: 0;
+  position: -webkit-sticky;
+  padding-left: 275px;
+  height: 100%;
+}
+.bookDescriptionsec .bookDescwrapper .bookInfodiv {
+  width: 48%;
+  padding-right: 152px;
+}
+.bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv {
+  padding-bottom: 100px;
+}
+.bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv h1 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 74px;
+  letter-spacing: -1.9px;
+  color: #000;
+  margin-bottom: 48px;
+}
+@media screen and (max-width: 1600px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv h1 {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv h1 {
+    font-size: 32px;
+  }
+}
+.bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+@media screen and (max-width: 1600px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv p {
+    font-size: 14px;
+  }
 }
