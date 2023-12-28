@@ -66,7 +66,10 @@
             h3{@include font28;font-weight: $fontW500;line-height: 133%;letter-spacing: -0.9px;margin-bottom: 30px;color: #000;}
             h4{@include font24;font-weight: $fontW500;line-height: 133%;letter-spacing: -0.9px;margin-bottom: 30px;color: #000;}
             h5{@include font20;font-weight: $fontW500;line-height: 133%;letter-spacing: -0.9px;margin-bottom: 30px;color: #000;}
-            p , ul li, ol li{color: #6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;}
+            p , ul li, ol li{color: #6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;margin-bottom: 40px;}
+            ul li , ol li{padding-left: 20px;}
+            ol li{list-style: decimal;}
+            ul li{list-style: disc;}
             img{margin:30px 0px 150px;}
             .spacer{height: 150px;}
             .shareSec {margin: 150px 0px 300px;padding: 30px 0px;border-top: 1px solid rgba(0,0,0,0.2); border-bottom: 1px solid rgba(0,0,0,0.2);display: flex;justify-content: space-between;align-items:center;
@@ -80,6 +83,7 @@
 
             .blogdetails-contentContainer {
                 h2, h3, h4, h5{margin-bottom: 25px;}
+                p , ul li, ol li{margin-bottom: 35px;}
                 img{margin:30px 0px 120px;}
                 .spacer{height: 120px;}
                 .shareSec {margin-bottom:250px;padding: 28px 0px;
@@ -93,6 +97,7 @@
     @media all and (max-width:1400px){
 
             .blogdetails-contentContainer {
+                p , ul li, ol li{margin-bottom: 30px;}
                 img{margin:30px 0px 80px;}
                 .spacer{height: 80px;}
                 .shareSec {margin-bottom:220px;padding: 25px 0px;
@@ -107,6 +112,7 @@
     @media all and (max-width:1200px){
 
             .blogdetails-contentContainer {
+                p , ul li, ol li{margin-bottom: 25px;}
                 .shareSec {margin-bottom:200px;padding: 22px 0px;
                     h4{line-height: 8px;}
                     .shareDiv{
@@ -119,7 +125,7 @@
     @media all and (max-width:1024px){
 
             .blogdetails-contentContainer {width: 80%;
-                
+                p , ul li, ol li{margin-bottom: 20px;}
                 .shareSec {margin-bottom:180px;padding: 20px 0px;
                     h4{line-height: 8px;}
                     .shareDiv{
