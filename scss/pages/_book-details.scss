@@ -1,3 +1,29 @@
 .bookDescriptionsec{margin: 107px 60px 360px;
-    
+    .bookDescwrapper{display: flex;align-items: flex-start;justify-content: space-between;background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(135deg, #F00 0%, #FAFF00 14.15%, #05FB00 28.29%, #00FFE0 45.56%, #0029FF 60.75%, #FF00D6 75.9%, #F00 100%);padding: 115px 0px 65px;position: relative;  background-size: 400% 400%;
+        -webkit-animation: ani 15s ease infinite;
+        -moz-animation: ani 15s ease infinite;
+        animation: ani 15s ease infinite;
+        @-webkit-keyframes ani {
+          0%{background-position:0% 0%}
+          50%{background-position:50% 100%}
+          100%{background-position:50% 0%} 
+        }
+       @-moz-keyframes ani {
+          0%{background-position:0% 0%}
+          50%{background-position:50% 100%}
+          100%{background-position:50% 0%}
+       }
+       @keyframes ani { 
+          0%{background-position:0% 0%}
+          50%{background-position:50% 100%}
+          100%{background-position:50% 0%}
+       }
+       .bookStickydiv{width: 48%;position: sticky;top: 0;position: -webkit-sticky;padding-left: 275px;height: 100%;}
+       .bookInfodiv{width: 48%;padding-right: 152px;
+            .headingDiv{padding-bottom: 100px;
+                h1{@include font64;font-weight: $fontW500;line-height: 74px;letter-spacing: -1.9px;color: #000;margin-bottom: 48px;}
+                p{@include font20;font-weight: $fontW400;line-height: 30px;}
+            }
+        }
+    }
 }
