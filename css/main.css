@@ -4831,10 +4831,10 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     font-size: 12px;
   }
 }
-.serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list {
+.serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul {
   padding-left: 23px;
 }
-.serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list li {
+.serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li {
   position: relative;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -4843,21 +4843,21 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   color: #C9C9C9;
 }
 @media screen and (max-width: 1600px) {
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list li {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list li {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list li {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li {
     font-size: 12px;
   }
 }
-.serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list li::before {
+.serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li::before {
   content: "";
   position: absolute;
   width: 6px;
@@ -4905,13 +4905,13 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     text-align: center;
     line-height: 18px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul {
     padding-left: 22px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list li {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li {
     line-height: 28px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list li::before {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li::before {
     top: 10px;
     left: -22px;
   }
@@ -4952,13 +4952,13 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     height: 32px;
     line-height: 16px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul {
     padding-left: 20px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list li {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li {
     line-height: 26px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list li::before {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li::before {
     width: 5px;
     height: 5px;
     top: 10px;
@@ -4989,13 +4989,13 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     line-height: 28px;
     margin-bottom: 12px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul {
     padding-left: 20px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list li {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li {
     line-height: 24px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list li::before {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li::before {
     top: 10px;
     left: -20px;
   }
@@ -5024,13 +5024,13 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     line-height: 24px;
     margin-bottom: 12px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul {
     padding-left: 18px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list li {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li {
     line-height: 22px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list li::before {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li::before {
     top: 8px;
     left: -18px;
   }
@@ -5075,14 +5075,14 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     height: 24px;
     left: -40px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul {
     padding-left: 16px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list li {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li {
     line-height: 26px;
     letter-spacing: -0.42px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list li::before {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li::before {
     left: -16px;
   }
 }
@@ -5117,16 +5117,16 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     line-height: 30px;
     margin-bottom: 12px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul {
     padding-left: 15px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list li {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li {
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: -0.42px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .services-list li::before {
+  .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li::before {
     left: -15px;
   }
 }

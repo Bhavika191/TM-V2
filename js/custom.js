@@ -144,7 +144,7 @@ jQuery(document).ready(function () {
       $('#service-info' + i + ' .list-wrapper').not('.shown').hide();
       $('.showLess').hide();
       $('.showMore').show();
-      $('html, body').scrollTop($(".servicesecs-wrapper" + i).offset().top - 60);
+      $(window).scrollTop($(".servicesecs-wrapper" + i).offset().top - 60);
     });
   }
 });
