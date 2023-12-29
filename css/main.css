@@ -13328,23 +13328,19 @@ body.opentwo {
 .bookDescriptionsec .bookDescwrapper .bookStickydiv {
   width: 52%;
   position: sticky;
-  top: 0;
+  top: 20px;
   position: -webkit-sticky;
-  padding-left: 275px;
+  padding-left: 250px;
   height: 100%;
 }
 .bookDescriptionsec .bookDescwrapper .bookInfodiv {
-  width: 40%;
-  padding: 114px 152px 0px 0px;
-}
-.bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv {
-  padding-bottom: 100px;
+  width: 42%;
+  padding: 70px 152px 0px 0px;
 }
 .bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv h1 {
   font-size: 64px;
   font-weight: 500;
   line-height: 115%;
-  letter-spacing: -1.9px;
   color: #000;
   margin-bottom: 48px;
 }
@@ -13389,19 +13385,18 @@ body.opentwo {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
-  position: -webkit-sticky;
+  position: fixed;
+  bottom: 0;
   z-index: 2;
+  right: 220px;
 }
 .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo {
-  width: 48%;
+  margin-right: 100px;
 }
 .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo h4 {
   font-size: 16px;
   font-weight: 600;
   line-height: 162%;
-  letter-spacing: 0.8px;
   text-transform: uppercase;
   color: #000;
   margin-bottom: 16px;
@@ -13420,7 +13415,6 @@ body.opentwo {
   font-size: 48px;
   font-weight: 500;
   line-height: 100%;
-  letter-spacing: -1.44px;
   color: #000;
 }
 @media screen and (max-width: 1600px) {
@@ -13459,7 +13453,6 @@ body.opentwo {
   font-size: 20px;
   font-weight: 600;
   line-height: 150%;
-  letter-spacing: 1px;
   text-transform: uppercase;
   color: #fff;
 }
@@ -13482,7 +13475,6 @@ body.opentwo {
   font-size: 30px;
   font-weight: 500;
   line-height: 133%;
-  letter-spacing: -0.9px;
   color: #fff;
   margin: 30px 0px 48px;
 }
@@ -13550,7 +13542,6 @@ body.opentwo {
   font-size: 64px;
   font-weight: 500;
   line-height: 75%;
-  letter-spacing: -1.92px;
   color: #000;
 }
 @media screen and (max-width: 1600px) {
@@ -13573,7 +13564,6 @@ body.opentwo {
   font-weight: 600;
   text-transform: uppercase;
   line-height: 87%;
-  letter-spacing: 0.8px;
   color: #000;
   margin-bottom: 30px;
 }
@@ -13590,7 +13580,6 @@ body.opentwo {
 .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner p {
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: -0.48px;
   text-transform: uppercase;
   line-height: 162%;
   margin-top: 20px;
@@ -13613,6 +13602,176 @@ body.opentwo {
 }
 .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner:nth-child(1), .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner:nth-child(2) {
   margin-top: 0px;
+}
+@media screen and (max-width: 1920px) {
+  .bookDescriptionsec .bookDescwrapper .bookStickydiv {
+    width: 45%;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv {
+    width: 41.7%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .bookDescriptionsec {
+    margin: 94px 50px 320px;
+  }
+  .bookDescriptionsec .bookDescwrapper {
+    padding: 120px 0px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookStickydiv {
+    width: 46%;
+    padding-left: 220px;
+    height: 100%;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv {
+    width: 42%;
+    padding: 60px 120px 0px 0px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv h1 {
+    margin-bottom: 40px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv {
+    padding: 32px 55px;
+    right: 170px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo {
+    margin-right: 80px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo h4 {
+    margin-bottom: 14px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .orderCta a {
+    padding: 14px 26px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc {
+    margin-top: 50px;
+    padding: 60px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc h3 {
+    margin: 26px 0px 40px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc {
+    margin-top: 80px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner {
+    width: 42%;
+    margin-top: 160px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner h4 {
+    margin-bottom: 26px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner p {
+    margin-top: 18px;
+    padding: 0px 10px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .bookDescriptionsec {
+    margin: 82px 40px 280px;
+  }
+  .bookDescriptionsec .bookDescwrapper {
+    padding: 100px 0px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookStickydiv {
+    width: 46%;
+    padding-left: 150px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv {
+    width: 43%;
+    padding: 50px 100px 0px 0px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv h1 {
+    margin-bottom: 25px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv {
+    padding: 25px 40px;
+    right: 140px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo {
+    margin-right: 70px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo h4 {
+    margin-bottom: 12px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .orderCta a {
+    padding: 12px 22px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc {
+    margin-top: 40px;
+    padding: 50px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc h3 {
+    margin: 20px 0px 25px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc {
+    margin-top: 60px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner {
+    width: 46%;
+    margin-top: 120px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner h4 {
+    margin-bottom: 20px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner p {
+    margin-top: 16px;
+    padding: 0px 8px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .bookDescriptionsec {
+    margin: 78px 30px 230px;
+  }
+  .bookDescriptionsec .bookDescwrapper {
+    padding: 80px 0px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookStickydiv {
+    width: 44%;
+    padding-left: 120px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv {
+    width: 43%;
+    padding: 40px 80px 0px 0px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv h1 {
+    margin-bottom: 20px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv {
+    padding: 22px 32px;
+    right: 110px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo {
+    margin-right: 60px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo h4 {
+    margin-bottom: 10px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .orderCta a {
+    padding: 12px 20px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc {
+    margin-top: 30px;
+    padding: 40px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc h3 {
+    margin: 18px 0px 22px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc {
+    margin-top: 50px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner {
+    width: 48%;
+    margin-top: 100px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner img {
+    width: 50%;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner h4 {
+    margin-bottom: 18px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner p {
+    margin-top: 14px;
+  }
 }
 
 .ratingAmazonsec {

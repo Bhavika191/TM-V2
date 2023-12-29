@@ -18,33 +18,120 @@
           50%{background-position:50% 100%}
           100%{background-position:50% 0%}
        }
-       .bookStickydiv{width: 52%;position: sticky;top: 0;position: -webkit-sticky;padding-left: 275px;height: 100%;}
-       .bookInfodiv{width: 40%;padding: 114px 152px 0px 0px;
-            .headingDiv{padding-bottom: 100px;
-                h1{@include font64;font-weight: $fontW500;line-height: 115%;letter-spacing: -1.9px;color: #000;margin-bottom: 48px;}
+       .bookStickydiv{width: 52%;position: sticky;top: 20px;position: -webkit-sticky;padding-left: 250px;height: 100%;}
+       .bookInfodiv{width: 42%;padding: 70px  152px 0px 0px;
+            .headingDiv{
+                h1{@include font64;font-weight: $fontW500;line-height: 115%;color: #000;margin-bottom: 48px;}
                 p{@include font20;font-weight: $fontW400;line-height: 150%;}
             }
-            .prizeDiv{background-color: #fff;padding: 42px 75px;display: flex;align-items: flex-end;justify-content: space-between;position: sticky;top: 0;position: -webkit-sticky;z-index: 2;
-                .prizeInfo{width: 48%;
-                    h4{@include font16;font-weight: $fontW600;line-height: 162%;letter-spacing: 0.8px;text-transform: uppercase;color: #000;margin-bottom: 16px}
-                    h3{@include font48;font-weight: $fontW500;line-height: 100%;letter-spacing: -1.44px;color: #000;}
+            .prizeDiv{background-color: #fff;padding: 42px 75px;display: flex;align-items: flex-end;justify-content: space-between;position: fixed;bottom: 0;z-index: 2;right: 220px;;
+                .prizeInfo{margin-right: 100px;
+                    h4{@include font16;font-weight: $fontW600;line-height: 162%;text-transform: uppercase;color: #000;margin-bottom: 16px}
+                    h3{@include font48;font-weight: $fontW500;line-height: 100%;color: #000;}
                 }
                 .orderCta{a{border-radius: 6px;background: #FF0D47;color: #fff;border: none;padding: 14px 28px;}}
             }
             .book-author-desc{margin-top: 60px;background-color: #000;padding: 80px;
-                h4{@include font20;font-weight: $fontW600;line-height: 150%;letter-spacing: 1px;text-transform: uppercase;color: #fff;}
-                h3{@include font30;font-weight: $fontW500;line-height: 133%;letter-spacing: -0.9px;color: #fff;margin: 30px 0px 48px;}
+                h4{@include font20;font-weight: $fontW600;line-height: 150%;text-transform: uppercase;color: #fff;}
+                h3{@include font30;font-weight: $fontW500;line-height: 133%;color: #fff;margin: 30px 0px 48px;}
                 p{@include font20;font-weight: $fontW400;line-height: 150%;color: #C9C9C9;}
             }
             .otherDesc{margin-top: 100px;display: flex;align-items: flex-start;justify-content: space-between;flex-wrap: wrap;position: relative;
                 &::before{content: "";position: absolute;left: 0;right: 0;top: 50%;transform: translateY(-50%);background-color: #000;opacity: 0.2;height: 1px;width: 100%;}
                 .infoInner{width: 45%;margin-top: 200px;
-                    h3{@include font64;font-weight: $fontW500;line-height: 75%;letter-spacing: -1.92px;color: #000;}
-                    h4{@include font16;font-weight: $fontW600;text-transform: uppercase;line-height: 87%;letter-spacing: 0.8px;color: #000;margin-bottom: 30px}
-                    p{@include font16;font-weight: $fontW700;letter-spacing: -0.48px;text-transform: uppercase;line-height: 162%;margin-top: 20px;width: max-content;padding: 0px 12px;background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(88deg, #F00 -75.66%, #FAFF00 -32.31%, #05FB00 11.04%, #00FFE0 62.78%, #0029FF 108.93%, #FF00D6 152.28%, #F00 192.84%);
+                    h3{@include font64;font-weight: $fontW500;line-height: 75%;color: #000;}
+                    h4{@include font16;font-weight: $fontW600;text-transform: uppercase;line-height: 87%;color: #000;margin-bottom: 30px}
+                    p{@include font16;font-weight: $fontW700;text-transform: uppercase;line-height: 162%;margin-top: 20px;width: max-content;padding: 0px 12px;background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(88deg, #F00 -75.66%, #FAFF00 -32.31%, #05FB00 11.04%, #00FFE0 62.78%, #0029FF 108.93%, #FF00D6 152.28%, #F00 192.84%);
                         &:last-child{margin-top: 0px;}
                     }
                     &:nth-child(1), &:nth-child(2){margin-top: 0px;}
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1920px) {
+        .bookDescwrapper{
+           .bookStickydiv{width: 45%;}
+           .bookInfodiv{width: 41.7%;}
+        }
+    }
+    @media screen and (max-width:1600px) {
+        margin: 94px 50px 320px;
+        .bookDescwrapper{padding: 120px 0px;
+           .bookStickydiv{width: 46%;padding-left: 220px;height: 100%;}
+           .bookInfodiv{width: 42%;padding: 60px 120px 0px 0px;
+                .headingDiv{
+                    h1{margin-bottom: 40px;}
+                }
+                .prizeDiv{padding: 32px 55px;right: 170px;;
+                    .prizeInfo{margin-right: 80px;
+                        h4{margin-bottom: 14px}
+                    }
+                    .orderCta{a{padding: 14px 26px;}}
+                }
+                .book-author-desc{margin-top: 50px;padding: 60px;
+                    h3{margin: 26px 0px 40px;}
+                }
+                .otherDesc{margin-top: 80px;
+                    .infoInner{width: 42%;margin-top: 160px;
+                        h4{margin-bottom: 26px}
+                        p{margin-top: 18px;padding: 0px 10px;}
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:1400px) {
+        margin: 82px 40px 280px;
+        .bookDescwrapper{padding: 100px 0px;
+           .bookStickydiv{width: 46%;padding-left: 150px;}
+           .bookInfodiv{width: 43%;padding: 50px 100px 0px 0px;
+                .headingDiv{
+                    h1{margin-bottom: 25px;}
+                }
+                .prizeDiv{padding: 25px 40px;right: 140px;;
+                    .prizeInfo{margin-right: 70px;
+                        h4{margin-bottom: 12px}
+                    }
+                    .orderCta{a{padding: 12px 22px;}}
+                }
+                .book-author-desc{margin-top: 40px;padding: 50px;
+                    h3{margin: 20px 0px 25px;}
+                }
+                .otherDesc{margin-top: 60px;
+                    .infoInner{width: 46%;margin-top: 120px;
+                        h4{margin-bottom: 20px}
+                        p{margin-top: 16px;padding: 0px 8px;}
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:1280px) {
+        margin: 78px 30px 230px;
+        .bookDescwrapper{padding: 80px 0px;
+           .bookStickydiv{width: 44%;padding-left: 120px;}
+           .bookInfodiv{width: 43%;padding: 40px 80px 0px 0px;
+                .headingDiv{
+                    h1{margin-bottom: 20px;}
+                }
+                .prizeDiv{padding: 22px 32px;right: 110px;;
+                    .prizeInfo{margin-right: 60px;
+                        h4{margin-bottom: 10px}
+                    }
+                    .orderCta{a{padding: 12px 20px;}}
+                }
+                .book-author-desc{margin-top: 30px;padding: 40px;
+                    h3{margin: 18px 0px 22px;}
+                }
+                .otherDesc{margin-top: 50px;
+                    .infoInner{width: 48%;margin-top: 100px;
+                        img{width: 50%;}
+                        h4{margin-bottom: 18px}
+                        p{margin-top: 14px;}
+                    }
                 }
             }
         }
