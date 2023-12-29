@@ -93,7 +93,7 @@
                     .list-heading{position:relative;color: #FFF;font-family: $fontpoppins; @include font30;font-weight: $fontW400;line-height: 40px;margin-bottom: 16px;
                         span{position: absolute;top:0px;left: -60px;width: 36px;height: 36px;background: #F1F1F1;color: #000;text-align: center;font-family: $fontpoppins;@include font16;font-weight: $fontW700;line-height: 20px;border-radius: 50%;display: flex;align-items: center;justify-content: center;}
                     }
-                    .services-list{padding-left:23px;
+                    ul{padding-left:23px;
                         li{position: relative;font-family: $fontpoppins;@include font18;font-weight: $fontW400;line-height: 30px;color: #C9C9C9;&::before{content: '';position: absolute;width: 6px;height: 6px;color:  #C9C9C9;top: 10px;left: -23px;border-radius: 50%;text-align: center;background-color: #D4D4D4;}}
                     }
                 }
@@ -113,7 +113,7 @@
                         .list-heading{line-height: 36px;margin-bottom: 15px;
                             span{left: -60px;width: 34px;height: 34px;text-align: center;line-height: 18px;}
                         }
-                        .services-list{padding-left:22px;
+                        ul{padding-left:22px;
                             li{line-height: 28px;&::before{top: 10px;left: -22px;}}
                         }
                     }
@@ -142,7 +142,7 @@
                         .list-heading{line-height: 32px;margin-bottom: 14px;
                             span{width: 32px;height: 32px;line-height: 16px;}
                         }
-                        .services-list{padding-left:20px;
+                        ul{padding-left:20px;
                             li{line-height: 26px;&::before{width:5px;height:5px;top: 10px;left: -20px;}}
                         }
                     }
@@ -159,7 +159,7 @@
                     } 
                     .list-wrapper{padding: 40px 0px;  
                         .list-heading{line-height: 28px;margin-bottom: 12px;}
-                        .services-list{padding-left:20px;
+                        ul{padding-left:20px;
                             li{line-height: 24px;&::before{top: 10px;left: -20px;}}
                         }
                     }
@@ -177,7 +177,7 @@
                     
                     .list-wrapper{padding: 36px 0px;  
                         .list-heading{line-height: 24px;margin-bottom: 12px;}
-                        .services-list{padding-left:18px;
+                        ul{padding-left:18px;
                             li{line-height: 22px;&::before{top: 8px;left: -18px;}}
                         }
                     }
@@ -197,7 +197,7 @@
                     .list-wrapper{padding: 30px 0px;  
                         .list-heading{line-height: 30px;margin-bottom: 14px;
                             span{width: 24px;height: 24px;left: -40px;}}
-                        .services-list{padding-left:16px;
+                        ul{padding-left:16px;
                             li{line-height: 26px;letter-spacing: -0.42px;&::before{left: -16px;}}
                         }
                     }
@@ -215,7 +215,7 @@
                     }
                     .list-wrapper{padding: 20px 0px;  
                         .list-heading{font-size: 20px;font-weight: 400;line-height: 30px;margin-bottom: 12px;}
-                        .services-list{padding-left:15px;
+                        ul{padding-left:15px;
                             li{font-size: 14px;font-weight: 400;line-height: 26px;letter-spacing: -0.42px;&::before{left: -15px;}}
                         }
                     }
