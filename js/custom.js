@@ -497,7 +497,7 @@ if ($(window).width() > 1025) {
 //==========================================Json Animations=======================================//
 var panAnime = bodymovin.loadAnimation({
   container: document.getElementById('panAnime'),
-  path: 'js/json/panAnime.json', // Required
+  path: '/projects/TM-V2/js/json/panAnime.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: true,
@@ -505,7 +505,7 @@ var panAnime = bodymovin.loadAnimation({
 
 var firstfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('first-fold-anime'),
-  path: 'js/json/first-fold.json', // Required
+  path: '/projects/TM-V2/js/json/first-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: true,
@@ -513,7 +513,7 @@ var firstfoldfAnime = bodymovin.loadAnimation({
 
 var secondfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('second-fold-anime'),
-  path: 'js/json/second-fold.json', // Required
+  path: '/projects/TM-V2/js/json/second-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: true,
@@ -521,7 +521,7 @@ var secondfoldfAnime = bodymovin.loadAnimation({
 
 var thirdfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('third-fold-anime'),
-  path: 'js/json/third-fold.json', // Required
+  path: '/projects/TM-V2/js/json/third-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: true,
@@ -529,7 +529,7 @@ var thirdfoldfAnime = bodymovin.loadAnimation({
 
 var fourthfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('fourth-fold-anime'),
-  path: 'js/json/fourth-fold.json', // Required
+  path: '/projects/TM-V2/js/json/fourth-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: true,
@@ -537,7 +537,7 @@ var fourthfoldfAnime = bodymovin.loadAnimation({
 
 var lastfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('fifth-fold-anime'),
-  path: 'js/json/fifth-fold.json', // Required
+  path: '/projects/TM-V2/js/json/fifth-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: true,
