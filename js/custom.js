@@ -529,6 +529,14 @@ var panAnime = bodymovin.loadAnimation({
   autoplay: true,
 });
 
+var firstfoldfAnime = bodymovin.loadAnimation({
+  container: document.getElementById('first-fold-anime'),
+  path: 'js/json/first-fold.json', // Required
+  renderer: 'svg', // or 'canvas', 'html'
+  loop: true,
+  autoplay: true,
+});
+
 var secondfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('second-fold-anime'),
   path: 'js/json/second-fold.json', // Required
@@ -540,6 +548,14 @@ var secondfoldfAnime = bodymovin.loadAnimation({
 var thirdfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('third-fold-anime'),
   path: 'js/json/third-fold.json', // Required
+  renderer: 'svg', // or 'canvas', 'html'
+  loop: true,
+  autoplay: true,
+});
+
+var fourthfoldfAnime = bodymovin.loadAnimation({
+  container: document.getElementById('fourth-fold-anime'),
+  path: 'js/json/fourth-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: true,
