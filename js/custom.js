@@ -69,7 +69,33 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  updateLastBoxClass(); // Initial update
 
+  // Assuming you are adding or removing boxes dynamically
+  // You may want to call updateLastBoxClass() whenever the number of boxes changes.
+
+  function updateLastBoxClass() {
+      var boxesnew = document.querySelectorAll(".ratingboxes");
+
+      // Remove classes from all boxes
+      boxesnew.forEach(function (box) {
+          box.classList.remove("even", "odd");
+      });
+
+      if (boxesnew.length > 0) {
+          // Add appropriate class to the last box
+          var lastBox = boxesnew[boxesnew.length - 1];
+          if (boxesnew.length % 2 === 0) {
+              // Even number of boxes
+              lastBox.classList.add("even");
+          } else {
+              // Odd number of boxes
+              lastBox.classList.add("odd");
+          }
+      }
+  }
+});
 
 //---------------------------------------------------------Shamal's Js Code Starts ---------------------------------------------------------------//
 
