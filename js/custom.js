@@ -128,17 +128,25 @@ jQuery(document).ready(function () {
     var $this = $('#service-info' + i);
     if ($this.find('div').length > 4) {
       $('#servicesec-content' + i).append('<div><a href="javascript:void(0)" class="showMore"></a></div>');
+      $('#servicesec-content' + i).append('<div><a href="javascript:void(0)" class="showLess"></a></div>');
     }
     // If more than 2 Education items, hide the remaining
     $('#service-info' + i + ' .list-wrapper').slice(0, 3).addClass('shown');
     $('#service-info' + i + ' .list-wrapper').not('.shown').hide();
-    $('#servicesec-content' + i + ' .showMore').on('click', (function (index) {
-      return function () {
-        $('#service-info' + index + ' .list-wrapper').not('.shown').toggle(200);
-        $(this).toggleClass('showLess');
-      };
-    })(i));
-  }//for loop closed
+
+    $('#servicesec-content' + i + ' .showMore').on('click', function () {
+      $('#service-info' + i + ' .list-wrapper').not('.shown').show();
+      $('.showMore').hide();
+      $('.showLess').css('display','block');
+    });
+
+    $('#servicesec-content' + i + ' .showLess').on('click', function () {
+      $('#service-info' + i + ' .list-wrapper').not('.shown').hide();
+      $('.showLess').hide();
+      $('.showMore').show();
+      $('html, body').scrollTop($(".servicesecs-wrapper" + i).offset().top - 60);
+    });
+  }
 });
 //Service page read more and Read less code ends
 
