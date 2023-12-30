@@ -98,7 +98,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //---------------------------------------------------------Shamal's Js Code Starts ---------------------------------------------------------------//
-
+const el = document.querySelector(".service-container")
+const observer = new IntersectionObserver(
+  ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
+  { threshold: [1] }
+);
+observer.observe(el);
 //Service page sticky property starts
 jQuery(document).ready(function () {
   for (let i = 1; i <= 9; i++) {
@@ -178,8 +183,8 @@ $(document).ready(function () {
     if (menuScrollTimer === null) {
       let windowTop = $(this).scrollTop();
       $('.filter-wrapper a').each(function (index, event) {
-        var topvalue = $($(this).attr('href')).offset().top - 250;
-        if (windowTop >= $($(this).attr('href')).offset().top - 250) {
+        // var topvalue = $($(this).attr('href')).offset().top - 140;
+        if (windowTop >= $($(this).attr('href')).offset().top - 140) {
           managemenu(index);
           $('.filter-wrapper .active').removeClass('active');
           // $(".service-container").css("z-index", "25");
@@ -188,9 +193,9 @@ $(document).ready(function () {
       });
       var collaborateSectionTop = $('.collaborate-section').offset().top - 250;
       if (windowTop >= collaborateSectionTop) {
-        $('.filterSec').hide();
+        $('.service-container').hide();
       } else {
-        $('.filterSec').show();
+        $('.service-container').show();
       }
     }
   });
@@ -248,7 +253,7 @@ $(document).ready(function () {
     if (menuScrollTimer === null) {
       let windowTop = $(this).scrollTop();
       $('.casestudyfilter-wrapper a').each(function (index) {
-        var topcasevalue = $($(this).attr('href')).offset().top - 250;
+        var topcasevalue = $($(this).attr('href')).offset().top - 140;
         if (windowTop >= topcasevalue) {
           managcasemenu(index);
           $('.casestudyfilter-wrapper .current').removeClass('current');
