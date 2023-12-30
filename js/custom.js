@@ -151,50 +151,50 @@ jQuery(document).ready(function () {
 //Service page read more and Read less code ends
 
 //Service page active menu navbar code starts
-// $(document).ready(function () {
-//   let menuScrollTimer = null;
-//   $(".filter-wrapper a").click(function (e) {
-//     e.preventDefault();
-//     if (menuScrollTimer === null) {
-//       $('.filter-wrapper a.active').removeClass('active');
-//       $(this).addClass('active');
-//       let target = $(this).attr('href');
-//       $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
-//       menuScrollTimer = setTimeout(function () {
-//         clearTimeout(menuScrollTimer);
-//         menuScrollTimer = null;
-//       }, 1050);
-//     }
-//   });
-//   function managemenu(indexnumber) {
-//     $('.filter-wrapper a').each(function (index, event) {
-//       if (index < indexnumber)
-//         $(this).hide();
-//       else
-//         $(this).show();
-//     })
-//   }
-//   $(window).scroll(function (e) {
-//     if (menuScrollTimer === null) {
-//       let windowTop = $(this).scrollTop();
-//       $('.filter-wrapper a').each(function (index, event) {
-//         var topvalue = $($(this).attr('href')).offset().top - 250;
-//         if (windowTop >= $($(this).attr('href')).offset().top - 250) {
-//           managemenu(index);
-//           $('.filter-wrapper .active').removeClass('active');
-//           // $(".service-container").css("z-index", "25");
-//           $(this).addClass('active');
-//         }
-//       });
-//       // var collaborateSectionTop = $('.collaborate-section').offset().top - 250;
-//       // if (windowTop >= collaborateSectionTop) {
-//       //   $('.filterSec').hide();
-//       // } else {
-//       //   $('.filterSec').show();
-//       // }
-//     }
-//   });
-// });
+$(document).ready(function () {
+  let menuScrollTimer = null;
+  $(".filter-wrapper a").click(function (e) {
+    e.preventDefault();
+    if (menuScrollTimer === null) {
+      $('.filter-wrapper a.active').removeClass('active');
+      $(this).addClass('active');
+      let target = $(this).attr('href');
+      $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
+      menuScrollTimer = setTimeout(function () {
+        clearTimeout(menuScrollTimer);
+        menuScrollTimer = null;
+      }, 1050);
+    }
+  });
+  function managemenu(indexnumber) {
+    $('.filter-wrapper a').each(function (index, event) {
+      if (index < indexnumber)
+        $(this).hide();
+      else
+        $(this).show();
+    })
+  }
+  $(window).scroll(function (e) {
+    if (menuScrollTimer === null) {
+      let windowTop = $(this).scrollTop();
+      $('.filter-wrapper a').each(function (index, event) {
+        var topvalue = $($(this).attr('href')).offset().top - 250;
+        if (windowTop >= $($(this).attr('href')).offset().top - 250) {
+          managemenu(index);
+          $('.filter-wrapper .active').removeClass('active');
+          // $(".service-container").css("z-index", "25");
+          $(this).addClass('active');
+        }
+      });
+      var collaborateSectionTop = $('.collaborate-section').offset().top - 250;
+      if (windowTop >= collaborateSectionTop) {
+        $('.filterSec').hide();
+      } else {
+        $('.filterSec').show();
+      }
+    }
+  });
+});
 //Service page active menu navbar code ends
 
 //Off set code starts
