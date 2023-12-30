@@ -144,7 +144,7 @@ jQuery(document).ready(function () {
       $('#service-info' + i + ' .list-wrapper').not('.shown').hide();
       $('.showLess').hide();
       $('.showMore').show();
-      $('html, body').animate({scrollTop: $('.servicesecs-wrapper' + i).offset().top -60 }, 'slow');
+      $('html, body').animate({ scrollTop: $('.servicesecs-wrapper' + i).offset().top - 60 }, 'slow');
     });
   }
 });
@@ -257,7 +257,7 @@ $(document).ready(function () {
       });
     }
   });
-}); 
+});
 // Casestudy Details page active navbar code ends
 
 //Casestudy page casestudies footer animation code starts
@@ -583,6 +583,13 @@ if ($(window).width() > 1025) {
   new WOW().init();
 }
 
+
+const el = document.querySelector(".service-container")
+const observer = new IntersectionObserver(
+  ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
+  { threshold: [1] }
+);
+observer.observe(el);
 //==========================================Json Animations=======================================//
 var panAnime = bodymovin.loadAnimation({
   container: document.getElementById('panAnime'),
