@@ -257,7 +257,7 @@ $(document).ready(function () {
       });
     }
   });
-});
+}); 
 // Casestudy Details page active navbar code ends
 
 //Casestudy page casestudies footer animation code starts
