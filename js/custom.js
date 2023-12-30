@@ -97,13 +97,20 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+
+
+$(document).ready(function () {
+  $('.shareBlogs').on('click', function () {
+    $('.sharePopup').toggleClass('sharePopupnew');
+  });
+  $('.closePopupshare').on('click', function () {
+    $('.sharePopup').removeClass('sharePopupnew');
+  });
+});
+
+
 //---------------------------------------------------------Shamal's Js Code Starts ---------------------------------------------------------------//
-const el = document.querySelector(".service-container")
-const observer = new IntersectionObserver(
-  ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
-  { threshold: [1] }
-);
-observer.observe(el);
+
 //Service page sticky property starts
 jQuery(document).ready(function () {
   for (let i = 1; i <= 9; i++) {
@@ -502,6 +509,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
 $(document).ready(function () {
   $('.middleCircle').on('click', function () {
     $('#box').addClass('boxTwo');
@@ -632,7 +641,12 @@ function resizeCanvas() {
 
 
 
-
+const el = document.querySelector(".service-container")
+const observer = new IntersectionObserver(
+  ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
+  { threshold: [1] }
+);
+observer.observe(el);
 
 
 
