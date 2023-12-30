@@ -76,24 +76,24 @@ document.addEventListener("DOMContentLoaded", function () {
   // You may want to call updateLastBoxClass() whenever the number of boxes changes.
 
   function updateLastBoxClass() {
-      var boxesnew = document.querySelectorAll(".ratingboxes");
+    var boxesnew = document.querySelectorAll(".ratingboxes");
 
-      // Remove classes from all boxes
-      boxesnew.forEach(function (box) {
-          box.classList.remove("even", "odd");
-      });
+    // Remove classes from all boxes
+    boxesnew.forEach(function (box) {
+      box.classList.remove("even", "odd");
+    });
 
-      if (boxesnew.length > 0) {
-          // Add appropriate class to the last box
-          var lastBox = boxesnew[boxesnew.length - 1];
-          if (boxesnew.length % 2 === 0) {
-              // Even number of boxes
-              lastBox.classList.add("even");
-          } else {
-              // Odd number of boxes
-              lastBox.classList.add("odd");
-          }
+    if (boxesnew.length > 0) {
+      // Add appropriate class to the last box
+      var lastBox = boxesnew[boxesnew.length - 1];
+      if (boxesnew.length % 2 === 0) {
+        // Even number of boxes
+        lastBox.classList.add("even");
+      } else {
+        // Odd number of boxes
+        lastBox.classList.add("odd");
       }
+    }
   }
 });
 
@@ -137,7 +137,7 @@ jQuery(document).ready(function () {
     $('#servicesec-content' + i + ' .showMore').on('click', function () {
       $('#service-info' + i + ' .list-wrapper').not('.shown').show();
       $('.showMore').hide();
-      $('.showLess').css('display','block');
+      $('.showLess').css('display', 'block');
     });
 
     $('#servicesec-content' + i + ' .showLess').on('click', function () {
@@ -218,39 +218,46 @@ jQuery(function ($) {
 //Offset code ends
 
 //Casestudy Details page active code navbar
-// $(document).ready(function () {
-//   let menuScrollTimer = null;
-//   $(".casestudyfilter-wrapper a").click(function (e) {
-//     e.preventDefault();
-//     if (menuScrollTimer === null) {
-//       // Highlight the clicked item
-//       $('.casestudyfilter-wrapper a.current').removeClass('current');
-//       $(this).addClass('current');
-//       // Smooth scroll to the target section
-//       let target = $(this).attr('href');
-//       $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
-//       // Set `menuScrollTimer` timer
-//       // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
-//       // This will also prevent the scroll logic from running
-//       menuScrollTimer = setTimeout(function () {
-//         clearTimeout(menuScrollTimer);
-//         menuScrollTimer = null;
-//       }, 1050);
-//     }
-//   });
-//   $(window).scroll(function (e) {
-//     // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
-//     if (menuScrollTimer === null) {
-//       let windowTop = $(this).scrollTop();
-//       $('.casestudyfilter-wrapper a').each(function (event) {
-//         if (windowTop >= $($(this).attr('href')).offset().top - 250) {
-//           $('.casestudyfilter-wrapper .current').removeClass('current');
-//           $(this).addClass('current');
-//         }
-//       });
-//     }
-//   });
-// });
+$(document).ready(function () {
+  let menuScrollTimer = null;
+  $(".casestudyfilter-wrapper a").click(function (e) {
+    e.preventDefault();
+    if (menuScrollTimer === null) {
+      // Highlight the clicked item
+      $('.casestudyfilter-wrapper a.current').removeClass('current');
+      $(this).addClass('current');
+      // Smooth scroll to the target section
+      let target = $(this).attr('href');
+      $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
+      menuScrollTimer = setTimeout(function () {
+        clearTimeout(menuScrollTimer);
+        menuScrollTimer = null;
+      }, 1050);
+    }
+  });
+  function managcasemenu(indexcasenumber) {
+    $('.casestudyfilter-wrapper a').each(function (index, event) {
+      if (index < indexcasenumber)
+        $(this).hide();
+      else
+        $(this).show();
+    });
+  }
+  $(window).scroll(function (e) {
+    // Avoid triggering the logic if the scroll event is triggered from clicking one of the items
+    if (menuScrollTimer === null) {
+      let windowTop = $(this).scrollTop();
+      $('.casestudyfilter-wrapper a').each(function (index) {
+        var topcasevalue = $($(this).attr('href')).offset().top - 250;
+        if (windowTop >= topcasevalue) {
+          managcasemenu(index);
+          $('.casestudyfilter-wrapper .current').removeClass('current');
+          $(this).addClass('current');
+        }
+      });
+    }
+  });
+});
 // Casestudy Details page active navbar code ends
 
 //Casestudy page casestudies footer animation code starts
@@ -325,15 +332,15 @@ if ($(window).width() > 1024) {
 
 //About us slider starts
 
-  if ($(".aboutus-researchSec .researchsec-wrapper .img-div").length > 1) {
-    $('.aboutus-researchSec .researchsec-wrapper .img-div').slick({
-      dots:true,
-      autoplay: true,
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    });
-  }
+if ($(".aboutus-researchSec .researchsec-wrapper .img-div").length > 1) {
+  $('.aboutus-researchSec .researchsec-wrapper .img-div').slick({
+    dots: true,
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
+}
 
 //About us slider ends
 
@@ -392,6 +399,29 @@ if ($(window).width() < 1025) {
 if ($(window).width() < 1025) {
   if ($(".customerBoxes").length) {
     $(".customerBoxes").slick({
+      dots: false,
+      arrows: false,
+      slidesToShow: 2.1,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 680,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: "40px",
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+  }
+}
+
+// google review slider
+if ($(window).width() < 1025) {
+  if ($(".ratingBoxes").length) {
+    $(".ratingBoxes").slick({
       dots: false,
       arrows: false,
       slidesToShow: 2.1,
@@ -485,7 +515,7 @@ $(document).ready(function () {
     setTimeout(function () {
       $('.counterText').removeClass('newcounterText');
     }, 6000);
-    
+
     setTimeout(function () {
       $('.counterText span a').html(function (i, val) {
         var incrementedValue = val * 1 + 1;
@@ -578,6 +608,13 @@ var lastfoldfAnime = bodymovin.loadAnimation({
 });
 
 
+var homeAnime = bodymovin.loadAnimation({
+  container: document.getElementById('homeAnime'),
+  path: site_url + '/wp-content/themes/theminimalist/js/json/hp-animation.json', // Required
+  renderer: 'svg', // or 'canvas', 'html'
+  loop: false,
+  autoplay: true,
+});
 
 //=============================================Json Animations========================================//
 

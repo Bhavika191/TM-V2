@@ -50,6 +50,7 @@ footer{@include wrapper;margin-bottom: 70px;position: relative;z-index: 3;
                     &.boxTwo{animation: none;}
                     .middleCircle{position: absolute;height: 100px;width: 100px;left: 0;right: 0;top: 0;bottom: 0;margin: auto;border-radius: 50%;background: #fff;display: flex;align-items: center;justify-content: center;cursor: pointer;
                         &.middleCirclenew{.innerCircle{background: #fff;}height: 80px;width: 80px;}
+                        &.box_Two{pointer-events:none;}  
                     }
                     .innerCircle{display: flex;align-items: center;justify-content: center;border-radius: 50%;height: 80px;width: 80px;background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.12499821186066deg, #05FB00 116.24999642372131deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474426deg, #F00 360deg);;}
                 }
