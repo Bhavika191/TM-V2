@@ -149,7 +149,7 @@ jQuery(document).ready(function () {
       $('#service-info' + i + ' .list-wrapper').not('.shown').hide();
       $('.showLess').hide();
       $('.showMore').show();
-      $('html, body').animate({scrollTop: $('.servicesecs-wrapper' + i).offset().top -60 }, 'slow');
+      $('html, body').animate({ scrollTop: $('.servicesecs-wrapper' + i).offset().top - 60 }, 'slow');
     });
   }
 });
@@ -262,7 +262,7 @@ $(document).ready(function () {
       });
     }
   });
-}); 
+});
 // Casestudy Details page active navbar code ends
 
 //Casestudy page casestudies footer animation code starts
@@ -499,7 +499,32 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// in viewport text animation js starts
+const inViewport = (elem) => {
+  let allElements = document.getElementsByClassName('imgZoomin');
+  let windowHeight = window.innerHeight;
+  const elems = () => {
+    for (let i = 0; i < allElements.length; i++) {  //  loop through the sections
+      let viewportOffset = allElements[i].getBoundingClientRect();  //  returns the size of an element and its position relative to the viewport
+      let top = viewportOffset.top;  //  get the offset top
+      if (top < windowHeight) {  //  if the top offset is less than the window height
+        allElements[i].classList.add('newClass');  //  add the class
+      } else {
+        allElements[i].classList.remove('newClass');  //  remove the class
+      }
+    }
+  }
+  elems();
+  window.addEventListener('scroll', elems);
+}
 
+inViewport('imgZoomin');  //  run the function on all section elements
+
+
+// in viewport text animation js ends
+$('.shareBlogs').on('click', function () {
+  $('#box').toggleClass('boxTwo');
+});
 
 
 $(document).ready(function () {
@@ -563,6 +588,13 @@ if ($(window).width() > 1025) {
   new WOW().init();
 }
 
+
+const el = document.querySelector(".service-container")
+const observer = new IntersectionObserver(
+  ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
+  { threshold: [1] }
+);
+observer.observe(el);
 //==========================================Json Animations=======================================//
 var panAnime = bodymovin.loadAnimation({
   container: document.getElementById('panAnime'),
@@ -627,12 +659,5 @@ function resizeCanvas() {
   var canvs = document.getElementById("myCanvas");
   canvs.width = window.innerWidth;
 }
-
-
-
-
-
-
-
 
 
