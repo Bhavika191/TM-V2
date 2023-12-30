@@ -494,7 +494,32 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// in viewport text animation js starts
+const inViewport = (elem) => {
+  let allElements = document.getElementsByClassName('imgZoomin');
+  let windowHeight = window.innerHeight;
+  const elems = () => {
+    for (let i = 0; i < allElements.length; i++) {  //  loop through the sections
+      let viewportOffset = allElements[i].getBoundingClientRect();  //  returns the size of an element and its position relative to the viewport
+      let top = viewportOffset.top;  //  get the offset top
+      if (top < windowHeight) {  //  if the top offset is less than the window height
+        allElements[i].classList.add('newClass');  //  add the class
+      } else {
+        allElements[i].classList.remove('newClass');  //  remove the class
+      }
+    }
+  }
+  elems();
+  window.addEventListener('scroll', elems);
+}
 
+inViewport('imgZoomin');  //  run the function on all section elements
+
+
+// in viewport text animation js ends
+$('.shareBlogs').on('click', function () {
+  $('#box').toggleClass('boxTwo');
+});
 
 
 $(document).ready(function () {
@@ -622,12 +647,5 @@ function resizeCanvas() {
   var canvs = document.getElementById("myCanvas");
   canvs.width = window.innerWidth;
 }
-
-
-
-
-
-
-
 
 

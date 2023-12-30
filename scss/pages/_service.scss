@@ -1,3 +1,5 @@
+.page-template-services{scroll-behavior: smooth}
+
 .banner-section{@include wrapper;
     .content-div{padding: 224px 150px 124px 150px;display:flex;flex-direction:column;justify-content:center;
         .banner-heading{color: var(--primary-black, #000);font-family: $fontpoppins;@include font96;font-weight: $fontW500;line-height: 106px;letter-spacing: -2.88px;width: 80%;margin-bottom:34px;}
