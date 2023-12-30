@@ -144,7 +144,7 @@ jQuery(document).ready(function () {
       $('#service-info' + i + ' .list-wrapper').not('.shown').hide();
       $('.showLess').hide();
       $('.showMore').show();
-      $(window).scrollTop($(".servicesecs-wrapper" + i).offset().top - 60);
+      $('html, body').animate({scrollTop: $('.servicesecs-wrapper' + i).offset().top -60 }, 'slow');
     });
   }
 });
@@ -182,16 +182,16 @@ $(document).ready(function () {
         if (windowTop >= $($(this).attr('href')).offset().top - 250) {
           managemenu(index);
           $('.filter-wrapper .active').removeClass('active');
-          $(".service-container").css("z-index", "25");
+          // $(".service-container").css("z-index", "25");
           $(this).addClass('active');
         }
       });
-      // var collaborateSectionTop = $('.collaborate-section').offset().top - 250;
-      // if (windowTop >= collaborateSectionTop) {
-      //   $('.filterSec').hide();
-      // } else {
-      //   $('.filterSec').show();
-      // }
+      var collaborateSectionTop = $('.collaborate-section').offset().top - 250;
+      if (windowTop >= collaborateSectionTop) {
+        $('.filterSec').hide();
+      } else {
+        $('.filterSec').show();
+      }
     }
   });
 });
@@ -257,7 +257,7 @@ $(document).ready(function () {
       });
     }
   });
-});
+}); 
 // Casestudy Details page active navbar code ends
 
 //Casestudy page casestudies footer animation code starts
@@ -295,39 +295,39 @@ if ($(window).width() > 1024) {
 //Casestudy page casestudies footer animation code ends
 
 //Blog details page active navbar code starts
-$(document).ready(function () {
-  let menuScrollTimer = null;
-  $(".blogdetailsfilter-wrapper a").click(function (e) {
-    e.preventDefault();
-    if (menuScrollTimer === null) {
-      // Highlight the clicked item
-      $('.blogdetailsfilter-wrapper a.current').removeClass('current');
-      $(this).addClass('current');
-      // Smooth scroll to the target section
-      let target = $(this).attr('href');
-      $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
-      // Set `menuScrollTimer` timer
-      // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
-      // This will also prevent the scroll logic from running
-      menuScrollTimer = setTimeout(function () {
-        clearTimeout(menuScrollTimer);
-        menuScrollTimer = null;
-      }, 1050);
-    }
-  });
-  $(window).scroll(function (e) {
-    // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
-    if (menuScrollTimer === null) {
-      let windowTop = $(this).scrollTop();
-      $('.blogdetailsfilter-wrapper a').each(function (event) {
-        if (windowTop >= $($(this).attr('href')).offset().top - 250) {
-          $('.blogdetailsfilter-wrapper .current').removeClass('current');
-          $(this).addClass('current');
-        }
-      });
-    }
-  });
-});
+// $(document).ready(function () {
+//   let menuScrollTimer = null;
+//   $(".blogdetailsfilter-wrapper a").click(function (e) {
+//     e.preventDefault();
+//     if (menuScrollTimer === null) {
+//       // Highlight the clicked item
+//       $('.blogdetailsfilter-wrapper a.current').removeClass('current');
+//       $(this).addClass('current');
+//       // Smooth scroll to the target section
+//       let target = $(this).attr('href');
+//       $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
+//       // Set `menuScrollTimer` timer
+//       // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
+//       // This will also prevent the scroll logic from running
+//       menuScrollTimer = setTimeout(function () {
+//         clearTimeout(menuScrollTimer);
+//         menuScrollTimer = null;
+//       }, 1050);
+//     }
+//   });
+//   $(window).scroll(function (e) {
+//     // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
+//     if (menuScrollTimer === null) {
+//       let windowTop = $(this).scrollTop();
+//       $('.blogdetailsfilter-wrapper a').each(function (event) {
+//         if (windowTop >= $($(this).attr('href')).offset().top - 250) {
+//           $('.blogdetailsfilter-wrapper .current').removeClass('current');
+//           $(this).addClass('current');
+//         }
+//       });
+//     }
+//   });
+// });
 //Blog details page active navbar code ends
 
 //About us slider starts
