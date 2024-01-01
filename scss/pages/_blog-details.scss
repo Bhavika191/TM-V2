@@ -92,7 +92,7 @@
                             &:nth-child(3){margin-top: 24px;}
                         }
                         ul{display: flex;align-items: center;padding-left: 0px;
-                            li {margin-right: 15px;list-style: none !important;margin-bottom: 0px !important;
+                            li {margin-right: 18px;list-style: none !important;margin-bottom: 0px !important;
                                 &:last-child{margin-right: 0px;}
                                 a{height: 36px;width: 36px;border-radius: 50%;background-color: #000;display: flex;align-items: center;justify-content: center;transition: 0.7s all ease-out;
                                     svg{height: 18px;width: 18px;
@@ -114,7 +114,7 @@
                                 }   
                             }
                         }
-                        .signup{border-radius: 6px;border: 2px solid  #000;background:  #FFF;padding: 3px 3px 3px 0px;display: inline-block;width: 100%;position: relative;;
+                        .signup{border-radius: 6px;border: 1px solid  #000;background:  #FFF;padding: 3px 3px 3px 0px;display: inline-block;width: 100%;position: relative;;
                             &::before{content: "";position: absolute;width: 1px;height: 16px;background: #F1F1F1;top: 50%;transform: translateY(-50%);left: 42px;}
                             form{display: flex;justify-content: space-between;
                                 input[type=submit]{background-color: #000;color: #fff;padding: 14px 24px;border-radius: 6px;text-transform: uppercase;@include font14;font-weight: $fontW700;line-height: 1;letter-spacing: 0.7px;cursor: pointer;}
@@ -141,6 +141,29 @@
                     h4{line-height: 12px;}
                     .shareDiv{
                         a{img{margin-bottom: 10px;}line-height: 16px;}
+                        .sharePopup{top: -300px;padding: 22px;
+                           .secHeading{padding-bottom: 14px;
+                                .closePopupshare{height: 25px;width: 25px;}
+                            }
+                            h4{margin: 14px 0px;
+                                &:nth-child(3){margin-top: 22px;}
+                            }
+                            ul{
+                                li {margin-right: 16px;
+                                    a{height: 32px;width: 32px;
+                                        svg{height: 16px;width: 16px;
+                                        }
+                                    }   
+                                }
+                            }
+                            .signup{
+                                &::before{left: 38px;}
+                                form{
+                                    input[type=submit]{padding: 14px 22px;}
+                                    input[type=email]{padding-left: 50px;}
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -155,6 +178,28 @@
                     h4{line-height: 10px;}
                     .shareDiv{
                         a{img{margin-bottom: 8px;}line-height: 14px;}
+                        .sharePopup{top: -280px;padding: 20px;
+                            .secHeading{padding-bottom: 12px;
+                             }
+                             h4{margin: 12px 0px;
+                                 &:nth-child(3){margin-top: 20px;}
+                             }
+                             ul{
+                                 li {margin-right: 14px;
+                                     a{height: 30px;width: 30px;
+                                         svg{height: 14px;width: 14px;
+                                         }
+                                     }   
+                                 }
+                             }
+                             .signup{
+                                 &::before{left: 32px;}
+                                 form{
+                                     input[type=submit]{padding: 12px 20px;}
+                                     input[type=email]{padding-left: 40px;}
+                                 }
+                             }
+                         }
                     }
                 }
             }
@@ -206,6 +251,27 @@
                     h4{font-size: 12px;line-height: 24px;font-weight: 600;}
                     .shareDiv{
                         a{img{margin-bottom: 14px;}font-size: 12px;font-weight: 500;letter-spacing: 0.6px;line-height: 5.554px;}
+                    .sharePopup{top: -250px;padding: 16px;
+                        .secHeading{padding-bottom: 10px;}
+                            h4{margin: 14px 0px;
+                                &:nth-child(3){margin-top: 24px;}
+                            }
+                            ul{
+                                li {margin-right: 12px;
+                                    a{height: 30px;width: 30px;
+                                        svg{height: 14px;width: 14px;
+                                        }
+                                    }   
+                                }
+                            }
+                            .signup{
+                                &::before{left: 32px;}
+                                form{
+                                    input[type=submit]{padding: 10px 14px;font-size: 10px;}
+                                    input[type=email]{padding-left: 40px;}
+                                }
+                            }
+                        }
                     }
                 }
             }
