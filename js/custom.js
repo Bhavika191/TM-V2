@@ -219,7 +219,7 @@ $(document).ready(function () {
         if (windowTop >= topvalue) {
           manageFilterMenu(index);
           $('.filter-wrapper .active').removeClass('active');
-          $(".service-container").css("z-index", "25");
+          // $(".service-container").css("z-index", "25");
           $(this).addClass('active');
         }
       });
