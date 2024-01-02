@@ -7739,6 +7739,14 @@ body.opentwo {
   background: #000;
   cursor: pointer;
 }
+.careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label .disabled {
+  color: rgba(0, 0, 0, 0.2) !important;
+  cursor: not-allowed !important;
+}
+.careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label input[type=radio]:checked + .wpcf7-list-item-label {
+  color: #FFF;
+  background: #000;
+}
 .careerFormSec .careerSec .collaborateForm form .borderDotted {
   padding-bottom: 60px;
 }
@@ -7786,6 +7794,14 @@ body.opentwo {
   color: #FFF;
   background: #000;
   cursor: pointer;
+}
+.careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label .disabled {
+  color: rgba(0, 0, 0, 0.2) !important;
+  cursor: not-allowed !important;
+}
+.careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label input[type=radio]:checked + .wpcf7-list-item-label {
+  color: #FFF;
+  background: #000;
 }
 .careerFormSec .careerSec .collaborateForm form .portfolio-upload p {
   display: flex;
