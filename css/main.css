@@ -6500,9 +6500,6 @@ a.showLess::after {
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
     margin-top: -28%;
   }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent:last-child {
-    margin-top: -28%;
-  }
 }
 @media screen and (max-width: 1200px) {
   .meetupAdderssSec {
@@ -6534,9 +6531,6 @@ a.showLess::after {
     margin: 0px 25px 20px;
   }
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox:nth-child(even) {
-    margin-top: -24%;
-  }
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent:last-child {
     margin-top: -24%;
   }
 }
