@@ -3668,26 +3668,50 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
   margin-top: -10%;
 }
-.customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
+.customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner {
+  padding-bottom: 170px;
+  transition: 0.7s all ease-out;
+}
+.customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner h3 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 127%;
+  color: #000;
+  margin-bottom: 34px;
+}
+@media screen and (max-width: 1600px) {
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner h3 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner h3 {
+    font-size: 14px;
+  }
+}
+.customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner p {
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
-  padding-bottom: 170px;
-  transition: 0.7s all ease-out;
   color: #6A6A6A;
 }
 @media screen and (max-width: 1600px) {
-  .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner p {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner p {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 720px) {
-  .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner p {
     font-size: 16px;
   }
 }
@@ -3698,6 +3722,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   border-radius: 50%;
   width: 85px;
   height: 85px;
+}
+.customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData .customerImgdiv img {
+  border-radius: 50%;
 }
 .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData h3 {
   font-size: 20px;
@@ -3737,7 +3764,12 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     font-size: 12px;
   }
 }
-.customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover p {
+.customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData ul {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover .descInner {
   transform: translateY(-20px);
   transition: 0.7s all ease-out;
 }
@@ -3792,9 +3824,14 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
     margin-top: -14%;
   }
-  .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
-    line-height: 30px;
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner {
     padding-bottom: 140px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner h3 {
+    margin-bottom: 26px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner p {
+    line-height: 30px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData .customerImgdiv {
     width: 75px;
@@ -3803,7 +3840,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData h3 {
     margin: 12px 0px 10px;
   }
-  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover p {
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover .descInner {
     transform: translateY(-15px);
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover .customerData {
@@ -3840,14 +3877,17 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
     margin-top: -22%;
   }
-  .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner {
     padding-bottom: 120px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner h3 {
+    margin-bottom: 26px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData .customerImgdiv {
     width: 65px;
     height: 65px;
   }
-  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover p {
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover .descInner {
     transform: translateY(-12px);
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover .customerData {
@@ -3887,8 +3927,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
     margin-top: -15%;
   }
-  .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner {
     padding-bottom: 100px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner h3 {
+    margin-bottom: 22px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData .customerImgdiv {
     width: 60px;
@@ -3939,14 +3982,17 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
     margin-top: unset;
   }
-  .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner {
     padding-bottom: 60px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner h3 {
+    margin-bottom: 20px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData .customerImgdiv {
     width: 50px;
     height: 50px;
   }
-  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover p {
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover .descInner {
     transform: none;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes:hover .customerData {
@@ -3984,8 +4030,14 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes {
     margin: 0px 10px 0px;
   }
-  .customerhpsection .customerWrapper .customerBoxes .innerBoxes p {
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner {
     padding-bottom: 40px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner p {
     font-size: 14px;
     line-height: 24px;
     color: #000;
@@ -11474,6 +11526,7 @@ body.opentwo {
   margin: 150px 0px 300px;
   padding: 30px 0px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #f1f1f1;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
@@ -11501,8 +11554,10 @@ body.opentwo {
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv {
   display: flex;
+  position: relative;
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv a {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11530,6 +11585,219 @@ body.opentwo {
     font-size: 12px;
   }
 }
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup {
+  display: none;
+  position: absolute;
+  top: -350px;
+  right: 0;
+  border-radius: 12px;
+  background: #FFF;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  width: max-content;
+  transition: 0.7s all ease-in-out;
+  padding: 24px;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup.sharePopupnew {
+  display: block;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .secHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #EAEAEA;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .secHeading h3 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  line-height: normal;
+  color: #000;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1600px) {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .secHeading h3 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .secHeading h3 {
+    font-size: 12px;
+  }
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .secHeading .closePopupshare {
+  transition: 0.7s all ease-in-out;
+  height: 30px;
+  width: 30px;
+  background: #e6e6e6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .secHeading .closePopupshare img {
+  margin-bottom: 0px;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup h4 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.7px;
+  margin: 16px 0px;
+  text-transform: unset;
+  color: #6A6A6A;
+}
+@media screen and (max-width: 1600px) {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup h4 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup h4 {
+    font-size: 12px;
+  }
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup h4:nth-child(3) {
+  margin-top: 24px;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul {
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li {
+  margin-right: 18px;
+  list-style: none !important;
+  margin-bottom: 0px !important;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li:last-child {
+  margin-right: 0px;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li a {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.7s all ease-out;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li a svg {
+  height: 18px;
+  width: 18px;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li a svg path {
+  fill: #fff;
+  transition: 0.7s all ease-out;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li a svg.youtube .blackCol {
+  fill: #000;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li a:hover {
+  transition: 0.7s all ease-out;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li a:hover svg path {
+  fill: #000;
+  transition: 0.7s all ease-out;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li a:hover svg.youtube .blackCol {
+  fill: #fff;
+  transition: 0.7s all ease-out;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup {
+  border-radius: 6px;
+  border: 1px solid #000;
+  background: #FFF;
+  padding: 3px 3px 3px 0px;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  background: #F1F1F1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 42px;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form {
+  display: flex;
+  justify-content: space-between;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=submit] {
+  background-color: #000;
+  color: #fff;
+  padding: 14px 24px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.7px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1600px) {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=submit] {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=submit] {
+    font-size: 12px;
+  }
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=email] {
+  width: 100%;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  background: url("../images/share-copy-linkicon.svg") no-repeat left;
+  background-position: 12px;
+  padding-left: 54px;
+}
+@media screen and (max-width: 1600px) {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=email] {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=email] {
+    font-size: 12px;
+  }
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=email]::-webkit-input-placeholder {
+  color: #6a6a6a;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  font-weight: 500;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=email]::-moz-placeholder {
+  color: #6a6a6a;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  font-weight: 500;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=email]:-ms-input-placeholder {
+  color: #6a6a6a;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  font-weight: 500;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=email]:-moz-placeholder {
+  color: #6a6a6a;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  font-weight: 500;
+}
 @media all and (max-width: 1600px) {
   .blogdetails-contentSec .blogdetails-contentContainer h2, .blogdetails-contentSec .blogdetails-contentContainer h3, .blogdetails-contentSec .blogdetails-contentContainer h4, .blogdetails-contentSec .blogdetails-contentContainer h5 {
     margin-bottom: 25px;
@@ -11556,6 +11824,43 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv a img {
     margin-bottom: 10px;
   }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup {
+    top: -300px;
+    padding: 22px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .secHeading {
+    padding-bottom: 14px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .secHeading .closePopupshare {
+    height: 25px;
+    width: 25px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup h4 {
+    margin: 14px 0px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup h4:nth-child(3) {
+    margin-top: 22px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li {
+    margin-right: 16px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li a {
+    height: 32px;
+    width: 32px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li a svg {
+    height: 16px;
+    width: 16px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup::before {
+    left: 38px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=submit] {
+    padding: 14px 22px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=email] {
+    padding-left: 50px;
+  }
 }
 @media all and (max-width: 1400px) {
   .blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
@@ -11579,6 +11884,39 @@ body.opentwo {
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv a img {
     margin-bottom: 8px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup {
+    top: -280px;
+    padding: 20px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .secHeading {
+    padding-bottom: 12px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup h4 {
+    margin: 12px 0px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup h4:nth-child(3) {
+    margin-top: 20px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li {
+    margin-right: 14px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li a {
+    height: 30px;
+    width: 30px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li a svg {
+    height: 14px;
+    width: 14px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup::before {
+    left: 32px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=submit] {
+    padding: 12px 20px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=email] {
+    padding-left: 40px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -11659,6 +11997,40 @@ body.opentwo {
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv a img {
     margin-bottom: 14px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup {
+    top: -250px;
+    padding: 16px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .secHeading {
+    padding-bottom: 10px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup h4 {
+    margin: 14px 0px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup h4:nth-child(3) {
+    margin-top: 24px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li {
+    margin-right: 12px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li a {
+    height: 30px;
+    width: 30px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup ul li a svg {
+    height: 14px;
+    width: 14px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup::before {
+    left: 32px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=submit] {
+    padding: 10px 14px;
+    font-size: 10px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=email] {
+    padding-left: 40px;
   }
 }
 
@@ -14158,493 +14530,5 @@ body.opentwo {
     font-size: 10px;
     margin-top: 14px;
     padding: 0px 8px;
-  }
-}
-
-.ratingAmazonsec {
-  margin-bottom: 400px;
-}
-.ratingAmazonsec .ratingWrapper {
-  padding-left: 210px;
-  padding-right: 210px;
-}
-@media screen and (max-width: 1600px) {
-  .ratingAmazonsec .ratingWrapper {
-    padding-left: 180px;
-    padding-right: 180px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .ratingAmazonsec .ratingWrapper {
-    padding-left: 150px;
-    padding-right: 150px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .ratingAmazonsec .ratingWrapper {
-    padding-left: 120px;
-    padding-right: 120px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .ratingAmazonsec .ratingWrapper {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .ratingAmazonsec .ratingWrapper {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-.ratingAmazonsec .ratingWrapper .secHeading {
-  width: 41%;
-}
-.ratingAmazonsec .ratingWrapper .secHeading h2 {
-  font-size: 64px;
-  font-weight: 500;
-  line-height: 74px;
-  letter-spacing: -1.5px;
-}
-@media screen and (max-width: 1600px) {
-  .ratingAmazonsec .ratingWrapper .secHeading h2 {
-    font-size: 50px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .ratingAmazonsec .ratingWrapper .secHeading h2 {
-    font-size: 42px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .ratingAmazonsec .ratingWrapper .secHeading h2 {
-    font-size: 32px;
-  }
-}
-.ratingAmazonsec .ratingWrapper .secHeading p {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 34px;
-  margin-top: 34px;
-  color: #6A6A6A;
-}
-@media screen and (max-width: 1600px) {
-  .ratingAmazonsec .ratingWrapper .secHeading p {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .ratingAmazonsec .ratingWrapper .secHeading p {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .ratingAmazonsec .ratingWrapper .secHeading p {
-    font-size: 16px;
-  }
-}
-.ratingAmazonsec .ratingWrapper .ratingBoxes {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-.ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner {
-  width: 40%;
-  margin-top: 150px;
-  padding: 190px 70px;
-  background-color: #fff;
-  position: relative;
-  overflow: hidden;
-  transition: 0.7s all ease-out;
-  height: auto;
-}
-.ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner::before {
-  content: "";
-  position: absolute;
-  background: url(../images/top-quote-img.svg) no-repeat;
-  background-size: contain;
-  top: 0;
-  left: 20px;
-  height: 110px;
-  width: 156px;
-  transition: 0.7s all ease-out;
-}
-.ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner::after {
-  content: "";
-  position: absolute;
-  background: url(../images/btm-quote-img.svg) no-repeat;
-  background-size: contain;
-  bottom: 0;
-  right: 20px;
-  height: 110px;
-  width: 156px;
-  transition: 0.7s all ease-out;
-}
-.ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:nth-child(even) {
-  margin-top: -10%;
-}
-.ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .ratingQuote {
-  padding-bottom: 170px;
-  transition: 0.7s all ease-out;
-}
-.ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .ratingQuote h3 {
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 127%;
-  color: #000;
-  margin-bottom: 34px;
-}
-@media screen and (max-width: 1600px) {
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .ratingQuote h3 {
-    font-size: 28px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .ratingQuote h3 {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .ratingQuote h3 {
-    font-size: 14px;
-  }
-}
-.ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .ratingQuote p {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 150%;
-  color: #6A6A6A;
-}
-@media screen and (max-width: 1600px) {
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .ratingQuote p {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .ratingQuote p {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .ratingQuote p {
-    font-size: 14px;
-  }
-}
-.ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .customerData {
-  transition: 0.7s all ease-out;
-}
-.ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .customerData .customerImgdiv {
-  border-radius: 50%;
-  width: 85px;
-  height: 85px;
-}
-.ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .customerData h3 {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.6px;
-  margin: 15px 0px 10px;
-}
-@media screen and (max-width: 1600px) {
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .customerData h3 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .customerData h3 {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .customerData h3 {
-    font-size: 14px;
-  }
-}
-.ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .customerData h4 {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1;
-  color: #6A6A6A;
-}
-@media screen and (max-width: 1600px) {
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .customerData h4 {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .customerData h4 {
-    font-size: 12px;
-  }
-}
-.ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:hover .ratingQuote {
-  transform: translateY(-20px);
-  transition: 0.7s all ease-out;
-}
-.ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:hover .customerData {
-  transform: translateY(20px);
-  transition: 0.7s all ease-out;
-}
-.ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:hover::before {
-  transform: translateY(-15px);
-  transition: 0.7s all ease-out;
-}
-.ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:hover::after {
-  transform: translateY(15px);
-  transition: 0.7s all ease-out;
-}
-@media screen and (max-width: 1920px) {
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:nth-child(even) {
-    margin-top: -20%;
-  }
-}
-@media screen and (max-width: 1800px) {
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:nth-child(even) {
-    margin-top: -22%;
-  }
-}
-@media screen and (max-width: 1600px) {
-  .ratingAmazonsec {
-    margin-bottom: 250px;
-  }
-  .ratingAmazonsec .ratingWrapper .secHeading {
-    width: 43%;
-  }
-  .ratingAmazonsec .ratingWrapper .secHeading h2 {
-    line-height: 64px;
-  }
-  .ratingAmazonsec .ratingWrapper .secHeading p {
-    line-height: 28px;
-    margin-top: 25px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner {
-    margin-top: 120px;
-    padding: 140px 50px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner::before {
-    height: 90px;
-    width: 136px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner::after {
-    height: 90px;
-    width: 136px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:nth-child(even) {
-    margin-top: -14%;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .ratingQuote {
-    padding-bottom: 140px;
-    transition: 0.7s all ease-out;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .ratingQuote h3 {
-    margin-bottom: 26px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .customerData .customerImgdiv {
-    width: 75px;
-    height: 75px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .customerData h3 {
-    margin: 12px 0px 10px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:hover .ratingQuote {
-    transform: translateY(-15px);
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:hover .customerData {
-    transform: translateY(15px);
-  }
-}
-@media screen and (max-width: 1400px) {
-  .ratingAmazonsec {
-    margin-bottom: 200px;
-  }
-  .ratingAmazonsec .ratingWrapper .secHeading {
-    width: 45%;
-  }
-  .ratingAmazonsec .ratingWrapper .secHeading h2 {
-    line-height: 60px;
-  }
-  .ratingAmazonsec .ratingWrapper .secHeading p {
-    line-height: 26px;
-    margin-top: 20px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner {
-    margin-top: 100px;
-    padding: 120px 40px;
-    width: 43%;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner::before {
-    height: 70px;
-    width: 110px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner::after {
-    height: 70px;
-    width: 110px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:nth-child(even) {
-    margin-top: -22%;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner p {
-    padding-bottom: 120px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .customerData .customerImgdiv {
-    width: 65px;
-    height: 65px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:hover p {
-    transform: translateY(-12px);
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:hover .customerData {
-    transform: translateY(12px);
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:hover::before {
-    transform: rotate(5deg) translateY(-10px);
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:hover::after {
-    transform: rotate(-5deg) translateY(10px);
-  }
-}
-@media screen and (max-width: 1280px) {
-  .ratingAmazonsec {
-    margin-bottom: 150px;
-  }
-  .ratingAmazonsec .ratingWrapper .secHeading h2 {
-    line-height: 54px;
-  }
-  .ratingAmazonsec .ratingWrapper .secHeading p {
-    line-height: 24px;
-    margin-top: 16px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner {
-    margin-top: 80px;
-    padding: 100px 30px;
-    width: 45%;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner::before {
-    height: 50px;
-    width: 90px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner::after {
-    height: 50px;
-    width: 90px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:nth-child(even) {
-    margin-top: -15%;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner p {
-    padding-bottom: 100px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .customerData .customerImgdiv {
-    width: 60px;
-    height: 60px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:hover::before {
-    transform: rotate(5deg) translateY(-8px);
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:hover::after {
-    transform: rotate(-5deg) translateY(8px);
-  }
-}
-@media screen and (max-width: 1024px) {
-  .ratingAmazonsec {
-    margin-bottom: 100px;
-  }
-  .ratingAmazonsec .ratingWrapper {
-    padding: 0px;
-  }
-  .ratingAmazonsec .ratingWrapper .secHeading {
-    width: 100%;
-    padding: 0px 50px;
-  }
-  .ratingAmazonsec .ratingWrapper .secHeading h2 {
-    line-height: 48px;
-  }
-  .ratingAmazonsec .ratingWrapper .secHeading p {
-    line-height: 20px;
-    margin-top: 20px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes {
-    display: block;
-    margin: 32px 0px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner {
-    padding: 100px 24px;
-    width: unset;
-    margin: 0px 0px 0px 55px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner::before {
-    height: 58px;
-    width: 90px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner::after {
-    height: 58px;
-    width: 80px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:nth-child(even) {
-    margin-top: unset;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner p {
-    padding-bottom: 60px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .customerData .customerImgdiv {
-    width: 50px;
-    height: 50px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:hover p {
-    transform: none;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:hover .customerData {
-    transform: none;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:hover::before {
-    transform: none;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner:hover::after {
-    transform: none;
-  }
-}
-@media screen and (max-width: 820px) {
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner {
-    margin: 0px 0px 0px 40px;
-  }
-}
-@media screen and (max-width: 680px) {
-  .ratingAmazonsec {
-    margin-bottom: 150px;
-  }
-  .ratingAmazonsec .ratingWrapper {
-    padding: 0px;
-  }
-  .ratingAmazonsec .ratingWrapper .secHeading {
-    padding: 0px 20px;
-  }
-  .ratingAmazonsec .ratingWrapper .secHeading h2 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .ratingAmazonsec .ratingWrapper .secHeading p {
-    font-size: 14px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner {
-    margin: 0px 10px 0px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner p {
-    padding-bottom: 40px;
-    font-size: 14px;
-    line-height: 24px;
-    color: #000;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner::before {
-    left: 30px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner::after {
-    right: 30px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .customerData h3 {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  .ratingAmazonsec .ratingWrapper .ratingBoxes .ratingboxesinner .customerData h4 {
-    color: #000;
   }
 }

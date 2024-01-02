@@ -69,41 +69,20 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  updateLastBoxClass(); // Initial update
 
-  // Assuming you are adding or removing boxes dynamically
-  // You may want to call updateLastBoxClass() whenever the number of boxes changes.
 
-  function updateLastBoxClass() {
-    var boxesnew = document.querySelectorAll(".ratingboxes");
 
-    // Remove classes from all boxes
-    boxesnew.forEach(function (box) {
-      box.classList.remove("even", "odd");
-    });
-
-    if (boxesnew.length > 0) {
-      // Add appropriate class to the last box
-      var lastBox = boxesnew[boxesnew.length - 1];
-      if (boxesnew.length % 2 === 0) {
-        // Even number of boxes
-        lastBox.classList.add("even");
-      } else {
-        // Odd number of boxes
-        lastBox.classList.add("odd");
-      }
-    }
-  }
+$(document).ready(function () {
+  $('.shareBlogs').on('click', function () {
+    $('.sharePopup').toggleClass('sharePopupnew');
+  });
+  $('.closePopupshare').on('click', function () {
+    $('.sharePopup').removeClass('sharePopupnew');
+  });
 });
 
+
 //---------------------------------------------------------Shamal's Js Code Starts ---------------------------------------------------------------//
-// const el = document.querySelector(".service-container")
-// const observer = new IntersectionObserver(
-//   ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
-//   { threshold: [1] }
-// );
-// observer.observe(el);
 //Service page sticky property starts
 jQuery(document).ready(function () {
   for (let i = 1; i <= 9; i++) {
@@ -408,6 +387,7 @@ if ($(window).width() < 1025) {
       arrows: false,
       slidesToShow: 2.1,
       infinite: true,
+      adaptiveHeight: true,
       responsive: [
         {
           breakpoint: 680,
@@ -423,28 +403,6 @@ if ($(window).width() < 1025) {
   }
 }
 
-// google review slider
-if ($(window).width() < 1025) {
-  if ($(".ratingBoxes").length) {
-    $(".ratingBoxes").slick({
-      dots: false,
-      arrows: false,
-      slidesToShow: 2.1,
-      infinite: true,
-      responsive: [
-        {
-          breakpoint: 680,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: "40px",
-            slidesToShow: 1,
-          },
-        },
-      ],
-    });
-  }
-}
 
 // Blogs slider
 if ($(window).width() < 1025) {
@@ -497,6 +455,8 @@ if ($(window).width() < 1025) {
 document.addEventListener('DOMContentLoaded', () => {
   const smoothScroll = new SmoothScroll(0.02);
 });
+
+
 
 
 
@@ -673,7 +633,12 @@ function resizeCanvas() {
 
 
 
-
+const el = document.querySelector(".service-container")
+const observer = new IntersectionObserver(
+  ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
+  { threshold: [1] }
+);
+observer.observe(el);
 
 
 
