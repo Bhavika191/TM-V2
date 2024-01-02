@@ -246,35 +246,34 @@
             }
         }
     }
-    @media all and (max-width:680px){margin-bottom:100px;
-        .heading-content{margin-bottom: 80px;
+    @media all and (max-width:680px){margin-bottom:100px;padding:0px;
+        .heading-content{margin-bottom: 80px;padding:0px 20px;
             .main-heading{margin-bottom: 10px;width: 100%;font-size: 30px;font-weight: 500;line-height: 30px;letter-spacing: -0.9px;}
             .subheading{width: 100%;font-size: 14px;font-weight: 400;line-height: 24px;text-transform: capitalize;}
         }
-        .animation-Div{padding-top:35px;
+        .animation-Div{padding:35px 0px 0px 0px;
             .first-fold{margin-bottom:30px;
-                .firstfoldanimation{}
-                .firstfold-content{margin-bottom:50px;
+                .firstfold-content{margin-bottom:50px;padding:0px 20px;
                     h2{font-size: 30px;font-weight: 500;line-height: 40px;letter-spacing: -0.9px;margin-bottom: 10px;}
                     p{font-size: 14px;font-weight: 400;line-height: 24px;}
                 }
             }
             .second-fold{margin-bottom: 50px;}
             .third-fold{margin-bottom: 20px;
-                .third-fold-content{margin-bottom:20px;
+                .third-fold-content{margin-bottom:20px;padding:0px 20px;
                     h2{font-size: 30px;font-weight: 500;line-height: 40px;letter-spacing: -0.9px;margin-bottom: 10px;}
                     p{font-size: 14px;font-weight: 400;line-height: 24px;}
                 }
                 .third-fold-anime{width: 100%;}
             }
             .fourth-fold{margin-bottom: 10px;
-                .fourth-fold-content{margin-bottom:86px;
+                .fourth-fold-content{margin-bottom:86px;padding:0px 20px;
                     h2{font-size: 30px;font-weight: 500;line-height: 40px;letter-spacing: -0.9px;margin-bottom: 10px;}
                     p{font-size: 14px;font-weight: 400;line-height: 24px;}
                 }
             }
             .fifth-fold{
-                .fifth-fold-content{margin-bottom: 0px;
+                .fifth-fold-content{margin-bottom: 0px;padding:0px 20px;
                     h2{font-size: 30px;margin-bottom: 22px;font-weight: 500;line-height: 40px;letter-spacing: -0.9px;}
                     p{font-size: 14px;font-weight: 400;line-height: 24px;width: 80%;}
                 }
@@ -319,6 +318,20 @@
             .subheading{line-height: 34px;}
         }
         .researchsec-wrapper{margin-bottom:220px;
+            .img-div{
+                .slick-dots{width: 18px;
+                    li{width: 10px;height: 10px;
+                        button{
+                            &::before{width: 10px;height: 10px;}
+                        }
+                    }
+                    li.slick-active{
+                        button{
+                            &::before{height: 60px;}
+                        }
+                    }
+                }
+            }
             .research-card-type{padding: 75px;
                 .research-card-subheading{margin-bottom: 30px;line-height: 30px;}
                 .research-card-mainheading{margin-bottom: 48px;line-height: 40px;}
@@ -332,6 +345,20 @@
             .subheading{line-height: 32px;}
         }
         .researchsec-wrapper{margin-bottom:200px;
+            .img-div{
+                .slick-dots{width: 16px;
+                    li{width: 8px;height: 8px;margin-bottom:16px;
+                        button{
+                            &::before{width: 8px;height: 8px;}
+                        }
+                    }
+                    li.slick-active{margin-bottom: 65px;
+                        button{
+                            &::before{height: 50px;}
+                        }
+                    }
+                }
+            }
             &:nth-child(odd){.research-card-type{left:160px;}}
             .research-card-type{padding: 65px;width:550px;min-height:700px;right:160px;
                 .research-card-subheading{margin-bottom: 28px;line-height: 28px;}
@@ -348,6 +375,20 @@
             .subheading{line-height: 30px;}
         }
         .researchsec-wrapper{margin-bottom:180px;
+            .img-div{
+                .slick-dots{width: 14px;
+                    li{width: 7px;height: 7px;margin-bottom:14px;
+                        button{
+                            &::before{width: 7px;height: 7px;}
+                        }
+                    }
+                    li.slick-active{margin-bottom: 50px;
+                        button{
+                            &::before{height: 40px;}
+                        }
+                    }
+                }
+            }
             &:nth-child(odd){.research-card-type{left:150px;}}
             .research-card-type{padding: 55px;min-height:600px;right:150px;
                 .research-card-subheading{margin-bottom: 24px;line-height: 24px;}

@@ -13122,9 +13122,11 @@ body.opentwo {
 @media all and (max-width: 680px) {
   .animation-sec {
     margin-bottom: 100px;
+    padding: 0px;
   }
   .animation-sec .heading-content {
     margin-bottom: 80px;
+    padding: 0px 20px;
   }
   .animation-sec .heading-content .main-heading {
     margin-bottom: 10px;
@@ -13142,13 +13144,14 @@ body.opentwo {
     text-transform: capitalize;
   }
   .animation-sec .animation-Div {
-    padding-top: 35px;
+    padding: 35px 0px 0px 0px;
   }
   .animation-sec .animation-Div .first-fold {
     margin-bottom: 30px;
   }
   .animation-sec .animation-Div .first-fold .firstfold-content {
     margin-bottom: 50px;
+    padding: 0px 20px;
   }
   .animation-sec .animation-Div .first-fold .firstfold-content h2 {
     font-size: 30px;
@@ -13170,6 +13173,7 @@ body.opentwo {
   }
   .animation-sec .animation-Div .third-fold .third-fold-content {
     margin-bottom: 20px;
+    padding: 0px 20px;
   }
   .animation-sec .animation-Div .third-fold .third-fold-content h2 {
     font-size: 30px;
@@ -13191,6 +13195,7 @@ body.opentwo {
   }
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content {
     margin-bottom: 86px;
+    padding: 0px 20px;
   }
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content h2 {
     font-size: 30px;
@@ -13206,6 +13211,7 @@ body.opentwo {
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content {
     margin-bottom: 0px;
+    padding: 0px 20px;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content h2 {
     font-size: 30px;
@@ -13452,6 +13458,20 @@ body.opentwo {
   .aboutus-researchSec .researchsec-wrapper {
     margin-bottom: 220px;
   }
+  .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots {
+    width: 18px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li {
+    width: 10px;
+    height: 10px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li button::before {
+    width: 10px;
+    height: 10px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li.slick-active button::before {
+    height: 60px;
+  }
   .aboutus-researchSec .researchsec-wrapper .research-card-type {
     padding: 75px;
   }
@@ -13484,6 +13504,24 @@ body.opentwo {
   }
   .aboutus-researchSec .researchsec-wrapper {
     margin-bottom: 200px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots {
+    width: 16px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li {
+    width: 8px;
+    height: 8px;
+    margin-bottom: 16px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li button::before {
+    width: 8px;
+    height: 8px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li.slick-active {
+    margin-bottom: 65px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li.slick-active button::before {
+    height: 50px;
   }
   .aboutus-researchSec .researchsec-wrapper:nth-child(odd) .research-card-type {
     left: 160px;
@@ -13529,6 +13567,24 @@ body.opentwo {
   }
   .aboutus-researchSec .researchsec-wrapper {
     margin-bottom: 180px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots {
+    width: 14px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li {
+    width: 7px;
+    height: 7px;
+    margin-bottom: 14px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li button::before {
+    width: 7px;
+    height: 7px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li.slick-active {
+    margin-bottom: 50px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li.slick-active button::before {
+    height: 40px;
   }
   .aboutus-researchSec .researchsec-wrapper:nth-child(odd) .research-card-type {
     left: 150px;
