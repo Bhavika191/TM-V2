@@ -203,23 +203,22 @@ jQuery(function ($) {
 
 //Casestudy Details page active code navbar
 $(document).ready(function () {
-  let menuScrollTimer = null;
+  let caseStudyMenuScrollTimer = null;
+  let filterMenuScrollTimer = null;
   $(".casestudyfilter-wrapper a").click(function (e) {
     e.preventDefault();
-    if (menuScrollTimer === null) {
-      // Highlight the clicked item
+    if (caseStudyMenuScrollTimer === null) {
       $('.casestudyfilter-wrapper a.current').removeClass('current');
       $(this).addClass('current');
-      // Smooth scroll to the target section
       let target = $(this).attr('href');
       $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
-      menuScrollTimer = setTimeout(function () {
-        clearTimeout(menuScrollTimer);
-        menuScrollTimer = null;
+      caseStudyMenuScrollTimer = setTimeout(function () {
+        clearTimeout(caseStudyMenuScrollTimer);
+        caseStudyMenuScrollTimer = null;
       }, 1050);
     }
   });
-  function managcasemenu(indexcasenumber) {
+  function manageCaseStudyMenu(indexcasenumber) {
     $('.casestudyfilter-wrapper a').each(function (index, event) {
       if (index < indexcasenumber)
         $(this).hide();
@@ -227,21 +226,59 @@ $(document).ready(function () {
         $(this).show();
     });
   }
+  $(".filter-wrapper a").click(function (e) {
+    e.preventDefault();
+    if (filterMenuScrollTimer === null) {
+      $('.filter-wrapper a.active').removeClass('active');
+      $(this).addClass('active');
+      let target = $(this).attr('href');
+      $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
+      filterMenuScrollTimer = setTimeout(function () {
+        clearTimeout(filterMenuScrollTimer);
+        filterMenuScrollTimer = null;
+      }, 1050);
+    }
+  });
+  function manageFilterMenu(indexnumber) {
+    $('.filter-wrapper a').each(function (index, event) {
+      if (index < indexnumber)
+        $(this).hide();
+      else
+        $(this).show();
+    });
+  }
   $(window).scroll(function (e) {
-    // Avoid triggering the logic if the scroll event is triggered from clicking one of the items
-    if (menuScrollTimer === null) {
+    if (caseStudyMenuScrollTimer === null && filterMenuScrollTimer === null) {
       let windowTop = $(this).scrollTop();
+      // Case Study Section
       $('.casestudyfilter-wrapper a').each(function (index) {
-        var topcasevalue = $($(this).attr('href')).offset().top - 140;
+        var topcasevalue = $($(this).attr('href')).offset().top - 250;
         if (windowTop >= topcasevalue) {
-          managcasemenu(index);
+          manageCaseStudyMenu(index);
           $('.casestudyfilter-wrapper .current').removeClass('current');
           $(this).addClass('current');
         }
       });
+      // Filter Section
+      $('.filter-wrapper a').each(function (index) {
+        var topvalue = $($(this).attr('href')).offset().top - 250;
+        if (windowTop >= topvalue) {
+          manageFilterMenu(index);
+          $('.filter-wrapper .active').removeClass('active');
+          $(".service-container").css("z-index", "25");
+          $(this).addClass('active');
+        }
+      });
+      // Collaborate Section
+      var collaborateSectionTop = $('.collaborate-section').offset().top - 250;
+      if (windowTop >= collaborateSectionTop) {
+        $('.filterSec').hide();
+      } else {
+        $('.filterSec').show();
+      }
     }
   });
-}); 
+});
 // Casestudy Details page active navbar code ends
 
 //Casestudy page casestudies footer animation code starts
