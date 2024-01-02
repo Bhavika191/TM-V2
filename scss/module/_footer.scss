@@ -72,6 +72,12 @@ footer{@include wrapper;margin-bottom: 70px;position: relative;z-index: 3;
                             &:-ms-input-placeholder { color: #000;}
                             &:-moz-placeholder {color: #000;}
                         }
+                        .es-form-field-container{justify-content: space-between;
+                            .gjs-row{
+                                &:nth-child(2){width: 90%;padding-right: 25px;}
+                            }
+                        }
+                        .es_spinner_image{display: none !important;}
                     }
                 }
             }
@@ -139,6 +145,11 @@ footer{@include wrapper;margin-bottom: 70px;position: relative;z-index: 3;
                         form{
                             input[type=submit]{padding: 12px 20px;font-size: 12px;}
                             input[type=email]{width: 52%;}
+                            .es-form-field-container{
+                                .gjs-row{
+                                    &:nth-child(2){padding-right: 20px;}
+                                }
+                            }
                         }
                     }
                 }
@@ -185,6 +196,11 @@ footer{@include wrapper;margin-bottom: 70px;position: relative;z-index: 3;
                         form{
                             input[type=submit]{padding: 10px 16px;}
                             input[type=email]{width: 56%;}
+                            .es-form-field-container{
+                                .gjs-row{
+                                    &:nth-child(2){padding-right: 18px;}
+                                }
+                            }
                         }
                     }
                 }
@@ -270,10 +286,15 @@ footer{@include wrapper;margin-bottom: 70px;position: relative;z-index: 3;
                 .footerSubscribe{width: 100%;margin-top: 20px;
                     h2{text-align: center}
                     p{text-align: center;}
-                    .signup{display: block;border: none;padding: 0;
+                    .signup{display: block;border: none;padding: 0;text-align: center   ;
                         form{display: block;
                             input[type=submit]{display: block;text-align: center;margin: 10px auto 0px;padding: 12px;}
                             input[type=email]{border-radius: 6px;border: 1px solid  #000;background:  #FFF;padding: 16px;width: 70%;display: block;margin: 0 auto;}
+                            .es-form-field-container{display: block;
+                                .gjs-row{
+                                    &:nth-child(2){padding-right: 0px;width: 70%;margin: 0 auto !important;}
+                                }
+                            }
                         }
                     }
                 }
@@ -311,6 +332,11 @@ footer{@include wrapper;margin-bottom: 70px;position: relative;z-index: 3;
                          form{
                              input[type=submit]{width: 100%;line-height: 18px;}
                              input[type=email]{width: 100%;font-size: 14px;}
+                             .es-form-field-container{
+                                .gjs-row{
+                                    &:nth-child(2){width: 100%;}
+                                }
+                            }
                          }
                      }
                  }
