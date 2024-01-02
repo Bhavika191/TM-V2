@@ -229,10 +229,6 @@ body {
   position: relative;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 body.opentwo {
   overflow: hidden;
 }
