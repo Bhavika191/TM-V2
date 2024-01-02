@@ -69,20 +69,41 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  updateLastBoxClass(); // Initial update
 
+  // Assuming you are adding or removing boxes dynamically
+  // You may want to call updateLastBoxClass() whenever the number of boxes changes.
 
+  function updateLastBoxClass() {
+    var boxesnew = document.querySelectorAll(".ratingboxes");
 
-$(document).ready(function () {
-  $('.shareBlogs').on('click', function () {
-    $('.sharePopup').toggleClass('sharePopupnew');
-  });
-  $('.closePopupshare').on('click', function () {
-    $('.sharePopup').removeClass('sharePopupnew');
-  });
+    // Remove classes from all boxes
+    boxesnew.forEach(function (box) {
+      box.classList.remove("even", "odd");
+    });
+
+    if (boxesnew.length > 0) {
+      // Add appropriate class to the last box
+      var lastBox = boxesnew[boxesnew.length - 1];
+      if (boxesnew.length % 2 === 0) {
+        // Even number of boxes
+        lastBox.classList.add("even");
+      } else {
+        // Odd number of boxes
+        lastBox.classList.add("odd");
+      }
+    }
+  }
 });
 
-
 //---------------------------------------------------------Shamal's Js Code Starts ---------------------------------------------------------------//
+// const el = document.querySelector(".service-container")
+// const observer = new IntersectionObserver(
+//   ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
+//   { threshold: [1] }
+// );
+// observer.observe(el);
 //Service page sticky property starts
 jQuery(document).ready(function () {
   for (let i = 1; i <= 9; i++) {
@@ -203,22 +224,23 @@ jQuery(function ($) {
 
 //Casestudy Details page active code navbar
 $(document).ready(function () {
-  let caseStudyMenuScrollTimer = null;
-  let filterMenuScrollTimer = null;
+  let menuScrollTimer = null;
   $(".casestudyfilter-wrapper a").click(function (e) {
     e.preventDefault();
-    if (caseStudyMenuScrollTimer === null) {
+    if (menuScrollTimer === null) {
+      // Highlight the clicked item
       $('.casestudyfilter-wrapper a.current').removeClass('current');
       $(this).addClass('current');
+      // Smooth scroll to the target section
       let target = $(this).attr('href');
       $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
-      caseStudyMenuScrollTimer = setTimeout(function () {
-        clearTimeout(caseStudyMenuScrollTimer);
-        caseStudyMenuScrollTimer = null;
+      menuScrollTimer = setTimeout(function () {
+        clearTimeout(menuScrollTimer);
+        menuScrollTimer = null;
       }, 1050);
     }
   });
-  function manageCaseStudyMenu(indexcasenumber) {
+  function managcasemenu(indexcasenumber) {
     $('.casestudyfilter-wrapper a').each(function (index, event) {
       if (index < indexcasenumber)
         $(this).hide();
@@ -226,59 +248,21 @@ $(document).ready(function () {
         $(this).show();
     });
   }
-  $(".filter-wrapper a").click(function (e) {
-    e.preventDefault();
-    if (filterMenuScrollTimer === null) {
-      $('.filter-wrapper a.active').removeClass('active');
-      $(this).addClass('active');
-      let target = $(this).attr('href');
-      $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
-      filterMenuScrollTimer = setTimeout(function () {
-        clearTimeout(filterMenuScrollTimer);
-        filterMenuScrollTimer = null;
-      }, 1050);
-    }
-  });
-  function manageFilterMenu(indexnumber) {
-    $('.filter-wrapper a').each(function (index, event) {
-      if (index < indexnumber)
-        $(this).hide();
-      else
-        $(this).show();
-    });
-  }
   $(window).scroll(function (e) {
-    if (caseStudyMenuScrollTimer === null && filterMenuScrollTimer === null) {
+    // Avoid triggering the logic if the scroll event is triggered from clicking one of the items
+    if (menuScrollTimer === null) {
       let windowTop = $(this).scrollTop();
-      // Case Study Section
       $('.casestudyfilter-wrapper a').each(function (index) {
-        var topcasevalue = $($(this).attr('href')).offset().top - 250;
+        var topcasevalue = $($(this).attr('href')).offset().top - 140;
         if (windowTop >= topcasevalue) {
-          manageCaseStudyMenu(index);
+          managcasemenu(index);
           $('.casestudyfilter-wrapper .current').removeClass('current');
           $(this).addClass('current');
         }
       });
-      // Filter Section
-      $('.filter-wrapper a').each(function (index) {
-        var topvalue = $($(this).attr('href')).offset().top - 250;
-        if (windowTop >= topvalue) {
-          manageFilterMenu(index);
-          $('.filter-wrapper .active').removeClass('active');
-          $(".service-container").css("z-index", "25");
-          $(this).addClass('active');
-        }
-      });
-      // Collaborate Section
-      var collaborateSectionTop = $('.collaborate-section').offset().top - 250;
-      if (windowTop >= collaborateSectionTop) {
-        $('.filterSec').hide();
-      } else {
-        $('.filterSec').show();
-      }
     }
   });
-});
+}); 
 // Casestudy Details page active navbar code ends
 
 //Casestudy page casestudies footer animation code starts
@@ -424,7 +408,6 @@ if ($(window).width() < 1025) {
       arrows: false,
       slidesToShow: 2.1,
       infinite: true,
-      adaptiveHeight: true,
       responsive: [
         {
           breakpoint: 680,
@@ -440,6 +423,28 @@ if ($(window).width() < 1025) {
   }
 }
 
+// google review slider
+if ($(window).width() < 1025) {
+  if ($(".ratingBoxes").length) {
+    $(".ratingBoxes").slick({
+      dots: false,
+      arrows: false,
+      slidesToShow: 2.1,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 680,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: "40px",
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+  }
+}
 
 // Blogs slider
 if ($(window).width() < 1025) {
@@ -492,8 +497,6 @@ if ($(window).width() < 1025) {
 document.addEventListener('DOMContentLoaded', () => {
   const smoothScroll = new SmoothScroll(0.02);
 });
-
-
 
 
 
@@ -670,12 +673,7 @@ function resizeCanvas() {
 
 
 
-const el = document.querySelector(".service-container")
-const observer = new IntersectionObserver(
-  ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
-  { threshold: [1] }
-);
-observer.observe(el);
+
 
 
 
