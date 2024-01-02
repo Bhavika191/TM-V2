@@ -9028,14 +9028,19 @@ body.opentwo {
 .casedetailsmainSec .researchSec .researchsec-wrapper .img-div img {
   width: 100%;
 }
-.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
+.casedetailsmainSec .researchSec .researchsec-wrapper:nth-child(even) .research-card-type {
+  left: 170px;
+}
+.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
   position: absolute;
   background: var(--primary-white, #FFF);
   padding: 80px;
   width: 580px;
   min-height: 722px;
+  bottom: -10%;
+  right: 170px;
 }
-.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
   margin-bottom: 30px;
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
@@ -9045,21 +9050,21 @@ body.opentwo {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     font-size: 14px;
   }
 }
-.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
   margin-bottom: 48px;
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
@@ -9068,7 +9073,22 @@ body.opentwo {
   line-height: 40px;
   letter-spacing: -0.9px;
 }
-.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+@media screen and (max-width: 1600px) {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
+    font-size: 12px;
+  }
+}
+.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
   color: var(--body-copy, #6A6A6A);
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -9077,21 +9097,21 @@ body.opentwo {
   letter-spacing: 0.6px;
 }
 @media screen and (max-width: 1600px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
     font-size: 14px;
   }
 }
-.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
   margin-top: 48px;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -9109,25 +9129,17 @@ body.opentwo {
   border: 1px solid #000;
 }
 @media screen and (max-width: 1600px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     font-size: 12px;
   }
 }
-.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
+.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta img {
   margin-left: 10px;
-}
-.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 {
-  right: 170px;
-  bottom: -10%;
-}
-.casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
-  left: 170px;
-  bottom: -10%;
 }
 @media all and (max-width: 1800px) {
   .casedetailsmainSec .researchSec {
@@ -9136,18 +9148,18 @@ body.opentwo {
   .casedetailsmainSec .researchSec .researchsec-wrapper {
     margin-bottom: 220px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     padding: 75px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 30px;
     line-height: 30px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 48px;
     line-height: 40px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
     line-height: 30px;
   }
 }
@@ -9158,33 +9170,31 @@ body.opentwo {
   .casedetailsmainSec .researchSec .researchsec-wrapper {
     margin-bottom: 200px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper:nth-child(even) .research-card-type {
+    left: 160px;
+  }
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     padding: 65px;
     width: 550px;
     min-height: 700px;
+    right: 160px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 28px;
     line-height: 28px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 40px;
     line-height: 36px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
     line-height: 28px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     line-height: 16px;
     padding: 12px 24px;
     margin-right: 28px;
     margin-top: 40px;
-  }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 {
-    right: 160px;
-  }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
-    left: 160px;
   }
 }
 @media all and (max-width: 1400px) {
@@ -9194,32 +9204,30 @@ body.opentwo {
   .casedetailsmainSec .researchSec .researchsec-wrapper {
     margin-bottom: 180px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper:nth-child(even) .research-card-type {
+    left: 150px;
+  }
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     padding: 55px;
     min-height: 600px;
+    right: 150px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 24px;
     line-height: 24px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 36px;
     line-height: 36px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
     line-height: 24px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     line-height: 14px;
     padding: 10px 22px;
     margin-right: 26px;
     margin-top: 36px;
-  }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 {
-    right: 150px;
-  }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
-    left: 150px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -9229,32 +9237,30 @@ body.opentwo {
   .casedetailsmainSec .researchSec .researchsec-wrapper {
     margin-bottom: 160px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper:nth-child(even) .research-card-type {
+    left: 120px;
+  }
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     padding: 50px;
     width: 500px;
     min-height: 500px;
+    right: 120px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 22px;
     line-height: 22px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 32px;
     line-height: 28px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
     line-height: 22px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     line-height: 12px;
     margin-right: 24px;
     margin-top: 32px;
-  }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 {
-    right: 120px;
-  }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
-    left: 120px;
   }
 }
 @media all and (max-width: 1024px) {
@@ -9265,7 +9271,7 @@ body.opentwo {
     position: relative;
     margin-bottom: 100px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     position: static;
     padding-left: 60px;
     padding-right: 60px;
@@ -9276,36 +9282,36 @@ body.opentwo {
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 1400px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 720px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media all and (max-width: 1024px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 20px;
     line-height: 20px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 20px;
     line-height: 34px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
     line-height: 20px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     line-height: 12px;
     padding: 10px 20px;
     margin-right: 0px;
     margin-top: 20px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta img {
     margin-left: 6px;
   }
 }
@@ -9318,7 +9324,7 @@ body.opentwo {
     margin-bottom: 80px;
     padding: 0px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     position: static;
     padding-left: 60px;
     padding-right: 60px;
@@ -9328,41 +9334,41 @@ body.opentwo {
   }
 }
 @media screen and (max-width: 821px) and (max-width: 1400px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media screen and (max-width: 821px) and (max-width: 720px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media all and (max-width: 821px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 10px;
     font-size: 12px;
     font-weight: 600;
     line-height: 12px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     line-height: 10px;
     padding: 8px 16px;
     margin-top: 10px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta img {
     margin-left: 5px;
   }
 }
@@ -9960,24 +9966,24 @@ body.opentwo {
 .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 500;
-  line-height: 40px;
+  line-height: 50px;
   letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 1280px) {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 720px) {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers {
@@ -13185,6 +13191,9 @@ body.opentwo {
   position: relative;
   margin-bottom: 250px;
 }
+.aboutus-researchSec .researchsec-wrapper:nth-child(even) .img-div .slick-dots {
+  left: 150px;
+}
 .aboutus-researchSec .researchsec-wrapper .img-div {
   width: 100%;
   overflow: hidden;
@@ -13198,7 +13207,7 @@ body.opentwo {
   text-align: center;
   width: 20px;
   transform: rotate(270deg);
-  margin: 0 auto;
+  right: 150px;
 }
 .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li {
   width: 12px;
@@ -13225,14 +13234,19 @@ body.opentwo {
   border-radius: 10px;
   transition: 0.9s all ease-in-out;
 }
-.aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+.aboutus-researchSec .researchsec-wrapper:nth-child(odd) .research-card-type {
+  left: 170px;
+}
+.aboutus-researchSec .researchsec-wrapper .research-card-type {
   position: absolute;
   background: var(--primary-white, #FFF);
   padding: 80px;
   width: 580px;
   min-height: 722px;
+  bottom: -10%;
+  right: 170px;
 }
-.aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+.aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
   margin-bottom: 30px;
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
@@ -13242,21 +13256,21 @@ body.opentwo {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     font-size: 14px;
   }
 }
-.aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+.aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
   margin-bottom: 48px;
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
@@ -13265,7 +13279,7 @@ body.opentwo {
   line-height: 40px;
   letter-spacing: -0.9px;
 }
-.aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+.aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
   color: var(--body-copy, #6A6A6A);
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -13274,21 +13288,21 @@ body.opentwo {
   letter-spacing: 0.6px;
 }
 @media screen and (max-width: 1600px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     font-size: 14px;
   }
 }
-.aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+.aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
   margin-top: 48px;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -13306,31 +13320,17 @@ body.opentwo {
   border: 1px solid #000;
 }
 @media screen and (max-width: 1600px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     font-size: 12px;
   }
 }
-.aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
+.aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta img {
   margin-left: 10px;
-}
-.aboutus-researchSec .researchsec-wrapper .research-card-type1 {
-  right: 170px;
-  bottom: -10%;
-}
-.aboutus-researchSec .researchsec-wrapper .research-card-type2 {
-  left: 170px;
-  bottom: -10%;
-}
-.aboutus-researchSec .researchsec-wrapper-odd .img-div .slick-dots {
-  left: 150px;
-}
-.aboutus-researchSec .researchsec-wrapper-even .img-div .slick-dots {
-  right: 150px;
 }
 @media all and (max-width: 1800px) {
   .aboutus-researchSec {
@@ -13350,18 +13350,18 @@ body.opentwo {
   .aboutus-researchSec .researchsec-wrapper {
     margin-bottom: 220px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type {
     padding: 75px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 30px;
     line-height: 30px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 48px;
     line-height: 40px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     line-height: 30px;
   }
 }
@@ -13383,33 +13383,31 @@ body.opentwo {
   .aboutus-researchSec .researchsec-wrapper {
     margin-bottom: 200px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+  .aboutus-researchSec .researchsec-wrapper:nth-child(odd) .research-card-type {
+    left: 160px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type {
     padding: 65px;
     width: 550px;
     min-height: 700px;
+    right: 160px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 28px;
     line-height: 28px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 40px;
     line-height: 36px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     line-height: 28px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     line-height: 16px;
     padding: 12px 24px;
     margin-right: 28px;
     margin-top: 40px;
-  }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 {
-    right: 160px;
-  }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
-    left: 160px;
   }
 }
 @media all and (max-width: 1400px) {
@@ -13430,32 +13428,30 @@ body.opentwo {
   .aboutus-researchSec .researchsec-wrapper {
     margin-bottom: 180px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+  .aboutus-researchSec .researchsec-wrapper:nth-child(odd) .research-card-type {
+    left: 150px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type {
     padding: 55px;
     min-height: 600px;
+    right: 150px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 24px;
     line-height: 24px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 36px;
     line-height: 36px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     line-height: 24px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     line-height: 14px;
     padding: 10px 22px;
     margin-right: 26px;
     margin-top: 36px;
-  }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 {
-    right: 150px;
-  }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
-    left: 150px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -13475,32 +13471,30 @@ body.opentwo {
   .aboutus-researchSec .researchsec-wrapper {
     margin-bottom: 160px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+  .aboutus-researchSec .researchsec-wrapper:nth-child(odd) .research-card-type {
+    left: 120px;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type {
     padding: 50px;
     width: 500px;
     min-height: 500px;
+    right: 120px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 22px;
     line-height: 22px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 32px;
     line-height: 28px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     line-height: 22px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     line-height: 12px;
     margin-right: 24px;
     margin-top: 32px;
-  }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 {
-    right: 120px;
-  }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
-    left: 120px;
   }
 }
 @media all and (max-width: 1024px) {
@@ -13542,7 +13536,19 @@ body.opentwo {
   .aboutus-researchSec .researchsec-wrapper .img-div {
     margin-bottom: 0px !important;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+  .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots {
+    bottom: 0px;
+    margin: 0 auto;
+  }
+  .aboutus-researchSec .researchsec-wrapper:nth-child(odd) .img-div .slick-dots {
+    right: 50%;
+    left: 50%;
+  }
+  .aboutus-researchSec .researchsec-wrapper:nth-child(even) .img-div .slick-dots {
+    left: 50%;
+    right: 50%;
+  }
+  .aboutus-researchSec .researchsec-wrapper .research-card-type {
     position: static;
     padding-left: 60px;
     padding-right: 60px;
@@ -13553,45 +13559,37 @@ body.opentwo {
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 1400px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 720px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media all and (max-width: 1024px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 20px;
     line-height: 20px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 20px;
     line-height: 34px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     line-height: 20px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     line-height: 12px;
     padding: 10px 20px;
     margin-right: 0px;
     margin-top: 20px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta img {
     margin-left: 6px;
-  }
-  .aboutus-researchSec .researchsec-wrapper-odd .img-div .slick-dots {
-    left: 50%;
-    bottom: 0;
-  }
-  .aboutus-researchSec .researchsec-wrapper-even .img-div .slick-dots {
-    right: 50%;
-    bottom: 0;
   }
 }
 @media all and (max-width: 821px) {
@@ -13609,7 +13607,7 @@ body.opentwo {
   .aboutus-researchSec .researchsec-wrapper:last-child {
     margin-bottom: 40px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type {
     position: static;
     padding-left: 60px;
     padding-right: 60px;
@@ -13619,41 +13617,41 @@ body.opentwo {
   }
 }
 @media screen and (max-width: 821px) and (max-width: 1400px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media screen and (max-width: 821px) and (max-width: 720px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1, .aboutus-researchSec .researchsec-wrapper .research-card-type2 {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 @media all and (max-width: 821px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-subheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-subheading {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 10px;
     font-size: 12px;
     font-weight: 600;
     line-height: 12px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-mainheading, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-mainheading {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .research-card-content, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .research-card-content {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     line-height: 10px;
     padding: 8px 16px;
     margin-top: 10px;
   }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type1 .aboutus-cta img, .aboutus-researchSec .researchsec-wrapper .research-card-type2 .aboutus-cta img {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta img {
     margin-left: 5px;
   }
 }
@@ -13679,6 +13677,9 @@ body.opentwo {
     line-height: 24px;
     text-transform: capitalize;
   }
+  .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots {
+    bottom: -12px;
+  }
   .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li {
     width: 6px;
     height: 6px;
@@ -13693,12 +13694,6 @@ body.opentwo {
   }
   .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots li.slick-active button::before {
     height: 50px;
-  }
-  .aboutus-researchSec .researchsec-wrapper-odd .img-div .slick-dots {
-    bottom: -12px;
-  }
-  .aboutus-researchSec .researchsec-wrapper-even .img-div .slick-dots {
-    bottom: -12px;
   }
 }
 
