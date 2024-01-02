@@ -155,52 +155,85 @@ jQuery(document).ready(function () {
 });
 //Service page read more and Read less code ends
 
-//Service page active menu navbar code starts
+//Service page & Casestudy page active menu navbar code starts
 $(document).ready(function () {
-  let menuScrollTimer = null;
+  let caseStudyMenuScrollTimer = null;
+  let filterMenuScrollTimer = null;
+  $(".casestudyfilter-wrapper a").click(function (e) {
+    e.preventDefault();
+    if (caseStudyMenuScrollTimer === null) {
+      $('.casestudyfilter-wrapper a.current').removeClass('current');
+      $(this).addClass('current');
+      let target = $(this).attr('href');
+      $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
+      caseStudyMenuScrollTimer = setTimeout(function () {
+        clearTimeout(caseStudyMenuScrollTimer);
+        caseStudyMenuScrollTimer = null;
+      }, 1050);
+    }
+  });
+  function manageCaseStudyMenu(indexcasenumber) {
+    $('.casestudyfilter-wrapper a').each(function (index, event) {
+      if (index < indexcasenumber)
+        $(this).hide();
+      else
+        $(this).show();
+    });
+  }
   $(".filter-wrapper a").click(function (e) {
     e.preventDefault();
-    if (menuScrollTimer === null) {
+    if (filterMenuScrollTimer === null) {
       $('.filter-wrapper a.active').removeClass('active');
       $(this).addClass('active');
       let target = $(this).attr('href');
       $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
-      menuScrollTimer = setTimeout(function () {
-        clearTimeout(menuScrollTimer);
-        menuScrollTimer = null;
+      filterMenuScrollTimer = setTimeout(function () {
+        clearTimeout(filterMenuScrollTimer);
+        filterMenuScrollTimer = null;
       }, 1050);
     }
   });
-  function managemenu(indexnumber) {
+  function manageFilterMenu(indexnumber) {
     $('.filter-wrapper a').each(function (index, event) {
       if (index < indexnumber)
         $(this).hide();
       else
         $(this).show();
-    })
+    });
   }
   $(window).scroll(function (e) {
-    if (menuScrollTimer === null) {
+    if (caseStudyMenuScrollTimer === null && filterMenuScrollTimer === null) {
       let windowTop = $(this).scrollTop();
-      $('.filter-wrapper a').each(function (index, event) {
-        // var topvalue = $($(this).attr('href')).offset().top - 140;
-        if (windowTop >= $($(this).attr('href')).offset().top - 140) {
-          managemenu(index);
+      // Case Study Section
+      $('.casestudyfilter-wrapper a').each(function (index) {
+        var topcasevalue = $($(this).attr('href')).offset().top - 250;
+        if (windowTop >= topcasevalue) {
+          manageCaseStudyMenu(index);
+          $('.casestudyfilter-wrapper .current').removeClass('current');
+          $(this).addClass('current');
+        }
+      });
+      // Filter Section
+      $('.filter-wrapper a').each(function (index) {
+        var topvalue = $($(this).attr('href')).offset().top - 250;
+        if (windowTop >= topvalue) {
+          manageFilterMenu(index);
           $('.filter-wrapper .active').removeClass('active');
-          // $(".service-container").css("z-index", "25");
+          $(".service-container").css("z-index", "25");
           $(this).addClass('active');
         }
       });
+      // Collaborate Section
       var collaborateSectionTop = $('.collaborate-section').offset().top - 250;
       if (windowTop >= collaborateSectionTop) {
-        $('.service-container').hide();
+        $('.filterSec').hide();
       } else {
-        $('.service-container').show();
+        $('.filterSec').show();
       }
     }
   });
 });
-//Service page active menu navbar code ends
+//Service page Casestudy page active menu navbar code ends
 
 //Off set code starts
 jQuery(function ($) {
@@ -222,69 +255,26 @@ jQuery(function ($) {
 });
 //Offset code ends
 
-//Casestudy Details page active code navbar
-$(document).ready(function () {
-  let menuScrollTimer = null;
-  $(".casestudyfilter-wrapper a").click(function (e) {
-    e.preventDefault();
-    if (menuScrollTimer === null) {
-      // Highlight the clicked item
-      $('.casestudyfilter-wrapper a.current').removeClass('current');
-      $(this).addClass('current');
-      // Smooth scroll to the target section
-      let target = $(this).attr('href');
-      $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
-      menuScrollTimer = setTimeout(function () {
-        clearTimeout(menuScrollTimer);
-        menuScrollTimer = null;
-      }, 1050);
-    }
-  });
-  function managcasemenu(indexcasenumber) {
-    $('.casestudyfilter-wrapper a').each(function (index, event) {
-      if (index < indexcasenumber)
-        $(this).hide();
-      else
-        $(this).show();
-    });
-  }
-  $(window).scroll(function (e) {
-    // Avoid triggering the logic if the scroll event is triggered from clicking one of the items
-    if (menuScrollTimer === null) {
-      let windowTop = $(this).scrollTop();
-      $('.casestudyfilter-wrapper a').each(function (index) {
-        var topcasevalue = $($(this).attr('href')).offset().top - 140;
-        if (windowTop >= topcasevalue) {
-          managcasemenu(index);
-          $('.casestudyfilter-wrapper .current').removeClass('current');
-          $(this).addClass('current');
-        }
-      });
-    }
-  });
-}); 
-// Casestudy Details page active navbar code ends
-
 //Casestudy page casestudies footer animation code starts
-if ($(window).width() > 1024) {
-  $(document).ready(function () {
-    $(".relatedBox").on('mouseover', function () {
-      $(".relatedBox").removeClass("active");
-      if ($(this).hasClass("active")) {
-        $(this).removeClass("active");
-        $(this).siblings().removeClass("deactive");
-      } else {
-        $(this).addClass("active");
-        $(this).siblings().addClass("deactive");
-      }
-      return false;
-    });
-  });
-  $('.relatedBox').on('mouseleave', function () {
-    $('.relatedBox').removeClass('active');
-    $('.relatedBox').removeClass("deactive");
-  });
-}
+// if ($(window).width() > 1024) {
+//   $(document).ready(function () {
+//     $(".relatedBox").on('mouseover', function () {
+//       $(".relatedBox").removeClass("active");
+//       if ($(this).hasClass("active")) {
+//         $(this).removeClass("active");
+//         $(this).siblings().removeClass("deactive");
+//       } else {
+//         $(this).addClass("active");
+//         $(this).siblings().addClass("deactive");
+//       }
+//       return false;
+//     });
+//   });
+//   $('.relatedBox').on('mouseleave', function () {
+//     $('.relatedBox').removeClass('active');
+//     $('.relatedBox').removeClass("deactive");
+//   });
+// }
 // $(window).on('resize scroll', function () {
 //   if ($('.casestudySec').length) {
 //     if ($('.casestudySec').isInViewport()) {
