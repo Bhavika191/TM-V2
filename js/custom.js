@@ -98,12 +98,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //---------------------------------------------------------Shamal's Js Code Starts ---------------------------------------------------------------//
-const el = document.querySelector(".service-container")
-const observer = new IntersectionObserver(
-  ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
-  { threshold: [1] }
-);
-observer.observe(el);
+// const el = document.querySelector(".service-container")
+// const observer = new IntersectionObserver(
+//   ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
+//   { threshold: [1] }
+// );
+// observer.observe(el);
 //Service page sticky property starts
 jQuery(document).ready(function () {
   for (let i = 1; i <= 9; i++) {
@@ -576,7 +576,7 @@ var firstfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('first-fold-anime'),
   path: '/projects/tm-v2/js/json/first-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: true,
+  loop: false,
   autoplay: true,
 });
 
@@ -584,7 +584,7 @@ var secondfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('second-fold-anime'),
   path: '/projects/tm-v2/js/json/second-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: true,
+  loop: false,
   autoplay: true,
 });
 
@@ -592,7 +592,7 @@ var thirdfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('third-fold-anime'),
   path: '/projects/tm-v2/js/json/third-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: true,
+  loop: false,
   autoplay: true,
 });
 
@@ -600,7 +600,7 @@ var fourthfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('fourth-fold-anime'),
   path: '/projects/tm-v2/js/json/fourth-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: true,
+  loop: false,
   autoplay: true,
 });
 
@@ -608,7 +608,48 @@ var lastfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('fifth-fold-anime'),
   path: '/projects/tm-v2/js/json/fifth-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: true,
+  loop: false,
+  autoplay: true,
+});
+
+//Mobile animations
+var firstfoldfAnimembl = bodymovin.loadAnimation({
+  container: document.getElementById('first-fold-anime-mbl'),
+  path: '/projects/tm-v2/js/json/first-fold-mobile.json', // Required
+  renderer: 'svg', // or 'canvas', 'html'
+  loop: false,
+  autoplay: true,
+});
+
+var secondfoldfAnimembl = bodymovin.loadAnimation({
+  container: document.getElementById('second-fold-anime-mbl'),
+  path: '/projects/tm-v2/js/json/second-fold-mobile.json', // Required
+  renderer: 'svg', // or 'canvas', 'html'
+  loop: false,
+  autoplay: true,
+});
+
+var thirdfoldfAnimembl = bodymovin.loadAnimation({
+  container: document.getElementById('third-fold-anime-mbl'),
+  path: '/projects/tm-v2/js/json/third-fold-mobile.json', // Required
+  renderer: 'svg', // or 'canvas', 'html'
+  loop: false,
+  autoplay: true,
+});
+
+var fourthfoldfAnimembl = bodymovin.loadAnimation({
+  container: document.getElementById('fourth-fold-anime-mbl'),
+  path: '/projects/tm-v2/js/json/fourth-fold-mobile.json', // Required
+  renderer: 'svg', // or 'canvas', 'html'
+  loop: false,
+  autoplay: true,
+});
+
+var lastfoldfAnimembl = bodymovin.loadAnimation({
+  container: document.getElementById('fifth-fold-anime-mbl'),
+  path:  '/projects/tm-v2/js/json/fifth-fold-mobile.json', // Required
+  renderer: 'svg', // or 'canvas', 'html'
+  loop: false,
   autoplay: true,
 });
 

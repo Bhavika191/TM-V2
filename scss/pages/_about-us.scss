@@ -1,4 +1,5 @@
 .aboutus-bannerSec{
+    .content-div{.banner-heading{width: 100% !important}.banner-subheading{width: 80%;}}
     @media all and (max-width:680px){
         .content-div{padding: 100px 0px 160px 0px;}
     }
@@ -30,30 +31,35 @@
         .backdrop{position: absolute;left:0;right:0;top:0;bottom:0;width: 100%;height: 100%;backdrop-filter: blur(250px);-webkit-backdrop-filter: blur(250px);background-color: rgba(255, 255, 255, 0.5);}
         .first-fold{display: flex;align-items: center;justify-content: space-between;z-index:1;position:relative;margin-bottom:110px;
             .firstfoldanimation{width: 55%;}
+            .firstfoldanimation-mbl{display: none;}
             .firstfold-content{width: 35%;
                 h2{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 74px;letter-spacing: -1.92px;margin-bottom: 48px;}
                 p{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #000);line-height: 34px;}
             }
         }
         .second-fold{z-index:1;position:relative;margin-bottom: 200px;}
+        .secondfoldanimation-mbl{display: none;}
         .third-fold{z-index:1;position:relative;margin-bottom: 160px;display:flex;justify-content:space-between;
             .third-fold-content{position: absolute;left:60px;width:30%;
                 h2{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 74px;letter-spacing: -1.92px;margin-bottom: 48px;}
                 p{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #000);line-height: 34px;}
             }
             .third-fold-anime{width: 75%;margin-left: auto;}
+            .thirdfoldanimation-mbl{display: none;}
         }
         .fourth-fold{z-index:1;position:relative;margin-bottom: 260px;
             .fourth-fold-content{position: absolute;right:0;top:65%;width:35%;
                 h2{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 74px;letter-spacing: -1.92px;margin-bottom: 48px;}
                 p{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #000);line-height: 34px;}
             }
+            .fourthfoldanimation-mbl{display: none;}
         }
         .fifth-fold{z-index:1;position:relative;display:block;
             .fifth-fold-content{margin-bottom: 70px;display:flex;flex-direction: column;align-items:center;
                 h2{font-family: $fontpoppins;@include font96;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 106px;letter-spacing: -2.88px;margin-bottom: 48px;width: 75%;text-align: center;}
                 p{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #000);line-height: 34px;width: 65%;text-align: center;}
             }
+            .fifthfoldanimation-mbl{display: none;}
         }
     }
     @media all and (max-width:1800px){margin-bottom:350px;
@@ -202,32 +208,41 @@
             .subheading{line-height: 24px;width: 90%;}
         }
         .animation-Div{padding-top:100px;
-            .first-fold{margin-bottom:60px;flex-direction:column;
-                .firstfoldanimation{width: 100%;order: 2;}
+            .first-fold{margin-bottom:0px;flex-direction:column;
+                .firstfoldanimation{display: none;}
+                .firstfoldanimation-mbl{display: block;order: 2;width: 100%;}
                 .firstfold-content{width: 100%;order:1;margin-bottom:50px;
                     h2{line-height: 56px;margin-bottom: 26px;}
                     p{line-height: 22px;}
                 }
             }
-            .second-fold{margin-bottom: 100px;}
-            .third-fold{margin-bottom: 80px;display:block;
+            .second-fold{margin-bottom: 60px;
+                .second-fold-anime{display: none;}
+                .secondfoldanimation-mbl{display: block;}
+            }
+            .third-fold{margin-bottom: 30px;display:block;
                 .third-fold-content{width:100%;position:unset;margin-bottom:40px;
                     h2{line-height: 56px;margin-bottom: 26px;}
                     p{line-height: 22px;}
                 }
-                .third-fold-anime{width: 100%;}
+                .third-fold-anime{display: none;}
+                .thirdfoldanimation-mbl{display: block;}
             }
             .fourth-fold{margin-bottom: 180px;
                 .fourth-fold-content{width:100%;position:unset;margin-bottom:100px;
                     h2{line-height: 56px;margin-bottom: 26px;}
                     p{line-height: 22px;}
                 }
+                .fourth-fold-anime{display: none;}
+                .fourthfoldanimation-mbl{display: block;}
             }
             .fifth-fold{
-                .fifth-fold-content{margin-bottom: 50px;
+                .fifth-fold-content{margin-bottom: 40px;
                     h2{line-height: 75px;margin-bottom: 25px;width: 80%;}
                     p{line-height: 22px;width: 70%;}
                 }
+                .fifth-fold-anime{display: none;}
+                .fifthfoldanimation-mbl{display: block;}
             }
         }
     }

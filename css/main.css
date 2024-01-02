@@ -11784,6 +11784,12 @@ body.opentwo {
   }
 }
 
+.aboutus-bannerSec .content-div .banner-heading {
+  width: 100% !important;
+}
+.aboutus-bannerSec .content-div .banner-subheading {
+  width: 80%;
+}
 @media all and (max-width: 680px) {
   .aboutus-bannerSec .content-div {
     padding: 100px 0px 160px 0px;
@@ -11936,6 +11942,9 @@ body.opentwo {
 .animation-sec .animation-Div .first-fold .firstfoldanimation {
   width: 55%;
 }
+.animation-sec .animation-Div .first-fold .firstfoldanimation-mbl {
+  display: none;
+}
 .animation-sec .animation-Div .first-fold .firstfold-content {
   width: 35%;
 }
@@ -11989,6 +11998,9 @@ body.opentwo {
   z-index: 1;
   position: relative;
   margin-bottom: 200px;
+}
+.animation-sec .animation-Div .secondfoldanimation-mbl {
+  display: none;
 }
 .animation-sec .animation-Div .third-fold {
   z-index: 1;
@@ -12052,6 +12064,9 @@ body.opentwo {
   width: 75%;
   margin-left: auto;
 }
+.animation-sec .animation-Div .third-fold .thirdfoldanimation-mbl {
+  display: none;
+}
 .animation-sec .animation-Div .fourth-fold {
   z-index: 1;
   position: relative;
@@ -12108,6 +12123,9 @@ body.opentwo {
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content p {
     font-size: 16px;
   }
+}
+.animation-sec .animation-Div .fourth-fold .fourthfoldanimation-mbl {
+  display: none;
 }
 .animation-sec .animation-Div .fifth-fold {
   z-index: 1;
@@ -12174,6 +12192,9 @@ body.opentwo {
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content p {
     font-size: 16px;
   }
+}
+.animation-sec .animation-Div .fifth-fold .fifthfoldanimation-mbl {
+  display: none;
 }
 @media all and (max-width: 1800px) {
   .animation-sec {
@@ -12524,12 +12545,16 @@ body.opentwo {
     padding-top: 100px;
   }
   .animation-sec .animation-Div .first-fold {
-    margin-bottom: 60px;
+    margin-bottom: 0px;
     flex-direction: column;
   }
   .animation-sec .animation-Div .first-fold .firstfoldanimation {
-    width: 100%;
+    display: none;
+  }
+  .animation-sec .animation-Div .first-fold .firstfoldanimation-mbl {
+    display: block;
     order: 2;
+    width: 100%;
   }
   .animation-sec .animation-Div .first-fold .firstfold-content {
     width: 100%;
@@ -12544,10 +12569,16 @@ body.opentwo {
     line-height: 22px;
   }
   .animation-sec .animation-Div .second-fold {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
+  }
+  .animation-sec .animation-Div .second-fold .second-fold-anime {
+    display: none;
+  }
+  .animation-sec .animation-Div .second-fold .secondfoldanimation-mbl {
+    display: block;
   }
   .animation-sec .animation-Div .third-fold {
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     display: block;
   }
   .animation-sec .animation-Div .third-fold .third-fold-content {
@@ -12563,7 +12594,10 @@ body.opentwo {
     line-height: 22px;
   }
   .animation-sec .animation-Div .third-fold .third-fold-anime {
-    width: 100%;
+    display: none;
+  }
+  .animation-sec .animation-Div .third-fold .thirdfoldanimation-mbl {
+    display: block;
   }
   .animation-sec .animation-Div .fourth-fold {
     margin-bottom: 180px;
@@ -12580,8 +12614,14 @@ body.opentwo {
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content p {
     line-height: 22px;
   }
+  .animation-sec .animation-Div .fourth-fold .fourth-fold-anime {
+    display: none;
+  }
+  .animation-sec .animation-Div .fourth-fold .fourthfoldanimation-mbl {
+    display: block;
+  }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content h2 {
     line-height: 75px;
@@ -12591,6 +12631,12 @@ body.opentwo {
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content p {
     line-height: 22px;
     width: 70%;
+  }
+  .animation-sec .animation-Div .fifth-fold .fifth-fold-anime {
+    display: none;
+  }
+  .animation-sec .animation-Div .fifth-fold .fifthfoldanimation-mbl {
+    display: block;
   }
 }
 @media all and (max-width: 680px) {
