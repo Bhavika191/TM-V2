@@ -7769,8 +7769,6 @@ body.opentwo {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #000000;
-}
-.careerFormSec .careerSec .collaborateForm form .portfolio-upload p:not(:last-child) {
   margin-bottom: 60px;
 }
 .careerFormSec .careerSec .collaborateForm form .portfolio-upload p input {
@@ -7973,7 +7971,7 @@ body.opentwo {
     line-height: 20px;
     letter-spacing: -0.28px;
   }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p:not(:last-child) {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p {
     margin-bottom: 50px;
   }
   .careerFormSec .careerSec .collaborateForm form .portfolio-upload p label {
@@ -8026,7 +8024,7 @@ body.opentwo {
     line-height: 18px;
     letter-spacing: -0.28px;
   }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p:not(:last-child) {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p {
     margin-bottom: 30px;
   }
   .careerFormSec .careerSec .collaborateForm form .portfolio-upload p label {
@@ -8087,7 +8085,7 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .borderDotted {
     padding-bottom: 50px;
   }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p:not(:last-child) {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p {
     margin-bottom: 50px;
   }
   .careerFormSec .careerSec .collaborateForm form input, .careerFormSec .careerSec .collaborateForm form textarea {
@@ -8210,8 +8208,6 @@ body.opentwo {
   }
   .careerFormSec .careerSec .collaborateForm form .portfolio-upload p {
     display: block;
-  }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p:not(:last-child) {
     margin-bottom: 30px;
   }
   .careerFormSec .careerSec .collaborateForm form .portfolio-upload p input {
