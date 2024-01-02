@@ -10,23 +10,45 @@
                 select{width: 100%;padding: 12px 0px;border-bottom: 1px solid #000;margin-bottom: 60px;color: #000;font-family: $fontpoppins;@include font28;font-weight: $fontW500;line-height: 24px; letter-spacing: -0.56px;
                     option{color: #000;font-family: $fontpoppins;@include font28;font-weight: $fontW500;line-height: 24px; letter-spacing: -0.56px;}
                 }
-                .empType{padding-bottom: 60px;display:flex;justify-content:space-between;
-                    .location-btn{width: 30%;
-                        label{
-                            input{visibility: hidden;height: 0;margin-bottom: 0;}
-                            span{display: flex;justify-content: center;align-items: center; border:1px solid #000;border-radius:5px;padding: 10px 60px;color: #000;font-family: $fontpoppins;@include font14;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.28px;
-                                &:hover{color: #FFF;background: #000;cursor: pointer;}
+                .empType{padding-bottom: 60px;
+                    p{
+                        
+                        span{
+                            .radiocheck{display: flex;justify-content:space-between;
+                                .wpcf7-list-item{width: 30%;margin:0;
+                                    label{
+                                        input{visibility: hidden;height: 0;margin-bottom: 0;}
+                                        span{display: flex;justify-content: center;align-items: center; border:1px solid #000;border-radius:5px;padding: 10px 50px;color: #000;font-family: $fontpoppins;@include font14;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.28px;
+                                            &:hover{color: #FFF;background: #000;cursor: pointer;}
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
                 }
-                .portfolio-upload{display: flex;justify-content:space-between; border-bottom: 1px solid #000000;margin-bottom: 60px;
-                    input{margin-bottom: 0px;border-bottom: none;}
-                    label{padding: 10px 15px; display: flex;align-items: center;justify-content: center; color: #000;font-family: $fontpoppins;@include font16;font-weight: $fontW500;line-height: 14px;letter-spacing: -0.48px;border-radius: 5px;border: 1px dashed #000;margin-bottom: 12px;
-                        &:hover{cursor: pointer;}
+                .borderDotted{padding-bottom: 60px;
+                    p{display: flex;justify-content:space-between;
+                        br{display: none;}
+                        .wpcf7-list-item{width: 30%;margin:0;
+                            label{
+                                input{visibility: hidden;height: 0;margin-bottom: 0;}
+                                span{display: flex;justify-content: center;align-items: center; border:1px solid #000;border-radius:5px;padding: 10px 50px;color: #000;font-family: $fontpoppins;@include font14;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.28px;
+                                    &:hover{color: #FFF;background: #000;cursor: pointer;}
+                                }
+                            }
+                        }
                     }
-                    .file-upload{position: unset; 
-                        input{opacity: 0;position: absolute;z-index: -1;}
+                }
+                .portfolio-upload{
+                    p{display: flex;justify-content:space-between;&:not(:last-child){margin-bottom: 60px;border-bottom: 1px solid #000000;} 
+                        input{margin-bottom: 0px;border-bottom: none;}
+                        label{padding: 10px 15px; display: flex;align-items: center;justify-content: center; color: #000;font-family: $fontpoppins;@include font16;font-weight: $fontW500;line-height: 14px;letter-spacing: -0.48px;border-radius: 5px;border: 1px dashed #000;margin-bottom: 12px;
+                            &:hover{cursor: pointer;}
+                        }
+                        .file-upload{position: unset; 
+                            input{opacity: 0;position: absolute;z-index: -1;}
+                        }
                     }
                 }
                 .resume-upload{display: flex;justify-content:space-between;
@@ -57,14 +79,31 @@
                 form{
                     select{padding: 10px 0px;margin-bottom: 50px;}
                     .empType{padding-bottom: 50px;
-                        .location-btn{                        
-                            label{
-                                span{padding: 10px 40px;line-height: 20px;letter-spacing: -0.28px;}
+                        p{
+                            span{
+                                .radiocheck{
+                                    .wpcf7-list-item{
+                                        label{
+                                            span{padding: 10px 35px;line-height: 20px;letter-spacing: -0.28px;}
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
-                   .portfolio-upload{margin-bottom: 50px;
-                      label{padding: 8px 14px;line-height: 12px;letter-spacing: -0.48px;margin-bottom: 12px;}
+                    .borderDotted{padding-bottom: 50px;
+                        p{
+                            .wpcf7-list-item{
+                                label{
+                                    span{padding: 10px 35px;line-height: 20px;letter-spacing: -0.28px;}
+                                }
+                            }
+                        }
+                    }
+                   .portfolio-upload{
+                    p{&:not(:last-child){margin-bottom: 50px;}
+                        label{padding: 8px 14px;line-height: 12px;letter-spacing: -0.48px;margin-bottom: 12px;}
+                    }
                    }
                    .resume-upload{
                       p{margin-bottom:12px}
@@ -85,13 +124,30 @@
                 form{
                     select{padding: 10px 0px;margin-bottom: 30px;}
                     .empType{padding-bottom: 30px;
-                        .location-btn{                        label{
-                            span{padding: 10px 30px;line-height: 18px;letter-spacing: -0.28px;}
-                        }}
+                        p{
+                            span{
+                                .radiocheck{
+                                    .wpcf7-list-item{
+                                        label{
+                                            span{padding: 10px 30px;line-height: 18px;letter-spacing: -0.28px;}
+                                        }
+                                    }
+                                }
+                            }
+                        }
 
                     }
-                   .portfolio-upload{margin-bottom: 30px;
-                      label{padding: 8px 14px;line-height: 10px;letter-spacing: -0.48px;margin-bottom: 12px;}
+                    .borderDotted{padding-bottom: 30px;
+                        p{
+                            .wpcf7-list-item{
+                                label{
+                                    span{padding: 10px 30px;line-height: 18px;letter-spacing: -0.28px;}
+                                }
+                            }
+                        }
+                    }
+                   .portfolio-upload{
+                    p{&:not(:last-child){margin-bottom: 30px;} label{padding: 8px 14px;line-height: 10px;letter-spacing: -0.48px;margin-bottom: 12px;}}
                    }
                    .resume-upload{
                       p{margin-bottom:12px}
@@ -108,10 +164,26 @@
             .collaborateForm{
                 form{
                     .empType{
-                        .location-btn{                        label{
-                            span{padding: 10px 22px;line-height: 16px;}
-                        }}
-
+                        p{
+                            span{
+                                .radiocheck{
+                                    .wpcf7-list-item{
+                                        label{
+                                            span{padding: 10px 22px;line-height: 16px;}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .borderDotted{padding-bottom: 30px;
+                        p{
+                            .wpcf7-list-item{
+                                label{
+                                    span{padding: 10px 22px;line-height: 16px;}
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -128,7 +200,8 @@
                 form{
                     select{margin-bottom: 50px;}
                     .empType{padding-bottom: 50px;}
-                   .portfolio-upload{margin-bottom: 50px;}
+                    .borderDotted{padding-bottom: 50px;}
+                   .portfolio-upload{p{&:not(:last-child){margin-bottom: 50px;}}}
                     input, textarea{margin-bottom: 50px;}
                     input[type=submit]{padding: 12px 24px;}
                 }
@@ -160,17 +233,32 @@
                     select{padding: 8px 0px;margin-bottom: 30px;font-size: 20px;font-weight: 500;line-height: 24px;letter-spacing: -0.4px;
                         option{font-size: 20px;font-weight: 500;line-height: 24px;letter-spacing: -0.4px;}
                     }
-                    .empType{padding-bottom: 30px;display:flex;flex-flow:wrap;justify-content:normal;
-                        .location-btn{width: 50%;
-                            label{
-                                span{width: auto;padding: 10px 40px;margin-right: 12px;&:not(:last-child){margin-bottom: 12px;}font-size: 12px;font-weight: 500;line-height: 24px;letter-spacing: -0.24px;}
+                    .empType{padding-bottom: 30px;
+                        p{
+                            span{
+                                .radiocheck{display:flex;flex-flow:wrap;justify-content:normal;
+                                    .wpcf7-list-item{width: 50%;
+                                        label{
+                                            span{width: auto;padding: 10px 40px;margin-right: 12px;&:not(:last-child){margin-bottom: 12px;}font-size: 12px;font-weight: 500;line-height: 24px;letter-spacing: -0.24px;}
+                                        }
+                                    }
+                                }
                             }
                         }
-
                     }
-                   .portfolio-upload{display: block;margin-bottom: 30px;
-                      input{margin-bottom: 0px;border-bottom: none;}
-                      label{padding: 12px 24px;display: inline-block; margin-bottom: 20px;font-size: 16px;font-weight: 500;line-height: 12px;letter-spacing: -0.48px;}
+                    .borderDotted{padding-bottom: 30px;
+                        p{display:flex;flex-flow:wrap;justify-content:normal;
+                            .wpcf7-list-item{width: 50%;
+                                label{
+                                    span{width: auto;padding: 10px 40px;margin-right: 12px;&:not(:last-child){margin-bottom: 12px;}font-size: 12px;font-weight: 500;line-height: 24px;letter-spacing: -0.24px;}
+                                }
+                            }
+                        }
+                    }
+                   .portfolio-upload{
+                    p{display: block;&:not(:last-child){margin-bottom: 30px;}
+                        input{margin-bottom: 0px;border-bottom: none;}
+                        label{padding: 12px 24px;display: inline-block; margin-bottom: 20px;font-size: 16px;font-weight: 500;line-height: 12px;letter-spacing: -0.48px;}}
                    }
                    .resume-upload{display: flex;justify-content:space-between;
                       p{display: none;}
