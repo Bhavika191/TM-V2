@@ -7674,24 +7674,27 @@ body.opentwo {
 }
 .careerFormSec .careerSec .collaborateForm form .empType {
   padding-bottom: 60px;
+}
+.careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck {
   display: flex;
   justify-content: space-between;
 }
-.careerFormSec .careerSec .collaborateForm form .empType .location-btn {
+.careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item {
   width: 30%;
+  margin: 0;
 }
-.careerFormSec .careerSec .collaborateForm form .empType .location-btn label input {
+.careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label input {
   visibility: hidden;
   height: 0;
   margin-bottom: 0;
 }
-.careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
+.careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #000;
   border-radius: 5px;
-  padding: 10px 60px;
+  padding: 10px 50px;
   color: #000;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -7700,31 +7703,81 @@ body.opentwo {
   letter-spacing: -0.28px;
 }
 @media screen and (max-width: 1600px) {
-  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
+  .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
+  .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span {
     font-size: 12px;
   }
 }
-.careerFormSec .careerSec .collaborateForm form .empType .location-btn label span:hover {
+.careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span:hover {
   color: #FFF;
   background: #000;
   cursor: pointer;
 }
-.careerFormSec .careerSec .collaborateForm form .portfolio-upload {
+.careerFormSec .careerSec .collaborateForm form .borderDotted {
+  padding-bottom: 60px;
+}
+.careerFormSec .careerSec .collaborateForm form .borderDotted p {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #000000;
-  margin-bottom: 60px;
 }
-.careerFormSec .careerSec .collaborateForm form .portfolio-upload input {
+.careerFormSec .careerSec .collaborateForm form .borderDotted p br {
+  display: none;
+}
+.careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item {
+  width: 30%;
+  margin: 0;
+}
+.careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label input {
+  visibility: hidden;
+  height: 0;
+  margin-bottom: 0;
+}
+.careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px 50px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.28px;
+}
+@media screen and (max-width: 1600px) {
+  .careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label span {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label span {
+    font-size: 12px;
+  }
+}
+.careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label span:hover {
+  color: #FFF;
+  background: #000;
+  cursor: pointer;
+}
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload p {
+  display: flex;
+  justify-content: space-between;
+}
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload p:not(:last-child) {
+  margin-bottom: 60px;
+  border-bottom: 1px solid #000000;
+}
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload p input {
   margin-bottom: 0px;
   border-bottom: none;
 }
-.careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload p label {
   padding: 10px 15px;
   display: flex;
   align-items: center;
@@ -7740,22 +7793,22 @@ body.opentwo {
   margin-bottom: 12px;
 }
 @media screen and (max-width: 1600px) {
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p label {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 720px) {
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p label {
     font-size: 12px;
   }
 }
-.careerFormSec .careerSec .collaborateForm form .portfolio-upload label:hover {
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload p label:hover {
   cursor: pointer;
 }
-.careerFormSec .careerSec .collaborateForm form .portfolio-upload .file-upload {
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload p .file-upload {
   position: unset;
 }
-.careerFormSec .careerSec .collaborateForm form .portfolio-upload .file-upload input {
+.careerFormSec .careerSec .collaborateForm form .portfolio-upload p .file-upload input {
   opacity: 0;
   position: absolute;
   z-index: -1;
@@ -7907,15 +7960,23 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .empType {
     padding-bottom: 50px;
   }
-  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
-    padding: 10px 40px;
+  .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span {
+    padding: 10px 35px;
     line-height: 20px;
     letter-spacing: -0.28px;
   }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
+  .careerFormSec .careerSec .collaborateForm form .borderDotted {
+    padding-bottom: 50px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label span {
+    padding: 10px 35px;
+    line-height: 20px;
+    letter-spacing: -0.28px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p:not(:last-child) {
     margin-bottom: 50px;
   }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p label {
     padding: 8px 14px;
     line-height: 12px;
     letter-spacing: -0.48px;
@@ -7952,15 +8013,23 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .empType {
     padding-bottom: 30px;
   }
-  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
+  .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span {
     padding: 10px 30px;
     line-height: 18px;
     letter-spacing: -0.28px;
   }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
+  .careerFormSec .careerSec .collaborateForm form .borderDotted {
+    padding-bottom: 30px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label span {
+    padding: 10px 30px;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p:not(:last-child) {
     margin-bottom: 30px;
   }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p label {
     padding: 8px 14px;
     line-height: 10px;
     letter-spacing: -0.48px;
@@ -7980,7 +8049,14 @@ body.opentwo {
   .careerFormSec {
     margin: 100px 0px 200px;
   }
-  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
+  .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span {
+    padding: 10px 22px;
+    line-height: 16px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .borderDotted {
+    padding-bottom: 30px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label span {
     padding: 10px 22px;
     line-height: 16px;
   }
@@ -8008,7 +8084,10 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .empType {
     padding-bottom: 50px;
   }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
+  .careerFormSec .careerSec .collaborateForm form .borderDotted {
+    padding-bottom: 50px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p:not(:last-child) {
     margin-bottom: 50px;
   }
   .careerFormSec .careerSec .collaborateForm form input, .careerFormSec .careerSec .collaborateForm form textarea {
@@ -8085,14 +8164,16 @@ body.opentwo {
   }
   .careerFormSec .careerSec .collaborateForm form .empType {
     padding-bottom: 30px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck {
     display: flex;
     flex-flow: wrap;
     justify-content: normal;
   }
-  .careerFormSec .careerSec .collaborateForm form .empType .location-btn {
+  .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item {
     width: 50%;
   }
-  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span {
+  .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span {
     width: auto;
     padding: 10px 40px;
     margin-right: 12px;
@@ -8101,18 +8182,43 @@ body.opentwo {
     line-height: 24px;
     letter-spacing: -0.24px;
   }
-  .careerFormSec .careerSec .collaborateForm form .empType .location-btn label span:not(:last-child) {
+  .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span:not(:last-child) {
     margin-bottom: 12px;
   }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload {
+  .careerFormSec .careerSec .collaborateForm form .borderDotted {
+    padding-bottom: 30px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .borderDotted p {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: normal;
+  }
+  .careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item {
+    width: 50%;
+  }
+  .careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label span {
+    width: auto;
+    padding: 10px 40px;
+    margin-right: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.24px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label span:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p {
     display: block;
+  }
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p:not(:last-child) {
     margin-bottom: 30px;
   }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload input {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p input {
     margin-bottom: 0px;
     border-bottom: none;
   }
-  .careerFormSec .careerSec .collaborateForm form .portfolio-upload label {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p label {
     padding: 12px 24px;
     display: inline-block;
     margin-bottom: 20px;
