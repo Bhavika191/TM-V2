@@ -41,7 +41,7 @@
                     }
                 }
                 .portfolio-upload{
-                    p{display: flex;justify-content:space-between;&:not(:last-child){margin-bottom: 60px;border-bottom: 1px solid #000000;} 
+                    p{display: flex;justify-content:space-between;border-bottom: 1px solid #000000;margin-bottom: 60px;
                         input{margin-bottom: 0px;border-bottom: none;}
                         label{padding: 10px 15px; display: flex;align-items: center;justify-content: center; color: #000;font-family: $fontpoppins;@include font16;font-weight: $fontW500;line-height: 14px;letter-spacing: -0.48px;border-radius: 5px;border: 1px dashed #000;margin-bottom: 12px;
                             &:hover{cursor: pointer;}
@@ -101,7 +101,7 @@
                         }
                     }
                    .portfolio-upload{
-                    p{&:not(:last-child){margin-bottom: 50px;}
+                    p{margin-bottom: 50px;
                         label{padding: 8px 14px;line-height: 12px;letter-spacing: -0.48px;margin-bottom: 12px;}
                     }
                    }
@@ -147,7 +147,7 @@
                         }
                     }
                    .portfolio-upload{
-                    p{&:not(:last-child){margin-bottom: 30px;} label{padding: 8px 14px;line-height: 10px;letter-spacing: -0.48px;margin-bottom: 12px;}}
+                    p{margin-bottom: 30px; label{padding: 8px 14px;line-height: 10px;letter-spacing: -0.48px;margin-bottom: 12px;}}
                    }
                    .resume-upload{
                       p{margin-bottom:12px}
@@ -201,7 +201,7 @@
                     select{margin-bottom: 50px;}
                     .empType{padding-bottom: 50px;}
                     .borderDotted{padding-bottom: 50px;}
-                   .portfolio-upload{p{&:not(:last-child){margin-bottom: 50px;}}}
+                   .portfolio-upload{p{margin-bottom: 50px;}}
                     input, textarea{margin-bottom: 50px;}
                     input[type=submit]{padding: 12px 24px;}
                 }
@@ -256,7 +256,7 @@
                         }
                     }
                    .portfolio-upload{
-                    p{display: block;&:not(:last-child){margin-bottom: 30px;}
+                    p{display: block;margin-bottom: 30px;
                         input{margin-bottom: 0px;border-bottom: none;}
                         label{padding: 12px 24px;display: inline-block; margin-bottom: 20px;font-size: 16px;font-weight: 500;line-height: 12px;letter-spacing: -0.48px;}}
                    }
