@@ -47,8 +47,8 @@
         @media all and (max-width:1024px){
             .aboutcontent{ margin:120px 0px 100px 0px;@include wrapper;
                 .subheading{margin-bottom:25px;line-height: 20px;}
-                .mainheading{margin-bottom:25px;line-height: 60px; }
-                .about-content{line-height: 22px;}
+                .mainheading{margin-bottom:25px;line-height: 60px;width: 100%;}
+                .about-content{line-height: 22px;width: 100%;}
             }
             .image-sec{margin-bottom: 80px;}
         }
@@ -56,7 +56,7 @@
             .aboutcontent{margin:102px 0px 60px 0px;width:100%;
                 .subheading{margin-bottom:20px;font-size: 12px;font-weight: 700;line-height: 12px;letter-spacing: 0.6px;width: 100%;}
                 .mainheading{margin-bottom:20px;font-size: 40px;font-weight: 500;line-height: 50px;letter-spacing: -1.2px;width: 100%;}
-                .about-content{font-size: 14px;font-weight: 400;line-height: 24px;}
+                .about-content{font-size: 14px;font-weight: 400;line-height: 24px;width: 100%;}
             }
             .image-sec{margin-bottom: 40px;padding: 0px;img{object-fit: cover;}}
         }
