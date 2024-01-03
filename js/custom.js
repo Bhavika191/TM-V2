@@ -343,8 +343,30 @@ if ($(".aboutus-researchSec .researchsec-wrapper .img-div").length) {
     arrows:false,
   });
 }
-
 //About us slider ends
+
+//Video player js starts
+const video = document.getElementById("video");
+const circlePlayButton = document.getElementById("circle-play-b");
+
+function togglePlay() {
+	if (video.paused || video.ended) {
+		video.play();
+	} else {
+		video.pause();
+	}
+}
+
+circlePlayButton.addEventListener("click", togglePlay);
+video.addEventListener("playing", function () {
+	circlePlayButton.style.opacity = 0;
+});
+video.addEventListener("pause", function () {
+	circlePlayButton.style.opacity = 1;
+});
+
+//Video player js ends
+
 
 //------------------------------------------------------- Shamal's JS Code ends --------------------------------------------------//
 
