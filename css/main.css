@@ -2853,21 +2853,28 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv:nth-child(even) {
   flex-direction: row-reverse;
 }
-.storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .imageDiv {
-  width: 37%;
+.storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv:first-child .imageDiv {
   background: conic-gradient(from 45deg at 0% 100%, #F00 0deg, #FAFF00 58.1249982119deg, #05FB00 116.2499964237deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474deg, #F00 360deg);
   position: relative;
+  padding: 50px 0px;
 }
-.storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .imageDiv .blurDiv {
+.storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv:first-child .imageDiv .blurDiv {
   position: absolute;
   height: 100%;
   width: 100%;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(125px);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .imageDiv {
+  width: 37%;
 }
 .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .storyDescdiv {
   width: 63%;
-  padding: 0px 150px;
+  padding: 50px 150px;
 }
 .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .storyDescdiv h3 {
   font-size: 40px;
