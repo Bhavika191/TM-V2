@@ -69,33 +69,39 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  updateLastBoxClass(); // Initial update
 
-  // Assuming you are adding or removing boxes dynamically
-  // You may want to call updateLastBoxClass() whenever the number of boxes changes.
+$('.shareBlogs').click(function () {
+  $('.sharePopup').toggleClass('sharePopupnew');
+});
+$('.closePopupshare').click(function () {
+  $('.sharePopup').removeClass('sharePopupnew');
+});
 
-  function updateLastBoxClass() {
-    var boxesnew = document.querySelectorAll(".ratingboxes");
-
-    // Remove classes from all boxes
-    boxesnew.forEach(function (box) {
-      box.classList.remove("even", "odd");
-    });
-
-    if (boxesnew.length > 0) {
-      // Add appropriate class to the last box
-      var lastBox = boxesnew[boxesnew.length - 1];
-      if (boxesnew.length % 2 === 0) {
-        // Even number of boxes
-        lastBox.classList.add("even");
-      } else {
-        // Odd number of boxes
-        lastBox.classList.add("odd");
+$.fn.isInViewport = function () {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+// sticky book page cta js starts
+$(window).on('resize scroll', function () {
+  if ($('footer').length) {
+      if ($('footer').isInViewport()) {
+        setTimeout(() => {
+          $(".prizeDiv").css("display","none")
+        }, 500);
       }
-    }
+      else {
+        setTimeout(() => {
+          $(".prizeDiv").css("display","flex")
+        }, 500);
+      }
   }
 });
+
+// sticky book page cta js ends
+
 
 //---------------------------------------------------------Shamal's Js Code Starts ---------------------------------------------------------------//
 // const el = document.querySelector(".service-container")
@@ -149,7 +155,7 @@ jQuery(document).ready(function () {
       $('#service-info' + i + ' .list-wrapper').not('.shown').hide();
       $('.showLess').hide();
       $('.showMore').show();
-      $('html, body').animate({scrollTop: $('.servicesecs-wrapper' + i).offset().top -60 }, 'slow');
+      $('html, body').animate({ scrollTop: $('.servicesecs-wrapper' + i).offset().top - 60 }, 'slow');
     });
   }
 });
@@ -520,7 +526,7 @@ $(document).ready(function () {
         /* data save code */
         $.ajax({
           type: 'POST',
-          url: 'http://localhost/projects/TM-V2-new/wp-admin/admin-ajax.php',
+          url: 'http://ixdtm.com/projects/TM-V2-wp/wp-admin/admin-ajax.php',
           dataType: 'json',
           data: {
             action: 'formated_Value',
@@ -557,7 +563,7 @@ if ($(window).width() > 1025) {
 //==========================================Json Animations=======================================//
 var panAnime = bodymovin.loadAnimation({
   container: document.getElementById('panAnime'),
-  path: '/projects/tm-v2/js/json/panAnime.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/panAnime.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: true,
@@ -565,7 +571,7 @@ var panAnime = bodymovin.loadAnimation({
 
 var firstfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('first-fold-anime'),
-  path: '/projects/tm-v2/js/json/first-fold.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/first-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -573,7 +579,7 @@ var firstfoldfAnime = bodymovin.loadAnimation({
 
 var secondfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('second-fold-anime'),
-  path: '/projects/tm-v2/js/json/second-fold.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/second-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -581,7 +587,7 @@ var secondfoldfAnime = bodymovin.loadAnimation({
 
 var thirdfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('third-fold-anime'),
-  path: '/projects/tm-v2/js/json/third-fold.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/third-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -589,7 +595,7 @@ var thirdfoldfAnime = bodymovin.loadAnimation({
 
 var fourthfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('fourth-fold-anime'),
-  path: '/projects/tm-v2/js/json/fourth-fold.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/fourth-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -597,7 +603,7 @@ var fourthfoldfAnime = bodymovin.loadAnimation({
 
 var lastfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('fifth-fold-anime'),
-  path: '/projects/tm-v2/js/json/fifth-fold.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/fifth-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -606,7 +612,7 @@ var lastfoldfAnime = bodymovin.loadAnimation({
 //Mobile animations
 var firstfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('first-fold-anime-mbl'),
-  path: '/projects/tm-v2/js/json/first-fold-mobile.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/first-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -614,7 +620,7 @@ var firstfoldfAnimembl = bodymovin.loadAnimation({
 
 var secondfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('second-fold-anime-mbl'),
-  path: '/projects/tm-v2/js/json/second-fold-mobile.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/second-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -622,7 +628,7 @@ var secondfoldfAnimembl = bodymovin.loadAnimation({
 
 var thirdfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('third-fold-anime-mbl'),
-  path: '/projects/tm-v2/js/json/third-fold-mobile.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/third-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -630,7 +636,7 @@ var thirdfoldfAnimembl = bodymovin.loadAnimation({
 
 var fourthfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('fourth-fold-anime-mbl'),
-  path: '/projects/tm-v2/js/json/fourth-fold-mobile.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/fourth-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -638,7 +644,7 @@ var fourthfoldfAnimembl = bodymovin.loadAnimation({
 
 var lastfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('fifth-fold-anime-mbl'),
-  path:  '/projects/tm-v2/js/json/fifth-fold-mobile.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/fifth-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -646,7 +652,7 @@ var lastfoldfAnimembl = bodymovin.loadAnimation({
 
 var homeAnime = bodymovin.loadAnimation({
   container: document.getElementById('homeAnime'),
-  path: '/projects/tm-v2/js/json/hp-animation.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/hp-animation.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -659,166 +665,185 @@ $.fn.isInViewport = function () {
   var viewportBottom = viewportTop + $(window).height();
   return elementBottom > viewportTop && elementTop < viewportBottom;
 };
-$(window).on('resize scroll', function() {
-  if($('.first-fold').length){
-      if ($(window).width() > 720) {
-          if ($('.first-fold').isInViewport()) {
-              setTimeout(() => {
-                firstfoldfAnime.play();
-              }, 500);
-          }
-          else{
-              setTimeout(() => {
-                firstfoldfAnime.stop();
-              }, 500);
-          }
+$(window).on('resize scroll', function () {
+  if ($('.first-fold').length) {
+    if ($(window).width() > 720) {
+      if ($('.first-fold').isInViewport()) {
+        setTimeout(() => {
+          firstfoldfAnime.play();
+        }, 500);
+      }
+      else {
+        setTimeout(() => {
+          firstfoldfAnime.stop();
+        }, 500);
+      }
+    }
+  }
+});
+$(window).on('resize scroll', function () {
+  if ($('.second-fold').length) {
+    if ($(window).width() > 720) {
+      if ($('.second-fold').isInViewport()) {
+        setTimeout(() => {
+          secondfoldfAnime.play();
+        }, 500);
+      }
+      else {
+        setTimeout(() => {
+          secondfoldfAnime.stop();
+        }, 500);
+      }
+    }
+  }
+});
+$(window).on('resize scroll', function () {
+  if ($('.third-fold').length) {
+    if ($(window).width() > 720) {
+      if ($('.third-fold').isInViewport()) {
+        setTimeout(() => {
+          thirdfoldfAnime.play();
+        }, 500);
+      }
+      else {
+        setTimeout(() => {
+          thirdfoldfAnime.stop();
+        }, 500);
+      }
+    }
+  }
+});
+$(window).on('resize scroll', function () {
+  if ($('.fourth-fold').length) {
+    if ($(window).width() > 720) {
+      if ($('.fourth-fold').isInViewport()) {
+        setTimeout(() => {
+          fourthfoldfAnime.play();
+        }, 500);
+      }
+      else {
+        setTimeout(() => {
+          fourthfoldfAnime.stop();
+        }, 500);
+      }
+    }
+  }
+});
+$(window).on('resize scroll', function () {
+  if ($('.fifth-fold').length) {
+    if ($(window).width() > 720) {
+      if ($('.fifth-fold').isInViewport()) {
+        setTimeout(() => {
+          lastfoldfAnime.play();
+        }, 500);
+      }
+      else {
+        setTimeout(() => {
+          lastfoldfAnime.stop();
+        }, 500);
+      }
+    }
+  }
+});
+$(window).on('resize scroll', function () {
+  if ($('.first-fold').length) {
+    if ($(window).width() > 720) {
+      if ($('.first-fold').isInViewport()) {
+        setTimeout(() => {
+          firstfoldfAnimembl.play();
+        }, 500);
+      }
+      else {
+        setTimeout(() => {
+          firstfoldfAnimembl.stop();
+        }, 500);
+      }
+    }
+  }
+});
+$(window).on('resize scroll', function () {
+  if ($('.second-fold').length) {
+    if ($(window).width() > 720) {
+      if ($('.second-fold').isInViewport()) {
+        setTimeout(() => {
+          secondfoldfAnimembl.play();
+        }, 500);
+      }
+      else {
+        setTimeout(() => {
+          secondfoldfAnimembl.stop();
+        }, 500);
+      }
+    }
+  }
+});
+$(window).on('resize scroll', function () {
+  if ($('.third-fold').length) {
+    if ($(window).width() > 720) {
+      if ($('.third-fold').isInViewport()) {
+        setTimeout(() => {
+          thirdfoldfAnimembl.play();
+        }, 500);
+      }
+      else {
+        setTimeout(() => {
+          thirdfoldfAnimembl.stop();
+        }, 500);
+      }
+    }
+  }
+});
+$(window).on('resize scroll', function () {
+  if ($('.fourth-fold').length) {
+    if ($(window).width() > 720) {
+      if ($('.fourth-fold').isInViewport()) {
+        setTimeout(() => {
+          fourthfoldfAnimembl.play();
+        }, 500);
+      }
+      else {
+        setTimeout(() => {
+          fourthfoldfAnimembl.stop();
+        }, 500);
+      }
+    }
+  }
+});
+
+$(window).on('resize scroll', function () {
+  if ($('.fifth-fold').length) {
+    if ($(window).width() > 720) {
+      if ($('.fifth-fold').isInViewport()) {
+        setTimeout(() => {
+          lastfoldfAnimembl.play();
+        }, 500);
+      }
+      else {
+        setTimeout(() => {
+          lastfoldfAnimembl.stop();
+        }, 500);
+      }
+    }
+  }
+});
+
+// sticky book page cta js starts
+$(window).on('resize scroll', function () {
+  if ($('footer').length) {
+      if ($('footer').isInViewport()) {
+        setTimeout(() => {
+          $(".prizeDiv").css("display","none")
+        }, 500);
+      }
+      else {
+        setTimeout(() => {
+          $(".stickyCtas").css("display","flex")
+        }, 500);
       }
   }
 });
-$(window).on('resize scroll', function() {
-  if($('.second-fold').length){
-      if ($(window).width() > 720) {
-          if ($('.second-fold').isInViewport()) {
-              setTimeout(() => {
-                secondfoldfAnime.play();
-              }, 500);
-          }
-          else{
-              setTimeout(() => {
-                secondfoldfAnime.stop();
-              }, 500);
-          }
-      }
-  }
-});
-$(window).on('resize scroll', function() {
-  if($('.third-fold').length){
-      if ($(window).width() > 720) {
-          if ($('.third-fold').isInViewport()) {
-              setTimeout(() => {
-                thirdfoldfAnime.play();
-              }, 500);
-          }
-          else{
-              setTimeout(() => {
-                thirdfoldfAnime.stop();
-              }, 500);
-          }
-      }
-  }
-});
-$(window).on('resize scroll', function() {
-  if($('.fourth-fold').length){
-      if ($(window).width() > 720) {
-          if ($('.fourth-fold').isInViewport()) {
-              setTimeout(() => {
-                fourthfoldfAnime.play();
-              }, 500);
-          }
-          else{
-              setTimeout(() => {
-                fourthfoldfAnime.stop();
-              }, 500);
-          }
-      }
-  }
-});
-$(window).on('resize scroll', function() {
-  if($('.fifth-fold').length){
-      if ($(window).width() > 720) {
-          if ($('.fifth-fold').isInViewport()) {
-              setTimeout(() => {
-                lastfoldfAnime.play();
-              }, 500);
-          }
-          else{
-              setTimeout(() => {
-                lastfoldfAnime.stop();
-              }, 500);
-          }
-      }
-  }
-});
-$(window).on('resize scroll', function() {
-  if($('.first-fold').length){
-      if ($(window).width() > 720) {
-          if ($('.first-fold').isInViewport()) {
-              setTimeout(() => {
-                firstfoldfAnimembl.play();
-              }, 500);
-          }
-          else{
-              setTimeout(() => {
-                firstfoldfAnimembl.stop();
-              }, 500);
-          }
-      }
-  }
-});
-$(window).on('resize scroll', function() {
-  if($('.second-fold').length){
-      if ($(window).width() > 720) {
-          if ($('.second-fold').isInViewport()) {
-              setTimeout(() => {
-                secondfoldfAnimembl.play();
-              }, 500);
-          }
-          else{
-              setTimeout(() => {
-                secondfoldfAnimembl.stop();
-              }, 500);
-          }
-      }
-  }
-});
-$(window).on('resize scroll', function() {
-  if($('.third-fold').length){
-      if ($(window).width() > 720) {
-          if ($('.third-fold').isInViewport()) {
-              setTimeout(() => {
-                thirdfoldfAnimembl.play();
-              }, 500);
-          }
-          else{
-              setTimeout(() => {
-                thirdfoldfAnimembl.stop();
-              }, 500);
-          }
-      }
-  }
-});
-$(window).on('resize scroll', function() {
-  if($('.fourth-fold').length){
-      if ($(window).width() > 720) {
-          if ($('.fourth-fold').isInViewport()) {
-              setTimeout(() => {
-                fourthfoldfAnimembl.play();
-              }, 500);
-          }
-          else{
-              setTimeout(() => {
-                fourthfoldfAnimembl.stop();
-              }, 500);
-          }
-      }
-  }
-});
-$(window).on('resize scroll', function() {
-  if($('.fifth-fold').length){
-      if ($(window).width() > 720) {
-          if ($('.fifth-fold').isInViewport()) {
-              setTimeout(() => {
-                lastfoldfAnimembl.play();
-              }, 500);
-          }
-          else{
-              setTimeout(() => {
-                lastfoldfAnimembl.stop();
-              }, 500);
-          }
-      }
-  }
-});
+
+// sticky book page cta js ends
 
 
 //=============================================Json Animations========================================//
