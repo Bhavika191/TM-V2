@@ -24,7 +24,7 @@
                 h1{@include font64;font-weight: $fontW500;line-height: 115%;color: #000;margin-bottom: 48px;}
                 p{@include font20;font-weight: $fontW400;line-height: 150%;}
             }
-            .prizeDiv{background-color: #fff;padding: 42px 75px;display: flex;align-items: flex-end;justify-content: space-between;position: fixed;bottom: 0;z-index: 9;width: 856px;
+            .prizeDiv{background-color: #fff;padding: 42px 75px;display: flex;align-items: flex-end;justify-content: space-between;position: fixed;bottom: 0;z-index: 8;width: 856px;
                 .prizeInfo{margin-right: 40px;
                     h4{@include font16;font-weight: $fontW600;line-height: 162%;text-transform: uppercase;color: #000;margin-bottom: 16px}
                     h3{@include font48;font-weight: $fontW500;line-height: 100%;color: #000;}
