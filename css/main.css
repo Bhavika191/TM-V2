@@ -8544,6 +8544,7 @@ body.opentwo {
     font-weight: 700;
     line-height: 12px;
     letter-spacing: 0.6px;
+    width: 100%;
   }
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
     margin-bottom: 20px;
@@ -8551,6 +8552,7 @@ body.opentwo {
     font-weight: 500;
     line-height: 50px;
     letter-spacing: -1.2px;
+    width: 100%;
   }
   .casedetailsmainSec .about-sec .aboutcontent .about-content {
     font-size: 14px;
@@ -12433,7 +12435,7 @@ body.opentwo {
   padding-top: 170px;
   padding-left: 60px;
   padding-right: 60px;
-  background: linear-gradient(176deg, #F00 0%, #FAFF00 16.05%, #05FB00 32.1%, #00FFE0 51.25%, #0029FF 68.33%, #FF00D6 84.38%, #F00 99.39%);
+  background: conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.1249982119deg, #05FB00 116.2499964237deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474deg, #F00 360deg);
   background-size: 400% 400%;
   -webkit-animation: ani 15s ease infinite;
   -moz-animation: ani 15s ease infinite;
@@ -13399,12 +13401,11 @@ body.opentwo {
   left: 0;
   top: 0;
   right: 0;
-  width: 100%;
 }
-.aboutus-researchSec .researchsec-wrapper .img-div .slick-list .slick-track .img-slider img {
+.aboutus-researchSec .researchsec-wrapper .img-div img {
+  width: 100% !important;
+  height: 100% !important;
   object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots {
   bottom: 80px;
