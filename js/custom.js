@@ -71,10 +71,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 $('.shareBlogs').click(function () {
-  $('.sharePopup').toggleClass('sharePopupnew');
+  $('.sharePopup').addClass('sharePopupnew');
+  $('.single-post').addClass('bodyOverflow');
 });
 $('.closePopupshare').click(function () {
   $('.sharePopup').removeClass('sharePopupnew');
+  $('.single-post').removeClass('bodyOverflow');
 });
 
 $.fn.isInViewport = function () {
@@ -513,10 +515,10 @@ $(document).ready(function () {
       $('.lines').removeClass('linesNew');
       $('.middleCircle').removeClass('middleCirclenew');
       $('.middleCircle').removeClass('box_Two');
-    }, 6000);
+    }, 9000);
     setTimeout(function () {
       $('.counterText').removeClass('newcounterText');
-    }, 6000);
+    }, 9000);
 
     setTimeout(function () {
       $('.counterText span a').html(function (i, val) {

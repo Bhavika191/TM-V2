@@ -495,7 +495,10 @@ img {max-width: 100%;}
     @media screen and (max-width:1400px) {
         padding: 10px 40px;
         line-height: 16px;
-        &:hover svg{right: -1.7rem;}
+        &:hover {
+            span{transform: translate3d(-0.8rem, 0, 0);}
+            svg{right: -1.5rem;}
+        }
     }
     @media screen and (max-width:1200px) {
         padding: 10px 36px;
@@ -526,7 +529,10 @@ img {max-width: 100%;}
     @media screen and (max-width:1400px) {
         padding: 10px 40px;
         line-height: 16px;
-        &:hover svg{right: -1.7rem;}
+        &:hover {
+            span{transform: translate3d(-0.8rem, 0, 0);}
+            svg{right: -1.5rem;}
+        }
     }
     @media screen and (max-width:1200px) {
         padding: 10px 36px;
