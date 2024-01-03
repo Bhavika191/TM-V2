@@ -566,40 +566,40 @@ var firstfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('first-fold-anime'),
   path: '/projects/tm-v2/js/json/first-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: false,
-  autoplay: true,
+  loop: true,
+  autoplay: false,
 });
 
 var secondfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('second-fold-anime'),
   path: '/projects/tm-v2/js/json/second-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: false,
-  autoplay: true,
+  loop: true,
+  autoplay: false,
 });
 
 var thirdfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('third-fold-anime'),
   path: '/projects/tm-v2/js/json/third-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: false,
-  autoplay: true,
+  loop: true,
+  autoplay: false,
 });
 
 var fourthfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('fourth-fold-anime'),
   path: '/projects/tm-v2/js/json/fourth-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: false,
-  autoplay: true,
+  loop: true,
+  autoplay: false,
 });
 
 var lastfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('fifth-fold-anime'),
   path: '/projects/tm-v2/js/json/fifth-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: false,
-  autoplay: true,
+  loop: true,
+  autoplay: false,
 });
 
 //Mobile animations
@@ -607,50 +607,218 @@ var firstfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('first-fold-anime-mbl'),
   path: '/projects/tm-v2/js/json/first-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: false,
-  autoplay: true,
+  loop: true,
+  autoplay: false,
 });
 
 var secondfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('second-fold-anime-mbl'),
   path: '/projects/tm-v2/js/json/second-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: false,
-  autoplay: true,
+  loop: true,
+  autoplay: false,
 });
 
 var thirdfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('third-fold-anime-mbl'),
   path: '/projects/tm-v2/js/json/third-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: false,
-  autoplay: true,
+  loop: true,
+  autoplay: false,
 });
 
 var fourthfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('fourth-fold-anime-mbl'),
   path: '/projects/tm-v2/js/json/fourth-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: false,
-  autoplay: true,
+  loop: true,
+  autoplay: false,
 });
 
 var lastfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('fifth-fold-anime-mbl'),
   path:  '/projects/tm-v2/js/json/fifth-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: false,
-  autoplay: true,
+  loop: true,
+  autoplay: false,
 });
-
 
 var homeAnime = bodymovin.loadAnimation({
   container: document.getElementById('homeAnime'),
-  path: site_url + '/wp-content/themes/theminimalist/js/json/hp-animation.json', // Required
+  path: '/projects/tm-v2/js/json/hp-animation.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: false,
-  autoplay: true,
+  loop: true,
+  autoplay: false,
 });
+
+$.fn.isInViewport = function () {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+$(window).on('resize scroll', function() {
+  if($('.first-fold').length){
+      if ($(window).width() > 720) {
+          if ($('.first-fold').isInViewport()) {
+              setTimeout(() => {
+                firstfoldfAnime.play();
+              }, 500);
+          }
+          else{
+              setTimeout(() => {
+                firstfoldfAnime.stop();
+              }, 500);
+          }
+      }
+  }
+});
+$(window).on('resize scroll', function() {
+  if($('.second-fold').length){
+      if ($(window).width() > 720) {
+          if ($('.second-fold').isInViewport()) {
+              setTimeout(() => {
+                secondfoldfAnime.play();
+              }, 500);
+          }
+          else{
+              setTimeout(() => {
+                secondfoldfAnime.stop();
+              }, 500);
+          }
+      }
+  }
+});
+$(window).on('resize scroll', function() {
+  if($('.third-fold').length){
+      if ($(window).width() > 720) {
+          if ($('.third-fold').isInViewport()) {
+              setTimeout(() => {
+                thirdfoldfAnime.play();
+              }, 500);
+          }
+          else{
+              setTimeout(() => {
+                thirdfoldfAnime.stop();
+              }, 500);
+          }
+      }
+  }
+});
+$(window).on('resize scroll', function() {
+  if($('.fourth-fold').length){
+      if ($(window).width() > 720) {
+          if ($('.fourth-fold').isInViewport()) {
+              setTimeout(() => {
+                fourthfoldfAnime.play();
+              }, 500);
+          }
+          else{
+              setTimeout(() => {
+                fourthfoldfAnime.stop();
+              }, 500);
+          }
+      }
+  }
+});
+$(window).on('resize scroll', function() {
+  if($('.fifth-fold').length){
+      if ($(window).width() > 720) {
+          if ($('.fifth-fold').isInViewport()) {
+              setTimeout(() => {
+                lastfoldfAnime.play();
+              }, 500);
+          }
+          else{
+              setTimeout(() => {
+                lastfoldfAnime.stop();
+              }, 500);
+          }
+      }
+  }
+});
+$(window).on('resize scroll', function() {
+  if($('.first-fold').length){
+      if ($(window).width() > 720) {
+          if ($('.first-fold').isInViewport()) {
+              setTimeout(() => {
+                firstfoldfAnimembl.play();
+              }, 500);
+          }
+          else{
+              setTimeout(() => {
+                firstfoldfAnimembl.stop();
+              }, 500);
+          }
+      }
+  }
+});
+$(window).on('resize scroll', function() {
+  if($('.second-fold').length){
+      if ($(window).width() > 720) {
+          if ($('.second-fold').isInViewport()) {
+              setTimeout(() => {
+                secondfoldfAnimembl.play();
+              }, 500);
+          }
+          else{
+              setTimeout(() => {
+                secondfoldfAnimembl.stop();
+              }, 500);
+          }
+      }
+  }
+});
+$(window).on('resize scroll', function() {
+  if($('.third-fold').length){
+      if ($(window).width() > 720) {
+          if ($('.third-fold').isInViewport()) {
+              setTimeout(() => {
+                thirdfoldfAnimembl.play();
+              }, 500);
+          }
+          else{
+              setTimeout(() => {
+                thirdfoldfAnimembl.stop();
+              }, 500);
+          }
+      }
+  }
+});
+$(window).on('resize scroll', function() {
+  if($('.fourth-fold').length){
+      if ($(window).width() > 720) {
+          if ($('.fourth-fold').isInViewport()) {
+              setTimeout(() => {
+                fourthfoldfAnimembl.play();
+              }, 500);
+          }
+          else{
+              setTimeout(() => {
+                fourthfoldfAnimembl.stop();
+              }, 500);
+          }
+      }
+  }
+});
+$(window).on('resize scroll', function() {
+  if($('.fifth-fold').length){
+      if ($(window).width() > 720) {
+          if ($('.fifth-fold').isInViewport()) {
+              setTimeout(() => {
+                lastfoldfAnimembl.play();
+              }, 500);
+          }
+          else{
+              setTimeout(() => {
+                lastfoldfAnimembl.stop();
+              }, 500);
+          }
+      }
+  }
+});
+
 
 //=============================================Json Animations========================================//
 
