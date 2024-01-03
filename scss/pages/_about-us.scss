@@ -281,15 +281,22 @@
         }
     }
 }
-.aboutus-researchSec{margin-bottom:350px;@include wrapper;
+.aboutus-researchSec{margin-bottom:250px;
     .heading-content{margin-bottom: 140px;padding:0px 150px;
         .main-heading{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 74px;letter-spacing: -1.92px;margin-bottom: 34px;}
         .subheading{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #6A6A6A);line-height: 34px;}
     }
-    .researchsec-wrapper{position: relative;margin-bottom:250px;
+    .researchsec-wrapper{position: relative;margin-bottom:150px;@include wrapper;padding:150px 150px 0px 150px;display:flex;justify-content:end;
+        &:nth-child(odd){justify-content: start;}
         &:nth-child(even){.img-div{.slick-dots{left: 150px;}}}
-        .img-div{width: 100%;overflow: hidden;transition: 0.7s all ease-out;
-            img{width: 100%;}
+        .img-div{height:calc(100% - 150px);position:absolute;left:0;top:0;right:0;width:100%;
+            .slick-list{
+                .slick-track{
+                    .img-slider{
+                        img{object-fit: cover;width: 100%;height: 100%;}
+                    }
+                }
+            }
             .slick-dots{bottom: 80px;text-align: center;width: 20px;transform: rotate(270deg);right: 150px;
                 li{width: 12px;height: 12px;margin: 0px 3px;display: block;margin-bottom: 20px;
                     button{
@@ -303,8 +310,7 @@
                 }
             }
         }
-        &:nth-child(odd){.research-card-type{left:170px;}}
-        .research-card-type{position: absolute;background: var(--primary-white, #FFF);padding: 80px;width:580px;min-height:722px;bottom:-10%;right:170px;
+        .research-card-type{position: relative;background: var(--primary-white, #FFF);padding: 80px;width:580px;min-height:722px;z-index:2;
             .research-card-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;}
             .research-card-mainheading{margin-bottom: 48px;color: var(--primary-black, #000);font-family: $fontpoppins;font-size: 30px;font-weight: $fontW500;line-height: 40px;letter-spacing: -0.9px;}
             .research-card-content{color: var(--body-copy, #6A6A6A);font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 30px;letter-spacing: 0.6px;}

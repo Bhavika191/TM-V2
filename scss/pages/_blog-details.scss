@@ -1,10 +1,9 @@
 .blogdetails-bannerSec {
-    @include wrapper;
     .blogdetails-wrapper {@include wrapperTwo;margin: 190px 0px 160px 0px;width: 75%;
         h3 {margin-bottom: 48px;color: #000;font-family: $fontpoppins;@include font20;font-weight: $fontW700;line-height: 30px;letter-spacing: 1px;text-transform: uppercase;}
         h1 {margin-bottom: 48px;color: #000;font-family: $fontpoppins;@include font96;font-weight: $fontW500;line-height: 106px;letter-spacing: -2.88px;}
     }
-    .blogdetails-imagesec {
+    .blogdetails-imagesec {@include wrapper;
         width: 100%;
         margin-bottom: 120px;
     }

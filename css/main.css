@@ -8801,7 +8801,7 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     margin-bottom: 45px;
-    line-height: 50px;
+    line-height: 36px;
     letter-spacing: -1.2px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
@@ -8838,7 +8838,7 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     margin-bottom: 40px;
-    line-height: 46px;
+    line-height: 32px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
     padding-left: 24px;
@@ -8874,7 +8874,7 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     margin-bottom: 36px;
-    line-height: 40px;
+    line-height: 30px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
     padding-left: 24px;
@@ -8910,7 +8910,7 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     margin-bottom: 30px;
-    line-height: 36px;
+    line-height: 28px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
     padding-left: 22px;
@@ -8947,7 +8947,7 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     margin-bottom: 25px;
-    line-height: 32px;
+    line-height: 24px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
     padding-left: 20px;
@@ -9065,40 +9065,30 @@ body.opentwo {
   color: #000;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 14px;
   letter-spacing: 0.7px;
   text-transform: uppercase;
 }
-@media screen and (max-width: 1600px) {
-  .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a {
-    font-size: 12px;
-  }
-}
 .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a:not(:last-child) {
-  margin-right: 48px;
+  margin-right: 24px;
 }
 .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a.current {
   font-weight: 700;
   border: 1px solid #000;
   border-radius: 6px;
-  padding: 24px 48px;
+  padding: 14px 24px;
 }
 @media all and (max-width: 1600px) {
   .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper {
     padding: 22px 0px;
   }
   .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 22px;
   }
   .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a.current {
-    padding: 22px 44px;
+    padding: 12px 22px;
   }
 }
 @media all and (max-width: 1400px) {
@@ -9106,26 +9096,18 @@ body.opentwo {
     padding: 20px 0px;
   }
   .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a:not(:last-child) {
-    margin-right: 36px;
+    margin-right: 20px;
   }
   .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a.current {
-    padding: 20px 40px;
+    padding: 10px 20px;
   }
 }
 @media all and (max-width: 1200px) {
   .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper {
     padding: 18px 0px;
   }
-  .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a:not(:last-child) {
-    margin-right: 30px;
-  }
   .casedetailsmainSec .casestudy-container .casestudy-filter .casestudyfilter-wrapper a.current {
-    padding: 18px 36px;
-  }
-}
-@media all and (max-width: 1024px) {
-  .casedetailsmainSec .casestudy-container .casestudyfilter-wrapper a.current {
-    padding: 16px 32px;
+    padding: 9px 18px;
   }
 }
 @media all and (max-width: 780px) {
@@ -9148,24 +9130,41 @@ body.opentwo {
 }
 @media all and (max-width: 780px) {
   .casedetailsmainSec .casestudy-container .casestudyfilter-wrapper a {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     line-height: 14px;
     letter-spacing: 0.6px;
   }
   .casedetailsmainSec .casestudy-container .casestudyfilter-wrapper a.current {
-    padding: 20px 25px;
+    padding: 8px 16px;
   }
 }
 .casedetailsmainSec .researchSec {
-  margin-bottom: 350px;
+  margin-bottom: 250px;
   overflow: hidden;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+@media screen and (max-width: 1400px) {
+  .casedetailsmainSec .researchSec {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .casedetailsmainSec .researchSec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .casedetailsmainSec .researchSec .researchsec-wrapper {
   position: relative;
-  margin-bottom: 250px;
+  margin-bottom: 150px;
   padding-left: 60px;
   padding-right: 60px;
+  padding: 150px 150px 0px 150px;
+  display: flex;
+  justify-content: end;
 }
 @media screen and (max-width: 1400px) {
   .casedetailsmainSec .researchSec .researchsec-wrapper {
@@ -9179,24 +9178,28 @@ body.opentwo {
     padding-right: 20px;
   }
 }
+.casedetailsmainSec .researchSec .researchsec-wrapper:nth-child(even) {
+  justify-content: start;
+}
 .casedetailsmainSec .researchSec .researchsec-wrapper .img-div {
-  width: 100%;
-  overflow: hidden;
+  height: calc(100% - 150px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 .casedetailsmainSec .researchSec .researchsec-wrapper .img-div img {
   width: 100%;
-}
-.casedetailsmainSec .researchSec .researchsec-wrapper:nth-child(even) .research-card-type {
-  left: 170px;
+  height: 100%;
+  object-fit: cover;
 }
 .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
-  position: absolute;
+  position: relative;
   background: var(--primary-white, #FFF);
   padding: 80px;
   width: 580px;
   min-height: 722px;
-  bottom: -10%;
-  right: 170px;
+  z-index: 2;
 }
 .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
   margin-bottom: 30px;
@@ -9301,10 +9304,14 @@ body.opentwo {
 }
 @media all and (max-width: 1800px) {
   .casedetailsmainSec .researchSec {
-    margin-bottom: 320px;
+    margin-bottom: 220px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper {
-    margin-bottom: 220px;
+    margin-bottom: 130px;
+    padding: 130px 130px 0px 130px;
+  }
+  .casedetailsmainSec .researchSec .researchsec-wrapper .img-div {
+    height: calc(100% - 130px);
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     padding: 75px;
@@ -9323,19 +9330,19 @@ body.opentwo {
 }
 @media all and (max-width: 1600px) {
   .casedetailsmainSec .researchSec {
-    margin-bottom: 300px;
-  }
-  .casedetailsmainSec .researchSec .researchsec-wrapper {
     margin-bottom: 200px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper:nth-child(even) .research-card-type {
-    left: 160px;
+  .casedetailsmainSec .researchSec .researchsec-wrapper {
+    margin-bottom: 120px;
+    padding: 120px 120px 0px 120px;
+  }
+  .casedetailsmainSec .researchSec .researchsec-wrapper .img-div {
+    height: calc(100% - 120px);
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     padding: 65px;
     width: 550px;
     min-height: 700px;
-    right: 160px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 28px;
@@ -9357,18 +9364,18 @@ body.opentwo {
 }
 @media all and (max-width: 1400px) {
   .casedetailsmainSec .researchSec {
-    margin-bottom: 280px;
-  }
-  .casedetailsmainSec .researchSec .researchsec-wrapper {
     margin-bottom: 180px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper:nth-child(even) .research-card-type {
-    left: 150px;
+  .casedetailsmainSec .researchSec .researchsec-wrapper {
+    margin-bottom: 100px;
+    padding: 100px 100px 0px 100px;
+  }
+  .casedetailsmainSec .researchSec .researchsec-wrapper .img-div {
+    height: calc(100% - 100px);
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     padding: 55px;
     min-height: 600px;
-    right: 150px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 24px;
@@ -9390,19 +9397,19 @@ body.opentwo {
 }
 @media all and (max-width: 1200px) {
   .casedetailsmainSec .researchSec {
-    margin-bottom: 250px;
+    margin-bottom: 150px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper {
-    margin-bottom: 160px;
+    margin-bottom: 80px;
+    padding: 90px 90px 0px 90px;
   }
-  .casedetailsmainSec .researchSec .researchsec-wrapper:nth-child(even) .research-card-type {
-    left: 120px;
+  .casedetailsmainSec .researchSec .researchsec-wrapper .img-div {
+    height: calc(100% - 90px);
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     padding: 50px;
     width: 500px;
     min-height: 500px;
-    right: 120px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 22px;
@@ -9423,14 +9430,35 @@ body.opentwo {
 }
 @media all and (max-width: 1024px) {
   .casedetailsmainSec .researchSec {
-    margin-bottom: 180px;
+    padding: 0px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+    flex-direction: column;
+    padding: 0px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1400px) {
+  .casedetailsmainSec .researchSec .researchsec-wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 720px) {
+  .casedetailsmainSec .researchSec .researchsec-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .img-div {
+    height: auto;
+    position: relative;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
-    position: static;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 60px;
@@ -9474,36 +9502,15 @@ body.opentwo {
   }
 }
 @media all and (max-width: 821px) {
-  .casedetailsmainSec .researchSec {
-    margin-bottom: 150px;
-  }
   .casedetailsmainSec .researchSec .researchsec-wrapper {
-    position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 54px;
     padding: 0px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
-    position: static;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 56px;
-    padding-top: 40px;
+    padding-bottom: 55px;
+    padding-top: 36px;
     width: auto;
   }
-}
-@media screen and (max-width: 821px) and (max-width: 1400px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 821px) and (max-width: 720px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media all and (max-width: 821px) {
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 10px;
     font-size: 12px;
@@ -9642,6 +9649,12 @@ body.opentwo {
 }
 .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:nth-child(even) {
   flex-direction: row-reverse;
+}
+.casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:nth-child(odd) .leftcontent-rightimage-image {
+  padding-left: 24px;
+}
+.casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:nth-child(even) .leftcontent-rightimage-image {
+  padding-right: 24px;
 }
 .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
   width: 50%;
@@ -10364,6 +10377,22 @@ body.opentwo {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
     margin-bottom: 22px;
   }
+  .casedetailsmainSec .statsSec .optionalSec {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1400px) {
+  .casedetailsmainSec .statsSec .optionalSec {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 720px) {
+  .casedetailsmainSec .statsSec .optionalSec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 @media all and (max-width: 680px) {
   .casedetailsmainSec .statsSec {
@@ -10485,9 +10514,6 @@ body.opentwo {
     font-size: 14px;
   }
 }
-.casedetailsmainSec .impactSec .results-impact-temp .impact-subheading span {
-  color: #FF0D47;
-}
 .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
@@ -10530,7 +10556,6 @@ body.opentwo {
 .casedetailsmainSec .impactSec .impact-img div {
   width: 100%;
   overflow: hidden;
-  margin-bottom: 140px;
 }
 .casedetailsmainSec .impactSec .impact-img div img {
   width: 100%;
@@ -10608,6 +10633,22 @@ body.opentwo {
   }
   .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
     line-height: 32px;
+  }
+  .casedetailsmainSec .impactSec .impact-img {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 1400px) {
+  .casedetailsmainSec .impactSec .impact-img {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 720px) {
+  .casedetailsmainSec .impactSec .impact-img {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media all and (max-width: 680px) {
@@ -10690,9 +10731,6 @@ body.opentwo {
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
     font-size: 14px;
   }
-}
-.casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading span {
-  color: var(--Primary-Red, #FF0D47);
 }
 .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
   margin-bottom: 48px;
@@ -10803,7 +10841,10 @@ body.opentwo {
     margin-bottom: 200px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper {
-    display: block;
+    flex-direction: column;
+  }
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper:nth-child(even) {
+    flex-direction: column;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text {
     width: 100%;
@@ -10827,15 +10868,22 @@ body.opentwo {
     padding: 0px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper {
-    display: block;
+    flex-direction: column;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper:not(:last-child) {
     padding-bottom: 40px;
+  }
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper:nth-child(even) .right-img {
+    padding-left: 24px;
+  }
+  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper:nth-child(odd) .right-img {
+    padding-right: 24px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text {
     width: 100%;
     padding-left: 60px;
     padding-right: 60px;
+    order: 2;
   }
 }
 @media screen and (max-width: 780px) and (max-width: 1400px) {
@@ -10859,7 +10907,7 @@ body.opentwo {
     letter-spacing: 0.6px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
@@ -10867,7 +10915,8 @@ body.opentwo {
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .right-img {
     width: 100%;
-    margin-bottom: 0px;
+    margin-bottom: 40px;
+    order: 1;
   }
 }
 .casedetailsmainSec .casestudySec {
@@ -11291,22 +11340,6 @@ body.opentwo {
   background-color: #000;
 }
 
-.blogdetails-bannerSec {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-@media screen and (max-width: 1400px) {
-  .blogdetails-bannerSec {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .blogdetails-bannerSec {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
 .blogdetails-bannerSec .blogdetails-wrapper {
   padding-left: 210px;
   padding-right: 210px;
@@ -11398,8 +11431,22 @@ body.opentwo {
   }
 }
 .blogdetails-bannerSec .blogdetails-imagesec {
+  padding-left: 60px;
+  padding-right: 60px;
   width: 100%;
   margin-bottom: 120px;
+}
+@media screen and (max-width: 1400px) {
+  .blogdetails-bannerSec .blogdetails-imagesec {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .blogdetails-bannerSec .blogdetails-imagesec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 @media all and (max-width: 1800px) {
   .blogdetails-bannerSec .blogdetails-wrapper {
@@ -13285,21 +13332,7 @@ body.opentwo {
 }
 
 .aboutus-researchSec {
-  margin-bottom: 350px;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-@media screen and (max-width: 1400px) {
-  .aboutus-researchSec {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .aboutus-researchSec {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  margin-bottom: 250px;
 }
 .aboutus-researchSec .heading-content {
   margin-bottom: 140px;
@@ -13353,18 +13386,43 @@ body.opentwo {
 }
 .aboutus-researchSec .researchsec-wrapper {
   position: relative;
-  margin-bottom: 250px;
+  margin-bottom: 150px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding: 150px 150px 0px 150px;
+  display: flex;
+  justify-content: end;
+}
+@media screen and (max-width: 1400px) {
+  .aboutus-researchSec .researchsec-wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .aboutus-researchSec .researchsec-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.aboutus-researchSec .researchsec-wrapper:nth-child(odd) {
+  justify-content: start;
 }
 .aboutus-researchSec .researchsec-wrapper:nth-child(even) .img-div .slick-dots {
   left: 150px;
 }
 .aboutus-researchSec .researchsec-wrapper .img-div {
+  height: calc(100% - 150px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
   width: 100%;
-  overflow: hidden;
-  transition: 0.7s all ease-out;
 }
-.aboutus-researchSec .researchsec-wrapper .img-div img {
+.aboutus-researchSec .researchsec-wrapper .img-div .slick-list .slick-track .img-slider img {
+  object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 .aboutus-researchSec .researchsec-wrapper .img-div .slick-dots {
   bottom: 80px;
@@ -13398,17 +13456,13 @@ body.opentwo {
   border-radius: 10px;
   transition: 0.9s all ease-in-out;
 }
-.aboutus-researchSec .researchsec-wrapper:nth-child(odd) .research-card-type {
-  left: 170px;
-}
 .aboutus-researchSec .researchsec-wrapper .research-card-type {
-  position: absolute;
+  position: relative;
   background: var(--primary-white, #FFF);
   padding: 80px;
   width: 580px;
   min-height: 722px;
-  bottom: -10%;
-  right: 170px;
+  z-index: 2;
 }
 .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
   margin-bottom: 30px;
