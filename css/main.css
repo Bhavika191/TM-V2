@@ -327,8 +327,11 @@ img {
     padding: 10px 40px;
     line-height: 16px;
   }
+  .ctaWhite:hover span {
+    transform: translate3d(-0.8rem, 0, 0);
+  }
   .ctaWhite:hover svg {
-    right: -1.7rem;
+    right: -1.5rem;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -424,8 +427,11 @@ img {
     padding: 10px 40px;
     line-height: 16px;
   }
+  .ctaBlack:hover span {
+    transform: translate3d(-0.8rem, 0, 0);
+  }
   .ctaBlack:hover svg {
-    right: -1.7rem;
+    right: -1.5rem;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1080,8 +1086,8 @@ footer .footerWrapper .footerData .footerGame .newcounterText {
   opacity: 1;
 }
 footer .footerWrapper .footerData .footerGame #box .fanRotatediv svg.rotate {
-  transition: transform 5s cubic-bezier(0.9, 0.2, 0.6, 1);
-  transform: rotate(2160deg);
+  transition: transform 8s cubic-bezier(0.9, 0.2, 0.6, 1);
+  transform: rotate(8640deg);
   border-radius: 380px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.1249982119deg, #05FB00 116.2499964237deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474deg, #F00 360deg);
 }
@@ -1542,19 +1548,19 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     width: 100%;
   }
   footer .footerWrapper .footerData .footerGame #box .fanRotatediv svg.rotate {
-    border-radius: 270px;
+    border-radius: 240px;
   }
   footer .footerWrapper .footerData .footerGame #box {
-    width: 270px;
-    height: 270px;
+    width: 240px;
+    height: 240px;
   }
   footer .footerWrapper .footerData .footerGame #box .fanRotatediv {
-    width: 270px;
-    height: 270px;
+    width: 240px;
+    height: 240px;
   }
   footer .footerWrapper .footerData .footerGame #box .fanRotatediv svg {
-    width: 270px;
-    height: 270px;
+    width: 240px;
+    height: 240px;
   }
   footer .footerWrapper .footerData .footerSubscribe p {
     margin: 8px 0px 16px;
@@ -2956,12 +2962,15 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv {
     margin-top: 120px;
   }
+  .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv:first-child .imageDiv {
+    padding: 40px 0px;
+  }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .imageDiv {
     width: 40%;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .storyDescdiv {
     width: 60%;
-    padding: 0px 120px;
+    padding: 40px 120px;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .storyDescdiv h3 {
     line-height: 40px;
@@ -2989,7 +2998,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .storyDescdiv {
     width: 63%;
-    padding: 0px 100px;
+    padding: 40px 100px;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .storyDescdiv h3 {
     line-height: 37px;
@@ -3016,12 +3025,15 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv {
     margin-top: 70px;
   }
+  .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv:first-child .imageDiv {
+    padding: 30px 0px;
+  }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .imageDiv {
     width: 40%;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .storyDescdiv {
     width: 60%;
-    padding: 0px 70px;
+    padding: 30px 70px;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .storyDescdiv h3 {
     line-height: 32px;
@@ -3090,6 +3102,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv:nth-child(even) {
     flex-direction: column;
+  }
+  .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv:first-child .imageDiv {
+    padding: 0px;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .imageDiv {
     width: 100%;
@@ -3723,7 +3738,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   background-size: contain;
   bottom: 0;
   right: 20px;
-  height: 110px;
+  height: 102px;
   width: 156px;
   transition: 0.7s all ease-out;
 }
@@ -4028,6 +4043,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     display: block;
     margin: 32px 0px;
   }
+  .customerhpsection .customerWrapper .customerBoxes .slick-track {
+    display: block !important;
+  }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes {
     padding: 100px 24px;
     width: unset;
@@ -4038,7 +4056,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     width: 90px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes::after {
-    height: 58px;
+    height: 52px;
     width: 80px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes:nth-child(even) {
@@ -5705,6 +5723,9 @@ a.showLess::after {
 .collaborateFormSec .collaborateSec .secHeading {
   width: 45%;
   margin-top: 120px;
+  position: sticky;
+  height: 100%;
+  top: 220px;
 }
 .collaborateFormSec .collaborateSec .secHeading h1 {
   font-size: 96px;
@@ -5758,6 +5779,9 @@ a.showLess::after {
   width: 40%;
   padding: 60px;
   background: #ffffff;
+}
+.collaborateFormSec .collaborateSec .collaborateForm form br {
+  display: none;
 }
 .collaborateFormSec .collaborateSec .collaborateForm form label {
   display: block;
@@ -5823,6 +5847,7 @@ a.showLess::after {
   border-radius: 6px;
   border: 1px solid #FF0D47;
   background: #FF0D47;
+  cursor: pointer;
 }
 @media screen and (max-width: 1600px) {
   .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
@@ -5835,10 +5860,15 @@ a.showLess::after {
   }
 }
 .collaborateFormSec .collaborateSec .collaborateForm form .form-group {
+  margin-bottom: 60px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 60px;
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .form-group p {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .collaborateFormSec .collaborateSec .collaborateForm form .form-group label {
   width: 94%;
@@ -5900,6 +5930,7 @@ a.showLess::after {
   }
   .collaborateFormSec .collaborateSec .secHeading {
     margin-top: 100px;
+    top: 200px;
   }
   .collaborateFormSec .collaborateSec .secHeading h1 {
     line-height: 86px;
@@ -5942,6 +5973,7 @@ a.showLess::after {
   .collaborateFormSec .collaborateSec .secHeading {
     margin-top: 80px;
     width: 40%;
+    top: 180px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm {
     padding: 40px;
@@ -6071,6 +6103,8 @@ a.showLess::after {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 40px;
+    position: static;
+    height: auto;
   }
   .collaborateFormSec .collaborateSec .secHeading h1 {
     line-height: 50px;
@@ -11070,6 +11104,11 @@ body.opentwo {
   }
 }
 
+.page-template-thanks {
+  background: conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.1249982119deg, #05FB00 116.2499964237deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474deg, #F00 360deg);
+  position: relative;
+}
+
 .thankyoupg-blur {
   position: absolute;
   height: 100%;
@@ -11401,6 +11440,10 @@ body.opentwo {
   color: white;
   cursor: pointer;
   background-color: #000;
+}
+
+.bodyOverflow {
+  overflow: hidden;
 }
 
 .blogdetails-bannerSec .blogdetails-wrapper {
@@ -11860,20 +11903,41 @@ body.opentwo {
   }
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup {
-  display: none;
-  position: absolute;
-  top: -350px;
+  position: fixed;
+  top: 0 !important;
   right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.7s all ease-in-out;
+  background: rgba(0, 0, 0, 0.54);
+  backdrop-filter: blur(6px);
+  z-index: 12;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .innerPopup {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 40%;
+  z-index: 10;
   border-radius: 12px;
   background: #FFF;
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.06);
-  overflow: hidden;
-  width: max-content;
-  transition: 0.7s all ease-in-out;
   padding: 24px;
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup.sharePopupnew {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .secHeading {
   display: flex;
@@ -11987,20 +12051,52 @@ body.opentwo {
   border-radius: 6px;
   border: 1px solid #000;
   background: #FFF;
-  padding: 3px 3px 3px 0px;
-  display: inline-block;
+  padding: 3px 3px 3px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   position: relative;
+  background: url("../images/share-copy-linkicon.svg") no-repeat left;
+  background-position: 12px;
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup::before {
   content: "";
   position: absolute;
   width: 1px;
-  height: 16px;
+  height: 50%;
   background: #F1F1F1;
   top: 50%;
   transform: translateY(-50%);
-  left: 42px;
+  left: 38px;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup button {
+  background-color: #000;
+  color: #fff;
+  padding: 14px 24px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.7px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1600px) {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup button {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup button {
+    font-size: 12px;
+  }
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup button span {
+  color: #fff;
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup h6 {
+  padding-left: 40px;
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form {
   display: flex;
@@ -12127,7 +12223,13 @@ body.opentwo {
     width: 16px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup::before {
-    left: 38px;
+    left: 36px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup button {
+    padding: 14px 22px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup h6 {
+    padding-left: 35px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=submit] {
     padding: 14px 22px;
@@ -12183,6 +12285,19 @@ body.opentwo {
     height: 14px;
     width: 14px;
   }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup {
+    padding: 3px 3px 3px 10px;
+    background-position: 10px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup::before {
+    left: 34px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup button {
+    padding: 12px 20px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup h6 {
+    padding-left: 32px;
+  }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup::before {
     left: 32px;
   }
@@ -12231,6 +12346,9 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv a img {
     margin-bottom: 8px;
   }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .innerPopup {
+    width: 60%;
+  }
 }
 @media all and (max-width: 820px) {
   .blogdetails-contentSec .blogdetails-contentContainer {
@@ -12253,7 +12371,7 @@ body.opentwo {
     margin-bottom: 8px;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 768px) {
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
     margin-bottom: 150px;
     padding: 20px 0px;
@@ -12276,6 +12394,10 @@ body.opentwo {
     top: -250px;
     padding: 16px;
   }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .innerPopup {
+    width: 90%;
+    padding: 18px;
+  }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .secHeading {
     padding-bottom: 10px;
   }
@@ -12296,8 +12418,19 @@ body.opentwo {
     height: 14px;
     width: 14px;
   }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup {
+    padding: 3px 3px 3px 8px;
+    background-position: 8px;
+  }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup::before {
     left: 32px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup button {
+    padding: 10px 14px;
+    font-size: 10px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup h6 {
+    font-size: 10px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=submit] {
     padding: 10px 14px;
@@ -14343,6 +14476,10 @@ body.opentwo {
   width: max-content;
   padding: 0px 12px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(88deg, #F00 -75.66%, #FAFF00 -32.31%, #05FB00 11.04%, #00FFE0 62.78%, #0029FF 108.93%, #FF00D6 152.28%, #F00 192.84%);
+  background-size: 400% 400%;
+  -webkit-animation: ani 3s ease infinite;
+  -moz-animation: ani 3s ease infinite;
+  animation: ani 3s ease infinite;
 }
 @media screen and (max-width: 1600px) {
   .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner p {
@@ -14352,6 +14489,39 @@ body.opentwo {
 @media screen and (max-width: 720px) {
   .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner p {
     font-size: 12px;
+  }
+}
+@-webkit-keyframes ani {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@-moz-keyframes ani {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@keyframes ani {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
   }
 }
 .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner p:last-child {

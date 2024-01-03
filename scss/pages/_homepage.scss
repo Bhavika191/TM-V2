@@ -414,8 +414,11 @@
             }
             .storyMaindiv{
                 .mainInfodiv{margin-top: 120px;
+                    &:first-child{
+                        .imageDiv{padding: 40px 0px;}
+                    }
                     .imageDiv{width: 40%;}
-                    .storyDescdiv{width: 60%;padding: 0px 120px;
+                    .storyDescdiv{width: 60%;padding: 40px 120px;
                         h3{line-height: 40px;margin: 25px 0px 40px;}
                         h4{line-height: 1;}
                         p{margin-bottom: 40px;}
@@ -433,7 +436,7 @@
             .storyMaindiv{
                 .mainInfodiv{margin-top: 100px;
                     .imageDiv{width: 37%;}
-                    .storyDescdiv{width: 63%;padding: 0px 100px;
+                    .storyDescdiv{width: 63%;padding: 40px 100px;
                         h3{line-height: 37px;margin: 20px 0px 35px;}
                         h4{letter-spacing: 0.2px;}
                         p{margin-bottom: 35px;}
@@ -451,8 +454,9 @@
             }
             .storyMaindiv{
                 .mainInfodiv{margin-top: 70px;
+                    &:first-child{.imageDiv{padding: 30px 0px;}}
                     .imageDiv{width: 40%;}
-                    .storyDescdiv{width: 60%;padding: 0px 70px;
+                    .storyDescdiv{width: 60%;padding: 30px 70px;
                         h3{line-height: 32px;margin: 15px 0px 25px;}
                         p{margin-bottom: 25px;}
                     }
@@ -500,6 +504,7 @@
             .storyMaindiv{
                 .mainInfodiv{margin-top: 30px;flex-direction: column;
                     &:nth-child(even){flex-direction: column;}
+                    &:first-child{.imageDiv{padding: 0px;}}
                     .imageDiv{width: 100%;}
                     .storyDescdiv{padding: 20px 20px;width: 100%;
                         h3{line-height: 24px;font-size: 18px;}
@@ -704,7 +709,7 @@
         .customerBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;
             .innerBoxes{width: 40%;margin-top: 150px;padding: 190px 70px;background-color: #fff;position: relative;overflow: hidden;transition: 0.7s all ease-out;height: auto;
                 &::before{content: "";position: absolute;background: url(../images/top-quote-img.svg)  no-repeat;background-size: contain;top: 0;left: 20px;height: 110px;width: 156px;transition: 0.7s all ease-out;}
-                &::after{content: "";position: absolute;background: url(../images/btm-quote-img.svg)  no-repeat;background-size: contain;bottom: 0;right: 20px;height: 110px;width: 156px;transition: 0.7s all ease-out;}
+                &::after{content: "";position: absolute;background: url(../images/btm-quote-img.svg)  no-repeat;background-size: contain;bottom: 0;right: 20px;height: 102px;width: 156px;transition: 0.7s all ease-out;}
                 &:nth-child(even){margin-top: -10%;}
                 .descInner{padding-bottom: 170px;transition: 0.7s all ease-out;
                     h3{@include font36; font-weight: $fontW500;line-height: 127%;color: #000;margin-bottom: 34px}
@@ -829,9 +834,10 @@
                 p{line-height: 20px;margin-top: 20px;}
             }
             .customerBoxes{display: block;margin: 32px 0px;
+                .slick-track{display: block !important;}
                 .innerBoxes{padding: 100px 24px;width: unset;margin: 0px 0px 0px 55px;
                     &::before{height: 58px;width: 90px;}
-                    &::after{height: 58px;width: 80px;}
+                    &::after{height: 52px;width: 80px;}
                     &:nth-child(even){margin-top: unset;}
                     .descInner{padding-bottom: 60px;
                         h3{margin-bottom: 20px}

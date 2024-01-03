@@ -15,8 +15,8 @@ footer{@include wrapper;margin-bottom: 70px;position: relative;z-index: 3;
                 }
                 .newcounterText{bottom: 106%;transition: 1.5s all ease-in-out;opacity: 1;}
                 #box .fanRotatediv svg.rotate {
-                    transition: transform 5s cubic-bezier(0.9, 0.2, 0.6, 1);
-                    transform: rotate(2160deg);
+                    transition: transform 8s cubic-bezier(0.9, 0.2, 0.6, 1);
+                    transform: rotate(8640deg);
                     border-radius: 380px;
                     background:linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.12499821186066deg, #05FB00 116.24999642372131deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474426deg, #F00 360deg);
                     .linesNew{display: none;}
@@ -219,11 +219,11 @@ footer{@include wrapper;margin-bottom: 70px;position: relative;z-index: 3;
                     .counterText{margin-bottom: 16px;width: 100%;}
 
                     #box .fanRotatediv svg.rotate {
-                        border-radius: 270px;
+                        border-radius: 240px;
                     }
-                    #box{width: 270px;height: 270px;
-                        .fanRotatediv{width: 270px;height: 270px;
-                            svg{width: 270px;height: 270px;}
+                    #box{width: 240px;height: 240px;
+                        .fanRotatediv{width: 240px;height: 240px;
+                            svg{width: 240px;height: 240px;}
                         }
                     }
                 }
