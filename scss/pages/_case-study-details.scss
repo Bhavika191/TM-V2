@@ -273,7 +273,7 @@
             }
         }
     }
-    @media all and (max-width:1024px){
+    @media all and (max-width:1024px){padding:0px;
         .researchsec-wrapper{position: relative;margin-bottom:80px;flex-direction: column;padding:0px;@include wrapper;
             .img-div{height:auto;position: relative;}
             .research-card-type{@include wrapper;padding-bottom:60px;padding-top: 50px;width:auto;min-height:unset;
@@ -307,6 +307,8 @@
         }
         .leftcontent-rightimageSec{background: var(--primary-white, #FFF);display: flex;align-items:center;justify-content:space-between;padding-bottom:142px;
             &:nth-child(even){flex-direction: row-reverse;}
+            &:nth-child(odd){.leftcontent-rightimage-image{padding-left: 24px;}}
+            &:nth-child(even){.leftcontent-rightimage-image{padding-right: 24px;}}
             .leftcontent-rightimage-text{width: 50%;padding: 0px 150px;
                 .leftcontent-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;}
                 .leftcontent-mainheading{margin-bottom: 48px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font30;font-weight: $fontW500;line-height: 40px;letter-spacing: -0.9px;}
@@ -527,6 +529,7 @@
                     }
                 }
             }
+            .optionalSec{@include wrapper}
         }
         @media all and (max-width:680px){
             margin-bottom:40px;
@@ -548,14 +551,12 @@
     } 
     .impactSec{margin-bottom: 370px;overflow: hidden;
         .results-impact-temp{@include wrapperTwo;margin-bottom:100px;
-            .impact-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;
-                span{color: #FF0D47;}
-            }
+            .impact-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;}
             .impact-mainheading{color: var(--primary-black, #000);font-family: $fontpoppins; @include font40;font-weight: $fontW500;line-height: 50px;letter-spacing: -1.2px;}
         }
         .impact-img{@include wrapper;
             div{width: 100%;overflow: hidden;
-                img{width: 100%;}margin-bottom: 140px;
+                img{width: 100%;}
             }
         }
         @media all and (max-width:1800px){
@@ -585,6 +586,7 @@
                 .impact-subheading{margin-bottom: 22px;line-height: 22px;}
                 .impact-mainheading{line-height: 32px;}
             }
+
         }
         @media all and (max-width:1024px){
             margin-bottom: 150px;
@@ -592,6 +594,7 @@
                 .impact-subheading{margin-bottom: 22px;line-height: 22px;}
                 .impact-mainheading{line-height: 32px;}
             }
+            .impact-img{@include wrapper}
         }
         @media all and (max-width:680px){
             margin-bottom: 83px;
@@ -606,8 +609,7 @@
         .lesson-learned-wrapper{display:flex;align-items:center;justify-content:space-between;&:not(:last-child){padding-bottom:142px;}
             &:nth-child(even){flex-direction: row-reverse;}
             .left-text{width: 50%;padding: 0px 150px;
-                .left-text-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;
-                span{color: var(--Primary-Red, #FF0D47);}}
+                .left-text-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;}
                 .left-text-mainheading{margin-bottom: 48px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font30;font-weight: $fontW500;line-height: 40px;letter-spacing: -0.9px;}
             }
             .right-img{width: 50%;overflow: hidden;img{width: 100%;}}
@@ -645,7 +647,7 @@
             }
         }
         @media all and (max-width:1024px){margin-bottom:200px;
-            .lesson-learned-wrapper{display: block;
+            .lesson-learned-wrapper{flex-direction: column;&:nth-child(even){flex-direction: column;}
                 .left-text{width: 100%;padding:0px;
                     .left-text-subheading{margin-bottom: 20px;}
                     .left-text-mainheading{margin-bottom: 20px;line-height: 34px;}
@@ -654,12 +656,14 @@
             }
         }
         @media all and (max-width:780px){margin-bottom:150px;padding:0px;
-            .lesson-learned-wrapper{display: block;&:not(:last-child){padding-bottom:40px;}
-                .left-text{width: 100%;@include wrapper;
+            .lesson-learned-wrapper{flex-direction: column;&:not(:last-child){padding-bottom:40px;}
+            &:nth-child(even){.right-img{padding-left: 24px;}}
+            &:nth-child(odd){.right-img{padding-right: 24px;}}
+                .left-text{width: 100%;@include wrapper;order:2;
                     .left-text-subheading{margin-bottom: 20px;font-size: 12px;font-weight: 600;line-height: 12px;letter-spacing: 0.6px;}
-                    .left-text-mainheading{margin-bottom: 30px;font-size: 16px;font-weight: 500;line-height: 26px;letter-spacing: -0.48px;}
+                    .left-text-mainheading{margin-bottom: 0px;font-size: 16px;font-weight: 500;line-height: 26px;letter-spacing: -0.48px;}
                 }
-                .right-img{width: 100%;margin-bottom: 0px;}
+                .right-img{width: 100%;margin-bottom: 40px;order: 1;}
             }
         }
     }
