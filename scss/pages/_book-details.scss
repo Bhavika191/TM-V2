@@ -18,7 +18,7 @@
           50%{background-position:50% 100%}
           100%{background-position:50% 0%}
        }
-       .bookStickydiv{width: calc(100% - 1400px);position: sticky;top: 50%;transform: translateY(-50%);position: -webkit-sticky;padding-left: 250px;height: 100%;}
+       .bookStickydiv{width: calc(100% - 1400px);position: sticky;top: 30px;position: -webkit-sticky;padding-left: 250px;height: 100%;}
        .bookInfodiv{width: 1008px;padding: 70px  152px 0px 0px;
             .headingDiv{
                 h1{@include font64;font-weight: $fontW500;line-height: 115%;color: #000;margin-bottom: 48px;}
@@ -106,7 +106,7 @@
     
     @media screen and (max-width:1536px) {
         .bookDescwrapper{
-           .bookStickydiv{width: calc(100% - 790px);padding-left: 190px;}
+           .bookStickydiv{width: calc(100% - 820px);padding-left: 190px;}
            .bookInfodiv{width: 593px;
                 .prizeDiv{width: 463px;padding: 30px 50px;
                     .prizeInfo{margin-right: 40px;}

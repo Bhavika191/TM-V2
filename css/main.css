@@ -14050,8 +14050,7 @@ body.opentwo {
 .bookDescriptionsec .bookDescwrapper .bookStickydiv {
   width: calc(100% - 1400px);
   position: sticky;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 30px;
   position: -webkit-sticky;
   padding-left: 250px;
   height: 100%;
@@ -14415,7 +14414,7 @@ body.opentwo {
 }
 @media screen and (max-width: 1536px) {
   .bookDescriptionsec .bookDescwrapper .bookStickydiv {
-    width: calc(100% - 790px);
+    width: calc(100% - 820px);
     padding-left: 190px;
   }
   .bookDescriptionsec .bookDescwrapper .bookInfodiv {

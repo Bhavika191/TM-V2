@@ -651,10 +651,10 @@ var lastfoldfAnimembl = bodymovin.loadAnimation({
 
 var homeAnime = bodymovin.loadAnimation({
   container: document.getElementById('homeAnime'),
-  path: 'https://ixdtm.com/projects/tm-v2/js/json/hp-animation.json', // Required
+  path:  site_url + "/wp-content/themes/theminimalist/js/json/hp-animation.json", // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
-  autoplay: false,
+  autoplay: true,
 });
 
 $.fn.isInViewport = function () {
