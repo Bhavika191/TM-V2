@@ -391,7 +391,9 @@
         .storyMaindiv{
             .mainInfodiv{margin-top: 150px;background: #fff;display: flex;align-items: center;
                 &:nth-child(even){flex-direction: row-reverse;}
-                .imageDiv{width: 37%;}
+                .imageDiv{width: 37%;background: conic-gradient(from 45deg at 0% 100%, #F00 0deg, #FAFF00 58.12499821186066deg, #05FB00 116.24999642372131deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474426deg, #F00 360deg);position: relative;
+                    .blurDiv{position: absolute;height: 100%;width: 100%;background: rgba(255, 255, 255, 0.50);backdrop-filter: blur(125px);}
+                }
                 .storyDescdiv{width: 63%;padding: 0px 150px;
                     h3{@include font40;font-weight: $fontW400;line-height: 50px;margin: 30px 0px 48px;}
                     h4{@include font20;font-weight: $fontW500;line-height: 30px;letter-spacing: -0.6px;text-transform: uppercase;}
