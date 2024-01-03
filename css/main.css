@@ -14048,9 +14048,10 @@ body.opentwo {
   }
 }
 .bookDescriptionsec .bookDescwrapper .bookStickydiv {
-  width: calc(100% - 1250px);
+  width: calc(100% - 1400px);
   position: sticky;
-  top: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   position: -webkit-sticky;
   padding-left: 250px;
   height: 100%;
@@ -14433,7 +14434,7 @@ body.opentwo {
 }
 @media screen and (max-width: 1440px) {
   .bookDescriptionsec .bookDescwrapper .bookStickydiv {
-    width: calc(100% - 710px);
+    width: calc(100% - 740px);
     padding-left: 150px;
   }
   .bookDescriptionsec .bookDescwrapper .bookInfodiv {
@@ -14458,7 +14459,7 @@ body.opentwo {
     padding: 100px 0px;
   }
   .bookDescriptionsec .bookDescwrapper .bookStickydiv {
-    width: calc(100% - 710px);
+    width: calc(100% - 750px);
     padding-left: 120px;
   }
   .bookDescriptionsec .bookDescwrapper .bookInfodiv {
@@ -14504,10 +14505,6 @@ body.opentwo {
   }
 }
 @media screen and (max-width: 1367px) {
-  .bookDescriptionsec .bookDescwrapper .bookStickydiv {
-    width: calc(100% - 710px);
-    padding-left: 120px;
-  }
   .bookDescriptionsec .bookDescwrapper .bookInfodiv {
     width: 567px;
   }
@@ -14530,7 +14527,7 @@ body.opentwo {
     padding: 80px 0px;
   }
   .bookDescriptionsec .bookDescwrapper .bookStickydiv {
-    width: calc(100% - 700px);
+    width: calc(100% - 740px);
     padding-left: 100px;
   }
   .bookDescriptionsec .bookDescwrapper .bookInfodiv {
@@ -14613,6 +14610,8 @@ body.opentwo {
   .bookDescriptionsec .bookDescwrapper .bookStickydiv {
     width: calc(100% - 570px);
     padding-left: 60px;
+    top: 60px;
+    transform: unset;
   }
   .bookDescriptionsec .bookDescwrapper .bookInfodiv {
     width: 508px;
@@ -14742,7 +14741,6 @@ body.opentwo {
   }
   .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv {
     padding: 22px 24px;
-    position: unset;
     width: 100%;
   }
   .bookDescriptionsec .bookDescwrapper .bookInfodiv .prizeDiv .prizeInfo {
