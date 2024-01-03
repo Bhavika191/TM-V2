@@ -8359,7 +8359,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 150%;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -8384,7 +8384,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 96px;
   font-weight: 500;
-  line-height: 106px;
+  line-height: 110.417%;
   letter-spacing: -2.88px;
 }
 @media screen and (max-width: 1600px) {
@@ -8412,7 +8412,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 150%;
   width: 55%;
 }
 @media screen and (max-width: 1600px) {
@@ -8460,16 +8460,11 @@ body.opentwo {
   }
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
     margin-bottom: 45px;
-    line-height: 30px;
     letter-spacing: 1px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
     margin-bottom: 45px;
-    line-height: 106px;
     letter-spacing: -2.88px;
-  }
-  .casedetailsmainSec .about-sec .aboutcontent .about-content {
-    line-height: 30px;
   }
   .casedetailsmainSec .about-sec .image-sec {
     margin-bottom: 130px;
@@ -8481,14 +8476,9 @@ body.opentwo {
   }
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
     margin-bottom: 40px;
-    line-height: 28px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
     margin-bottom: 40px;
-    line-height: 96px;
-  }
-  .casedetailsmainSec .about-sec .aboutcontent .about-content {
-    line-height: 28px;
   }
   .casedetailsmainSec .about-sec .image-sec {
     margin-bottom: 120px;
@@ -8500,14 +8490,9 @@ body.opentwo {
   }
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
     margin-bottom: 36px;
-    line-height: 24px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
     margin-bottom: 36px;
-    line-height: 80px;
-  }
-  .casedetailsmainSec .about-sec .aboutcontent .about-content {
-    line-height: 28px;
   }
   .casedetailsmainSec .about-sec .image-sec {
     margin-bottom: 110px;
@@ -8519,14 +8504,9 @@ body.opentwo {
   }
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
     margin-bottom: 30px;
-    line-height: 22px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
     margin-bottom: 30px;
-    line-height: 70px;
-  }
-  .casedetailsmainSec .about-sec .aboutcontent .about-content {
-    line-height: 24px;
   }
   .casedetailsmainSec .about-sec .image-sec {
     margin-bottom: 100px;
@@ -8554,15 +8534,12 @@ body.opentwo {
 @media all and (max-width: 1024px) {
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
     margin-bottom: 25px;
-    line-height: 20px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
     margin-bottom: 25px;
-    line-height: 60px;
     width: 100%;
   }
   .casedetailsmainSec .about-sec .aboutcontent .about-content {
-    line-height: 22px;
     width: 100%;
   }
   .casedetailsmainSec .about-sec .image-sec {
@@ -8652,7 +8629,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 150%;
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
@@ -8676,7 +8653,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 500;
-  line-height: 50px;
+  line-height: 125%;
   letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
@@ -8699,7 +8676,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 150%;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
@@ -8725,7 +8702,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 150%;
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
@@ -8749,7 +8726,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
   font-weight: 500;
-  line-height: 40px;
+  line-height: 133.333%;
   letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
@@ -8776,7 +8753,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 150%;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content li {
@@ -8802,34 +8779,24 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
     margin-bottom: 30px;
-    line-height: 30px;
     text-transform: uppercase;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
     margin-bottom: 45px;
-    line-height: 48px;
     letter-spacing: -1.2px;
-  }
-  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
-    line-height: 30px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec {
     width: 46%;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
     margin-bottom: 30px;
-    line-height: 30px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     margin-bottom: 45px;
-    line-height: 36px;
     letter-spacing: -1.2px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
     padding-left: 24px;
-  }
-  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content li {
-    line-height: 30px;
   }
 }
 @media all and (max-width: 1600px) {
@@ -8841,31 +8808,21 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
     margin-bottom: 28px;
-    line-height: 28px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
     margin-bottom: 40px;
-    line-height: 42px;
-  }
-  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
-    line-height: 28px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec {
     width: 46%;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
     margin-bottom: 28px;
-    line-height: 28px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     margin-bottom: 40px;
-    line-height: 32px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
     padding-left: 24px;
-  }
-  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content li {
-    line-height: 28px;
   }
 }
 @media all and (max-width: 1400px) {
@@ -8877,31 +8834,21 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
     margin-bottom: 24px;
-    line-height: 24px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
     margin-bottom: 36px;
-    line-height: 36px;
-  }
-  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
-    line-height: 24px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec {
     width: 46%;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
     margin-bottom: 24px;
-    line-height: 24px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     margin-bottom: 36px;
-    line-height: 30px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
     padding-left: 24px;
-  }
-  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content li {
-    line-height: 24px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -8913,31 +8860,21 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
     margin-bottom: 22px;
-    line-height: 22px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
     margin-bottom: 30px;
-    line-height: 32px;
-  }
-  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
-    line-height: 22px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec {
     width: 46%;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
     margin-bottom: 22px;
-    line-height: 22px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     margin-bottom: 30px;
-    line-height: 28px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
     padding-left: 22px;
-  }
-  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content li {
-    line-height: 22px;
   }
 }
 @media all and (max-width: 1024px) {
@@ -8950,31 +8887,21 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
     margin-bottom: 20px;
-    line-height: 20px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
     margin-bottom: 25px;
-    line-height: 28px;
-  }
-  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-about-content {
-    line-height: 20px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec {
     width: 45%;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
     margin-bottom: 20px;
-    line-height: 20px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     margin-bottom: 25px;
-    line-height: 24px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
     padding-left: 20px;
-  }
-  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content li {
-    line-height: 20px;
   }
 }
 @media all and (max-width: 821px) {
@@ -9228,7 +9155,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 150%;
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
@@ -9252,7 +9179,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
   font-weight: 500;
-  line-height: 40px;
+  line-height: 133.333%;
   letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
@@ -9275,7 +9202,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 150%;
   letter-spacing: 0.6px;
 }
 @media screen and (max-width: 1600px) {
@@ -9339,14 +9266,9 @@ body.opentwo {
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 30px;
-    line-height: 30px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 48px;
-    line-height: 40px;
-  }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
-    line-height: 30px;
   }
 }
 @media all and (max-width: 1600px) {
@@ -9367,14 +9289,9 @@ body.opentwo {
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 28px;
-    line-height: 28px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 40px;
-    line-height: 36px;
-  }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
-    line-height: 28px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     line-height: 16px;
@@ -9401,14 +9318,9 @@ body.opentwo {
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 24px;
-    line-height: 24px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 36px;
-    line-height: 36px;
-  }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
-    line-height: 24px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     line-height: 14px;
@@ -9435,14 +9347,9 @@ body.opentwo {
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 22px;
-    line-height: 22px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 32px;
-    line-height: 28px;
-  }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
-    line-height: 22px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     line-height: 12px;
@@ -9504,14 +9411,9 @@ body.opentwo {
 @media all and (max-width: 1024px) {
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 20px;
-    line-height: 20px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 20px;
-    line-height: 34px;
-  }
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
-    line-height: 20px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     line-height: 12px;
@@ -9595,7 +9497,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 150%;
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
@@ -9618,7 +9520,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 500;
-  line-height: 50px;
+  line-height: 125%;
   letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
@@ -9645,7 +9547,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 150%;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
@@ -9688,7 +9590,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 150%;
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
@@ -9712,7 +9614,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
   font-weight: 500;
-  line-height: 40px;
+  line-height: 133.333%;
   letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
@@ -9735,7 +9637,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 150%;
   letter-spacing: 0.6px;
 }
 @media screen and (max-width: 1600px) {
@@ -9773,16 +9675,9 @@ body.opentwo {
   }
   .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
     margin-bottom: 30px;
-    line-height: 30px;
-  }
-  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
-    line-height: 48px;
   }
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 145px;
-  }
-  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
-    line-height: 30px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
     padding-bottom: 140px;
@@ -9792,14 +9687,9 @@ body.opentwo {
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
     margin-bottom: 30px;
-    line-height: 30px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
     margin-bottom: 45px;
-    line-height: 40px;
-  }
-  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
-    line-height: 30px;
   }
 }
 @media all and (max-width: 1600px) {
@@ -9815,16 +9705,9 @@ body.opentwo {
   }
   .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
     margin-bottom: 28px;
-    line-height: 28px;
-  }
-  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
-    line-height: 45px;
   }
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 140px;
-  }
-  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
-    line-height: 28px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
     padding-bottom: 140px;
@@ -9834,14 +9717,9 @@ body.opentwo {
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
     margin-bottom: 28px;
-    line-height: 28px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
     margin-bottom: 40px;
-    line-height: 36px;
-  }
-  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
-    line-height: 28px;
   }
 }
 @media all and (max-width: 1400px) {
@@ -9857,16 +9735,9 @@ body.opentwo {
   }
   .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
     margin-bottom: 24px;
-    line-height: 24px;
-  }
-  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
-    line-height: 40px;
   }
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 120px;
-  }
-  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
-    line-height: 24px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
     padding-bottom: 120px;
@@ -9876,14 +9747,9 @@ body.opentwo {
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
     margin-bottom: 24px;
-    line-height: 24px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
     margin-bottom: 36px;
-    line-height: 32px;
-  }
-  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
-    line-height: 24px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -9899,16 +9765,9 @@ body.opentwo {
   }
   .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
     margin-bottom: 22px;
-    line-height: 22px;
-  }
-  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
-    line-height: 36px;
   }
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 100px;
-  }
-  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
-    line-height: 22px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
     padding-bottom: 100px;
@@ -9918,14 +9777,9 @@ body.opentwo {
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
     margin-bottom: 22px;
-    line-height: 22px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
     margin-bottom: 32px;
-    line-height: 30px;
-  }
-  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
-    line-height: 22px;
   }
 }
 @media all and (max-width: 1024px) {
@@ -9941,16 +9795,9 @@ body.opentwo {
   }
   .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
     margin-bottom: 20px;
-    line-height: 20px;
-  }
-  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
-    line-height: 32px;
   }
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 80px;
-  }
-  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
-    line-height: 20px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
     display: block;
@@ -9980,7 +9827,6 @@ body.opentwo {
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
     margin-bottom: 20px;
-    line-height: 34px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image {
     width: 100%;
@@ -10138,7 +9984,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 150%;
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
@@ -10161,7 +10007,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 500;
-  line-height: 50px;
+  line-height: 125%;
   letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
@@ -10197,7 +10043,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 120%;
   letter-spacing: 0.6px;
   margin-bottom: 30px;
 }
@@ -10221,7 +10067,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 500;
-  line-height: 50px;
+  line-height: 125%;
   letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
@@ -10236,6 +10082,28 @@ body.opentwo {
 }
 @media screen and (max-width: 720px) {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
+    font-size: 14px;
+  }
+}
+.casedetailsmainSec .statsSec .statsSec-wrapper .stats-leftcontent p {
+  color: var(--body-copy, #6A6A6A);
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+}
+@media screen and (max-width: 1600px) {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-leftcontent p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-leftcontent p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-leftcontent p {
     font-size: 14px;
   }
 }
@@ -10267,10 +10135,6 @@ body.opentwo {
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
     margin-bottom: 28px;
-    line-height: 28px;
-  }
-  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
-    line-height: 36px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates:not(:last-child) {
     margin-right: 90px;
@@ -10279,11 +10143,7 @@ body.opentwo {
     margin-bottom: 10px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
-    line-height: 22px;
     margin-bottom: 28px;
-  }
-  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
-    line-height: 45px;
   }
 }
 @media all and (max-width: 1600px) {
@@ -10295,10 +10155,6 @@ body.opentwo {
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
     margin-bottom: 26px;
-    line-height: 26px;
-  }
-  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
-    line-height: 34px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates:not(:last-child) {
     margin-right: 80px;
@@ -10307,11 +10163,7 @@ body.opentwo {
     margin-bottom: 10px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
-    line-height: 22px;
     margin-bottom: 28px;
-  }
-  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
-    line-height: 42px;
   }
 }
 @media all and (max-width: 1400px) {
@@ -10323,10 +10175,6 @@ body.opentwo {
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
     margin-bottom: 24px;
-    line-height: 24px;
-  }
-  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
-    line-height: 32px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates:not(:last-child) {
     margin-right: 60px;
@@ -10335,11 +10183,7 @@ body.opentwo {
     margin-bottom: 10px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
-    line-height: 20px;
     margin-bottom: 26px;
-  }
-  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
-    line-height: 36px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -10351,10 +10195,6 @@ body.opentwo {
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
     margin-bottom: 22px;
-    line-height: 22px;
-  }
-  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
-    line-height: 30px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates:not(:last-child) {
     margin-right: 60px;
@@ -10363,11 +10203,7 @@ body.opentwo {
     margin-bottom: 8px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
-    line-height: 20px;
     margin-bottom: 24px;
-  }
-  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
-    line-height: 32px;
   }
 }
 @media all and (max-width: 1024px) {
@@ -10475,6 +10311,11 @@ body.opentwo {
     line-height: 44.444px;
     letter-spacing: -0.9px;
   }
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-leftcontent p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
   .casedetailsmainSec .statsSec .optionalSec {
     padding: 0px;
   }
@@ -10524,7 +10365,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 150%;
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
@@ -10547,7 +10388,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: 500;
-  line-height: 50px;
+  line-height: 125%;
   letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
@@ -10597,10 +10438,6 @@ body.opentwo {
   }
   .casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
     margin-bottom: 30px;
-    line-height: 30px;
-  }
-  .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
-    line-height: 45px;
   }
 }
 @media all and (max-width: 1600px) {
@@ -10612,10 +10449,6 @@ body.opentwo {
   }
   .casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
     margin-bottom: 28px;
-    line-height: 28px;
-  }
-  .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
-    line-height: 40px;
   }
 }
 @media all and (max-width: 1400px) {
@@ -10627,10 +10460,6 @@ body.opentwo {
   }
   .casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
     margin-bottom: 24px;
-    line-height: 24px;
-  }
-  .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
-    line-height: 36px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -10642,10 +10471,6 @@ body.opentwo {
   }
   .casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
     margin-bottom: 22px;
-    line-height: 22px;
-  }
-  .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
-    line-height: 32px;
   }
 }
 @media all and (max-width: 1024px) {
@@ -10657,10 +10482,6 @@ body.opentwo {
   }
   .casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
     margin-bottom: 22px;
-    line-height: 22px;
-  }
-  .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
-    line-height: 32px;
   }
   .casedetailsmainSec .impactSec .impact-img {
     padding-left: 60px;
@@ -10742,7 +10563,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 150%;
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
@@ -10766,7 +10587,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
   font-weight: 500;
-  line-height: 40px;
+  line-height: 133.333%;
   letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
@@ -10803,11 +10624,9 @@ body.opentwo {
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
     margin-bottom: 30px;
-    line-height: 30px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
     margin-bottom: 45px;
-    line-height: 40px;
   }
 }
 @media all and (max-width: 1600px) {
@@ -10819,11 +10638,9 @@ body.opentwo {
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
     margin-bottom: 28px;
-    line-height: 28px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
     margin-bottom: 40px;
-    line-height: 36px;
   }
 }
 @media all and (max-width: 1400px) {
@@ -10838,11 +10655,9 @@ body.opentwo {
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
     margin-bottom: 24px;
-    line-height: 24px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
     margin-bottom: 36px;
-    line-height: 36px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -10857,11 +10672,9 @@ body.opentwo {
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
     margin-bottom: 22px;
-    line-height: 22px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
     margin-bottom: 32px;
-    line-height: 30px;
   }
 }
 @media all and (max-width: 1024px) {
@@ -10883,7 +10696,6 @@ body.opentwo {
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
     margin-bottom: 20px;
-    line-height: 34px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .right-img {
     width: 100%;
@@ -10945,93 +10757,6 @@ body.opentwo {
     width: 100%;
     margin-bottom: 40px;
     order: 1;
-  }
-}
-.casedetailsmainSec .casestudySec {
-  position: relative;
-  overflow: hidden;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .casestudySec {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .casedetailsmainSec .casestudySec {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-.casedetailsmainSec .casestudySec .moreCasestudy {
-  width: 100%;
-}
-.casedetailsmainSec .casestudySec .moreCasestudy .brandLogos {
-  display: flex;
-  align-items: center;
-}
-.casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox {
-  padding: 30px;
-  width: 50%;
-  background: #00C859;
-  transition: 0.6s all;
-}
-.casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox a {
-  display: block;
-  width: 100%;
-  cursor: url(../images/mouse-cursor-pages.png) 30 30, auto;
-}
-.casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox a img {
-  margin: 0 auto;
-  height: 100px;
-}
-.casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox:nth-child(1) {
-  text-align: left;
-}
-.casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox:nth-child(2) {
-  text-align: right;
-}
-.casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox.active {
-  width: 100%;
-}
-.casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox.activeTwo {
-  width: 100%;
-}
-@media all and (max-width: 1024px) {
-  .casedetailsmainSec .casestudySec .moreCasestudy {
-    position: static;
-  }
-  .casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox {
-    padding: 12px;
-  }
-  .casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox:nth-child(1) {
-    text-align: center;
-  }
-  .casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox:nth-child(2) {
-    text-align: center;
-  }
-  .casedetailsmainSec .casestudySec .moreCasestudy .brandLogos .relatedBox a img {
-    height: 50px;
-  }
-}
-@media all and (max-width: 780px) {
-  .casedetailsmainSec .casestudySec {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-@media screen and (max-width: 780px) and (max-width: 1400px) {
-  .casedetailsmainSec .casestudySec {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 780px) and (max-width: 720px) {
-  .casedetailsmainSec .casestudySec {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
@@ -13559,6 +13284,7 @@ body.opentwo {
   font-weight: 500;
   line-height: 30px;
   letter-spacing: 0.6px;
+  margin-bottom: 48px;
 }
 @media screen and (max-width: 1600px) {
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
@@ -13574,36 +13300,6 @@ body.opentwo {
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     font-size: 14px;
   }
-}
-.aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
-  margin-top: 48px;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 24px;
-  margin-right: 30px;
-  border-radius: 6px;
-  border: 1px solid #000;
-}
-@media screen and (max-width: 1600px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
-    font-size: 12px;
-  }
-}
-.aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta img {
-  margin-left: 10px;
 }
 @media all and (max-width: 1800px) {
   .aboutus-researchSec {
@@ -13709,12 +13405,7 @@ body.opentwo {
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     line-height: 28px;
-  }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
-    line-height: 16px;
-    padding: 12px 24px;
-    margin-right: 28px;
-    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 @media all and (max-width: 1440px) {
@@ -13771,12 +13462,7 @@ body.opentwo {
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     line-height: 24px;
-  }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
-    line-height: 14px;
-    padding: 10px 22px;
-    margin-right: 26px;
-    margin-top: 36px;
+    margin-bottom: 36px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -13814,11 +13500,7 @@ body.opentwo {
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     line-height: 22px;
-  }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
-    line-height: 12px;
-    margin-right: 24px;
-    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
 @media all and (max-width: 1024px) {
@@ -13893,15 +13575,7 @@ body.opentwo {
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     line-height: 20px;
-  }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
-    line-height: 12px;
-    padding: 10px 20px;
-    margin-right: 0px;
-    margin-top: 20px;
-  }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta img {
-    margin-left: 6px;
+    margin-bottom: 20px;
   }
 }
 @media all and (max-width: 821px) {
@@ -13968,14 +13642,7 @@ body.opentwo {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-  }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
-    line-height: 10px;
-    padding: 8px 16px;
-    margin-top: 10px;
-  }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type .aboutus-cta img {
-    margin-left: 5px;
+    margin-bottom: 10px;
   }
 }
 @media all and (max-width: 680px) {

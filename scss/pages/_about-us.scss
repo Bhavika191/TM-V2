@@ -314,8 +314,7 @@
         .research-card-type{position: relative;background: var(--primary-white, #FFF);padding: 80px;width:580px;min-height:722px;z-index:2;
             .research-card-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;}
             .research-card-mainheading{margin-bottom: 48px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font30;font-weight: $fontW500;line-height: 40px;letter-spacing: -0.9px;}
-            .research-card-content{color: var(--body-copy, #6A6A6A);font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 30px;letter-spacing: 0.6px;}
-            .aboutus-cta{margin-top: 48px;text-align: center; font-family: $fontpoppins;@include font14;font-weight: $fontW700;line-height: 18px;letter-spacing: 0.7px;text-transform: uppercase;display: inline-flex;align-items: center;justify-content: center;padding: 14px 24px;margin-right: 30px;border-radius: 6px;border: 1px solid  #000;img{margin-left: 10px;}}
+            .research-card-content{color: var(--body-copy, #6A6A6A);font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 30px;letter-spacing: 0.6px;margin-bottom: 48px;}
         }
     }
     // ----------------------------------------media queries-----------------------------------------------//    
@@ -369,8 +368,7 @@
             .research-card-type{padding: 65px;width:480px;min-height:600px;
                 .research-card-subheading{margin-bottom: 28px;line-height: 28px;}
                 .research-card-mainheading{margin-bottom: 40px;line-height: 36px;}
-                .research-card-content{line-height: 28px;}
-                .aboutus-cta{line-height: 16px;padding: 12px 24px;margin-right: 28px;margin-top: 40px;}
+                .research-card-content{line-height: 28px;margin-bottom: 40px;}
             }
         }
     }
@@ -398,8 +396,7 @@
             .research-card-type{padding: 55px;min-height:500px;width:440px;
                 .research-card-subheading{margin-bottom: 24px;line-height: 24px;}
                 .research-card-mainheading{margin-bottom: 36px;line-height: 36px;}
-                .research-card-content{line-height: 24px;}
-                .aboutus-cta{line-height: 14px;padding: 10px 22px;margin-right: 26px;margin-top: 36px;}
+                .research-card-content{line-height: 24px;margin-bottom: 36px;}
             }
         }
     }
@@ -415,8 +412,7 @@
             .research-card-type{padding: 50px;width:380px;min-height:480px;
                 .research-card-subheading{margin-bottom: 22px;line-height: 22px;}
                 .research-card-mainheading{margin-bottom: 32px;line-height: 28px;}
-                .research-card-content{line-height: 22px;}
-                .aboutus-cta{line-height: 12px;margin-right: 24px;margin-top: 32px;}
+                .research-card-content{line-height: 22px;margin-bottom: 32px;}
             }
         }
     }
@@ -435,8 +431,7 @@
             .research-card-type{@include wrapper;padding-bottom:60px;padding-top: 50px;width:auto;min-height:unset;
                 .research-card-subheading{margin-bottom:20px;line-height: 20px;}
                 .research-card-mainheading{margin-bottom:20px;line-height: 34px;}
-                .research-card-content{line-height: 20px;}
-                .aboutus-cta{line-height: 12px;padding: 10px 20px;margin-right: 0px;img{margin-left: 6px;}margin-top: 20px;}
+                .research-card-content{line-height: 20px;margin-bottom: 20px;}
             }
         }
     }
@@ -447,8 +442,7 @@
             .research-card-type{padding-bottom:55px;padding-top: 36px;width:auto;
                 .research-card-subheading{margin-bottom:10px;font-size: 12px;font-weight: 600;line-height: 12px;}
                 .research-card-mainheading{margin-bottom:10px;font-size: 20px;font-weight: 500;line-height: 30px;}
-                .research-card-content{font-size: 14px;font-weight: 400;line-height: 24px;}
-                .aboutus-cta{line-height: 10px;padding: 8px 16px;img{margin-left: 5px;}margin-top: 10px;}
+                .research-card-content{font-size: 14px;font-weight: 400;line-height: 24px;margin-bottom: 10px;}
             }
         }
     }
