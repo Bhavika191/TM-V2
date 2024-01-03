@@ -334,6 +334,7 @@ if ($(".aboutus-researchSec .researchsec-wrapper .img-div").length > 1) {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    variableWidth: true,
   });
 }
 
