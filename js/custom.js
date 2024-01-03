@@ -333,13 +333,14 @@ jQuery(function ($) {
 
 //About us slider starts
 
-if ($(".aboutus-researchSec .researchsec-wrapper .img-div").length > 1) {
+if ($(".aboutus-researchSec .researchsec-wrapper .img-div").length) {
   $('.aboutus-researchSec .researchsec-wrapper .img-div').slick({
     dots: true,
-    autoplay: true,
-    infinite: true,
+    autoplay: false,
+    infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows:false,
   });
 }
 
