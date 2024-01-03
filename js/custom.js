@@ -69,33 +69,14 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  updateLastBoxClass(); // Initial update
 
-  // Assuming you are adding or removing boxes dynamically
-  // You may want to call updateLastBoxClass() whenever the number of boxes changes.
-
-  function updateLastBoxClass() {
-    var boxesnew = document.querySelectorAll(".ratingboxes");
-
-    // Remove classes from all boxes
-    boxesnew.forEach(function (box) {
-      box.classList.remove("even", "odd");
-    });
-
-    if (boxesnew.length > 0) {
-      // Add appropriate class to the last box
-      var lastBox = boxesnew[boxesnew.length - 1];
-      if (boxesnew.length % 2 === 0) {
-        // Even number of boxes
-        lastBox.classList.add("even");
-      } else {
-        // Odd number of boxes
-        lastBox.classList.add("odd");
-      }
-    }
-  }
+$('.shareBlogs').click(function () {
+  $('.sharePopup').toggleClass('sharePopupnew');
 });
+$('.closePopupshare').click(function () {
+  $('.sharePopup').removeClass('sharePopupnew');
+});
+
 
 //---------------------------------------------------------Shamal's Js Code Starts ---------------------------------------------------------------//
 // const el = document.querySelector(".service-container")
@@ -519,7 +500,7 @@ $(document).ready(function () {
         /* data save code */
         $.ajax({
           type: 'POST',
-          url: 'http://localhost/projects/TM-V2-new/wp-admin/admin-ajax.php',
+          url: 'http://ixdtm.com/projects/TM-V2-wp/wp-admin/admin-ajax.php',
           dataType: 'json',
           data: {
             action: 'formated_Value',
@@ -556,7 +537,7 @@ if ($(window).width() > 1025) {
 //==========================================Json Animations=======================================//
 var panAnime = bodymovin.loadAnimation({
   container: document.getElementById('panAnime'),
-  path: '/projects/tm-v2/js/json/panAnime.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/panAnime.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: true,
@@ -564,7 +545,7 @@ var panAnime = bodymovin.loadAnimation({
 
 var firstfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('first-fold-anime'),
-  path: '/projects/tm-v2/js/json/first-fold.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/first-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -572,7 +553,7 @@ var firstfoldfAnime = bodymovin.loadAnimation({
 
 var secondfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('second-fold-anime'),
-  path: '/projects/tm-v2/js/json/second-fold.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/second-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -580,7 +561,7 @@ var secondfoldfAnime = bodymovin.loadAnimation({
 
 var thirdfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('third-fold-anime'),
-  path: '/projects/tm-v2/js/json/third-fold.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/third-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -588,7 +569,7 @@ var thirdfoldfAnime = bodymovin.loadAnimation({
 
 var fourthfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('fourth-fold-anime'),
-  path: '/projects/tm-v2/js/json/fourth-fold.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/fourth-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -596,7 +577,7 @@ var fourthfoldfAnime = bodymovin.loadAnimation({
 
 var lastfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('fifth-fold-anime'),
-  path: '/projects/tm-v2/js/json/fifth-fold.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/fifth-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -605,7 +586,7 @@ var lastfoldfAnime = bodymovin.loadAnimation({
 //Mobile animations
 var firstfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('first-fold-anime-mbl'),
-  path: '/projects/tm-v2/js/json/first-fold-mobile.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/first-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -613,7 +594,7 @@ var firstfoldfAnimembl = bodymovin.loadAnimation({
 
 var secondfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('second-fold-anime-mbl'),
-  path: '/projects/tm-v2/js/json/second-fold-mobile.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/second-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -621,7 +602,7 @@ var secondfoldfAnimembl = bodymovin.loadAnimation({
 
 var thirdfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('third-fold-anime-mbl'),
-  path: '/projects/tm-v2/js/json/third-fold-mobile.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/third-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -629,7 +610,7 @@ var thirdfoldfAnimembl = bodymovin.loadAnimation({
 
 var fourthfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('fourth-fold-anime-mbl'),
-  path: '/projects/tm-v2/js/json/fourth-fold-mobile.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/fourth-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -637,7 +618,7 @@ var fourthfoldfAnimembl = bodymovin.loadAnimation({
 
 var lastfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('fifth-fold-anime-mbl'),
-  path:  '/projects/tm-v2/js/json/fifth-fold-mobile.json', // Required
+  path:  'https://ixdtm.com/projects/tm-v2/js/json/fifth-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
@@ -645,7 +626,7 @@ var lastfoldfAnimembl = bodymovin.loadAnimation({
 
 var homeAnime = bodymovin.loadAnimation({
   container: document.getElementById('homeAnime'),
-  path: '/projects/tm-v2/js/json/hp-animation.json', // Required
+  path: 'https://ixdtm.com/projects/tm-v2/js/json/hp-animation.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
   loop: true,
   autoplay: false,
