@@ -10071,7 +10071,6 @@ body.opentwo {
   width: 46%;
   display: flex;
   align-items: center;
-  flex-flow: wrap;
   justify-content: flex-end;
 }
 .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates:not(:last-child) {
@@ -10156,9 +10155,6 @@ body.opentwo {
   padding-left: 60px;
   padding-right: 60px;
 }
-.casedetailsmainSec .statsSec .optionalSec img {
-  width: 100%;
-}
 @media screen and (max-width: 1400px) {
   .casedetailsmainSec .statsSec .optionalSec {
     padding-left: 40px;
@@ -10170,6 +10166,12 @@ body.opentwo {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+.casedetailsmainSec .statsSec .optionalSec div {
+  overflow: hidden;
+}
+.casedetailsmainSec .statsSec .optionalSec div img {
+  width: 100%;
 }
 @media all and (max-width: 1800px) {
   .casedetailsmainSec .statsSec {
@@ -10257,7 +10259,7 @@ body.opentwo {
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper {
     display: block;
-    margin-bottom: 75px;
+    margin-bottom: 105px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content {
     width: 100%;
@@ -10274,9 +10276,8 @@ body.opentwo {
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates {
     margin-bottom: 60px;
-  }
-  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 50px !important;
+    width: calc(33.33% - 50px);
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates img {
     margin-bottom: 12px;
@@ -10315,7 +10316,7 @@ body.opentwo {
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper {
     display: block;
-    margin-bottom: 68px;
+    margin-bottom: 100px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content {
     width: 100%;
@@ -10340,9 +10341,8 @@ body.opentwo {
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates {
     margin-bottom: 50px;
-  }
-  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 40px !important;
+    width: calc(50% - 40px);
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates img {
     margin-bottom: 10px;
@@ -10916,7 +10916,6 @@ body.opentwo {
   width: 46%;
   display: flex;
   align-items: center;
-  flex-flow: wrap;
   justify-content: flex-end;
 }
 .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates:not(:last-child) {
@@ -11139,7 +11138,7 @@ body.opentwo {
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper {
     display: block;
-    margin-bottom: 75px;
+    margin-bottom: 105px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-content {
     width: 100%;
@@ -11156,9 +11155,8 @@ body.opentwo {
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates {
     margin-bottom: 60px;
-  }
-  .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 50px !important;
+    width: calc(33.33% - 50px);
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates img {
     margin-bottom: 12px;
@@ -11178,7 +11176,7 @@ body.opentwo {
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper {
     display: block;
-    margin-bottom: 68px;
+    margin-bottom: 100px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-content {
     width: 100%;
@@ -11203,9 +11201,8 @@ body.opentwo {
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates {
     margin-bottom: 50px;
-  }
-  .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 40px !important;
+    width: calc(50% - 40px);
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates img {
     margin-bottom: 10px;
