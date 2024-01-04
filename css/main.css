@@ -5454,35 +5454,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   position: relative;
   z-index: 1;
 }
-.collaborate-section .collaborate-wrapper .right-content a {
-  padding: 14px 24px;
-  border-radius: 6px;
-  background: var(--primary-black, #000);
-  color: #FFF;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-}
-@media screen and (max-width: 1600px) {
-  .collaborate-section .collaborate-wrapper .right-content a {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .collaborate-section .collaborate-wrapper .right-content a {
-    font-size: 12px;
-  }
-}
 @media all and (max-width: 1800px) {
   .collaborate-section .collaborate-wrapper {
     padding: 120px 140px 130px 140px;
-  }
-  .collaborate-section .collaborate-wrapper .left-content {
-    width: 55%;
   }
   .collaborate-section .collaborate-wrapper .left-content h2 {
     line-height: 70px;
@@ -5492,24 +5466,10 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .collaborate-section .collaborate-wrapper .left-content p {
     line-height: 30px;
   }
-  .collaborate-section .collaborate-wrapper .middle-content {
-    width: 25%;
-  }
-  .collaborate-section .collaborate-wrapper .right-content {
-    width: 20%;
-  }
-  .collaborate-section .collaborate-wrapper .right-content a {
-    padding: 12px 22px;
-    line-height: 18px;
-    letter-spacing: 0.7px;
-  }
 }
 @media all and (max-width: 1600px) {
   .collaborate-section .collaborate-wrapper {
     padding: 110px 130px 120px 130px;
-  }
-  .collaborate-section .collaborate-wrapper .left-content {
-    width: 55%;
   }
   .collaborate-section .collaborate-wrapper .left-content h2 {
     line-height: 64px;
@@ -5519,24 +5479,10 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .collaborate-section .collaborate-wrapper .left-content p {
     line-height: 28px;
   }
-  .collaborate-section .collaborate-wrapper .middle-content {
-    width: 25%;
-  }
-  .collaborate-section .collaborate-wrapper .right-content {
-    width: 20%;
-  }
-  .collaborate-section .collaborate-wrapper .right-content a {
-    padding: 12px 22px;
-    line-height: 16px;
-    letter-spacing: 0.7px;
-  }
 }
 @media all and (max-width: 1400px) {
   .collaborate-section .collaborate-wrapper {
     padding: 100px 120px 110px 120px;
-  }
-  .collaborate-section .collaborate-wrapper .left-content {
-    width: 55%;
   }
   .collaborate-section .collaborate-wrapper .left-content h2 {
     line-height: 60px;
@@ -5545,17 +5491,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .collaborate-section .collaborate-wrapper .left-content p {
     line-height: 24px;
-  }
-  .collaborate-section .collaborate-wrapper .middle-content {
-    width: 25%;
-  }
-  .collaborate-section .collaborate-wrapper .right-content {
-    width: 20%;
-  }
-  .collaborate-section .collaborate-wrapper .right-content a {
-    padding: 10px 20px;
-    line-height: 14px;
-    letter-spacing: 0.5px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -9271,7 +9206,7 @@ body.opentwo {
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     padding: 65px;
-    width: 450px;
+    width: 440px;
     min-height: 600px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
@@ -9316,6 +9251,19 @@ body.opentwo {
     margin-top: 36px;
   }
 }
+@media all and (max-width: 1400px) {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
+    min-height: 480px;
+    width: 400px;
+  }
+}
+@media all and (max-width: 1366px) {
+  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
+    padding: 50px;
+    min-height: 460px;
+    width: 380px;
+  }
+}
 @media all and (max-width: 1200px) {
   .casedetailsmainSec .researchSec {
     margin-bottom: 150px;
@@ -9328,9 +9276,9 @@ body.opentwo {
     height: calc(100% - 90px);
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
-    padding: 50px;
-    width: 380px;
-    min-height: 480px;
+    padding: 45px;
+    width: 370px;
+    min-height: 450px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 22px;
@@ -13808,7 +13756,7 @@ body.opentwo {
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type {
     padding: 65px;
-    width: 480px;
+    width: 440px;
     min-height: 600px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
@@ -13859,7 +13807,7 @@ body.opentwo {
   .aboutus-researchSec .researchsec-wrapper .research-card-type {
     padding: 55px;
     min-height: 500px;
-    width: 440px;
+    width: 420px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 24px;
@@ -13869,6 +13817,19 @@ body.opentwo {
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     margin-bottom: 36px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type {
+    min-height: 480px;
+    width: 400px;
+  }
+}
+@media all and (max-width: 1366px) {
+  .aboutus-researchSec .researchsec-wrapper .research-card-type {
+    padding: 50px;
+    min-height: 460px;
+    width: 380px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -13888,9 +13849,9 @@ body.opentwo {
     height: calc(100% - 90px);
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type {
-    padding: 50px;
-    width: 380px;
-    min-height: 480px;
+    padding: 45px;
+    width: 370px;
+    min-height: 450px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 22px;

@@ -277,13 +277,8 @@ if ($(window).width() < 1025) {
 }
 
 //---------------------------------------------------------Shamal's Js Code Starts ---------------------------------------------------------------//
-// const el = document.querySelector(".service-container")
-// const observer = new IntersectionObserver(
-//   ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
-//   { threshold: [1] }
-// );
-// observer.observe(el);
 //Service page sticky property starts
+if ($('.serviceSec').length) {
 jQuery(document).ready(function () {
   for (let i = 1; i <= 9; i++) {
     var $this = $('#service-info' + i);
@@ -303,10 +298,11 @@ jQuery(document).ready(function () {
       }
     }
   }
-});
+});}
 //Service page sticky property ends
 
 //Service page read more and Read less code starts
+if ($('.serviceSec').length) {
 jQuery(document).ready(function () {
   for (let i = 1; i <= 10; i++) {
     var $this = $('#service-info' + i);
@@ -331,10 +327,11 @@ jQuery(document).ready(function () {
       $('html, body').animate({ scrollTop: $('.servicesecs-wrapper' + i).offset().top - 60 }, 'slow');
     });
   }
-});
+});}
 //Service page read more and Read less code ends
 
 //Service page & Casestudy page active menu navbar code starts
+if ($('.serviceSec').length) {
 $(document).ready(function () {
   let caseStudyMenuScrollTimer = null;
   let filterMenuScrollTimer = null;
@@ -412,9 +409,11 @@ $(document).ready(function () {
     }
   });
 });
+}
 //Service page Casestudy page active menu navbar code ends
 
 //Off set code starts
+if ($('.serviceSec').length) {
 jQuery(function ($) {
   $('a[href*="#"]:not([href="#"])').click(function () {
     var target = $(this.hash);
@@ -432,80 +431,10 @@ jQuery(function ($) {
     };
   });
 });
+}
 //Offset code ends
 
-//Casestudy page casestudies footer animation code starts
-// if ($(window).width() > 1024) {
-//   $(document).ready(function () {
-//     $(".relatedBox").on('mouseover', function () {
-//       $(".relatedBox").removeClass("active");
-//       if ($(this).hasClass("active")) {
-//         $(this).removeClass("active");
-//         $(this).siblings().removeClass("deactive");
-//       } else {
-//         $(this).addClass("active");
-//         $(this).siblings().addClass("deactive");
-//       }
-//       return false;
-//     });
-//   });
-//   $('.relatedBox').on('mouseleave', function () {
-//     $('.relatedBox').removeClass('active');
-//     $('.relatedBox').removeClass("deactive");
-//   });
-// }
-// $(window).on('resize scroll', function () {
-//   if ($('.casestudySec').length) {
-//     if ($('.casestudySec').isInViewport()) {
-//       setTimeout(() => {
-//         $('.moreCasestudy').addClass('circleAnimShow');
-//       }, 1500);
-//     } else {
-//       $('.moreCasestudy').removeClass('circleAnimShow');
-//     }
-//   }
-// });
-
-//Casestudy page casestudies footer animation code ends
-
-//Blog details page active navbar code starts
-// $(document).ready(function () {
-//   let menuScrollTimer = null;
-//   $(".blogdetailsfilter-wrapper a").click(function (e) {
-//     e.preventDefault();
-//     if (menuScrollTimer === null) {
-//       // Highlight the clicked item
-//       $('.blogdetailsfilter-wrapper a.current').removeClass('current');
-//       $(this).addClass('current');
-//       // Smooth scroll to the target section
-//       let target = $(this).attr('href');
-//       $('html, body').animate({ scrollTop: $(target).offset().top - 250 }, 1050);
-//       // Set `menuScrollTimer` timer
-//       // This will prevents multiple clicks on menu items whule the smooth scroll is taking effect
-//       // This will also prevent the scroll logic from running
-//       menuScrollTimer = setTimeout(function () {
-//         clearTimeout(menuScrollTimer);
-//         menuScrollTimer = null;
-//       }, 1050);
-//     }
-//   });
-//   $(window).scroll(function (e) {
-//     // Avoid triggering the logic if the scroll event is triggerd from clicking one of the items
-//     if (menuScrollTimer === null) {
-//       let windowTop = $(this).scrollTop();
-//       $('.blogdetailsfilter-wrapper a').each(function (event) {
-//         if (windowTop >= $($(this).attr('href')).offset().top - 250) {
-//           $('.blogdetailsfilter-wrapper .current').removeClass('current');
-//           $(this).addClass('current');
-//         }
-//       });
-//     }
-//   });
-// });
-//Blog details page active navbar code ends
-
 //About us slider starts
-
 if ($(".aboutus-researchSec .researchsec-wrapper .img-div").length) {
   $('.aboutus-researchSec .researchsec-wrapper .img-div').slick({
     dots: true,
@@ -518,7 +447,8 @@ if ($(".aboutus-researchSec .researchsec-wrapper .img-div").length) {
 }
 //About us slider ends
 
-//Video player js starts
+//Video player js starts for casestudy
+if ($(".casedetailsmainSec .video-stats-sec").length) {
 const video = document.getElementById("video");
 const circlePlayButton = document.getElementById("circle-play-b");
 
@@ -537,25 +467,44 @@ video.addEventListener("playing", function () {
 video.addEventListener("pause", function () {
 	circlePlayButton.style.opacity = 1;
 });
+}
+//Video player js ends for casestudy
 
-//Video player js ends
+// Form active tab for career page starts
+if ($(".careerFormSec").length) {
+$("#enable1").change(function() {
+  $("#first").css("background","#000")
+  $("#first").css("color","#fff")
+  $("#second").css("background","#fff")
+  $("#second").css("color","#000")
+  $("#third").css("background","#fff")
+  $("#third").css("color","#000")
+});
 
+$("#enable2").change(function() {
+  $("#second").css("background","#000")
+  $("#second").css("color","#fff")
+  $("#first").css("background","#fff")
+  $("#first").css("color","#000")
+  $("#third").css("background","#fff")
+  $("#third").css("color","#000")
+});
 
+$("#enable3").change(function() {
+  $("#third").css("background","#000")
+  $("#third").css("color","#fff")
+  $("#first").css("background","#fff")
+  $("#first").css("color","#000")
+  $("#second").css("background","#fff")
+  $("#second").css("color","#000")
+});
+}
+//Form active tab for career page ends
 //------------------------------------------------------- Shamal's JS Code ends --------------------------------------------------//
-
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
   const smoothScroll = new SmoothScroll(0.02);
 });
-
-
-
-
-
-
-
 
 if ($(window).width() > 1025) {
   new WOW().init();
