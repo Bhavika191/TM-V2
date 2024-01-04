@@ -7646,9 +7646,10 @@ body.opentwo {
 .careerFormSec .careerSec .secHeading h1 {
   font-size: 96px;
   font-weight: 500;
-  line-height: 106px;
+  line-height: 110.417%;
   letter-spacing: -2px;
   margin-bottom: 15px;
+  color: var(--Primary-Black, #000);
 }
 @media screen and (max-width: 1600px) {
   .careerFormSec .careerSec .secHeading h1 {
@@ -7673,7 +7674,8 @@ body.opentwo {
 .careerFormSec .careerSec .secHeading p {
   font-size: 24px;
   font-weight: 400;
-  line-height: 34px;
+  line-height: 141.667%;
+  color: var(--Body-Copy, #6A6A6A);
 }
 @media screen and (max-width: 1600px) {
   .careerFormSec .careerSec .secHeading p {
@@ -7745,6 +7747,9 @@ body.opentwo {
     font-size: 18px;
   }
 }
+.careerFormSec .careerSec .collaborateForm form select:hover {
+  cursor: pointer;
+}
 .careerFormSec .careerSec .collaborateForm form select option {
   color: #000;
   font-family: "Poppins", sans-serif;
@@ -7767,6 +7772,9 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form select option {
     font-size: 18px;
   }
+}
+.careerFormSec .careerSec .collaborateForm form select option:hover {
+  cursor: pointer;
 }
 .careerFormSec .careerSec .collaborateForm form .empType {
   padding-bottom: 60px;
@@ -7809,13 +7817,12 @@ body.opentwo {
   }
 }
 .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span:hover {
-  color: #FFF;
-  background: #000;
   cursor: pointer;
 }
 .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label .disabled {
   color: rgba(0, 0, 0, 0.2) !important;
   cursor: not-allowed !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
 }
 .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label input[type=radio]:checked + .wpcf7-list-item-label {
   color: #FFF;
@@ -7865,13 +7872,12 @@ body.opentwo {
   }
 }
 .careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label span:hover {
-  color: #FFF;
-  background: #000;
   cursor: pointer;
 }
 .careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label .disabled {
   color: rgba(0, 0, 0, 0.2) !important;
   cursor: not-allowed !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
 }
 .careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label input[type=radio]:checked + .wpcf7-list-item-label {
   color: #FFF;
@@ -7986,6 +7992,9 @@ body.opentwo {
     font-size: 12px;
   }
 }
+.careerFormSec .careerSec .collaborateForm form input[type=submit]:hover {
+  cursor: pointer;
+}
 .careerFormSec .careerSec .collaborateForm form .form-group {
   display: flex;
   justify-content: space-between;
@@ -8053,12 +8062,6 @@ body.opentwo {
   .careerFormSec .careerSec .secHeading {
     margin-top: 100px;
     top: 200px;
-  }
-  .careerFormSec .careerSec .secHeading h1 {
-    line-height: 86px;
-  }
-  .careerFormSec .careerSec .secHeading p {
-    line-height: 30px;
   }
   .careerFormSec .careerSec .collaborateForm {
     padding: 50px;
@@ -8178,12 +8181,6 @@ body.opentwo {
   .careerFormSec .careerSec .secHeading {
     margin-top: 80px;
   }
-  .careerFormSec .careerSec .secHeading h1 {
-    line-height: 70px;
-  }
-  .careerFormSec .careerSec .secHeading p {
-    line-height: 26px;
-  }
   .careerFormSec .careerSec .collaborateForm {
     padding: 40px;
     width: 50%;
@@ -8207,7 +8204,7 @@ body.opentwo {
     padding: 12px 24px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 821px) {
   .careerFormSec {
     margin: 80px 0px 150px;
   }
@@ -8221,12 +8218,6 @@ body.opentwo {
     position: static;
     height: auto;
   }
-  .careerFormSec .careerSec .secHeading h1 {
-    line-height: 70px;
-  }
-  .careerFormSec .careerSec .secHeading p {
-    line-height: 26px;
-  }
   .careerFormSec .careerSec .collaborateForm {
     padding: 50px;
     width: 115%;
@@ -8238,6 +8229,38 @@ body.opentwo {
   }
   .careerFormSec .careerSec .collaborateForm form input[type=submit] {
     padding: 12px 24px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: normal;
+  }
+  .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item {
+    width: 33.33%;
+  }
+  .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span {
+    width: auto;
+    padding: 12px 42px;
+    margin-right: 15px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .borderDotted p {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: normal;
+  }
+  .careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item {
+    width: 33.33%;
+  }
+  .careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label span {
+    width: auto;
+    padding: 12px 42px;
+    margin-right: 15px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label span:not(:last-child) {
+    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 720px) {
@@ -8251,6 +8274,13 @@ body.opentwo {
   }
   .careerFormSec .careerSec .secHeading h1 {
     line-height: 50px;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .careerFormSec .careerSec .secHeading p {
+    color: var(--Primary-Black, #000);
+    font-size: 16px;
+    line-height: 26px;
   }
   .careerFormSec .careerSec .collaborateForm {
     padding: 40px 25px;
