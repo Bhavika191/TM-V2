@@ -10047,23 +10047,11 @@ body.opentwo {
   }
 }
 .casedetailsmainSec .statsSec .optionalSec {
-  padding-left: 60px;
-  padding-right: 60px;
+  margin: 0px 60px;
+  overflow: hidden;
 }
 .casedetailsmainSec .statsSec .optionalSec img {
   width: 100%;
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .statsSec .optionalSec {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .casedetailsmainSec .statsSec .optionalSec {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 @media all and (max-width: 1800px) {
   .casedetailsmainSec .statsSec {
@@ -10124,6 +10112,9 @@ body.opentwo {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
     margin-bottom: 26px;
   }
+  .casedetailsmainSec .statsSec .optionalSec {
+    margin: 0px 40px;
+  }
 }
 @media all and (max-width: 1200px) {
   .casedetailsmainSec .statsSec {
@@ -10181,26 +10172,10 @@ body.opentwo {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-leftcontent {
     width: 100%;
   }
-  .casedetailsmainSec .statsSec .optionalSec {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-@media screen and (max-width: 1024px) and (max-width: 1400px) {
-  .casedetailsmainSec .statsSec .optionalSec {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 1024px) and (max-width: 720px) {
-  .casedetailsmainSec .statsSec .optionalSec {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 @media all and (max-width: 780px) {
   .casedetailsmainSec .statsSec .optionalSec {
-    padding: 0px;
+    margin: 0px;
   }
 }
 @media all and (max-width: 680px) {
@@ -10267,7 +10242,7 @@ body.opentwo {
     line-height: 24px;
   }
   .casedetailsmainSec .statsSec .optionalSec {
-    padding: 0px;
+    margin: 0px;
   }
 }
 .casedetailsmainSec .impactSec {
@@ -11148,13 +11123,14 @@ body.opentwo {
 }
 
 .thankyouSec {
-  padding: 200px 0px 400px;
+  padding: 200px 0px;
   position: relative;
   z-index: 3;
 }
 .thankyouSec .thanksWrapper {
   padding-left: 210px;
   padding-right: 210px;
+  position: relative;
 }
 @media screen and (max-width: 1600px) {
   .thankyouSec .thanksWrapper {
@@ -11252,6 +11228,8 @@ body.opentwo {
   letter-spacing: 0.7px;
   text-transform: uppercase;
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 14px 24px;
   margin-right: 30px;
   border-radius: 6px;
@@ -11280,7 +11258,7 @@ body.opentwo {
 .thankyouSec .thanksWrapper .gameIcon {
   position: absolute;
   right: 20%;
-  bottom: 142px;
+  bottom: 0;
   width: 15%;
 }
 .thankyouSec .thanksWrapper .gameIcon button {
@@ -11289,7 +11267,7 @@ body.opentwo {
 }
 @media all and (max-width: 1600px) {
   .thankyouSec {
-    padding: 150px 0px 300px;
+    padding: 150px 0px 150px;
   }
   .thankyouSec .thanksWrapper .thankyou-heading {
     line-height: 96px;
@@ -11307,13 +11285,12 @@ body.opentwo {
   }
   .thankyouSec .thanksWrapper .gameIcon {
     right: 22%;
-    bottom: 122px;
     width: 13%;
   }
 }
 @media all and (max-width: 1400px) {
   .thankyouSec {
-    padding: 160px 0px;
+    padding: 160px 0px 130px;
   }
   .thankyouSec .thanksWrapper .thankyou-heading {
     line-height: 90px;
@@ -11331,6 +11308,9 @@ body.opentwo {
   }
 }
 @media all and (max-width: 1200px) {
+  .thankyouSec {
+    padding: 130px 0px 110px;
+  }
   .thankyouSec .thanksWrapper .thankyou-heading {
     line-height: 86px;
     margin-bottom: 22px;
@@ -11344,9 +11324,9 @@ body.opentwo {
     margin-right: 24px;
   }
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1026px) {
   .thankyouSec {
-    padding: 100px 0px;
+    padding: 200px 0px;
   }
   .thankyouSec .thanksWrapper .thankyou-heading {
     line-height: 80px;
@@ -11369,10 +11349,13 @@ body.opentwo {
   .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
     margin-right: 20px;
   }
+  .thankyouSec .thanksWrapper .gameIcon {
+    bottom: -25%;
+  }
 }
 @media all and (max-width: 640px) {
   .thankyouSec {
-    padding: 80px 0px;
+    padding: 80px 0px 150px;
   }
   .thankyouSec .thanksWrapper .thankyou-heading {
     line-height: 60px;
@@ -11387,14 +11370,17 @@ body.opentwo {
   }
   .thankyouSec .thanksWrapper .thankyou-cta .cta-black, .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
     line-height: 10px;
-    padding: 8px 16px;
+    padding: 15px 20px;
   }
   .thankyouSec .thanksWrapper .thankyou-cta .cta-black img, .thankyouSec .thanksWrapper .thankyou-cta .cta-white img {
     margin-left: 5px;
   }
   .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
-    margin-right: 15px;
+    margin-right: 0px;
     margin-bottom: 16px;
+  }
+  .thankyouSec .thanksWrapper .gameIcon {
+    width: 50%;
   }
 }
 
@@ -11408,7 +11394,6 @@ body.opentwo {
 }
 .thankyouGame .modalContainer {
   font-family: "Poppins", sans-serif;
-  font-size: 40px;
   background-color: rgba(0, 0, 0, 0.604);
   width: 100vw;
   height: 100vh;
@@ -11417,25 +11402,9 @@ body.opentwo {
   left: 0;
   display: none;
 }
-@media screen and (max-width: 1600px) {
-  .thankyouGame .modalContainer {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .thankyouGame .modalContainer {
-    font-size: 22px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .thankyouGame .modalContainer {
-    font-size: 14px;
-  }
-}
 .thankyouGame .modalContainer .modal {
   background-color: white;
-  width: 32vw;
-  height: 38vh;
+  width: 45%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11444,29 +11413,133 @@ body.opentwo {
 }
 .thankyouGame .modalContainer .modal .innermodel {
   flex-direction: column;
-  padding: 0px 50px;
+  padding: 50px;
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  text-align: center;
 }
 .thankyouGame .modalContainer .modal .innermodel .innerDiv {
-  width: 80%;
   display: flex;
   justify-content: space-between;
 }
-.thankyouGame .modalContainer .modal .innermodel .innerDiv button {
+.thankyouGame .modalContainer .modal .innermodel .innerDiv button, .thankyouGame .modalContainer .modal .innermodel .innerDiv a {
   border: none;
-  padding: 18px 0 18px 0;
-  width: 140px;
-  font-size: 1.2rem;
+  padding: 14px 26px;
+  font-size: 18px;
   border-radius: 30px;
-  margin-top: 18px;
   color: white;
   cursor: pointer;
   background-color: #000;
+}
+@media screen and (max-width: 1600px) {
+  .thankyouGame .modalContainer .modal .innermodel .innerDiv button, .thankyouGame .modalContainer .modal .innermodel .innerDiv a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .thankyouGame .modalContainer .modal .innermodel .innerDiv button, .thankyouGame .modalContainer .modal .innermodel .innerDiv a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .thankyouGame .modalContainer .modal .innermodel .innerDiv button, .thankyouGame .modalContainer .modal .innermodel .innerDiv a {
+    font-size: 12px;
+  }
+}
+.thankyouGame .modalContainer .modal .innermodel .innerDiv a {
+  margin-right: 20px;
+}
+.thankyouGame .modalContainer .modal .innermodel .modeltext {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1600px) {
+  .thankyouGame .modalContainer .modal .innermodel .modeltext {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .thankyouGame .modalContainer .modal .innermodel .modeltext {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .thankyouGame .modalContainer .modal .innermodel .modeltext {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .thankyouGame .modalContainer .modal .innermodel {
+    padding: 40px;
+  }
+  .thankyouGame .modalContainer .modal .innermodel .innerDiv a {
+    margin-right: 18px;
+  }
+  .thankyouGame .modalContainer .modal .innermodel .modeltext {
+    margin-bottom: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .thankyouGame .modalContainer .modal {
+    width: 40%;
+  }
+  .thankyouGame .modalContainer .modal .innermodel {
+    padding: 35px;
+  }
+  .thankyouGame .modalContainer .modal .innermodel .innerDiv button, .thankyouGame .modalContainer .modal .innermodel .innerDiv a {
+    padding: 12px 22px;
+  }
+  .thankyouGame .modalContainer .modal .innermodel .innerDiv a {
+    margin-right: 16px;
+  }
+  .thankyouGame .modalContainer .modal .innermodel .modeltext {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .thankyouGame .modalContainer .modal {
+    width: 50%;
+  }
+  .thankyouGame .modalContainer .modal .innermodel {
+    padding: 30px;
+  }
+  .thankyouGame .modalContainer .modal .innermodel .innerDiv button, .thankyouGame .modalContainer .modal .innermodel .innerDiv a {
+    padding: 10px 20px;
+  }
+  .thankyouGame .modalContainer .modal .innermodel .innerDiv a {
+    margin-right: 14px;
+  }
+  .thankyouGame .modalContainer .modal .innermodel .modeltext {
+    margin-bottom: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .thankyouGame .modalContainer .modal {
+    width: 80%;
+  }
+  .thankyouGame .modalContainer .modal .innermodel {
+    padding: 25px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .thankyouGame .modalContainer .modal {
+    width: 90%;
+  }
+  .thankyouGame .modalContainer .modal .innermodel {
+    padding: 20px;
+  }
+  .thankyouGame .modalContainer .modal .innermodel .innerDiv button, .thankyouGame .modalContainer .modal .innermodel .innerDiv a {
+    width: 100%;
+    padding: 8px 10px;
+  }
+  .thankyouGame .modalContainer .modal .innermodel .modeltext {
+    margin-bottom: 20px;
+  }
 }
 
 .blogdetails-bannerSec .blogdetails-wrapper {
