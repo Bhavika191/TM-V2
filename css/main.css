@@ -10009,6 +10009,9 @@ body.opentwo {
     font-size: 14px;
   }
 }
+.casedetailsmainSec .statsSec .statsSec-wrapper .stats-leftcontent {
+  width: 46%;
+}
 .casedetailsmainSec .statsSec .statsSec-wrapper .stats-leftcontent p {
   color: var(--body-copy, #6A6A6A);
   font-family: "Poppins", sans-serif;
@@ -10163,6 +10166,9 @@ body.opentwo {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
     margin-bottom: 22px;
   }
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-leftcontent {
+    width: 100%;
+  }
   .casedetailsmainSec .statsSec .optionalSec {
     padding-left: 60px;
     padding-right: 60px;
@@ -10239,6 +10245,9 @@ body.opentwo {
     font-weight: 500;
     line-height: 44.444px;
     letter-spacing: -0.9px;
+  }
+  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-leftcontent {
+    width: 100%;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-leftcontent p {
     font-size: 14px;
@@ -12613,7 +12622,7 @@ body.opentwo {
   font-size: 64px;
   font-weight: 500;
   color: var(--Primary-Black, #000);
-  line-height: 74px;
+  line-height: 115.625%;
   letter-spacing: -1.92px;
   margin-bottom: 34px;
 }
@@ -12637,7 +12646,7 @@ body.opentwo {
   font-size: 24px;
   font-weight: 400;
   color: var(--Body-Copy, #6A6A6A);
-  line-height: 34px;
+  line-height: 141.667%;
 }
 @media screen and (max-width: 1600px) {
   .animation-sec .heading-content .subheading {
@@ -12744,7 +12753,7 @@ body.opentwo {
   font-size: 64px;
   font-weight: 500;
   color: var(--Primary-Black, #000);
-  line-height: 74px;
+  line-height: 115.625%;
   letter-spacing: -1.92px;
   margin-bottom: 48px;
 }
@@ -12768,7 +12777,7 @@ body.opentwo {
   font-size: 24px;
   font-weight: 400;
   color: var(--Body-Copy, #000);
-  line-height: 34px;
+  line-height: 141.667%;
 }
 @media screen and (max-width: 1600px) {
   .animation-sec .animation-Div .first-fold .firstfold-content p {
@@ -12810,7 +12819,7 @@ body.opentwo {
   font-size: 64px;
   font-weight: 500;
   color: var(--Primary-Black, #000);
-  line-height: 74px;
+  line-height: 115.625%;
   letter-spacing: -1.92px;
   margin-bottom: 48px;
 }
@@ -12834,7 +12843,7 @@ body.opentwo {
   font-size: 24px;
   font-weight: 400;
   color: var(--Body-Copy, #000);
-  line-height: 34px;
+  line-height: 141.667%;
 }
 @media screen and (max-width: 1600px) {
   .animation-sec .animation-Div .third-fold .third-fold-content p {
@@ -12874,7 +12883,7 @@ body.opentwo {
   font-size: 64px;
   font-weight: 500;
   color: var(--Primary-Black, #000);
-  line-height: 74px;
+  line-height: 115.625%;
   letter-spacing: -1.92px;
   margin-bottom: 48px;
 }
@@ -12898,7 +12907,7 @@ body.opentwo {
   font-size: 24px;
   font-weight: 400;
   color: var(--Body-Copy, #000);
-  line-height: 34px;
+  line-height: 141.667%;
 }
 @media screen and (max-width: 1600px) {
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content p {
@@ -12934,7 +12943,7 @@ body.opentwo {
   font-size: 96px;
   font-weight: 500;
   color: var(--Primary-Black, #000);
-  line-height: 106px;
+  line-height: 110.417%;
   letter-spacing: -2.88px;
   margin-bottom: 48px;
   width: 75%;
@@ -12965,7 +12974,7 @@ body.opentwo {
   font-size: 24px;
   font-weight: 400;
   color: var(--Body-Copy, #000);
-  line-height: 34px;
+  line-height: 141.667%;
   width: 65%;
   text-align: center;
 }
@@ -12996,11 +13005,7 @@ body.opentwo {
     padding: 0px 130px;
   }
   .animation-sec .heading-content .main-heading {
-    line-height: 70px;
     margin-bottom: 32px;
-  }
-  .animation-sec .heading-content .subheading {
-    line-height: 32px;
   }
   .animation-sec .animation-Div {
     padding-top: 150px;
@@ -13015,11 +13020,7 @@ body.opentwo {
     width: 35%;
   }
   .animation-sec .animation-Div .first-fold .firstfold-content h2 {
-    line-height: 72px;
     margin-bottom: 45px;
-  }
-  .animation-sec .animation-Div .first-fold .firstfold-content p {
-    line-height: 32px;
   }
   .animation-sec .animation-Div .second-fold {
     margin-bottom: 180px;
@@ -13032,11 +13033,7 @@ body.opentwo {
     width: 30%;
   }
   .animation-sec .animation-Div .third-fold .third-fold-content h2 {
-    line-height: 72px;
     margin-bottom: 45px;
-  }
-  .animation-sec .animation-Div .third-fold .third-fold-content p {
-    line-height: 32px;
   }
   .animation-sec .animation-Div .third-fold .third-fold-anime {
     width: 75%;
@@ -13050,23 +13047,17 @@ body.opentwo {
     width: 35%;
   }
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content h2 {
-    line-height: 72px;
     margin-bottom: 45px;
-  }
-  .animation-sec .animation-Div .fourth-fold .fourth-fold-content p {
-    line-height: 32px;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content {
     margin-bottom: 68px;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content h2 {
-    line-height: 100px;
     letter-spacing: -2px;
     margin-bottom: 45px;
     width: 75%;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content p {
-    line-height: 32px;
     width: 65%;
   }
 }
@@ -13079,11 +13070,7 @@ body.opentwo {
     padding: 0px 130px;
   }
   .animation-sec .heading-content .main-heading {
-    line-height: 70px;
     margin-bottom: 32px;
-  }
-  .animation-sec .heading-content .subheading {
-    line-height: 32px;
   }
   .animation-sec .animation-Div {
     padding-top: 140px;
@@ -13098,11 +13085,7 @@ body.opentwo {
     width: 35%;
   }
   .animation-sec .animation-Div .first-fold .firstfold-content h2 {
-    line-height: 70px;
     margin-bottom: 40px;
-  }
-  .animation-sec .animation-Div .first-fold .firstfold-content p {
-    line-height: 30px;
   }
   .animation-sec .animation-Div .second-fold {
     margin-bottom: 160px;
@@ -13115,11 +13098,7 @@ body.opentwo {
     width: 30%;
   }
   .animation-sec .animation-Div .third-fold .third-fold-content h2 {
-    line-height: 70px;
     margin-bottom: 40px;
-  }
-  .animation-sec .animation-Div .third-fold .third-fold-content p {
-    line-height: 30px;
   }
   .animation-sec .animation-Div .third-fold .third-fold-anime {
     width: 75%;
@@ -13133,22 +13112,16 @@ body.opentwo {
     width: 35%;
   }
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content h2 {
-    line-height: 70px;
     margin-bottom: 40px;
-  }
-  .animation-sec .animation-Div .fourth-fold .fourth-fold-content p {
-    line-height: 30px;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content {
     margin-bottom: 65px;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content h2 {
-    line-height: 96px;
     margin-bottom: 40px;
     width: 90%;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content p {
-    line-height: 30px;
     width: 65%;
   }
 }
@@ -13161,11 +13134,7 @@ body.opentwo {
     padding: 0px 120px;
   }
   .animation-sec .heading-content .main-heading {
-    line-height: 65px;
     margin-bottom: 30px;
-  }
-  .animation-sec .heading-content .subheading {
-    line-height: 30px;
   }
   .animation-sec .animation-Div {
     padding-top: 120px;
@@ -13180,11 +13149,7 @@ body.opentwo {
     width: 35%;
   }
   .animation-sec .animation-Div .first-fold .firstfold-content h2 {
-    line-height: 60px;
     margin-bottom: 30px;
-  }
-  .animation-sec .animation-Div .first-fold .firstfold-content p {
-    line-height: 24px;
   }
   .animation-sec .animation-Div .second-fold {
     margin-bottom: 140px;
@@ -13197,11 +13162,7 @@ body.opentwo {
     width: 30%;
   }
   .animation-sec .animation-Div .third-fold .third-fold-content h2 {
-    line-height: 60px;
     margin-bottom: 30px;
-  }
-  .animation-sec .animation-Div .third-fold .third-fold-content p {
-    line-height: 24px;
   }
   .animation-sec .animation-Div .third-fold .third-fold-anime {
     width: 75%;
@@ -13215,22 +13176,16 @@ body.opentwo {
     width: 35%;
   }
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content h2 {
-    line-height: 60px;
     margin-bottom: 30px;
-  }
-  .animation-sec .animation-Div .fourth-fold .fourth-fold-content p {
-    line-height: 24px;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content {
     margin-bottom: 60px;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content h2 {
-    line-height: 80px;
     margin-bottom: 30px;
     width: 90%;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content p {
-    line-height: 24px;
     width: 65%;
   }
 }
@@ -13242,11 +13197,7 @@ body.opentwo {
     margin-bottom: 110px;
   }
   .animation-sec .heading-content .main-heading {
-    line-height: 56px;
     margin-bottom: 28px;
-  }
-  .animation-sec .heading-content .subheading {
-    line-height: 28px;
   }
   .animation-sec .animation-Div {
     padding-top: 100px;
@@ -13261,11 +13212,7 @@ body.opentwo {
     width: 35%;
   }
   .animation-sec .animation-Div .first-fold .firstfold-content h2 {
-    line-height: 56px;
     margin-bottom: 26px;
-  }
-  .animation-sec .animation-Div .first-fold .firstfold-content p {
-    line-height: 22px;
   }
   .animation-sec .animation-Div .second-fold {
     margin-bottom: 120px;
@@ -13278,11 +13225,7 @@ body.opentwo {
     width: 30%;
   }
   .animation-sec .animation-Div .third-fold .third-fold-content h2 {
-    line-height: 56px;
     margin-bottom: 26px;
-  }
-  .animation-sec .animation-Div .third-fold .third-fold-content p {
-    line-height: 22px;
   }
   .animation-sec .animation-Div .third-fold .third-fold-anime {
     width: 75%;
@@ -13296,22 +13239,16 @@ body.opentwo {
     width: 35%;
   }
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content h2 {
-    line-height: 56px;
     margin-bottom: 26px;
-  }
-  .animation-sec .animation-Div .fourth-fold .fourth-fold-content p {
-    line-height: 22px;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content {
     margin-bottom: 50px;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content h2 {
-    line-height: 75px;
     margin-bottom: 25px;
     width: 90%;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content p {
-    line-height: 22px;
     width: 65%;
   }
 }
@@ -13324,12 +13261,10 @@ body.opentwo {
     padding: 0px;
   }
   .animation-sec .heading-content .main-heading {
-    line-height: 48px;
     margin-bottom: 24px;
     width: 90%;
   }
   .animation-sec .heading-content .subheading {
-    line-height: 24px;
     width: 90%;
   }
   .animation-sec .animation-Div {
@@ -13353,11 +13288,7 @@ body.opentwo {
     margin-bottom: 50px;
   }
   .animation-sec .animation-Div .first-fold .firstfold-content h2 {
-    line-height: 56px;
     margin-bottom: 26px;
-  }
-  .animation-sec .animation-Div .first-fold .firstfold-content p {
-    line-height: 22px;
   }
   .animation-sec .animation-Div .second-fold {
     margin-bottom: 60px;
@@ -13378,11 +13309,7 @@ body.opentwo {
     margin-bottom: 40px;
   }
   .animation-sec .animation-Div .third-fold .third-fold-content h2 {
-    line-height: 56px;
     margin-bottom: 26px;
-  }
-  .animation-sec .animation-Div .third-fold .third-fold-content p {
-    line-height: 22px;
   }
   .animation-sec .animation-Div .third-fold .third-fold-anime {
     display: none;
@@ -13399,11 +13326,7 @@ body.opentwo {
     margin-bottom: 100px;
   }
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content h2 {
-    line-height: 56px;
     margin-bottom: 26px;
-  }
-  .animation-sec .animation-Div .fourth-fold .fourth-fold-content p {
-    line-height: 22px;
   }
   .animation-sec .animation-Div .fourth-fold .fourth-fold-anime {
     display: none;
@@ -13415,12 +13338,10 @@ body.opentwo {
     margin-bottom: 40px;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content h2 {
-    line-height: 75px;
     margin-bottom: 25px;
     width: 80%;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content p {
-    line-height: 22px;
     width: 70%;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-anime {
@@ -13565,7 +13486,7 @@ body.opentwo {
   font-size: 64px;
   font-weight: 500;
   color: var(--Primary-Black, #000);
-  line-height: 74px;
+  line-height: 115.625%;
   letter-spacing: -1.92px;
   margin-bottom: 34px;
 }
@@ -13589,7 +13510,7 @@ body.opentwo {
   font-size: 24px;
   font-weight: 400;
   color: var(--Body-Copy, #6A6A6A);
-  line-height: 34px;
+  line-height: 141.667%;
 }
 @media screen and (max-width: 1600px) {
   .aboutus-researchSec .heading-content .subheading {
@@ -13684,7 +13605,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 150%;
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
@@ -13708,7 +13629,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
   font-weight: 500;
-  line-height: 40px;
+  line-height: 133.333%;
   letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
@@ -13731,7 +13652,7 @@ body.opentwo {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 150%;
   letter-spacing: 0.6px;
   margin-bottom: 48px;
 }
@@ -13759,11 +13680,7 @@ body.opentwo {
     padding: 0px 140px;
   }
   .aboutus-researchSec .heading-content .main-heading {
-    line-height: 72px;
     margin-bottom: 34px;
-  }
-  .aboutus-researchSec .heading-content .subheading {
-    line-height: 34px;
   }
   .aboutus-researchSec .researchsec-wrapper {
     margin-bottom: 220px;
@@ -13790,14 +13707,9 @@ body.opentwo {
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 30px;
-    line-height: 30px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 48px;
-    line-height: 40px;
-  }
-  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
-    line-height: 30px;
   }
 }
 @media all and (max-width: 1600px) {
@@ -13809,11 +13721,7 @@ body.opentwo {
     padding: 0px 130px;
   }
   .aboutus-researchSec .heading-content .main-heading {
-    line-height: 70px;
     margin-bottom: 32px;
-  }
-  .aboutus-researchSec .heading-content .subheading {
-    line-height: 32px;
   }
   .aboutus-researchSec .researchsec-wrapper {
     margin-bottom: 200px;
@@ -13846,14 +13754,11 @@ body.opentwo {
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 28px;
-    line-height: 28px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 40px;
-    line-height: 36px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
-    line-height: 28px;
     margin-bottom: 40px;
   }
 }
@@ -13866,11 +13771,7 @@ body.opentwo {
     padding: 0px 120px;
   }
   .aboutus-researchSec .heading-content .main-heading {
-    line-height: 65px;
     margin-bottom: 30px;
-  }
-  .aboutus-researchSec .heading-content .subheading {
-    line-height: 30px;
   }
   .aboutus-researchSec .researchsec-wrapper {
     margin-bottom: 180px;
@@ -13903,14 +13804,11 @@ body.opentwo {
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 24px;
-    line-height: 24px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 36px;
-    line-height: 36px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
-    line-height: 24px;
     margin-bottom: 36px;
   }
 }
@@ -13922,11 +13820,7 @@ body.opentwo {
     margin-bottom: 110px;
   }
   .aboutus-researchSec .heading-content .main-heading {
-    line-height: 56px;
     margin-bottom: 28px;
-  }
-  .aboutus-researchSec .heading-content .subheading {
-    line-height: 28px;
   }
   .aboutus-researchSec .researchsec-wrapper {
     margin-bottom: 160px;
@@ -13941,14 +13835,11 @@ body.opentwo {
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 22px;
-    line-height: 22px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 32px;
-    line-height: 28px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
-    line-height: 22px;
     margin-bottom: 32px;
   }
 }
@@ -13961,12 +13852,10 @@ body.opentwo {
     padding: 0px;
   }
   .aboutus-researchSec .heading-content .main-heading {
-    line-height: 48px;
     margin-bottom: 20px;
     width: 90%;
   }
   .aboutus-researchSec .heading-content .subheading {
-    line-height: 24px;
     width: 90%;
   }
   .aboutus-researchSec .researchsec-wrapper {
@@ -14016,14 +13905,11 @@ body.opentwo {
 @media all and (max-width: 1024px) {
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 20px;
-    line-height: 20px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 20px;
-    line-height: 34px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
-    line-height: 20px;
     margin-bottom: 20px;
   }
 }

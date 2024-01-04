@@ -572,86 +572,101 @@ var panAnime = bodymovin.loadAnimation({
   autoplay: true,
 });
 
+if ($('.first-fold').length) {
 var firstfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('first-fold-anime'),
   path: 'https://ixdtm.com/projects/tm-v2/js/json/first-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: true,
+  loop: false,
   autoplay: false,
-});
+}); 
+}
 
+if ($('.second-fold').length) {
 var secondfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('second-fold-anime'),
   path: 'https://ixdtm.com/projects/tm-v2/js/json/second-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: true,
+  loop: false,
   autoplay: false,
 });
+}
 
+if ($('.third-fold').length) {
 var thirdfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('third-fold-anime'),
   path: 'https://ixdtm.com/projects/tm-v2/js/json/third-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: true,
+  loop: false,
   autoplay: false,
 });
+}
 
+if ($('.fourth-fold').length) {
 var fourthfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('fourth-fold-anime'),
   path: 'https://ixdtm.com/projects/tm-v2/js/json/fourth-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: true,
+  loop: false,
   autoplay: false,
-});
+});}
 
+
+if ($('.fifth-fold').length) {
 var lastfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('fifth-fold-anime'),
   path: 'https://ixdtm.com/projects/tm-v2/js/json/fifth-fold.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: true,
+  loop: false,
   autoplay: false,
-});
+});}
+
 
 //Mobile animations
+if ($('.first-fold').length) {
 var firstfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('first-fold-anime-mbl'),
   path: 'https://ixdtm.com/projects/tm-v2/js/json/first-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: true,
+  loop: false,
   autoplay: false,
-});
+});}
 
+if ($('.second-fold').length) {
 var secondfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('second-fold-anime-mbl'),
   path: 'https://ixdtm.com/projects/tm-v2/js/json/second-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: true,
+  loop: false,
   autoplay: false,
-});
+});}
 
+if ($('.third-fold').length) {
 var thirdfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('third-fold-anime-mbl'),
   path: 'https://ixdtm.com/projects/tm-v2/js/json/third-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: true,
+  loop: false,
   autoplay: false,
-});
+});}
 
+if ($('.fourth-fold').length) {
 var fourthfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('fourth-fold-anime-mbl'),
   path: 'https://ixdtm.com/projects/tm-v2/js/json/fourth-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: true,
+  loop: false,
   autoplay: false,
-});
+});}
 
+if ($('.fifth-fold').length) {
 var lastfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('fifth-fold-anime-mbl'),
   path: 'https://ixdtm.com/projects/tm-v2/js/json/fifth-fold-mobile.json', // Required
   renderer: 'svg', // or 'canvas', 'html'
-  loop: true,
+  loop: false,
   autoplay: false,
-});
+});}
 
 var homeAnime = bodymovin.loadAnimation({
   container: document.getElementById('homeAnime'),
