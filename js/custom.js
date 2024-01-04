@@ -572,6 +572,7 @@ var panAnime = bodymovin.loadAnimation({
   autoplay: true,
 });
 
+//----------------------------Desktop Animations----------------------//
 if ($('.first-fold').length) {
 var firstfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('first-fold-anime'),
@@ -611,7 +612,6 @@ var fourthfoldfAnime = bodymovin.loadAnimation({
   autoplay: false,
 });}
 
-
 if ($('.fifth-fold').length) {
 var lastfoldfAnime = bodymovin.loadAnimation({
   container: document.getElementById('fifth-fold-anime'),
@@ -621,8 +621,7 @@ var lastfoldfAnime = bodymovin.loadAnimation({
   autoplay: false,
 });}
 
-
-//Mobile animations
+//------------------------------Mobile Animations----------------------//
 if ($('.first-fold').length) {
 var firstfoldfAnimembl = bodymovin.loadAnimation({
   container: document.getElementById('first-fold-anime-mbl'),
@@ -683,6 +682,7 @@ $.fn.isInViewport = function () {
   var viewportBottom = viewportTop + $(window).height();
   return elementBottom > viewportTop && elementTop < viewportBottom;
 };
+//------------------------------Mobile Animations----------------------//
 $(window).on('resize scroll', function () {
   if ($('.first-fold').length) {
     if ($(window).width() > 720) {
@@ -699,6 +699,7 @@ $(window).on('resize scroll', function () {
     }
   }
 });
+
 $(window).on('resize scroll', function () {
   if ($('.second-fold').length) {
     if ($(window).width() > 720) {
@@ -715,6 +716,7 @@ $(window).on('resize scroll', function () {
     }
   }
 });
+
 $(window).on('resize scroll', function () {
   if ($('.third-fold').length) {
     if ($(window).width() > 720) {
@@ -731,6 +733,7 @@ $(window).on('resize scroll', function () {
     }
   }
 });
+
 $(window).on('resize scroll', function () {
   if ($('.fourth-fold').length) {
     if ($(window).width() > 720) {
@@ -747,6 +750,7 @@ $(window).on('resize scroll', function () {
     }
   }
 });
+
 $(window).on('resize scroll', function () {
   if ($('.fifth-fold').length) {
     if ($(window).width() > 720) {
@@ -763,6 +767,7 @@ $(window).on('resize scroll', function () {
     }
   }
 });
+//------------------------------Mobile Animations----------------------//
 $(window).on('resize scroll', function () {
   if ($('.first-fold').length) {
     if ($(window).width() > 720) {
@@ -779,6 +784,7 @@ $(window).on('resize scroll', function () {
     }
   }
 });
+
 $(window).on('resize scroll', function () {
   if ($('.second-fold').length) {
     if ($(window).width() > 720) {
@@ -795,6 +801,7 @@ $(window).on('resize scroll', function () {
     }
   }
 });
+
 $(window).on('resize scroll', function () {
   if ($('.third-fold').length) {
     if ($(window).width() > 720) {
@@ -811,6 +818,7 @@ $(window).on('resize scroll', function () {
     }
   }
 });
+
 $(window).on('resize scroll', function () {
   if ($('.fourth-fold').length) {
     if ($(window).width() > 720) {
@@ -844,9 +852,6 @@ $(window).on('resize scroll', function () {
     }
   }
 });
-
-
-
 
 //=============================================Json Animations========================================//
 
