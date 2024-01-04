@@ -190,16 +190,12 @@
                             &::before{content: "";position: absolute;background: url(../images/service-arrow.svg)  no-repeat;background-size: contain;top: 50%;transform: translateY(-50%);right: -100px;height: 20px;width: 20px;transition: 0.5s all ease-out;}
                             h3{color: #FFF;@include font40;font-weight: $fontW500;line-height: 40px;letter-spacing: -1.2px;margin-bottom: 14px;}
                             a{color: #FFF;@include font20;font-weight: $fontW400;line-height: 20px;}
+                            &:hover{&::before{right: 24px;}}
                         }
                     }
                     &:hover{
                         .mailIcon{
                             img{transform: translate(120%, -15%) rotate(-30deg);width: 50%;}
-                        }
-                        .MailIds{
-                            .idsBox{
-                                &::before{right: 24px;}
-                            }
                         }
                     }
                 }

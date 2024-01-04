@@ -104,6 +104,179 @@ $(window).on('resize scroll', function () {
 
 // sticky book page cta js ends
 
+$(document).ready(function () {
+  $('.middleCircle').on('click', function () {
+    $('#box').addClass('boxTwo');
+    $('#box svg').addClass('rotate');
+    $('.lines').addClass('linesNew');
+    $('.middleCircle').addClass('middleCirclenew');
+    $('.counterText').addClass('newcounterText');
+    $('.middleCircle').addClass('box_Two');
+    setTimeout(function () {
+      $('#box').removeClass('boxTwo');
+      $('#box svg').removeClass('rotate');
+      $('.lines').removeClass('linesNew');
+      $('.middleCircle').removeClass('middleCirclenew');
+      $('.middleCircle').removeClass('box_Two');
+    }, 9000);
+    setTimeout(function () {
+      $('.counterText').removeClass('newcounterText');
+    }, 9000);
+
+    setTimeout(function () {
+      $('.counterText span a').html(function (i, val) {
+        var incrementedValue = val * 1 + 1;
+        var formattedValue = formatNumber(incrementedValue);
+        localStorage.setItem('formattedValue', formattedValue);
+        /* data save code */
+        $.ajax({
+          type: 'POST',
+          url: 'http://ixdtm.com/projects/TM-V2-wp/wp-admin/admin-ajax.php',
+          dataType: 'json',
+          data: {
+            action: 'formated_Value',
+            formattedValue: formattedValue,
+          },
+          success: function (res) {
+            return $('#formattedValue').html(res / 10);
+          },
+          error: function (err) {
+            console.error(err);
+          }
+        });
+        /* ends data save code */
+        // return formattedValue;
+      });
+    }, 500);
+  });
+  function formatNumber(number) {
+    if (number >= 1000000) {
+      return (number / 1000000).toFixed(1) + 'M';
+    } else if (number >= 1000) {
+      return (number / 1000).toFixed(1) + 'K';
+    } else {
+      return number;
+    }
+  }
+});
+// our partner slider starts
+$('.logoSlider').slick({
+  dots: false,
+  arrows: false,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  autoplay: true,
+  infinite: true,
+  pauseOnHover: false,
+  pauseOnFocus: false,
+  speed: 3000,
+  autoplaySpeed: 1000,
+  responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+  ]
+});
+// our partner slider ends
+
+// case study slider js
+if ($(window).width() < 1025) {
+  if ($(".casestudyBoxes").length) {
+    $(".casestudyBoxes").slick({
+      dots: false,
+      arrows: false,
+      slidesToShow: 2.1,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 680,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: "40px",
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+  }
+}
+
+
+// customer review slider
+if ($(window).width() < 1025) {
+  if ($(".customerBoxes").length) {
+    $(".customerBoxes").slick({
+      dots: false,
+      arrows: false,
+      slidesToShow: 2.1,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 680,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: "40px",
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+  }
+}
+
+
+
+// Blogs slider
+if ($(window).width() < 1025) {
+  if ($(".blogsBoxes").length) {
+    $(".blogsBoxes").slick({
+      dots: false,
+      arrows: false,
+      slidesToShow: 2.1,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 680,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: "40px",
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+  }
+}
+
+// service slider
+if ($(window).width() < 1025) {
+  if ($(".serviceBoxes").length) {
+    $(".serviceBoxes").slick({
+      dots: false,
+      arrows: false,
+      slidesToShow: 2.1,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 680,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: "40px",
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+  }
+}
 
 //---------------------------------------------------------Shamal's Js Code Starts ---------------------------------------------------------------//
 // const el = document.querySelector(".service-container")
@@ -373,147 +546,7 @@ video.addEventListener("pause", function () {
 //------------------------------------------------------- Shamal's JS Code ends --------------------------------------------------//
 
 
-// our partner slider starts
-$('.logoSlider').slick({
-  dots: false,
-  arrows: false,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  autoplay: true,
-  infinite: true,
-  pauseOnHover: false,
-  pauseOnFocus: false,
-  speed: 3000,
-  autoplaySpeed: 1000,
-  responsive: [
-    {
-      breakpoint: 1025,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      }
-    },
-  ]
-});
-// our partner slider ends
 
-// case study slider js
-if ($(window).width() < 1025) {
-  if ($(".casestudyBoxes").length) {
-    $(".casestudyBoxes").slick({
-      dots: false,
-      arrows: false,
-      slidesToShow: 2.1,
-      infinite: true,
-      responsive: [
-        {
-          breakpoint: 680,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: "40px",
-            slidesToShow: 1,
-          },
-        },
-      ],
-    });
-  }
-}
-
-
-// customer review slider
-if ($(window).width() < 1025) {
-  if ($(".customerBoxes").length) {
-    $(".customerBoxes").slick({
-      dots: false,
-      arrows: false,
-      slidesToShow: 2.1,
-      infinite: true,
-      responsive: [
-        {
-          breakpoint: 680,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: "40px",
-            slidesToShow: 1,
-          },
-        },
-      ],
-    });
-  }
-}
-
-// google review slider
-if ($(window).width() < 1025) {
-  if ($(".ratingBoxes").length) {
-    $(".ratingBoxes").slick({
-      dots: false,
-      arrows: false,
-      slidesToShow: 2.1,
-      infinite: true,
-      responsive: [
-        {
-          breakpoint: 680,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: "40px",
-            slidesToShow: 1,
-          },
-        },
-      ],
-    });
-  }
-}
-
-// Blogs slider
-if ($(window).width() < 1025) {
-  if ($(".blogsBoxes").length) {
-    $(".blogsBoxes").slick({
-      dots: false,
-      arrows: false,
-      slidesToShow: 2.1,
-      infinite: true,
-      responsive: [
-        {
-          breakpoint: 680,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: "40px",
-            slidesToShow: 1,
-          },
-        },
-      ],
-    });
-  }
-}
-
-
-
-// service slider
-if ($(window).width() < 1025) {
-  if ($(".serviceBoxes").length) {
-    $(".serviceBoxes").slick({
-      dots: false,
-      arrows: false,
-      slidesToShow: 2.1,
-      infinite: true,
-      responsive: [
-        {
-          breakpoint: 680,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: "40px",
-            slidesToShow: 1,
-          },
-        },
-      ],
-    });
-  }
-}
 
 document.addEventListener('DOMContentLoaded', () => {
   const smoothScroll = new SmoothScroll(0.02);
@@ -523,61 +556,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-$(document).ready(function () {
-  $('.middleCircle').on('click', function () {
-    $('#box').addClass('boxTwo');
-    $('#box svg').addClass('rotate');
-    $('.lines').addClass('linesNew');
-    $('.middleCircle').addClass('middleCirclenew');
-    $('.counterText').addClass('newcounterText');
-    $('.middleCircle').addClass('box_Two');
-    setTimeout(function () {
-      $('#box').removeClass('boxTwo');
-      $('#box svg').removeClass('rotate');
-      $('.lines').removeClass('linesNew');
-      $('.middleCircle').removeClass('middleCirclenew');
-      $('.middleCircle').removeClass('box_Two');
-    }, 9000);
-    setTimeout(function () {
-      $('.counterText').removeClass('newcounterText');
-    }, 9000);
 
-    setTimeout(function () {
-      $('.counterText span a').html(function (i, val) {
-        var incrementedValue = val * 1 + 1;
-        var formattedValue = formatNumber(incrementedValue);
-        localStorage.setItem('formattedValue', formattedValue);
-        /* data save code */
-        $.ajax({
-          type: 'POST',
-          url: 'http://ixdtm.com/projects/TM-V2-wp/wp-admin/admin-ajax.php',
-          dataType: 'json',
-          data: {
-            action: 'formated_Value',
-            formattedValue: formattedValue,
-          },
-          success: function (res) {
-            return $('#formattedValue').html(res / 10);
-          },
-          error: function (err) {
-            console.error(err);
-          }
-        });
-        /* ends data save code */
-        // return formattedValue;
-      });
-    }, 500);
-  });
-  function formatNumber(number) {
-    if (number >= 1000000) {
-      return (number / 1000000).toFixed(1) + 'M';
-    } else if (number >= 1000) {
-      return (number / 1000).toFixed(1) + 'K';
-    } else {
-      return number;
-    }
-  }
-});
 
 
 if ($(window).width() > 1025) {
@@ -851,23 +830,7 @@ $(window).on('resize scroll', function () {
   }
 });
 
-// sticky book page cta js starts
-$(window).on('resize scroll', function () {
-  if ($('footer').length) {
-      if ($('footer').isInViewport()) {
-        setTimeout(() => {
-          $(".prizeDiv").css("display","none")
-        }, 500);
-      }
-      else {
-        setTimeout(() => {
-          $(".stickyCtas").css("display","flex")
-        }, 500);
-      }
-  }
-});
 
-// sticky book page cta js ends
 
 
 //=============================================Json Animations========================================//

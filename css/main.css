@@ -1534,8 +1534,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
 }
 @media screen and (max-width: 1280px) {
+  footer {
+    margin-bottom: 40px;
+  }
   footer .footerWrapper {
-    padding: 70px;
+    padding: 90px;
   }
   footer .footerWrapper .footerData .footerMenus ul li {
     margin-top: 12px;
@@ -1544,8 +1547,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     width: 30%;
   }
   footer .footerWrapper .footerData .footerGame .counterText {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     width: 100%;
+  }
+  footer .footerWrapper .footerData .footerGame .newcounterText {
+    bottom: 99%;
   }
   footer .footerWrapper .footerData .footerGame #box .fanRotatediv svg.rotate {
     border-radius: 240px;
@@ -1583,9 +1589,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
 }
 @media screen and (max-width: 1024px) {
-  footer {
-    margin-bottom: 150px;
-  }
   footer .footerWrapper {
     padding: 40px 16px;
   }
@@ -1715,6 +1718,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
 }
 @media screen and (max-width: 680px) {
+  footer {
+    margin-bottom: 30px;
+  }
   footer .footerWrapper .footerLogo {
     width: 60%;
   }
@@ -6444,12 +6450,12 @@ a.showLess::after {
     font-size: 14px;
   }
 }
+.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox:hover::before {
+  right: 24px;
+}
 .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact:hover .mailIcon img {
   transform: translate(120%, -15%) rotate(-30deg);
   width: 50%;
-}
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact:hover .MailIds .idsBox::before {
-  right: 24px;
 }
 @media screen and (max-width: 1920px) {
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon img {
@@ -14428,6 +14434,9 @@ body.opentwo {
   width: 45%;
   margin-top: 200px;
 }
+.bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner img {
+  width: 65%;
+}
 .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner h3 {
   font-size: 64px;
   font-weight: 500;
@@ -14699,6 +14708,9 @@ body.opentwo {
   .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner {
     width: 46%;
     margin-top: 120px;
+  }
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner img {
+    width: 60%;
   }
   .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner h4 {
     margin-bottom: 20px;
