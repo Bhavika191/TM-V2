@@ -685,7 +685,7 @@ $.fn.isInViewport = function () {
 //------------------------------Mobile Animations----------------------//
 $(window).on('resize scroll', function () {
   if ($('.first-fold').length) {
-    if ($(window).width() > 720) {
+    if ($(window).width() >= 1025) {
       if ($('.first-fold').isInViewport()) {
         setTimeout(() => {
           firstfoldfAnime.play();
@@ -702,7 +702,7 @@ $(window).on('resize scroll', function () {
 
 $(window).on('resize scroll', function () {
   if ($('.second-fold').length) {
-    if ($(window).width() > 720) {
+    if ($(window).width() >= 1025) {
       if ($('.second-fold').isInViewport()) {
         setTimeout(() => {
           secondfoldfAnime.play();
@@ -719,7 +719,7 @@ $(window).on('resize scroll', function () {
 
 $(window).on('resize scroll', function () {
   if ($('.third-fold').length) {
-    if ($(window).width() > 720) {
+    if ($(window).width() >= 1025) {
       if ($('.third-fold').isInViewport()) {
         setTimeout(() => {
           thirdfoldfAnime.play();
@@ -736,7 +736,7 @@ $(window).on('resize scroll', function () {
 
 $(window).on('resize scroll', function () {
   if ($('.fourth-fold').length) {
-    if ($(window).width() > 720) {
+    if ($(window).width() >= 1025) {
       if ($('.fourth-fold').isInViewport()) {
         setTimeout(() => {
           fourthfoldfAnime.play();
@@ -753,7 +753,7 @@ $(window).on('resize scroll', function () {
 
 $(window).on('resize scroll', function () {
   if ($('.fifth-fold').length) {
-    if ($(window).width() > 720) {
+    if ($(window).width() >= 1025) {
       if ($('.fifth-fold').isInViewport()) {
         setTimeout(() => {
           lastfoldfAnime.play();
@@ -770,7 +770,7 @@ $(window).on('resize scroll', function () {
 //------------------------------Mobile Animations----------------------//
 $(window).on('resize scroll', function () {
   if ($('.first-fold').length) {
-    if ($(window).width() > 720) {
+    if ($(window).width() <= 1024) {
       if ($('.first-fold').isInViewport()) {
         setTimeout(() => {
           firstfoldfAnimembl.play();
@@ -787,7 +787,7 @@ $(window).on('resize scroll', function () {
 
 $(window).on('resize scroll', function () {
   if ($('.second-fold').length) {
-    if ($(window).width() > 720) {
+    if ($(window).width() <= 1024) {
       if ($('.second-fold').isInViewport()) {
         setTimeout(() => {
           secondfoldfAnimembl.play();
@@ -804,7 +804,7 @@ $(window).on('resize scroll', function () {
 
 $(window).on('resize scroll', function () {
   if ($('.third-fold').length) {
-    if ($(window).width() > 720) {
+    if ($(window).width() <= 1024) {
       if ($('.third-fold').isInViewport()) {
         setTimeout(() => {
           thirdfoldfAnimembl.play();
@@ -821,7 +821,7 @@ $(window).on('resize scroll', function () {
 
 $(window).on('resize scroll', function () {
   if ($('.fourth-fold').length) {
-    if ($(window).width() > 720) {
+    if ($(window).width() <= 1024) {
       if ($('.fourth-fold').isInViewport()) {
         setTimeout(() => {
           fourthfoldfAnimembl.play();
@@ -838,7 +838,7 @@ $(window).on('resize scroll', function () {
 
 $(window).on('resize scroll', function () {
   if ($('.fifth-fold').length) {
-    if ($(window).width() > 720) {
+    if ($(window).width() <= 1024) {
       if ($('.fifth-fold').isInViewport()) {
         setTimeout(() => {
           lastfoldfAnimembl.play();
