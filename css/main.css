@@ -5783,7 +5783,7 @@ a.showLess::after {
 }
 .collaborateFormSec .collaborateSec .collaborateForm {
   width: 40%;
-  padding: 60px;
+  padding: 60px 60px 40px;
   background: #ffffff;
 }
 .collaborateFormSec .collaborateSec .collaborateForm form br {
@@ -5795,7 +5795,7 @@ a.showLess::after {
   font-size: 18px;
   font-weight: 400;
   line-height: 14px;
-  margin-bottom: 12px;
+  margin: 60px 0px 12px;
 }
 @media screen and (max-width: 1600px) {
   .collaborateFormSec .collaborateSec .collaborateForm form label {
@@ -5812,6 +5812,9 @@ a.showLess::after {
     font-size: 12px;
   }
 }
+.collaborateFormSec .collaborateSec .collaborateForm form label:first-child {
+  margin-top: 0px;
+}
 .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
   font-size: 28px;
   font-weight: 500;
@@ -5821,7 +5824,6 @@ a.showLess::after {
   padding-bottom: 12px;
   border-bottom: 1px solid #000000;
   width: 100%;
-  margin-bottom: 60px;
   caret-color: red;
 }
 @media screen and (max-width: 1600px) {
@@ -5866,7 +5868,7 @@ a.showLess::after {
   }
 }
 .collaborateFormSec .collaborateSec .collaborateForm form .form-group {
-  margin-bottom: 60px;
+  margin: 60px 0px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -5882,6 +5884,7 @@ a.showLess::after {
   line-height: 28px;
   font-weight: 400;
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 @media screen and (max-width: 1600px) {
   .collaborateFormSec .collaborateSec .collaborateForm form .form-group label {
@@ -5927,6 +5930,39 @@ a.showLess::after {
   transform: rotate(45deg) translate(-50%, -50%);
   z-index: 2;
 }
+.collaborateFormSec .collaborateSec .collaborateForm form .form-group .wpcf7-list-item {
+  margin: 0px !important;
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .wpcf7-not-valid-tip {
+  font-size: 16px;
+  color: red;
+  margin-top: 5px;
+}
+@media screen and (max-width: 1600px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form .wpcf7-not-valid-tip {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form .wpcf7-not-valid-tip {
+    font-size: 12px;
+  }
+}
+.collaborateFormSec .collaborateSec .collaborateForm form .wpcf7-response-output {
+  margin-top: 20px;
+  font-size: 16px;
+  color: red;
+}
+@media screen and (max-width: 1600px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form .wpcf7-response-output {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .collaborateFormSec .collaborateSec .collaborateForm form .wpcf7-response-output {
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 1600px) {
   .collaborateFormSec {
     margin: 100px 0px 300px;
@@ -5945,16 +5981,16 @@ a.showLess::after {
     line-height: 30px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm {
-    padding: 50px;
+    padding: 50px 50px 30px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
-    margin-bottom: 50px;
+  .collaborateFormSec .collaborateSec .collaborateForm form label {
+    margin: 50px 0px 12px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
     padding: 12px 24px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm form .form-group {
-    margin-bottom: 50px;
+    margin: 50px 0px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm form .form-group label {
     line-height: 25px;
@@ -5982,17 +6018,17 @@ a.showLess::after {
     top: 180px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm {
-    padding: 40px;
+    padding: 40px 40px 20px;
     width: 50%;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
-    margin-bottom: 30px;
+  .collaborateFormSec .collaborateSec .collaborateForm form label {
+    margin: 30px 0px 12px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
     padding: 12px 24px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm form .form-group {
-    margin-bottom: 30px;
+    margin: 30px 0px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm form .form-group label {
     line-height: 22px;
@@ -6026,16 +6062,16 @@ a.showLess::after {
     line-height: 26px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm {
-    padding: 40px;
+    padding: 40px 40px 20px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
-    margin-bottom: 50px;
+  .collaborateFormSec .collaborateSec .collaborateForm form label {
+    margin: 50px 0px 12px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
     padding: 12px 24px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm form .form-group {
-    margin-bottom: 50px;
+    margin: 50px 0px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm form .form-group label {
     line-height: 20px;
@@ -6067,19 +6103,19 @@ a.showLess::after {
     line-height: 26px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm {
-    padding: 50px;
+    padding: 50px 50px 30px;
     width: 115%;
     margin-left: -50px;
     margin-right: -50px;
   }
-  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
-    margin-bottom: 50px;
+  .collaborateFormSec .collaborateSec .collaborateForm form label {
+    margin: 50px 0px 12px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
     padding: 12px 24px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm form .form-group {
-    margin-bottom: 30px;
+    margin: 30px 0px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm form .form-group label {
     line-height: 24px;
@@ -6119,16 +6155,13 @@ a.showLess::after {
     color: #000;
   }
   .collaborateFormSec .collaborateSec .collaborateForm {
-    padding: 40px 25px;
+    padding: 40px 25px 20px;
     width: 115%;
     margin-left: -20px;
     margin-right: -20px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm form label {
-    margin-bottom: 8px;
-  }
-  .collaborateFormSec .collaborateSec .collaborateForm form input, .collaborateFormSec .collaborateSec .collaborateForm form textarea {
-    margin-bottom: 30px;
+    margin: 30px 0px 8px;
   }
   .collaborateFormSec .collaborateSec .collaborateForm form input[type=submit] {
     padding: 12px 24px;

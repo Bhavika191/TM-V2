@@ -4,21 +4,26 @@
             h1{@include font96;font-weight: $fontW500;line-height: 106px;letter-spacing: -2px;margin-bottom: 15px;}
             p{@include font24;font-weight: $fontW400;line-height: 34px;color: #6A6A6A;}
         }
-        .collaborateForm{width: 40%; padding: 60px;background: #ffffff;
+        .collaborateForm{width: 40%; padding: 60px 60px 40px;background: #ffffff;
             form{
                 br{display: none;}
-                label{display: block;color: #6A6A6A;@include font18;font-weight: $fontW400;line-height: 14px;margin-bottom: 12px;}
-                input, textarea{@include font28;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.56px;color: #000000;padding-bottom: 12px;border-bottom: 1px solid #000000;width: 100%;margin-bottom: 60px;caret-color: red;}
+                label{display: block;color: #6A6A6A;@include font18;font-weight: $fontW400;line-height: 14px;margin:60px 0px 12px;
+                    &:first-child{margin-top: 0px}
+                }
+                input, textarea{@include font28;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.56px;color: #000000;padding-bottom: 12px;border-bottom: 1px solid #000000;width: 100%;caret-color: red;}
                 input[type=submit]{@include font14;font-weight: $fontW700;line-height: 18px;letter-spacing: 0.7px;text-transform: uppercase;color: #ffffff;border: 0px;width: auto;margin: 0;padding: 14px 28px;border-radius: 6px;border: 1px solid #FF0D47;background: #FF0D47;cursor: pointer;}
-                .form-group{margin-bottom: 60px;display: flex;justify-content: space-between;align-items: flex-start;
+                .form-group{margin: 60px 0px;display: flex;justify-content: space-between;align-items: flex-start;
                     p{display: flex;justify-content: space-between;align-items: flex-start;}
-                    label{width: 94%;@include font16;line-height: 28px;font-weight: 400;margin-bottom: 0px;
+                    label{width: 94%;@include font16;line-height: 28px;font-weight: 400;margin-bottom: 0px;margin-top: 0px;
                         a{font-weight: $fontW600;color: #6A6A6A;}}
                         input[type=checkbox] {position: relative;border: 2px solid #000;border-radius: 6px;background: transparent;margin: 5px 15px 0px 0px;cursor: pointer;height: 28px; width: 28px;-webkit-appearance: none;opacity: .5;padding-bottom: 0px;
                         &:checked {background-color: #000;opacity: 1;}
                         &:before { content: '';position: absolute;right: 50%;top: 50%;width: 4px;height: 10px;border: solid #FFF;border-width: 0 2px 2px 0;margin: -1px -1px 0 -1px;transform: rotate(45deg) translate(-50%, -50%);z-index: 2;}
                     }  
+                    .wpcf7-list-item{margin: 0px !important}
                 }
+                .wpcf7-not-valid-tip{@include font16;color: red;margin-top: 5px;}
+                .wpcf7-response-output{margin-top: 20px;@include font16;color: red;}
             }
         }
     }
@@ -30,11 +35,11 @@
                 h1{line-height: 86px;}
                 p{line-height: 30px;}
             }
-            .collaborateForm{padding: 50px;
+            .collaborateForm{padding: 50px 50px 30px;
                 form{
-                    input, textarea{margin-bottom: 50px;}
+                    label{margin:50px 0px 12px;}
                     input[type=submit]{padding: 12px 24px;}
-                    .form-group{margin-bottom: 50px;
+                    .form-group{margin: 50px 0px;
                         label{line-height: 25px;}
                         input[type=checkbox] {margin: 5px 12px 0px 0px;height: 24px; width: 24px;
                             &:before {width: 4px;height: 8px;}
@@ -49,11 +54,11 @@
 
         .collaborateSec{padding-right: 40px !important;
             .secHeading{margin-top: 80px;width: 40%;top:180px;}
-            .collaborateForm{padding: 40px;width: 50%;
+            .collaborateForm{padding: 40px 40px 20px;width: 50%;
                 form{
-                    input, textarea{margin-bottom: 30px;}
+                    label{margin:30px 0px 12px;}
                     input[type=submit]{padding: 12px 24px;}
-                    .form-group{margin-bottom: 30px;
+                    .form-group{margin: 30px 0px;
                         label{line-height: 22px;}
                         input[type=checkbox] {margin: 5px 10px 0px 0px;height: 20px; width: 20px;
                             &:before {width: 4px;height: 8px;}
@@ -73,11 +78,11 @@
                 h1{line-height: 70px;}
                 p{line-height: 26px;}
             }
-            .collaborateForm{padding: 40px;
+            .collaborateForm{padding: 40px 40px 20px;
                 form{
-                    input, textarea{margin-bottom: 50px;}
+                    label{margin:50px 0px 12px;}
                     input[type=submit]{padding: 12px 24px;}
-                    .form-group{margin-bottom: 50px;
+                    .form-group{margin: 50px 0px;
                         label{line-height: 20px;}
                         input[type=checkbox] {margin: 5px 8px 0px 0px;
                             &:before {width: 4px;height: 8px;}
@@ -94,11 +99,11 @@
                 h1{line-height: 70px;}
                 p{line-height: 26px;}
             }
-            .collaborateForm{padding: 50px;width: 115%;margin-left: -50px;margin-right: -50px;
+            .collaborateForm{padding: 50px 50px 30px;width: 115%;margin-left: -50px;margin-right: -50px;
                 form{
-                    input, textarea{margin-bottom: 50px;}
+                    label{margin:50px 0px 12px;}
                     input[type=submit]{padding: 12px 24px;}
-                    .form-group{margin-bottom: 30px;
+                    .form-group{margin: 30px 0px;
                         label{line-height: 24px;width: 100%;font-size: 14px;color: #000;
                             a{color: #000;}
                         }
@@ -116,10 +121,9 @@
                 h1{line-height: 50px;}
                 p{color: #000;}
             }
-            .collaborateForm{padding: 40px 25px;width: 115%;margin-left: -20px;margin-right: -20px;
+            .collaborateForm{padding: 40px 25px 20px;width: 115%;margin-left: -20px;margin-right: -20px;
                 form{
-                    label{margin-bottom: 8px;}
-                    input, textarea{margin-bottom: 30px;}
+                    label{margin:30px 0px 8px;}
                     input[type=submit]{padding: 12px 24px;width: 100%;}
                 }
             }
