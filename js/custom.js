@@ -72,11 +72,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 $('.shareBlogs').click(function () {
   $('.sharePopup').addClass('sharePopupnew');
-  $('.single-post').addClass('bodyOverflow');
 });
 $('.closePopupshare').click(function () {
   $('.sharePopup').removeClass('sharePopupnew');
-  $('.single-post').removeClass('bodyOverflow');
 });
 
 $.fn.isInViewport = function () {
@@ -784,6 +782,34 @@ $(window).on('resize scroll', function () {
 });
 
 //=============================================Json Animations========================================//
+
+document.addEventListener("DOMContentLoaded", function() {
+  // For service container
+ const el = document.querySelector(".service-container");
+ el.classList.remove("is-pinned"); 
+ 
+ const observer = new IntersectionObserver(
+   ([e]) => {
+     e.target.classList.toggle("is-pinned", e.intersectionRatio < 1 );
+   },
+   { threshold: [1] }
+ );
+ observer.observe(el);
+ 
+ // For casestudy container
+ const cl = document.querySelector(".casestudy-container");
+ cl.classList.remove("is-pinned"); 
+ 
+ const observercase = new IntersectionObserver(
+   ([e]) => {
+     e.target.classList.toggle("is-pinned", e.intersectionRatio < 1 );
+   },
+   { threshold: [1] }
+ );
+ observercase.observe(cl);
+ });
+
+
 
 function resizeCanvas() {
   var canvs = document.getElementById("myCanvas");
