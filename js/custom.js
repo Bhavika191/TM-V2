@@ -331,6 +331,7 @@ jQuery(document).ready(function () {
 //Service page read more and Read less code ends
 
 //Service page & Casestudy page active menu navbar code starts
+if ($('.serviceSec').length) {
 $(document).ready(function () {
   let caseStudyMenuScrollTimer = null;
   let filterMenuScrollTimer = null;
@@ -408,6 +409,7 @@ $(document).ready(function () {
     }
   });
 });
+}
 //Service page Casestudy page active menu navbar code ends
 
 //Off set code starts
@@ -445,7 +447,7 @@ if ($(".aboutus-researchSec .researchsec-wrapper .img-div").length) {
 }
 //About us slider ends
 
-//Video player js starts
+//Video player js starts for casestudy
 if ($(".casedetailsmainSec .video-stats-sec").length) {
 const video = document.getElementById("video");
 const circlePlayButton = document.getElementById("circle-play-b");
@@ -466,9 +468,9 @@ video.addEventListener("pause", function () {
 	circlePlayButton.style.opacity = 1;
 });
 }
-//Video player js ends
+//Video player js ends for casestudy
 
-// Form active tab starts
+// Form active tab for career page starts
 if ($(".careerFormSec").length) {
 $("#enable1").change(function() {
   $("#first").css("background","#000")
@@ -497,7 +499,7 @@ $("#enable3").change(function() {
   $("#second").css("color","#000")
 });
 }
-//Form active tab ends
+//Form active tab for career page ends
 //------------------------------------------------------- Shamal's JS Code ends --------------------------------------------------//
 
 document.addEventListener('DOMContentLoaded', () => {
