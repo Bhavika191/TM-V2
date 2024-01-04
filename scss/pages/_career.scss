@@ -4,16 +4,19 @@
             h1{@include font96;font-weight: $fontW500;line-height:110.417% ;letter-spacing: -2px;margin-bottom: 15px;color: var(--Primary-Black, #000);}
             p{@include font24;font-weight: $fontW400;line-height: 141.667%;color: var(--Body-Copy, #6A6A6A);}
         }
-        .collaborateForm{width: 45%; padding: 60px;background: #ffffff;
+        .collaborateForm{width: 45%;padding: 60px 60px 40px;background: #ffffff;
             form{
-                label{display: block;color: #000;@include font18;font-weight: $fontW400;line-height: 14px;margin-bottom: 12px;}
-                select{width: 100%;padding: 12px 0px;border-bottom: 1px solid #000;margin-bottom: 60px;color: #000;font-family: $fontpoppins;@include font28;font-weight: $fontW500;line-height: 24px; letter-spacing: -0.56px;
+                br{display: none;}
+                label{display: block;color: #000;@include font18;font-weight: $fontW400;line-height: 14px;margin:60px 0px 12px;
+                    &:first-child{margin-top: 0px}
+                }
+                select{width: 100%;padding: 12px 0px;border-bottom: 1px solid #000;color: #000;font-family: $fontpoppins;@include font28;font-weight: $fontW500;line-height: 24px; letter-spacing: -0.56px;
                     &:hover{cursor: pointer;}
                     option{color: #000;font-family: $fontpoppins;@include font28;font-weight: $fontW500;line-height: 24px; letter-spacing: -0.56px;
                         &:hover{cursor: pointer;}
                     }
                 }
-                .empType{padding-bottom: 60px;
+                .empType{padding-bottom: 60px;padding-top:60px;
                     p{
                         span{
                             .radiocheck{display: flex;justify-content:space-between;
@@ -35,7 +38,7 @@
                     p{display: flex;justify-content:space-between;
                         br{display: none;}
                         .wpcf7-list-item{width: 30%;margin:0;
-                            label{
+                            label{margin: 0px;line-height: 0px;
                                 input{visibility: hidden;height: 0;margin-bottom: 0;}
                                 span{display: flex;justify-content: center;align-items: center; border:1px solid #000;border-radius:5px;padding: 10px 50px;color: #000;font-family: $fontpoppins;@include font14;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.28px;
                                     &:hover{cursor: pointer;}
@@ -47,9 +50,9 @@
                     }
                 }
                 .portfolio-upload{
-                    p{display: flex;justify-content:space-between;border-bottom: 1px solid #000000;margin-bottom: 60px;
+                    p{display: flex;justify-content:space-between;border-bottom: 1px solid #000000;
                         input{margin-bottom: 0px;border-bottom: none;}
-                        label{padding: 10px 15px; display: flex;align-items: center;justify-content: center; color: #000;font-family: $fontpoppins;@include font16;font-weight: $fontW500;line-height: 14px;letter-spacing: -0.48px;border-radius: 5px;border: 1px dashed #000;margin-bottom: 12px;
+                        label{padding: 10px 15px; display: flex;align-items: center;justify-content: center; color: #000;font-family: $fontpoppins;@include font16;font-weight: $fontW500;line-height: 14px;letter-spacing: -0.48px;border-radius: 5px;border: 1px dashed #000;margin:0px 0px 12px;
                             &:hover{cursor: pointer;}
                         }
                         .file-upload{position: unset; 
@@ -57,21 +60,25 @@
                         }
                     }
                 }
-                .resume-upload{display: flex;justify-content:space-between;
+                .resume-upload{display: flex;justify-content:space-between;margin-top:60px;
                     p{margin-bottom:12px;color: #000;font-family: $fontpoppins;@include font12;font-weight: $fontW400;line-height: 14px;}
                 }   
-                input, textarea{@include font28;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.56px;color: #000000;padding-bottom: 12px;border-bottom: 1px solid #000000;width: 100%;margin-bottom: 60px;}
+                input, textarea{@include font28;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.56px;color: #000000;padding-bottom: 12px;border-bottom: 1px solid #000000;width: 100%;}
                 input[type=submit]{@include font14;font-weight: $fontW700;line-height: 18px;letter-spacing: 0.7px;text-transform: uppercase;color: #ffffff;border: 0px;width: auto;margin: 0;padding: 14px 28px;border-radius: 6px;border: 1px solid #FF0D47;background: #FF0D47;
                     &:hover{cursor: pointer;}
                 }
-                .form-group{display: flex;justify-content: space-between;align-items: flex-start;margin-bottom: 60px;
-                    label{width: 94%;@include font16;line-height: 28px;font-weight: 400;margin-bottom: 0px;
-                        a{font-weight: $fontW600;color: #000;}}
-                    input[type=checkbox] {position: relative;border: 2px solid #000;border-radius: 6px;background: transparent;margin: 5px 15px 0px 0px;cursor: pointer;height: 28px; width: 28px;-webkit-appearance: none;opacity: .5;padding-bottom: 0px;
+                .form-group{margin: 60px 0px;display: flex;justify-content: space-between;align-items: flex-start;
+                    p{display: flex;justify-content: space-between;align-items: flex-start;}
+                    label{width: 94%;@include font16;line-height: 28px;font-weight: 400;margin-bottom: 0px;margin-top: 0px;
+                        a{font-weight: $fontW600;color: #6A6A6A;}}
+                        input[type=checkbox] {position: relative;border: 2px solid #000;border-radius: 6px;background: transparent;margin: 5px 15px 0px 0px;cursor: pointer;height: 28px; width: 28px;-webkit-appearance: none;opacity: .5;padding-bottom: 0px;
                         &:checked {background-color: #000;opacity: 1;}
                         &:before { content: '';position: absolute;right: 50%;top: 50%;width: 4px;height: 10px;border: solid #FFF;border-width: 0 2px 2px 0;margin: -1px -1px 0 -1px;transform: rotate(45deg) translate(-50%, -50%);z-index: 2;}
                     }  
+                    .wpcf7-list-item{margin: 0px !important}
                 }
+                .wpcf7-not-valid-tip{@include font16;color: red;margin-top: 5px;}
+                .wpcf7-response-output{margin-top: 20px;@include font16;color: red;}
             }
         }
     }
@@ -81,10 +88,10 @@
         .careerSec{padding-right: 60px !important;
             .secHeading{margin-top: 100px;top:200px;
             }
-            .collaborateForm{padding: 50px;
+            .collaborateForm{padding: 50px 50px 30px;
                 form{
-                    select{padding: 10px 0px;margin-bottom: 50px;}
-                    .empType{padding-bottom: 50px;
+                    select{padding: 10px 0px;}
+                    .empType{padding-bottom: 50px;padding-top:50px;
                         p{
                             span{
                                 .radiocheck{
@@ -107,16 +114,21 @@
                         }
                     }
                    .portfolio-upload{
-                    p{margin-bottom: 50px;
-                        label{padding: 8px 14px;line-height: 12px;letter-spacing: -0.48px;margin-bottom: 12px;}
+                    p{
+                        label{padding: 8px 14px;line-height: 12px;letter-spacing: -0.48px;}
                     }
                    }
-                   .resume-upload{
+                   .resume-upload{margin-top:50px;
                       p{margin-bottom:12px}
                    }
-                   
-                    input, textarea{margin-bottom: 50px;}
+                   label{margin:50px 0px 12px;}
                     input[type=submit]{padding: 12px 24px;}
+                    .form-group{margin: 50px 0px;
+                        label{line-height: 25px;}
+                        input[type=checkbox] {margin: 5px 12px 0px 0px;height: 24px; width: 24px;
+                            &:before {width: 4px;height: 8px;}
+                        }  
+                    }
                 }
             }
         }
@@ -126,10 +138,10 @@
 
         .careerSec{padding-right: 40px !important;
             .secHeading{margin-top: 80px;top:180px;}
-            .collaborateForm{padding: 40px;
+            .collaborateForm{padding: 40px 40px 20px;width: 50%;
                 form{
-                    select{padding: 10px 0px;margin-bottom: 30px;}
-                    .empType{padding-bottom: 30px;
+                    select{padding: 10px 0px;}
+                    .empType{padding-bottom: 30px;padding-top:30px;
                         p{
                             span{
                                 .radiocheck{
@@ -153,13 +165,19 @@
                         }
                     }
                    .portfolio-upload{
-                    p{margin-bottom: 30px; label{padding: 8px 14px;line-height: 10px;letter-spacing: -0.48px;margin-bottom: 12px;}}
+                    p{label{padding: 8px 14px;line-height: 10px;letter-spacing: -0.48px;}}
                    }
-                   .resume-upload{
+                   .resume-upload{margin-top:30px;
                       p{margin-bottom:12px}
                    }
-                    input, textarea{margin-bottom: 30px;}
-                    input[type=submit]{padding: 12px 24px;}
+                   label{margin:30px 0px 12px;}
+                   input[type=submit]{padding: 12px 24px;}
+                   .form-group{margin: 30px 0px;
+                    label{line-height: 22px;}
+                    input[type=checkbox] {margin: 5px 10px 0px 0px;height: 20px; width: 20px;
+                        &:before {width: 4px;height: 8px;}
+                    }  
+                }
                 }
             }
         }
@@ -199,14 +217,20 @@
         margin: 100px 0px 150px;
         .careerSec{
             .secHeading{margin-top: 80px;}
-            .collaborateForm{padding: 40px;width:50%;
+            .collaborateForm{padding: 40px 40px 20px;
                 form{
-                    select{margin-bottom: 50px;}
-                    .empType{padding-bottom: 50px;}
+                    .empType{padding-bottom: 50px;padding-top:50px;}
                     .borderDotted{padding-bottom: 50px;}
-                   .portfolio-upload{p{margin-bottom: 50px;}}
-                    input, textarea{margin-bottom: 50px;}
+                   .portfolio-upload{}
+                   .resume-upload{margin-top: 50px;}
+                   label{margin:50px 0px 12px;}
                     input[type=submit]{padding: 12px 24px;}
+                    .form-group{margin: 50px 0px;
+                        label{line-height: 20px;}
+                        input[type=checkbox] {margin: 5px 8px 0px 0px;
+                            &:before {width: 4px;height: 8px;}
+                        }  
+                    }
                 }
             }
         }
@@ -215,17 +239,25 @@
         margin: 80px 0px 150px;
         .careerSec{padding-right: 50px !important;
             .secHeading{width: 100%; margin-top: 50px; margin-bottom:40px;position:static;height:auto;}
-            .collaborateForm{padding: 50px;width: 115%;margin-left: -50px;margin-right: -50px;
+            .collaborateForm{padding: 50px 50px 30px;width: 115%;margin-left: -50px;margin-right: -50px;
                 form{
-                    input, textarea{margin-bottom: 50px;}
+                    label{margin:50px 0px 12px;}
                     input[type=submit]{padding: 12px 24px;}
+                    .form-group{margin: 30px 0px;
+                        label{line-height: 24px;width: 100%;font-size: 14px;color: #000;
+                            a{color: #000;}
+                        }
+                        input[type=checkbox] {margin: 5px 12px 0px 0px;height: 18px; width: 18px;border-radius: 4px;
+                            &:before {width: 3px;height: 7px;}
+                        }  
+                    }
                     .empType{
                         p{
                             span{
                                 .radiocheck{display:flex;flex-flow:wrap;justify-content:normal;
                                     .wpcf7-list-item{width: 33.33%;
-                                        label{
-                                            span{width: auto;padding: 12px 42px;margin-right: 15px;&:not(:last-child){margin-bottom: 15px;}}
+                                        label{margin-bottom: 0px;
+                                            span{width: auto;padding: 12px 42px;margin-right: 15px;}
                                         }
                                     }
                                 }
@@ -235,8 +267,8 @@
                     .borderDotted{
                         p{display:flex;flex-flow:wrap;justify-content:normal;
                             .wpcf7-list-item{width: 33.33%;
-                                label{
-                                    span{width: auto;padding: 12px 42px;margin-right: 15px;&:not(:last-child){margin-bottom: 15px;}}
+                                label{margin-bottom: 0px;
+                                    span{width: auto;padding: 12px 42px;margin-right: 15px;}
                                 }
                             }
                         }
@@ -251,12 +283,12 @@
                 h1{line-height: 50px;font-size: 40px;font-weight: 500;}
                 p{color: var(--Primary-Black, #000);font-size: 16px;line-height: 26px;}
             }
-            .collaborateForm{padding: 40px 25px;width: 115%;margin-left: -20px;margin-right: -20px;
+            .collaborateForm{padding: 40px 25px 20px;width: 115%;margin-left: -20px;margin-right: -20px;
                 form{
-                    select{padding: 8px 0px;margin-bottom: 30px;font-size: 20px;font-weight: 500;line-height: 24px;letter-spacing: -0.4px;
+                    select{padding: 8px 0px;font-size: 20px;font-weight: 500;line-height: 24px;letter-spacing: -0.4px;
                         option{font-size: 20px;font-weight: 500;line-height: 24px;letter-spacing: -0.4px;}
                     }
-                    .empType{padding-bottom: 30px;
+                    .empType{padding-bottom: 30px;padding-top:30px;
                         p{
                             span{
                                 .radiocheck{display:flex;flex-flow:wrap;justify-content:normal;
@@ -279,16 +311,15 @@
                         }
                     }
                    .portfolio-upload{
-                    p{display: block;margin-bottom: 30px;
+                    p{display: block;
                         input{margin-bottom: 0px;border-bottom: none;}
-                        label{padding: 12px 24px;display: inline-block; margin-bottom: 20px;font-size: 16px;font-weight: 500;line-height: 12px;letter-spacing: -0.48px;}}
+                        label{padding: 12px 24px;display: inline-block; margin:0px 0px 20px;font-size: 16px;font-weight: 500;line-height: 12px;letter-spacing: -0.48px;}}
                    }
-                   .resume-upload{display: flex;justify-content:space-between;
+                   .resume-upload{display: flex;justify-content:space-between;margin-top:30px;
                       p{display: none;}
                    }
-                    label{margin-bottom: 8px;}
-                    input, textarea{margin-bottom: 30px;}
-                    input[type=submit]{padding: 12px 24px;width: 100%;}
+                   label{margin:30px 0px 8px;}
+                   input[type=submit]{padding: 12px 24px;width: 100%;}
                 }
             }
         }
