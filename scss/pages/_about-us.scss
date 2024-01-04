@@ -9,8 +9,8 @@
 }
 .animation-sec{@include wrapper;margin-bottom:400px;
     .heading-content{margin-bottom: 140px;padding:0px 150px;
-        .main-heading{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 74px;letter-spacing: -1.92px;margin-bottom: 34px;}
-        .subheading{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #6A6A6A);line-height: 34px;}
+        .main-heading{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 115.625%;letter-spacing: -1.92px;margin-bottom: 34px;}
+        .subheading{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #6A6A6A);line-height: 141.667%;}
     }
     .animation-Div{position:relative;padding-top:170px;@include wrapper;background: linear-gradient(176deg, #F00 0%, #FAFF00 16.05%, #05FB00 32.1%, #00FFE0 51.25%, #0029FF 68.33%, #FF00D6 84.38%, #F00 99.39%);background-size: 400% 400%;
         -webkit-animation: ani 15s ease infinite;
@@ -36,187 +36,172 @@
             .firstfoldanimation{width: 55%;}
             .firstfoldanimation-mbl{display: none;}
             .firstfold-content{width: 35%;
-                h2{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 74px;letter-spacing: -1.92px;margin-bottom: 48px;}
-                p{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #000);line-height: 34px;}
+                h2{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height:115.625%;letter-spacing: -1.92px;margin-bottom: 48px;}
+                p{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #000);line-height:141.667%;}
             }
         }
         .second-fold{z-index:1;position:relative;margin-bottom: 200px;}
         .secondfoldanimation-mbl{display: none;}
         .third-fold{z-index:1;position:relative;margin-bottom: 160px;display:flex;justify-content:space-between;
             .third-fold-content{position: absolute;left:60px;width:30%;
-                h2{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 74px;letter-spacing: -1.92px;margin-bottom: 48px;}
-                p{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #000);line-height: 34px;}
+                h2{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height:115.625%;letter-spacing: -1.92px;margin-bottom: 48px;}
+                p{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #000);line-height: 141.667%;}
             }
             .third-fold-anime{width: 75%;margin-left: auto;}
             .thirdfoldanimation-mbl{display: none;}
         }
         .fourth-fold{z-index:1;position:relative;margin-bottom: 260px;
             .fourth-fold-content{position: absolute;right:0;top:65%;width:35%;
-                h2{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 74px;letter-spacing: -1.92px;margin-bottom: 48px;}
-                p{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #000);line-height: 34px;}
+                h2{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height:115.625%;letter-spacing: -1.92px;margin-bottom: 48px;}
+                p{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #000);line-height: 141.667%;}
             }
             .fourthfoldanimation-mbl{display: none;}
         }
         .fifth-fold{z-index:1;position:relative;display:block;
             .fifth-fold-content{margin-bottom: 70px;display:flex;flex-direction: column;align-items:center;
-                h2{font-family: $fontpoppins;@include font96;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 106px;letter-spacing: -2.88px;margin-bottom: 48px;width: 75%;text-align: center;}
-                p{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #000);line-height: 34px;width: 65%;text-align: center;}
+                h2{font-family: $fontpoppins;@include font96;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 110.417%;letter-spacing: -2.88px;margin-bottom: 48px;width: 75%;text-align: center;}
+                p{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #000);line-height: 141.667%;width: 65%;text-align: center;}
             }
             .fifthfoldanimation-mbl{display: none;}
         }
     }
     @media all and (max-width:1800px){margin-bottom:350px;
         .heading-content{margin-bottom: 120px;padding:0px 130px;
-            .main-heading{line-height: 70px;margin-bottom: 32px;}
-            .subheading{line-height: 32px;}
+            .main-heading{margin-bottom: 32px;}
         }
         .animation-Div{padding-top:150px;
             .first-fold{margin-bottom:100px;
                 .firstfoldanimation{width: 55%;}
                 .firstfold-content{width: 35%;
-                    h2{line-height: 72px;margin-bottom: 45px;}
-                    p{line-height: 32px;}
+                    h2{margin-bottom: 45px;}
+
                 }
             }
             .second-fold{margin-bottom: 180px;}
             .third-fold{margin-bottom: 150px;
                 .third-fold-content{left:50px;width:30%;
-                    h2{line-height: 72px;margin-bottom: 45px;}
-                    p{line-height: 32px;}
+                    h2{margin-bottom: 45px;}
+
                 }
                 .third-fold-anime{width: 75%;}
             }
             .fourth-fold{margin-bottom: 250px;
                 .fourth-fold-content{right:0;top:65%;width:35%;
-                    h2{line-height: 72px;margin-bottom: 45px;}
-                    p{line-height: 32px;}
+                    h2{margin-bottom: 45px;}
                 }
             }
             .fifth-fold{
                 .fifth-fold-content{margin-bottom: 68px;
-                    h2{line-height: 100px;letter-spacing: -2px;margin-bottom: 45px;width: 75%;}
-                    p{line-height: 32px;width: 65%;}
+                    h2{letter-spacing: -2px;margin-bottom: 45px;width: 75%;}
+                    p{width: 65%;}
                 }
             }
         }
     }
     @media all and (max-width:1600px){margin-bottom:300px;
         .heading-content{margin-bottom: 120px;padding:0px 130px;
-            .main-heading{line-height: 70px;margin-bottom: 32px;}
-            .subheading{line-height: 32px;}
+            .main-heading{margin-bottom: 32px;}
         }
         .animation-Div{padding-top:140px;
             .first-fold{margin-bottom:90px;
                 .firstfoldanimation{width: 55%;}
                 .firstfold-content{width: 35%;
-                    h2{line-height: 70px;margin-bottom: 40px;}
-                    p{line-height: 30px;}
+                    h2{margin-bottom: 40px;}
                 }
             }
             .second-fold{margin-bottom: 160px;}
             .third-fold{margin-bottom: 140px;
                 .third-fold-content{left:50px;width:30%;
-                    h2{line-height: 70px;margin-bottom: 40px;}
-                    p{line-height: 30px;}
+                    h2{margin-bottom: 40px;}
                 }
                 .third-fold-anime{width: 75%;}
             }
             .fourth-fold{margin-bottom: 240px;
                 .fourth-fold-content{right:0;top:65%;width:35%;
-                    h2{line-height: 70px;margin-bottom: 40px;}
-                    p{line-height: 30px;}
+                    h2{margin-bottom: 40px;}
                 }
             }
             .fifth-fold{
                 .fifth-fold-content{margin-bottom: 65px;
-                    h2{line-height: 96px;margin-bottom: 40px;width: 90%;}
-                    p{line-height: 30px;width: 65%;}
+                    h2{margin-bottom: 40px;width: 90%;}
+                    p{width: 65%;}
                 }
             }
         }
     }
     @media all and (max-width:1400px){margin-bottom:250px;
         .heading-content{margin-bottom: 120px;padding:0px 120px;
-            .main-heading{line-height: 65px;margin-bottom: 30px;}
-            .subheading{line-height: 30px;}
+            .main-heading{margin-bottom: 30px;}
         }
         .animation-Div{padding-top:120px;
             .first-fold{margin-bottom:80px;
                 .firstfoldanimation{width: 55%;}
                 .firstfold-content{width: 35%;
-                    h2{line-height: 60px;margin-bottom: 30px;}
-                    p{line-height: 24px;}
+                    h2{margin-bottom: 30px;}
                 }
             }
             .second-fold{margin-bottom: 140px;}
             .third-fold{margin-bottom: 120px;
                 .third-fold-content{left:50px;width:30%;
-                    h2{line-height: 60px;margin-bottom: 30px;}
-                    p{line-height: 24px;}
+                    h2{margin-bottom: 30px;}
                 }
                 .third-fold-anime{width: 75%;}
             }
             .fourth-fold{margin-bottom: 200px;
                 .fourth-fold-content{right:0;top:65%;width:35%;
-                    h2{line-height: 60px;margin-bottom: 30px;}
-                    p{line-height: 24px;}
+                    h2{margin-bottom: 30px;}
                 }
             }
             .fifth-fold{
                 .fifth-fold-content{margin-bottom: 60px;
-                    h2{line-height: 80px;margin-bottom: 30px;width: 90%;}
-                    p{line-height: 24px;width: 65%;}
+                    h2{margin-bottom: 30px;width: 90%;}
+                    p{width: 65%;}
                 }
             }
         }
     }
     @media all and (max-width:1200px){margin-bottom:200px;
         .heading-content{margin-bottom: 110px;
-            .main-heading{line-height: 56px;margin-bottom: 28px;}
-            .subheading{line-height: 28px;}
+            .main-heading{margin-bottom: 28px;}
         }
         .animation-Div{padding-top:100px;
             .first-fold{margin-bottom:60px;
                 .firstfoldanimation{width: 55%;}
                 .firstfold-content{width: 35%;
-                    h2{line-height: 56px;margin-bottom: 26px;}
-                    p{line-height: 22px;}
+                    h2{margin-bottom: 26px;}
                 }
             }
             .second-fold{margin-bottom: 120px;}
             .third-fold{margin-bottom: 100px;
                 .third-fold-content{left:50px;width:30%;
-                    h2{line-height: 56px;margin-bottom: 26px;}
-                    p{line-height: 22px;}
+                    h2{margin-bottom: 26px;}
                 }
                 .third-fold-anime{width: 75%;}
             }
             .fourth-fold{margin-bottom: 180px;
                 .fourth-fold-content{right:0;top:65%;width:35%;
-                    h2{line-height: 56px;margin-bottom: 26px;}
-                    p{line-height: 22px;}
+                    h2{margin-bottom: 26px;}
                 }
             }
             .fifth-fold{
                 .fifth-fold-content{margin-bottom: 50px;
-                    h2{line-height: 75px;margin-bottom: 25px;width: 90%;}
-                    p{line-height: 22px;width: 65%;}
+                    h2{margin-bottom: 25px;width: 90%;}
+                    p{width: 65%;}
                 }
             }
         }
     }
     @media all and (max-width:1024px){margin-bottom:150px;
         .heading-content{margin-bottom: 100px;padding:0px;
-            .main-heading{line-height: 48px;margin-bottom: 24px;width: 90%;}
-            .subheading{line-height: 24px;width: 90%;}
+            .main-heading{margin-bottom: 24px;width: 90%;}
+            .subheading{width: 90%;}
         }
         .animation-Div{padding-top:100px;
             .first-fold{margin-bottom:0px;flex-direction:column;
                 .firstfoldanimation{display: none;}
                 .firstfoldanimation-mbl{display: block;order: 2;width: 100%;}
                 .firstfold-content{width: 100%;order:1;margin-bottom:50px;
-                    h2{line-height: 56px;margin-bottom: 26px;}
-                    p{line-height: 22px;}
+                    h2{margin-bottom: 26px;}
                 }
             }
             .second-fold{margin-bottom: 60px;
@@ -225,24 +210,22 @@
             }
             .third-fold{margin-bottom: 30px;display:block;
                 .third-fold-content{width:100%;position:unset;margin-bottom:40px;
-                    h2{line-height: 56px;margin-bottom: 26px;}
-                    p{line-height: 22px;}
+                    h2{margin-bottom: 26px;}
                 }
                 .third-fold-anime{display: none;}
                 .thirdfoldanimation-mbl{display: block;}
             }
             .fourth-fold{margin-bottom: 180px;
                 .fourth-fold-content{width:100%;position:unset;margin-bottom:100px;
-                    h2{line-height: 56px;margin-bottom: 26px;}
-                    p{line-height: 22px;}
+                    h2{margin-bottom: 26px;}
                 }
                 .fourth-fold-anime{display: none;}
                 .fourthfoldanimation-mbl{display: block;}
             }
             .fifth-fold{
                 .fifth-fold-content{margin-bottom: 40px;
-                    h2{line-height: 75px;margin-bottom: 25px;width: 80%;}
-                    p{line-height: 22px;width: 70%;}
+                    h2{margin-bottom: 25px;width: 80%;}
+                    p{width: 70%;}
                 }
                 .fifth-fold-anime{display: none;}
                 .fifthfoldanimation-mbl{display: block;}
@@ -286,8 +269,8 @@
 }
 .aboutus-researchSec{margin-bottom:250px;@include wrapper;
     .heading-content{margin-bottom: 140px;padding:0px 150px;
-        .main-heading{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 74px;letter-spacing: -1.92px;margin-bottom: 34px;}
-        .subheading{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #6A6A6A);line-height: 34px;}
+        .main-heading{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 115.625%;letter-spacing: -1.92px;margin-bottom: 34px;}
+        .subheading{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #6A6A6A);line-height: 141.667%;}
     }
     .researchsec-wrapper{position: relative;margin-bottom:150px;padding:150px 150px 0px 150px;display:flex;justify-content:end;
         &:nth-child(odd){justify-content: start;}
@@ -312,16 +295,15 @@
             }
         }
         .research-card-type{position: relative;background: var(--primary-white, #FFF);padding: 80px;width:580px;min-height:722px;z-index:2;
-            .research-card-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 30px;text-transform: uppercase;}
-            .research-card-mainheading{margin-bottom: 48px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font30;font-weight: $fontW500;line-height: 40px;letter-spacing: -0.9px;}
-            .research-card-content{color: var(--body-copy, #6A6A6A);font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 30px;letter-spacing: 0.6px;margin-bottom: 48px;}
+            .research-card-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 150%;text-transform: uppercase;}
+            .research-card-mainheading{margin-bottom: 48px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font30;font-weight: $fontW500;line-height: 133.333%;letter-spacing: -0.9px;}
+            .research-card-content{color: var(--body-copy, #6A6A6A);font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;letter-spacing: 0.6px;margin-bottom: 48px;}
         }
     }
     // ----------------------------------------media queries-----------------------------------------------//    
     @media all and (max-width:1800px){margin-bottom:220px;
         .heading-content{margin-bottom: 130px;padding:0px 140px;
-            .main-heading{line-height: 72px;margin-bottom: 34px;}
-            .subheading{line-height: 34px;}
+            .main-heading{margin-bottom: 34px;}
         }
         .researchsec-wrapper{margin-bottom:220px;
             .img-div{height:calc(100% - 130px);
@@ -339,16 +321,14 @@
                 }
             }
             .research-card-type{padding: 75px;
-                .research-card-subheading{margin-bottom: 30px;line-height: 30px;}
-                .research-card-mainheading{margin-bottom: 48px;line-height: 40px;}
-                .research-card-content{line-height: 30px;}
+                .research-card-subheading{margin-bottom: 30px;}
+                .research-card-mainheading{margin-bottom: 48px;}
             }
         }
     }
     @media all and (max-width:1600px){margin-bottom:200px;
         .heading-content{margin-bottom: 120px;padding:0px 130px;
-            .main-heading{line-height: 70px;margin-bottom: 32px;}
-            .subheading{line-height: 32px;}
+            .main-heading{margin-bottom: 32px;}
         }
         .researchsec-wrapper{margin-bottom:200px;
             .img-div{height:calc(100% - 120px);
@@ -366,17 +346,16 @@
                 }
             }
             .research-card-type{padding: 65px;width:480px;min-height:600px;
-                .research-card-subheading{margin-bottom: 28px;line-height: 28px;}
-                .research-card-mainheading{margin-bottom: 40px;line-height: 36px;}
-                .research-card-content{line-height: 28px;margin-bottom: 40px;}
+                .research-card-subheading{margin-bottom: 28px;}
+                .research-card-mainheading{margin-bottom: 40px;}
+                .research-card-content{margin-bottom: 40px;}
             }
         }
     }
     @media all and (max-width:1440px){
         margin-bottom:180px;
         .heading-content{margin-bottom: 120px;padding:0px 120px;
-            .main-heading{line-height: 65px;margin-bottom: 30px;}
-            .subheading{line-height: 30px;}
+            .main-heading{margin-bottom: 30px;}
         }
         .researchsec-wrapper{margin-bottom:180px;
             .img-div{height:calc(100% - 100px);
@@ -394,33 +373,32 @@
                 }
             }
             .research-card-type{padding: 55px;min-height:500px;width:440px;
-                .research-card-subheading{margin-bottom: 24px;line-height: 24px;}
-                .research-card-mainheading{margin-bottom: 36px;line-height: 36px;}
-                .research-card-content{line-height: 24px;margin-bottom: 36px;}
+                .research-card-subheading{margin-bottom: 24px;}
+                .research-card-mainheading{margin-bottom: 36px;}
+                .research-card-content{margin-bottom: 36px;}
             }
         }
     }
     @media all and (max-width:1200px){
         margin-bottom:150px;
         .heading-content{margin-bottom: 110px;
-            .main-heading{line-height: 56px;margin-bottom: 28px;}
-            .subheading{line-height: 28px;}
+            .main-heading{margin-bottom: 28px;}
         }
         .researchsec-wrapper{margin-bottom:160px;
             .img-div{height:calc(100% - 90px);
             }
             .research-card-type{padding: 50px;width:380px;min-height:480px;
-                .research-card-subheading{margin-bottom: 22px;line-height: 22px;}
-                .research-card-mainheading{margin-bottom: 32px;line-height: 28px;}
-                .research-card-content{line-height: 22px;margin-bottom: 32px;}
+                .research-card-subheading{margin-bottom: 22px;}
+                .research-card-mainheading{margin-bottom: 32px;}
+                .research-card-content{margin-bottom: 32px;}
             }
         }
     }
     @media all and (max-width:1024px){
         margin-bottom:180px;
         .heading-content{margin-bottom: 100px;padding:0px;
-            .main-heading{line-height: 48px;margin-bottom: 20px;width: 90%;}
-            .subheading{line-height: 24px;width: 90%;}
+            .main-heading{margin-bottom: 20px;width: 90%;}
+            .subheading{width: 90%;}
         }
         .researchsec-wrapper{position: relative;margin-bottom:80px;flex-direction: column;padding:0px;
             .img-div{height:auto;position: relative;margin-bottom:0px;
@@ -429,9 +407,9 @@
             &:nth-child(odd){.img-div{.slick-dots{right: 50%;left: 50%;}}}
             &:nth-child(even){.img-div{.slick-dots{left: 50%;right: 50%;}}}
             .research-card-type{@include wrapper;padding-bottom:60px;padding-top: 50px;width:auto;min-height:unset;
-                .research-card-subheading{margin-bottom:20px;line-height: 20px;}
-                .research-card-mainheading{margin-bottom:20px;line-height: 34px;}
-                .research-card-content{line-height: 20px;margin-bottom: 20px;}
+                .research-card-subheading{margin-bottom:20px;}
+                .research-card-mainheading{margin-bottom:20px;}
+                .research-card-content{margin-bottom: 20px;}
             }
         }
     }
