@@ -277,13 +277,8 @@ if ($(window).width() < 1025) {
 }
 
 //---------------------------------------------------------Shamal's Js Code Starts ---------------------------------------------------------------//
-// const el = document.querySelector(".service-container")
-// const observer = new IntersectionObserver(
-//   ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
-//   { threshold: [1] }
-// );
-// observer.observe(el);
 //Service page sticky property starts
+if ($('.serviceSec').length) {
 jQuery(document).ready(function () {
   for (let i = 1; i <= 9; i++) {
     var $this = $('#service-info' + i);
@@ -303,10 +298,11 @@ jQuery(document).ready(function () {
       }
     }
   }
-});
+});}
 //Service page sticky property ends
 
 //Service page read more and Read less code starts
+if ($('.serviceSec').length) {
 jQuery(document).ready(function () {
   for (let i = 1; i <= 10; i++) {
     var $this = $('#service-info' + i);
@@ -331,7 +327,7 @@ jQuery(document).ready(function () {
       $('html, body').animate({ scrollTop: $('.servicesecs-wrapper' + i).offset().top - 60 }, 'slow');
     });
   }
-});
+});}
 //Service page read more and Read less code ends
 
 //Service page & Casestudy page active menu navbar code starts
@@ -415,6 +411,7 @@ $(document).ready(function () {
 //Service page Casestudy page active menu navbar code ends
 
 //Off set code starts
+if ($('.serviceSec').length) {
 jQuery(function ($) {
   $('a[href*="#"]:not([href="#"])').click(function () {
     var target = $(this.hash);
@@ -432,10 +429,10 @@ jQuery(function ($) {
     };
   });
 });
+}
 //Offset code ends
 
 //About us slider starts
-
 if ($(".aboutus-researchSec .researchsec-wrapper .img-div").length) {
   $('.aboutus-researchSec .researchsec-wrapper .img-div').slick({
     dots: true,
@@ -449,6 +446,7 @@ if ($(".aboutus-researchSec .researchsec-wrapper .img-div").length) {
 //About us slider ends
 
 //Video player js starts
+if ($(".casedetailsmainSec .video-stats-sec").length) {
 const video = document.getElementById("video");
 const circlePlayButton = document.getElementById("circle-play-b");
 
@@ -467,25 +465,44 @@ video.addEventListener("playing", function () {
 video.addEventListener("pause", function () {
 	circlePlayButton.style.opacity = 1;
 });
-
+}
 //Video player js ends
 
+// Form active tab starts
+if ($(".careerFormSec").length) {
+$("#enable1").change(function() {
+  $("#first").css("background","#000")
+  $("#first").css("color","#fff")
+  $("#second").css("background","#fff")
+  $("#second").css("color","#000")
+  $("#third").css("background","#fff")
+  $("#third").css("color","#000")
+});
 
+$("#enable2").change(function() {
+  $("#second").css("background","#000")
+  $("#second").css("color","#fff")
+  $("#first").css("background","#fff")
+  $("#first").css("color","#000")
+  $("#third").css("background","#fff")
+  $("#third").css("color","#000")
+});
+
+$("#enable3").change(function() {
+  $("#third").css("background","#000")
+  $("#third").css("color","#fff")
+  $("#first").css("background","#fff")
+  $("#first").css("color","#000")
+  $("#second").css("background","#fff")
+  $("#second").css("color","#000")
+});
+}
+//Form active tab ends
 //------------------------------------------------------- Shamal's JS Code ends --------------------------------------------------//
-
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
   const smoothScroll = new SmoothScroll(0.02);
 });
-
-
-
-
-
-
-
 
 if ($(window).width() > 1025) {
   new WOW().init();
