@@ -216,7 +216,7 @@
             padding:120px 120px 0px 120px;
             .img-div{height:calc(100% - 120px);
             }
-            .research-card-type{padding: 65px;width:450px;min-height:600px;
+            .research-card-type{padding: 65px;width:440px;min-height:600px;
                 .research-card-subheading{margin-bottom: 28px;}
                 .research-card-mainheading{margin-bottom: 40px;}
                 .aboutus-cta{line-height: 16px;padding: 12px 24px;margin-right: 28px;margin-top: 40px;}
@@ -238,7 +238,7 @@
     }
     @media all and (max-width:1400px){
         .researchsec-wrapper{
-            .research-card-type{padding: 55px;min-height:480px;width:400px;}
+            .research-card-type{min-height:480px;width:400px;}
         }
     }
     @media all and (max-width:1366px){

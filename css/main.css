@@ -9238,7 +9238,7 @@ body.opentwo {
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     padding: 65px;
-    width: 450px;
+    width: 440px;
     min-height: 600px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
@@ -9285,7 +9285,6 @@ body.opentwo {
 }
 @media all and (max-width: 1400px) {
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
-    padding: 55px;
     min-height: 480px;
     width: 400px;
   }
@@ -13789,7 +13788,7 @@ body.opentwo {
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type {
     padding: 65px;
-    width: 480px;
+    width: 440px;
     min-height: 600px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
@@ -13840,7 +13839,7 @@ body.opentwo {
   .aboutus-researchSec .researchsec-wrapper .research-card-type {
     padding: 55px;
     min-height: 500px;
-    width: 440px;
+    width: 420px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 24px;
