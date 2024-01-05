@@ -7869,6 +7869,26 @@ body.opentwo {
 .careerFormSec .careerSec .collaborateForm form .portfolio-upload p input {
   margin-bottom: 0px;
   border-bottom: none;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.56px;
+  color: #000000;
+}
+@media screen and (max-width: 1600px) {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p input {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p input {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .careerFormSec .careerSec .collaborateForm form .portfolio-upload p input {
+    font-size: 18px;
+  }
 }
 .careerFormSec .careerSec .collaborateForm form .portfolio-upload p label {
   padding: 10px 15px;
