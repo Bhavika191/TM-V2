@@ -11319,41 +11319,8 @@ body.opentwo {
 .thankyouSec .thanksWrapper .thankyou-cta {
   display: inline-flex;
 }
-.thankyouSec .thanksWrapper .thankyou-cta .cta-black, .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 24px;
+.thankyouSec .thanksWrapper .thankyou-cta .ctaWhite {
   margin-right: 30px;
-  border-radius: 6px;
-  border: 1px solid #000;
-}
-@media screen and (max-width: 1600px) {
-  .thankyouSec .thanksWrapper .thankyou-cta .cta-black, .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .thankyouSec .thanksWrapper .thankyou-cta .cta-black, .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
-    font-size: 12px;
-  }
-}
-.thankyouSec .thanksWrapper .thankyou-cta .cta-black img, .thankyouSec .thanksWrapper .thankyou-cta .cta-white img {
-  margin-left: 10px;
-}
-.thankyouSec .thanksWrapper .thankyou-cta .cta-white {
-  color: #000;
-}
-.thankyouSec .thanksWrapper .thankyou-cta .cta-black {
-  color: #fff;
-  background-color: #000;
 }
 .thankyouSec .thanksWrapper .gameIcon {
   position: absolute;
@@ -11378,10 +11345,8 @@ body.opentwo {
     line-height: 30px;
     margin-bottom: 70px;
   }
-  .thankyouSec .thanksWrapper .thankyou-cta .cta-black, .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
-    line-height: 16px;
-    padding: 12px 24px;
-    margin-right: 28px;
+  .thankyouSec .thanksWrapper .thankyou-cta .ctaWhite {
+    margin-right: 25px;
   }
   .thankyouSec .thanksWrapper .gameIcon {
     right: 22%;
@@ -11401,10 +11366,8 @@ body.opentwo {
     line-height: 26px;
     margin-bottom: 60px;
   }
-  .thankyouSec .thanksWrapper .thankyou-cta .cta-black, .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
-    line-height: 14px;
-    padding: 10px 22px;
-    margin-right: 26px;
+  .thankyouSec .thanksWrapper .thankyou-cta .ctaWhite {
+    margin-right: 22px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -11419,9 +11382,8 @@ body.opentwo {
     line-height: 24px;
     margin-bottom: 50px;
   }
-  .thankyouSec .thanksWrapper .thankyou-cta .cta-black, .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
-    line-height: 12px;
-    margin-right: 24px;
+  .thankyouSec .thanksWrapper .thankyou-cta .ctaWhite {
+    margin-right: 20px;
   }
 }
 @media all and (max-width: 1026px) {
@@ -11438,16 +11400,8 @@ body.opentwo {
     margin-bottom: 45px;
     width: 100%;
   }
-  .thankyouSec .thanksWrapper .thankyou-cta .cta-black, .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
-    line-height: 12px;
-    padding: 10px 20px;
-    margin-right: 0px;
-  }
-  .thankyouSec .thanksWrapper .thankyou-cta .cta-black img, .thankyouSec .thanksWrapper .thankyou-cta .cta-white img {
-    margin-left: 6px;
-  }
-  .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
-    margin-right: 20px;
+  .thankyouSec .thanksWrapper .thankyou-cta .ctaWhite {
+    margin-right: 18px;
   }
   .thankyouSec .thanksWrapper .gameIcon {
     bottom: -25%;
@@ -11465,19 +11419,13 @@ body.opentwo {
     line-height: 20px;
     margin-bottom: 30px;
   }
-  .thankyouSec .thanksWrapper .thankyou-cta {
+  .thankyouSec .thanksWrapper .thankyou-cta .ctaWhite {
+    margin-right: 0px;
+    margin-bottom: 20px;
     display: block;
   }
-  .thankyouSec .thanksWrapper .thankyou-cta .cta-black, .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
-    line-height: 10px;
-    padding: 15px 20px;
-  }
-  .thankyouSec .thanksWrapper .thankyou-cta .cta-black img, .thankyouSec .thanksWrapper .thankyou-cta .cta-white img {
-    margin-left: 5px;
-  }
-  .thankyouSec .thanksWrapper .thankyou-cta .cta-white {
-    margin-right: 0px;
-    margin-bottom: 16px;
+  .thankyouSec .thanksWrapper .thankyou-cta .ctaBlack {
+    display: block;
   }
   .thankyouSec .thanksWrapper .gameIcon {
     width: 50%;
