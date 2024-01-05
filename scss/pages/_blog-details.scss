@@ -82,8 +82,12 @@
                 .shareDiv{display: flex;position: relative;
                     .like-count{display: flex;align-items: center;margin-right: 10px;}
                     .like-button{margin-right: 48px;text-align: center;cursor: pointer;
-                        img{margin: 0px 0px 10px;}
+                        img{margin: 0px 0px 10px;animation: 2s linear infinite rotate-fan;border-radius: 50%;}
                         span{color: #000;font-family: $fontpoppins;@include font16;font-weight: $fontW500;line-height: 18px;letter-spacing: 0.8px;}
+                    }
+                    @keyframes rotate-fan {
+                        0% {transform: rotate(0deg);}
+                        100% {transform: rotate(360deg);}
                     }
                     a{cursor: pointer;display: flex;flex-direction: column;align-items: center;img{margin-bottom: 14px;margin-top: 0px;}color: var(--Primary-Black, #000);font-family: $fontpoppins;@include font16;font-weight: $fontW500;line-height: 18px;letter-spacing: 0.8px;}
                     .sharePopup{position: fixed;top: 0 !important;right: 0;left: 0;height: 100%;width: 100%;overflow: hidden;transition: 0.7s all ease-in-out;background: rgba(0, 0, 0, 0.54); backdrop-filter: blur(6px);z-index: 12;opacity: 0;visibility: hidden;transform: scale(1.1);transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;

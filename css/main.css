@@ -12069,6 +12069,8 @@ body.opentwo {
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .like-button img {
   margin: 0px 0px 10px;
+  animation: 2s linear infinite rotate-fan;
+  border-radius: 50%;
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .like-button span {
   color: #000;
@@ -12086,6 +12088,14 @@ body.opentwo {
 @media screen and (max-width: 720px) {
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .like-button span {
     font-size: 12px;
+  }
+}
+@keyframes rotate-fan {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv a {
