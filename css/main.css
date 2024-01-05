@@ -14218,6 +14218,15 @@ body.opentwo {
   .aboutUs-collaborate {
     margin-bottom: 300px !important;
   }
+  .aboutUs-collaborate .collaborate-wrapper .left-content {
+    width: 50% !important;
+  }
+  .aboutUs-collaborate .collaborate-wrapper .middle-content {
+    width: 25% !important;
+  }
+  .aboutUs-collaborate .collaborate-wrapper .right-content {
+    width: 25% !important;
+  }
 }
 @media all and (max-width: 1400px) {
   .aboutUs-collaborate {
