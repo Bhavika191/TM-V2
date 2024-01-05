@@ -82,7 +82,7 @@
                     }  
                     .wpcf7-list-item{margin: 0px !important}
                 }
-                .xcheckboxerror{div{margin-bottom: 60px}}
+                .xcheckboxerror{.wpcf7-not-valid-tip{margin-bottom: 60px}}
                 .wpcf7-not-valid-tip{@include font16;color: red;margin-top: 5px;}
                 .wpcf7-response-output{margin-top: 20px;@include font16;color: red;}
             }
@@ -135,7 +135,7 @@
                             &:before {width: 4px;height: 8px;}
                         }  
                     }
-                    .xcheckboxerror{div{margin-bottom: 50px}}
+                    .xcheckboxerror{.wpcf7-not-valid-tip{margin-bottom: 50px}}
                 }
             }
         }
@@ -185,7 +185,7 @@
                         &:before {width: 4px;height: 8px;}
                     }  
                 }
-                .xcheckboxerror{div{margin-bottom: 30px}}
+                .xcheckboxerror{.wpcf7-not-valid-tip{margin-bottom: 30px}}
                 }
             }
         }
@@ -239,7 +239,7 @@
                             &:before {width: 4px;height: 8px;}
                         }  
                     }
-                    .xcheckboxerror{div{margin-bottom: 50px}}
+                    .xcheckboxerror{.wpcf7-not-valid-tip{margin-bottom: 50px}}
                 }
             }
         }
@@ -260,7 +260,7 @@
                             &:before {width: 3px;height: 7px;}
                         }  
                     }
-                    .xcheckboxerror{div{margin-bottom: 30px}}
+                    .xcheckboxerror{.wpcf7-not-valid-tip{margin-bottom: 30px}}
                     .empType{
                         p{
                             span{
