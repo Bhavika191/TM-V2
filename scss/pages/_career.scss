@@ -8,7 +8,7 @@
             form{
                 br{display: none;}
                 label{display: block;color: #000;@include font18;font-weight: $fontW400;line-height: 14px;margin:60px 0px 12px;
-                    &:first-child{margin-top: 0px}
+                    // &:first-child{margin-top: 0px}
                 }
                 select{width: 100%;padding: 12px 0px;border-bottom: 1px solid #000;color: #000;font-family: $fontpoppins;@include font28;font-weight: $fontW500;line-height: 24px; letter-spacing: -0.56px;
                     &:hover{cursor: pointer;}
@@ -17,11 +17,11 @@
                     }
                 }
                 .empType{padding-bottom: 60px;padding-top:60px;
-                    p{
+                    p{label{margin: 0px !important;}
                         span{
                             .radiocheck{display: flex;justify-content:space-between;
                                 .wpcf7-list-item{width: 30%;margin:0;
-                                    label{
+                                    label{margin: 0px !important;
                                         input{visibility: hidden;height: 0;margin-bottom: 0;}
                                         span{display: flex;justify-content: center;align-items: center; border:1px solid #000;border-radius:5px;padding: 10px 50px;color: #000;font-family: $fontpoppins;@include font14;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.28px;
                                             &:hover{cursor: pointer;}
@@ -34,11 +34,11 @@
                         }
                     }
                 }
-                .borderDotted{padding-bottom: 60px;
+                .borderDotted{
                     p{display: flex;justify-content:space-between;
                         br{display: none;}
                         .wpcf7-list-item{width: 30%;margin:0;
-                            label{margin: 0px;line-height: 0px;
+                            label{margin: 0px !important;line-height: 0px;
                                 input{visibility: hidden;height: 0;margin-bottom: 0;}
                                 span{display: flex;justify-content: center;align-items: center; border:1px solid #000;border-radius:5px;padding: 10px 50px;color: #000;font-family: $fontpoppins;@include font14;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.28px;
                                     &:hover{cursor: pointer;}
@@ -61,6 +61,11 @@
                     }
                 }
                 .resume-upload{display: flex;justify-content:space-between;margin-top:60px;
+                    p{
+                        label{
+                            margin: 0px !important;
+                        }
+                    }
                     p{margin-bottom:12px;color: #000;font-family: $fontpoppins;@include font12;font-weight: $fontW400;line-height: 14px;}
                 }   
                 input, textarea{@include font28;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.56px;color: #000000;padding-bottom: 12px;border-bottom: 1px solid #000000;width: 100%;}
@@ -104,7 +109,7 @@
                             }
                         }
                     }
-                    .borderDotted{padding-bottom: 50px;
+                    .borderDotted{
                         p{
                             .wpcf7-list-item{
                                 label{
@@ -155,7 +160,7 @@
                         }
 
                     }
-                    .borderDotted{padding-bottom: 30px;
+                    .borderDotted{
                         p{
                             .wpcf7-list-item{
                                 label{
@@ -220,7 +225,7 @@
             .collaborateForm{padding: 40px 40px 20px;
                 form{
                     .empType{padding-bottom: 50px;padding-top:50px;}
-                    .borderDotted{padding-bottom: 50px;}
+                    .borderDotted{}
                    .portfolio-upload{}
                    .resume-upload{margin-top: 50px;}
                    label{margin:50px 0px 12px;}
@@ -301,7 +306,7 @@
                             }
                         }
                     }
-                    .borderDotted{padding-bottom: 30px;
+                    .borderDotted{
                         p{display:flex;flex-flow:wrap;justify-content:normal;
                             .wpcf7-list-item{width: 50%;
                                 label{
