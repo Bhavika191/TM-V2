@@ -459,7 +459,13 @@
 }
 .aboutUs-collaborate{margin-bottom: 400px !important;
     @media all and (max-width:1800px){margin-bottom: 350px !important;}
-    @media all and (max-width:1600px){margin-bottom: 300px !important;}
+    @media all and (max-width:1600px){margin-bottom: 300px !important;
+        .collaborate-wrapper{
+            .left-content{width: 50% !important;}
+                .middle-content{width: 25% !important;}
+                .right-content{width: 25% !important;}
+        }
+    }
     @media all and (max-width:1400px){margin-bottom: 250px !important;}
     @media all and (max-width:1200px){margin-bottom: 200px !important;}
     @media all and (max-width:1024px){margin-bottom: 150px !important;}
