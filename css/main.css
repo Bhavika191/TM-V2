@@ -7886,6 +7886,7 @@ body.opentwo {
   line-height: 24px;
   letter-spacing: -0.56px;
   color: #000000;
+  padding-right: 20px;
 }
 @media screen and (max-width: 1600px) {
   .careerFormSec .careerSec .collaborateForm form .portfolio-upload p input {
@@ -8008,7 +8009,7 @@ body.opentwo {
   cursor: pointer;
 }
 .careerFormSec .careerSec .collaborateForm form .form-group {
-  margin: 60px 0px;
+  margin-top: 60px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -8072,6 +8073,9 @@ body.opentwo {
 }
 .careerFormSec .careerSec .collaborateForm form .form-group .wpcf7-list-item {
   margin: 0px !important;
+}
+.careerFormSec .careerSec .collaborateForm form .xcheckboxerror div {
+  margin-bottom: 60px;
 }
 .careerFormSec .careerSec .collaborateForm form .wpcf7-not-valid-tip {
   font-size: 16px;
@@ -8151,7 +8155,7 @@ body.opentwo {
     padding: 12px 24px;
   }
   .careerFormSec .careerSec .collaborateForm form .form-group {
-    margin: 50px 0px;
+    margin-top: 50px;
   }
   .careerFormSec .careerSec .collaborateForm form .form-group label {
     line-height: 25px;
@@ -8164,6 +8168,9 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .form-group input[type=checkbox]:before {
     width: 4px;
     height: 8px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .xcheckboxerror div {
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -8215,7 +8222,7 @@ body.opentwo {
     padding: 12px 24px;
   }
   .careerFormSec .careerSec .collaborateForm form .form-group {
-    margin: 30px 0px;
+    margin-top: 30px;
   }
   .careerFormSec .careerSec .collaborateForm form .form-group label {
     line-height: 22px;
@@ -8228,6 +8235,9 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .form-group input[type=checkbox]:before {
     width: 4px;
     height: 8px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .xcheckboxerror div {
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -8269,7 +8279,7 @@ body.opentwo {
     padding: 12px 24px;
   }
   .careerFormSec .careerSec .collaborateForm form .form-group {
-    margin: 50px 0px;
+    margin-top: 50px;
   }
   .careerFormSec .careerSec .collaborateForm form .form-group label {
     line-height: 20px;
@@ -8280,6 +8290,9 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .form-group input[type=checkbox]:before {
     width: 4px;
     height: 8px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .xcheckboxerror div {
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 821px) {
@@ -8309,7 +8322,7 @@ body.opentwo {
     padding: 12px 24px;
   }
   .careerFormSec .careerSec .collaborateForm form .form-group {
-    margin: 30px 0px;
+    margin-top: 30px;
   }
   .careerFormSec .careerSec .collaborateForm form .form-group label {
     line-height: 24px;
@@ -8329,6 +8342,9 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .form-group input[type=checkbox]:before {
     width: 3px;
     height: 7px;
+  }
+  .careerFormSec .careerSec .collaborateForm form .xcheckboxerror div {
+    margin-bottom: 30px;
   }
   .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck {
     display: flex;
@@ -8450,6 +8466,7 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .portfolio-upload p input {
     margin-bottom: 0px;
     border-bottom: none;
+    padding-right: 0px;
   }
   .careerFormSec .careerSec .collaborateForm form .portfolio-upload p label {
     padding: 12px 24px;
