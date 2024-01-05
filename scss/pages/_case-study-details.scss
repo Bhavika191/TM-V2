@@ -645,7 +645,7 @@
                     h2{color: var(--Primary-Black, #000);font-family: $fontpoppins;@include font40;font-weight: $fontW500;line-height: 125% ;letter-spacing: -1.2px;}
                 }
             }
-            .video-stats-leftcontent{
+            .video-stats-leftcontent{width: 46%;
                 p{color: var(--body-copy, #6A6A6A);font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;}
             }
         }
@@ -726,6 +726,7 @@
                         p{margin-bottom: 22px;}
                     }
                 }
+                .video-stats-leftcontent{width: 100%;}
             }
         }
         @media all and (max-width:780px){

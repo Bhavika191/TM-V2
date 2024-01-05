@@ -10958,6 +10958,9 @@ body.opentwo {
     font-size: 14px;
   }
 }
+.casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-leftcontent {
+  width: 46%;
+}
 .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-leftcontent p {
   color: var(--body-copy, #6A6A6A);
   font-family: "Poppins", sans-serif;
@@ -11150,6 +11153,9 @@ body.opentwo {
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates p {
     margin-bottom: 22px;
+  }
+  .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-leftcontent {
+    width: 100%;
   }
 }
 @media all and (max-width: 780px) {
