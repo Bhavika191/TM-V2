@@ -7994,6 +7994,7 @@ body.opentwo {
   border-radius: 6px;
   border: 1px solid #FF0D47;
   background: #FF0D47;
+  margin-top: 60px;
 }
 @media screen and (max-width: 1600px) {
   .careerFormSec .careerSec .collaborateForm form input[type=submit] {
@@ -8074,9 +8075,6 @@ body.opentwo {
 .careerFormSec .careerSec .collaborateForm form .form-group .wpcf7-list-item {
   margin: 0px !important;
 }
-.careerFormSec .careerSec .collaborateForm form .xcheckboxerror .wpcf7-not-valid-tip {
-  margin-bottom: 60px;
-}
 .careerFormSec .careerSec .collaborateForm form .wpcf7-not-valid-tip {
   font-size: 16px;
   color: red;
@@ -8153,6 +8151,7 @@ body.opentwo {
   }
   .careerFormSec .careerSec .collaborateForm form input[type=submit] {
     padding: 12px 24px;
+    margin-top: 50px;
   }
   .careerFormSec .careerSec .collaborateForm form .form-group {
     margin-top: 50px;
@@ -8168,9 +8167,6 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .form-group input[type=checkbox]:before {
     width: 4px;
     height: 8px;
-  }
-  .careerFormSec .careerSec .collaborateForm form .xcheckboxerror .wpcf7-not-valid-tip {
-    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -8220,6 +8216,7 @@ body.opentwo {
   }
   .careerFormSec .careerSec .collaborateForm form input[type=submit] {
     padding: 12px 24px;
+    margin-top: 30px;
   }
   .careerFormSec .careerSec .collaborateForm form .form-group {
     margin-top: 30px;
@@ -8235,9 +8232,6 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .form-group input[type=checkbox]:before {
     width: 4px;
     height: 8px;
-  }
-  .careerFormSec .careerSec .collaborateForm form .xcheckboxerror .wpcf7-not-valid-tip {
-    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -8277,6 +8271,7 @@ body.opentwo {
   }
   .careerFormSec .careerSec .collaborateForm form input[type=submit] {
     padding: 12px 24px;
+    margin-top: 50px;
   }
   .careerFormSec .careerSec .collaborateForm form .form-group {
     margin-top: 50px;
@@ -8290,9 +8285,6 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .form-group input[type=checkbox]:before {
     width: 4px;
     height: 8px;
-  }
-  .careerFormSec .careerSec .collaborateForm form .xcheckboxerror .wpcf7-not-valid-tip {
-    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 821px) {
@@ -8320,6 +8312,7 @@ body.opentwo {
   }
   .careerFormSec .careerSec .collaborateForm form input[type=submit] {
     padding: 12px 24px;
+    margin-top: 30px;
   }
   .careerFormSec .careerSec .collaborateForm form .form-group {
     margin-top: 30px;
@@ -8342,9 +8335,6 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form .form-group input[type=checkbox]:before {
     width: 3px;
     height: 7px;
-  }
-  .careerFormSec .careerSec .collaborateForm form .xcheckboxerror .wpcf7-not-valid-tip {
-    margin-bottom: 30px;
   }
   .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck {
     display: flex;
