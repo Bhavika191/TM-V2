@@ -758,6 +758,7 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
   transition: 0.5s all ease-out;
   margin-right: 60px;
   position: relative;
+  display: block;
 }
 @media screen and (max-width: 1600px) {
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
@@ -2542,6 +2543,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul li {
     font-size: 14px;
   }
+}
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul li strong {
+  color: #C9C9C9;
 }
 .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover {
   transition: 0.7s all ease-out;
