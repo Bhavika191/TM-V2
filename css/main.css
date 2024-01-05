@@ -11419,6 +11419,9 @@ body.opentwo {
     line-height: 20px;
     margin-bottom: 30px;
   }
+  .thankyouSec .thanksWrapper .thankyou-cta {
+    display: block;
+  }
   .thankyouSec .thanksWrapper .thankyou-cta .ctaWhite {
     margin-right: 0px;
     margin-bottom: 20px;
