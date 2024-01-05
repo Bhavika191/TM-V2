@@ -264,9 +264,11 @@
 }
 @media all and (max-width:1600px){
     .collaborate-wrapper{padding:110px 130px 120px 130px;
-        .left-content{
+        .left-content{width: 50%;
             h2{line-height: 64px; letter-spacing: -1px;margin-bottom:26px;}
             p{line-height: 28px;}}
+            .middle-content{width: 25%;}
+            .right-content{width: 25%;}
     }
 }
 @media all and (max-width:1400px){

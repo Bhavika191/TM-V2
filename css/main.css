@@ -5471,6 +5471,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .collaborate-section .collaborate-wrapper {
     padding: 110px 130px 120px 130px;
   }
+  .collaborate-section .collaborate-wrapper .left-content {
+    width: 50%;
+  }
   .collaborate-section .collaborate-wrapper .left-content h2 {
     line-height: 64px;
     letter-spacing: -1px;
@@ -5478,6 +5481,12 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .collaborate-section .collaborate-wrapper .left-content p {
     line-height: 28px;
+  }
+  .collaborate-section .collaborate-wrapper .middle-content {
+    width: 25%;
+  }
+  .collaborate-section .collaborate-wrapper .right-content {
+    width: 25%;
   }
 }
 @media all and (max-width: 1400px) {
