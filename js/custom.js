@@ -99,7 +99,7 @@ $(window).on('resize scroll', function () {
 
 // sticky book page cta js ends
 
-if ($('.footerGame').length) {
+
   $(document).ready(function () {
     $('.middleCircle').on('click', function () {
       $('#box').addClass('boxTwo');
@@ -127,7 +127,7 @@ if ($('.footerGame').length) {
           /* data save code */
           $.ajax({
             type: 'POST',
-            url: 'http://ixdtm.com/projects/TM-V2-wp/wp-admin/admin-ajax.php',
+            url: 'https://ixdtm.com/projects/TM-V2-wp/wp-admin/admin-ajax.php',
             dataType: 'json',
             data: {
               action: 'formated_Value',
@@ -140,8 +140,12 @@ if ($('.footerGame').length) {
               console.error(err);
             }
           });
+
           /* ends data save code */
           // return formattedValue;
+
+
+
         });
       }, 500);
     });
@@ -155,7 +159,6 @@ if ($('.footerGame').length) {
       }
     }
   });
-}
 
 // our partner slider starts
 if ($('.logoSlider').length) {
@@ -861,18 +864,6 @@ document.addEventListener("DOMContentLoaded", function () {
     { threshold: [1] }
   );
   observer.observe(el);
-
-  // For casestudy container
-  const cl = document.querySelector(".casestudy-container");
-  cl.classList.remove("is-pinned");
-
-  const observercase = new IntersectionObserver(
-    ([e]) => {
-      e.target.classList.toggle("is-pinned", e.intersectionRatio < 1);
-    },
-    { threshold: [1] }
-  );
-  observercase.observe(cl);
 });
 
 
@@ -880,7 +871,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+$('.button_container').click(function () {
+  $(".service-container").toggleClass("overlay-z-index");
+  if ($(".service-container").hasClass("overlay-z-index")) {
+    $(".service-container").css("z-index", "5");
+  } else {
+    $(".service-container").css("z-index", ""); // Reset to default or remove this line if not needed
+  }
 
+});
+
+
+
+
+// custom-like-button.js
+jQuery(document).ready(function ($) {
+  $('.like-button').on('click', function () {
+    var post_id = $(this).data('post-id');
+    var ajax_url = ajax_likes_params.ajaxurl;
+
+    $.ajax({
+      type: 'POST',
+      url: ajax_url,
+      data: {
+        action: 'process_like',
+        post_id: post_id
+      },
+      success: function (response) {
+        $('.like-count[data-post-id="' + post_id + '"]').html(response);
+      }
+    });
+  });
+});
 
 
 
