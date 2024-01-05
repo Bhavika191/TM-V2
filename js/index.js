@@ -355,9 +355,9 @@ function newBallXSpeedAfterCollision(ballElement,hitElement)
 function createBrickGrid(c)
 {
     for(var i = 0;i<30;i++)
-        for(var j = 0;j<7;j++)
+        for(var j = 0;j<5;j++)
         {
-            createBrick(i*(100)+40,j*(60)+30,c);
+            createBrick(i*(100)+40,j*(60)+150,c);
         }
 }
 
@@ -416,7 +416,7 @@ function createPaddle() {
         .drawRoundRect(0, 0, paddle.width, paddle.height, 8);
 
     paddle.x = stage.canvas.width / 2 - PADDLE_WIDTH / 2;
-    paddle.y = 600;
+    paddle.y = 650;
     paddle.regX = PADDLE_WIDTH / 2;
     paddle.regY = PADDLE_HEIGHT / 2;
     paddle.setBounds(paddle.regX, paddle.regY, PADDLE_WIDTH, PADDLE_HEIGHT);

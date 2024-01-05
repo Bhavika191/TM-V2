@@ -1,71 +1,64 @@
 .page-template-thanks{background: conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.12499821186066deg, #05FB00 116.24999642372131deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474426deg, #F00 360deg);position: relative;}
 // header{background: none;}
 .thankyoupg-blur{position: absolute;height: 100%;width: 100%;left: 0;right: 0;z-index: 2;backdrop-filter: blur(250px);background: rgba(255, 255, 255, 0.50);}
-.thankyouSec{padding: 200px 0px 400px;position: relative;z-index: 3;
-    .thanksWrapper{@include wrapperTwo;
+.thankyouSec{padding: 200px 0px;position: relative;z-index: 3;
+    .thanksWrapper{@include wrapperTwo;position: relative;
         .thankyou-heading{color: #000;font-family: $fontpoppins;@include font96;font-weight: $fontW500;line-height: 106px;letter-spacing: -2.88px;margin-bottom: 34px;width:50%;}
         .thankyou-content{color: #000;font-family: $fontpoppins;@include font24;font-weight: $fontW400;line-height: 34px;margin-bottom: 74px;width:50%;}
         .thankyou-cta{display: inline-flex;
-        .cta-black,.cta-white{text-align: center; font-family: $fontpoppins;@include font14;font-weight: $fontW700;line-height: 18px;letter-spacing: 0.7px;text-transform: uppercase;display: flex;padding: 14px 24px;margin-right: 30px;border-radius: 6px;border: 1px solid  #000;img{margin-left: 10px;}}
-        .cta-white{color: #000;}
-        .cta-black{color: #fff;background-color: #000;}
-    }
-    .gameIcon{position: absolute;right: 20%;bottom: 142px; width: 15%;
-        button{background: transparent;cursor: pointer;}
-    }
+            .ctaWhite{margin-right: 30px;}
+        }
+    
+        .gameIcon{position: absolute;right: 20%;bottom: 0; width: 15%;
+            button{background: transparent;cursor: pointer;}
+        }
     }
 //------------------------------------------- Media Query --------------------------------------------//
     @media all and (max-width:1600px){
-    padding: 150px 0px 300px;
+    padding: 150px 0px 150px;
         .thanksWrapper{
             .thankyou-heading{line-height: 96px;letter-spacing: -1.88px;margin-bottom: 30px;}
             .thankyou-content{line-height: 30px;margin-bottom: 70px;}
-            .thankyou-cta{
-                .cta-black,.cta-white{line-height: 16px;padding: 12px 24px;margin-right: 28px;}
-            }
-            .gameIcon{right: 22%;bottom: 122px; width: 13%;
-            }
+            .thankyou-cta{.ctaWhite{margin-right: 25px;}}
+            .gameIcon{right: 22%;width: 13%;}
         }
     }   
+
     @media all and (max-width:1400px){
-        padding: 160px 0px;
+        padding: 160px 0px 130px;
         .thanksWrapper{
             .thankyou-heading{line-height: 90px;letter-spacing: -1px;margin-bottom: 24px;}
             .thankyou-content{line-height: 26px;margin-bottom: 60px;}
-            .thankyou-cta{
-                .cta-black,.cta-white{line-height: 14px;padding: 10px 22px;margin-right: 26px;}
-            }
+            .thankyou-cta{.ctaWhite{margin-right: 22px;}}
         }
     }  
+
     @media all and (max-width:1200px){
+        padding: 130px 0px 110px;
         .thanksWrapper{
             .thankyou-heading{line-height: 86px;margin-bottom: 22px;}
             .thankyou-content{line-height: 24px;margin-bottom: 50px;}
-            .thankyou-cta{
-                .cta-black,.cta-white{line-height: 12px;margin-right: 24px;}
-            }
+            .thankyou-cta{.ctaWhite{margin-right: 20px;}}
         }
     }
-    @media all and (max-width:1024px){
-        padding: 100px 0px;
+
+    @media all and (max-width:1026px){
+        padding: 200px 0px;
         .thanksWrapper{
             .thankyou-heading{line-height: 80px;margin-bottom: 20px;width:100%;}
             .thankyou-content{line-height: 24px;margin-bottom: 45px;width:100%;}
-            .thankyou-cta{
-                .cta-black,.cta-white{line-height: 12px;padding: 10px 20px;margin-right: 0px;img{margin-left: 6px;}}
-                .cta-white{margin-right: 20px;}
-            }
+            .thankyou-cta{.ctaWhite{margin-right: 18px;}}
+            .gameIcon{bottom: -25%;}
         }
     }
+
     @media all and (max-width:640px){
-        padding: 80px 0px;
+        padding: 80px 0px 150px;
         .thanksWrapper{
             .thankyou-heading{line-height: 60px;margin-bottom: 12px;}
             .thankyou-content{line-height: 20px;margin-bottom: 30px;}
-            .thankyou-cta{display: block;
-                .cta-black,.cta-white{line-height: 10px;padding: 8px 16px;img{margin-left: 5px;}}
-                .cta-white{margin-right: 15px;margin-bottom:16px;}
-            }
+            .thankyou-cta{.ctaWhite{margin-right: 0px;margin-bottom: 20px;display: block;}.ctaBlack{display: block;}}
+            .gameIcon{width: 50%;}
         }
     }
 
@@ -74,14 +67,73 @@
 
 .thankyouGame{overflow: hidden;position: relative;z-index: 3;
     #myCanvas{display: none;}
-    .modalContainer{font-family:$fontpoppins;@include font40;background-color: rgba(0, 0, 0, 0.604);width: 100vw; height: 100vh;position: fixed;top: 0;left: 0;display: none;
-        .modal{background-color: white;width: 32vw;height: 38vh;position: absolute;top: 50%; left: 50%;transform: translate(-50%, -50%);border-radius: 30px;
-            .innermodel{flex-direction: column; padding: 0px 50px;height: 100%;width: 100%; display: flex;align-items: center; justify-content: center;box-sizing: border-box;
-                .innerDiv{width: 80%;display: flex;justify-content: space-between;
-                   button {border: none;padding: 18px 0  18px 0; width: 140px;font-size: 1.2rem;border-radius: 30px;margin-top: 18px; color: white;cursor: pointer;background-color: #000;
+    .modalContainer{font-family:$fontpoppins;background-color: rgba(0, 0, 0, 0.604);width: 100vw; height: 100vh;position: fixed;top: 0;left: 0;display: none;
+        .modal{background-color: white;width: 45%;position: absolute;top: 50%; left: 50%;transform: translate(-50%, -50%);border-radius: 30px;
+            .innermodel{flex-direction: column; padding: 50px;height: 100%;width: 100%; display: flex;align-items: center; justify-content: center;box-sizing: border-box;text-align: center;
+                .innerDiv{display: flex;justify-content: space-between;
+                   button, a {border: none;padding: 14px 26px; @include font18;border-radius: 30px; color: white;cursor: pointer;background-color: #000;}
+                   a{margin-right: 20px}
+                }
+                .modeltext{@include font24;font-weight: $fontW500;margin-bottom: 20px;}
+            }
+        }
+    }
+    @media screen and (max-width:1600px) {
+       .modalContainer{
+            .modal{
+                .innermodel{padding: 40px;
+                    .innerDiv{
+                        a{margin-right: 18px}
                     }
+                    .modeltext{margin-bottom: 18px;}
                 }
             }
         }
     }
+    @media screen and (max-width:1400px) {
+        .modalContainer{
+             .modal{width: 40%;
+                 .innermodel{padding: 35px;
+                     .innerDiv{
+                        button, a {padding: 12px 22px;}
+                        a{margin-right: 16px}
+                     }
+                     .modeltext{margin-bottom: 16px;}
+                 }
+             }
+         }
+     }
+     @media screen and (max-width:1024px) {
+        .modalContainer{
+             .modal{width: 50%;
+                 .innermodel{padding: 30px;
+                     .innerDiv{
+                        button, a {padding: 10px 20px;}
+                        a{margin-right: 14px}
+                     }
+                     .modeltext{margin-bottom: 14px;}
+                 }
+             }
+         }
+     }
+     @media screen and (max-width:768px) {
+        .modalContainer{
+             .modal{width: 80%;
+                 .innermodel{padding: 25px;
+                 }
+             }
+         }
+     }
+     @media screen and (max-width:680px) {
+        .modalContainer{
+             .modal{width: 90%;
+                 .innermodel{padding: 20px;
+                    .innerDiv{
+                        button, a{width: 100%;padding: 8px 10px;}
+                    }
+                    .modeltext{margin-bottom: 20px;}
+                 }
+             }
+         }
+     }
 }
