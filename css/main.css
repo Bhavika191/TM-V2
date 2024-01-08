@@ -8927,32 +8927,10 @@ body.opentwo {
     font-size: 12px;
   }
 }
-.casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
-  color: #6A6A6A;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 150%;
-}
-@media screen and (max-width: 1600px) {
-  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
-    font-size: 14px;
-  }
-}
-.casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content ul {
+.casedetailsmainSec .objectivegoal-sec .right-sec ul {
   padding-left: 24px;
 }
-.casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content ul li {
+.casedetailsmainSec .objectivegoal-sec .right-sec ul li {
   list-style: disc;
   color: #6A6A6A;
   font-family: "Poppins", sans-serif;
@@ -8961,17 +8939,39 @@ body.opentwo {
   line-height: 150%;
 }
 @media screen and (max-width: 1600px) {
-  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content ul li {
+  .casedetailsmainSec .objectivegoal-sec .right-sec ul li {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 1400px) {
-  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content ul li {
+  .casedetailsmainSec .objectivegoal-sec .right-sec ul li {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 720px) {
-  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content ul li {
+  .casedetailsmainSec .objectivegoal-sec .right-sec ul li {
+    font-size: 14px;
+  }
+}
+.casedetailsmainSec .objectivegoal-sec .right-sec p {
+  color: #6A6A6A;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+}
+@media screen and (max-width: 1600px) {
+  .casedetailsmainSec .objectivegoal-sec .right-sec p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .casedetailsmainSec .objectivegoal-sec .right-sec p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .casedetailsmainSec .objectivegoal-sec .right-sec p {
     font-size: 14px;
   }
 }
@@ -9069,7 +9069,7 @@ body.opentwo {
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     margin-bottom: 30px;
   }
-  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content ul {
+  .casedetailsmainSec .objectivegoal-sec .right-sec ul {
     padding-left: 22px;
   }
 }
@@ -9096,7 +9096,7 @@ body.opentwo {
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     margin-bottom: 25px;
   }
-  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content ul {
+  .casedetailsmainSec .objectivegoal-sec .right-sec ul {
     padding-left: 20px;
   }
 }
@@ -9157,15 +9157,15 @@ body.opentwo {
     font-weight: 500;
     line-height: 30px;
   }
-  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content {
+  .casedetailsmainSec .objectivegoal-sec .right-sec ul {
+    padding-left: 18px;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec ul li {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
   }
-  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content ul {
-    padding-left: 18px;
-  }
-  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-about-content ul li {
+  .casedetailsmainSec .objectivegoal-sec .right-sec p {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
