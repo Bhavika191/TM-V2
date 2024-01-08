@@ -61,7 +61,10 @@
         .left-sec{width: 38%;
             .left-sec-subheading{margin-bottom:30px;color:#000;font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 150%;text-transform: uppercase;}
             .left-sec-mainheading{margin-bottom:48px;color:#000;font-family: $fontpoppins;@include font40;font-weight: $fontW500;line-height: 125%; letter-spacing: -1.2px;}
-            .left-sec-about-content{color:#6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;}
+            ul{padding-left: 24px;
+                li{list-style: disc;color:#6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150% ;}
+            }
+            p{color:#6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;}
         }
         .right-sec{width: 38%;
             .right-sec-subheading{margin-bottom:30px;color:#000;font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 150%;text-transform: uppercase;}
@@ -84,7 +87,6 @@
              
             }
             @media all and (max-width:1600px){
-
             margin: 100px 0px 240px 0px;
                 .left-sec{width: 46%;
                     .left-sec-subheading{margin-bottom:28px;}
@@ -114,6 +116,7 @@
                 .left-sec{width: 46%;
                     .left-sec-subheading{margin-bottom:22px;}
                     .left-sec-mainheading{margin-bottom:30px;}
+                    ul{padding-left: 22px;}
                 }
                 .right-sec{width: 46%;
                     .right-sec-subheading{margin-bottom:22px;}
@@ -126,7 +129,8 @@
                 margin: 80px 0px 150px 0px;padding:0px 80px;
                     .left-sec{width: 45%;
                         .left-sec-subheading{margin-bottom:20px;}
-                        .left-sec-mainheading{margin-bottom:25px;}}
+                        .left-sec-mainheading{margin-bottom:25px;}
+                        ul{padding-left: 20px;}}
                     .right-sec{width: 45%;
                         .right-sec-subheading{margin-bottom:20px;}
                         .right-sec-mainheading{margin-bottom:25px;}
@@ -139,7 +143,10 @@
                     .left-sec{width: 100%;margin-bottom:78px;
                         .left-sec-subheading{margin-bottom:10px;font-size: 12px;font-weight: 600;line-height: 12px;}
                         .left-sec-mainheading{margin-bottom:10px;font-size: 20px;font-weight: 500;line-height: 24px;}
-                        .left-sec-about-content{font-size: 14px;font-weight: 400;line-height: 24px;}
+                        ul{padding-left: 18px;
+                            li{font-size: 14px;font-weight: 400;line-height: 24px;}
+                        } 
+                        p{font-size: 14px;font-weight: 400;line-height: 24px;}
                     }
                     .right-sec{width: 100%;
                         .right-sec-subheading{margin-bottom:10px;font-size: 12px;font-weight: 600;line-height: 12px;}

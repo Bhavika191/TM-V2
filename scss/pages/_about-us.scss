@@ -468,7 +468,13 @@
     }
     @media all and (max-width:1400px){margin-bottom: 250px !important;}
     @media all and (max-width:1200px){margin-bottom: 200px !important;}
-    @media all and (max-width:1024px){margin-bottom: 150px !important;}
+    @media all and (max-width:1024px){margin-bottom: 150px !important;
+        .collaborate-wrapper{
+            .left-content{width: 100% !important;}
+            .middle-content{width: 100% !important;}
+            .right-content{display: none !important;}
+        }
+    }
     @media all and (max-width:680px){margin-bottom: 30px !important;}
 }
 
