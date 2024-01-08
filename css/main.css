@@ -8470,8 +8470,14 @@ body.opentwo {
     justify-content: space-between;
     margin-top: 30px;
   }
-  .careerFormSec .careerSec .collaborateForm form .resume-upload p {
+  .careerFormSec .careerSec .collaborateForm form .resume-upload .resume-size {
     display: none;
+  }
+  .careerFormSec .careerSec .collaborateForm form input, .careerFormSec .careerSec .collaborateForm form textarea {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: -0.4px;
   }
   .careerFormSec .careerSec .collaborateForm form label {
     margin: 30px 0px 8px;
