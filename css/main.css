@@ -12071,6 +12071,7 @@ body.opentwo {
   margin: 0px 0px 10px;
   animation: 2s linear infinite rotate-fan;
   border-radius: 50%;
+  transition: 0.7s all ease-in-out;
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .like-button span {
   color: #000;
@@ -12089,6 +12090,10 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .like-button span {
     font-size: 12px;
   }
+}
+.blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .like-button:hover img {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.1249982119deg, #05FB00 116.2499964237deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474deg, #F00 360deg);
+  transition: 0.7s all ease-in-out;
 }
 @keyframes rotate-fan {
   0% {
