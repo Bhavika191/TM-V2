@@ -5062,12 +5062,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   text-align: center;
   background-color: #D4D4D4;
 }
-.serviceSec .servicesec-wrapper .servicesec-content #service-info1, .serviceSec .servicesec-wrapper .servicesec-content #service-info2 {
-  height: auto;
-}
-.serviceSec .servicesec-wrapper .servicesec-content #service-info1 .sticky-heading, .serviceSec .servicesec-wrapper .servicesec-content #service-info2 .sticky-heading {
-  position: static;
-}
 @media all and (max-width: 1800px) {
   .serviceSec .servicesec-wrapper {
     padding: 0px 70px 0px 48px;
