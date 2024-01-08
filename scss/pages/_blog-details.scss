@@ -80,7 +80,17 @@
             .shareSec {margin: 150px 0px 300px;padding: 30px 0px;border-top: 1px solid rgba(0,0,0,0.2); background-color: #f1f1f1;border-bottom: 1px solid rgba(0,0,0,0.2);display: flex;justify-content: space-between;align-items:center;
                 h4{color: var(--Primary-Black, #000);font-family: $fontpoppins;@include font16;font-weight: $fontW600;line-height: 14px;letter-spacing: 0.8px;text-transform: uppercase;margin-bottom: 0px;}
                 .shareDiv{display: flex;position: relative;
-                    a{&:not(:last-child){margin-right: 48px;}cursor: pointer;display: flex;flex-direction: column;align-items: center;img{margin-bottom: 10px;margin-top: 0px;}color: var(--Primary-Black, #000);font-family: $fontpoppins;@include font16;font-weight: $fontW500;line-height: 18px;letter-spacing: 0.8px;}
+                    .like-count{display: flex;align-items: center;margin-right: 10px;}
+                    .like-button{margin-right: 48px;text-align: center;cursor: pointer;
+                        img{margin: 0px 0px 10px;animation: 2s linear infinite rotate-fan;border-radius: 50%;transition: 0.7s all ease-in-out;}
+                        span{color: #000;font-family: $fontpoppins;@include font16;font-weight: $fontW500;line-height: 18px;letter-spacing: 0.8px;}
+                        &:hover{img{background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.1249982119deg, #05FB00 116.2499964237deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474deg, #F00 360deg);transition: 0.7s all ease-in-out;}}
+                    }
+                    @keyframes rotate-fan {
+                        0% {transform: rotate(0deg);}
+                        100% {transform: rotate(360deg);}
+                    }
+                    a{cursor: pointer;display: flex;flex-direction: column;align-items: center;img{margin-bottom: 14px;margin-top: 0px;}color: var(--Primary-Black, #000);font-family: $fontpoppins;@include font16;font-weight: $fontW500;line-height: 18px;letter-spacing: 0.8px;}
                     .sharePopup{position: fixed;top: 0 !important;right: 0;left: 0;height: 100%;width: 100%;overflow: hidden;transition: 0.7s all ease-in-out;background: rgba(0, 0, 0, 0.54); backdrop-filter: blur(6px);z-index: 12;opacity: 0;visibility: hidden;transform: scale(1.1);transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
                         .innerPopup{position: absolute;top: 50%;transform: translateY(-50%);left: 0;right: 0;margin: 0 auto;width: 40%;z-index: 10;border-radius: 12px;background: #FFF;box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.06);padding: 24px;}
                         &.sharePopupnew{opacity: 1;visibility: visible;transform: scale(1);transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;}
@@ -144,7 +154,8 @@
                 .shareSec {margin-bottom:250px;padding: 28px 0px;
                     h4{line-height: 12px;}
                     .shareDiv{
-                        a{img{margin-bottom: 10px;}line-height: 16px;}
+                        .like-button{margin-right: 40px;}
+                        a{line-height: 16px;}
                         .sharePopup{top: -300px;padding: 22px;
                            .secHeading{padding-bottom: 14px;
                                 .closePopupshare{height: 25px;width: 25px;}
@@ -183,7 +194,8 @@
                 .shareSec {margin-bottom:220px;padding: 25px 0px;
                     h4{line-height: 10px;}
                     .shareDiv{
-                        a{img{margin-bottom: 8px;}line-height: 14px;}
+                        .like-button{margin-right: 32px;img{margin: 0px 0px 8px;}}
+                        a{line-height: 14px;}
                         .sharePopup{top: -280px;padding: 20px;
                             .secHeading{padding-bottom: 12px;
                              }
@@ -221,7 +233,8 @@
                 .shareSec {margin-bottom:200px;padding: 22px 0px;
                     h4{line-height: 8px;}
                     .shareDiv{
-                        a{img{margin-bottom: 8px;}line-height: 12px;}
+                        .like-button{margin-right: 24px;}
+                        a{line-height: 12px;}
                     }
                 }
             }
@@ -234,7 +247,8 @@
                 .shareSec {margin-bottom:180px;padding: 20px 0px;
                     h4{line-height: 8px;}
                     .shareDiv{
-                        a{img{margin-bottom: 8px;}line-height: 10px;}
+                        .like-button{margin-right: 20px;}
+                        a{img{margin-bottom: 18px;}line-height: 10px;}
                         .sharePopup{
                             .innerPopup{width: 60%;}
                         }
@@ -250,7 +264,7 @@
                 .shareSec {margin-bottom:150px;padding: 20px 0px;
                     h4{line-height: 8px;}
                     .shareDiv{
-                        a{img{margin-bottom: 8px;}line-height: 10px;}
+                        a{line-height: 10px;}
                     }
                 }
             }
@@ -262,7 +276,8 @@
                 .shareSec {margin-bottom:150px;padding: 20px 0px;
                     h4{font-size: 12px;line-height: 24px;font-weight: 600;}
                     .shareDiv{
-                        a{img{margin-bottom: 14px;}font-size: 12px;font-weight: 500;letter-spacing: 0.6px;line-height: 5.554px;}
+                        .like-button{margin-right: 32px;img{margin: 0px 0px 14px;}}
+                        a{img{margin-bottom: 25px;}font-size: 12px;font-weight: 500;letter-spacing: 0.6px;line-height: 5.554px;}
                     .sharePopup{top: -250px;padding: 16px;
                         .innerPopup{width: 90%;padding: 18px;}
                         .secHeading{padding-bottom: 10px;}
