@@ -537,11 +537,14 @@
           50%{background-position:50% 100%}
           100%{background-position:50% 0%}
        }
-        .bookInfodiv{position: absolute;top: 235px;left: 150px;width: 35%;
+        .bookInfodiv{position: absolute;top: 150px;left: 130px;width: 29%;
             h2{@include font64;font-weight: $fontW500;line-height: 74px;letter-spacing: -1.5px;}
             p{@include font24;font-weight: $fontW400;line-height: 34px;margin-top: 34px;}
         }
-        .bookImgdiv{img{margin: 0 auto;transition: 0.7s all ease-out;position: relative;z-index: 2;}}
+        .bookImgdiv{transform: rotate(5deg);transition: 0.7s all ease-out;width: 25%;position: relative;z-index: 2;margin: 0 auto;
+            img{margin: 0 auto;transition: 0.7s all ease-out;position: relative;z-index: 2;}
+            .opacityShadow{transition: 0.7s all ease-out;}
+        }
         .ctaDiv{position: absolute;bottom: 245px;right: 150px;z-index: 2;}
         .shadowDiv{position: absolute;width: 100%;left: 0;right: 0;height: 170px;bottom: 0;z-index: 1;; backdrop-filter: blur(16px) saturate(180%);
             -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -549,16 +552,17 @@
         &:hover{
             .bookImgdiv{
                 img{transform: rotate(-5deg);transition: 0.7s all ease-out;}
+                .opacityShadow{opacity: 0.6;transition: 0.7s all ease-out;}
             }
         }
     }
     @media screen and (max-width:1600px) {margin-bottom: 250px;
         .booksecWrapper{padding: 100px 0px 55px;
-            .bookInfodiv{top: 200px;left: 100px;width: 35%;
+            .bookInfodiv{top: 160px;left: 80px;width: 30%;
                 h2{line-height: 60px;}
                 p{line-height: 26px;margin-top: 25px;}
             }
-            .bookImgdiv{width:35%;margin: 0 auto;}
+            .bookImgdiv{width:25%;margin: 0 auto;}
             .ctaDiv{bottom: 200px;right: 100px;}
             .shadowDiv{height: 140px;}
         }
@@ -566,11 +570,11 @@
     }
     @media screen and (max-width:1400px) {margin-bottom: 200px;
         .booksecWrapper{padding: 70px 0px 45px;
-            .bookInfodiv{top: 170px;left: 80px;width: 38%;
+            .bookInfodiv{top: 160px;left: 80px;width: 30%;
                 h2{line-height: 55px;}
                 p{line-height: 22px;margin-top: 20px;}
             }
-            .bookImgdiv{width:32%;}
+            .bookImgdiv{width:23%;}
             .ctaDiv{bottom: 170px;right: 80px;}
             .shadowDiv{height: 100px;}
         }
@@ -578,7 +582,7 @@
     }
     @media screen and (max-width:1280px) {margin-bottom: 150px;
         .booksecWrapper{padding: 60px 0px 35px;
-            .bookInfodiv{top: 150px;left: 60px;width: 40%;
+            .bookInfodiv{top: 80px;left: 60px;
                 h2{line-height: 50px;}
                 p{line-height: 20px;margin-top: 16px;}
             }
@@ -589,7 +593,7 @@
     }
     @media screen and (max-width:1024px) {margin-bottom: 100px;
         .booksecWrapper{padding: 40px 0px 25px;
-            .bookInfodiv{top: 80px;left: 40px;width: 35%;
+            .bookInfodiv{top: 80px;left: 40px;width: 32%;
                 h2{line-height: 40px;font-size: 32px;letter-spacing: -0.5px;}
                 p{line-height: 16px;font-size: 16px;margin-top: 20px;}
             }
@@ -599,7 +603,7 @@
     }
     @media screen and (max-width:820px) {margin-bottom: 150px;
         .booksecWrapper{padding: 30px 20px 50px;
-            .bookInfodiv{width: 35%;
+            .bookInfodiv{width: 30%;top: 50px;
                 h2{font-size: 26px;letter-spacing: -0.9px;line-height: 30px;}
                 p{line-height: 1;font-size: 12px;margin-top: 12px;}
             }

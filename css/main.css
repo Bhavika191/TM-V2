@@ -3195,9 +3195,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .bookhpSection .booksecWrapper .bookInfodiv {
   position: absolute;
-  top: 235px;
-  left: 150px;
-  width: 35%;
+  top: 150px;
+  left: 130px;
+  width: 29%;
 }
 .bookhpSection .booksecWrapper .bookInfodiv h2 {
   font-size: 64px;
@@ -3241,11 +3241,22 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     font-size: 16px;
   }
 }
+.bookhpSection .booksecWrapper .bookImgdiv {
+  transform: rotate(5deg);
+  transition: 0.7s all ease-out;
+  width: 25%;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
 .bookhpSection .booksecWrapper .bookImgdiv img {
   margin: 0 auto;
   transition: 0.7s all ease-out;
   position: relative;
   z-index: 2;
+}
+.bookhpSection .booksecWrapper .bookImgdiv .opacityShadow {
+  transition: 0.7s all ease-out;
 }
 .bookhpSection .booksecWrapper .ctaDiv {
   position: absolute;
@@ -3269,6 +3280,10 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   transform: rotate(-5deg);
   transition: 0.7s all ease-out;
 }
+.bookhpSection .booksecWrapper:hover .bookImgdiv .opacityShadow {
+  opacity: 0.6;
+  transition: 0.7s all ease-out;
+}
 @media screen and (max-width: 1600px) {
   .bookhpSection {
     margin-bottom: 250px;
@@ -3277,9 +3292,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding: 100px 0px 55px;
   }
   .bookhpSection .booksecWrapper .bookInfodiv {
-    top: 200px;
-    left: 100px;
-    width: 35%;
+    top: 160px;
+    left: 80px;
+    width: 30%;
   }
   .bookhpSection .booksecWrapper .bookInfodiv h2 {
     line-height: 60px;
@@ -3289,7 +3304,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     margin-top: 25px;
   }
   .bookhpSection .booksecWrapper .bookImgdiv {
-    width: 35%;
+    width: 25%;
     margin: 0 auto;
   }
   .bookhpSection .booksecWrapper .ctaDiv {
@@ -3308,9 +3323,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding: 70px 0px 45px;
   }
   .bookhpSection .booksecWrapper .bookInfodiv {
-    top: 170px;
+    top: 160px;
     left: 80px;
-    width: 38%;
+    width: 30%;
   }
   .bookhpSection .booksecWrapper .bookInfodiv h2 {
     line-height: 55px;
@@ -3320,7 +3335,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     margin-top: 20px;
   }
   .bookhpSection .booksecWrapper .bookImgdiv {
-    width: 32%;
+    width: 23%;
   }
   .bookhpSection .booksecWrapper .ctaDiv {
     bottom: 170px;
@@ -3338,9 +3353,8 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding: 60px 0px 35px;
   }
   .bookhpSection .booksecWrapper .bookInfodiv {
-    top: 150px;
+    top: 80px;
     left: 60px;
-    width: 40%;
   }
   .bookhpSection .booksecWrapper .bookInfodiv h2 {
     line-height: 50px;
@@ -3364,7 +3378,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .bookhpSection .booksecWrapper .bookInfodiv {
     top: 80px;
     left: 40px;
-    width: 35%;
+    width: 32%;
   }
   .bookhpSection .booksecWrapper .bookInfodiv h2 {
     line-height: 40px;
@@ -3389,7 +3403,8 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding: 30px 20px 50px;
   }
   .bookhpSection .booksecWrapper .bookInfodiv {
-    width: 35%;
+    width: 30%;
+    top: 50px;
   }
   .bookhpSection .booksecWrapper .bookInfodiv h2 {
     font-size: 26px;
