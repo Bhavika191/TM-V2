@@ -11395,6 +11395,12 @@ body.opentwo {
   }
 }
 
+@media all and (max-width: 680px) {
+  .casestudy-blogshpsection {
+    margin-top: 100px;
+  }
+}
+
 .page-template-thanks {
   background: conic-gradient(from 180deg at 50% 50%, #F00 0deg, #FAFF00 58.1249982119deg, #05FB00 116.2499964237deg, #00FFE0 185.625deg, #0029FF 247.5deg, #FF00D6 305.6249928474deg, #F00 360deg);
   position: relative;
