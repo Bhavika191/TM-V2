@@ -544,7 +544,7 @@ if ($(".careerFormSec").length) {
 //------------------------------------------------------- Shamal's JS Code ends --------------------------------------------------//
 
 document.addEventListener('DOMContentLoaded', () => {
-  const smoothScroll = new SmoothScroll(0.02);
+  const smoothScroll = new SmoothScroll(0.04);
 });
 
 if ($(window).width() > 1025) {
