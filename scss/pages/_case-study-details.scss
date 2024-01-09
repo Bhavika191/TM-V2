@@ -1,9 +1,9 @@
 .casedetailsmainSec{
     .about-sec{overflow: hidden;
-        .aboutcontent{@include wrapperTwo;margin:190px 0px 160px 0px;width:75%;
+        .aboutcontent{@include wrapperTwo;margin:190px 0px 160px 0px;width:85%;
             .subheading{margin-bottom:48px;color:#000;font-family: $fontpoppins;@include font20;font-weight: $fontW700;line-height: 150%; letter-spacing: 1px;text-transform: uppercase;}
             .mainheading{margin-bottom:48px;color:#000;font-family: $fontpoppins;@include font96;font-weight: $fontW500;line-height: 110.417%; letter-spacing: -2.88px;}
-            .about-content{color:#6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;width: 55%;}
+            .about-content{color:#6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;width: 90%;}
         }
         .image-sec{@include wrapper;margin-bottom: 140px;
             div{width: 100%;overflow: hidden;
