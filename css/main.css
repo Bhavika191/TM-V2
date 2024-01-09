@@ -2054,6 +2054,15 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   transform: scale(1.08);
   transition: 0.7s all ease-out;
 }
+.caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .casestudyImg::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  transition: 0.6s all ease-in-out;
+  z-index: 1;
+}
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc {
   position: absolute;
   bottom: -100%;
@@ -2115,21 +2124,15 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:hover .casestudyImg img {
   transform: scale(1);
-  transition: 0.7s all ease-out;
+  transition: 0.3s all ease-out;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:hover .casestudyImg::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
   background: #000;
-  opacity: 0.3;
-  transition: 0.7s all ease-out;
-  z-index: 1;
+  transition: 0.6s all ease-in-out;
 }
 .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:hover .caseStudydesc {
   bottom: 0;
-  transition: 0.7s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 .caseStudyhpsection .casestudyWrapper .ctaDiv {
   text-align: right;
@@ -3195,9 +3198,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .bookhpSection .booksecWrapper .bookInfodiv {
   position: absolute;
-  top: 235px;
-  left: 150px;
-  width: 35%;
+  top: 150px;
+  left: 130px;
+  width: 29%;
 }
 .bookhpSection .booksecWrapper .bookInfodiv h2 {
   font-size: 64px;
@@ -3241,11 +3244,22 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     font-size: 16px;
   }
 }
-.bookhpSection .booksecWrapper .bookImgdiv img {
+.bookhpSection .booksecWrapper .bookImgdiv {
+  transform: rotate(5deg);
+  transition: 0.7s all ease-out;
+  width: 25%;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+.bookhpSection .booksecWrapper .bookImgdiv .bookRotatesvg {
   margin: 0 auto;
   transition: 0.7s all ease-out;
   position: relative;
   z-index: 2;
+}
+.bookhpSection .booksecWrapper .bookImgdiv .opacityShadow {
+  transition: 0.7s all ease-out;
 }
 .bookhpSection .booksecWrapper .ctaDiv {
   position: absolute;
@@ -3265,8 +3279,12 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(255, 255, 255, 0.5);
 }
-.bookhpSection .booksecWrapper:hover .bookImgdiv img {
+.bookhpSection .booksecWrapper:hover .bookImgdiv .bookRotatesvg {
   transform: rotate(-5deg);
+  transition: 0.7s all ease-out;
+}
+.bookhpSection .booksecWrapper:hover .bookImgdiv .opacityShadow {
+  opacity: 0.6;
   transition: 0.7s all ease-out;
 }
 @media screen and (max-width: 1600px) {
@@ -3277,9 +3295,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding: 100px 0px 55px;
   }
   .bookhpSection .booksecWrapper .bookInfodiv {
-    top: 200px;
-    left: 100px;
-    width: 35%;
+    top: 160px;
+    left: 80px;
+    width: 30%;
   }
   .bookhpSection .booksecWrapper .bookInfodiv h2 {
     line-height: 60px;
@@ -3289,7 +3307,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     margin-top: 25px;
   }
   .bookhpSection .booksecWrapper .bookImgdiv {
-    width: 35%;
+    width: 25%;
     margin: 0 auto;
   }
   .bookhpSection .booksecWrapper .ctaDiv {
@@ -3308,9 +3326,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding: 70px 0px 45px;
   }
   .bookhpSection .booksecWrapper .bookInfodiv {
-    top: 170px;
+    top: 160px;
     left: 80px;
-    width: 38%;
+    width: 30%;
   }
   .bookhpSection .booksecWrapper .bookInfodiv h2 {
     line-height: 55px;
@@ -3320,7 +3338,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     margin-top: 20px;
   }
   .bookhpSection .booksecWrapper .bookImgdiv {
-    width: 32%;
+    width: 23%;
   }
   .bookhpSection .booksecWrapper .ctaDiv {
     bottom: 170px;
@@ -3338,9 +3356,8 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding: 60px 0px 35px;
   }
   .bookhpSection .booksecWrapper .bookInfodiv {
-    top: 150px;
+    top: 80px;
     left: 60px;
-    width: 40%;
   }
   .bookhpSection .booksecWrapper .bookInfodiv h2 {
     line-height: 50px;
@@ -3364,7 +3381,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .bookhpSection .booksecWrapper .bookInfodiv {
     top: 80px;
     left: 40px;
-    width: 35%;
+    width: 32%;
   }
   .bookhpSection .booksecWrapper .bookInfodiv h2 {
     line-height: 40px;
@@ -3389,7 +3406,8 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding: 30px 20px 50px;
   }
   .bookhpSection .booksecWrapper .bookInfodiv {
-    width: 35%;
+    width: 30%;
+    top: 50px;
   }
   .bookhpSection .booksecWrapper .bookInfodiv h2 {
     font-size: 26px;
@@ -3431,7 +3449,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     width: 75%;
     margin: 16px 0 16px auto;
   }
-  .bookhpSection .booksecWrapper .bookImgdiv img {
+  .bookhpSection .booksecWrapper .bookImgdiv .bookRotatesvg {
     transform: none !important;
     transition: none;
   }
@@ -6806,6 +6824,15 @@ body.opentwo {
   transform: scale(1.08);
   transition: 0.7s all ease-out;
 }
+.caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .casestudyImg::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  transition: 0.6s all ease-in-out;
+  z-index: 1;
+}
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc {
   position: absolute;
   bottom: -100%;
@@ -6867,21 +6894,15 @@ body.opentwo {
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:hover .casestudyImg img {
   transform: scale(1);
-  transition: 0.7s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:hover .casestudyImg::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
   background: #000;
-  opacity: 0.3;
-  transition: 0.7s all ease-out;
-  z-index: 1;
+  transition: 0.6s all ease-in-out;
 }
 .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes:hover .caseStudydesc {
   bottom: 0;
-  transition: 0.7s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 .caseStudyListingsec .casestudyWrapper #myButton {
   width: 33%;
