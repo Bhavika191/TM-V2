@@ -58,7 +58,7 @@
         }
     }
     .objectivegoal-sec{margin: 120px 0px 280px 0px;@include wrapperTwo;display: flex;align-items: start;justify-content: space-between;overflow: hidden;
-        .left-sec{width: 38%;
+        .left-sec{width: 39%;
             .left-sec-subheading{margin-bottom:30px;color:#000;font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 150%;text-transform: uppercase;}
             .left-sec-mainheading{margin-bottom:48px;color:#000;font-family: $fontpoppins;@include font40;font-weight: $fontW500;line-height: 125%; letter-spacing: -1.2px;}
             ul{padding-left: 24px;
@@ -66,7 +66,7 @@
             }
             p{color:#6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;}
         }
-        .right-sec{width: 38%;
+        .right-sec{width: 39%;
             .right-sec-subheading{margin-bottom:30px;color:#000;font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 150%;text-transform: uppercase;}
             .right-sec-mainheading{margin-bottom:48px;color:#000;font-family: $fontpoppins;@include font30;font-weight: $fontW500;line-height: 133.333%; letter-spacing: -1.2px;}
             ul{padding-left: 24px;
@@ -76,11 +76,11 @@
         }
         @media all and (max-width:1800px){
             margin: 110px 0px 260px 0px;
-                .left-sec{width: 46%;
+                .left-sec{width: 38%;
                     .left-sec-subheading{margin-bottom:30px;text-transform: uppercase;}
                     .left-sec-mainheading{margin-bottom:45px;letter-spacing: -1.2px;}
                 }
-                .right-sec{width: 46%;
+                .right-sec{width: 43%;
                     .right-sec-subheading{margin-bottom:30px;}
                     .right-sec-mainheading{margin-bottom:45px;letter-spacing: -1.2px;}
                 }
@@ -88,37 +88,47 @@
             }
             @media all and (max-width:1600px){
             margin: 100px 0px 240px 0px;
-                .left-sec{width: 46%;
+                .left-sec{width: 36%;
                     .left-sec-subheading{margin-bottom:28px;}
                     .left-sec-mainheading{margin-bottom:40px;}
                 }
-                .right-sec{width: 46%;
+                .right-sec{width: 36%;
                     .right-sec-subheading{margin-bottom:28px;}
                     .right-sec-mainheading{margin-bottom:40px;}
                 }
             }
+            @media all and (max-width:1536px){
+                .left-sec{width: 38%;}
+                .right-sec{width: 38%;}
+            }
             @media all and (max-width:1400px){
             margin: 90px 0px 200px 0px;
-                .left-sec{width: 46%;
+                .left-sec{width: 36%;
                     .left-sec-subheading{margin-bottom:24px;}
                     .left-sec-mainheading{margin-bottom:36px;}
                 }
-                .right-sec{width: 46%;
+                .right-sec{width: 36%;
                     .right-sec-subheading{margin-bottom:24px;}
                     .right-sec-mainheading{margin-bottom:36px;}
 
                 }
-         
-
-            }   
+            }  
+            @media all and (max-width:1366px){
+                .left-sec{width: 37%;}
+                .right-sec{width: 37%;}
+            } 
+            @media all and (max-width:1280px){
+                .left-sec{width: 38%;}
+                .right-sec{width: 38%;}
+            } 
             @media all and (max-width:1200px){
            margin: 80px 0px 180px 0px;
-                .left-sec{width: 46%;
+                .left-sec{width: 41%;
                     .left-sec-subheading{margin-bottom:22px;}
                     .left-sec-mainheading{margin-bottom:30px;}
                     ul{padding-left: 22px;}
                 }
-                .right-sec{width: 46%;
+                .right-sec{width: 41%;
                     .right-sec-subheading{margin-bottom:22px;}
                     .right-sec-mainheading{margin-bottom:30px;}
                     ul{padding-left: 22px;}
@@ -127,11 +137,11 @@
             }
             @media all and (max-width:1024px){
                 margin: 80px 0px 150px 0px;padding:0px 80px;
-                    .left-sec{width: 45%;
+                    .left-sec{width: 40%;
                         .left-sec-subheading{margin-bottom:20px;}
                         .left-sec-mainheading{margin-bottom:25px;}
                         ul{padding-left: 20px;}}
-                    .right-sec{width: 45%;
+                    .right-sec{width: 40%;
                         .right-sec-subheading{margin-bottom:20px;}
                         .right-sec-mainheading{margin-bottom:25px;}
                         ul{padding-left: 20px;}
@@ -791,7 +801,6 @@
         }
         }
     } 
-
 }
 
 .casestudy-blogshpsection{
