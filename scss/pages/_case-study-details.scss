@@ -1,9 +1,9 @@
 .casedetailsmainSec{
     .about-sec{overflow: hidden;
-        .aboutcontent{@include wrapperTwo;margin:190px 0px 160px 0px;width:85%;
+        .aboutcontent{@include wrapperTwo;margin:190px 0px 160px 0px;width:100%;
             .subheading{margin-bottom:48px;color:#000;font-family: $fontpoppins;@include font20;font-weight: $fontW700;line-height: 150%;text-transform: uppercase;}
             .mainheading{margin-bottom:48px;color:#000;font-family: $fontpoppins;@include font96;font-weight: $fontW500;line-height: 110.417%;}
-            .about-content{color:#6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;width: 90%;}
+            .about-content{color:#6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;width: 60%;}
         }
         .image-sec{@include wrapper;margin-bottom: 140px;
             div{width: 100%;overflow: hidden;
@@ -68,7 +68,7 @@
         }
         .right-sec{width: 39%;
             .right-sec-subheading{margin-bottom:30px;color:#000;font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 150%;text-transform: uppercase;}
-            .right-sec-mainheading{margin-bottom:48px;color:#000;font-family: $fontpoppins;@include font30;font-weight: $fontW500;line-height: 133.333%;}
+            .right-sec-mainheading{margin-bottom:30px;color:#000;font-family: $fontpoppins;@include font30;font-weight: $fontW500;line-height: 133.333%;}
             ul{padding-left: 24px;
                 li{list-style: disc;color:#6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150% ;}
             }
@@ -82,7 +82,7 @@
                 }
                 .right-sec{width: 43%;
                     .right-sec-subheading{margin-bottom:30px;}
-                    .right-sec-mainheading{margin-bottom:45px;}
+                    .right-sec-mainheading{margin-bottom: 30px;}
                 }
              
             }
@@ -94,7 +94,7 @@
                 }
                 .right-sec{width: 36%;
                     .right-sec-subheading{margin-bottom:28px;}
-                    .right-sec-mainheading{margin-bottom:40px;}
+                    .right-sec-mainheading{margin-bottom: 28px;}
                 }
             }
             @media all and (max-width:1536px){
@@ -109,7 +109,7 @@
                 }
                 .right-sec{width: 36%;
                     .right-sec-subheading{margin-bottom:24px;}
-                    .right-sec-mainheading{margin-bottom:36px;}
+                    .right-sec-mainheading{margin-bottom: 24px;}
 
                 }
             }  
@@ -130,7 +130,7 @@
                 }
                 .right-sec{width: 41%;
                     .right-sec-subheading{margin-bottom:22px;}
-                    .right-sec-mainheading{margin-bottom:30px;}
+                    .right-sec-mainheading{margin-bottom:22px;}
                     ul{padding-left: 22px;}
                 }
             
@@ -143,7 +143,7 @@
                         ul{padding-left: 20px;}}
                     .right-sec{width: 40%;
                         .right-sec-subheading{margin-bottom:20px;}
-                        .right-sec-mainheading{margin-bottom:25px;}
+                        .right-sec-mainheading{margin-bottom:20px;}
                         ul{padding-left: 20px;}
                     }
              
@@ -318,7 +318,7 @@
             &:nth-child(even){.leftcontent-rightimage-image{padding-right: 24px;}}
             .leftcontent-rightimage-text{width: 50%;padding: 0px 150px;
                 .leftcontent-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 150%;text-transform: uppercase;}
-                .leftcontent-mainheading{margin-bottom: 48px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font30;font-weight: $fontW500;line-height: 133.333%;}
+                .leftcontent-mainheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font30;font-weight: $fontW500;line-height: 133.333%;}
                 .leftcontent-text{color: var(--body-copy, #6A6A6A);font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;}
             }
             .leftcontent-rightimage-image{width: 50%;overflow: hidden;img{width: 100%;}}
@@ -336,7 +336,7 @@
         .leftcontent-rightimageSec{&:not(:last-child){padding-bottom:140px;}
             .leftcontent-rightimage-text{padding: 0px 145px;
                 .leftcontent-subheading{margin-bottom: 30px;}
-                .leftcontent-mainheading{margin-bottom: 45px;}
+                .leftcontent-mainheading{margin-bottom: 30px;}
             }
         }
     }
@@ -351,7 +351,7 @@
         .leftcontent-rightimageSec{&:not(:last-child){padding-bottom:140px;}
             .leftcontent-rightimage-text{padding: 0px 140px;
                 .leftcontent-subheading{margin-bottom: 28px;}
-                .leftcontent-mainheading{margin-bottom: 40px;}
+                .leftcontent-mainheading{margin-bottom: 28px;}
             }
         }
     
@@ -367,7 +367,7 @@
         .leftcontent-rightimageSec{&:not(:last-child){padding-bottom:120px;}
             .leftcontent-rightimage-text{padding: 0px 120px;
                 .leftcontent-subheading{margin-bottom: 24px;}
-                .leftcontent-mainheading{margin-bottom: 36px;}
+                .leftcontent-mainheading{margin-bottom: 24px;}
             }
         }
     
@@ -383,7 +383,7 @@
         .leftcontent-rightimageSec{&:not(:last-child){padding-bottom:100px;}
             .leftcontent-rightimage-text{padding: 0px 100px;
                 .leftcontent-subheading{margin-bottom: 22px;}
-                .leftcontent-mainheading{margin-bottom: 32px;}
+                 .leftcontent-mainheading{margin-bottom: 22px;}
             }
         }
     }

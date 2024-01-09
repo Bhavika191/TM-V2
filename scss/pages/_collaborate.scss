@@ -185,6 +185,9 @@
                 }
                 &.mailContact{
                     background: #000000;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: space-between;
                     .mailIcon{height: 48%;
                         img{transform: translate(-10%, -15%);width: 55%;transition: 0.5s all ease-out;}
                     }

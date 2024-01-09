@@ -468,15 +468,10 @@ img {
 }
 @media screen and (max-width: 1600px) {
   ::-webkit-input-placeholder {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  ::-webkit-input-placeholder {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   ::-webkit-input-placeholder {
     font-size: 14px;
   }
@@ -491,15 +486,10 @@ img {
 }
 @media screen and (max-width: 1600px) {
   ::-moz-placeholder {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  ::-moz-placeholder {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   ::-moz-placeholder {
     font-size: 14px;
   }
@@ -514,15 +504,10 @@ img {
 }
 @media screen and (max-width: 1600px) {
   :-ms-input-placeholder {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  :-ms-input-placeholder {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   :-ms-input-placeholder {
     font-size: 14px;
   }
@@ -537,15 +522,10 @@ img {
 }
 @media screen and (max-width: 1600px) {
   :-moz-placeholder {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  :-moz-placeholder {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   :-moz-placeholder {
     font-size: 14px;
   }
@@ -1216,15 +1196,10 @@ footer .footerWrapper .footerData .footerSubscribe h2 {
 }
 @media screen and (max-width: 1600px) {
   footer .footerWrapper .footerData .footerSubscribe h2 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  footer .footerWrapper .footerData .footerSubscribe h2 {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   footer .footerWrapper .footerData .footerSubscribe h2 {
     font-size: 14px;
   }
@@ -1352,15 +1327,10 @@ footer .footerWrapper .socialIcons .iconsDiv h3 {
 }
 @media screen and (max-width: 1600px) {
   footer .footerWrapper .socialIcons .iconsDiv h3 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  footer .footerWrapper .socialIcons .iconsDiv h3 {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   footer .footerWrapper .socialIcons .iconsDiv h3 {
     font-size: 14px;
   }
@@ -2571,15 +2541,10 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 @media screen and (max-width: 1600px) {
   .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul li {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul li {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul li {
     font-size: 14px;
   }
@@ -2962,15 +2927,10 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 @media screen and (max-width: 1600px) {
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .storyDescdiv h4 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .storyDescdiv h4 {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .storyDescdiv h4 {
     font-size: 14px;
   }
@@ -3877,15 +3837,10 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 @media screen and (max-width: 1600px) {
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData h3 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData h3 {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData h3 {
     font-size: 14px;
   }
@@ -6337,15 +6292,10 @@ a.showLess::after {
 }
 @media screen and (max-width: 1600px) {
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd p {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd p {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateAdd p {
     font-size: 14px;
   }
@@ -6383,15 +6333,10 @@ a.showLess::after {
 }
 @media screen and (max-width: 1600px) {
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateMap .mapLink a {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateMap .mapLink a {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateAddMap .stateMap .mapLink a {
     font-size: 14px;
   }
@@ -6413,6 +6358,9 @@ a.showLess::after {
 }
 .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact {
   background: #000000;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
 }
 .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .mailIcon {
   height: 48%;
@@ -6477,15 +6425,10 @@ a.showLess::after {
 }
 @media screen and (max-width: 1600px) {
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox a {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox a {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox.mailContact .MailIds .idsBox a {
     font-size: 14px;
   }
@@ -8619,7 +8562,7 @@ body.opentwo {
   padding-left: 210px;
   padding-right: 210px;
   margin: 190px 0px 160px 0px;
-  width: 85%;
+  width: 100%;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .about-sec .aboutcontent {
@@ -8662,15 +8605,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .about-sec .aboutcontent .subheading {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
     font-size: 14px;
   }
@@ -8709,19 +8647,14 @@ body.opentwo {
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
-  width: 90%;
+  width: 60%;
 }
 @media screen and (max-width: 1600px) {
-  .casedetailsmainSec .about-sec .aboutcontent .about-content {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
   .casedetailsmainSec .about-sec .aboutcontent .about-content {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .about-sec .aboutcontent .about-content {
     font-size: 14px;
   }
@@ -8927,15 +8860,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
     font-size: 14px;
   }
@@ -8976,15 +8904,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .objectivegoal-sec .left-sec ul li {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .objectivegoal-sec .left-sec ul li {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .objectivegoal-sec .left-sec ul li {
     font-size: 14px;
   }
@@ -8998,15 +8921,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .objectivegoal-sec .left-sec p {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .objectivegoal-sec .left-sec p {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .objectivegoal-sec .left-sec p {
     font-size: 14px;
   }
@@ -9025,21 +8943,16 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
     font-size: 14px;
   }
 }
 .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
-  margin-bottom: 48px;
+  margin-bottom: 30px;
   color: #000;
   font-family: "Poppins", sans-serif;
   font-size: 30px;
@@ -9074,15 +8987,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .objectivegoal-sec .right-sec ul li {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .objectivegoal-sec .right-sec ul li {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .objectivegoal-sec .right-sec ul li {
     font-size: 14px;
   }
@@ -9096,15 +9004,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .objectivegoal-sec .right-sec p {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .objectivegoal-sec .right-sec p {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .objectivegoal-sec .right-sec p {
     font-size: 14px;
   }
@@ -9130,7 +9033,7 @@ body.opentwo {
     margin-bottom: 30px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
 }
 @media all and (max-width: 1600px) {
@@ -9153,7 +9056,7 @@ body.opentwo {
     margin-bottom: 28px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
-    margin-bottom: 40px;
+    margin-bottom: 28px;
   }
 }
 @media all and (max-width: 1536px) {
@@ -9184,7 +9087,7 @@ body.opentwo {
     margin-bottom: 24px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
-    margin-bottom: 36px;
+    margin-bottom: 24px;
   }
 }
 @media all and (max-width: 1366px) {
@@ -9226,7 +9129,7 @@ body.opentwo {
     margin-bottom: 22px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec ul {
     padding-left: 22px;
@@ -9256,7 +9159,7 @@ body.opentwo {
     margin-bottom: 20px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec ul {
     padding-left: 20px;
@@ -9418,15 +9321,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     font-size: 14px;
   }
@@ -9463,15 +9361,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
     font-size: 14px;
   }
@@ -9776,15 +9669,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
     font-size: 14px;
   }
@@ -9824,15 +9712,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content .ux-context {
     font-size: 14px;
   }
@@ -9870,21 +9753,16 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
     font-size: 14px;
   }
 }
 .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
-  margin-bottom: 48px;
+  margin-bottom: 30px;
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
   font-size: 30px;
@@ -9915,15 +9793,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
     font-size: 14px;
   }
@@ -9962,7 +9835,7 @@ body.opentwo {
     margin-bottom: 30px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
 }
 @media all and (max-width: 1600px) {
@@ -9992,7 +9865,7 @@ body.opentwo {
     margin-bottom: 28px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
-    margin-bottom: 40px;
+    margin-bottom: 28px;
   }
 }
 @media all and (max-width: 1400px) {
@@ -10022,7 +9895,7 @@ body.opentwo {
     margin-bottom: 24px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
-    margin-bottom: 36px;
+    margin-bottom: 24px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -10052,7 +9925,7 @@ body.opentwo {
     margin-bottom: 22px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
-    margin-bottom: 32px;
+    margin-bottom: 22px;
   }
 }
 @media all and (max-width: 1024px) {
@@ -10262,15 +10135,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
     font-size: 14px;
   }
@@ -10320,15 +10188,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
     font-size: 14px;
   }
@@ -10367,15 +10230,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-leftcontent p {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .statsSec .statsSec-wrapper .stats-leftcontent p {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-leftcontent p {
     font-size: 14px;
   }
@@ -10623,15 +10481,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .impactSec .results-impact-temp .impact-subheading {
     font-size: 14px;
   }
@@ -10823,15 +10676,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
     font-size: 14px;
   }
@@ -11067,15 +10915,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-content .video-stats-subheading {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-content .video-stats-subheading {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-content .video-stats-subheading {
     font-size: 14px;
   }
@@ -11125,15 +10968,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates p {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates p {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates p {
     font-size: 14px;
   }
@@ -11172,15 +11010,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-leftcontent p {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-leftcontent p {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-leftcontent p {
     font-size: 14px;
   }
@@ -11878,15 +11711,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .blogdetails-bannerSec .blogdetails-wrapper h3 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .blogdetails-bannerSec .blogdetails-wrapper h3 {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .blogdetails-bannerSec .blogdetails-wrapper h3 {
     font-size: 14px;
   }
@@ -12172,15 +12000,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .blogdetails-contentSec .blogdetails-contentContainer h5 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .blogdetails-contentSec .blogdetails-contentContainer h5 {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .blogdetails-contentSec .blogdetails-contentContainer h5 {
     font-size: 14px;
   }
@@ -12195,15 +12018,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
     font-size: 14px;
   }
@@ -14045,15 +13863,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     font-size: 14px;
   }
@@ -14093,15 +13906,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     font-size: 14px;
   }
@@ -14614,15 +14422,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv p {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv p {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv p {
     font-size: 14px;
   }
@@ -14711,15 +14514,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc h4 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc h4 {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc h4 {
     font-size: 14px;
   }
@@ -14754,15 +14552,10 @@ body.opentwo {
 }
 @media screen and (max-width: 1600px) {
   .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc p {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc p {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   .bookDescriptionsec .bookDescwrapper .bookInfodiv .book-author-desc p {
     font-size: 14px;
   }
