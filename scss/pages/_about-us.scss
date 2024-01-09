@@ -8,7 +8,7 @@
     }
 }
 .animation-sec{@include wrapper;margin-bottom:400px;
-    .heading-content{margin-bottom: 140px;padding:0px 150px;
+    .heading-content{margin-bottom: 140px;padding:0px 150px;width:70%;
         .main-heading{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 115.625%;letter-spacing: -1.92px;margin-bottom: 34px;}
         .subheading{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #6A6A6A);line-height: 141.667%;}
     }
@@ -51,7 +51,7 @@
             .thirdfoldanimation-mbl{display: none;}
         }
         .fourth-fold{z-index:1;position:relative;margin-bottom: 260px;
-            .fourth-fold-content{position: absolute;right:0;top:65%;width:35%;
+            .fourth-fold-content{position: absolute;right:0;top:62%;width:35%;
                 h2{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height:115.625%;letter-spacing: -1.92px;margin-bottom: 48px;}
                 p{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #000);line-height: 141.667%;}
             }
@@ -192,7 +192,7 @@
         }
     }
     @media all and (max-width:1024px){margin-bottom:150px;
-        .heading-content{margin-bottom: 100px;padding:0px;
+        .heading-content{margin-bottom: 100px;padding:0px;width:100%;
             .main-heading{margin-bottom: 24px;width: 90%;}
             .subheading{width: 90%;}
         }
@@ -200,32 +200,32 @@
             .first-fold{margin-bottom:0px;flex-direction:column;
                 .firstfoldanimation{display: none;}
                 .firstfoldanimation-mbl{display: block;order: 2;width: 100%;}
-                .firstfold-content{width: 100%;order:1;margin-bottom:50px;
+                .firstfold-content{width: 100%;order:1;margin-bottom:50px;text-align:center;
                     h2{margin-bottom: 26px;}
                 }
             }
-            .second-fold{margin-bottom: 60px;
+            .second-fold{margin-bottom: 80px;
                 .second-fold-anime{display: none;}
                 .secondfoldanimation-mbl{display: block;}
             }
-            .third-fold{margin-bottom: 30px;display:block;
-                .third-fold-content{width:100%;position:unset;margin-bottom:40px;
+            .third-fold{margin-bottom: 50px;flex-direction: column;
+                .third-fold-content{width:100%;position:unset;margin-bottom:40px;text-align:center;order:2;
                     h2{margin-bottom: 26px;}
                 }
                 .third-fold-anime{display: none;}
-                .thirdfoldanimation-mbl{display: block;}
+                .thirdfoldanimation-mbl{display: block;order: 1;}
             }
-            .fourth-fold{margin-bottom: 180px;
-                .fourth-fold-content{width:100%;position:unset;margin-bottom:100px;
+            .fourth-fold{margin-bottom: 80px;display:flex;flex-direction:column;
+                .fourth-fold-content{width:100%;position:unset;margin-bottom:100px;text-align:center;order:2;
                     h2{margin-bottom: 26px;}
                 }
                 .fourth-fold-anime{display: none;}
-                .fourthfoldanimation-mbl{display: block;}
+                .fourthfoldanimation-mbl{display: block;order: 1;}
             }
             .fifth-fold{
                 .fifth-fold-content{margin-bottom: 40px;
-                    h2{margin-bottom: 25px;width: 80%;}
-                    p{width: 70%;}
+                    h2{margin-bottom: 25px;width: 90%;}
+                    p{width: 80%;}
                 }
                 .fifth-fold-anime{display: none;}
                 .fifthfoldanimation-mbl{display: block;}
@@ -238,30 +238,31 @@
             .subheading{width: 100%;font-size: 14px;font-weight: 400;line-height: 24px;text-transform: capitalize;}
         }
         .animation-Div{padding:35px 0px 0px 0px;
-            .first-fold{margin-bottom:30px;
-                .firstfold-content{margin-bottom:50px;padding:0px 20px;
+            .first-fold{margin-bottom:50px;
+                .firstfold-content{margin-bottom:30px;padding:0px 20px;
                     h2{font-size: 30px;font-weight: 500;line-height: 40px;letter-spacing: -0.9px;margin-bottom: 10px;}
                     p{font-size: 14px;font-weight: 400;line-height: 24px;}
                 }
             }
             .second-fold{margin-bottom: 50px;}
-            .third-fold{margin-bottom: 20px;
-                .third-fold-content{margin-bottom:20px;padding:0px 20px;
+            .third-fold{margin-bottom: 50px;
+                .third-fold-content{padding:0px 20px;
                     h2{font-size: 30px;font-weight: 500;line-height: 40px;letter-spacing: -0.9px;margin-bottom: 10px;}
                     p{font-size: 14px;font-weight: 400;line-height: 24px;}
                 }
-                .third-fold-anime{width: 100%;}
+                .third-fold-anime{width: 100%;margin-bottom: 26%;}
             }
-            .fourth-fold{margin-bottom: 10px;
-                .fourth-fold-content{margin-bottom:86px;padding:0px 20px;
+            .fourth-fold{margin-bottom: 50px;
+                .fourth-fold-content{padding:0px 20px;
                     h2{font-size: 30px;font-weight: 500;line-height: 40px;letter-spacing: -0.9px;margin-bottom: 10px;}
                     p{font-size: 14px;font-weight: 400;line-height: 24px;}
                 }
+                .fourthfoldanimation-mbl{margin-bottom: 20px;}
             }
             .fifth-fold{
                 .fifth-fold-content{margin-bottom: 0px;padding:0px 20px;
-                    h2{font-size: 30px;margin-bottom: 22px;font-weight: 500;line-height: 40px;letter-spacing: -0.9px;}
-                    p{font-size: 14px;font-weight: 400;line-height: 24px;width: 80%;}
+                    h2{font-size: 30px;margin-bottom: 22px;font-weight: 500;line-height: 40px;letter-spacing: -0.9px;width: 100%;}
+                    p{font-size: 14px;font-weight: 400;line-height: 24px;width: 100%;}
                 }
             }
         }

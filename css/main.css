@@ -4992,23 +4992,17 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .serviceSec .servicesec-wrapper .servicesec-heading {
   width: 45%;
-  position: sticky;
-  top: 122px;
-  height: 50%;
 }
 .serviceSec .servicesec-wrapper .servicesec-content {
   width: 45%;
   padding: 0px 0px 160px 0px;
 }
 .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading {
-  padding-top: 100px;
+  padding-top: 75px;
   padding-bottom: 54px;
   padding-left: 60px;
   margin-left: -60px;
-  z-index: 7;
   background: #000000;
-  position: sticky;
-  top: 120px;
 }
 .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
   color: var(--primary-white, #FFF);
@@ -5142,7 +5136,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading {
     padding-bottom: 50px;
-    padding-top: 90px;
+    padding-top: 70px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
     line-height: 44px;
@@ -5173,14 +5167,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     left: -22px;
   }
 }
-@media all and (max-width: 1600px) {
-  .serviceSec .servicesec-wrapper .servicesec-heading {
-    top: 100px;
-  }
-  .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading {
-    top: 100px;
-  }
-}
 @media all and (max-width: 1400px) {
   .serviceSec .servicesec-wrapper {
     padding: 0px 60px 0px 40px;
@@ -5191,10 +5177,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading {
     padding-bottom: 45px;
-    padding-top: 80px;
+    padding-top: 60px;
     padding-left: 65px;
     margin-left: -65px;
-    top: 92px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
     line-height: 40px;
@@ -5235,8 +5220,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading {
     padding-bottom: 40px;
-    padding-top: 70px;
-    top: 85px;
+    padding-top: 50px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
     line-height: 36px;
@@ -5265,16 +5249,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding: 0px 40px 0px 20px;
     margin-bottom: 56px;
   }
-  .serviceSec .servicesec-wrapper .servicesec-heading {
-    top: 84px;
-  }
   .serviceSec .servicesec-wrapper .servicesec-content {
     padding: 0px 0px 120px 0px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading {
     padding-bottom: 36px;
-    padding-top: 60px;
-    top: 76px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
     line-height: 36px;
@@ -5306,8 +5285,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .serviceSec .servicesec-wrapper .servicesec-heading {
     width: 70%;
-    position: static;
-    height: auto;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
     padding: 40px 0px 80px 0px;
@@ -5321,7 +5298,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding-bottom: 34px;
     padding-left: 40px;
     margin-left: -40px;
-    position: static;
     padding-top: 40px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
@@ -5600,6 +5576,8 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .collaborate-section .collaborate-wrapper .left-content {
     width: 100%;
+    order: 1;
+    margin-bottom: 50px;
   }
   .collaborate-section .collaborate-wrapper .left-content h2 {
     line-height: 48px;
@@ -5611,12 +5589,15 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .collaborate-section .collaborate-wrapper .middle-content {
     width: 100%;
+    order: 3;
   }
   .collaborate-section .collaborate-wrapper .middle-content img {
     margin: 0 auto;
   }
   .collaborate-section .collaborate-wrapper .right-content {
-    display: none;
+    order: 2;
+    margin-bottom: 50px;
+    width: 100%;
   }
 }
 @media all and (max-width: 680px) {
@@ -5626,6 +5607,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .collaborate-section .collaborate-wrapper {
     padding: 40px 24px 60px 24px;
+  }
+  .collaborate-section .collaborate-wrapper .left-content {
+    margin-bottom: 30px;
   }
   .collaborate-section .collaborate-wrapper .left-content h2 {
     font-size: 30px;
@@ -5638,6 +5622,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+  }
+  .collaborate-section .collaborate-wrapper .right-content {
+    margin-bottom: 30px;
   }
 }
 
@@ -8671,7 +8658,6 @@ body.opentwo {
   font-size: 20px;
   font-weight: 700;
   line-height: 150%;
-  letter-spacing: 1px;
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
@@ -8696,7 +8682,6 @@ body.opentwo {
   font-size: 96px;
   font-weight: 500;
   line-height: 110.417%;
-  letter-spacing: -2.88px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
@@ -8771,11 +8756,9 @@ body.opentwo {
   }
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
     margin-bottom: 45px;
-    letter-spacing: 1px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
     margin-bottom: 45px;
-    letter-spacing: -2.88px;
   }
   .casedetailsmainSec .about-sec .image-sec {
     margin-bottom: 130px;
@@ -8868,7 +8851,6 @@ body.opentwo {
     font-size: 12px;
     font-weight: 700;
     line-height: 12px;
-    letter-spacing: 0.6px;
     width: 100%;
   }
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
@@ -8876,7 +8858,6 @@ body.opentwo {
     font-size: 40px;
     font-weight: 500;
     line-height: 50px;
-    letter-spacing: -1.2px;
     width: 100%;
   }
   .casedetailsmainSec .about-sec .aboutcontent .about-content {
@@ -8933,7 +8914,7 @@ body.opentwo {
   }
 }
 .casedetailsmainSec .objectivegoal-sec .left-sec {
-  width: 38%;
+  width: 39%;
 }
 .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
   margin-bottom: 30px;
@@ -8966,7 +8947,6 @@ body.opentwo {
   font-size: 40px;
   font-weight: 500;
   line-height: 125%;
-  letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
@@ -9032,7 +9012,7 @@ body.opentwo {
   }
 }
 .casedetailsmainSec .objectivegoal-sec .right-sec {
-  width: 38%;
+  width: 39%;
 }
 .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
   margin-bottom: 30px;
@@ -9065,7 +9045,6 @@ body.opentwo {
   font-size: 30px;
   font-weight: 500;
   line-height: 133.333%;
-  letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
@@ -9135,7 +9114,7 @@ body.opentwo {
     margin: 110px 0px 260px 0px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec {
-    width: 46%;
+    width: 38%;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
     margin-bottom: 30px;
@@ -9143,17 +9122,15 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
     margin-bottom: 45px;
-    letter-spacing: -1.2px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec {
-    width: 46%;
+    width: 43%;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
     margin-bottom: 30px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     margin-bottom: 45px;
-    letter-spacing: -1.2px;
   }
 }
 @media all and (max-width: 1600px) {
@@ -9161,7 +9138,7 @@ body.opentwo {
     margin: 100px 0px 240px 0px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec {
-    width: 46%;
+    width: 36%;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
     margin-bottom: 28px;
@@ -9170,13 +9147,21 @@ body.opentwo {
     margin-bottom: 40px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec {
-    width: 46%;
+    width: 36%;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
     margin-bottom: 28px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     margin-bottom: 40px;
+  }
+}
+@media all and (max-width: 1536px) {
+  .casedetailsmainSec .objectivegoal-sec .left-sec {
+    width: 38%;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec {
+    width: 38%;
   }
 }
 @media all and (max-width: 1400px) {
@@ -9184,7 +9169,7 @@ body.opentwo {
     margin: 90px 0px 200px 0px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec {
-    width: 46%;
+    width: 36%;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
     margin-bottom: 24px;
@@ -9193,7 +9178,7 @@ body.opentwo {
     margin-bottom: 36px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec {
-    width: 46%;
+    width: 36%;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
     margin-bottom: 24px;
@@ -9202,12 +9187,28 @@ body.opentwo {
     margin-bottom: 36px;
   }
 }
+@media all and (max-width: 1366px) {
+  .casedetailsmainSec .objectivegoal-sec .left-sec {
+    width: 37%;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec {
+    width: 37%;
+  }
+}
+@media all and (max-width: 1280px) {
+  .casedetailsmainSec .objectivegoal-sec .left-sec {
+    width: 38%;
+  }
+  .casedetailsmainSec .objectivegoal-sec .right-sec {
+    width: 38%;
+  }
+}
 @media all and (max-width: 1200px) {
   .casedetailsmainSec .objectivegoal-sec {
     margin: 80px 0px 180px 0px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec {
-    width: 46%;
+    width: 41%;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
     margin-bottom: 22px;
@@ -9219,7 +9220,7 @@ body.opentwo {
     padding-left: 22px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec {
-    width: 46%;
+    width: 41%;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
     margin-bottom: 22px;
@@ -9237,7 +9238,7 @@ body.opentwo {
     padding: 0px 80px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec {
-    width: 45%;
+    width: 40%;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
     margin-bottom: 20px;
@@ -9249,7 +9250,7 @@ body.opentwo {
     padding-left: 20px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec {
-    width: 45%;
+    width: 40%;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
     margin-bottom: 20px;
@@ -9296,7 +9297,7 @@ body.opentwo {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 30px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec ul {
     padding-left: 18px;
@@ -9324,7 +9325,7 @@ body.opentwo {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 26px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec ul {
     padding-left: 18px;
@@ -9437,7 +9438,6 @@ body.opentwo {
   font-size: 30px;
   font-weight: 500;
   line-height: 133.333%;
-  letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
@@ -9460,7 +9460,6 @@ body.opentwo {
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
-  letter-spacing: 0.6px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
@@ -9484,7 +9483,6 @@ body.opentwo {
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
-  letter-spacing: 0.7px;
   text-transform: uppercase;
   display: inline-flex;
   align-items: center;
@@ -9797,7 +9795,6 @@ body.opentwo {
   font-size: 40px;
   font-weight: 500;
   line-height: 125%;
-  letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
@@ -9845,6 +9842,8 @@ body.opentwo {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:not(:last-child) {
   padding-bottom: 142px;
 }
 .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:nth-child(even) {
@@ -9891,7 +9890,6 @@ body.opentwo {
   font-size: 30px;
   font-weight: 500;
   line-height: 133.333%;
-  letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
@@ -9914,7 +9912,6 @@ body.opentwo {
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
-  letter-spacing: 0.6px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
@@ -9955,7 +9952,7 @@ body.opentwo {
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 145px;
   }
-  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:not(:last-child) {
     padding-bottom: 140px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
@@ -9985,7 +9982,7 @@ body.opentwo {
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 140px;
   }
-  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:not(:last-child) {
     padding-bottom: 140px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
@@ -10015,7 +10012,7 @@ body.opentwo {
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 120px;
   }
-  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:not(:last-child) {
     padding-bottom: 120px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
@@ -10045,7 +10042,7 @@ body.opentwo {
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 100px;
   }
-  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:not(:last-child) {
     padding-bottom: 100px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
@@ -10077,6 +10074,8 @@ body.opentwo {
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
     display: block;
+  }
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:not(:last-child) {
     padding-bottom: 100px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
@@ -10144,14 +10143,12 @@ body.opentwo {
     font-size: 12px;
     font-weight: 600;
     line-height: 12px;
-    letter-spacing: 0.6px;
   }
   .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
-    letter-spacing: -0.54px;
   }
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     width: 100%;
@@ -10164,6 +10161,8 @@ body.opentwo {
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
     display: block;
+  }
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:not(:last-child) {
     padding-bottom: 84px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
@@ -10190,14 +10189,12 @@ body.opentwo {
     font-size: 12px;
     font-weight: 600;
     line-height: 12px;
-    letter-spacing: 0.6px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: -0.48px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
     font-size: 14px;
@@ -10284,7 +10281,6 @@ body.opentwo {
   font-size: 40px;
   font-weight: 500;
   line-height: 125%;
-  letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
@@ -10320,7 +10316,6 @@ body.opentwo {
   font-size: 20px;
   font-weight: 500;
   line-height: 120%;
-  letter-spacing: 0.6px;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 1600px) {
@@ -10344,7 +10339,6 @@ body.opentwo {
   font-size: 40px;
   font-weight: 500;
   line-height: 125%;
-  letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
@@ -10539,7 +10533,6 @@ body.opentwo {
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
-    letter-spacing: -0.54px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers {
     width: 100%;
@@ -10556,20 +10549,17 @@ body.opentwo {
     font-size: 16px;
     font-weight: 500;
     line-height: 21.333px;
-    letter-spacing: 0.48px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 500;
     line-height: 21.333px;
-    letter-spacing: 0.48px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
     font-size: 30px;
     font-weight: 500;
     line-height: 44.444px;
-    letter-spacing: -0.9px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-leftcontent {
     width: 100%;
@@ -10652,7 +10642,6 @@ body.opentwo {
   font-size: 40px;
   font-weight: 500;
   line-height: 125%;
-  letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
@@ -10780,12 +10769,10 @@ body.opentwo {
     font-size: 12px;
     font-weight: 700;
     line-height: 12px;
-    letter-spacing: 0.6px;
   }
   .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
     font-size: 16px;
     font-weight: 500;
-    letter-spacing: -0.48px;
     line-height: 26px;
   }
   .casedetailsmainSec .impactSec .impact-img {
@@ -10856,7 +10843,6 @@ body.opentwo {
   font-size: 30px;
   font-weight: 500;
   line-height: 133.333%;
-  letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
@@ -11012,14 +10998,12 @@ body.opentwo {
     font-size: 12px;
     font-weight: 600;
     line-height: 12px;
-    letter-spacing: 0.6px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
     margin-bottom: 0px;
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: -0.48px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .right-img {
     width: 100%;
@@ -11102,7 +11086,6 @@ body.opentwo {
   font-size: 40px;
   font-weight: 500;
   line-height: 125%;
-  letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-content .video-stats-mainheading {
@@ -11138,7 +11121,6 @@ body.opentwo {
   font-size: 20px;
   font-weight: 500;
   line-height: 120%;
-  letter-spacing: 0.6px;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 1600px) {
@@ -11162,7 +11144,6 @@ body.opentwo {
   font-size: 40px;
   font-weight: 500;
   line-height: 125%;
-  letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates h2 {
@@ -11414,7 +11395,6 @@ body.opentwo {
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
-    letter-spacing: -0.54px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers {
     width: 100%;
@@ -11431,20 +11411,17 @@ body.opentwo {
     font-size: 16px;
     font-weight: 500;
     line-height: 21.333px;
-    letter-spacing: 0.48px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates p {
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 500;
     line-height: 21.333px;
-    letter-spacing: 0.48px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates h2 {
     font-size: 30px;
     font-weight: 500;
     line-height: 44.444px;
-    letter-spacing: -0.9px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-leftcontent p {
     font-size: 14px;
@@ -13060,6 +13037,7 @@ body.opentwo {
 .animation-sec .heading-content {
   margin-bottom: 140px;
   padding: 0px 150px;
+  width: 70%;
 }
 .animation-sec .heading-content .main-heading {
   font-family: "Poppins", sans-serif;
@@ -13319,7 +13297,7 @@ body.opentwo {
 .animation-sec .animation-Div .fourth-fold .fourth-fold-content {
   position: absolute;
   right: 0;
-  top: 65%;
+  top: 62%;
   width: 35%;
 }
 .animation-sec .animation-Div .fourth-fold .fourth-fold-content h2 {
@@ -13703,6 +13681,7 @@ body.opentwo {
   .animation-sec .heading-content {
     margin-bottom: 100px;
     padding: 0px;
+    width: 100%;
   }
   .animation-sec .heading-content .main-heading {
     margin-bottom: 24px;
@@ -13730,12 +13709,13 @@ body.opentwo {
     width: 100%;
     order: 1;
     margin-bottom: 50px;
+    text-align: center;
   }
   .animation-sec .animation-Div .first-fold .firstfold-content h2 {
     margin-bottom: 26px;
   }
   .animation-sec .animation-Div .second-fold {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
   .animation-sec .animation-Div .second-fold .second-fold-anime {
     display: none;
@@ -13744,13 +13724,15 @@ body.opentwo {
     display: block;
   }
   .animation-sec .animation-Div .third-fold {
-    margin-bottom: 30px;
-    display: block;
+    margin-bottom: 50px;
+    flex-direction: column;
   }
   .animation-sec .animation-Div .third-fold .third-fold-content {
     width: 100%;
     position: unset;
     margin-bottom: 40px;
+    text-align: center;
+    order: 2;
   }
   .animation-sec .animation-Div .third-fold .third-fold-content h2 {
     margin-bottom: 26px;
@@ -13760,14 +13742,19 @@ body.opentwo {
   }
   .animation-sec .animation-Div .third-fold .thirdfoldanimation-mbl {
     display: block;
+    order: 1;
   }
   .animation-sec .animation-Div .fourth-fold {
-    margin-bottom: 180px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
   }
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content {
     width: 100%;
     position: unset;
     margin-bottom: 100px;
+    text-align: center;
+    order: 2;
   }
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content h2 {
     margin-bottom: 26px;
@@ -13777,16 +13764,17 @@ body.opentwo {
   }
   .animation-sec .animation-Div .fourth-fold .fourthfoldanimation-mbl {
     display: block;
+    order: 1;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content {
     margin-bottom: 40px;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content h2 {
     margin-bottom: 25px;
-    width: 80%;
+    width: 90%;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content p {
-    width: 70%;
+    width: 80%;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-anime {
     display: none;
@@ -13823,10 +13811,10 @@ body.opentwo {
     padding: 35px 0px 0px 0px;
   }
   .animation-sec .animation-Div .first-fold {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .animation-sec .animation-Div .first-fold .firstfold-content {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding: 0px 20px;
   }
   .animation-sec .animation-Div .first-fold .firstfold-content h2 {
@@ -13845,10 +13833,9 @@ body.opentwo {
     margin-bottom: 50px;
   }
   .animation-sec .animation-Div .third-fold {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
   .animation-sec .animation-Div .third-fold .third-fold-content {
-    margin-bottom: 20px;
     padding: 0px 20px;
   }
   .animation-sec .animation-Div .third-fold .third-fold-content h2 {
@@ -13865,12 +13852,12 @@ body.opentwo {
   }
   .animation-sec .animation-Div .third-fold .third-fold-anime {
     width: 100%;
+    margin-bottom: 26%;
   }
   .animation-sec .animation-Div .fourth-fold {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content {
-    margin-bottom: 86px;
     padding: 0px 20px;
   }
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content h2 {
@@ -13885,6 +13872,9 @@ body.opentwo {
     font-weight: 400;
     line-height: 24px;
   }
+  .animation-sec .animation-Div .fourth-fold .fourthfoldanimation-mbl {
+    margin-bottom: 20px;
+  }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content {
     margin-bottom: 0px;
     padding: 0px 20px;
@@ -13895,12 +13885,13 @@ body.opentwo {
     font-weight: 500;
     line-height: 40px;
     letter-spacing: -0.9px;
+    width: 100%;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content p {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    width: 80%;
+    width: 100%;
   }
 }
 

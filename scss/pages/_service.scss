@@ -85,10 +85,10 @@
 }
 .serviceSec{position: relative;@include wrapper;
     .servicesec-wrapper{background: #000000;padding: 0px 74px 0px 50px;display: flex;justify-content: space-between;margin-bottom:60px;
-        .servicesec-heading{width:45%;position: sticky;top: 122px;height: 50%;}
+        .servicesec-heading{width:45%;}
         .servicesec-content{width:45%;padding:0px 0px 160px 0px;
             .services-info{
-                .sticky-heading{padding-top: 100px;padding-bottom: 54px;padding-left: 60px;margin-left: -60px;z-index: 7;background: #000000;position:sticky;top:120px;
+                .sticky-heading{padding-top: 75px;padding-bottom: 54px;padding-left: 60px;margin-left: -60px;background: #000000;
                     .subheading{color: var(--primary-white, #FFF);font-family: $fontpoppins;@include font48;font-weight: $fontW500;line-height: 48px; letter-spacing: -1.44px;}
                 }
                 .list-wrapper{padding: 54px 0px;border-top:1px solid rgba(251, 251, 251, 0.4);   
@@ -107,7 +107,7 @@
         .servicesec-wrapper{padding: 0px 70px 0px 48px;margin-bottom:56px;
             .servicesec-content{padding:0px 0px 150px 0px;
                 .services-info{ 
-                    .sticky-heading{padding-bottom: 50px;padding-top:90px;
+                    .sticky-heading{padding-bottom: 50px;padding-top:70px;
                         .subheading{line-height: 44px; letter-spacing: -1.20px;}
                     }
                     .list-wrapper{padding: 50px 0px;  
@@ -123,21 +123,12 @@
         }
     }
     @media all and (max-width:1600px){
-        .servicesec-wrapper{
-            .servicesec-heading{top: 100px;}
-            .servicesec-content{
-                .services-info{ 
-                    .sticky-heading{top:100px;
-                    }
-                }
-            }
-        }
     }
     @media all and (max-width:1400px){
         .servicesec-wrapper{padding: 0px 60px 0px 40px;margin-bottom:56px;
             .servicesec-content{padding:0px 0px 140px 0px;
                 .services-info{ 
-                    .sticky-heading{padding-bottom: 45px;padding-top:80px;padding-left: 65px;margin-left: -65px;top:92px;
+                    .sticky-heading{padding-bottom: 45px;padding-top:60px;padding-left: 65px;margin-left: -65px;
                         .subheading{line-height: 40px; letter-spacing: -1.20px;}
                     }
                     .list-wrapper{padding: 45px 0px;  
@@ -156,7 +147,7 @@
         .servicesec-wrapper{padding: 0px 50px 0px 40px;margin-bottom:56px;
             .servicesec-content{padding:0px 0px 130px 0px;
                 .services-info{
-                    .sticky-heading{padding-bottom: 40px;padding-top:70px;top:85px;
+                    .sticky-heading{padding-bottom: 40px;padding-top:50px;
                         .subheading{line-height: 36px; letter-spacing: -1.20px;}
                     } 
                     .list-wrapper{padding: 40px 0px;  
@@ -171,10 +162,9 @@
     }
     @media all and (max-width:1024px){
         .servicesec-wrapper{padding: 0px 40px 0px 20px;margin-bottom:56px;
-            .servicesec-heading{top: 84px;}
             .servicesec-content{padding:0px 0px 120px 0px;
                 .services-info{
-                    .sticky-heading{padding-bottom: 36px;padding-top:60px;top:76px;
+                    .sticky-heading{padding-bottom: 36px;
                         .subheading{line-height: 36px; letter-spacing: -1.20px;}
                     } 
                     
@@ -190,10 +180,10 @@
     }
     @media all and (max-width:768px){
         .servicesec-wrapper{padding: 0px 30px 0px 30px;margin-bottom:48px;display:block;
-            .servicesec-heading{width:70%;position: static;height: auto;}
+            .servicesec-heading{width:70%;}
             .servicesec-content{padding:40px 0px 80px 0px;width:100%;
                 .services-info{padding-left: 40px;height: auto;
-                    .sticky-heading{padding-bottom: 34px;padding-left: 40px;margin-left: -40px;position:static;padding-top:40px;
+                    .sticky-heading{padding-bottom: 34px;padding-left: 40px;margin-left: -40px;padding-top:40px;
                         .subheading{line-height: 34px;letter-spacing: -0.72px;}
                     } 
                     
@@ -289,19 +279,20 @@
 @media all and (max-width:1024px){
     margin-bottom:150px;
     .collaborate-wrapper{flex-direction:column;align-items:center;padding:80px 24px 90px 24px;
-        .left-content{width: 100%;
+        .left-content{width: 100%;order:1;margin-bottom:50px;
             h2{line-height: 48px; letter-spacing: -1px;margin-bottom:20px;}
             p{line-height: 20px;}}
-        .middle-content{width: 100%;img{margin: 0 auto;}}
-        .right-content{display: none;}
+        .middle-content{width: 100%;img{margin: 0 auto;}order:3;}
+        .right-content{order: 2; margin-bottom: 50px;width: 100%;}
     }
 }
 @media all and (max-width:680px){
     padding-left: 0px;padding-right:0px;
     .collaborate-wrapper{padding:40px 24px 60px 24px;
-        .left-content{
+        .left-content{margin-bottom:30px;
             h2{font-size: 30px;font-weight: 500;line-height: 40px;letter-spacing: -0.9px;margin-bottom:20px;}
             p{font-size: 14px;font-weight: 400;line-height: 24px;}}
+            .right-content{margin-bottom: 30px;}
     }
 }
 }
