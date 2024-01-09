@@ -4925,6 +4925,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .serviceSec .servicesec-wrapper .servicesec-heading {
   width: 45%;
+  position: sticky;
+  top: 122px;
+  height: 50%;
 }
 .serviceSec .servicesec-wrapper .servicesec-content {
   width: 45%;
@@ -5104,6 +5107,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
 }
 @media all and (max-width: 1600px) {
+  .serviceSec .servicesec-wrapper .servicesec-heading {
+    top: 100px;
+  }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading {
     top: 100px;
   }
@@ -5192,6 +5198,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding: 0px 40px 0px 20px;
     margin-bottom: 56px;
   }
+  .serviceSec .servicesec-wrapper .servicesec-heading {
+    top: 84px;
+  }
   .serviceSec .servicesec-wrapper .servicesec-content {
     padding: 0px 0px 120px 0px;
   }
@@ -5230,6 +5239,8 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .serviceSec .servicesec-wrapper .servicesec-heading {
     width: 70%;
+    position: static;
+    height: auto;
   }
   .serviceSec .servicesec-wrapper .servicesec-content {
     padding: 40px 0px 80px 0px;
@@ -7974,6 +7985,48 @@ body.opentwo {
     font-size: 18px;
   }
 }
+.careerFormSec .careerSec .collaborateForm form input::placeholder, .careerFormSec .careerSec .collaborateForm form textarea::placeholder {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 109.091%;
+  letter-spacing: -0.44px;
+}
+@media screen and (max-width: 1600px) {
+  .careerFormSec .careerSec .collaborateForm form input::placeholder, .careerFormSec .careerSec .collaborateForm form textarea::placeholder {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .careerFormSec .careerSec .collaborateForm form input::placeholder, .careerFormSec .careerSec .collaborateForm form textarea::placeholder {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .careerFormSec .careerSec .collaborateForm form input::placeholder, .careerFormSec .careerSec .collaborateForm form textarea::placeholder {
+    font-size: 14px;
+  }
+}
+.careerFormSec .careerSec .collaborateForm form input::-ms-input-placeholder, .careerFormSec .careerSec .collaborateForm form textarea::-ms-input-placeholder {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 109.091%;
+  letter-spacing: -0.44px;
+}
+@media screen and (max-width: 1600px) {
+  .careerFormSec .careerSec .collaborateForm form input::-ms-input-placeholder, .careerFormSec .careerSec .collaborateForm form textarea::-ms-input-placeholder {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .careerFormSec .careerSec .collaborateForm form input::-ms-input-placeholder, .careerFormSec .careerSec .collaborateForm form textarea::-ms-input-placeholder {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .careerFormSec .careerSec .collaborateForm form input::-ms-input-placeholder, .careerFormSec .careerSec .collaborateForm form textarea::-ms-input-placeholder {
+    font-size: 14px;
+  }
+}
 .careerFormSec .careerSec .collaborateForm form input[type=submit] {
   font-size: 14px;
   font-weight: 700;
@@ -8467,8 +8520,16 @@ body.opentwo {
   }
   .careerFormSec .careerSec .collaborateForm form input, .careerFormSec .careerSec .collaborateForm form textarea {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 24px;
+    letter-spacing: -0.4px;
+  }
+  .careerFormSec .careerSec .collaborateForm form input::placeholder, .careerFormSec .careerSec .collaborateForm form textarea::placeholder {
+    font-weight: 300;
+    letter-spacing: -0.4px;
+  }
+  .careerFormSec .careerSec .collaborateForm form input::-ms-input-placeholder, .careerFormSec .careerSec .collaborateForm form textarea::-ms-input-placeholder {
+    font-weight: 300;
     letter-spacing: -0.4px;
   }
   .careerFormSec .careerSec .collaborateForm form label {
@@ -8491,7 +8552,7 @@ body.opentwo {
   padding-left: 210px;
   padding-right: 210px;
   margin: 190px 0px 160px 0px;
-  width: 75%;
+  width: 85%;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .about-sec .aboutcontent {
@@ -8583,7 +8644,7 @@ body.opentwo {
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
-  width: 55%;
+  width: 90%;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .about-sec .aboutcontent .about-content {
@@ -9254,6 +9315,9 @@ body.opentwo {
   height: 100%;
   object-fit: cover;
 }
+.casedetailsmainSec .researchSec .researchsec-wrapper .img-div .mobile-img {
+  display: none;
+}
 .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
   position: relative;
   background: var(--primary-white, #FFF);
@@ -9555,6 +9619,12 @@ body.opentwo {
   .casedetailsmainSec .researchSec .researchsec-wrapper {
     margin-bottom: 54px;
     padding: 0px;
+  }
+  .casedetailsmainSec .researchSec .researchsec-wrapper .img-div .mobile-img {
+    display: block;
+  }
+  .casedetailsmainSec .researchSec .researchsec-wrapper .img-div .desktop-img {
+    display: none;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     padding-bottom: 55px;
@@ -11152,6 +11222,10 @@ body.opentwo {
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates p {
     margin-bottom: 28px;
   }
+  .casedetailsmainSec .video-stats-sec .video-wrapper .video-container .play-button-wrapper #circle-play-b svg {
+    width: 90px;
+    height: 90px;
+  }
 }
 @media all and (max-width: 1400px) {
   .casedetailsmainSec .video-stats-sec {
@@ -11171,6 +11245,10 @@ body.opentwo {
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates p {
     margin-bottom: 26px;
+  }
+  .casedetailsmainSec .video-stats-sec .video-wrapper .video-container .play-button-wrapper #circle-play-b svg {
+    width: 80px;
+    height: 80px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -11295,6 +11373,10 @@ body.opentwo {
   }
   .casedetailsmainSec .video-stats-sec .video-wrapper {
     padding: 0px;
+  }
+  .casedetailsmainSec .video-stats-sec .video-wrapper .video-container .play-button-wrapper #circle-play-b svg {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -11689,7 +11771,7 @@ body.opentwo {
   padding-left: 210px;
   padding-right: 210px;
   margin: 190px 0px 160px 0px;
-  width: 75%;
+  width: 85%;
 }
 @media screen and (max-width: 1600px) {
   .blogdetails-bannerSec .blogdetails-wrapper {

@@ -85,7 +85,7 @@
 }
 .serviceSec{position: relative;@include wrapper;
     .servicesec-wrapper{background: #000000;padding: 0px 74px 0px 50px;display: flex;justify-content: space-between;margin-bottom:60px;
-        .servicesec-heading{width:45%;}
+        .servicesec-heading{width:45%;position: sticky;top: 122px;height: 50%;}
         .servicesec-content{width:45%;padding:0px 0px 160px 0px;
             .services-info{
                 .sticky-heading{padding-top: 100px;padding-bottom: 54px;padding-left: 60px;margin-left: -60px;z-index: 7;background: #000000;position:sticky;top:120px;
@@ -124,6 +124,7 @@
     }
     @media all and (max-width:1600px){
         .servicesec-wrapper{
+            .servicesec-heading{top: 100px;}
             .servicesec-content{
                 .services-info{ 
                     .sticky-heading{top:100px;
@@ -170,6 +171,7 @@
     }
     @media all and (max-width:1024px){
         .servicesec-wrapper{padding: 0px 40px 0px 20px;margin-bottom:56px;
+            .servicesec-heading{top: 84px;}
             .servicesec-content{padding:0px 0px 120px 0px;
                 .services-info{
                     .sticky-heading{padding-bottom: 36px;padding-top:60px;top:76px;
@@ -188,7 +190,7 @@
     }
     @media all and (max-width:768px){
         .servicesec-wrapper{padding: 0px 30px 0px 30px;margin-bottom:48px;display:block;
-            .servicesec-heading{width:70%;}
+            .servicesec-heading{width:70%;position: static;height: auto;}
             .servicesec-content{padding:40px 0px 80px 0px;width:100%;
                 .services-info{padding-left: 40px;height: auto;
                     .sticky-heading{padding-bottom: 34px;padding-left: 40px;margin-left: -40px;position:static;padding-top:40px;

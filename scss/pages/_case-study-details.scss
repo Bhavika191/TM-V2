@@ -199,6 +199,7 @@
             &:nth-child(even){justify-content: start;}
             .img-div{height:calc(100% - 150px);position:absolute;left:0;top:0;right:0;overflow: hidden;
                 img{width: 100%;height: 100%;object-fit: cover;}
+                .mobile-img{display: none;}
             }
             .research-card-type{position: relative;background: var(--primary-white, #FFF);padding: 80px;width:580px;min-height:722px;z-index:2;
                 .research-card-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 150%;text-transform: uppercase;}
@@ -278,6 +279,10 @@
     }
     @media all and (max-width:821px){
         .researchsec-wrapper{margin-bottom:54px;padding:0px;
+            .img-div{
+                .mobile-img{display: block;}
+                .desktop-img{display: none;}
+            }
             .research-card-type{padding-bottom:55px;padding-top: 36px;width:auto;
                 .research-card-subheading{margin-bottom:10px;font-size: 12px;font-weight: 600;line-height: 12px;}
                 .research-card-mainheading{margin-bottom:10px;font-size: 20px;font-weight: 500;line-height: 30px;}
@@ -692,6 +697,15 @@
                     }
                 }
             }
+            .video-wrapper{
+                .video-container{
+                    .play-button-wrapper {
+                        #circle-play-b {
+                            svg {width: 90px;height: 90px;}
+                        }
+                    }
+                }
+            }
         }
         @media all and (max-width:1400px){
             margin-bottom: 300px;
@@ -703,6 +717,15 @@
                     .rates{&:not(:last-child){margin-right:60px;}
                         img{margin-bottom: 10px;}
                         p{margin-bottom: 26px;}
+                    }
+                }
+            }
+            .video-wrapper{
+                .video-container{
+                    .play-button-wrapper {
+                        #circle-play-b {
+                            svg {width: 80px;height: 80px;}
+                        }
                     }
                 }
             }
@@ -757,10 +780,17 @@
                 p{font-size: 14px;font-weight: 400;line-height: 24px;}
             }
         }
-        .video-wrapper{padding: 0px;}
+        .video-wrapper{padding: 0px;
+            .video-container{
+                .play-button-wrapper {
+                    #circle-play-b {
+                        svg {width: 60px;height: 60px;}
+                    }
+                }
+            }
+        }
         }
     } 
-
 }
 
 

@@ -317,28 +317,28 @@ inViewport('imgZoomin');  //  run the function on all section elements
 
 //---------------------------------------------------------Shamal's Js Code Starts ---------------------------------------------------------------//
 //Service page sticky property starts
-if ($('.serviceSec').length) {
-  jQuery(document).ready(function () {
-    for (let i = 1; i <= 9; i++) {
-      var $this = $('#service-info' + i);
-      if ($this.find('div').length >= 3) {
-        $('#servicesec-heading' + i).css({ 'position': 'sticky', 'top': '122px', 'height': '50%' });
-        const mediaQuerys = window.matchMedia('(max-width: 1600px)');
-        if (mediaQuerys.matches) {
-          $('#servicesec-heading' + i).css('top', '100px');
-        }
-        const mediaQueryTabs = window.matchMedia('(max-width: 1024px)');
-        if (mediaQueryTabs.matches) {
-          $('#servicesec-heading' + i).css('top', '84px');
-        }
-        const mediaQuery = window.matchMedia('(max-width: 768px)');
-        if (mediaQuery.matches) {
-          $('#servicesec-heading' + i).css({ 'position': 'static', 'height': 'auto' });
-        }
-      }
-    }
-  });
-}
+// if ($('.serviceSec').length) {
+//   jQuery(document).ready(function () {
+//     for (let i = 1; i <= 9; i++) {
+//       var $this = $('#service-info' + i);
+//       if ($this.find('div').length >= 3) {
+//         $('#servicesec-heading' + i).css({ 'position': 'sticky', 'top': '122px', 'height': '50%' });
+//         const mediaQuerys = window.matchMedia('(max-width: 1600px)');
+//         if (mediaQuerys.matches) {
+//           $('#servicesec-heading' + i).css('top', '100px');
+//         }
+//         const mediaQueryTabs = window.matchMedia('(max-width: 1024px)');
+//         if (mediaQueryTabs.matches) {
+//           $('#servicesec-heading' + i).css('top', '84px');
+//         }
+//         const mediaQuery = window.matchMedia('(max-width: 768px)');
+//         if (mediaQuery.matches) {
+//           $('#servicesec-heading' + i).css({ 'position': 'static', 'height': 'auto' });
+//         }
+//       }
+//     }
+//   });
+// }
 //Service page sticky property ends
 
 //Service page read more and Read less code starts
