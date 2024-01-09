@@ -8599,7 +8599,6 @@ body.opentwo {
   font-size: 20px;
   font-weight: 700;
   line-height: 150%;
-  letter-spacing: 1px;
   text-transform: uppercase;
 }
 @media screen and (max-width: 1600px) {
@@ -8624,7 +8623,6 @@ body.opentwo {
   font-size: 96px;
   font-weight: 500;
   line-height: 110.417%;
-  letter-spacing: -2.88px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
@@ -8699,11 +8697,9 @@ body.opentwo {
   }
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
     margin-bottom: 45px;
-    letter-spacing: 1px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
     margin-bottom: 45px;
-    letter-spacing: -2.88px;
   }
   .casedetailsmainSec .about-sec .image-sec {
     margin-bottom: 130px;
@@ -8796,7 +8792,6 @@ body.opentwo {
     font-size: 12px;
     font-weight: 700;
     line-height: 12px;
-    letter-spacing: 0.6px;
     width: 100%;
   }
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
@@ -8804,7 +8799,6 @@ body.opentwo {
     font-size: 40px;
     font-weight: 500;
     line-height: 50px;
-    letter-spacing: -1.2px;
     width: 100%;
   }
   .casedetailsmainSec .about-sec .aboutcontent .about-content {
@@ -8894,7 +8888,6 @@ body.opentwo {
   font-size: 40px;
   font-weight: 500;
   line-height: 125%;
-  letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
@@ -8993,7 +8986,6 @@ body.opentwo {
   font-size: 30px;
   font-weight: 500;
   line-height: 133.333%;
-  letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
@@ -9071,7 +9063,6 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
     margin-bottom: 45px;
-    letter-spacing: -1.2px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec {
     width: 43%;
@@ -9081,7 +9072,6 @@ body.opentwo {
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     margin-bottom: 45px;
-    letter-spacing: -1.2px;
   }
 }
 @media all and (max-width: 1600px) {
@@ -9248,7 +9238,7 @@ body.opentwo {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 30px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec ul {
     padding-left: 18px;
@@ -9276,7 +9266,7 @@ body.opentwo {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 26px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec ul {
     padding-left: 18px;
@@ -9389,7 +9379,6 @@ body.opentwo {
   font-size: 30px;
   font-weight: 500;
   line-height: 133.333%;
-  letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
@@ -9412,7 +9401,6 @@ body.opentwo {
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
-  letter-spacing: 0.6px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
@@ -9436,7 +9424,6 @@ body.opentwo {
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
-  letter-spacing: 0.7px;
   text-transform: uppercase;
   display: inline-flex;
   align-items: center;
@@ -9749,7 +9736,6 @@ body.opentwo {
   font-size: 40px;
   font-weight: 500;
   line-height: 125%;
-  letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
@@ -9797,6 +9783,8 @@ body.opentwo {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:not(:last-child) {
   padding-bottom: 142px;
 }
 .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:nth-child(even) {
@@ -9843,7 +9831,6 @@ body.opentwo {
   font-size: 30px;
   font-weight: 500;
   line-height: 133.333%;
-  letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
@@ -9866,7 +9853,6 @@ body.opentwo {
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
-  letter-spacing: 0.6px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
@@ -9907,7 +9893,7 @@ body.opentwo {
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 145px;
   }
-  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:not(:last-child) {
     padding-bottom: 140px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
@@ -9937,7 +9923,7 @@ body.opentwo {
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 140px;
   }
-  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:not(:last-child) {
     padding-bottom: 140px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
@@ -9967,7 +9953,7 @@ body.opentwo {
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 120px;
   }
-  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:not(:last-child) {
     padding-bottom: 120px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
@@ -9997,7 +9983,7 @@ body.opentwo {
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     padding: 0px 100px;
   }
-  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:not(:last-child) {
     padding-bottom: 100px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
@@ -10029,6 +10015,8 @@ body.opentwo {
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
     display: block;
+  }
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:not(:last-child) {
     padding-bottom: 100px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
@@ -10096,14 +10084,12 @@ body.opentwo {
     font-size: 12px;
     font-weight: 600;
     line-height: 12px;
-    letter-spacing: 0.6px;
   }
   .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
-    letter-spacing: -0.54px;
   }
   .casedetailsmainSec .solutionsSec .ux-wrapper .ux-content {
     width: 100%;
@@ -10116,6 +10102,8 @@ body.opentwo {
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec {
     display: block;
+  }
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:not(:last-child) {
     padding-bottom: 84px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
@@ -10142,14 +10130,12 @@ body.opentwo {
     font-size: 12px;
     font-weight: 600;
     line-height: 12px;
-    letter-spacing: 0.6px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: -0.48px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
     font-size: 14px;
@@ -10236,7 +10222,6 @@ body.opentwo {
   font-size: 40px;
   font-weight: 500;
   line-height: 125%;
-  letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
@@ -10272,7 +10257,6 @@ body.opentwo {
   font-size: 20px;
   font-weight: 500;
   line-height: 120%;
-  letter-spacing: 0.6px;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 1600px) {
@@ -10296,7 +10280,6 @@ body.opentwo {
   font-size: 40px;
   font-weight: 500;
   line-height: 125%;
-  letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
@@ -10491,7 +10474,6 @@ body.opentwo {
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
-    letter-spacing: -0.54px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers {
     width: 100%;
@@ -10508,20 +10490,17 @@ body.opentwo {
     font-size: 16px;
     font-weight: 500;
     line-height: 21.333px;
-    letter-spacing: 0.48px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates p {
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 500;
     line-height: 21.333px;
-    letter-spacing: 0.48px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates h2 {
     font-size: 30px;
     font-weight: 500;
     line-height: 44.444px;
-    letter-spacing: -0.9px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-leftcontent {
     width: 100%;
@@ -10604,7 +10583,6 @@ body.opentwo {
   font-size: 40px;
   font-weight: 500;
   line-height: 125%;
-  letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
@@ -10732,12 +10710,10 @@ body.opentwo {
     font-size: 12px;
     font-weight: 700;
     line-height: 12px;
-    letter-spacing: 0.6px;
   }
   .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
     font-size: 16px;
     font-weight: 500;
-    letter-spacing: -0.48px;
     line-height: 26px;
   }
   .casedetailsmainSec .impactSec .impact-img {
@@ -10808,7 +10784,6 @@ body.opentwo {
   font-size: 30px;
   font-weight: 500;
   line-height: 133.333%;
-  letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
@@ -10964,14 +10939,12 @@ body.opentwo {
     font-size: 12px;
     font-weight: 600;
     line-height: 12px;
-    letter-spacing: 0.6px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
     margin-bottom: 0px;
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: -0.48px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .right-img {
     width: 100%;
@@ -11054,7 +11027,6 @@ body.opentwo {
   font-size: 40px;
   font-weight: 500;
   line-height: 125%;
-  letter-spacing: -0.9px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-content .video-stats-mainheading {
@@ -11090,7 +11062,6 @@ body.opentwo {
   font-size: 20px;
   font-weight: 500;
   line-height: 120%;
-  letter-spacing: 0.6px;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 1600px) {
@@ -11114,7 +11085,6 @@ body.opentwo {
   font-size: 40px;
   font-weight: 500;
   line-height: 125%;
-  letter-spacing: -1.2px;
 }
 @media screen and (max-width: 1600px) {
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates h2 {
@@ -11366,7 +11336,6 @@ body.opentwo {
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
-    letter-spacing: -0.54px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers {
     width: 100%;
@@ -11383,20 +11352,17 @@ body.opentwo {
     font-size: 16px;
     font-weight: 500;
     line-height: 21.333px;
-    letter-spacing: 0.48px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates p {
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 500;
     line-height: 21.333px;
-    letter-spacing: 0.48px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates h2 {
     font-size: 30px;
     font-weight: 500;
     line-height: 44.444px;
-    letter-spacing: -0.9px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-leftcontent p {
     font-size: 14px;
