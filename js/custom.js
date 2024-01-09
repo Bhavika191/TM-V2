@@ -47,7 +47,7 @@ function hasScrolled() {
 }
 
 
-if ($('.casestudylistingBoxes', 'bloglistingBoxes').length) {
+
   document.addEventListener("DOMContentLoaded", function () {
     updateButtonClass(); // Initial update
 
@@ -69,7 +69,7 @@ if ($('.casestudylistingBoxes', 'bloglistingBoxes').length) {
       }
     }
   });
-}
+
 
 
 if ($('.shareSec').length) {

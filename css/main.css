@@ -235,12 +235,12 @@ body.opentwo {
 
 @media screen and (min-width: 1024px) {
   .imgZoomin {
-    transition: 2s all ease-in;
+    transition: 1s all ease-in;
     transition-delay: 5s;
   }
   .imgZoomin.newClass img {
-    scale: 1.2;
-    transition: 2s all ease-in;
+    scale: 1.05;
+    transition: 1s all ease-in;
   }
 }
 img {
@@ -747,6 +747,26 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a::before {
   right: -60px;
   transition: 0.5s all ease-out;
 }
+header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li.current-menu-item a {
+  margin-right: 60px;
+  opacity: 1;
+  transition: 0.5s all ease-out;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li.current-menu-item a::before {
+  right: -130px;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li.current-menu-item:hover {
+  transition: 0.5s all ease-out;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li.current-menu-item:hover a {
+  margin-right: -10px;
+  opacity: 1;
+  transition: 0.5s all ease-out;
+}
+header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li.current-menu-item:hover a::before {
+  right: -60px;
+  transition: 0.5s all ease-out;
+}
 header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
   font-size: 48px;
   color: #FFF;
@@ -759,7 +779,6 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
   transition: 0.5s all ease-out;
   margin-right: 60px;
   position: relative;
-  display: block;
 }
 @media screen and (max-width: 1600px) {
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
@@ -834,6 +853,12 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
     margin-bottom: 38px;
     margin-right: 110px;
   }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li.current-menu-item a {
+    margin-right: 50px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li.current-menu-item a::before {
+    right: -110px;
+  }
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li:hover a {
     margin-right: -5px;
   }
@@ -886,6 +911,12 @@ header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a::before {
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li {
     margin-bottom: 30px;
     margin-right: 80px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li.current-menu-item a {
+    margin-right: 35px;
+  }
+  header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li.current-menu-item a::before {
+    right: -84px;
   }
   header .headerWrapper .navDiv .hamburgerDiv .overlay nav ul li a {
     margin-right: 35px;
@@ -1865,9 +1896,14 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 .videoSection .videosecWrapper .ctaDiv {
   display: none;
 }
+@media screen and (max-width: 1800px) {
+  .videoSection {
+    margin: 190px 0px 300px;
+  }
+}
 @media screen and (max-width: 1600px) {
   .videoSection {
-    margin: 190px 0px 250px;
+    margin: 190px 0px 200px;
   }
   .videoSection .videosecWrapper .secHeading {
     margin-bottom: 150px;
@@ -1879,7 +1915,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 @media screen and (max-width: 1400px) {
   .videoSection {
-    margin: 170px 0px 200px;
+    margin: 170px 0px 180px;
   }
   .videoSection .videosecWrapper .secHeading {
     margin-bottom: 120px;
@@ -1946,7 +1982,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 
 .caseStudyhpsection {
-  margin-bottom: 550px;
+  margin-bottom: 450px;
 }
 .caseStudyhpsection .casestudyWrapper {
   padding-left: 210px;
@@ -2144,7 +2180,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 @media screen and (max-width: 1920px) {
   .caseStudyhpsection {
-    margin-bottom: 600px;
+    margin-bottom: 500px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes:nth-child(even) {
     margin-top: -20%;
@@ -2163,7 +2199,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 @media screen and (max-width: 1600px) {
   .caseStudyhpsection {
-    margin-bottom: 420px;
+    margin-bottom: 350px;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading {
     width: 43%;
@@ -2197,7 +2233,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 @media screen and (max-width: 1400px) {
   .caseStudyhpsection {
-    margin-bottom: 380px;
+    margin-bottom: 320px;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading {
     width: 45%;
@@ -2235,7 +2271,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 @media screen and (max-width: 1280px) {
   .caseStudyhpsection {
-    margin-bottom: 250px;
+    margin-bottom: 220px;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading h2 {
     line-height: 54px;
@@ -4341,6 +4377,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:hover .blogDetails {
   margin: 0px;
   transition: 0.7s all ease-out;
+  padding: 58px 80px;
 }
 .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:hover .blogDetails .blogArrowimg {
   bottom: 25px;
@@ -4391,6 +4428,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes {
     margin-top: 120px;
   }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:hover .blogDetails {
+    padding: 50px 70px;
+  }
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:nth-child(even) {
     margin-top: -9%;
   }
@@ -4423,6 +4463,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes {
     width: 43%;
     margin-top: 100px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:hover .blogDetails {
+    padding: 40px 55px;
   }
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:nth-child(even) {
     margin-top: -10%;
@@ -4463,6 +4506,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     width: 45%;
     margin-top: 80px;
   }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:hover .blogDetails {
+    padding: 30px 40px;
+  }
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails {
     padding: 30px 25px;
     margin: 15px;
@@ -4500,6 +4546,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes {
     width: unset;
     margin: 0px 0px 0px 55px;
+  }
+  .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:hover .blogDetails {
+    padding: 25px 20px 36px;
   }
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes:nth-child(even) {
     margin-top: unset;
@@ -7343,6 +7392,7 @@ body.opentwo {
 .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes:hover .blogDetails {
   margin: 0px;
   transition: 0.7s all ease-out;
+  padding: 58px 80px;
 }
 .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes:hover .blogDetails .blogArrowimg {
   bottom: 25px;
@@ -7395,6 +7445,9 @@ body.opentwo {
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes {
     margin-top: 120px;
   }
+  .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes:hover .blogDetails {
+    padding: 50px 70px;
+  }
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes:nth-child(odd) {
     margin-top: -9%;
   }
@@ -7431,6 +7484,9 @@ body.opentwo {
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes {
     width: 43%;
     margin-top: 100px;
+  }
+  .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes:hover .blogDetails {
+    padding: 40px 55px;
   }
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes:nth-child(odd) {
     margin-top: -10%;
@@ -7471,6 +7527,9 @@ body.opentwo {
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes {
     width: 45%;
     margin-top: 80px;
+  }
+  .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes:hover .blogDetails {
+    padding: 30px 40px;
   }
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes .blogDetails {
     padding: 30px 25px;

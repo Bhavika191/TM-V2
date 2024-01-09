@@ -235,8 +235,8 @@ body{
 body.opentwo{overflow: hidden;}
 
 @media screen and (min-width:1024px) {
-    .imgZoomin{transition: 2s all ease-in;transition-delay: 5s;
-        &.newClass{img{scale: 1.2;transition: 2s all ease-in;}}
+    .imgZoomin{transition: 1s all ease-in;transition-delay: 5s;
+        &.newClass{img{scale: 1.05;transition: 1s all ease-in;}}
     }
 }
 
