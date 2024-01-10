@@ -8713,13 +8713,13 @@ body.opentwo {
 }
 @media all and (max-width: 1800px) {
   .casedetailsmainSec .about-sec .aboutcontent {
-    margin: 180px 0px 150px 0px;
+    margin: 180px 0px 140px 0px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
   .casedetailsmainSec .about-sec .image-sec {
     margin-bottom: 130px;
@@ -8727,27 +8727,28 @@ body.opentwo {
 }
 @media all and (max-width: 1600px) {
   .casedetailsmainSec .about-sec .aboutcontent {
-    margin: 170px 0px 140px 0px;
+    margin: 170px 0px 120px 0px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+    line-height: 104%;
   }
   .casedetailsmainSec .about-sec .image-sec {
     margin-bottom: 120px;
   }
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1440px) {
   .casedetailsmainSec .about-sec .aboutcontent {
-    margin: 160px 0px 130px 0px;
+    margin: 160px 0px 100px 0px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
-    margin-bottom: 36px;
+    margin-bottom: 30px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
-    margin-bottom: 36px;
+    margin-bottom: 30px;
   }
   .casedetailsmainSec .about-sec .image-sec {
     margin-bottom: 110px;
@@ -8755,13 +8756,13 @@ body.opentwo {
 }
 @media all and (max-width: 1200px) {
   .casedetailsmainSec .about-sec .aboutcontent {
-    margin: 150px 0px 120px 0px;
+    margin: 150px 0px 100px 0px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   .casedetailsmainSec .about-sec .image-sec {
     margin-bottom: 100px;
@@ -8769,7 +8770,7 @@ body.opentwo {
 }
 @media all and (max-width: 1024px) {
   .casedetailsmainSec .about-sec .aboutcontent {
-    margin: 120px 0px 100px 0px;
+    margin: 120px 0px 80px 0px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -8788,11 +8789,9 @@ body.opentwo {
 }
 @media all and (max-width: 1024px) {
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
-    margin-bottom: 25px;
     width: 100%;
   }
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
-    margin-bottom: 25px;
     width: 100%;
   }
   .casedetailsmainSec .about-sec .aboutcontent .about-content {
@@ -8804,7 +8803,7 @@ body.opentwo {
 }
 @media all and (max-width: 821px) {
   .casedetailsmainSec .about-sec .aboutcontent {
-    margin: 102px 0px 60px 0px;
+    margin: 102px 0px 50px 0px;
     width: 100%;
   }
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
@@ -8818,13 +8817,14 @@ body.opentwo {
     margin-bottom: 20px;
     font-size: 40px;
     font-weight: 500;
-    line-height: 50px;
+    line-height: 46px;
     width: 100%;
+    letter-spacing: -1.2px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .about-content {
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 21px;
     width: 100%;
   }
   .casedetailsmainSec .about-sec .image-sec {
@@ -8897,7 +8897,7 @@ body.opentwo {
   }
 }
 .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
-  margin-bottom: 48px;
+  margin-bottom: 30px;
   color: #000;
   font-family: "Poppins", sans-serif;
   font-size: 40px;
@@ -9052,7 +9052,7 @@ body.opentwo {
     text-transform: uppercase;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec {
     width: 43%;
@@ -9075,7 +9075,7 @@ body.opentwo {
     margin-bottom: 28px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
-    margin-bottom: 40px;
+    margin-bottom: 28px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec {
     width: 36%;
@@ -9106,7 +9106,7 @@ body.opentwo {
     margin-bottom: 24px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
-    margin-bottom: 36px;
+    margin-bottom: 24px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec {
     width: 36%;
@@ -9145,7 +9145,7 @@ body.opentwo {
     margin-bottom: 22px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec ul {
     padding-left: 22px;
@@ -9175,7 +9175,7 @@ body.opentwo {
     margin-bottom: 20px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec ul {
     padding-left: 20px;
@@ -9358,7 +9358,7 @@ body.opentwo {
   }
 }
 .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
-  margin-bottom: 48px;
+  margin-bottom: 30px;
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
   font-size: 30px;
@@ -9444,7 +9444,7 @@ body.opentwo {
     margin-bottom: 30px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
-    margin-bottom: 48px;
+    margin-bottom: 30px;
   }
 }
 @media all and (max-width: 1600px) {
@@ -9467,7 +9467,7 @@ body.opentwo {
     margin-bottom: 28px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
-    margin-bottom: 40px;
+    margin-bottom: 28px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     line-height: 16px;
@@ -9496,7 +9496,7 @@ body.opentwo {
     margin-bottom: 24px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
-    margin-bottom: 36px;
+    margin-bottom: 24px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     line-height: 14px;
@@ -9538,7 +9538,7 @@ body.opentwo {
     margin-bottom: 22px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
-    margin-bottom: 32px;
+    margin-bottom: 22px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .aboutus-cta {
     line-height: 12px;
