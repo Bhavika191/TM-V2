@@ -398,6 +398,23 @@ body.opentwo{overflow: hidden;}
     }
 }
 
+@mixin font26 {
+    font-size: 26px;
+
+    @media screen and (max-width:1920px) {
+        font-size: 22px;
+    }
+    @media screen and (max-width:1600px) {
+        font-size: 18px;
+    }
+    @media screen and (max-width:1440px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width:720px) {
+        font-size: 14px;
+    }
+}
+
 
 @mixin font24 {
     font-size: 24px;
