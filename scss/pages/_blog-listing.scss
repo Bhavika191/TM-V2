@@ -9,14 +9,15 @@
                &:nth-child(odd){margin-top: -7%;}
                 .blogImg{img{scale: 1.1;transition: 0.7s all ease-out;}}
                     .blogDetails{background-color: #fff;padding: 58px 50px;margin: 30px;position: absolute;bottom: 0;transition: 0.7s all ease-out;left: 0;right: 0;
-                        h3{@include font32; font-weight: $fontW400;line-height: 43px;margin-top: 30px;display: block;display: -webkit-box;max-width: 100%;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;}
+                        h3{@include font32; font-weight: $fontW400;line-height: 43px;margin-top: 30px;display: block;display: -webkit-box;max-width: 100%;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;transition: 0.7s all ease-out;}
                         h4{@include font16; font-weight: $fontW600;line-height: 1;letter-spacing: 0.8px;}
                         .blogArrowimg{position: absolute;right: 50px;bottom: -100%;transition: 0.7s all ease-out;img{height: 20px;width: 20px;}}
                 }
                 &:hover{
                     .blogImg{img{scale: unset;transition: 0.7s all ease-out;}}
                     .blogDetails{margin: 0px;transition: 0.7s all ease-out;padding: 58px 80px;
-                        .blogArrowimg{bottom: 25px;transition: 0.7s all ease-out;}
+                        h3{margin-bottom: 40px;transition: 0.7s all ease-out;}
+                        .blogArrowimg{bottom: 50px;transition: 0.7s all ease-out;}
                     }
                 }
             }
@@ -56,10 +57,13 @@
                 .blogslistinnerBoxes{margin-top: 120px;
                     &:hover{
                         .blogDetails{padding: 50px 70px;}
+                        h3{margin-bottom: 35px;}
+                        .blogArrowimg{bottom: 40px;}
                     }
                 &:nth-child(odd){margin-top: -9%;}
                    .blogDetails{padding: 50px 45px;margin: 25px;
                         h3{line-height: 30px;margin-top: 25px;}
+                        .blogArrowimg{right:40px;}
                     }                    
                 }
             }
@@ -79,6 +83,8 @@
                 .blogslistinnerBoxes{width: 43%;margin-top: 100px;
                     &:hover{
                         .blogDetails{padding: 40px 55px;}
+                        h3{margin-bottom: 30px;}
+                        .blogArrowimg{bottom: 30px;}
                     }
                     &:nth-child(odd){margin-top: -10%;}
                     .blogDetails{padding: 40px 35px;margin: 20px;
@@ -136,10 +142,15 @@
             }
             .bloglistingBoxes{
                 .blogslistinnerBoxes{width: 45%;margin-top: 60px;
-                    .blogImg{img{scale: unset;transition: 0.7s all ease-out;}}
-                        .blogDetails{padding: 25px 20px 36px;margin: 0px;transition: 0.7s all ease-out;
+                    .blogDetails{padding: 25px 20px;margin: 10px;
                             h3{font-size: 18px;line-height: 22px;}
-                            .blogArrowimg{bottom: 25px;transition: 0.7s all ease-out;display: inline-block;position: unset;padding-top: 16px;transition: none;img{height: 12px;width: 12px;}
+                            .blogArrowimg{right: 25px;width: 12px;height: 12px;
+                        }
+                    }
+                    &:hover{
+                        .blogDetails{padding: 25px 30px;
+                            h3{margin-bottom: 25px;}
+                            .blogArrowimg{bottom: 25px;}
                         }
                     }
                 }
@@ -166,9 +177,15 @@
             .bloglistingBoxes{
                 .blogslistinnerBoxes{width: 100%;margin-top: 40px;
                     &:nth-child(odd){margin-top: 40px;}
-                    .blogDetails{padding: 25px 20px;
+                    .blogImg{img{scale: unset;}}
+                    .blogDetails{padding: 25px 20px;margin: 0px;
                         h3{font-size: 18px;line-height: 28px;margin: 16px 0px;}
-                        .blogArrowimg{padding-top: 0px;img{width: 12px;}}
+                        .blogArrowimg{bottom: 25px;position: unset;padding-top: 0px !important;transition: none;img{height: 12px;width: 12px;}}
+                    }
+                    &:hover{
+                        .blogDetails{padding: 25px 20px;
+                            h3{margin:16px 0px;}
+                        }
                     }
                 }
             }
