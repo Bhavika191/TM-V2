@@ -1,0 +1,20 @@
+//BASE CSS
+@import 'base/_global.scss'; //Global CSS
+
+//MODULE CSS
+@import 'module/_header.scss'; //Header CSS
+@import 'module/_footer.scss'; //Footer CSS
+
+//PAGES CSS
+@import 'pages/_homepage.scss'; //Homepage CSS
+@import 'pages/_service.scss'; //Service CSS
+@import 'pages/_collaborate.scss'; //Homepage CSS
+@import 'pages/_case-study-listing.scss';  //Case study listing CSS
+@import 'pages/_blog-listing.scss'; //Blog Listing CSS
+@import 'pages/_career.scss'; //Career CSS 
+@import 'pages/_case-study-details.scss'; //Case study details CSS
+@import 'pages/_thankyou-page.scss'; //Thank you page CSS
+@import 'pages/_blog-details.scss'; //Blog Details CSS
+@import 'pages/_about-us.scss'; // About us CSS
+@import 'pages/_book-details.scss'; //Blog Details CSS
+@import 'pages/_privacy-policy.scss' //Privacy policy  CSS

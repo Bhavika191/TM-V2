@@ -1,0 +1,52 @@
+.privacypolicy-section{margin: 250px 0px;@include wrapper;
+    .privacy-policy-wrapper{margin: 0 auto;width:65%;
+        .privacy-policy-content{&:not(:last-child){padding-bottom:150px;}
+            h2{@include font30;font-weight: $fontW500;line-height: 133%;color: #000;}
+            p{color: #6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;margin-top: 30px;}
+            ul,ol{padding-left: 20px;margin-top: 30px;
+                li{color: #6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;}
+            }
+            ul li{list-style: disc;}
+            ol li{list-style: decimal;}
+        }
+    }
+    @media all and (max-width:1600px){margin: 200px 0px;
+        .privacy-policy-wrapper{
+            .privacy-policy-content{&:not(:last-child){padding-bottom:120px;}}
+        }
+    }
+    @media all and (max-width:1400px){
+        .privacy-policy-wrapper{
+            .privacy-policy-content{&:not(:last-child){padding-bottom:100px;}
+                p{margin-top: 28px;}
+                ul,ol{margin-top: 28px;}
+            }
+        }
+    }
+    @media all and (max-width:1200px){margin: 150px 0px;
+        .privacy-policy-wrapper{width: 70%;
+            .privacy-policy-content{&:not(:last-child){padding-bottom:80px;}
+                p{margin-top: 26px;}
+                ul,ol{margin-top: 26px;}
+            }
+        }
+    }
+    @media all and (max-width:1024px){
+        .privacy-policy-wrapper{width:90%;
+            .privacy-policy-content{
+                ul,ol{padding-left:16px;}
+            }
+        }
+    }
+    @media all and (max-width:680px){margin: 100px 0px;
+        .privacy-policy-wrapper{width:100%;
+            .privacy-policy-content{&:not(:last-child){padding-bottom:80px;}
+                h2{font-size: 20px;font-weight: 500;line-height:  116.716%;}
+                p{margin-top: 24px;font-size: 14px;font-weight: 500;line-height: 164%;}
+                ul,ol{margin-top: 24px;
+                    li{font-size: 14px;font-weight: 500;line-height: 164%;}
+                }
+            }
+        }
+    }
+}

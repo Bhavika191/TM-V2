@@ -3,42 +3,40 @@
         .aboutcontent{@include wrapperTwo;margin:190px 0px 160px 0px;width:100%;
             .subheading{margin-bottom:48px;color:#000;font-family: $fontpoppins;@include font20;font-weight: $fontW700;line-height: 150%;text-transform: uppercase;}
             .mainheading{margin-bottom:48px;color:#000;font-family: $fontpoppins;@include font96;font-weight: $fontW500;line-height: 110.417%;}
-            .about-content{color:#6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;width: 60%;}
+            .about-content{color:#6A6A6A;font-family: $fontpoppins;@include font26;font-weight: $fontW500;line-height: 150%;width: 60%;}
         }
-        .image-sec{@include wrapper;margin-bottom: 140px;
+        .image-sec{@include wrapper;margin-bottom: 200px;
             div{width: 100%;overflow: hidden;
                 img{width: 100%;}
             }
         }
         @media all and (max-width:1800px){
-        .aboutcontent{margin:180px 0px 140px 0px;
-            .subheading{margin-bottom:40px;}
-            .mainheading{margin-bottom:40px; }
-        }
-            .image-sec{margin-bottom: 130px;}
+            .aboutcontent{margin:180px 0px 140px 0px;
+                .subheading{margin-bottom:40px;}
+                .mainheading{margin-bottom:40px; }
+            }
+            .image-sec{margin-bottom: 180px;}
         }
         @media all and (max-width:1600px){
-            .aboutcontent{margin:170px 0px 120px 0px;
-            .subheading{margin-bottom:35px;}
-            .mainheading{margin-bottom:35px;line-height: 104%;}
+            .aboutcontent{margin:70px 0px 120px 0px;
+                .subheading{margin-bottom:35px;}
+                .mainheading{margin-bottom:35px;line-height: 104%;}
             }
-        .image-sec{margin-bottom: 120px;}
-
+            .image-sec{margin-bottom: 150px;}
         }
         @media all and (max-width:1440px){
-            .aboutcontent{margin:160px 0px 100px 0px;
-            .subheading{margin-bottom:30px;}
-            .mainheading{margin-bottom:30px;}
-        }
-        .image-sec{margin-bottom: 110px;}
+            .aboutcontent{margin:60px 0px 100px 0px;
+                .subheading{margin-bottom:30px;}
+                .mainheading{margin-bottom:30px;}
+            }
+            .image-sec{margin-bottom: 120px;}
         }   
         @media all and (max-width:1200px){
             .aboutcontent{margin:150px 0px 100px 0px;
-            .subheading{margin-bottom:25px;}
-            .mainheading{margin-bottom:25px;}
+                .subheading{margin-bottom:25px;}
+                .mainheading{margin-bottom:25px;}
             }
-        .image-sec{margin-bottom: 100px;}
-
+            .image-sec{margin-bottom: 100px;}
         }
         @media all and (max-width:1024px){
             .aboutcontent{ margin:120px 0px 80px 0px;@include wrapper;
@@ -46,7 +44,6 @@
                 .mainheading{width: 100%;}
                 .about-content{width: 100%;}
             }
-            .image-sec{margin-bottom: 80px;}
         }
         @media all and (max-width:821px){
             .aboutcontent{margin:102px 0px 50px 0px;width:100%;
@@ -54,10 +51,10 @@
                 .mainheading{margin-bottom:20px;font-size: 40px;font-weight: 500;line-height: 46px;width: 100%;letter-spacing: -1.2px;}
                 .about-content{font-size: 14px;font-weight: 400;line-height: 21px;width: 100%;}
             }
-            .image-sec{margin-bottom: 40px;padding: 0px;img{object-fit: cover;}}
+            .image-sec{margin-bottom: 80px;padding: 0px;img{object-fit: cover;}}
         }
     }
-    .objectivegoal-sec{margin: 120px 0px 280px 0px;@include wrapperTwo;display: flex;align-items: start;justify-content: space-between;overflow: hidden;
+    .objectivegoal-sec{margin-bottom: 200px;@include wrapperTwo;display: flex;align-items: start;justify-content: space-between;overflow: hidden;
         .left-sec{width: 39%;
             .left-sec-subheading{margin-bottom:30px;color:#000;font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 150%;text-transform: uppercase;}
             .left-sec-mainheading{margin-bottom:30px;color:#000;font-family: $fontpoppins;@include font40;font-weight: $fontW500;line-height: 125%;}
@@ -75,7 +72,7 @@
             p{color:#6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;}
         }
         @media all and (max-width:1800px){
-            margin: 110px 0px 260px 0px;
+            margin-bottom: 180px;
                 .left-sec{width: 38%;
                     .left-sec-subheading{margin-bottom:30px;text-transform: uppercase;}
                     .left-sec-mainheading{margin-bottom:30px;}
@@ -87,7 +84,7 @@
              
             }
             @media all and (max-width:1600px){
-            margin: 100px 0px 240px 0px;
+                margin-bottom: 150px;
                 .left-sec{width: 36%;
                     .left-sec-subheading{margin-bottom:28px;}
                     .left-sec-mainheading{margin-bottom:28px;}
@@ -101,8 +98,8 @@
                 .left-sec{width: 38%;}
                 .right-sec{width: 38%;}
             }
-            @media all and (max-width:1400px){
-            margin: 90px 0px 200px 0px;
+            @media all and (max-width:1440px){
+                margin-bottom: 120px;
                 .left-sec{width: 36%;
                     .left-sec-subheading{margin-bottom:24px;}
                     .left-sec-mainheading{margin-bottom:24px;}
@@ -122,7 +119,7 @@
                 .right-sec{width: 38%;}
             } 
             @media all and (max-width:1200px){
-           margin: 80px 0px 180px 0px;
+                margin-bottom: 100px;
                 .left-sec{width: 41%;
                     .left-sec-subheading{margin-bottom:22px;}
                     .left-sec-mainheading{margin-bottom:22px;}
@@ -136,7 +133,7 @@
             
             }
             @media all and (max-width:1024px){
-                margin: 80px 0px 150px 0px;padding:0px 80px;
+              padding:0px 80px;
                     .left-sec{width: 40%;
                         .left-sec-subheading{margin-bottom:20px;}
                         .left-sec-mainheading{margin-bottom:20px;}
@@ -149,7 +146,7 @@
              
             }
             @media all and (max-width:821px){
-                margin: 40px 0px 78px 0px;display: block;@include wrapper;
+                margin-bottom: 80px;display: block;@include wrapper;
                     .left-sec{width: 100%;margin-bottom:78px;
                         .left-sec-subheading{margin-bottom:10px;font-size: 12px;font-weight: 600;line-height: 12px;}
                         .left-sec-mainheading{margin-bottom:10px;font-size: 20px;font-weight: 500;line-height: 30px;}

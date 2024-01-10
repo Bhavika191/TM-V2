@@ -8777,17 +8777,27 @@ body.opentwo {
 .casedetailsmainSec .about-sec .aboutcontent .about-content {
   color: #6A6A6A;
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 500;
   line-height: 150%;
   width: 60%;
 }
+@media screen and (max-width: 1920px) {
+  .casedetailsmainSec .about-sec .aboutcontent .about-content {
+    font-size: 22px;
+  }
+}
 @media screen and (max-width: 1600px) {
+  .casedetailsmainSec .about-sec .aboutcontent .about-content {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1440px) {
   .casedetailsmainSec .about-sec .aboutcontent .about-content {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 720px) {
   .casedetailsmainSec .about-sec .aboutcontent .about-content {
     font-size: 14px;
   }
