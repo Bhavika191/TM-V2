@@ -476,40 +476,17 @@ if ($('.serviceSec').length) {
 //Offset code ends
 
 //About us slider starts
-if ($(".aboutus-researchSec .researchsec-wrapper .img-div").length) {
-  $('.aboutus-researchSec .researchsec-wrapper .img-div').slick({
-    dots: true,
-    autoplay: false,
-    infinite: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-  });
-}
+// if ($(".aboutus-researchSec .researchsec-wrapper .img-div").length) {
+//   $('.aboutus-researchSec .researchsec-wrapper .img-div').slick({
+//     dots: true,
+//     autoplay: false,
+//     infinite: false,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     arrows: false,
+//   });
+// }
 //About us slider ends
-
-//Video player js starts for casestudy
-if ($(".casedetailsmainSec .video-stats-sec").length) {
-  const video = document.getElementById("video");
-  const circlePlayButton = document.getElementById("circle-play-b");
-
-  function togglePlay() {
-    if (video.paused || video.ended) {
-      video.play();
-    } else {
-      video.pause();
-    }
-  }
-
-  circlePlayButton.addEventListener("click", togglePlay);
-  video.addEventListener("playing", function () {
-    circlePlayButton.style.opacity = 0;
-  });
-  video.addEventListener("pause", function () {
-    circlePlayButton.style.opacity = 1;
-  });
-}
-//Video player js ends for casestudy
 
 // Form active tab for career page starts
 if ($(".careerFormSec").length) {
@@ -541,6 +518,48 @@ if ($(".careerFormSec").length) {
   });
 }
 //Form active tab for career page ends
+
+//Video player js starts for casestudy
+if ($(".casedetailsmainSec .video-stats-sec").length) {
+  const video = document.getElementById("video");
+  const circlePlayButton = document.getElementById("circle-play-b");
+
+  function togglePlay() {
+    if (video.paused || video.ended) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  }
+
+  circlePlayButton.addEventListener("click", togglePlay);
+  video.addEventListener("playing", function () {
+    circlePlayButton.style.opacity = 0;
+  });
+  video.addEventListener("pause", function () {
+    circlePlayButton.style.opacity = 1;
+  });
+}
+//Video player js ends for casestudy
+ if($('.videoDiv').length){
+  const button = document.getElementById("sound-btn");
+  button.addEventListener("click",function(){
+    const video = document.getElementById("homepage-video");
+    if(video.muted){
+      video.muted = false;
+      $('.sound-enable').show();
+      $('.sound-disable').hide();
+    }else{
+      video.muted = true;
+      $('.sound-enable').hide();
+      $('.sound-disable').show();
+    }
+  });
+ }
+//Homepage video sound on off Js starts
+
+
+//Video video sound on off Js ends
 //------------------------------------------------------- Shamal's JS Code ends --------------------------------------------------//
 
 document.addEventListener('DOMContentLoaded', () => {
