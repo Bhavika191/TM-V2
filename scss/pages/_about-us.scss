@@ -8,10 +8,10 @@
     }
 }
 .animation-sec{@include wrapper;margin-bottom:400px;
-    .heading-content{margin-bottom: 140px;padding:0px 150px;width:70%;
-        .main-heading{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 115.625%;letter-spacing: -1.92px;margin-bottom: 34px;}
-        .subheading{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #6A6A6A);line-height: 141.667%;}
-    }
+    // .heading-content{margin-bottom: 140px;padding:0px 150px;width:70%;
+    //     .main-heading{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 115.625%;letter-spacing: -1.92px;margin-bottom: 34px;}
+    //     .subheading{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #6A6A6A);line-height: 141.667%;}
+    // }
     .animation-Div{position:relative;padding-top:170px;@include wrapper;background: linear-gradient(176deg, #F00 0%, #FAFF00 16.05%, #05FB00 32.1%, #00FFE0 51.25%, #0029FF 68.33%, #FF00D6 84.38%, #F00 99.39%);background-size: 400% 400%;
         -webkit-animation: ani 15s ease infinite;
         -moz-animation: ani 15s ease infinite;
@@ -66,9 +66,9 @@
         }
     }
     @media all and (max-width:1800px){margin-bottom:350px;
-        .heading-content{margin-bottom: 120px;padding:0px 130px;
-            .main-heading{margin-bottom: 32px;}
-        }
+        // .heading-content{margin-bottom: 120px;padding:0px 130px;
+        //     .main-heading{margin-bottom: 32px;}
+        // }
         .animation-Div{padding-top:150px;
             .first-fold{margin-bottom:100px;
                 .firstfoldanimation{width: 55%;}
@@ -99,9 +99,9 @@
         }
     }
     @media all and (max-width:1600px){margin-bottom:300px;
-        .heading-content{margin-bottom: 120px;padding:0px 130px;
-            .main-heading{margin-bottom: 32px;}
-        }
+        // .heading-content{margin-bottom: 120px;padding:0px 130px;
+        //     .main-heading{margin-bottom: 32px;}
+        // }
         .animation-Div{padding-top:140px;
             .first-fold{margin-bottom:90px;
                 .firstfoldanimation{width: 55%;}
@@ -130,9 +130,9 @@
         }
     }
     @media all and (max-width:1400px){margin-bottom:250px;
-        .heading-content{margin-bottom: 120px;padding:0px 120px;
-            .main-heading{margin-bottom: 30px;}
-        }
+        // .heading-content{margin-bottom: 120px;padding:0px 120px;
+        //     .main-heading{margin-bottom: 30px;}
+        // }
         .animation-Div{padding-top:120px;
             .first-fold{margin-bottom:80px;
                 .firstfoldanimation{width: 55%;}
@@ -161,9 +161,9 @@
         }
     }
     @media all and (max-width:1200px){margin-bottom:200px;
-        .heading-content{margin-bottom: 110px;
-            .main-heading{margin-bottom: 28px;}
-        }
+        // .heading-content{margin-bottom: 110px;
+        //     .main-heading{margin-bottom: 28px;}
+        // }
         .animation-Div{padding-top:100px;
             .first-fold{margin-bottom:60px;
                 .firstfoldanimation{width: 55%;}
@@ -192,10 +192,10 @@
         }
     }
     @media all and (max-width:1024px){margin-bottom:150px;
-        .heading-content{margin-bottom: 100px;padding:0px;width:100%;
-            .main-heading{margin-bottom: 24px;width: 90%;}
-            .subheading{width: 90%;}
-        }
+        // .heading-content{margin-bottom: 100px;padding:0px;width:100%;
+        //     .main-heading{margin-bottom: 24px;width: 90%;}
+        //     .subheading{width: 90%;}
+        // }
         .animation-Div{padding-top:100px;
             .first-fold{margin-bottom:0px;flex-direction:column;
                 .firstfoldanimation{display: none;}
@@ -233,10 +233,10 @@
         }
     }
     @media all and (max-width:680px){margin-bottom:100px;padding:0px;
-        .heading-content{margin-bottom: 80px;padding:0px 20px;
-            .main-heading{margin-bottom: 10px;width: 100%;font-size: 30px;font-weight: 500;line-height: 30px;letter-spacing: -0.9px;}
-            .subheading{width: 100%;font-size: 14px;font-weight: 400;line-height: 24px;text-transform: capitalize;}
-        }
+        // .heading-content{margin-bottom: 80px;padding:0px 20px;
+        //     .main-heading{margin-bottom: 10px;width: 100%;font-size: 30px;font-weight: 500;line-height: 30px;letter-spacing: -0.9px;}
+        //     .subheading{width: 100%;font-size: 14px;font-weight: 400;line-height: 24px;text-transform: capitalize;}
+        // }
         .animation-Div{padding:35px 0px 0px 0px;
             .first-fold{margin-bottom:50px;
                 .firstfold-content{margin-bottom:30px;padding:0px 20px;

@@ -4,7 +4,15 @@
         .secHeading{@include wrapperTwo;margin-bottom: 174px;
             h1{@include font96;font-weight: $fontW500;line-height: 106px;letter-spacing: -2px;width: 60%;}
         }
-        .videoDiv{@include wrapper;}
+        .videoDiv{@include wrapper;position:relative;
+            .sound-sec{position: absolute;right: 150px;bottom: 50px;display: flex;align-items: center;
+                p{@include font20;font-weight: $fontW400;margin-right: 16px;color: #fff;text-align: right;}
+                .sound-btn{
+                    .sound-enable{display: none;width: 50px;height: 50px;}
+                    .sound-disable{width: 50px;height: 50px;}
+                }
+            }
+        }
         video{width: 100%;height: 100%;}
         .ctaDiv{display: none;}
     }
@@ -17,6 +25,15 @@
             .secHeading{margin-bottom: 150px;
                 h1{width: 70%;line-height: 90px;}
             }
+            .videoDiv{
+                .sound-sec{
+                    p{margin-right: 16px;}
+                    .sound-btn{
+                        .sound-enable{width: 40px;height: 40px;}
+                        .sound-disable{width: 40px;height: 40px;}
+                    }
+                }
+            }
         }
     }
     @media screen and (max-width:1400px) {
@@ -24,6 +41,15 @@
         .videosecWrapper{
             .secHeading{margin-bottom: 120px;
                 h1{width: 75%;}
+            }
+            .videoDiv{
+                .sound-sec{
+                    p{margin-right: 15px;}
+                    .sound-btn{
+                        .sound-enable{width: 35px;height: 35px;}
+                        .sound-disable{width: 35px;height: 35px;}
+                    }
+                }
             }
         }
     }
@@ -41,6 +67,15 @@
             .secHeading{margin-bottom: 80px;
                 h1{width: 90%;line-height: 78px;}
             }
+            .videoDiv{@include wrapper;
+                .sound-sec{right: 100px;bottom: 50px;
+                    p{margin-right: 15px;}
+                    .sound-btn{
+                        .sound-enable{width: 30px;height: 30px;}
+                        .sound-disable{width: 30px;height: 30px;}
+                    }
+                }
+            }
         }
     }
     
@@ -50,7 +85,16 @@
             .secHeading{margin-bottom: 50px;
                 h1{line-height: 50px;font-size: 40px;}
             }
-            .videoDiv{padding: 0px;}
+                .videoDiv{padding: 0px;
+                    .sound-sec{right: 30px;bottom: 20px;
+                        p{margin-right: 12px;font-size: 12px;}
+                        .sound-btn{
+                            .sound-enable{width: 20px;height: 20px;}
+                            .sound-disable{width: 20px;height: 20px;}
+                        }
+                    }
+                }
+            
             .ctaDiv{display: block;text-align: center;margin-top: 40px;
                 a{border-radius: 6px;background-color: #FF0D47;padding: 14px 25px;margin: 0px 40px;color: #FFF;border: none;margin: 0 auto;font-size: 14px;line-height: 18px;width: 90%;}
             }

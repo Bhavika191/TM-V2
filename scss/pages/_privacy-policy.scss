@@ -1,50 +1,89 @@
 .privacypolicy-section{margin: 250px 0px;@include wrapper;
-    .privacy-policy-wrapper{margin: 0 auto;width:65%;
-        .privacy-policy-content{&:not(:last-child){padding-bottom:150px;}
-            h2{@include font30;font-weight: $fontW500;line-height: 133%;color: #000;}
-            p{color: #6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;margin-top: 30px;}
-            ul,ol{padding-left: 20px;margin-top: 30px;
-                li{color: #6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;}
+    .privacy-policy-banner{padding: 0px 150px;margin-bottom: 200px;width:60%;
+        h1{@include font96;color: #000;font-family: $fontpoppins;font-weight:$fontW500;line-height: 110.417%;}
+        p{font-family: $fontpoppins;color: #6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;margin-top: 48px;width: 80%;}
+    }
+    .privacy-policy-wrapper{width:100%;background:#fff;padding:150px;
+        .privacy-policy-content{&:not(:last-child){padding-bottom:150px;}width: 70%;
+            h2{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: #000;}
+            p{font-family: $fontpoppins;color: #6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;margin-top: 48px;
+                a{color: #000;}
+            }
+            .note{font-family: $fontpoppins;color: #6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;margin-top: 32px;padding: 40px;background: #F1F1F1;
+                span{font-weight: $fontW600;color: #000;}
+            }
+            ul,ol{padding-left: 20px;margin-top: 32px;
+                li{font-family: $fontpoppins;color: #6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;margin-top: 32px;}
             }
             ul li{list-style: disc;}
             ol li{list-style: decimal;}
         }
     }
     @media all and (max-width:1600px){margin: 200px 0px;
-        .privacy-policy-wrapper{
-            .privacy-policy-content{&:not(:last-child){padding-bottom:120px;}}
+        .privacy-policy-banner{padding: 0px 130px;margin-bottom: 160px;
+            p{margin-top: 45px;}
+        }
+        .privacy-policy-wrapper{padding:130px;
+            .privacy-policy-content{&:not(:last-child){padding-bottom:120px;}
+                p{margin-top: 45px;}
+                .note{margin-top: 30px;padding: 36px;}
+                ul,ol{margin-top: 30px;
+                    li{margin-top: 30px;}
+                }
+            }
         }
     }
     @media all and (max-width:1400px){
-        .privacy-policy-wrapper{
+        .privacy-policy-banner{padding: 0px 80px;margin-bottom: 120px;
+            p{margin-top: 40px;}
+        }
+        .privacy-policy-wrapper{padding:80px;
             .privacy-policy-content{&:not(:last-child){padding-bottom:100px;}
-                p{margin-top: 28px;}
-                ul,ol{margin-top: 28px;}
+                p{margin-top: 40px;}
+                .note{margin-top: 26px;padding: 32px;}
+                ul,ol{margin-top: 26px;
+                    li{margin-top: 26px;}
+                }
             }
         }
     }
     @media all and (max-width:1200px){margin: 150px 0px;
-        .privacy-policy-wrapper{width: 70%;
+        .privacy-policy-banner{padding: 0px 100px;margin-bottom: 100px;width:60%;
+            p{margin-top: 30px;}
+        }
+        .privacy-policy-wrapper{padding:100px;
             .privacy-policy-content{&:not(:last-child){padding-bottom:80px;}
-                p{margin-top: 26px;}
-                ul,ol{margin-top: 26px;}
+                p{margin-top: 30px;}
+                .note{margin-top: 20px;padding: 30px;}
+                ul,ol{margin-top: 20px;
+                    li{margin-top: 20px;}
+                }
             }
         }
     }
     @media all and (max-width:1024px){
-        .privacy-policy-wrapper{width:90%;
-            .privacy-policy-content{
+        .privacy-policy-banner{padding: 0px 60px;margin-bottom: 80px;width:100%;
+            p{width: 100%;}
+        }
+        .privacy-policy-wrapper{padding:60px;
+            .privacy-policy-content{&:not(:last-child){padding-bottom:80px;}width: 100%;
+                .note{padding: 24px;}
                 ul,ol{padding-left:16px;}
             }
         }
     }
     @media all and (max-width:680px){margin: 100px 0px;
-        .privacy-policy-wrapper{width:100%;
-            .privacy-policy-content{&:not(:last-child){padding-bottom:80px;}
+        .privacy-policy-banner{padding: 0px 20px;margin-bottom:60px;
+            h1{}
+            p{margin-top: 30px;font-size: 14px;font-weight: 500;line-height: 164%;}
+        }
+        .privacy-policy-wrapper{padding:30px 20px;
+            .privacy-policy-content{&:not(:last-child){padding-bottom:50px;}
                 h2{font-size: 20px;font-weight: 500;line-height:  116.716%;}
-                p{margin-top: 24px;font-size: 14px;font-weight: 500;line-height: 164%;}
+                p{margin-top: 30px;font-size: 14px;font-weight: 500;line-height: 164%;}
+                .note{padding: 20px;font-size: 14px;font-weight: 500;line-height: 164%;margin-top: 24px;}
                 ul,ol{margin-top: 24px;
-                    li{font-size: 14px;font-weight: 500;line-height: 164%;}
+                    li{font-size: 14px;font-weight: 500;line-height: 164%;margin-top: 24px;}
                 }
             }
         }
