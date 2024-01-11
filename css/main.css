@@ -1757,9 +1757,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   footer .footerWrapper .footerLogo {
     width: 60%;
+    margin: 0 auto;
   }
   footer .footerWrapper .footerData .footerMenus ul li {
     width: 100%;
+    text-align: center;
   }
   footer .footerWrapper .footerData .footerMenus ul li:nth-child(1) {
     margin-top: 0px;
@@ -1767,9 +1769,13 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   footer .footerWrapper .footerData .footerMenus ul li a {
     font-size: 14px;
     line-height: 1;
+    text-align: center;
   }
   footer .footerWrapper .footerData .footerGame #box {
     overflow: hidden;
+  }
+  footer .footerWrapper .footerData .footerGame .counterText h3 {
+    font-size: 16px;
   }
   footer .footerWrapper .footerData .footerSubscribe h2 {
     font-size: 14px;
@@ -1874,6 +1880,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     font-size: 40px;
   }
 }
+@media screen and (max-width: 680px) {
+  .videoSection .videosecWrapper .secHeading h1 {
+    font-size: 30px;
+  }
+}
 .videoSection .videosecWrapper .videoDiv {
   padding-left: 60px;
   padding-right: 60px;
@@ -1893,8 +1904,8 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .videoSection .videosecWrapper .videoDiv .sound-sec {
   position: absolute;
-  right: 150px;
-  bottom: 50px;
+  right: 60px;
+  bottom: 60px;
   display: flex;
   align-items: center;
 }
@@ -2023,7 +2034,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 @media screen and (max-width: 1024px) {
   .videoSection .videosecWrapper .videoDiv .sound-sec {
-    right: 100px;
+    right: 50px;
     bottom: 50px;
   }
   .videoSection .videosecWrapper .videoDiv .sound-sec p {
@@ -2046,14 +2057,15 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     margin-bottom: 50px;
   }
   .videoSection .videosecWrapper .secHeading h1 {
-    line-height: 50px;
-    font-size: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    letter-spacing: -1px;
   }
   .videoSection .videosecWrapper .videoDiv {
     padding: 0px;
   }
   .videoSection .videosecWrapper .videoDiv .sound-sec {
-    right: 30px;
+    right: 20px;
     bottom: 20px;
   }
   .videoSection .videosecWrapper .videoDiv .sound-sec p {
@@ -2146,6 +2158,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 @media screen and (max-width: 720px) {
   .caseStudyhpsection .casestudyWrapper .secHeading h2 {
     font-size: 32px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .caseStudyhpsection .casestudyWrapper .secHeading h2 {
+    font-size: 24px;
   }
 }
 .caseStudyhpsection .casestudyWrapper .secHeading p {
@@ -2478,15 +2495,22 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding: 0px 20px;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading h2 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0;
+    width: 80%;
   }
   .caseStudyhpsection .casestudyWrapper .secHeading p {
-    font-size: 14px;
-    margin-top: 4px;
+    margin-top: 10px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes {
+    margin: 40px 0px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes {
     margin: 0px 10px 0px;
+  }
+  .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc {
+    margin: 20px;
   }
   .caseStudyhpsection .casestudyWrapper .casestudyBoxes .caseStudyinnerBoxes .caseStudydesc h3 {
     font-size: 18px;
@@ -2567,6 +2591,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 @media screen and (max-width: 720px) {
   .servicehpSection .serviceSecwrapper .secHeading .innerHeading h2 {
     font-size: 32px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .servicehpSection .serviceSecwrapper .secHeading .innerHeading h2 {
+    font-size: 24px;
   }
 }
 .servicehpSection .serviceSecwrapper .secHeading .innerHeading p {
@@ -2691,6 +2720,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 }
 .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul li strong {
   color: #C9C9C9;
+}
+.servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .servicebtmArrow {
+  display: none;
 }
 .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox:hover {
   transition: 0.7s all ease-out;
@@ -2910,14 +2942,13 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     margin-bottom: 150px;
   }
   .servicehpSection .serviceSecwrapper .secHeading .innerHeading h2 {
-    font-size: 30px;
-    line-height: 40px;
-    letter-spacing: -0.9px;
+    line-height: 34px;
+    letter-spacing: 0px;
+    width: 80%;
   }
   .servicehpSection .serviceSecwrapper .secHeading .innerHeading p {
-    font-size: 14px;
-    line-height: 24px;
-    margin-top: 4px;
+    line-height: 20px;
+    margin-top: 10px;
   }
   .servicehpSection .serviceSecwrapper .serviceBoxes {
     padding: 0px;
@@ -2925,14 +2956,37 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox {
     margin: 0px 10px 0px;
   }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a {
+    padding: 20px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .imgBox {
+    width: 70%;
+    transform: translateY(-25px);
+    margin-bottom: 10px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc::before {
+    position: unset;
+    display: none;
+  }
   .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc h3 {
     font-size: 20px;
-    line-height: 34px;
-    letter-spacing: -0.6px;
-    padding-bottom: 20px;
+    line-height: 28px;
+    padding-bottom: 15px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul {
+    margin-bottom: 40px;
   }
   .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .serviceDesc ul li {
     letter-spacing: -0.42px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .servicebtmArrow {
+    display: block;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+  }
+  .servicehpSection .serviceSecwrapper .serviceBoxes .servicesinnerBox a .servicebtmArrow img {
+    width: 15px;
   }
   .servicehpSection .serviceSecwrapper .ctaDiv {
     padding: 0px 20px;
@@ -2998,6 +3052,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 @media screen and (max-width: 720px) {
   .storyhpSection .storysecWrapper .secHeading h2 {
     font-size: 32px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .storyhpSection .storysecWrapper .secHeading h2 {
+    font-size: 24px;
   }
 }
 .storyhpSection .storysecWrapper .secHeading p {
@@ -3249,15 +3308,14 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .storyhpSection {
     margin-bottom: 150px;
   }
-  .storyhpSection .storysecWrapper .secHeading h3 {
-    font-size: 30px;
-    line-height: 30px;
-    letter-spacing: -0.9px;
+  .storyhpSection .storysecWrapper .secHeading h2 {
+    line-height: 34px;
+    letter-spacing: 0px;
+    width: 80%;
   }
   .storyhpSection .storysecWrapper .secHeading p {
-    font-size: 14px;
     line-height: 20px;
-    margin-top: 4px;
+    margin-top: 10px;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv {
     margin-top: 30px;
@@ -3273,16 +3331,21 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     width: 100%;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .storyDescdiv {
-    padding: 20px 20px;
+    padding: 40px 20px;
     width: 100%;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .storyDescdiv h3 {
-    line-height: 22px;
-    font-size: 18px;
+    line-height: 28px;
+    font-size: 20px;
+    margin: 20px 0px;
   }
   .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .storyDescdiv h4 {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
+  }
+  .storyhpSection .storysecWrapper .storyMaindiv .mainInfodiv .storyDescdiv p {
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 }
 
@@ -3370,6 +3433,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 @media screen and (max-width: 720px) {
   .bookhpSection .booksecWrapper .bookInfodiv h2 {
     font-size: 32px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .bookhpSection .booksecWrapper .bookInfodiv h2 {
+    font-size: 24px;
   }
 }
 .bookhpSection .booksecWrapper .bookInfodiv p {
@@ -3565,7 +3633,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .bookhpSection .booksecWrapper .bookInfodiv p {
     line-height: 1;
-    font-size: 12px;
     margin-top: 12px;
   }
   .bookhpSection .booksecWrapper .ctaDiv {
@@ -3585,18 +3652,17 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     width: 100%;
   }
   .bookhpSection .booksecWrapper .bookInfodiv h2 {
-    font-size: 30px;
-    letter-spacing: -0.9px;
-    line-height: 38px;
+    letter-spacing: 0px;
+    line-height: 34px;
+    width: 80%;
   }
   .bookhpSection .booksecWrapper .bookInfodiv p {
-    line-height: 1;
-    font-size: 14px;
-    margin-top: 4px;
+    line-height: 20px;
+    margin-top: 10px;
   }
   .bookhpSection .booksecWrapper .bookImgdiv {
     width: 75%;
-    margin: 16px 0 16px auto;
+    margin: 16px auto;
   }
   .bookhpSection .booksecWrapper .bookImgdiv .bookRotatesvg {
     transform: none !important;
@@ -3605,8 +3671,12 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .bookhpSection .booksecWrapper .ctaDiv {
     right: 0;
     left: 0;
-    bottom: 20px;
+    bottom: 24px;
     text-align: center;
+    margin: 0px 24px;
+  }
+  .bookhpSection .booksecWrapper .ctaDiv a {
+    width: 100%;
   }
   .bookhpSection .booksecWrapper .shadowDiv {
     height: 150px;
@@ -3671,6 +3741,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 @media screen and (max-width: 720px) {
   .ourPartnershpsec .ourpartnerWrapper .secHeading h2 {
     font-size: 32px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .ourPartnershpsec .ourpartnerWrapper .secHeading h2 {
+    font-size: 24px;
   }
 }
 .ourPartnershpsec .ourpartnerWrapper .secHeading p {
@@ -3788,12 +3863,13 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     margin-bottom: 150px;
   }
   .ourPartnershpsec .ourpartnerWrapper .secHeading h2 {
-    font-size: 30px;
-    line-height: 40px;
+    line-height: 34px;
+    letter-spacing: 0;
+    width: 80%;
   }
   .ourPartnershpsec .ourpartnerWrapper .secHeading p {
-    font-size: 14px;
-    margin-top: 4px;
+    margin-top: 10px;
+    line-height: 20px;
   }
   .ourPartnershpsec .ourpartnerWrapper .logoSlider .logoImg {
     padding: 25px 10px;
@@ -3859,6 +3935,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 @media screen and (max-width: 720px) {
   .customerhpsection .customerWrapper .secHeading h2 {
     font-size: 32px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .customerhpsection .customerWrapper .secHeading h2 {
+    font-size: 24px;
   }
 }
 .customerhpsection .customerWrapper .secHeading p {
@@ -4269,15 +4350,19 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding: 0px 20px;
   }
   .customerhpsection .customerWrapper .secHeading h2 {
-    font-size: 30px;
-    line-height: 40px;
+    line-height: 34px;
+    letter-spacing: 0px;
+    width: 80%;
   }
   .customerhpsection .customerWrapper .secHeading p {
-    font-size: 14px;
-    margin-top: 4px;
+    margin-top: 10px;
+    line-height: 20px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes {
     margin: 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner {
     padding-bottom: 40px;
@@ -4287,7 +4372,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     font-size: 18px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes .descInner p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     color: #000;
   }
@@ -4298,11 +4383,13 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     right: 30px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData h3 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
   }
   .customerhpsection .customerWrapper .customerBoxes .innerBoxes .customerData h4 {
     color: #000;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -4365,6 +4452,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 @media screen and (max-width: 720px) {
   .blogshpsection .blogsWrapper .secHeading h2 {
     font-size: 32px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .blogshpsection .blogsWrapper .secHeading h2 {
+    font-size: 24px;
   }
 }
 .blogshpsection .blogsWrapper .secHeading p {
@@ -4720,12 +4812,13 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding: 0px 20px;
   }
   .blogshpsection .blogsWrapper .secHeading h2 {
-    font-size: 30px;
-    line-height: 40px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    width: 80%;
   }
   .blogshpsection .blogsWrapper .secHeading p {
-    font-size: 14px;
-    margin-top: 4px;
+    margin-top: 10px;
+    line-height: 20p;
   }
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes {
     margin: 0px 10px 0px;
@@ -4734,7 +4827,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     scale: 1;
   }
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails {
-    padding: 25px 20px;
+    padding: 20px;
     margin: 0px;
   }
   .blogshpsection .blogsWrapper .blogsBoxes .blogsinnerBoxes .blogDetails h3 {
@@ -4804,6 +4897,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 @media screen and (max-width: 720px) {
   .banner-section .content-div .banner-heading {
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .banner-section .content-div .banner-heading {
+    font-size: 30px;
   }
 }
 .banner-section .content-div .banner-subheading {
@@ -5592,6 +5690,11 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     font-size: 32px;
   }
 }
+@media screen and (max-width: 680px) {
+  .collaborate-section .collaborate-wrapper .left-content h2 {
+    font-size: 24px;
+  }
+}
 .collaborate-section .collaborate-wrapper .left-content p {
   color: var(--primary-black, #000);
   font-family: "Poppins", sans-serif;
@@ -5879,6 +5982,11 @@ a.showLess::after {
 @media screen and (max-width: 720px) {
   .collaborateFormSec .collaborateSec .secHeading h1 {
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .collaborateFormSec .collaborateSec .secHeading h1 {
+    font-size: 30px;
   }
 }
 .collaborateFormSec .collaborateSec .secHeading p {
@@ -6372,6 +6480,11 @@ a.showLess::after {
 @media screen and (max-width: 720px) {
   .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
     font-size: 32px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .meetupAdderssSec .meetupAdderssContainer .secHeading h2 {
+    font-size: 24px;
   }
 }
 .meetupAdderssSec .meetupAdderssContainer .secHeading p {
@@ -6946,6 +7059,11 @@ body.opentwo {
     font-size: 32px;
   }
 }
+@media screen and (max-width: 680px) {
+  .caseStudyListingsec .casestudyWrapper .secHeading h2 {
+    font-size: 24px;
+  }
+}
 .caseStudyListingsec .casestudyWrapper .secHeading p {
   font-size: 24px;
   font-weight: 400;
@@ -7384,6 +7502,11 @@ body.opentwo {
 @media screen and (max-width: 720px) {
   .bloglistingsection .blogsWrapper .secHeading h2 {
     font-size: 32px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .bloglistingsection .blogsWrapper .secHeading h2 {
+    font-size: 24px;
   }
 }
 .bloglistingsection .blogsWrapper .secHeading p {
@@ -7887,6 +8010,11 @@ body.opentwo {
     font-size: 40px;
   }
 }
+@media screen and (max-width: 680px) {
+  .thankyouSec .thanksWrapper .thankyou-heading {
+    font-size: 30px;
+  }
+}
 .thankyouSec .thanksWrapper .thankyou-content {
   color: #000;
   font-family: "Poppins", sans-serif;
@@ -8264,6 +8392,11 @@ body.opentwo {
     font-size: 40px;
   }
 }
+@media screen and (max-width: 680px) {
+  .careerFormSec .careerSec .secHeading h1 {
+    font-size: 30px;
+  }
+}
 .careerFormSec .careerSec .secHeading p {
   font-size: 24px;
   font-weight: 400;
@@ -8315,9 +8448,6 @@ body.opentwo {
   .careerFormSec .careerSec .collaborateForm form label {
     font-size: 12px;
   }
-}
-.careerFormSec .careerSec .collaborateForm form label:first-child {
-  margin-top: 0px;
 }
 .careerFormSec .careerSec .collaborateForm form select {
   width: 100%;
@@ -9252,6 +9382,11 @@ body.opentwo {
 @media screen and (max-width: 720px) {
   .blogdetails-bannerSec .blogdetails-wrapper h1 {
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .blogdetails-bannerSec .blogdetails-wrapper h1 {
+    font-size: 30px;
   }
 }
 .blogdetails-bannerSec .blogdetails-imagesec {
@@ -10467,6 +10602,11 @@ body.opentwo {
     font-size: 32px;
   }
 }
+@media screen and (max-width: 680px) {
+  .animation-sec .animation-Div .first-fold .firstfold-content h2 {
+    font-size: 24px;
+  }
+}
 .animation-sec .animation-Div .first-fold .firstfold-content p {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
@@ -10533,6 +10673,11 @@ body.opentwo {
     font-size: 32px;
   }
 }
+@media screen and (max-width: 680px) {
+  .animation-sec .animation-Div .third-fold .third-fold-content h2 {
+    font-size: 24px;
+  }
+}
 .animation-sec .animation-Div .third-fold .third-fold-content p {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
@@ -10595,6 +10740,11 @@ body.opentwo {
 @media screen and (max-width: 720px) {
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content h2 {
     font-size: 32px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .animation-sec .animation-Div .fourth-fold .fourth-fold-content h2 {
+    font-size: 24px;
   }
 }
 .animation-sec .animation-Div .fourth-fold .fourth-fold-content p {
@@ -10662,6 +10812,11 @@ body.opentwo {
 @media screen and (max-width: 720px) {
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content h2 {
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .animation-sec .animation-Div .fifth-fold .fifth-fold-content h2 {
+    font-size: 30px;
   }
 }
 .animation-sec .animation-Div .fifth-fold .fifth-fold-content p {
@@ -11153,6 +11308,11 @@ body.opentwo {
 @media screen and (max-width: 720px) {
   .aboutus-researchSec .heading-content .main-heading {
     font-size: 32px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .aboutus-researchSec .heading-content .main-heading {
+    font-size: 24px;
   }
 }
 .aboutus-researchSec .heading-content .subheading {
@@ -11704,6 +11864,11 @@ body.opentwo {
 @media screen and (max-width: 720px) {
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
     font-size: 40px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .casedetailsmainSec .about-sec .aboutcontent .mainheading {
+    font-size: 30px;
   }
 }
 .casedetailsmainSec .about-sec .aboutcontent .about-content {
@@ -14427,6 +14592,11 @@ body.opentwo {
     font-size: 32px;
   }
 }
+@media screen and (max-width: 680px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv h1 {
+    font-size: 24px;
+  }
+}
 .bookDescriptionsec .bookDescwrapper .bookInfodiv .headingDiv p {
   font-size: 20px;
   font-weight: 400;
@@ -14618,6 +14788,11 @@ body.opentwo {
 @media screen and (max-width: 720px) {
   .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner h3 {
     font-size: 32px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner h3 {
+    font-size: 24px;
   }
 }
 .bookDescriptionsec .bookDescwrapper .bookInfodiv .otherDesc .infoInner h4 {
@@ -15221,6 +15396,11 @@ body.opentwo {
     font-size: 40px;
   }
 }
+@media screen and (max-width: 680px) {
+  .privacypolicy-section .privacy-policy-banner h1 {
+    font-size: 30px;
+  }
+}
 .privacypolicy-section .privacy-policy-banner p {
   font-family: "Poppins", sans-serif;
   color: #6A6A6A;
@@ -15273,6 +15453,11 @@ body.opentwo {
     font-size: 32px;
   }
 }
+@media screen and (max-width: 680px) {
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content h2 {
+    font-size: 24px;
+  }
+}
 .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p {
   font-family: "Poppins", sans-serif;
   color: #6A6A6A;
@@ -15294,6 +15479,8 @@ body.opentwo {
 }
 .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p a {
   color: #000;
+  font-weight: 600;
+  text-decoration: underline;
 }
 .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content .note {
   font-family: "Poppins", sans-serif;
@@ -15495,6 +15682,9 @@ body.opentwo {
     font-size: 14px;
     font-weight: 500;
     line-height: 164%;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p a {
+    font-weight: 600;
   }
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content .note {
     padding: 20px;
