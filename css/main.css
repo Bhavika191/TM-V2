@@ -15371,7 +15371,7 @@ body.opentwo {
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul li, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol li {
     margin-top: 30px;
   }
-}
+
 @media all and (max-width: 1400px) {
   .privacypolicy-section .privacy-policy-banner {
     padding: 0px 80px;
