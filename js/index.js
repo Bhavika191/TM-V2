@@ -78,7 +78,7 @@ function startLevel()
 {
     if(!gameStarted)
             {
-                console.log("Start Game");
+                // console.log("Start Game");
                 gameStarted = true; 
                 ball.xSpeed = 5; 
                 ball.ySpeed = 5;
@@ -110,27 +110,26 @@ function addToScore(points)
 {
     score+=points;
 
-                // updateStatusLine();
+                updateStatusLine();
 }
 
 function createScoreText()
 {
-    // scoreText = new createjs.Text("Score: 0", "16px Arial", "#000000");
-    scoreText = new createjs.Text("");
+    scoreText = new createjs.Text("Score: 0", "26px Arial", "#000000");
     addToScore(0);
-    scoreText.y = 700;
-    //scoreText.y = 16;
+    scoreText.y = stage.canvas.height - 19;
+    scoreText.y = 19;
     stage.addChild(scoreText);
 }
 
-// function updateStatusLine()
-// {
-//     scoreText.text = "Score: "+score + " / Lives: "+lives+" / High Score: "+highScore;
-// }
+function updateStatusLine()
+{
+    scoreText.text = "Score: "+score + " / Lives: "+lives+" / High Score: "+highScore;
+}
 
 function loseLife()
 {
-    console.log("Lose A Life");
+    // console.log("Lose A Life");
     lives--;
     ball.xSpeed = 0;
     ball.ySpeed = 0;
@@ -170,12 +169,12 @@ function tick(event)
 {
     if(keyboardMoveLeft)
         {
-            console.log("Keyboard - Left");
+            // console.log("Keyboard - Left");
             paddle.x-=5;
         }
     if(keyboardMoveRight)
         {
-            console.log("Keyboard - Right");
+            // console.log("Keyboard - Right");
             paddle.x+=5;
         }
 
@@ -223,7 +222,7 @@ function tick(event)
         {
 
             addToScore(100*lives);
-            console.log("Brick Hit / New Score: "+score);
+            // console.log("Brick Hit / New Score: "+score);
             destroyBrick(bricks[i]);
             bricks.splice(i,1);
             i--;

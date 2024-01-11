@@ -9,7 +9,7 @@ footer{@include wrapper;margin-bottom: 70px;position: relative;z-index: 3;
                     }
                 }
             }
-            .footerGame{width:27%;position: relative;
+            .footerGame{width:27%;position: relative;display: flex;justify-content: center;align-items: center;
                 .counterText{transition: 1.5s all ease-in-out;position: absolute;bottom: 60%;opacity: 0;
                     h3{@include font16; font-weight: $fontW400;line-height: 24px; text-align: center;width: 85%;margin: 0 auto;span{font-weight: $fontW600;}}
                 }

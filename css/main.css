@@ -15361,7 +15361,68 @@ body.opentwo {
     font-weight: 500;
     line-height: 164%;
   }
-}0px;
+}-content .note {
+    margin-top: 30px;
+    padding: 36px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol {
+    margin-top: 30px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul li, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol li {
+    margin-top: 30px;
+  }
+}
+@media all and (max-width: 1400px) {
+  .privacypolicy-section .privacy-policy-banner {
+    padding: 0px 80px;
+    margin-bottom: 120px;
+  }
+  .privacypolicy-section .privacy-policy-banner p {
+    margin-top: 40px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper {
+    padding: 80px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content:not(:last-child) {
+    padding-bottom: 100px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p {
+    margin-top: 40px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content .note {
+    margin-top: 26px;
+    padding: 32px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol {
+    margin-top: 26px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul li, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol li {
+    margin-top: 26px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .privacypolicy-section {
+    margin: 150px 0px;
+  }
+  .privacypolicy-section .privacy-policy-banner {
+    padding: 0px 100px;
+    margin-bottom: 100px;
+    width: 60%;
+  }
+  .privacypolicy-section .privacy-policy-banner p {
+    margin-top: 30px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper {
+    padding: 100px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content:not(:last-child) {
+    padding-bottom: 80px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p {
+    margin-top: 30px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content .note {
+    margin-top: 20px;
     padding: 30px;
   }
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol {
