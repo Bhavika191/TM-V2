@@ -15361,7 +15361,15 @@ body.opentwo {
     font-weight: 500;
     line-height: 164%;
   }
-}
+}policy-wrapper {
+    padding: 130px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content:not(:last-child) {
+    padding-bottom: 120px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p {
+    margin-top: 45px;
+  }
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content .note {
     margin-top: 30px;
     padding: 36px;
