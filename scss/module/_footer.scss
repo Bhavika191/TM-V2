@@ -310,18 +310,19 @@ footer{@include wrapper;margin-bottom: 70px;position: relative;z-index: 3;
     @media screen and (max-width:680px) {
         margin-bottom: 30px;
          .footerWrapper{
-            .footerLogo{width: 60%;}
+            .footerLogo{width: 60%;margin: 0 auto;}
              .footerData{
                  .footerMenus{
                      ul{
-                         li{width: 100%;
+                         li{width: 100%;text-align: center;
                             &:nth-child(1){margin-top: 0px;}
-                             a{font-size: 14px;line-height: 1;}
+                             a{font-size: 14px;line-height: 1;text-align: center;}
                          }
                      }
                  }
                  .footerGame{
                     #box{overflow: hidden;}
+                    .counterText h3{font-size: 16px;}
                 }
                  .footerSubscribe{
                      h2{font-size: 14px;letter-spacing: -0.48px;}
