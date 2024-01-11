@@ -15361,7 +15361,36 @@ body.opentwo {
     font-weight: 500;
     line-height: 164%;
   }
-}media screen and (max-width: 1280px) {
+}th: 1400px) {
+  .privacypolicy-section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .privacypolicy-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.privacypolicy-section .privacy-policy-banner {
+  padding: 0px 150px;
+  margin-bottom: 200px;
+  width: 60%;
+}
+.privacypolicy-section .privacy-policy-banner h1 {
+  font-size: 96px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 110.417%;
+}
+@media screen and (max-width: 1600px) {
+  .privacypolicy-section .privacy-policy-banner h1 {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 1280px) {
   .privacypolicy-section .privacy-policy-banner h1 {
     font-size: 74px;
   }
