@@ -763,8 +763,9 @@
         }
         .customerBoxes{display: flex;justify-content: space-between;flex-wrap: wrap;align-items: flex-start;
             .innerBoxes{width: 40%;margin-top: 150px;padding: 190px 70px;background-color: #fff;position: relative;overflow: hidden;transition: 0.7s all ease-out;height: auto;
-                &::before{content: "";position: absolute;background: url(../images/top-quote-img.svg)  no-repeat;background-size: contain;top: 0;left: 20px;height: 110px;width: 156px;transition: 0.7s all ease-out;}
-                &::after{content: "";position: absolute;background: url(../images/btm-quote-img.svg)  no-repeat;background-size: contain;bottom: 0;right: 20px;height: 102px;width: 156px;transition: 0.7s all ease-out;}
+                .topquoteImg{position: absolute;top: 0;left: 0;top: 0;left: 20px;height: 110px;width: 156px;transition: 0.7s all ease-out;
+                    &:nth-child(2){top: unset;bottom: 0;right: 20px;left: unset;height: 102px;width: 156px;transition: 0.7s all ease-out;}
+                }
                 &:nth-child(even){margin-top: -10%;}
                 .descInner{padding-bottom: 170px;transition: 0.7s all ease-out;
                     h3{@include font36; font-weight: $fontW500;line-height: 127%;color: #000;margin-bottom: 34px}
@@ -779,8 +780,9 @@
                 &:hover{
                     .descInner{transform: translateY(-20px);transition: 0.7s all ease-out;}
                     .customerData{transform: translateY(20px);transition: 0.7s all ease-out;}
-                    &::before{transform: rotate(5deg) translateY(-15px);transition: 0.7s all ease-out;}
-                    &::after{transform: rotate(-5deg) translateY(15px);transition: 0.7s all ease-out;}
+                    .topquoteImg{transform: rotate(5deg) translateY(-15px);transition: 0.7s all ease-out;
+                        &:nth-child(2){transform: rotate(-5deg) translateY(15px);transition: 0.7s all ease-out;}
+                    }
                 }
             }
         }
@@ -808,8 +810,9 @@
             }
             .customerBoxes{
                 .innerBoxes{margin-top: 120px;padding: 140px 50px;
-                    &::before{height: 90px;width: 136px;}
-                    &::after{height: 90px;width: 136px;}
+                    .topquoteImg{height: 90px;width: 136px;
+                        &:nth-child(2){height: 90px;width: 136px;}
+                    }
                     &:nth-child(even){margin-top: -14%;}
                     .descInner{padding-bottom: 140px;
                         h3{margin-bottom: 26px}
@@ -836,8 +839,9 @@
             }
             .customerBoxes{
                 .innerBoxes{margin-top: 100px;padding: 120px 40px;width: 43%;
-                    &::before{height: 70px;width: 110px;}
-                    &::after{height: 70px;width: 110px;}
+                    .topquoteImg{height: 70px;width: 110px;
+                        &:nth-child(2){height: 70px;width: 110px;}
+                    }
                     &:nth-child(even){margin-top: -22%;}
                     .descInner{padding-bottom: 120px;
                         h3{margin-bottom: 26px}
@@ -864,8 +868,9 @@
             }
             .customerBoxes{
                 .innerBoxes{margin-top: 80px;padding: 100px 30px;width: 45%;
-                    &::before{height: 50px;width: 90px;}
-                    &::after{height: 50px;width: 90px;}
+                    .topquoteImg{height: 50px;width: 90px;
+                        &:nth-child(2){height: 50px;width: 90px;}
+                    }
                     &:nth-child(even){margin-top: -15%;}
                     .descInner{padding-bottom: 100px;
                         h3{margin-bottom: 22px}
@@ -889,10 +894,10 @@
                 p{line-height: 20px;margin-top: 8px;}
             }
             .customerBoxes{display: block;margin: 32px 0px;
-                .slick-track{display: block !important;}
                 .innerBoxes{padding: 100px 24px;width: unset;margin: 0px 0px 0px 55px;
-                    &::before{height: 58px;width: 90px;}
-                    &::after{height: 52px;width: 80px;}
+                    .topquoteImg{height: 58px;width: 90px;
+                        &:nth-child(2){height: 52px;width: 80px;}
+                    }
                     &:nth-child(even){margin-top: unset;}
                     .descInner{padding-bottom: 60px;
                         h3{margin-bottom: 20px}
@@ -903,8 +908,9 @@
                     &:hover{
                         .descInner{transform: none;}
                         .customerData{transform:none;}
-                        &::before{transform: none;}
-                        &::after{transform: none;}
+                        .topquoteImg{transform: none;
+                            &:nth-child(2){transform: none}
+                        }
                     }
                 }
             }
@@ -930,8 +936,9 @@
                         h3{margin-bottom: 15px;font-size: 18px;}
                         p{font-size: 14px;line-height: 24px;color: #000;}
                     }
-                    &::before{left: 30px;}
-                    &::after{right: 30px;}
+                    .topquoteImg{left: 30px;
+                        &:nth-child(2){right: 30px;}
+                    }
                     .customerData{
                         h3{font-size: 16px;line-height: 20px;}
                         h4{color: #000;}
@@ -953,7 +960,7 @@
                &:nth-child(even){margin-top: -7%;}
                 .blogImg{img{scale: 1.1;transition: 0.7s all ease-out;}}
                     .blogDetails{background-color: #fff;padding: 58px 50px;margin: 30px;position: absolute;bottom: 0;transition: 0.7s all ease-out;left: 0;right: 0;
-                        h3{@include font32; font-weight: $fontW400;line-height: 43px;margin-top: 30px;display: block;display: -webkit-box;max-width: 100%;-webkit-line-clamp: 3;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;transition: 0.7s all ease-out;}
+                        h3{@include font32; font-weight: $fontW400;line-height: 43px;margin-top: 30px;display: block;display: -webkit-box;max-width: 100%;-webkit-line-clamp: 2;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;transition: 0.7s all ease-out;}
                         h4{@include font16; font-weight: $fontW600;line-height: 1;letter-spacing: 0.8px;}
                         .blogArrowimg{position: absolute;right: 50px;bottom: -100%;transition: 0.7s all ease-out;img{height: 20px;width: 20px;}}
                 }
