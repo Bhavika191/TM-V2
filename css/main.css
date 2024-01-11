@@ -1874,7 +1874,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
 .videoSection .videosecWrapper .videoDiv {
   padding-left: 60px;
   padding-right: 60px;
-  position: relative;
 }
 @media screen and (max-width: 1400px) {
   .videoSection .videosecWrapper .videoDiv {
@@ -1887,39 +1886,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     padding-left: 20px;
     padding-right: 20px;
   }
-}
-.videoSection .videosecWrapper .videoDiv .sound-sec {
-  position: absolute;
-  right: 150px;
-  bottom: 50px;
-  display: flex;
-  align-items: center;
-}
-.videoSection .videosecWrapper .videoDiv .sound-sec p {
-  font-size: 20px;
-  font-weight: 400;
-  margin-right: 16px;
-  color: #fff;
-  text-align: right;
-}
-@media screen and (max-width: 1600px) {
-  .videoSection .videosecWrapper .videoDiv .sound-sec p {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .videoSection .videosecWrapper .videoDiv .sound-sec p {
-    font-size: 14px;
-  }
-}
-.videoSection .videosecWrapper .videoDiv .sound-sec .sound-btn .sound-enable {
-  display: none;
-  width: 50px;
-  height: 50px;
-}
-.videoSection .videosecWrapper .videoDiv .sound-sec .sound-btn .sound-disable {
-  width: 50px;
-  height: 50px;
 }
 .videoSection .videosecWrapper video {
   width: 100%;
@@ -1944,17 +1910,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     width: 70%;
     line-height: 90px;
   }
-  .videoSection .videosecWrapper .videoDiv .sound-sec p {
-    margin-right: 16px;
-  }
-  .videoSection .videosecWrapper .videoDiv .sound-sec .sound-btn .sound-enable {
-    width: 40px;
-    height: 40px;
-  }
-  .videoSection .videosecWrapper .videoDiv .sound-sec .sound-btn .sound-disable {
-    width: 40px;
-    height: 40px;
-  }
 }
 @media screen and (max-width: 1400px) {
   .videoSection {
@@ -1965,17 +1920,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .videoSection .videosecWrapper .secHeading h1 {
     width: 75%;
-  }
-  .videoSection .videosecWrapper .videoDiv .sound-sec p {
-    margin-right: 15px;
-  }
-  .videoSection .videosecWrapper .videoDiv .sound-sec .sound-btn .sound-enable {
-    width: 35px;
-    height: 35px;
-  }
-  .videoSection .videosecWrapper .videoDiv .sound-sec .sound-btn .sound-disable {
-    width: 35px;
-    height: 35px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -2001,39 +1945,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     width: 90%;
     line-height: 78px;
   }
-  .videoSection .videosecWrapper .videoDiv {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-@media screen and (max-width: 1024px) and (max-width: 1400px) {
-  .videoSection .videosecWrapper .videoDiv {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 1024px) and (max-width: 720px) {
-  .videoSection .videosecWrapper .videoDiv {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .videoSection .videosecWrapper .videoDiv .sound-sec {
-    right: 100px;
-    bottom: 50px;
-  }
-  .videoSection .videosecWrapper .videoDiv .sound-sec p {
-    margin-right: 15px;
-  }
-  .videoSection .videosecWrapper .videoDiv .sound-sec .sound-btn .sound-enable {
-    width: 30px;
-    height: 30px;
-  }
-  .videoSection .videosecWrapper .videoDiv .sound-sec .sound-btn .sound-disable {
-    width: 30px;
-    height: 30px;
-  }
 }
 @media screen and (max-width: 680px) {
   .videoSection {
@@ -2048,22 +1959,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   }
   .videoSection .videosecWrapper .videoDiv {
     padding: 0px;
-  }
-  .videoSection .videosecWrapper .videoDiv .sound-sec {
-    right: 30px;
-    bottom: 20px;
-  }
-  .videoSection .videosecWrapper .videoDiv .sound-sec p {
-    margin-right: 12px;
-    font-size: 12px;
-  }
-  .videoSection .videosecWrapper .videoDiv .sound-sec .sound-btn .sound-enable {
-    width: 20px;
-    height: 20px;
-  }
-  .videoSection .videosecWrapper .videoDiv .sound-sec .sound-btn .sound-disable {
-    width: 20px;
-    height: 20px;
   }
   .videoSection .videosecWrapper .ctaDiv {
     display: block;
@@ -15320,98 +15215,41 @@ body.opentwo {
     padding-right: 20px;
   }
 }
-.privacypolicy-section .privacy-policy-banner {
-  padding: 0px 150px;
-  margin-bottom: 200px;
-  width: 60%;
-}
-.privacypolicy-section .privacy-policy-banner h1 {
-  font-size: 96px;
-  color: #000;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  line-height: 110.417%;
-}
-@media screen and (max-width: 1600px) {
-  .privacypolicy-section .privacy-policy-banner h1 {
-    font-size: 80px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .privacypolicy-section .privacy-policy-banner h1 {
-    font-size: 74px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .privacypolicy-section .privacy-policy-banner h1 {
-    font-size: 64px;
-  }
-}
-@media screen and (max-width: 720px) {
-  .privacypolicy-section .privacy-policy-banner h1 {
-    font-size: 40px;
-  }
-}
-.privacypolicy-section .privacy-policy-banner p {
-  font-family: "Poppins", sans-serif;
-  color: #6A6A6A;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 150%;
-  margin-top: 48px;
-  width: 80%;
-}
-@media screen and (max-width: 1600px) {
-  .privacypolicy-section .privacy-policy-banner p {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .privacypolicy-section .privacy-policy-banner p {
-    font-size: 14px;
-  }
-}
 .privacypolicy-section .privacy-policy-wrapper {
-  width: 100%;
-  background: #fff;
-  padding: 150px;
-}
-.privacypolicy-section .privacy-policy-wrapper .privacy-policy-content {
-  width: 70%;
+  margin: 0 auto;
+  width: 65%;
 }
 .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content:not(:last-child) {
   padding-bottom: 150px;
 }
 .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 64px;
+  font-size: 30px;
   font-weight: 500;
+  line-height: 133%;
   color: #000;
 }
 @media screen and (max-width: 1600px) {
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content h2 {
-    font-size: 50px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 1280px) {
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content h2 {
-    font-size: 42px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 720px) {
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content h2 {
-    font-size: 32px;
+    font-size: 12px;
   }
 }
 .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p {
-  font-family: "Poppins", sans-serif;
   color: #6A6A6A;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
-  margin-top: 48px;
+  margin-top: 30px;
 }
 @media screen and (max-width: 1600px) {
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p {
@@ -15422,47 +15260,17 @@ body.opentwo {
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p {
     font-size: 14px;
   }
-}
-.privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p a {
-  color: #000;
-}
-.privacypolicy-section .privacy-policy-wrapper .privacy-policy-content .note {
-  font-family: "Poppins", sans-serif;
-  color: #6A6A6A;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 150%;
-  margin-top: 32px;
-  padding: 40px;
-  background: #F1F1F1;
-}
-@media screen and (max-width: 1600px) {
-  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content .note {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content .note {
-    font-size: 14px;
-  }
-}
-.privacypolicy-section .privacy-policy-wrapper .privacy-policy-content .note span {
-  font-weight: 600;
-  color: #000;
 }
 .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol {
   padding-left: 20px;
-  margin-top: 32px;
+  margin-top: 30px;
 }
 .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul li, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol li {
-  font-family: "Poppins", sans-serif;
   color: #6A6A6A;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
-  margin-top: 32px;
 }
 @media screen and (max-width: 1600px) {
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul li, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol li {
@@ -15484,84 +15292,76 @@ body.opentwo {
   .privacypolicy-section {
     margin: 200px 0px;
   }
-  .privacypolicy-section .privacy-policy-banner {
-    padding: 0px 130px;
-    margin-bottom: 160px;
-  }
-  .privacypolicy-section .privacy-policy-banner p {
-    margin-top: 45px;
-  }
-  .privacypolicy-section .privacy-policy-wrapper {
-    padding: 130px;
-  }
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content:not(:last-child) {
     padding-bottom: 120px;
   }
-  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p {
-    margin-top: 45px;
-  }
-  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content .note {
-    margin-top: 30px;
-    padding: 36px;
-  }
-  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol {
-    margin-top: 30px;
-  }
-  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul li, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol li {
-    margin-top: 30px;
-  }
 }
 @media all and (max-width: 1400px) {
-  .privacypolicy-section .privacy-policy-banner {
-    padding: 0px 80px;
-    margin-bottom: 120px;
-  }
-  .privacypolicy-section .privacy-policy-banner p {
-    margin-top: 40px;
-  }
-  .privacypolicy-section .privacy-policy-wrapper {
-    padding: 80px;
-  }
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content:not(:last-child) {
     padding-bottom: 100px;
   }
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p {
-    margin-top: 40px;
-  }
-  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content .note {
-    margin-top: 26px;
-    padding: 32px;
+    margin-top: 28px;
   }
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol {
-    margin-top: 26px;
-  }
-  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul li, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol li {
-    margin-top: 26px;
+    margin-top: 28px;
   }
 }
 @media all and (max-width: 1200px) {
   .privacypolicy-section {
     margin: 150px 0px;
   }
-  .privacypolicy-section .privacy-policy-banner {
-    padding: 0px 100px;
-    margin-bottom: 100px;
-    width: 60%;
-  }
-  .privacypolicy-section .privacy-policy-banner p {
-    margin-top: 30px;
-  }
   .privacypolicy-section .privacy-policy-wrapper {
-    padding: 100px;
+    width: 70%;
   }
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content:not(:last-child) {
     padding-bottom: 80px;
   }
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p {
-    margin-top: 30px;
+    margin-top: 26px;
   }
-  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content .note {
-    margin-top: 20px;
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol {
+    margin-top: 26px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .privacypolicy-section .privacy-policy-wrapper {
+    width: 90%;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol {
+    padding-left: 16px;
+  }
+}
+@media all and (max-width: 680px) {
+  .privacypolicy-section {
+    margin: 100px 0px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper {
+    width: 100%;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content:not(:last-child) {
+    padding-bottom: 80px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 116.716%;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p {
+    margin-top: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 164%;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol {
+    margin-top: 24px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul li, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 164%;
+  }
+}0px;
     padding: 30px;
   }
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol {

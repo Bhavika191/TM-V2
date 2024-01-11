@@ -277,23 +277,7 @@
         &:nth-child(odd){justify-content: start;}
         &:nth-child(even){.img-div{.slick-dots{left: 150px;}}}
         .img-div{height:calc(100% - 150px);position:absolute;left:0;top:0;right:0;width:100%;
-            .slick-list{height: 100%;
-                .slick-track{height: 100%;
-                    img{object-fit: cover;width: 100%;height: 100%;}
-                }
-            }
-            .slick-dots{bottom: 80px;text-align: center;width: 20px;transform: rotate(270deg);right: 150px;
-                li{width: 12px;height: 12px;margin: 0px 3px;display: block;margin-bottom: 20px;
-                    button{
-                        &::before{content: "";border-radius: 10px;width: 12px;height: 12px;background: #fff;opacity: 1;}
-                    }
-                }
-                li.slick-active{margin-bottom: 90px;
-                    button{
-                        &::before{opacity: 1;background: #fff;height: 80px;border-radius: 10px;transition: 0.9s all ease-in-out;}
-                    }
-                }
-            }
+            img{object-fit: cover;width: 100%;height: 100%;}
         }
         .research-card-type{position: relative;background: var(--primary-white, #FFF);padding: 80px;width:580px;min-height:722px;z-index:2;
             .research-card-subheading{margin-bottom: 30px;color: var(--primary-black, #000);font-family: $fontpoppins;@include font20;font-weight: $fontW600;line-height: 150%;text-transform: uppercase;}
@@ -308,18 +292,18 @@
         }
         .researchsec-wrapper{margin-bottom:220px;
             .img-div{height:calc(100% - 130px);
-                .slick-dots{width: 18px;
-                    li{width: 10px;height: 10px;
-                        button{
-                            &::before{width: 10px;height: 10px;}
-                        }
-                    }
-                    li.slick-active{
-                        button{
-                            &::before{height: 60px;}
-                        }
-                    }
-                }
+                // .slick-dots{width: 18px;
+                //     li{width: 10px;height: 10px;
+                //         button{
+                //             &::before{width: 10px;height: 10px;}
+                //         }
+                //     }
+                //     li.slick-active{
+                //         button{
+                //             &::before{height: 60px;}
+                //         }
+                //     }
+                // }
             }
             .research-card-type{padding: 75px;
                 .research-card-subheading{margin-bottom: 30px;}
@@ -333,18 +317,18 @@
         }
         .researchsec-wrapper{margin-bottom:200px;
             .img-div{height:calc(100% - 120px);
-                .slick-dots{width: 16px;
-                    li{width: 8px;height: 8px;margin-bottom:16px;
-                        button{
-                            &::before{width: 8px;height: 8px;}
-                        }
-                    }
-                    li.slick-active{margin-bottom: 65px;
-                        button{
-                            &::before{height: 50px;}
-                        }
-                    }
-                }
+                // .slick-dots{width: 16px;
+                //     li{width: 8px;height: 8px;margin-bottom:16px;
+                //         button{
+                //             &::before{width: 8px;height: 8px;}
+                //         }
+                //     }
+                //     li.slick-active{margin-bottom: 65px;
+                //         button{
+                //             &::before{height: 50px;}
+                //         }
+                //     }
+                // }
             }
             .research-card-type{padding: 65px;width:440px;min-height:600px;
                 .research-card-subheading{margin-bottom: 28px;}
@@ -360,18 +344,18 @@
         }
         .researchsec-wrapper{margin-bottom:180px;
             .img-div{height:calc(100% - 100px);
-                .slick-dots{width: 14px;
-                    li{width: 7px;height: 7px;margin-bottom:14px;
-                        button{
-                            &::before{width: 7px;height: 7px;}
-                        }
-                    }
-                    li.slick-active{margin-bottom: 50px;
-                        button{
-                            &::before{height: 40px;}
-                        }
-                    }
-                }
+                // .slick-dots{width: 14px;
+                //     li{width: 7px;height: 7px;margin-bottom:14px;
+                //         button{
+                //             &::before{width: 7px;height: 7px;}
+                //         }
+                //     }
+                //     li.slick-active{margin-bottom: 50px;
+                //         button{
+                //             &::before{height: 40px;}
+                //         }
+                //     }
+                // }
             }
             .research-card-type{padding: 55px;min-height:500px;width:420px;
                 .research-card-subheading{margin-bottom: 24px;}
@@ -413,7 +397,7 @@
         }
         .researchsec-wrapper{position: relative;margin-bottom:80px;flex-direction: column;padding:0px;
             .img-div{height:auto;position: relative;margin-bottom:0px;
-                .slick-dots{bottom: 0px;margin: 0 auto;}
+                // .slick-dots{bottom: 0px;margin: 0 auto;}
             }
             &:nth-child(odd){.img-div{.slick-dots{right: 50%;left: 50%;}}}
             &:nth-child(even){.img-div{.slick-dots{left: 50%;right: 50%;}}}
@@ -442,18 +426,18 @@
         }
         .researchsec-wrapper{padding: 0px;
             .img-div{
-                .slick-dots{bottom: -12px;
-                    li{width: 6px;height: 6px;margin-bottom: 6px;
-                        button{
-                            &::before{width: 6px;height: 6px;}
-                        }
-                    }
-                    li.slick-active{margin-bottom: 50px;
-                        button{
-                            &::before{height: 50px;}
-                        }
-                    }
-                }
+                // .slick-dots{bottom: -12px;
+                //     li{width: 6px;height: 6px;margin-bottom: 6px;
+                //         button{
+                //             &::before{width: 6px;height: 6px;}
+                //         }
+                //     }
+                //     li.slick-active{margin-bottom: 50px;
+                //         button{
+                //             &::before{height: 50px;}
+                //         }
+                //     }
+                // }
             }
         }
     }

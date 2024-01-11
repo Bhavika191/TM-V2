@@ -541,7 +541,9 @@ if ($(".casedetailsmainSec .video-stats-sec").length) {
   });
 }
 //Video player js ends for casestudy
- if($('.videoDiv').length){
+
+//Homepage video sound on off Js starts
+if($('.videoDiv').length){
   const button = document.getElementById("sound-btn");
   button.addEventListener("click",function(){
     const video = document.getElementById("homepage-video");
@@ -556,10 +558,8 @@ if ($(".casedetailsmainSec .video-stats-sec").length) {
     }
   });
  }
-//Homepage video sound on off Js starts
 
-
-//Video video sound on off Js ends
+//Homepage video sound on off Js ends
 //------------------------------------------------------- Shamal's JS Code ends --------------------------------------------------//
 
 document.addEventListener('DOMContentLoaded', () => {

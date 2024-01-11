@@ -4,7 +4,7 @@
             h1{@include font96;font-weight: $fontW500;line-height: 106px;letter-spacing: -2px;margin-bottom: 15px;}
             p{@include font24;font-weight: $fontW400;line-height: 34px;color: #6A6A6A;}
         }
-        .collaborateForm{width: 40%; padding: 60px 60px 40px;background: #ffffff;
+        .collaborateForm{width: 46%; padding: 60px 60px 40px;background: #ffffff;
             form{
                 br{display: none;}
                 label{display: block;color: #6A6A6A;@include font18;font-weight: $fontW400;line-height: 14px;margin:60px 0px 12px;
@@ -27,6 +27,7 @@
             }
         }
     }
+    @media all and (min-width : 2560px){.collaborateSec{.collaborateForm{width: 44%;}}}
     @media screen and (max-width:1600px) {
         margin: 100px 0px 300px;
 
@@ -35,7 +36,7 @@
                 h1{line-height: 86px;}
                 p{line-height: 30px;}
             }
-            .collaborateForm{padding: 50px 50px 30px;
+            .collaborateForm{padding: 50px 50px 30px;width: 45%;
                 form{
                     label{margin:50px 0px 12px;}
                     input[type=submit]{padding: 12px 24px;margin-top:50px;}
@@ -49,12 +50,13 @@
             }
         }
     }
+    @media all and (max-width:1440px){.collaborateSec{.collaborateForm{width: 46%;}}}
     @media screen and (max-width:1400px) {
         margin: 100px 0px 250px;
 
         .collaborateSec{padding-right: 40px !important;
             .secHeading{margin-top: 80px;width: 40%;top:180px;}
-            .collaborateForm{padding: 40px 40px 20px;width: 50%;
+            .collaborateForm{padding: 40px 40px 20px;width: 46%;
                 form{
                     label{margin:30px 0px 12px;}
                     input[type=submit]{padding: 12px 24px;margin-top:30px;}
@@ -70,6 +72,9 @@
     }
     @media screen and (max-width:1200px) {
         margin: 100px 0px 200px;
+        .collaborateSec{
+            .collaborateForm{width: 45%;}
+        }
     }
     @media screen and (max-width:1024px) {
         margin: 100px 0px 150px;
@@ -78,7 +83,7 @@
                 h1{line-height: 70px;}
                 p{line-height: 26px;}
             }
-            .collaborateForm{padding: 40px 40px 20px;
+            .collaborateForm{padding: 40px 40px 20px;width:46%;
                 form{
                     label{margin:50px 0px 12px;}
                     input[type=submit]{padding: 12px 24px;margin-top:50px;}
