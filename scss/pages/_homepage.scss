@@ -5,7 +5,7 @@
             h1{@include font96;font-weight: $fontW500;line-height: 106px;letter-spacing: -2px;width: 60%;}
         }
         .videoDiv{@include wrapper;position:relative;
-            .sound-sec{position: absolute;right: 60px;bottom: 60px;display: flex;align-items: center;
+            .sound-sec{position: absolute;right: 120px;bottom: 60px;display: flex;align-items: center;
                 p{@include font20;font-weight: $fontW400;margin-right: 16px;color: #fff;text-align: right;}
                 .sound-btn{
                     .sound-enable{display: none;width: 50px;height: 50px;}
@@ -26,7 +26,7 @@
                 h1{width: 70%;line-height: 90px;}
             }
             .videoDiv{
-                .sound-sec{
+                .sound-sec{right: 100px;bottom:50px;
                     p{margin-right: 16px;}
                     .sound-btn{
                         .sound-enable{width: 40px;height: 40px;}
@@ -43,7 +43,7 @@
                 h1{width: 75%;}
             }
             .videoDiv{
-                .sound-sec{
+                .sound-sec{right: 80px;bottom:40px;
                     p{margin-right: 15px;}
                     .sound-btn{
                         .sound-enable{width: 35px;height: 35px;}
@@ -68,7 +68,7 @@
                 h1{width: 90%;line-height: 78px;}
             }
             .videoDiv{@include wrapper;
-                .sound-sec{right: 50px;bottom: 50px;
+                .sound-sec{right: 60px;bottom: 30px;
                     p{margin-right: 15px;}
                     .sound-btn{
                         .sound-enable{width: 30px;height: 30px;}
