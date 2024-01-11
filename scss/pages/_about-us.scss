@@ -1,9 +1,9 @@
 .aboutus-bannerSec{
     .content-div{.banner-heading{width: 100% !important}.banner-subheading{width: 80%;}}
+
     @media all and (max-width:680px){
         .content-div{padding: 100px 0px 60px 0px;
-            .banner-subheading{width: 100%}
-            .banner-subheading{width: 100%}
+            .banner-subheading{width: 100%;}
         }
     }
 }
@@ -448,7 +448,7 @@
         .collaborate-wrapper{
             .left-content{width: 100% !important;}
             .middle-content{width: 100% !important;}
-            .right-content{display: none !important;}
+            .right-content{width: 100% !important;}
         }
     }
     @media all and (max-width:680px){margin-bottom: 30px !important;}
