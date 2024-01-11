@@ -15376,46 +15376,16 @@ body.opentwo {
     font-size: 14px;
   }
 }
-.privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p a {
-  color: #000;
-}
-.privacypolicy-section .privacy-policy-wrapper .privacy-policy-content .note {
-  font-family: "Poppins", sans-serif;
-  color: #6A6A6A;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 150%;
-  margin-top: 32px;
-  padding: 40px;
-  background: #F1F1F1;
-}
-@media screen and (max-width: 1600px) {
-  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content .note {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content .note {
-    font-size: 14px;
-  }
-}
-.privacypolicy-section .privacy-policy-wrapper .privacy-policy-content .note span {
-  font-weight: 600;
-  color: #000;
-}
 .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol {
   padding-left: 20px;
-  margin-top: 32px;
+  margin-top: 30px;
 }
 .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul li, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol li {
-  font-family: "Poppins", sans-serif;
   color: #6A6A6A;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
-  margin-top: 32px;
 }
 @media screen and (max-width: 1600px) {
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul li, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol li {
@@ -15437,23 +15407,76 @@ body.opentwo {
   .privacypolicy-section {
     margin: 200px 0px;
   }
-  .privacypolicy-section .privacy-policy-banner {
-    padding: 0px 130px;
-    margin-bottom: 160px;
-  }
-  .privacypolicy-section .privacy-policy-banner p {
-    margin-top: 45px;
-  }
-  .privacypolicy-section .privacy-policy-wrapper {
-    padding: 130px;
-  }
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content:not(:last-child) {
     padding-bottom: 120px;
   }
-  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p {
-    margin-top: 45px;
+}
+@media all and (max-width: 1400px) {
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content:not(:last-child) {
+    padding-bottom: 100px;
   }
-  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content .note {
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p {
+    margin-top: 28px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol {
+    margin-top: 28px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .privacypolicy-section {
+    margin: 150px 0px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper {
+    width: 70%;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content:not(:last-child) {
+    padding-bottom: 80px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p {
+    margin-top: 26px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol {
+    margin-top: 26px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .privacypolicy-section .privacy-policy-wrapper {
+    width: 90%;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol {
+    padding-left: 16px;
+  }
+}
+@media all and (max-width: 680px) {
+  .privacypolicy-section {
+    margin: 100px 0px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper {
+    width: 100%;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content:not(:last-child) {
+    padding-bottom: 80px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 116.716%;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content p {
+    margin-top: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 164%;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol {
+    margin-top: 24px;
+  }
+  .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul li, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 164%;
+  }
+}-content .note {
     margin-top: 30px;
     padding: 36px;
   }
@@ -15463,7 +15486,7 @@ body.opentwo {
   .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ul li, .privacypolicy-section .privacy-policy-wrapper .privacy-policy-content ol li {
     margin-top: 30px;
   }
-}
+
 @media all and (max-width: 1400px) {
   .privacypolicy-section .privacy-policy-banner {
     padding: 0px 80px;
