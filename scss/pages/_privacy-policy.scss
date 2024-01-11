@@ -7,7 +7,7 @@
         .privacy-policy-content{&:not(:last-child){padding-bottom:150px;}width: 70%;
             h2{font-family: $fontpoppins;@include font64;font-weight: $fontW500;color: #000;}
             p{font-family: $fontpoppins;color: #6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;margin-top: 48px;
-                a{color: #000;}
+                a{color: #000;font-weight: $fontW600;text-decoration: underline;}
             }
             .note{font-family: $fontpoppins;color: #6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;margin-top: 32px;padding: 40px;background: #F1F1F1;
                 span{font-weight: $fontW600;color: #000;}
@@ -80,7 +80,9 @@
         .privacy-policy-wrapper{padding:30px 20px;
             .privacy-policy-content{&:not(:last-child){padding-bottom:50px;}
                 h2{font-size: 20px;font-weight: 500;line-height:  116.716%;}
-                p{margin-top: 30px;font-size: 14px;font-weight: 500;line-height: 164%;}
+                p{margin-top: 30px;font-size: 14px;font-weight: 500;line-height: 164%;
+                    a{font-weight: 600;}
+                }
                 .note{padding: 20px;font-size: 14px;font-weight: 500;line-height: 164%;margin-top: 24px;}
                 ul,ol{margin-top: 24px;
                     li{font-size: 14px;font-weight: 500;line-height: 164%;margin-top: 24px;}
