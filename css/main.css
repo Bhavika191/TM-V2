@@ -13664,7 +13664,7 @@ body.opentwo {
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
     margin-bottom: 20px;
@@ -13683,7 +13683,7 @@ body.opentwo {
     flex-flow: wrap;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-numbers .rates {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     margin-right: 40px !important;
     width: calc(50% - 40px);
   }
@@ -14498,7 +14498,7 @@ body.opentwo {
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-content {
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-content .video-stats-subheading {
     margin-bottom: 20px;
@@ -14517,7 +14517,7 @@ body.opentwo {
     flex-flow: wrap;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     margin-right: 40px !important;
     width: calc(50% - 40px);
   }
