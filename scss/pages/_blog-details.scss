@@ -1,5 +1,5 @@
 .blogdetails-bannerSec {
-    .blogdetails-wrapper {@include wrapperTwo;margin: 190px 0px 100px 0px;width: 85%;
+    .blogdetails-wrapper {@include wrapperTwo;margin: 190px 0px 150px 0px;width: 85%;
         h3 {color: #000;font-family: $fontpoppins;@include font20;font-weight: $fontW700;line-height: 150%;letter-spacing: 1px;text-transform: uppercase;}
         h1 {margin: 48px 0px;color: #000;font-family: $fontpoppins;@include font96;font-weight: $fontW500;line-height: 130%;letter-spacing: -1px;word-wrap: break-word}
     }
@@ -11,7 +11,7 @@
     // ----------------------------------------media queries-----------------------------------------------//
     @media all and (max-width:1800px) {
         .blogdetails-wrapper {
-            margin: 180px 0px 90px 0px;
+            margin: 180px 0px 150px 0px;
             h1 {margin: 45px 0px;}
 
         }
@@ -20,7 +20,7 @@
     }
     @media all and (max-width:1600px) {
         .blogdetails-wrapper {
-            margin: 170px 0px 80px 0px;
+            margin: 170px 0px 125px 0px;
             h1 {margin: 40px 0px;}
 
         }
@@ -28,20 +28,20 @@
     }
     @media all and (max-width:1400px) {
         .blogdetails-wrapper {
-            margin: 160px 0px 70px 0px;
+            margin: 160px 0px 100px 0px;
             h1 {margin: 35px 0px;}
         }
         .blogdetails-imagesec { margin-bottom: 70px;}
     }
     @media all and (max-width:1200px) {
         .blogdetails-wrapper {
-            margin: 150px 0px 60px 0px;
+            margin: 150px 0px 90px 0px;
             h1 {margin: 30px 0px;}
         }
         .blogdetails-imagesec { margin-bottom: 60px;}
     }
     @media all and (max-width:1024px) {
-        .blogdetails-wrapper {margin: 120px 0px 60px 0px;@include wrapper;
+        .blogdetails-wrapper {margin: 120px 0px 90px 0px;@include wrapper;
             h1 {margin: 25px 0px;}
 
         }
@@ -64,12 +64,12 @@
             h4{@include font24;font-weight: $fontW500;line-height: 133%;letter-spacing: 0;margin-bottom: 30px;color: #000;}
             h5{@include font20;font-weight: $fontW500;line-height: 133%;letter-spacing: 0;margin-bottom: 30px;color: #000;}
             p , ul li, ol li{color: #6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;margin-bottom: 42px;}
-            ul , ol{padding-left: 20px;margin-bottom: 42px;}
-            ol li{list-style: decimal;margin-bottom: 0;}
-            ul li{list-style: disc;margin-bottom: 0;}
-            .spacer{height: 150px;}
+            ul , ol{padding-left: 20px;}
+            ol li{list-style: decimal;}
+            ul li{list-style: disc;}
+            .spacer{height: 110px;}
             strong{font-weight: $fontW600;}
-            .shareSec {margin: 150px 0px 300px;padding: 30px 0px;border-top: 1px solid rgba(0,0,0,0.2); background-color: #f1f1f1;border-bottom: 1px solid rgba(0,0,0,0.2);display: flex;justify-content: space-between;align-items:center;
+            .shareSec {margin: 150px 0px 250px;padding: 30px 0px;border-top: 1px solid rgba(0,0,0,0.2); background-color: #f1f1f1;border-bottom: 1px solid rgba(0,0,0,0.2);display: flex;justify-content: space-between;align-items:center;
                 h4{color: var(--Primary-Black, #000);font-family: $fontpoppins;@include font16;font-weight: $fontW600;line-height: 14px;letter-spacing: 0.8px;text-transform: uppercase;margin-bottom: 0px;}
                 .shareDiv{display: flex;position: relative;
                     .like-count{display: flex;align-items: center;margin-right: 10px;}
@@ -140,10 +140,9 @@
 
             .blogdetails-contentContainer {
                 h2, h3, h4, h5{margin-bottom: 25px;}
-                p {margin-bottom: 35px;}
-                ul , ol{margin-bottom: 35px;}
-                .spacer{height: 120px;}
-                .shareSec {margin-bottom:250px;padding: 28px 0px;
+                p, ul li , ol li {margin-bottom: 35px;}
+                .spacer{height: 90px;}
+                .shareSec {margin: 120px 0px 220px;padding: 28px 0px;
                     h4{line-height: 12px;}
                     .shareDiv{
                         .like-button{margin-right: 40px;}
@@ -180,10 +179,9 @@
     @media all and (max-width:1400px){
 
             .blogdetails-contentContainer {
-                p {margin-bottom: 30px;}
-                ul , ol{margin-bottom: 30px;}
-                .spacer{height: 80px;}
-                .shareSec {margin-bottom:220px;padding: 25px 0px;
+                p , ul li , ol li{margin-bottom: 30px;}
+                .spacer{height: 70px;}
+                .shareSec {margin: 100px 0px 200px;padding: 25px 0px;
                     h4{line-height: 10px;}
                     .shareDiv{
                         .like-button{margin-right: 32px;img{margin: 0px 0px 8px;}}
@@ -222,9 +220,8 @@
 
             .blogdetails-contentContainer {
                 h2, h3, h4, h5{margin-bottom: 15px;}
-                p {margin-bottom: 25px;}
-                ul , ol{margin-bottom: 25px;}
-                .shareSec {margin-bottom:200px;padding: 22px 0px;
+                p  , ul li , ol li{margin-bottom: 25px;}
+                .shareSec {margin: 90px 0px 180px;padding: 22px 0px;
                     h4{line-height: 8px;}
                     .shareDiv{
                         .like-button{margin-right: 24px;}
@@ -238,9 +235,8 @@
 
             .blogdetails-contentContainer {width: 80%;
                 h2, h3, h4, h5{margin-bottom: 18px;}
-                p {margin-bottom: 20px;}
-                ul , ol{margin-bottom: 20px;}
-                .shareSec {margin-bottom:180px;padding: 20px 0px;
+                p , ul li , ol li {margin-bottom: 20px;}
+                .shareSec {margin: 90px 0px 170px;padding: 20px 0px;
                     h4{line-height: 8px;}
                     .shareDiv{
                         .like-button{margin-right: 20px;}
@@ -257,7 +253,7 @@
 
             .blogdetails-contentContainer {width: 100%;
                 h2, h3, h4, h5{font-size: 20px;}
-                .shareSec {margin-bottom:150px;padding: 20px 0px;
+                .shareSec {margin: 80px 0px 150px;padding: 20px 0px;
                     h4{line-height: 8px;}
                     .shareDiv{
                         a{line-height: 10px;}
@@ -269,10 +265,11 @@
     @media all and (max-width:768px){
 
             .blogdetails-contentContainer {
+                h2{font-size: 24px;margin-bottom: 25px !important;}
                 h2, h3, h4, h5{margin-bottom: 10px;}
-                p {margin-bottom: 20px;}
-                ul , ol{margin-bottom: 20px;}
-                .shareSec {margin-bottom:150px;padding: 20px 0px;
+                p , ul li , ol li {margin-bottom: 20px;}
+                .spacer{height: 40px;}
+                .shareSec {padding: 20px 0px;
                     h4{font-size: 12px;line-height: 24px;font-weight: 600;}
                     .shareDiv{
                         .like-button{margin-right: 32px;img{margin: 0px 0px 14px;}}
