@@ -45,9 +45,6 @@ function hasScrolled() {
 
   lastScrollTop = st;
 }
-
-
-
   document.addEventListener("DOMContentLoaded", function () {
     updateButtonClass(); // Initial update
 
