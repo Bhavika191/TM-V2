@@ -1380,33 +1380,27 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a {
   height: 36px;
   width: 36px;
   border-radius: 50%;
-  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.7s all ease-out;
+  background-color: #fff;
+  border: 1px solid #000;
 }
 footer .footerWrapper .socialIcons .iconsDiv ul li a svg {
   height: 18px;
   width: 18px;
 }
 footer .footerWrapper .socialIcons .iconsDiv ul li a svg path {
-  fill: #fff;
-  transition: 0.7s all ease-out;
-}
-footer .footerWrapper .socialIcons .iconsDiv ul li a svg.youtube .blackCol {
   fill: #000;
+  transition: 0.7s all ease-out;
 }
 footer .footerWrapper .socialIcons .iconsDiv ul li a:hover {
   transition: 0.7s all ease-out;
-  background-color: #fff;
+  background-color: #000;
   border: 1px solid #000;
 }
 footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
-  fill: #000;
-  transition: 0.7s all ease-out;
-}
-footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol {
   fill: #fff;
   transition: 0.7s all ease-out;
 }
@@ -15741,4 +15735,4 @@ body.opentwo {
     line-height: 164%;
     margin-top: 24px;
   }
-}
+}/*# sourceMappingURL=main.css.map */

@@ -74,21 +74,15 @@ footer{@include wrapper;margin-bottom: 70px;position: relative;z-index: 3;
                 ul{display: flex;align-items: center;
                     li {margin-right: 15px;
                         &:last-child{margin-right: 0px;}
-                        a{height: 36px;width: 36px;border-radius: 50%;background-color: #000;display: flex;align-items: center;justify-content: center;transition: 0.7s all ease-out;
+                        a{height: 36px;width: 36px;border-radius: 50%;display: flex;align-items: center;justify-content: center;transition: 0.7s all ease-out;background-color: #fff;border: 1px solid #000;
                             svg{height: 18px;width: 18px;
-                                path{fill: #fff;transition: 0.7s all ease-out;}
-                                &.youtube{
-                                    .blackCol{fill: #000;}
-                                }
+                                path{fill: #000;transition: 0.7s all ease-out;}
                             }
                             &:hover{transition: 0.7s all ease-out;
-                                background-color: #fff;
+                                background-color: #000;
                                 border: 1px solid #000;
                                 svg{
-                                    path{fill: #000;transition: 0.7s all ease-out;}
-                                    &.youtube{
-                                        .blackCol{fill: #fff;transition: 0.7s all ease-out;}
-                                    }
+                                    path{fill: #fff;transition: 0.7s all ease-out;}
                                 }
                             }
                         }   
