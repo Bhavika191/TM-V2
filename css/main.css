@@ -5615,7 +5615,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading {
     font-size: 20px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 28px;
     margin-bottom: 12px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul {
@@ -5624,7 +5624,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li {
     font-size: 14px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 264x;
     letter-spacing: -0.42px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li::before {
@@ -5877,10 +5877,10 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     margin-bottom: 30px;
   }
   .collaborate-section .collaborate-wrapper .left-content h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 40px;
-    letter-spacing: -0.9px;
+    line-height: 34px;
+    letter-spacing: 0px;
     margin-bottom: 20px;
   }
   .collaborate-section .collaborate-wrapper .left-content p {
@@ -11735,13 +11735,13 @@ body.opentwo {
     width: auto;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 12px;
     font-weight: 700;
     line-height: 22px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 20px;
     font-weight: 500;
     line-height: 28px;
@@ -11750,7 +11750,7 @@ body.opentwo {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 @media all and (max-width: 680px) {
@@ -11761,7 +11761,7 @@ body.opentwo {
     margin-bottom: 80px;
   }
   .aboutus-researchSec .heading-content .main-heading {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 100%;
     font-size: 24px;
     font-weight: 500;
@@ -15752,4 +15752,4 @@ body.opentwo {
     line-height: 164%;
     margin-top: 24px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
