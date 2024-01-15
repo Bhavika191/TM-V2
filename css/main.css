@@ -9579,33 +9579,38 @@ body.opentwo {
   width: 70%;
 }
 .blogdetails-contentSec .blogdetails-contentContainer h2 {
-  font-size: 30px;
+  font-size: 48px;
   font-weight: 500;
   line-height: 133%;
-  letter-spacing: -0.9px;
+  letter-spacing: 0;
   margin-bottom: 30px;
   color: #000;
 }
 @media screen and (max-width: 1600px) {
   .blogdetails-contentSec .blogdetails-contentContainer h2 {
-    font-size: 20px;
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .blogdetails-contentSec .blogdetails-contentContainer h2 {
+    font-size: 32px;
   }
 }
 @media screen and (max-width: 1280px) {
   .blogdetails-contentSec .blogdetails-contentContainer h2 {
-    font-size: 18px;
+    font-size: 26px;
   }
 }
 @media screen and (max-width: 720px) {
   .blogdetails-contentSec .blogdetails-contentContainer h2 {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 .blogdetails-contentSec .blogdetails-contentContainer h3 {
   font-size: 28px;
   font-weight: 500;
   line-height: 133%;
-  letter-spacing: -0.9px;
+  letter-spacing: 0;
   margin-bottom: 30px;
   color: #000;
 }
@@ -9628,7 +9633,7 @@ body.opentwo {
   font-size: 24px;
   font-weight: 500;
   line-height: 133%;
-  letter-spacing: -0.9px;
+  letter-spacing: 0;
   margin-bottom: 30px;
   color: #000;
 }
@@ -9651,7 +9656,7 @@ body.opentwo {
   font-size: 20px;
   font-weight: 500;
   line-height: 133%;
-  letter-spacing: -0.9px;
+  letter-spacing: 0;
   margin-bottom: 30px;
   color: #000;
 }
@@ -9685,6 +9690,7 @@ body.opentwo {
 }
 .blogdetails-contentSec .blogdetails-contentContainer ul, .blogdetails-contentSec .blogdetails-contentContainer ol {
   padding-left: 20px;
+  margin-bottom: 42px;
 }
 .blogdetails-contentSec .blogdetails-contentContainer ol li {
   list-style: decimal;
@@ -9694,11 +9700,11 @@ body.opentwo {
   list-style: disc;
   margin-bottom: 0;
 }
-.blogdetails-contentSec .blogdetails-contentContainer img {
-  margin: 30px 0px 48px;
-}
 .blogdetails-contentSec .blogdetails-contentContainer .spacer {
   height: 150px;
+}
+.blogdetails-contentSec .blogdetails-contentContainer strong {
+  font-weight: 600;
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
   margin: 150px 0px 300px;
@@ -10079,8 +10085,8 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer p {
     margin-bottom: 35px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer img {
-    margin: 30px 0px 40px;
+  .blogdetails-contentSec .blogdetails-contentContainer ul, .blogdetails-contentSec .blogdetails-contentContainer ol {
+    margin-bottom: 35px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .spacer {
     height: 120px;
@@ -10146,8 +10152,8 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer p {
     margin-bottom: 30px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer img {
-    margin: 30px 0px 80px;
+  .blogdetails-contentSec .blogdetails-contentContainer ul, .blogdetails-contentSec .blogdetails-contentContainer ol {
+    margin-bottom: 30px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .spacer {
     height: 80px;
@@ -10222,6 +10228,9 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer p {
     margin-bottom: 25px;
   }
+  .blogdetails-contentSec .blogdetails-contentContainer ul, .blogdetails-contentSec .blogdetails-contentContainer ol {
+    margin-bottom: 25px;
+  }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
     margin-bottom: 200px;
     padding: 22px 0px;
@@ -10244,6 +10253,9 @@ body.opentwo {
     margin-bottom: 18px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer p {
+    margin-bottom: 20px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer ul, .blogdetails-contentSec .blogdetails-contentContainer ol {
     margin-bottom: 20px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
@@ -10289,7 +10301,10 @@ body.opentwo {
     margin-bottom: 10px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer p {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer ul, .blogdetails-contentSec .blogdetails-contentContainer ol {
+    margin-bottom: 20px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
     margin-bottom: 150px;
@@ -15737,4 +15752,4 @@ body.opentwo {
     line-height: 164%;
     margin-top: 24px;
   }
-}
+}/*# sourceMappingURL=main.css.map */
