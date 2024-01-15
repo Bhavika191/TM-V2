@@ -9345,7 +9345,7 @@ body.opentwo {
 .blogdetails-bannerSec .blogdetails-wrapper {
   padding-left: 210px;
   padding-right: 210px;
-  margin: 190px 0px 100px 0px;
+  margin: 190px 0px 150px 0px;
   width: 85%;
 }
 @media screen and (max-width: 1600px) {
@@ -9452,7 +9452,7 @@ body.opentwo {
 }
 @media all and (max-width: 1800px) {
   .blogdetails-bannerSec .blogdetails-wrapper {
-    margin: 180px 0px 90px 0px;
+    margin: 180px 0px 150px 0px;
   }
   .blogdetails-bannerSec .blogdetails-wrapper h1 {
     margin: 45px 0px;
@@ -9463,7 +9463,7 @@ body.opentwo {
 }
 @media all and (max-width: 1600px) {
   .blogdetails-bannerSec .blogdetails-wrapper {
-    margin: 170px 0px 80px 0px;
+    margin: 170px 0px 125px 0px;
   }
   .blogdetails-bannerSec .blogdetails-wrapper h1 {
     margin: 40px 0px;
@@ -9474,7 +9474,7 @@ body.opentwo {
 }
 @media all and (max-width: 1400px) {
   .blogdetails-bannerSec .blogdetails-wrapper {
-    margin: 160px 0px 70px 0px;
+    margin: 160px 0px 100px 0px;
   }
   .blogdetails-bannerSec .blogdetails-wrapper h1 {
     margin: 35px 0px;
@@ -9485,7 +9485,7 @@ body.opentwo {
 }
 @media all and (max-width: 1200px) {
   .blogdetails-bannerSec .blogdetails-wrapper {
-    margin: 150px 0px 60px 0px;
+    margin: 150px 0px 90px 0px;
   }
   .blogdetails-bannerSec .blogdetails-wrapper h1 {
     margin: 30px 0px;
@@ -9496,7 +9496,7 @@ body.opentwo {
 }
 @media all and (max-width: 1024px) {
   .blogdetails-bannerSec .blogdetails-wrapper {
-    margin: 120px 0px 60px 0px;
+    margin: 120px 0px 90px 0px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -9690,24 +9690,21 @@ body.opentwo {
 }
 .blogdetails-contentSec .blogdetails-contentContainer ul, .blogdetails-contentSec .blogdetails-contentContainer ol {
   padding-left: 20px;
-  margin-bottom: 42px;
 }
 .blogdetails-contentSec .blogdetails-contentContainer ol li {
   list-style: decimal;
-  margin-bottom: 0;
 }
 .blogdetails-contentSec .blogdetails-contentContainer ul li {
   list-style: disc;
-  margin-bottom: 0;
 }
 .blogdetails-contentSec .blogdetails-contentContainer .spacer {
-  height: 150px;
+  height: 110px;
 }
 .blogdetails-contentSec .blogdetails-contentContainer strong {
   font-weight: 600;
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
-  margin: 150px 0px 300px;
+  margin: 150px 0px 250px;
   padding: 30px 0px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   background-color: #f1f1f1;
@@ -10082,17 +10079,14 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer h2, .blogdetails-contentSec .blogdetails-contentContainer h3, .blogdetails-contentSec .blogdetails-contentContainer h4, .blogdetails-contentSec .blogdetails-contentContainer h5 {
     margin-bottom: 25px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer p {
-    margin-bottom: 35px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer ul, .blogdetails-contentSec .blogdetails-contentContainer ol {
+  .blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
     margin-bottom: 35px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .spacer {
-    height: 120px;
+    height: 90px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
-    margin-bottom: 250px;
+    margin: 120px 0px 220px;
     padding: 28px 0px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec h4 {
@@ -10149,17 +10143,14 @@ body.opentwo {
   }
 }
 @media all and (max-width: 1400px) {
-  .blogdetails-contentSec .blogdetails-contentContainer p {
-    margin-bottom: 30px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer ul, .blogdetails-contentSec .blogdetails-contentContainer ol {
+  .blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
     margin-bottom: 30px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .spacer {
-    height: 80px;
+    height: 70px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
-    margin-bottom: 220px;
+    margin: 100px 0px 200px;
     padding: 25px 0px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec h4 {
@@ -10225,14 +10216,11 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer h2, .blogdetails-contentSec .blogdetails-contentContainer h3, .blogdetails-contentSec .blogdetails-contentContainer h4, .blogdetails-contentSec .blogdetails-contentContainer h5 {
     margin-bottom: 15px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer p {
-    margin-bottom: 25px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer ul, .blogdetails-contentSec .blogdetails-contentContainer ol {
+  .blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
     margin-bottom: 25px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
-    margin-bottom: 200px;
+    margin: 90px 0px 180px;
     padding: 22px 0px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec h4 {
@@ -10252,14 +10240,11 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer h2, .blogdetails-contentSec .blogdetails-contentContainer h3, .blogdetails-contentSec .blogdetails-contentContainer h4, .blogdetails-contentSec .blogdetails-contentContainer h5 {
     margin-bottom: 18px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer p {
-    margin-bottom: 20px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer ul, .blogdetails-contentSec .blogdetails-contentContainer ol {
+  .blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
     margin-bottom: 20px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
-    margin-bottom: 180px;
+    margin: 90px 0px 170px;
     padding: 20px 0px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec h4 {
@@ -10286,7 +10271,7 @@ body.opentwo {
     font-size: 20px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
-    margin-bottom: 150px;
+    margin: 80px 0px 150px;
     padding: 20px 0px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec h4 {
@@ -10297,17 +10282,20 @@ body.opentwo {
   }
 }
 @media all and (max-width: 768px) {
+  .blogdetails-contentSec .blogdetails-contentContainer h2 {
+    font-size: 24px;
+    margin-bottom: 25px !important;
+  }
   .blogdetails-contentSec .blogdetails-contentContainer h2, .blogdetails-contentSec .blogdetails-contentContainer h3, .blogdetails-contentSec .blogdetails-contentContainer h4, .blogdetails-contentSec .blogdetails-contentContainer h5 {
     margin-bottom: 10px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer p {
+  .blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
     margin-bottom: 20px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer ul, .blogdetails-contentSec .blogdetails-contentContainer ol {
-    margin-bottom: 20px;
+  .blogdetails-contentSec .blogdetails-contentContainer .spacer {
+    height: 40px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
-    margin-bottom: 150px;
     padding: 20px 0px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec h4 {
