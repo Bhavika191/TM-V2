@@ -7465,7 +7465,7 @@ body.opentwo {
     margin-top: 40px;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc {
-    margin: 20px 24px;
+    margin: 20px;
   }
   .caseStudyListingsec .casestudyWrapper .casestudylistingBoxes .caseStudyBoxes .caseStudydesc h3 {
     line-height: 28px;
@@ -7952,10 +7952,10 @@ body.opentwo {
     width: 12px;
   }
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes:hover .blogDetails {
-    padding: 25px 20px;
+    padding: 20px;
   }
   .bloglistingsection .blogsWrapper .bloglistingBoxes .blogslistinnerBoxes:hover .blogDetails h3 {
-    margin: 16px 0px;
+    margin: 10px 0px;
   }
   .bloglistingsection .blogsWrapper #myButton {
     position: unset;
