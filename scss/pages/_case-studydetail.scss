@@ -481,12 +481,12 @@
         @media all and (max-width:680px){
             margin-bottom:70px;
         .statsSec-wrapper{display: block;margin-bottom:80px;
-            .stats-content{width: 100%;margin-bottom:50px;
+            .stats-content{width: 100%;margin-bottom:20px;
                 .stats-subheading{margin-bottom: 20px;font-size: 12px;font-weight: 700;line-height: 12px;}
                 .stats-mainheading{font-size: 18px;font-weight: 500;line-height: 30px;}
             }
             .stats-numbers{width: 100%;display: flex;flex-flow:wrap;
-                .rates{margin-bottom: 50px;margin-right:40px !important;width:calc(50% - 40px);
+                .rates{margin-bottom: 40px;margin-right:40px !important;width:calc(50% - 40px);
                     img{margin-bottom: 10px;font-size: 16px;font-weight: 500;line-height: 21.333px;}
                     p{margin-bottom: 20px;font-size: 16px;font-weight: 500;line-height: 21.333px;}
                     h2{font-size: 30px;font-weight: 500;line-height: 44.444px;}
@@ -735,12 +735,12 @@
         @media all and (max-width:680px){
             margin-bottom:40px;
         .video-statsSec-wrapper{display: block;margin-bottom:100px;
-            .video-stats-content{width: 100%;margin-bottom:60px;
+            .video-stats-content{width: 100%;margin-bottom:20px;
                 .video-stats-subheading{margin-bottom: 20px;font-size: 12px;font-weight: 700;line-height: 22px;}
                 .video-stats-mainheading{font-size: 18px;font-weight: 500;line-height: 30px;}
             }
             .video-stats-numbers{width: 100%;display: flex;flex-flow:wrap;
-                .rates{margin-bottom: 50px;margin-right:40px !important;width:calc(50% - 40px);
+                .rates{margin-bottom: 40px;margin-right:40px !important;width:calc(50% - 40px);
                     img{margin-bottom: 10px;font-size: 16px;font-weight: 500;line-height: 21.333px;}
                     p{margin-bottom: 20px;font-size: 16px;font-weight: 500;line-height: 21.333px;}
                     h2{font-size: 30px;font-weight: 500;line-height: 44.444px;}
