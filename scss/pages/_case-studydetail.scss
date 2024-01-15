@@ -376,8 +376,8 @@
         }
         .leftcontent-rightimageSec{display: block;&:not(:last-child){padding-bottom:80px;}
             .leftcontent-rightimage-text{width: 100%;@include wrapper;
-                .leftcontent-subheading{margin-bottom: 10px;font-size: 12px;font-weight: 700;line-height: 22px;}
-                .leftcontent-mainheading{margin-bottom: 10px;font-size: 20px;font-weight: 500;line-height: 28px;}
+                .leftcontent-subheading{margin-bottom: 20px;font-size: 12px;font-weight: 700;line-height: 22px;}
+                .leftcontent-mainheading{margin-bottom: 20px;font-size: 20px;font-weight: 500;line-height: 28px;}
                 .leftcontent-text{font-size: 14px;font-weight: 400;line-height: 24px;}
             }
             .leftcontent-rightimage-image{width: 100%;margin-bottom: 40px;}

@@ -11745,6 +11745,7 @@ body.opentwo {
     font-size: 20px;
     font-weight: 500;
     line-height: 28px;
+    letter-spacing: 0px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     font-size: 14px;
@@ -13342,13 +13343,13 @@ body.opentwo {
 }
 @media all and (max-width: 821px) {
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 12px;
     font-weight: 700;
     line-height: 22px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 20px;
     font-weight: 500;
     line-height: 28px;
