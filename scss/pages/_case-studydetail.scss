@@ -48,7 +48,7 @@
         @media all and (max-width:821px){
             .aboutcontent{margin:102px 0px 50px 0px;width:100%;
                 .subheading{margin-bottom:20px;font-size: 12px;font-weight: 700;line-height: 12px;width: 100%;}
-                .mainheading{margin-bottom:20px;font-size: 40px;font-weight: 500;line-height: 46px;width: 100%;letter-spacing: -1.2px;}
+                .mainheading{line-height: 40px;font-size: 30px;letter-spacing: -1px;width: 100%;}
                 .about-content{font-size: 14px;font-weight: 400;line-height: 21px;width: 100%;}
             }
             .image-sec{margin-bottom: 80px;padding: 0px;img{object-fit: cover;}}
@@ -291,8 +291,8 @@
                 .desktop-img{display: none;}
             }
             .research-card-type{padding-bottom:55px;padding-top: 36px;width:auto;
-                .research-card-subheading{margin-bottom:10px;font-size: 12px;font-weight: 600;line-height: 12px;}
-                .research-card-mainheading{margin-bottom:10px;font-size: 20px;font-weight: 500;line-height: 30px;}
+                .research-card-subheading{margin-bottom:10px;font-size: 12px;font-weight: 700;line-height: 22px;}
+                .research-card-mainheading{margin-bottom:10px;font-size: 20px;font-weight: 500;line-height: 28px;}
                 .research-card-content{font-size: 14px;font-weight: 400;line-height: 24px;}
                 .aboutus-cta{line-height: 10px;padding: 8px 16px;img{margin-left: 5px;}margin-top: 10px;}
             }
@@ -403,7 +403,7 @@
          margin-bottom:150px;padding:0px;
         .ux-wrapper{display: block;padding-top:60px;padding-bottom:60px;@include wrapper;
             .heading-sec{width: 100%;padding: 0px;
-                .ux-subheading{margin-bottom: 20px;font-size: 12px;font-weight: 600;line-height: 12px;}
+                .ux-subheading{margin-bottom: 20px;font-size: 12px;font-weight: 600;line-height: 22px;}
                 .ux-mainheading{margin-bottom: 20px;font-size: 18px;font-weight: 500;line-height: 28px;}
             }
             .ux-content{width: 100%;padding: 0px;
@@ -412,8 +412,8 @@
         }
         .leftcontent-rightimageSec{display: block;&:not(:last-child){padding-bottom:80px;}
             .leftcontent-rightimage-text{width: 100%;@include wrapper;
-                .leftcontent-subheading{margin-bottom: 10px;font-size: 12px;font-weight: 600;line-height: 12px;}
-                .leftcontent-mainheading{margin-bottom: 10px;font-size: 16px;font-weight: 500;line-height: 26px;}
+                .leftcontent-subheading{margin-bottom: 10px;font-size: 12px;font-weight: 600;line-height: 22px;}
+                .leftcontent-mainheading{margin-bottom: 10px;font-size: 20px;font-weight: 500;line-height: 28px;}
                 .leftcontent-text{font-size: 14px;font-weight: 400;line-height: 24px;}
             }
             .leftcontent-rightimage-image{width: 100%;margin-bottom: 40px;}

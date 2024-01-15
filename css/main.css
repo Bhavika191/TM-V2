@@ -12073,12 +12073,10 @@ body.opentwo {
     width: 100%;
   }
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
-    margin-bottom: 20px;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 46px;
+    line-height: 40px;
+    font-size: 30px;
+    letter-spacing: -1px;
     width: 100%;
-    letter-spacing: -1.2px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .about-content {
     font-size: 14px;
@@ -12891,14 +12889,14 @@ body.opentwo {
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
     margin-bottom: 10px;
     font-size: 12px;
-    font-weight: 600;
-    line-height: 12px;
+    font-weight: 700;
+    line-height: 22px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 28px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type .research-card-content {
     font-size: 14px;
@@ -13299,7 +13297,7 @@ body.opentwo {
     margin-bottom: 20px;
     font-size: 12px;
     font-weight: 600;
-    line-height: 12px;
+    line-height: 22px;
   }
   .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
     margin-bottom: 20px;
@@ -13345,13 +13343,13 @@ body.opentwo {
     margin-bottom: 10px;
     font-size: 12px;
     font-weight: 600;
-    line-height: 12px;
+    line-height: 22px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 28px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-text {
     font-size: 14px;
