@@ -12062,14 +12062,14 @@ body.opentwo {
 }
 @media all and (max-width: 821px) {
   .casedetailsmainSec .about-sec .aboutcontent {
-    margin: 102px 0px 50px 0px;
+    margin: 100px 0px 40px 0px;
     width: 100%;
   }
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
     margin-bottom: 20px;
     font-size: 12px;
     font-weight: 700;
-    line-height: 12px;
+    line-height: 22px;
     width: 100%;
   }
   .casedetailsmainSec .about-sec .aboutcontent .mainheading {
@@ -12472,19 +12472,19 @@ body.opentwo {
 @media all and (max-width: 821px) {
   .casedetailsmainSec .objectivegoal-sec .left-sec {
     width: 100%;
-    margin-bottom: 78px;
+    margin-bottom: 60px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-subheading {
     margin-bottom: 10px;
     font-size: 12px;
-    font-weight: 600;
-    line-height: 12px;
+    font-weight: 700;
+    line-height: 22px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec .left-sec-mainheading {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 28px;
   }
   .casedetailsmainSec .objectivegoal-sec .left-sec ul {
     padding-left: 18px;
@@ -12505,14 +12505,14 @@ body.opentwo {
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-subheading {
     margin-bottom: 10px;
     font-size: 12px;
-    font-weight: 600;
-    line-height: 12px;
+    font-weight: 700;
+    line-height: 22px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec .right-sec-mainheading {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 28px;
   }
   .casedetailsmainSec .objectivegoal-sec .right-sec ul {
     padding-left: 18px;
@@ -12872,7 +12872,7 @@ body.opentwo {
     margin-bottom: 40px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper {
-    margin-bottom: 54px;
+    margin-bottom: 50px;
     padding: 0px;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .img-div .mobile-img {
@@ -12882,7 +12882,7 @@ body.opentwo {
     display: none;
   }
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
-    padding-bottom: 55px;
+    padding-bottom: 50px;
     padding-top: 36px;
     width: auto;
   }
@@ -13265,7 +13265,7 @@ body.opentwo {
 }
 @media all and (max-width: 821px) {
   .casedetailsmainSec .solutionsSec {
-    margin-bottom: 150px;
+    margin-bottom: 120px;
     padding: 0px;
   }
   .casedetailsmainSec .solutionsSec .ux-wrapper {
@@ -13296,7 +13296,7 @@ body.opentwo {
   .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-subheading {
     margin-bottom: 20px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 22px;
   }
   .casedetailsmainSec .solutionsSec .ux-wrapper .heading-sec .ux-mainheading {
@@ -13342,7 +13342,7 @@ body.opentwo {
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-subheading {
     margin-bottom: 10px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 22px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text .leftcontent-mainheading {
@@ -13656,20 +13656,20 @@ body.opentwo {
 }
 @media all and (max-width: 680px) {
   .casedetailsmainSec .statsSec {
-    margin-bottom: 80px;
+    margin-bottom: 70px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper {
     display: block;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content {
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-subheading {
     margin-bottom: 20px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 12px;
   }
   .casedetailsmainSec .statsSec .statsSec-wrapper .stats-content .stats-mainheading {
@@ -13894,7 +13894,7 @@ body.opentwo {
 }
 @media all and (max-width: 680px) {
   .casedetailsmainSec .impactSec {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   .casedetailsmainSec .impactSec .results-impact-temp {
     margin-bottom: 50px;
@@ -13903,7 +13903,7 @@ body.opentwo {
     margin-bottom: 20px;
     font-size: 12px;
     font-weight: 700;
-    line-height: 12px;
+    line-height: 22px;
   }
   .casedetailsmainSec .impactSec .results-impact-temp .impact-mainheading {
     font-size: 16px;
@@ -14088,7 +14088,7 @@ body.opentwo {
 }
 @media all and (max-width: 780px) {
   .casedetailsmainSec .lesson-learnedSec {
-    margin-bottom: 150px;
+    margin-bottom: 120px;
     padding: 0px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper {
@@ -14126,8 +14126,8 @@ body.opentwo {
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-subheading {
     margin-bottom: 20px;
     font-size: 12px;
-    font-weight: 600;
-    line-height: 12px;
+    font-weight: 700;
+    line-height: 22px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text .left-text-mainheading {
     margin-bottom: 0px;
@@ -14503,8 +14503,8 @@ body.opentwo {
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-content .video-stats-subheading {
     margin-bottom: 20px;
     font-size: 12px;
-    font-weight: 600;
-    line-height: 12px;
+    font-weight: 700;
+    line-height: 22px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-content .video-stats-mainheading {
     font-size: 18px;
@@ -15750,4 +15750,4 @@ body.opentwo {
     line-height: 164%;
     margin-top: 24px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
