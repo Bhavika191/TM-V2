@@ -67,8 +67,8 @@
             ul , ol{padding-left: 20px;margin-bottom: 42px;}
             ol li{list-style: decimal;margin-bottom: 0;}
             ul li{list-style: disc;margin-bottom: 0;}
-            img{margin:30px 0px 48px;}
             .spacer{height: 150px;}
+            strong{font-weight: $fontW600;}
             .shareSec {margin: 150px 0px 300px;padding: 30px 0px;border-top: 1px solid rgba(0,0,0,0.2); background-color: #f1f1f1;border-bottom: 1px solid rgba(0,0,0,0.2);display: flex;justify-content: space-between;align-items:center;
                 h4{color: var(--Primary-Black, #000);font-family: $fontpoppins;@include font16;font-weight: $fontW600;line-height: 14px;letter-spacing: 0.8px;text-transform: uppercase;margin-bottom: 0px;}
                 .shareDiv{display: flex;position: relative;
@@ -142,7 +142,6 @@
                 h2, h3, h4, h5{margin-bottom: 25px;}
                 p {margin-bottom: 35px;}
                 ul , ol{margin-bottom: 35px;}
-                img{margin:30px 0px 40px;}
                 .spacer{height: 120px;}
                 .shareSec {margin-bottom:250px;padding: 28px 0px;
                     h4{line-height: 12px;}
@@ -183,7 +182,6 @@
             .blogdetails-contentContainer {
                 p {margin-bottom: 30px;}
                 ul , ol{margin-bottom: 30px;}
-                img{margin:30px 0px 80px;}
                 .spacer{height: 80px;}
                 .shareSec {margin-bottom:220px;padding: 25px 0px;
                     h4{line-height: 10px;}
@@ -272,8 +270,8 @@
 
             .blogdetails-contentContainer {
                 h2, h3, h4, h5{margin-bottom: 10px;}
-                p {margin-bottom: 16px;}
-                ul , ol{margin-bottom: 16px;}
+                p {margin-bottom: 20px;}
+                ul , ol{margin-bottom: 20px;}
                 .shareSec {margin-bottom:150px;padding: 20px 0px;
                     h4{font-size: 12px;line-height: 24px;font-weight: 600;}
                     .shareDiv{

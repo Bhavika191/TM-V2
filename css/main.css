@@ -9700,11 +9700,11 @@ body.opentwo {
   list-style: disc;
   margin-bottom: 0;
 }
-.blogdetails-contentSec .blogdetails-contentContainer img {
-  margin: 30px 0px 48px;
-}
 .blogdetails-contentSec .blogdetails-contentContainer .spacer {
   height: 150px;
+}
+.blogdetails-contentSec .blogdetails-contentContainer strong {
+  font-weight: 600;
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
   margin: 150px 0px 300px;
@@ -10088,9 +10088,6 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer ul, .blogdetails-contentSec .blogdetails-contentContainer ol {
     margin-bottom: 35px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer img {
-    margin: 30px 0px 40px;
-  }
   .blogdetails-contentSec .blogdetails-contentContainer .spacer {
     height: 120px;
   }
@@ -10157,9 +10154,6 @@ body.opentwo {
   }
   .blogdetails-contentSec .blogdetails-contentContainer ul, .blogdetails-contentSec .blogdetails-contentContainer ol {
     margin-bottom: 30px;
-  }
-  .blogdetails-contentSec .blogdetails-contentContainer img {
-    margin: 30px 0px 80px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .spacer {
     height: 80px;
@@ -10307,10 +10301,10 @@ body.opentwo {
     margin-bottom: 10px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer p {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer ul, .blogdetails-contentSec .blogdetails-contentContainer ol {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
     margin-bottom: 150px;
