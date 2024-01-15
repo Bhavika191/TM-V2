@@ -517,26 +517,26 @@ if ($(".careerFormSec").length) {
 //Form active tab for career page ends
 
 //Video player js starts for casestudy
-if ($(".casedetailsmainSec .video-stats-sec").length) {
-  const video = document.getElementById("video");
-  const circlePlayButton = document.getElementById("circle-play-b");
+// if ($(".casedetailsmainSec .video-stats-sec").length) {
+//   const video = document.getElementById("video");
+//   const circlePlayButton = document.getElementById("circle-play-b");
 
-  function togglePlay() {
-    if (video.paused || video.ended) {
-      video.play();
-    } else {
-      video.pause();
-    }
-  }
+//   function togglePlay() {
+//     if (video.paused || video.ended) {
+//       video.play();
+//     } else {
+//       video.pause();
+//     }
+//   }
 
-  circlePlayButton.addEventListener("click", togglePlay);
-  video.addEventListener("playing", function () {
-    circlePlayButton.style.opacity = 0;
-  });
-  video.addEventListener("pause", function () {
-    circlePlayButton.style.opacity = 1;
-  });
-}
+//   circlePlayButton.addEventListener("click", togglePlay);
+//   video.addEventListener("playing", function () {
+//     circlePlayButton.style.opacity = 0;
+//   });
+//   video.addEventListener("pause", function () {
+//     circlePlayButton.style.opacity = 1;
+//   });
+// }
 //Video player js ends for casestudy
 
 //Homepage video sound on off Js starts
@@ -556,6 +556,21 @@ if($('.videoDiv').length){
   });
  }
 //Homepage video sound on off Js ends
+if($('.video-wrapper').length){
+  const button = document.getElementById("sound-btn-2");
+  button.addEventListener("click",function(){
+    const video = document.getElementById("casestudy-video");
+    if(video.muted){
+      video.muted = false;
+      $('.sound-enable').show();
+      $('.sound-disable').hide();
+    }else{
+      video.muted = true;
+      $('.sound-enable').hide();
+      $('.sound-disable').show();
+    }
+  });
+ }
 //------------------------------------------------------- Shamal's JS Code ends --------------------------------------------------//
 
 document.addEventListener('DOMContentLoaded', () => {
