@@ -9345,7 +9345,7 @@ body.opentwo {
 .blogdetails-bannerSec .blogdetails-wrapper {
   padding-left: 210px;
   padding-right: 210px;
-  margin: 190px 0px 160px 0px;
+  margin: 190px 0px 100px 0px;
   width: 85%;
 }
 @media screen and (max-width: 1600px) {
@@ -9379,12 +9379,11 @@ body.opentwo {
   }
 }
 .blogdetails-bannerSec .blogdetails-wrapper h3 {
-  margin-bottom: 48px;
   color: #000;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 150%;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -9399,13 +9398,14 @@ body.opentwo {
   }
 }
 .blogdetails-bannerSec .blogdetails-wrapper h1 {
-  margin-bottom: 48px;
+  margin: 48px 0px;
   color: #000;
   font-family: "Poppins", sans-serif;
   font-size: 96px;
   font-weight: 500;
-  line-height: 106px;
-  letter-spacing: -2.88px;
+  line-height: 130%;
+  letter-spacing: -1px;
+  word-wrap: break-word;
 }
 @media screen and (max-width: 1600px) {
   .blogdetails-bannerSec .blogdetails-wrapper h1 {
@@ -9436,7 +9436,7 @@ body.opentwo {
   padding-left: 60px;
   padding-right: 60px;
   width: 100%;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 @media screen and (max-width: 1400px) {
   .blogdetails-bannerSec .blogdetails-imagesec {
@@ -9452,67 +9452,51 @@ body.opentwo {
 }
 @media all and (max-width: 1800px) {
   .blogdetails-bannerSec .blogdetails-wrapper {
-    margin: 180px 0px 150px 0px;
-  }
-  .blogdetails-bannerSec .blogdetails-wrapper h3 {
-    margin-bottom: 45px;
-    line-height: 30px;
-    letter-spacing: 1px;
+    margin: 180px 0px 90px 0px;
   }
   .blogdetails-bannerSec .blogdetails-wrapper h1 {
-    margin-bottom: 45px;
-    line-height: 106px;
-    letter-spacing: -2.88px;
+    margin: 45px 0px;
+  }
+  .blogdetails-bannerSec .blogdetails-imagesec {
+    margin-bottom: 90px;
   }
 }
 @media all and (max-width: 1600px) {
   .blogdetails-bannerSec .blogdetails-wrapper {
-    margin: 170px 0px 140px 0px;
-  }
-  .blogdetails-bannerSec .blogdetails-wrapper h3 {
-    margin-bottom: 40px;
-    line-height: 28px;
+    margin: 170px 0px 80px 0px;
   }
   .blogdetails-bannerSec .blogdetails-wrapper h1 {
-    margin-bottom: 40px;
-    line-height: 96px;
-  }
-  .blogdetails-bannerSec .blogdetails-imagesec {
-    margin-bottom: 100px;
-  }
-}
-@media all and (max-width: 1400px) {
-  .blogdetails-bannerSec .blogdetails-wrapper {
-    margin: 160px 0px 130px 0px;
-  }
-  .blogdetails-bannerSec .blogdetails-wrapper h3 {
-    margin-bottom: 36px;
-    line-height: 24px;
-  }
-  .blogdetails-bannerSec .blogdetails-wrapper h1 {
-    margin-bottom: 36px;
-    line-height: 80px;
+    margin: 40px 0px;
   }
   .blogdetails-bannerSec .blogdetails-imagesec {
     margin-bottom: 80px;
   }
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1400px) {
   .blogdetails-bannerSec .blogdetails-wrapper {
-    margin: 150px 0px 120px 0px;
-  }
-  .blogdetails-bannerSec .blogdetails-wrapper h3 {
-    margin-bottom: 30px;
-    line-height: 22px;
+    margin: 160px 0px 70px 0px;
   }
   .blogdetails-bannerSec .blogdetails-wrapper h1 {
-    margin-bottom: 30px;
-    line-height: 70px;
+    margin: 35px 0px;
+  }
+  .blogdetails-bannerSec .blogdetails-imagesec {
+    margin-bottom: 70px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .blogdetails-bannerSec .blogdetails-wrapper {
+    margin: 150px 0px 60px 0px;
+  }
+  .blogdetails-bannerSec .blogdetails-wrapper h1 {
+    margin: 30px 0px;
+  }
+  .blogdetails-bannerSec .blogdetails-imagesec {
+    margin-bottom: 60px;
   }
 }
 @media all and (max-width: 1024px) {
   .blogdetails-bannerSec .blogdetails-wrapper {
-    margin: 120px 0px 100px 0px;
+    margin: 120px 0px 60px 0px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -9530,36 +9514,25 @@ body.opentwo {
   }
 }
 @media all and (max-width: 1024px) {
-  .blogdetails-bannerSec .blogdetails-wrapper h3 {
-    margin-bottom: 25px;
-    line-height: 20px;
-  }
   .blogdetails-bannerSec .blogdetails-wrapper h1 {
-    margin-bottom: 25px;
-    line-height: 60px;
+    margin: 25px 0px;
   }
 }
 @media all and (max-width: 780px) {
-  .blogdetails-bannerSec {
-    margin-bottom: 80px;
-  }
   .blogdetails-bannerSec .blogdetails-wrapper {
     margin: 102px 0px 60px 0px;
     width: 100%;
   }
   .blogdetails-bannerSec .blogdetails-wrapper h3 {
-    margin-bottom: 20px;
     font-size: 12px;
     font-weight: 700;
-    line-height: 12px;
     letter-spacing: 0.6px;
   }
   .blogdetails-bannerSec .blogdetails-wrapper h1 {
-    margin-bottom: 20px;
-    font-size: 40px;
+    margin: 20px 0px;
+    font-size: 30px;
     font-weight: 500;
-    line-height: 50px;
-    letter-spacing: -1.2px;
+    width: 80%;
   }
 }
 @media all and (max-width: 720px) {
@@ -9698,7 +9671,7 @@ body.opentwo {
   font-size: 20px;
   font-weight: 500;
   line-height: 150%;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 @media screen and (max-width: 1600px) {
   .blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
@@ -9715,9 +9688,11 @@ body.opentwo {
 }
 .blogdetails-contentSec .blogdetails-contentContainer ol li {
   list-style: decimal;
+  margin-bottom: 0;
 }
 .blogdetails-contentSec .blogdetails-contentContainer ul li {
   list-style: disc;
+  margin-bottom: 0;
 }
 .blogdetails-contentSec .blogdetails-contentContainer img {
   margin: 30px 0px 48px;
@@ -10101,7 +10076,7 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer h2, .blogdetails-contentSec .blogdetails-contentContainer h3, .blogdetails-contentSec .blogdetails-contentContainer h4, .blogdetails-contentSec .blogdetails-contentContainer h5 {
     margin-bottom: 25px;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
+  .blogdetails-contentSec .blogdetails-contentContainer p {
     margin-bottom: 35px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer img {
@@ -10168,7 +10143,7 @@ body.opentwo {
   }
 }
 @media all and (max-width: 1400px) {
-  .blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
+  .blogdetails-contentSec .blogdetails-contentContainer p {
     margin-bottom: 30px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer img {
@@ -10241,7 +10216,10 @@ body.opentwo {
   }
 }
 @media all and (max-width: 1200px) {
-  .blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
+  .blogdetails-contentSec .blogdetails-contentContainer h2, .blogdetails-contentSec .blogdetails-contentContainer h3, .blogdetails-contentSec .blogdetails-contentContainer h4, .blogdetails-contentSec .blogdetails-contentContainer h5 {
+    margin-bottom: 15px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer p {
     margin-bottom: 25px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
@@ -10262,7 +10240,10 @@ body.opentwo {
   .blogdetails-contentSec .blogdetails-contentContainer {
     width: 80%;
   }
-  .blogdetails-contentSec .blogdetails-contentContainer p, .blogdetails-contentSec .blogdetails-contentContainer ul li, .blogdetails-contentSec .blogdetails-contentContainer ol li {
+  .blogdetails-contentSec .blogdetails-contentContainer h2, .blogdetails-contentSec .blogdetails-contentContainer h3, .blogdetails-contentSec .blogdetails-contentContainer h4, .blogdetails-contentSec .blogdetails-contentContainer h5 {
+    margin-bottom: 18px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer p {
     margin-bottom: 20px;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
@@ -10304,6 +10285,12 @@ body.opentwo {
   }
 }
 @media all and (max-width: 768px) {
+  .blogdetails-contentSec .blogdetails-contentContainer h2, .blogdetails-contentSec .blogdetails-contentContainer h3, .blogdetails-contentSec .blogdetails-contentContainer h4, .blogdetails-contentSec .blogdetails-contentContainer h5 {
+    margin-bottom: 10px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer p {
+    margin-bottom: 16px;
+  }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec {
     margin-bottom: 150px;
     padding: 20px 0px;

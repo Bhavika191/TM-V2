@@ -1,63 +1,55 @@
 .blogdetails-bannerSec {
-    .blogdetails-wrapper {@include wrapperTwo;margin: 190px 0px 160px 0px;width: 85%;
-        h3 {margin-bottom: 48px;color: #000;font-family: $fontpoppins;@include font20;font-weight: $fontW700;line-height: 30px;letter-spacing: 1px;text-transform: uppercase;}
-        h1 {margin-bottom: 48px;color: #000;font-family: $fontpoppins;@include font96;font-weight: $fontW500;line-height: 106px;letter-spacing: -2.88px;}
+    .blogdetails-wrapper {@include wrapperTwo;margin: 190px 0px 100px 0px;width: 85%;
+        h3 {color: #000;font-family: $fontpoppins;@include font20;font-weight: $fontW700;line-height: 150%;letter-spacing: 1px;text-transform: uppercase;}
+        h1 {margin: 48px 0px;color: #000;font-family: $fontpoppins;@include font96;font-weight: $fontW500;line-height: 130%;letter-spacing: -1px;word-wrap: break-word}
     }
     .blogdetails-imagesec {@include wrapper;
         width: 100%;
-        margin-bottom: 120px;
+        margin-bottom: 100px;
     }
 
     // ----------------------------------------media queries-----------------------------------------------//
     @media all and (max-width:1800px) {
         .blogdetails-wrapper {
-            margin: 180px 0px 150px 0px;
-            h3 {margin-bottom: 45px;line-height: 30px;letter-spacing: 1px;}
-            h1 {margin-bottom: 45px;line-height: 106px;letter-spacing: -2.88px;}
+            margin: 180px 0px 90px 0px;
+            h1 {margin: 45px 0px;}
 
         }
+        .blogdetails-imagesec { margin-bottom: 90px;}
         
     }
     @media all and (max-width:1600px) {
         .blogdetails-wrapper {
-            margin: 170px 0px 140px 0px;
-            h3 {margin-bottom: 40px;line-height: 28px;}
-            h1 {margin-bottom: 40px;line-height: 96px;}
+            margin: 170px 0px 80px 0px;
+            h1 {margin: 40px 0px;}
 
         }
-        .blogdetails-imagesec {
-            margin-bottom: 100px;
-        }
+        .blogdetails-imagesec { margin-bottom: 80px;}
     }
     @media all and (max-width:1400px) {
         .blogdetails-wrapper {
-            margin: 160px 0px 130px 0px;
-            h3 {margin-bottom: 36px;line-height: 24px;}
-            h1 {margin-bottom: 36px;line-height: 80px;}
+            margin: 160px 0px 70px 0px;
+            h1 {margin: 35px 0px;}
         }
-        .blogdetails-imagesec {
-            margin-bottom: 80px;
-        }
+        .blogdetails-imagesec { margin-bottom: 70px;}
     }
     @media all and (max-width:1200px) {
         .blogdetails-wrapper {
-            margin: 150px 0px 120px 0px;
-            h3 {margin-bottom: 30px;line-height: 22px;}
-            h1 {margin-bottom: 30px;line-height: 70px;}
+            margin: 150px 0px 60px 0px;
+            h1 {margin: 30px 0px;}
         }
+        .blogdetails-imagesec { margin-bottom: 60px;}
     }
     @media all and (max-width:1024px) {
-        .blogdetails-wrapper {margin: 120px 0px 100px 0px;@include wrapper;
-            h3 {margin-bottom: 25px;line-height: 20px;
-            }
-            h1 {margin-bottom: 25px;line-height: 60px;}
+        .blogdetails-wrapper {margin: 120px 0px 60px 0px;@include wrapper;
+            h1 {margin: 25px 0px;}
 
         }
     }
-    @media all and (max-width:780px) {margin-bottom: 80px;
+    @media all and (max-width:780px) {
         .blogdetails-wrapper {margin: 102px 0px 60px 0px;width: 100%;
-            h3 {margin-bottom: 20px;font-size: 12px;font-weight: 700;line-height: 12px;letter-spacing: 0.6px;}
-            h1 {margin-bottom: 20px;font-size: 40px;font-weight: 500;line-height: 50px;letter-spacing: -1.2px;}
+            h3 {font-size: 12px;font-weight: 700;letter-spacing: 0.6px;}
+            h1 {margin: 20px 0px;font-size: 30px;font-weight: 500;width: 80%;}
         }
     }
     @media all and (max-width:720px){padding: 0px;
@@ -71,10 +63,10 @@
             h3{@include font28;font-weight: $fontW500;line-height: 133%;letter-spacing: -0.9px;margin-bottom: 30px;color: #000;}
             h4{@include font24;font-weight: $fontW500;line-height: 133%;letter-spacing: -0.9px;margin-bottom: 30px;color: #000;}
             h5{@include font20;font-weight: $fontW500;line-height: 133%;letter-spacing: -0.9px;margin-bottom: 30px;color: #000;}
-            p , ul li, ol li{color: #6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;margin-bottom: 40px;}
+            p , ul li, ol li{color: #6A6A6A;font-family: $fontpoppins;@include font20;font-weight: $fontW500;line-height: 150%;margin-bottom: 42px;}
             ul , ol{padding-left: 20px;}
-            ol li{list-style: decimal;}
-            ul li{list-style: disc;}
+            ol li{list-style: decimal;margin-bottom: 0;}
+            ul li{list-style: disc;margin-bottom: 0;}
             img{margin:30px 0px 48px;}
             .spacer{height: 150px;}
             .shareSec {margin: 150px 0px 300px;padding: 30px 0px;border-top: 1px solid rgba(0,0,0,0.2); background-color: #f1f1f1;border-bottom: 1px solid rgba(0,0,0,0.2);display: flex;justify-content: space-between;align-items:center;
@@ -148,7 +140,7 @@
 
             .blogdetails-contentContainer {
                 h2, h3, h4, h5{margin-bottom: 25px;}
-                p , ul li, ol li{margin-bottom: 35px;}
+                p {margin-bottom: 35px;}
                 img{margin:30px 0px 40px;}
                 .spacer{height: 120px;}
                 .shareSec {margin-bottom:250px;padding: 28px 0px;
@@ -188,7 +180,7 @@
     @media all and (max-width:1400px){
 
             .blogdetails-contentContainer {
-                p , ul li, ol li{margin-bottom: 30px;}
+                p {margin-bottom: 30px;}
                 img{margin:30px 0px 80px;}
                 .spacer{height: 80px;}
                 .shareSec {margin-bottom:220px;padding: 25px 0px;
@@ -229,7 +221,8 @@
     @media all and (max-width:1200px){
 
             .blogdetails-contentContainer {
-                p , ul li, ol li{margin-bottom: 25px;}
+                h2, h3, h4, h5{margin-bottom: 15px;}
+                p {margin-bottom: 25px;}
                 .shareSec {margin-bottom:200px;padding: 22px 0px;
                     h4{line-height: 8px;}
                     .shareDiv{
@@ -243,7 +236,8 @@
     @media all and (max-width:1024px){
 
             .blogdetails-contentContainer {width: 80%;
-                p , ul li, ol li{margin-bottom: 20px;}
+                h2, h3, h4, h5{margin-bottom: 18px;}
+                p {margin-bottom: 20px;}
                 .shareSec {margin-bottom:180px;padding: 20px 0px;
                     h4{line-height: 8px;}
                     .shareDiv{
@@ -273,6 +267,8 @@
     @media all and (max-width:768px){
 
             .blogdetails-contentContainer {
+                h2, h3, h4, h5{margin-bottom: 10px;}
+                p {margin-bottom: 16px;}
                 .shareSec {margin-bottom:150px;padding: 20px 0px;
                     h4{font-size: 12px;line-height: 24px;font-weight: 600;}
                     .shareDiv{
