@@ -5615,7 +5615,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper .list-heading {
     font-size: 20px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 28px;
     margin-bottom: 12px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul {
@@ -5624,7 +5624,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li {
     font-size: 14px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 264x;
     letter-spacing: -0.42px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .list-wrapper ul li::before {
@@ -5877,10 +5877,10 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg.youtube .blackCol
     margin-bottom: 30px;
   }
   .collaborate-section .collaborate-wrapper .left-content h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 40px;
-    letter-spacing: -0.9px;
+    line-height: 34px;
+    letter-spacing: 0px;
     margin-bottom: 20px;
   }
   .collaborate-section .collaborate-wrapper .left-content p {
@@ -9216,8 +9216,8 @@ body.opentwo {
     margin-bottom: 40px;
   }
   .careerFormSec .careerSec .secHeading h1 {
-    line-height: 50px;
-    font-size: 40px;
+    line-height: 40px;
+    font-size: 30px;
     font-weight: 500;
   }
   .careerFormSec .careerSec .secHeading p {
@@ -11211,17 +11211,17 @@ body.opentwo {
     padding: 35px 0px 0px 0px;
   }
   .animation-sec .animation-Div .first-fold {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
   .animation-sec .animation-Div .first-fold .firstfold-content {
     margin-bottom: 30px;
     padding: 0px 20px;
   }
   .animation-sec .animation-Div .first-fold .firstfold-content h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 40px;
-    letter-spacing: -0.9px;
+    line-height: 34px;
+    letter-spacing: 0px;
     margin-bottom: 10px;
   }
   .animation-sec .animation-Div .first-fold .firstfold-content p {
@@ -11230,19 +11230,19 @@ body.opentwo {
     line-height: 24px;
   }
   .animation-sec .animation-Div .second-fold {
-    margin-bottom: 50px;
+    margin-bottom: 46px;
   }
   .animation-sec .animation-Div .third-fold {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   .animation-sec .animation-Div .third-fold .third-fold-content {
     padding: 0px 20px;
   }
   .animation-sec .animation-Div .third-fold .third-fold-content h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 40px;
-    letter-spacing: -0.9px;
+    line-height: 34px;
+    letter-spacing: 0px;
     margin-bottom: 10px;
   }
   .animation-sec .animation-Div .third-fold .third-fold-content p {
@@ -11252,7 +11252,7 @@ body.opentwo {
   }
   .animation-sec .animation-Div .third-fold .third-fold-anime {
     width: 100%;
-    margin-bottom: 26%;
+    margin-bottom: 26px;
   }
   .animation-sec .animation-Div .fourth-fold {
     margin-bottom: 50px;
@@ -11261,10 +11261,10 @@ body.opentwo {
     padding: 0px 20px;
   }
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 40px;
-    letter-spacing: -0.9px;
+    line-height: 34px;
+    letter-spacing: 0px;
     margin-bottom: 10px;
   }
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content p {
@@ -11280,11 +11280,11 @@ body.opentwo {
     padding: 0px 20px;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content h2 {
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 22px;
     font-weight: 500;
-    line-height: 40px;
-    letter-spacing: -0.9px;
+    line-height: 34px;
+    letter-spacing: 0px;
     width: 100%;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content p {
@@ -11723,22 +11723,22 @@ body.opentwo {
     width: auto;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-subheading {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 12px;
-    font-weight: 600;
-    line-height: 12px;
+    font-weight: 700;
+    line-height: 22px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-mainheading {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 20px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 28px;
   }
   .aboutus-researchSec .researchsec-wrapper .research-card-type .research-card-content {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 @media all and (max-width: 680px) {
@@ -11749,12 +11749,12 @@ body.opentwo {
     margin-bottom: 80px;
   }
   .aboutus-researchSec .heading-content .main-heading {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 100%;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 30px;
-    letter-spacing: -0.9px;
+    line-height: 34px;
+    letter-spacing: 0px;
   }
   .aboutus-researchSec .heading-content .subheading {
     width: 100%;
@@ -15740,4 +15740,4 @@ body.opentwo {
     line-height: 164%;
     margin-top: 24px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
