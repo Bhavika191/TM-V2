@@ -1920,6 +1920,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     font-size: 14px;
   }
 }
+.videoSection .videosecWrapper .videoDiv .sound-sec .sound-btn {
+  cursor: pointer;
+}
 .videoSection .videosecWrapper .videoDiv .sound-sec .sound-btn .sound-enable {
   display: none;
   width: 50px;
@@ -8169,7 +8172,7 @@ body.opentwo {
 }
 @media all and (max-width: 640px) {
   .thankyouSec {
-    padding: 80px 0px 150px;
+    padding: 180px 0px 150px;
   }
   .thankyouSec .thanksWrapper .thankyou-heading {
     line-height: 60px;
@@ -8192,6 +8195,7 @@ body.opentwo {
   }
   .thankyouSec .thanksWrapper .gameIcon {
     width: 50%;
+    display: none;
   }
 }
 
