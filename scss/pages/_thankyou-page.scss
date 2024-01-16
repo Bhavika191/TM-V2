@@ -52,15 +52,20 @@
         }
     }
 
+    @media screen and (max-width:768px) {
+        .thanksWrapper{
+            .gameIcon{width: 50%;display: none;}
+        }
+    }
+
     @media all and (max-width:640px){
         padding: 180px 0px 150px;
         .thanksWrapper{
-            .thankyou-heading{line-height: 60px;margin-bottom: 12px;}
+            .thankyou-heading{line-height: 40px;margin-bottom: 12px;}
             .thankyou-content{line-height: 20px;margin-bottom: 30px;}
             .thankyou-cta{display: block;
                 .ctaWhite{margin-right: 0px;margin-bottom: 20px;display: block;}.ctaBlack{display: block;}
             }
-            .gameIcon{width: 50%;display: none;}
         }
     }
 

@@ -8170,12 +8170,18 @@ body.opentwo {
     bottom: -25%;
   }
 }
+@media screen and (max-width: 768px) {
+  .thankyouSec .thanksWrapper .gameIcon {
+    width: 50%;
+    display: none;
+  }
+}
 @media all and (max-width: 640px) {
   .thankyouSec {
     padding: 180px 0px 150px;
   }
   .thankyouSec .thanksWrapper .thankyou-heading {
-    line-height: 60px;
+    line-height: 40px;
     margin-bottom: 12px;
   }
   .thankyouSec .thanksWrapper .thankyou-content {
@@ -8192,10 +8198,6 @@ body.opentwo {
   }
   .thankyouSec .thanksWrapper .thankyou-cta .ctaBlack {
     display: block;
-  }
-  .thankyouSec .thanksWrapper .gameIcon {
-    width: 50%;
-    display: none;
   }
 }
 
