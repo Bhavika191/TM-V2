@@ -57,11 +57,12 @@
             }
             .fourthfoldanimation-mbl{display: none;}
         }
-        .fifth-fold{z-index:1;position:relative;display:block;
+        .fifth-fold{z-index:1;position:relative;display:block;overflow: hidden;
             .fifth-fold-content{margin-bottom: 70px;display:flex;flex-direction: column;align-items:center;
                 h2{font-family: $fontpoppins;@include font96;font-weight: $fontW500;color: var(--Primary-Black, #000);line-height: 110.417%;letter-spacing: -2.88px;margin-bottom: 48px;width: 75%;text-align: center;}
                 p{font-family: $fontpoppins;@include font24;font-weight: $fontW400;color: var(--Body-Copy, #000);line-height: 141.667%;width: 65%;text-align: center;}
             }
+            svg{margin-bottom: -6px;}
             .fifthfoldanimation-mbl{display: none;}
         }
     }
