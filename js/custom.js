@@ -556,7 +556,7 @@ if($('.videoDiv').length){
   });
  }
 //Homepage video sound on off Js ends
-if($('.video-wrapper').length){
+if($('.image-withsound').length){
   const button = document.getElementById("sound-btn-2");
   button.addEventListener("click",function(){
     const video = document.getElementById("casestudy-video");
