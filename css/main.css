@@ -10800,6 +10800,7 @@ body.opentwo {
   z-index: 1;
   position: relative;
   display: block;
+  overflow: hidden;
 }
 .animation-sec .animation-Div .fifth-fold .fifth-fold-content {
   margin-bottom: 70px;
@@ -10866,6 +10867,9 @@ body.opentwo {
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content p {
     font-size: 16px;
   }
+}
+.animation-sec .animation-Div .fifth-fold svg {
+  margin-bottom: -6px;
 }
 .animation-sec .animation-Div .fifth-fold .fifthfoldanimation-mbl {
   display: none;
@@ -15784,4 +15788,4 @@ body.opentwo {
     line-height: 164%;
     margin-top: 24px;
   }
-}
+}/*# sourceMappingURL=main.css.map */
