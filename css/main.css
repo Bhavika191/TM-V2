@@ -13121,6 +13121,7 @@ body.opentwo {
 }
 .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image video {
   width: 100%;
+  height: 56.25vh;
 }
 @media all and (max-width: 1800px) {
   .casedetailsmainSec .solutionsSec {
