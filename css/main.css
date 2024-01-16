@@ -11206,10 +11206,23 @@ body.opentwo {
   }
   .animation-sec .animation-Div .first-fold {
     margin-bottom: 0px;
+    flex-direction: column;
+  }
+  .animation-sec .animation-Div .first-fold .firstfoldanimation {
+    display: none;
+  }
+  .animation-sec .animation-Div .first-fold .firstfoldanimation-mbl {
+    display: block;
+    order: 1;
+    width: 100%;
+    margin-bottom: 32px;
   }
   .animation-sec .animation-Div .first-fold .firstfold-content {
     margin-bottom: 30px;
     padding: 0px 20px;
+    order: 2;
+    width: 100%;
+    text-align: center;
   }
   .animation-sec .animation-Div .first-fold .firstfold-content h2 {
     font-size: 24px;
@@ -11226,11 +11239,22 @@ body.opentwo {
   .animation-sec .animation-Div .second-fold {
     margin-bottom: 46px;
   }
+  .animation-sec .animation-Div .second-fold .second-fold-anime {
+    display: none;
+  }
+  .animation-sec .animation-Div .second-fold .secondfoldanimation-mbl {
+    display: block;
+  }
   .animation-sec .animation-Div .third-fold {
     margin-bottom: 20px;
+    flex-direction: column;
   }
   .animation-sec .animation-Div .third-fold .third-fold-content {
     padding: 0px 20px;
+    order: 2;
+    width: 100%;
+    text-align: center;
+    position: unset;
   }
   .animation-sec .animation-Div .third-fold .third-fold-content h2 {
     font-size: 24px;
@@ -11244,15 +11268,26 @@ body.opentwo {
     font-weight: 400;
     line-height: 24px;
   }
+  .animation-sec .animation-Div .third-fold .third-fold-anime {
+    display: none;
+  }
   .animation-sec .animation-Div .third-fold .thirdfoldanimation-mbl {
-    width: 100%;
+    display: block;
+    order: 1;
     margin-bottom: 32px;
+    width: 100%;
   }
   .animation-sec .animation-Div .fourth-fold {
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
   }
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content {
     padding: 0px 20px;
+    order: 2;
+    width: 100%;
+    text-align: center;
+    position: unset;
   }
   .animation-sec .animation-Div .fourth-fold .fourth-fold-content h2 {
     font-size: 24px;
@@ -11266,12 +11301,19 @@ body.opentwo {
     font-weight: 400;
     line-height: 24px;
   }
+  .animation-sec .animation-Div .fourth-fold .fourth-fold-anime {
+    display: none;
+  }
   .animation-sec .animation-Div .fourth-fold .fourthfoldanimation-mbl {
-    margin-bottom: 20px;
+    display: block;
+    order: 1;
+    margin-bottom: 32px;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content {
     margin-bottom: 0px;
     padding: 0px 20px;
+    width: 100%;
+    text-align: center;
   }
   .animation-sec .animation-Div .fifth-fold .fifth-fold-content h2 {
     font-size: 24px;
@@ -11286,6 +11328,12 @@ body.opentwo {
     font-weight: 400;
     line-height: 24px;
     width: 100%;
+  }
+  .animation-sec .animation-Div .fifth-fold .fifth-fold-anime {
+    display: none;
+  }
+  .animation-sec .animation-Div .fifth-fold .fifthfoldanimation-mbl {
+    display: block;
   }
 }
 
@@ -15797,4 +15845,4 @@ body.opentwo {
     line-height: 164%;
     margin-top: 24px;
   }
-}/*# sourceMappingURL=main.css.map */
+}

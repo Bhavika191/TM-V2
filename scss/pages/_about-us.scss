@@ -238,32 +238,41 @@
         //     .subheading{width: 100%;font-size: 14px;font-weight: 400;line-height: 24px;text-transform: capitalize;}
         // }
         .animation-Div{padding:35px 0px 0px 0px;
-            .first-fold{margin-bottom:0px;
-                .firstfold-content{margin-bottom:30px;padding:0px 20px;
+            .first-fold{margin-bottom:0px;flex-direction:column;
+                .firstfoldanimation{display: none;}
+                .firstfoldanimation-mbl{display: block;order: 1;width: 100%;margin-bottom: 32px;}
+                .firstfold-content{margin-bottom:30px;padding:0px 20px;order:2;width:100%;text-align:center;
                     h2{font-size: 24px;font-weight: 500;line-height: 34px;letter-spacing: 0px;margin-bottom: 10px;}
                     p{font-size: 14px;font-weight: 400;line-height: 24px;}
                 }
             }
-            .second-fold{margin-bottom: 46px;}
-            .third-fold{margin-bottom: 20px;
-                .third-fold-content{padding:0px 20px;
-                    h2{font-size: 24px;font-weight: 500;line-height: 34px;letter-spacing: 0px;margin-bottom: 10px;}
-                    p{font-size: 14px;font-weight: 400;line-height: 24px;}
-                }
-                .thirdfoldanimation-mbl{width: 100%;margin-bottom: 32px;}
+            .second-fold{margin-bottom: 46px;
+                .second-fold-anime{display: none;}
+                .secondfoldanimation-mbl{display: block;}
             }
-            .fourth-fold{margin-bottom: 50px;
-                .fourth-fold-content{padding:0px 20px;
+            .third-fold{margin-bottom: 20px;flex-direction: column;
+                .third-fold-content{padding:0px 20px;order:2;width:100%;text-align:center;position:unset;
                     h2{font-size: 24px;font-weight: 500;line-height: 34px;letter-spacing: 0px;margin-bottom: 10px;}
                     p{font-size: 14px;font-weight: 400;line-height: 24px;}
                 }
-                .fourthfoldanimation-mbl{margin-bottom: 20px;}
+                .third-fold-anime{display: none;}
+                .thirdfoldanimation-mbl{display: block;order: 1;margin-bottom: 32px;width: 100%;}
+            }
+            .fourth-fold{margin-bottom: 50px;display:flex;flex-direction:column;
+                .fourth-fold-content{padding:0px 20px;order:2;width:100%;text-align:center;position:unset;
+                    h2{font-size: 24px;font-weight: 500;line-height: 34px;letter-spacing: 0px;margin-bottom: 10px;}
+                    p{font-size: 14px;font-weight: 400;line-height: 24px;}
+                }
+                .fourth-fold-anime{display: none;}
+                .fourthfoldanimation-mbl{display: block;order: 1;margin-bottom: 32px;}
             }
             .fifth-fold{
-                .fifth-fold-content{margin-bottom: 0px;padding:0px 20px;
+                .fifth-fold-content{margin-bottom: 0px;padding:0px 20px;width:100%;text-align:center;
                     h2{font-size: 24px;margin-bottom: 22px;font-weight: 500;line-height: 34px;letter-spacing: 0px;width: 100%;}
                     p{font-size: 14px;font-weight: 400;line-height: 24px;width: 100%;}
                 }
+                .fifth-fold-anime{display: none;}
+                .fifthfoldanimation-mbl{display: block;}
             }
         }
     }
