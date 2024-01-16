@@ -11215,7 +11215,7 @@ body.opentwo {
     display: block;
     order: 1;
     width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
   .animation-sec .animation-Div .first-fold .firstfold-content {
     margin-bottom: 30px;
@@ -13049,12 +13049,6 @@ body.opentwo {
 .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:nth-child(even) {
   flex-direction: row-reverse;
 }
-.casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:nth-child(odd) .leftcontent-rightimage-image {
-  padding-left: 24px;
-}
-.casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:nth-child(even) .leftcontent-rightimage-image {
-  padding-right: 24px;
-}
 .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
   width: 50%;
   padding: 0px 150px;
@@ -13123,6 +13117,9 @@ body.opentwo {
   overflow: hidden;
 }
 .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image img {
+  width: 100%;
+}
+.casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image video {
   width: 100%;
 }
 @media all and (max-width: 1800px) {
@@ -13352,6 +13349,12 @@ body.opentwo {
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:not(:last-child) {
     padding-bottom: 80px;
+  }
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:nth-child(odd) .leftcontent-rightimage-image {
+    padding-left: 20px;
+  }
+  .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec:nth-child(even) .leftcontent-rightimage-image {
+    padding-right: 20px;
   }
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
     width: 100%;
@@ -14131,10 +14134,10 @@ body.opentwo {
     padding-bottom: 40px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper:nth-child(even) .right-img {
-    padding-left: 24px;
+    padding-left: 20px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper:nth-child(odd) .right-img {
-    padding-right: 24px;
+    padding-right: 20px;
   }
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text {
     width: 100%;
@@ -14176,7 +14179,6 @@ body.opentwo {
 }
 .casedetailsmainSec .video-stats-sec {
   margin-bottom: 400px;
-  overflow: hidden;
 }
 .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper {
   display: flex;
@@ -14352,40 +14354,31 @@ body.opentwo {
 }
 .casedetailsmainSec .video-stats-sec .video-wrapper video {
   width: 100%;
-  height: 100%;
 }
-.casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies {
-  position: absolute;
-  right: 120px;
-  bottom: 60px;
-  display: flex;
-  align-items: center;
+.casedetailsmainSec .video-stats-sec .video-wrapper-playpause {
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 100%;
 }
-.casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies p {
-  font-size: 20px;
-  font-weight: 400;
-  margin-right: 16px;
-  color: #fff;
-  text-align: right;
-}
-@media screen and (max-width: 1600px) {
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies p {
-    font-size: 16px;
+@media screen and (max-width: 1400px) {
+  .casedetailsmainSec .video-stats-sec .video-wrapper-playpause {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
-@media screen and (max-width: 1200px) {
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies p {
-    font-size: 14px;
+@media screen and (max-width: 720px) {
+  .casedetailsmainSec .video-stats-sec .video-wrapper-playpause {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
-.casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies .sound-btn-casestudy .sound-enable {
-  display: none;
-  width: 50px;
-  height: 50px;
+.casedetailsmainSec .video-stats-sec .video-wrapper-playpause iframe {
+  height: 56.25vw;
+  width: 100%;
 }
-.casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies .sound-btn-casestudy .sound-disable {
-  width: 50px;
-  height: 50px;
+.casedetailsmainSec .video-stats-sec .video-wrapper-playpause iframe video {
+  width: 100%;
+  width: 100%;
 }
 @media all and (max-width: 1800px) {
   .casedetailsmainSec .video-stats-sec {
@@ -14426,21 +14419,6 @@ body.opentwo {
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates p {
     margin-bottom: 28px;
   }
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies {
-    right: 100px;
-    bottom: 50px;
-  }
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies p {
-    margin-right: 16px;
-  }
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies .sound-btn-casestudy .sound-enable {
-    width: 40px;
-    height: 40px;
-  }
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies .sound-btn-casestudy .sound-disable {
-    width: 40px;
-    height: 40px;
-  }
 }
 @media all and (max-width: 1400px) {
   .casedetailsmainSec .video-stats-sec {
@@ -14460,21 +14438,6 @@ body.opentwo {
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-numbers .rates p {
     margin-bottom: 26px;
-  }
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies {
-    right: 80px;
-    bottom: 40px;
-  }
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies p {
-    margin-right: 15px;
-  }
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies .sound-btn-casestudy .sound-enable {
-    width: 35px;
-    height: 35px;
-  }
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies .sound-btn-casestudy .sound-disable {
-    width: 35px;
-    height: 35px;
   }
 }
 @media all and (max-width: 1200px) {
@@ -14535,6 +14498,7 @@ body.opentwo {
   .casedetailsmainSec .video-stats-sec .video-wrapper {
     padding-left: 60px;
     padding-right: 60px;
+    height: auto;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 1400px) {
@@ -14549,25 +14513,11 @@ body.opentwo {
     padding-right: 20px;
   }
 }
-@media all and (max-width: 1024px) {
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies {
-    right: 60px;
-    bottom: 30px;
-  }
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies p {
-    margin-right: 15px;
-  }
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies .sound-btn-casestudy .sound-enable {
-    width: 30px;
-    height: 30px;
-  }
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies .sound-btn-casestudy .sound-disable {
-    width: 30px;
-    height: 30px;
-  }
-}
 @media all and (max-width: 780px) {
   .casedetailsmainSec .video-stats-sec .video-wrapper {
+    padding: 0px;
+  }
+  .casedetailsmainSec .video-stats-sec .video-wrapper-playpause {
     padding: 0px;
   }
 }
@@ -14628,22 +14578,10 @@ body.opentwo {
   }
   .casedetailsmainSec .video-stats-sec .video-wrapper {
     padding: 0px;
+    height: auto;
   }
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies {
-    right: 20px;
-    bottom: 20px;
-  }
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies p {
-    margin-right: 12px;
-    font-size: 12px;
-  }
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies .sound-btn-casestudy .sound-enable {
-    width: 20px;
-    height: 20px;
-  }
-  .casedetailsmainSec .video-stats-sec .video-wrapper .sound-sec-casetudies .sound-btn-casestudy .sound-disable {
-    width: 20px;
-    height: 20px;
+  .casedetailsmainSec .video-stats-sec .video-wrapper-playpause {
+    padding: 0px;
   }
 }
 
