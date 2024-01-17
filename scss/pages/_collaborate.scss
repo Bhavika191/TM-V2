@@ -148,8 +148,8 @@
                 &:nth-child(even){margin-top: -24%;}
                 &:last-child{margin-left: auto;margin-top: -24%;}
                 &:first-child{transform: translateY(0px);}
-                .stateOff{transition: 0.6s all ease-in-out;height: 200px;position: absolute;top: 30px;display: flex;
-                    .image-infinite0,.image-infinite1,.image-infinite2{margin-right: 60px;}
+                .stateOff{transition: 0.6s all ease-in-out;height: 200px;position: absolute;top: 30px;overflow:hidden;
+                    // .image-infinite0,.image-infinite1,.image-infinite2{margin-right: 60px;}
                     &.mumbaiOff{left: -800px; width: 800px;animation: mumbaiOff 6s linear infinite;}
                     &.delhiOff{left: -500px; width: 500px;animation: delhiOff 6s linear infinite;}
                     &.bangaloreOff{left: -1000px; width: 1000px;animation: bangaloreOff 8s linear infinite;}

@@ -6581,10 +6581,7 @@ a.showLess::after {
   height: 200px;
   position: absolute;
   top: 30px;
-  display: flex;
-}
-.meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff .image-infinite0, .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff .image-infinite1, .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff .image-infinite2 {
-  margin-right: 60px;
+  overflow: hidden;
 }
 .meetupAdderssSec .meetupAdderssContainer .meetupAdderssContent .meetupAddBox .stateOff.mumbaiOff {
   left: -800px;
