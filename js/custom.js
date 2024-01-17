@@ -571,6 +571,7 @@ if($('.image-withsound').length){
     }
   });
  }
+
 //------------------------------------------------------- Shamal's JS Code ends --------------------------------------------------//
 
 document.addEventListener('DOMContentLoaded', () => {

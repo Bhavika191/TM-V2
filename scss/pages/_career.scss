@@ -6,6 +6,9 @@
         }
         .collaborateForm{width: 46%;padding: 60px 60px 40px;background: #ffffff;
             form{
+                .wpcf7{
+                    p{&:first-child{label{margin-top: 0px;}}}
+                }
                 br{display: none;}
                 label{display: block;color: #000;@include font18;font-weight: $fontW400;line-height: 14px;margin:60px 0px 12px;
                 }
@@ -293,7 +296,7 @@
     @media screen and (max-width:720px) {
         .careerSec{padding-right: 20px !important;
             .secHeading{width: 100%; margin-top: 50px; margin-bottom:40px;
-                h1{line-height: 40px;font-size: 30px;font-weight: 500;}
+                h1{line-height: 40px;font-size: 30px;font-weight: 500;letter-spacing: -1px;}
                 p{color: var(--Primary-Black, #000);font-size: 16px;line-height: 26px;}
             }
             .collaborateForm{padding: 40px 25px 20px;width: 115%;margin-left: -20px;margin-right: -20px;

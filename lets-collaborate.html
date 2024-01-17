@@ -94,7 +94,7 @@
         <div class="meetupAdderssContent">
             <div class="meetupAddBox">
                 <div class="stateOff mumbaiOff">
-                    <img src="images/mumbai-new.svg" alt="">
+                    <img src="images/mumbai-new.svg" alt="" class="image-infinite0">
                 </div>
                 <div class="stateAddMap">
                     <div class="stateAdd">
@@ -110,7 +110,7 @@
             </div>
             <div class="meetupAddBox">
                 <div class="stateOff delhiOff">
-                    <img src="images/delhi-new.svg" alt="">
+                    <img src="images/delhi-new.svg" alt="" class="image-infinite1">
                 </div>
                 <div class="stateAddMap">
                     <div class="stateAdd">
@@ -145,7 +145,7 @@
             </div>
             <div class="meetupAddBox">
                 <div class="stateOff bangaloreOff">
-                    <img src="images/bangalore-new.svg" alt="">
+                    <img src="images/bangalore-new.svg" alt="" class="image-infinite2">
                 </div>
                 <div class="stateAddMap">
                     <div class="stateAdd">
@@ -288,6 +288,20 @@
 <script src="https://cdn.jsdelivr.net/gh/ArthurPDev/KreativeScroll@main/kreativescroll.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/ArthurPDev/KreativeScroll@main/kreativesmooth.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+<script>
+const imageContainers = document.getElementsByClassName('stateOff');
+
+for (let i = 0; i < imageContainers.length; i++) {
+  const imageContainer = imageContainers[i];
+  const images = imageContainer.querySelectorAll('.image-infinite' + i);
+
+  // Clone and append each image to the current image container
+  images.forEach(image => {
+    const duplicate = image.cloneNode(true);
+    imageContainer.appendChild(duplicate);
+  });
+}
+</script>
 
 </body>
 </html>

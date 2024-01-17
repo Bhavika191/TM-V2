@@ -123,8 +123,8 @@
     @media screen and (max-width:720px) {
         .collaborateSec{padding-right: 20px !important;
             .secHeading{width: 100%; margin-top: 0px; margin-bottom:40px;
-                h1{line-height: 50px;}
-                p{color: #000;}
+                h1{line-height: 40px;font-size: 30px;font-weight: 500;letter-spacing: -1px;}
+                p{color: var(--Primary-Black, #000);font-size: 16px;line-height: 26px;}
             }
             .collaborateForm{padding: 40px 25px 20px;width: 115%;margin-left: -20px;margin-right: -20px;
                 form{
@@ -148,7 +148,8 @@
                 &:nth-child(even){margin-top: -24%;}
                 &:last-child{margin-left: auto;margin-top: -24%;}
                 &:first-child{transform: translateY(0px);}
-                .stateOff{transition: 0.6s all ease-in-out;height: 200px;overflow: hidden;position: absolute;top: 30px;
+                .stateOff{transition: 0.6s all ease-in-out;height: 200px;position: absolute;top: 30px;display: flex;
+                    .image-infinite0,.image-infinite1,.image-infinite2{margin-right: 60px;}
                     &.mumbaiOff{left: -800px; width: 800px;animation: mumbaiOff 6s linear infinite;}
                     &.delhiOff{left: -500px; width: 500px;animation: delhiOff 6s linear infinite;}
                     &.bangaloreOff{left: -1000px; width: 1000px;animation: bangaloreOff 8s linear infinite;}
@@ -384,7 +385,8 @@
     @media screen and (max-width:720px) {
         .meetupAdderssContainer{
              .secHeading{
-                 p{color: #000;}
+                h2{font-size: 24px;line-height: 34px;letter-spacing: 0;}
+                 p{color: #000;font-size: 16px;line-height: 20px;}
              }
              .meetupAdderssContent{
                  .meetupAddBox {
