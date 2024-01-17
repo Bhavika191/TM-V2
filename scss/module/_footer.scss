@@ -1,5 +1,6 @@
 footer{@include wrapper;margin-bottom: 70px;position: relative;z-index: 3;
     .footerWrapper{background-color: #fff;padding: 140px 150px;
+        .footerLogo a{display: inline-block;}
         .footerData{display: flex;justify-content: space-between;align-items:center;
             .footerMenus{width: 30%;
                 ul{list-style: none;display: flex;align-items: center;flex-wrap: wrap;justify-content: space-between;

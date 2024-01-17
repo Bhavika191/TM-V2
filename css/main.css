@@ -1053,6 +1053,9 @@ footer .footerWrapper {
   background-color: #fff;
   padding: 140px 150px;
 }
+footer .footerWrapper .footerLogo a {
+  display: inline-block;
+}
 footer .footerWrapper .footerData {
   display: flex;
   justify-content: space-between;
