@@ -2,7 +2,7 @@ header{position: fixed;top: 0;left: 0;right: 0;transition: top 0.5s ease-in-out;
     &.hiddenspace{top: 0px !important;}
     &.nav-up{top: -100px;}
     .headerWrapper{@include wrapper;display: flex;align-items: center;
-        .logoDiv{width: 50%;}
+        .logoDiv{width: 50%;a{display: inline-block;}}
         .navDiv{width: 50%;display: flex;align-items: center;justify-content: flex-end;margin: 26px 0px;
             .navList{
                 a{ display: inline-block;text-decoration: none;@include font14;font-weight: $fontW700;line-height: 18px;letter-spacing: 0.7px;text-transform: uppercase;text-align: center;color: #000;}

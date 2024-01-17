@@ -568,6 +568,9 @@ header .headerWrapper {
 header .headerWrapper .logoDiv {
   width: 50%;
 }
+header .headerWrapper .logoDiv a {
+  display: inline-block;
+}
 header .headerWrapper .navDiv {
   width: 50%;
   display: flex;
@@ -2059,7 +2062,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     margin: 100px 0px 150px;
   }
   .videoSection .videosecWrapper .secHeading {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   .videoSection .videosecWrapper .secHeading h1 {
     line-height: 40px;
@@ -2068,6 +2071,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
   }
   .videoSection .videosecWrapper .videoDiv {
     padding: 0px;
+    margin-top: 80px;
   }
   .videoSection .videosecWrapper .videoDiv .sound-sec {
     right: 20px;
@@ -2087,8 +2091,9 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
   }
   .videoSection .videosecWrapper .ctaDiv {
     display: block;
-    text-align: center;
-    margin-top: 40px;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 20px;
   }
   .videoSection .videosecWrapper .ctaDiv a {
     border-radius: 6px;
@@ -2100,7 +2105,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     margin: 0 auto;
     font-size: 14px;
     line-height: 18px;
-    width: 90%;
+    width: auto;
   }
 }
 
@@ -15826,4 +15831,4 @@ body.opentwo {
     line-height: 164%;
     margin-top: 24px;
   }
-}
+}/*# sourceMappingURL=main.css.map */
