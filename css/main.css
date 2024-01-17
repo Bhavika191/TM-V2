@@ -5273,8 +5273,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
 }
 .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading {
   padding-top: 75px;
-  padding-left: 60px;
-  margin-left: -60px;
   background: #000000;
 }
 .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
@@ -5450,8 +5448,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading {
     padding-top: 60px;
-    padding-left: 65px;
-    margin-left: -65px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
     line-height: 40px;
@@ -5562,8 +5558,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     height: auto;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading {
-    padding-left: 40px;
-    margin-left: -40px;
     padding-top: 40px;
   }
   .serviceSec .servicesec-wrapper .servicesec-content .services-info .sticky-heading .subheading {
