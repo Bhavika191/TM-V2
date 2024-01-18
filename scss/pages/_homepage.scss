@@ -8,6 +8,7 @@
             .sound-sec{position: absolute;right: 120px;bottom: 60px;display: flex;align-items: center;
                 p{@include font20;font-weight: $fontW400;margin-right: 16px;color: #fff;text-align: right;}
                 .sound-btn{cursor: pointer;
+                    &:hover{cursor: pointer;}
                     .sound-enable{display: none;width: 50px;height: 50px;}
                     .sound-disable{width: 50px;height: 50px;}
                 }
