@@ -10022,6 +10022,8 @@ body.opentwo {
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup h6 {
   padding-left: 40px;
+  width: 82%;
+  word-wrap: break-word;
 }
 .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form {
   display: flex;
@@ -10219,6 +10221,7 @@ body.opentwo {
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup h6 {
     padding-left: 32px;
+    width: 78%;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup::before {
     left: 32px;
@@ -10249,6 +10252,9 @@ body.opentwo {
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv a {
     line-height: 12px;
+  }
+  .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup h6 {
+    width: 83%;
   }
 }
 @media all and (max-width: 1024px) {
@@ -10377,6 +10383,7 @@ body.opentwo {
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup h6 {
     font-size: 10px;
+    width: 73%;
   }
   .blogdetails-contentSec .blogdetails-contentContainer .shareSec .shareDiv .sharePopup .signup form input[type=submit] {
     padding: 10px 14px;
@@ -15843,4 +15850,4 @@ body.opentwo {
     line-height: 164%;
     margin-top: 24px;
   }
-}
+}/*# sourceMappingURL=main.css.map */
