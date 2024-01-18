@@ -14443,7 +14443,7 @@ body.opentwo {
 }
 @media all and (max-width: 1800px) {
   .casedetailsmainSec .video-stats-sec {
-    margin-bottom: 380px;
+    margin-bottom: 300px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper {
     margin-bottom: 130px;
@@ -14463,7 +14463,7 @@ body.opentwo {
 }
 @media all and (max-width: 1600px) {
   .casedetailsmainSec .video-stats-sec {
-    margin-bottom: 350px;
+    margin-bottom: 250px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper {
     margin-bottom: 120px;
@@ -14483,7 +14483,7 @@ body.opentwo {
 }
 @media all and (max-width: 1400px) {
   .casedetailsmainSec .video-stats-sec {
-    margin-bottom: 300px;
+    margin-bottom: 200px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper {
     margin-bottom: 100px;
@@ -14503,7 +14503,7 @@ body.opentwo {
 }
 @media all and (max-width: 1200px) {
   .casedetailsmainSec .video-stats-sec {
-    margin-bottom: 250px;
+    margin-bottom: 150px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper {
     margin-bottom: 80px;
@@ -14523,11 +14523,10 @@ body.opentwo {
 }
 @media all and (max-width: 1024px) {
   .casedetailsmainSec .video-stats-sec {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper {
     display: block;
-    margin-bottom: 105px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-content {
     width: 100%;
@@ -14588,7 +14587,7 @@ body.opentwo {
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper {
     display: block;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
   .casedetailsmainSec .video-stats-sec .video-statsSec-wrapper .video-stats-content {
     width: 100%;
@@ -15844,4 +15843,4 @@ body.opentwo {
     line-height: 164%;
     margin-top: 24px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
