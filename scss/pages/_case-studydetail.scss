@@ -287,7 +287,7 @@
                     video{width: 100%;}
                     .sound-sec-casetudies{position: absolute;right: 20px;bottom: 40px;display: flex;align-items: center;
                         p{@include font12;font-weight: $fontW400;margin-right: 15px;color: #fff;text-align: right;}
-                        .sound-btn-casestudy{cursor: pointer;
+                        .sound-btn-casestudy{
                             &:hover{cursor: pointer;}
                             .sound-enable{display: none;width: 20px;height: 20px;}
                             .sound-disable{width: 20px;height: 20px;}

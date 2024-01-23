@@ -1926,9 +1926,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     font-size: 14px;
   }
 }
-.videoSection .videosecWrapper .videoDiv .sound-sec .sound-btn {
-  cursor: pointer;
-}
 .videoSection .videosecWrapper .videoDiv .sound-sec .sound-btn:hover {
   cursor: pointer;
 }
@@ -13179,9 +13176,6 @@ body.opentwo {
   margin-right: 15px;
   color: #fff;
   text-align: right;
-}
-.casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image .image-withsound .sound-sec-casetudies .sound-btn-casestudy {
-  cursor: pointer;
 }
 .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-image .image-withsound .sound-sec-casetudies .sound-btn-casestudy:hover {
   cursor: pointer;
