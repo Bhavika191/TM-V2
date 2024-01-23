@@ -559,7 +559,7 @@ header .headerWrapper {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   header .headerWrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -1043,7 +1043,7 @@ footer {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   footer {
     padding-left: 20px;
     padding-right: 20px;
@@ -1821,7 +1821,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
 .videoSection .videosecWrapper .secHeading {
   padding-left: 210px;
   padding-right: 210px;
-  margin-bottom: 174px;
+  margin-bottom: 145px;
 }
 @media screen and (max-width: 1600px) {
   .videoSection .videosecWrapper .secHeading {
@@ -1854,25 +1854,25 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
   }
 }
 .videoSection .videosecWrapper .secHeading h1 {
-  font-size: 96px;
+  font-size: 74px;
   font-weight: 500;
-  line-height: 106px;
-  letter-spacing: -2px;
+  line-height: 116%;
+  letter-spacing: -1px;
   width: 60%;
 }
 @media screen and (max-width: 1600px) {
   .videoSection .videosecWrapper .secHeading h1 {
-    font-size: 80px;
+    font-size: 66px;
   }
 }
 @media screen and (max-width: 1280px) {
   .videoSection .videosecWrapper .secHeading h1 {
-    font-size: 74px;
+    font-size: 58px;
   }
 }
 @media screen and (max-width: 1024px) {
   .videoSection .videosecWrapper .secHeading h1 {
-    font-size: 64px;
+    font-size: 48px;
   }
 }
 @media screen and (max-width: 720px) {
@@ -1896,7 +1896,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .videoSection .videosecWrapper .videoDiv {
     padding-left: 20px;
     padding-right: 20px;
@@ -1955,11 +1955,10 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     margin: 190px 0px 200px;
   }
   .videoSection .videosecWrapper .secHeading {
-    margin-bottom: 150px;
+    margin-bottom: 130px;
   }
   .videoSection .videosecWrapper .secHeading h1 {
     width: 70%;
-    line-height: 90px;
   }
   .videoSection .videosecWrapper .videoDiv .sound-sec {
     right: 100px;
@@ -1982,7 +1981,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     margin: 170px 0px 180px;
   }
   .videoSection .videosecWrapper .secHeading {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   }
   .videoSection .videosecWrapper .secHeading h1 {
     width: 75%;
@@ -2008,11 +2007,10 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     margin: 170px 0px 150px;
   }
   .videoSection .videosecWrapper .secHeading {
-    margin-bottom: 120px;
+    margin-bottom: 90px;
   }
   .videoSection .videosecWrapper .secHeading h1 {
     width: 75%;
-    line-height: 90px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -2024,7 +2022,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
   }
   .videoSection .videosecWrapper .secHeading h1 {
     width: 90%;
-    line-height: 78px;
   }
   .videoSection .videosecWrapper .videoDiv {
     padding-left: 60px;
@@ -2037,7 +2034,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 720px) {
+@media screen and (max-width: 1024px) and (max-width: 768px) {
   .videoSection .videosecWrapper .videoDiv {
     padding-left: 20px;
     padding-right: 20px;
@@ -2646,7 +2643,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .servicehpSection .serviceSecwrapper .serviceBoxes {
     padding-left: 20px;
     padding-right: 20px;
@@ -2763,7 +2760,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .servicehpSection .serviceSecwrapper .ctaDiv {
     padding-left: 20px;
     padding-right: 20px;
@@ -3409,7 +3406,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .bookhpSection {
     padding-left: 20px;
     padding-right: 20px;
@@ -4906,7 +4903,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .banner-section {
     padding-left: 20px;
     padding-right: 20px;
@@ -5088,7 +5085,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .service-container .filterSec .filter-wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -5137,7 +5134,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 1600px) and (max-width: 720px) {
+@media screen and (max-width: 1600px) and (max-width: 768px) {
   .service-container .filterSec .filter-wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -5164,7 +5161,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 1400px) and (max-width: 720px) {
+@media screen and (max-width: 1400px) and (max-width: 768px) {
   .service-container .filterSec .filter-wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -5191,7 +5188,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 1200px) and (max-width: 720px) {
+@media screen and (max-width: 1200px) and (max-width: 768px) {
   .service-container .filterSec .filter-wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -5217,7 +5214,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 720px) {
+@media screen and (max-width: 1024px) and (max-width: 768px) {
   .service-container .filterSec .filter-wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -5251,7 +5248,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .serviceSec {
     padding-left: 20px;
     padding-right: 20px;
@@ -5642,7 +5639,7 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .collaborate-section {
     padding-left: 20px;
     padding-right: 20px;
@@ -9462,7 +9459,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .blogdetails-bannerSec .blogdetails-imagesec {
     padding-left: 20px;
     padding-right: 20px;
@@ -9525,7 +9522,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 720px) {
+@media screen and (max-width: 1024px) and (max-width: 768px) {
   .blogdetails-bannerSec .blogdetails-wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -10410,7 +10407,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .blogdetails-container {
     padding-left: 20px;
     padding-right: 20px;
@@ -10542,7 +10539,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .animation-sec {
     padding-left: 20px;
     padding-right: 20px;
@@ -10565,7 +10562,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .animation-sec .animation-Div {
     padding-left: 20px;
     padding-right: 20px;
@@ -11384,7 +11381,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .aboutus-researchSec {
     padding-left: 20px;
     padding-right: 20px;
@@ -11728,7 +11725,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 720px) {
+@media screen and (max-width: 1024px) and (max-width: 768px) {
   .aboutus-researchSec .researchsec-wrapper .research-card-type {
     padding-left: 20px;
     padding-right: 20px;
@@ -11761,7 +11758,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 821px) and (max-width: 720px) {
+@media screen and (max-width: 821px) and (max-width: 768px) {
   .aboutus-researchSec .heading-content {
     padding-left: 20px;
     padding-right: 20px;
@@ -11781,7 +11778,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 821px) and (max-width: 720px) {
+@media screen and (max-width: 821px) and (max-width: 768px) {
   .aboutus-researchSec .researchsec-wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -12028,7 +12025,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .casedetailsmainSec .about-sec .image-sec {
     padding-left: 20px;
     padding-right: 20px;
@@ -12111,7 +12108,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 720px) {
+@media screen and (max-width: 1024px) and (max-width: 768px) {
   .casedetailsmainSec .about-sec .aboutcontent {
     padding-left: 20px;
     padding-right: 20px;
@@ -12531,7 +12528,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 821px) and (max-width: 720px) {
+@media screen and (max-width: 821px) and (max-width: 768px) {
   .casedetailsmainSec .objectivegoal-sec {
     padding-left: 20px;
     padding-right: 20px;
@@ -12608,7 +12605,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .casedetailsmainSec .researchSec {
     padding-left: 20px;
     padding-right: 20px;
@@ -12629,7 +12626,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .casedetailsmainSec .researchSec .researchsec-wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -12886,7 +12883,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 720px) {
+@media screen and (max-width: 1024px) and (max-width: 768px) {
   .casedetailsmainSec .researchSec .researchsec-wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -12912,7 +12909,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 720px) {
+@media screen and (max-width: 1024px) and (max-width: 768px) {
   .casedetailsmainSec .researchSec .researchsec-wrapper .research-card-type {
     padding-left: 20px;
     padding-right: 20px;
@@ -12992,7 +12989,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .casedetailsmainSec .solutionsSec {
     padding-left: 20px;
     padding-right: 20px;
@@ -13342,7 +13339,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 720px) {
+@media screen and (max-width: 1024px) and (max-width: 768px) {
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
     padding-left: 20px;
     padding-right: 20px;
@@ -13379,7 +13376,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 821px) and (max-width: 720px) {
+@media screen and (max-width: 821px) and (max-width: 768px) {
   .casedetailsmainSec .solutionsSec .ux-wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -13435,7 +13432,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 821px) and (max-width: 720px) {
+@media screen and (max-width: 821px) and (max-width: 768px) {
   .casedetailsmainSec .solutionsSec .leftcontent-rightimageSec .leftcontent-rightimage-text {
     padding-left: 20px;
     padding-right: 20px;
@@ -13913,7 +13910,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .casedetailsmainSec .impactSec .impact-img {
     padding-left: 20px;
     padding-right: 20px;
@@ -13988,7 +13985,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 720px) {
+@media screen and (max-width: 1024px) and (max-width: 768px) {
   .casedetailsmainSec .impactSec .impact-img {
     padding-left: 20px;
     padding-right: 20px;
@@ -14033,7 +14030,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .casedetailsmainSec .lesson-learnedSec {
     padding-left: 20px;
     padding-right: 20px;
@@ -14223,7 +14220,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 780px) and (max-width: 720px) {
+@media screen and (max-width: 780px) and (max-width: 768px) {
   .casedetailsmainSec .lesson-learnedSec .lesson-learned-wrapper .left-text {
     padding-left: 20px;
     padding-right: 20px;
@@ -14417,7 +14414,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .casedetailsmainSec .video-stats-sec .video-wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -14437,7 +14434,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .casedetailsmainSec .video-stats-sec .video-wrapper-playpause {
     padding-left: 20px;
     padding-right: 20px;
@@ -14577,7 +14574,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 720px) {
+@media screen and (max-width: 1024px) and (max-width: 768px) {
   .casedetailsmainSec .video-stats-sec .video-wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -15509,7 +15506,7 @@ body.opentwo {
     padding-right: 40px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .privacypolicy-section {
     padding-left: 20px;
     padding-right: 20px;
@@ -15853,4 +15850,4 @@ body.opentwo {
     line-height: 164%;
     margin-top: 24px;
   }
-}
+}/*# sourceMappingURL=main.css.map */
