@@ -12054,7 +12054,7 @@ body.opentwo {
 }
 @media all and (max-width: 1600px) {
   .casedetailsmainSec .about-sec .aboutcontent {
-    margin: 70px 0px 120px 0px;
+    margin: 170px 0px 120px 0px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
     margin-bottom: 35px;
@@ -12069,7 +12069,7 @@ body.opentwo {
 }
 @media all and (max-width: 1440px) {
   .casedetailsmainSec .about-sec .aboutcontent {
-    margin: 60px 0px 100px 0px;
+    margin: 160px 0px 100px 0px;
   }
   .casedetailsmainSec .about-sec .aboutcontent .subheading {
     margin-bottom: 30px;
@@ -15850,4 +15850,4 @@ body.opentwo {
     line-height: 164%;
     margin-top: 24px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
