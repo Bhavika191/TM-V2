@@ -25,7 +25,7 @@
                                 .wpcf7-list-item{width: 30%;margin:0;
                                     label{margin: 0px !important;
                                         input{visibility: hidden;height: 0;margin-bottom: 0;}
-                                        span{display: flex;justify-content: center;align-items: center; border:1px solid #000;border-radius:5px;padding: 10px 50px;color: #000;font-family: $fontpoppins;@include font14;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.28px;
+                                        span{display: flex;justify-content: center;align-items: center; border:1px solid #000;border-radius:5px;padding: 10px 20px;color: #000;font-family: $fontpoppins;@include font14;font-weight: $fontW500;line-height: 24px;letter-spacing: -0.28px;
                                             &:hover{cursor: pointer;}
                                         }
                                         .disabled{color: #00000033 !important;cursor: not-allowed !important;border: 1px solid #00000033 !important;}
@@ -112,7 +112,7 @@
                                 .radiocheck{
                                     .wpcf7-list-item{
                                         label{
-                                            span{padding: 10px 35px;line-height: 20px;letter-spacing: -0.28px;}
+                                            span{padding: 10px 15px;line-height: 20px;letter-spacing: -0.28px;}
                                         }
                                     }
                                 }
@@ -163,7 +163,7 @@
                                 .radiocheck{
                                     .wpcf7-list-item{
                                         label{
-                                            span{padding: 10px 30px;line-height: 18px;letter-spacing: -0.28px;}
+                                            span{padding: 10px;line-height: 18px;letter-spacing: -0.28px;}
                                         }
                                     }
                                 }
@@ -209,7 +209,7 @@
                                 .radiocheck{
                                     .wpcf7-list-item{
                                         label{
-                                            span{padding: 10px 22px;line-height: 16px;}
+                                            span{padding: 10px 5px;line-height: 16px;}
                                         }
                                     }
                                 }
@@ -273,7 +273,7 @@
                                 .radiocheck{display:flex;flex-flow:wrap;justify-content:normal;
                                     .wpcf7-list-item{width: 33.33%;
                                         label{margin-bottom: 0px;
-                                            span{width: auto;padding: 12px 42px;margin-right: 15px;}
+                                            span{width: auto;padding: 12px 32px;margin-right: 15px;}
                                         }
                                     }
                                 }
@@ -310,7 +310,7 @@
                                 .radiocheck{display:flex;flex-flow:wrap;justify-content:normal;
                                     .wpcf7-list-item{width: 50%;
                                         label{
-                                            span{width: auto;padding: 10px 40px;margin-right: 12px;&:not(:last-child){margin-bottom: 12px;}font-size: 12px;font-weight: 500;line-height: 24px;letter-spacing: -0.24px;}
+                                            span{width: auto;padding: 10px 30px;margin-right: 12px;&:not(:last-child){margin-bottom: 12px;}font-size: 12px;font-weight: 500;line-height: 24px;letter-spacing: -0.24px;}
                                         }
                                     }
                                 }

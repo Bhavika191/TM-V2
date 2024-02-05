@@ -8589,7 +8589,7 @@ body.opentwo {
   align-items: center;
   border: 1px solid #000;
   border-radius: 5px;
-  padding: 10px 50px;
+  padding: 10px 20px;
   color: #000;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -8976,7 +8976,7 @@ body.opentwo {
     padding-top: 50px;
   }
   .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span {
-    padding: 10px 35px;
+    padding: 10px 15px;
     line-height: 20px;
     letter-spacing: -0.28px;
   }
@@ -9045,7 +9045,7 @@ body.opentwo {
     padding-top: 30px;
   }
   .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span {
-    padding: 10px 30px;
+    padding: 10px;
     line-height: 18px;
     letter-spacing: -0.28px;
   }
@@ -9096,7 +9096,7 @@ body.opentwo {
     width: 45%;
   }
   .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span {
-    padding: 10px 22px;
+    padding: 10px 5px;
     line-height: 16px;
   }
   .careerFormSec .careerSec .collaborateForm form .borderDotted p .wpcf7-list-item label span {
@@ -9200,7 +9200,7 @@ body.opentwo {
   }
   .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span {
     width: auto;
-    padding: 12px 42px;
+    padding: 12px 32px;
     margin-right: 15px;
   }
   .careerFormSec .careerSec .collaborateForm form .borderDotted p {
@@ -9272,7 +9272,7 @@ body.opentwo {
   }
   .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span {
     width: auto;
-    padding: 10px 40px;
+    padding: 10px 30px;
     margin-right: 12px;
     font-size: 12px;
     font-weight: 500;
