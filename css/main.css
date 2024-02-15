@@ -1926,9 +1926,6 @@ footer .footerWrapper .socialIcons .iconsDiv ul li a:hover svg path {
     font-size: 14px;
   }
 }
-.videoSection .videosecWrapper .videoDiv .sound-sec .sound-btn {
-  cursor: pointer;
-}
 .videoSection .videosecWrapper .videoDiv .sound-sec .sound-btn:hover {
   cursor: pointer;
 }
@@ -9275,7 +9272,7 @@ body.opentwo {
   }
   .careerFormSec .careerSec .collaborateForm form .empType p span .radiocheck .wpcf7-list-item label span {
     width: auto;
-    padding: 10px 30px;
+    padding: 10px 20px;
     margin-right: 12px;
     font-size: 12px;
     font-weight: 500;
